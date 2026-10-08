@@ -1,0 +1,85 @@
+{
+ "note": "Wikimedia Commons photos, downscaled. Used as on-device demo inputs only.",
+ "samples": [
+  {
+   "src": "samples/neem-tree-1.webp",
+   "label": "Neem tree",
+   "expect": "species",
+   "title": "Neem tree Azadirachta indica Heritage tree Philippines.jpg",
+   "author": "P1898",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Neem_tree_Azadirachta_indica_Heritage_tree_Philippines.jpg"
+  },
+  {
+   "src": "samples/house-crow-1.webp",
+   "label": "Crow",
+   "expect": "species",
+   "title": "Corvus splendens insolens @ Kuala Lumpur (2) alternate crop.jpg",
+   "author": "GerifalteDelSabana",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Corvus_splendens_insolens_@_Kuala_Lumpur_(2)_alternate_crop.jpg"
+  },
+  {
+   "src": "samples/bougainvillea-1.webp",
+   "label": "Bougainvillea",
+   "expect": "species",
+   "title": "Pink paperflowers (Bougainvillea glabra).jpg",
+   "author": "Vitaium",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pink_paperflowers_(Bougainvillea_glabra).jpg"
+  },
+  {
+   "src": "samples/mango-fruit-1.webp",
+   "label": "Mango",
+   "expect": "species",
+   "title": "Mango fruit Nam Dok Mai.jpg",
+   "author": "Ivar Leidus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mango_fruit_Nam_Dok_Mai.jpg"
+  },
+  {
+   "src": "samples/camel-2.webp",
+   "label": "Camel",
+   "expect": "species",
+   "title": "Decorated one-humped Camel, Camelus dromedarius, at Puri Sea Beach, Odisha, India.jpg",
+   "author": "Joydeep Chakraborty",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Decorated_one-humped_Camel,_Camelus_dromedarius,_at_Puri_Sea_Beach,_Odisha,_India.jpg"
+  },
+  {
+   "src": "samples/croton-2.webp",
+   "label": "Croton",
+   "expect": "species",
+   "title": "Codiaeum variegatum en campus PUCP.jpg",
+   "author": "Valtoga",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Codiaeum_variegatum_en_campus_PUCP.jpg"
+  },
+  {
+   "src": "samples/pebbles-2.webp",
+   "label": "Pebbles",
+   "expect": "guardian",
+   "title": "Piles of pebbles on pebbles - geograph.org.uk - 7141712.jpg",
+   "author": "Eirian Evans",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Piles_of_pebbles_on_pebbles_-_geograph.org.uk_-_7141712.jpg"
+  },
+  {
+   "src": "samples/negative-5.webp",
+   "label": "Computer",
+   "expect": "nobody",
+   "title": "Amiga500 system.jpg",
+   "author": "Bill Bertram",
+   "license": "CC BY-SA 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:Amiga500_system.jpg"
+  }
+ ]
+}

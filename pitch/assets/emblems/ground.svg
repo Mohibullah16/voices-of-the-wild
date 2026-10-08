@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="emblem" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false" fill="none" stroke="#1c2420" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 24C10 14 38 14 38 24Z"/>
+    <path d="M20 24C20 32 19.5 37 18.5 42H29.5C28.5 37 28 32 28 24"/>
+    <circle cx="18" cy="19.5" r="1.4"/><circle cx="27" cy="18" r="1.1"/><circle cx="32" cy="21" r="1"/>
+    <path d="M5 42H43"/>
+    <path d="M35 42C35 39.5 37 38 39.5 38C42 38 43 40 43 42M6 42C6 40.5 7.5 39.5 9 39.5C11 39.5 12 40.5 12 42"/></svg>

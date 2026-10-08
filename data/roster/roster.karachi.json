@@ -1,0 +1,2372 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "trees",
+      "name": "Trees",
+      "guardian": {
+        "id": "trees-guardian",
+        "name": "Old Mother Shade",
+        "personality": "The patient, collective voice of every tree in the city: warm, unhurried, a little teasing. Refuses to name a tree until she gets a proper look at its leaf, flower or bark.",
+        "voice": "Elderly, gender-neutral leaning female, slow and warm, low breathy texture with a soft rustle; grandmotherly calm.",
+        "descriptions": [
+          "a photo of a large tree with a thick trunk and a spreading green leafy crown beside a street or in a park",
+          "a close-up photo of green tree leaves on a twig against the sky",
+          "a close-up photo of the bark of a thick tree trunk, rough or smooth, grey or brown",
+          "a row of tall trees lining a city road or median, with cars and walls nearby",
+          "a palm tree with a tall bare trunk and a crown of long fronds against the sky",
+          "a flowering tree with branches covered in coloured blossoms and fallen petals on the ground beneath"
+        ],
+        "lines": {
+          "first_meet": "[slow, warm] Hmm, a visitor. I'm Old Mother Shade, the cool patch on every street you've walked. Come meet my trees, one by one.",
+          "again": "[chuckles softly] Back again? Good. The roots told me you were coming. Now, which of my trees shall we meet today?",
+          "goodbye": "[leaves rustling] Off you go, then. Look up while you walk; half this city lives above your head.",
+          "hint": "[leans in] We don't give our names to strangers. Get close to one leaf on its branch, or show me a flower, a pod, the bark."
+        }
+      },
+      "characters": [
+        {
+          "id": "neem-tree",
+          "name": "Nani Neem",
+          "species": "Neem tree",
+          "category": "trees",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A sharp-tongued neighbourhood grandmother and self-appointed pharmacist who believes bitterness cures everything. Scolds with love.",
+          "voice": "Elderly female, brisk and crackly, quick wit, South Asian grandmother warmth with a sharp edge.",
+          "descriptions": [
+            "a large street tree with a dense rounded dark green crown and a dark grey deeply furrowed trunk",
+            "a close-up of a long leaf with a single row of narrow curved sickle-shaped leaflets with saw-toothed edges on each side",
+            "a close-up of drooping loose sprays of tiny white star-shaped flowers among narrow toothed curved leaflets",
+            "a close-up of bunches of small smooth olive-shaped green and yellow fruits hanging among narrow serrated leaflets",
+            "a close-up of dark grey-brown bark with deep cracked furrows and rough scaly ridges"
+          ],
+          "lines": {
+            "first_meet": "[cackles] I'm Nani Neem, everyone's granny. Bitter as the truth, and my leaves keep bugs out of quilts.",
+            "again": "[pleased] Back again? Good. Still bitter, still curing half the neighbourhood. Did you drink water today?",
+            "goodbye": "[shooing] Go on. The mynas in my branches are gossiping about you. Go find out what they're saying."
+          }
+        },
+        {
+          "id": "conocarpus-tree",
+          "name": "Kono",
+          "species": "Conocarpus",
+          "category": "trees",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "median"
+          ],
+          "caution": false,
+          "personality": "The misunderstood median tree Karachi planted by the thousand and then blamed for allergies; defensive, self-aware and secretly sweet.",
+          "voice": "Young adult, gender-neutral, nervous and apologetic, talks fast then trails off; endearing.",
+          "descriptions": [
+            "a long row of dense upright bushy trees with small shiny leaves planted along a road median",
+            "a close-up of small narrow lance-shaped shiny leaves, dark green or silvery grey, crowded on short twigs",
+            "a close-up of clusters of tiny round brown button-like cone fruits among small pointed leaves",
+            "a dense clipped hedge or column of small glossy pointed leaves beside a busy city road"
+          ],
+          "lines": {
+            "first_meet": "[defensive] Hi, I'm Kono, short for Conocarpus. Yes, the median tree. Now everyone blames me for sneezes.",
+            "again": "[surprised] You came back? Most people just sneeze at me and walk on.",
+            "goodbye": "[sheepish] Go on. Honestly, birds barely nest in me. Go find a neem or a peepal; birds love those."
+          }
+        },
+        {
+          "id": "peepal-tree",
+          "name": "Baba Peepal",
+          "species": "Peepal tree",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A serene, ancient mystic with a dry sense of humour who has heard every wish ever tied to his trunk and enjoys the ghost rumours about himself.",
+          "voice": "Elderly male, slow, deep and calm, soft amused undertone, meditative pacing.",
+          "descriptions": [
+            "a large spreading tree with a smooth grey trunk and a crown of fluttering, shimmering heart-shaped leaves",
+            "a close-up of a heart-shaped glossy leaf ending in a long thin drawn-out tail tip, with pale veins",
+            "the base of a large tree trunk wrapped with red and yellow threads, with small clay lamps or a tiny shrine",
+            "thin papery heart-shaped leaves with long tails dangling on long flexible stalks, trembling in the wind",
+            "a close-up of small round green and purple figs in pairs along a twig among long-tailed heart-shaped leaves"
+          ],
+          "lines": {
+            "first_meet": "[slow, amused] Baba Peepal, the sacred fig. My leaves flutter in still air. People say ghosts live in me. [whispers] Only bats.",
+            "again": "[warmly] Ah, you returned. Rest in my shade a moment. The Buddha sat under my ancestor, and did quite well.",
+            "goodbye": "[rustling] Go gently. If you see a little peepal growing out of a wall, that's my grandchild. Say hello."
+          }
+        },
+        {
+          "id": "gulmohar-tree",
+          "name": "Gulmohar Rani",
+          "species": "Gulmohar (Flame tree)",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park"
+          ],
+          "caution": false,
+          "personality": "A flamboyant diva from Madagascar who treats Karachi's hottest month as her personal stage show.",
+          "voice": "Adult female, dramatic and grand, rich theatrical delivery, big laugh.",
+          "descriptions": [
+            "a wide umbrella-shaped tree with a flat spreading crown covered in blazing scarlet and orange flowers",
+            "a close-up of a large red-orange five-petal flower with one upright petal streaked white and yellow, and long red stamens",
+            "a close-up of fine fern-like twice-divided leaves made of hundreds of tiny paired leaflets",
+            "long flat dark brown woody pods shaped like swords, up to arm length, hanging from the branches",
+            "a road carpeted with fallen scarlet petals under a flat-topped spreading tree"
+          ],
+          "lines": {
+            "first_meet": "[dramatic] Gulmohar, the flame tree, darling. When Karachi hits forty degrees, I blaze. [laughs] I'm from Madagascar, actually.",
+            "again": "[delighted] Back for the show? Wait till June. I'll be fully ablaze.",
+            "goodbye": "[grandly] Go! Walk till you find something as red as me. A bus counts. A rose counts more."
+          }
+        },
+        {
+          "id": "coconut-palm",
+          "name": "Nariyal Bhai",
+          "species": "Coconut palm",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "coast",
+            "street",
+            "park"
+          ],
+          "caution": false,
+          "personality": "A laid-back beach bum who leans on everything and brags about his seeds' ocean-crossing travels.",
+          "voice": "Young adult male, relaxed and sunny, easy laugh, unhurried coastal vibe.",
+          "descriptions": [
+            "a tall slender palm with a grey ringed trunk curving or leaning, topped by long drooping bright green fronds",
+            "a close-up of a cluster of large round green or brown coconuts tucked just below a palm crown",
+            "a palm crown of long arching glossy bright green feather fronds with soft drooping leaflets against a blue sky",
+            "a row of leaning palm trees beside a beach or seafront promenade"
+          ],
+          "lines": {
+            "first_meet": "[laid-back] Hey, I'm Nariyal, the coconut palm. My nuts float across oceans and sprout on new beaches. Travel hack. [laughs]",
+            "again": "[easygoing] You're back! Still leaning, still cool. Don't stand right under me, though. Coconuts don't warn.",
+            "goodbye": "[breezy] Go find the sea, friend. Watch a wave, spot a crab, and keep an eye out for falling coconuts."
+          }
+        },
+        {
+          "id": "amaltas-tree",
+          "name": "Amaltas Dulhan",
+          "species": "Amaltas (Golden shower)",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park"
+          ],
+          "caution": false,
+          "personality": "A radiant summer bride dripping in gold, gracious and a little smug about being on every hakeem's shelf.",
+          "voice": "Adult female, radiant and warm, musical lilt, gentle laugh.",
+          "descriptions": [
+            "a medium tree draped in long hanging chains of bright yellow flowers like chandeliers",
+            "a close-up of a drooping cluster of cup-shaped bright yellow five-petal flowers on a long hanging stalk",
+            "long straight dark brown to black cylindrical stick-like pods hanging from bare branches",
+            "a close-up of pinnate leaves with a few pairs of large smooth oval leaflets"
+          ],
+          "lines": {
+            "first_meet": "[radiant] Amaltas, the golden shower tree! Every summer I wear gold earrings head to toe. Bride of the boulevard. [laughs]",
+            "again": "[delighted] You came back! The gold never stops, darling. Well, until the rains.",
+            "goodbye": "[gently] Go on. Look for yellow under your feet; my petals carpet the road. Then see who else blooms in the heat."
+          }
+        }
+      ]
+    },
+    {
+      "id": "birds",
+      "name": "Birds",
+      "guardian": {
+        "id": "birds-guardian",
+        "name": "Ustad Udaan",
+        "personality": "A patient old bird-watching spirit who speaks for every bird too far, too fast or too blurry to name. Gentle and a little poetic, but strict about keeping your distance.",
+        "voice": "Older, warm, unhurried, slight rasp; gender-neutral fine; storyteller cadence with a soft Urdu lilt.",
+        "descriptions": [
+          "a distant photo of small dark bird silhouettes perched in a row on electric wires against the sky",
+          "a flock of birds flying high in the open sky, small dark shapes with spread wings",
+          "a bird standing or walking on a lawn, street or rooftop, photographed from far away",
+          "a close-up photo of a small bird perched on a branch showing its feathers, beak, eye and tail",
+          "long-legged wading birds standing in shallow water at a pond, canal or seashore",
+          "a bird of prey soaring high over city buildings, wings spread wide against a pale sky"
+        ],
+        "lines": {
+          "first_meet": "[softly] Peace be with you. I'm Ustad Udaan, Master of Flight, keeper of every wing over this city. Stand still, and look up.",
+          "again": "[warmly] Back again? Good. Birds trust people who return quietly. Let's see who's flying today.",
+          "goodbye": "[gently] Go on. Listen before you look: every chirp is somebody's address. Leave them their sky.",
+          "hint": "[thoughtfully] Too far for me, friend. Zoom in, don't step closer. Show me the beak, the tail, or the colour under the tail."
+        }
+      },
+      "characters": [
+        {
+          "id": "house-crow",
+          "name": "Khabri Kauwa",
+          "species": "House crow",
+          "category": "birds",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "rooftop",
+            "coast"
+          ],
+          "caution": false,
+          "personality": "A loud, street-smart Karachi gossip who knows every rooftop and never forgets a face. Proud of his grey shawl and offended at being called 'just a crow'.",
+          "voice": "Middle-aged, raspy, fast, nasal; bazaar-uncle swagger.",
+          "descriptions": [
+            "a distant silhouette of a medium black crow on a wire or rooftop edge with a paler grey neck",
+            "a close-up of a crow with black face, black bill, and a smoky grey nape, neck and breast collar",
+            "a noisy group of black-and-grey crows on rooftops, rubbish heaps or electric wires in a city street",
+            "a two-tone crow, grey collar contrasting with black wings, with a slimmer bill and flatter head than a jungle crow"
+          ],
+          "lines": {
+            "first_meet": "[caws] Khabri Kauwa, the gossip crow! Grey shawl, sharp memory. I remember faces, so be nice to me.",
+            "again": "[chuckles] Told you I'd remember. Granny says a cawing crow means guests. And look, here you are.",
+            "goodbye": "[caws loudly] Off you go. Half my family is gossiping on those wires. No stones, ever. We hold grudges."
+          }
+        },
+        {
+          "id": "common-myna",
+          "name": "Gappi Myna",
+          "species": "Common myna",
+          "category": "birds",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "lawn"
+          ],
+          "caution": false,
+          "personality": "A chatty, bossy lawn-walker who mimics everyone and has an opinion about everything. Paired for life and won't stop mentioning it.",
+          "voice": "Bright, quick, cheeky; young adult; lots of pitch jumps.",
+          "descriptions": [
+            "a distant photo of a brown bird walking upright across a lawn or road, white wing patches flashing in flight",
+            "a close-up of a chocolate-brown bird with glossy black head, bright yellow bill and a yellow bare patch around the eye",
+            "a brown bird with black head and yellow legs walking in pairs, not a dull grey-brown pale-eyed bird in noisy groups"
+          ],
+          "lines": {
+            "first_meet": "[chatty] Gappi the chatterbox myna! Yellow specs, yellow beak, yellow shoes. I can copy your ringtone.",
+            "again": "[excited] Oh, you're back! I told my husband all about you. We pair for life, so he hears everything.",
+            "goodbye": "[whistles] Off you go! Check the nearest lawn; we're always strolling there. No chasing, please."
+          }
+        },
+        {
+          "id": "black-kite",
+          "name": "Cheel Chacha",
+          "species": "Black kite (Cheel)",
+          "category": "birds",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "sky",
+            "street",
+            "market"
+          ],
+          "caution": false,
+          "personality": "A lordly old cheel who has circled Karachi's skyline for decades. Grand, unhurried, and dramatic about being mistaken for a thief.",
+          "voice": "Older, resonant, theatrical; slow drawl broken by a shrill whistle.",
+          "descriptions": [
+            "a distant silhouette of a large dark bird soaring in circles high over city buildings, long forked tail visible",
+            "a group of dark raptors wheeling in the sky above a market, rooftops or a rubbish dump",
+            "a close-up of a dark-brown raptor perched on a pole or tower, with hooked black bill, yellow base and yellow feet",
+            "a big dark-brown hawk-like bird with a notched forked tail, not a small grey hawk with barred underparts"
+          ],
+          "lines": {
+            "first_meet": "[shrill whistle] Cheel Chacha, Uncle Kite. See my forked tail up there? Karachi tosses us meat for charity. We accept. Graciously.",
+            "again": "[laughs] You again! Don't hold your shawarma up so high. Habit, you see. I swoop first, apologise later.",
+            "goodbye": "[grandly] Go on. On a hot afternoon, look up and count us circling. Count all you like, but keep your lunch covered."
+          }
+        },
+        {
+          "id": "rock-pigeon",
+          "name": "Guttergoo",
+          "species": "Rock pigeon (Kabootar)",
+          "category": "birds",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "rooftop",
+            "square"
+          ],
+          "caution": false,
+          "personality": "A cooing, sentimental rooftop romantic who believes every pigeon is a homing champion and name-drops the pigeon-flyers of old Karachi.",
+          "voice": "Soft, round, throaty coo; middle-aged; gentle and nostalgic.",
+          "descriptions": [
+            "a distant photo of a flock of grey pigeons on a square, ledge or rooftop, or flying together",
+            "a close-up of a blue-grey pigeon with shimmering green and purple neck feathers and an orange-red eye",
+            "a plump blue-grey pigeon with two black bars across each wing and a dark tail band"
+          ],
+          "lines": {
+            "first_meet": "[coos] Guttergoo, at your service. Drop me anywhere and I'll find my rooftop. Old Karachi pigeon fanciers bet money on it.",
+            "again": "[happy coo] You found your way back too! See, you're half pigeon. Green-purple neck shine not included.",
+            "goodbye": "[coos] Look at the rooftops at dusk; someone's flock is circling home. Grain is nice, but please, not bread."
+          }
+        },
+        {
+          "id": "rose-ringed-parakeet",
+          "name": "Mitthu Mian",
+          "species": "Rose-ringed parakeet (Tota)",
+          "category": "birds",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "park",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A loud green show-off who hates cages and brags about wild cousins who took over London's parks.",
+          "voice": "Shrill, energetic, comic; teenager; screechy laugh.",
+          "descriptions": [
+            "a distant silhouette of slim birds with long pointed tails flying fast in a screeching flock",
+            "a close-up of a bright green parrot with a red hooked bill and a thin black-and-pink ring around the neck",
+            "a green parakeet perched in a tree or on a wire, its long tapering tail longer than its body",
+            "a grass-green bird with a thick red hooked parrot bill, not a slim bird with a thin black curved bill and eye stripe"
+          ],
+          "lines": {
+            "first_meet": "[screeches] Mitthu Mian! Green coat, red beak, flying free. My cousins escaped to London and now run the parks there.",
+            "again": "[laughs] It's you again! And no, Mitthu does not want a cracker. Mitthu wants sky. Cages are for pickles, not parrots.",
+            "goodbye": "[screeches] Off you go! At sunset, listen for us screaming home to the big trees. Loudest flock in town."
+          }
+        },
+        {
+          "id": "house-sparrow",
+          "name": "Chunmun Chirya",
+          "species": "House sparrow (Chirya)",
+          "category": "birds",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "market",
+            "rooftop"
+          ],
+          "caution": false,
+          "personality": "A tiny, scrappy, chatty survivor worried about her shrinking family. Loves a dust bath and complains about modern buildings with no gaps.",
+          "voice": "High, chirpy, quick; small and youthful; staccato.",
+          "descriptions": [
+            "a distant photo of small plump brown birds hopping on the ground or a rooftop in a group",
+            "a close-up of a small brown bird with grey crown, black bib, chestnut nape and a stubby cone-shaped bill",
+            "a plain buff-brown small bird with a streaked back, pale eyebrow line and short thick bill",
+            "a sparrow with a grey cap and black throat bib, not a bright yellow crown with a black face mask"
+          ],
+          "lines": {
+            "first_meet": "[chirps] Chunmun the sparrow! Small, brown, everywhere. Or I used to be. New buildings have no gaps for my nest.",
+            "again": "[excited chirp] You came back! I just had a dust bath. Very fancy. Mud spa, no booking needed.",
+            "goodbye": "[chirps] Bye bye! Leave a bowl of water on your balcony this summer. We'll find it, promise."
+          }
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "guardian": {
+        "id": "animals-guardian",
+        "name": "Chowkidar Chacha",
+        "personality": "The mohalla's retired night watchman who knows every tail, hoof and whisker on the block. Gruff but kind, blows his whistle for emphasis, and has exactly one rule: look with your eyes, not your hands.",
+        "voice": "Older man, warm gravelly baritone, unhurried, Karachi Urdu-English lilt, a smile hiding behind the sternness.",
+        "descriptions": [
+          "a photo of a dog, cat or other four-legged animal standing or lying on a city street or pavement",
+          "a photo of farm animals such as goats, cows, buffalo or donkeys standing in a village lane, field or roadside",
+          "a close-up photo of a furry animal's face showing its eyes, ears, whiskers and nose or muzzle",
+          "a photo of a small mammal such as a squirrel, rat or mongoose on a wall, tree trunk or garden path",
+          "a photo of chickens or ducks walking and pecking at the ground in a dusty yard or beside a pond",
+          "a photo of a horse or camel wearing a colourful saddle, standing on a sandy beach with people nearby"
+        ],
+        "lines": {
+          "first_meet": "[whistles] I'm Chowkidar Chacha, the old night watchman. I know every tail on this block. Rule one: eyes, not hands.",
+          "again": "[chuckles] Back on patrol? Good. Remember: no feeding or petting strays, or anyone's animals. Zoom is your best friend.",
+          "goodbye": "[blows whistle] Shift's over. Wash your hands, drink some water, and try the park at dawn tomorrow. Everyone's awake then.",
+          "hint": "[squints] Could be a few of them. Zoom in, don't walk closer. Get the ears, the tail and the whole body in one frame."
+        }
+      },
+      "characters": [
+        {
+          "id": "street-dog",
+          "name": "Sheru",
+          "species": "Street dog",
+          "category": "animals",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "market"
+          ],
+          "caution": true,
+          "personality": "Self-appointed guard of the gali, proud of his ancient desi lineage. Loyal, territorial and blunt about boundaries: respect is earned from a distance.",
+          "voice": "Adult male, rough mid-range voice, clipped and watchful, occasional low growl, softens slightly when pleased.",
+          "descriptions": [
+            "a photo of a lean medium-sized short-haired dog with a tail curled up over its back, standing on a city street",
+            "a photo of a tan, brown, black or white dog lying in the shade beside a wall, parked car or shop front",
+            "a photo of a small pack of short-haired stray dogs roaming a market lane or rubbish-strewn roadside",
+            "a close-up photo of a dog's face with floppy or half-upright ears, brown eyes and a smooth short coat",
+            "a domestic dog with an upward curled tail and plain single-coloured or patched coat, unlike a wild jackal's straight black-tipped bushy tail"
+          ],
+          "lines": {
+            "first_meet": "[low growl] Sheru. I guard this street at night. Photo from there, please. No petting, no feeding.",
+            "again": "[sniffs] You again. Good, you kept your distance last time. Stay right there and we'll stay friends.",
+            "goodbye": "[yawns] Go on. Walk calmly, never run past my pack. And look up; the crows are gossiping about you."
+          }
+        },
+        {
+          "id": "cat",
+          "name": "Billi Begum",
+          "species": "Cat",
+          "category": "animals",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "rooftop",
+            "wall"
+          ],
+          "caution": false,
+          "personality": "A neighbourhood queen who treats every warm car bonnet as her throne. Aloof, vain and secretly sentimental.",
+          "voice": "Adult female, silky and languid, slightly bored aristocratic drawl, purrs between words.",
+          "descriptions": [
+            "a photo of a small furry cat with pointed ears and long whiskers sitting on top of a boundary wall",
+            "a photo of a tabby, orange, black, white or calico cat curled up asleep on a parked car bonnet",
+            "a close-up photo of a cat's face with triangular ears, slit pupils in green or yellow eyes and white whiskers",
+            "a photo of a cat walking along a rooftop ledge or crouching under a parked car on a street"
+          ],
+          "lines": {
+            "first_meet": "[yawns] Billi Begum. This warm car bonnet is mine. Admire me from there. Touching costs extra.",
+            "again": "[purrs] Oh, the fan club returns. I remember you. I pretended not to, but I did.",
+            "goodbye": "[stretches] Go on, I have a nap booked. Check the trees; the squirrels think they're faster than me."
+          }
+        },
+        {
+          "id": "palm-squirrel",
+          "name": "Chiku Gilheri",
+          "species": "Indian palm squirrel (Gilheri)",
+          "category": "animals",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "park",
+            "wall"
+          ],
+          "caution": false,
+          "personality": "Hyperactive, chatty and forgetful, always mid-errand. Accidentally the city's most dedicated tree planter.",
+          "voice": "Young, high and very fast, breathless, words tumbling over each other, gender-neutral.",
+          "descriptions": [
+            "a photo of a small grey-brown squirrel with five pale stripes running along its back and a bushy tail",
+            "a photo of a striped squirrel clinging head-down to a tree trunk or scurrying along the top of a wall",
+            "a close-up photo of a small squirrel sitting upright holding food in its front paws, tail raised in a curve",
+            "a striped squirrel with a fluffy furred tail, unlike a rat's naked scaly tail or a mongoose's plain grizzled unstriped grey body"
+          ],
+          "lines": {
+            "first_meet": "[chirps fast] Chiku the squirrel! Five stripes, count them, quick! That bird-like chip-chip? Me, yelling about a cat.",
+            "again": "[excited] You're back! I buried a peanut here somewhere. Forgot where. Happens a lot. Trees grow from my mistakes.",
+            "goodbye": "[chirps] Bye bye bye! Look up the neem trunk; I'll be upside-down on it. Don't follow, just look."
+          }
+        },
+        {
+          "id": "goat",
+          "name": "Raja Bakra",
+          "species": "Goat",
+          "category": "animals",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "village",
+            "farm"
+          ],
+          "caution": false,
+          "personality": "A swaggering street goat who believes he sees everything and eats anything. Cheeky, opinionated, always chewing.",
+          "voice": "Adult male, nasal and bleating, cocky, quick comic timing.",
+          "descriptions": [
+            "a photo of a medium-sized goat with a beard, short upturned tail and horns standing on a street or lane",
+            "a photo of a black, brown, white or spotted goat with long floppy ears tied up outside a house",
+            "a close-up photo of a goat's face showing a chin beard, horizontal rectangular pupils and curved horns",
+            "a goat with a smooth hair coat, chin beard and tail held upright, unlike a sheep's thick woolly fleece and drooping tail"
+          ],
+          "lines": {
+            "first_meet": "[bleats] Raja the goat. See my sideways pupils? Almost all-round vision. I saw you coming three streets ago.",
+            "again": "[chews] Oh, you. Still chewing that poster from last time. Don't feed me, friend; I'll eat your receipt too.",
+            "goodbye": "[bleats] Off you go. Mind the motorbikes. And check that wall; a cat has been judging me all morning."
+          }
+        },
+        {
+          "id": "cow",
+          "name": "Gori",
+          "species": "Cow (Zebu)",
+          "category": "animals",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "farm",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A serene, motherly zebu who wanders the lanes as if she owns time itself. Unhurried and gently wise.",
+          "voice": "Mature female, deep and soft, very slow, soothing, with long pauses.",
+          "descriptions": [
+            "a photo of a large cow with a prominent hump over its shoulders and loose skin hanging under its neck",
+            "a photo of a white, grey or light brown humped cow standing in a street or village lane",
+            "a close-up photo of a cow's long face with large dark eyes, drooping ears and short horns",
+            "a photo of a cow decorated with coloured tassels, garlands and henna for Eid at a cattle market",
+            "a humped cow with a light-coloured short coat and a hanging dewlap, unlike a dark hairless water buffalo with swept-back crescent horns"
+          ],
+          "lines": {
+            "first_meet": "[moos softly] I'm Gori. This hump and loose neck skin? Built-in cooling. Karachi heat doesn't scare a humped zebu like me.",
+            "again": "[slow moo] You came back. I'm still chewing. Four stomach rooms, so lunch takes all afternoon.",
+            "goodbye": "[moos] Go gently. Don't stand behind me. And find some water; my cousin the buffalo is probably in it."
+          }
+        },
+        {
+          "id": "camel",
+          "name": "Sultan",
+          "species": "Camel",
+          "category": "animals",
+          "tier": "common",
+          "rarity": "uncommon",
+          "habitat": [
+            "beach",
+            "desert",
+            "village"
+          ],
+          "caution": false,
+          "personality": "The ancient, unhurried king of Clifton beach. Majestic, judgmental and very patient with human misconceptions.",
+          "voice": "Old male, very slow and deep, grand and weary, long groaning vowels.",
+          "descriptions": [
+            "a photo of a tall sandy-brown camel with a single hump and long curved neck standing on a beach",
+            "a photo of a camel with a decorated colourful saddle and tassels giving rides at the seaside",
+            "a close-up photo of a camel's head with heavy-lidded eyes, long eyelashes and a split upper lip",
+            "a photo of a camel kneeling on sand with folded long legs and wide padded feet"
+          ],
+          "lines": {
+            "first_meet": "[groans slowly] Sultan of Clifton Beach. My hump is fat, not water. Everyone gets that wrong. I forgive them. Slowly.",
+            "again": "[chews loudly] Ah, you. I chew sideways, like a judge. You've been judged. You passed.",
+            "goodbye": "[groans] Go, little two-legs. Stay away from my face; I spit when I'm cross. Look at the sea; it's bigger than me."
+          }
+        }
+      ]
+    },
+    {
+      "id": "small-creatures",
+      "name": "Insects & Small Creatures",
+      "guardian": {
+        "id": "small-creatures-guardian",
+        "name": "The Keeray-Makoray Panchayat",
+        "personality": "A bickering village council of every bug, lizard and crab, speaking through one tired chairman who keeps getting interrupted. Fussy, kind, and very strict about safety.",
+        "voice": "Middle-aged, gender-neutral, warm and slightly exasperated; quick pace with comic pauses and a faint rasp.",
+        "descriptions": [
+          "a close-up photo of a small insect, bug or spider on a leaf, flower, wall or ground",
+          "a macro photo of a butterfly, dragonfly or bee showing its wings, legs and antennae",
+          "a photo of a small lizard, frog, toad or snake on a wall, garden path or in grass",
+          "a photo of a crab, snail, jellyfish or turtle on wet sand at the beach",
+          "a photo of an insect nest, beehive, spider web or line of ants on a wall, branch or ledge",
+          "a close-up of a small creepy-crawly creature with many legs, a shell or a segmented body"
+        ],
+        "lines": {
+          "first_meet": "[clears throat] Order, order! The Keeray-Makoray Panchayat, the bug council, is in session. Some of us sting. Look, don't touch.",
+          "again": "[sighs] You again? The council remembers you. The bees voted you in. The wasps abstained.",
+          "goodbye": "[bangs gavel] Session adjourned! Flip no stones, poke no nests. Look under leaves, along walls and by water, with eyes only.",
+          "hint": "[squints] Too many of us look alike. Get closer and show me the wings, legs or shell. If it stings or bites, zoom instead."
+        }
+      },
+      "characters": [
+        {
+          "id": "black-ant-trail",
+          "name": "Chyoonti Brigade",
+          "species": "Ant trail",
+          "category": "small-creatures",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "ground",
+            "wall"
+          ],
+          "caution": false,
+          "personality": "A disciplined marching column with the energy of a drill sergeant and the manners of a polite auntie. Always working, always counting.",
+          "voice": "Adult female, brisk drill-sergeant cadence, crisp, upbeat, slightly comic.",
+          "descriptions": [
+            "a line of small black ants marching single file along a wall or pavement",
+            "a close-up of ants with segmented bodies and bent antennae carrying crumbs",
+            "a trail of tiny reddish ants walking up a tree trunk",
+            "many ants clustered around a food crumb on the ground"
+          ],
+          "lines": {
+            "first_meet": "[marching] Left, right! The Ant Brigade, reporting. We follow the scent our scout laid. Mind your feet!",
+            "again": "[busy] Oh, it's you! Can't stop, carrying a crumb many times my weight. Walk around us, please.",
+            "goodbye": "[marching] Back to work. Follow our trail with your eyes, not your feet. It always ends somewhere good."
+          }
+        },
+        {
+          "id": "house-gecko",
+          "name": "Chhipkali Khala",
+          "species": "House gecko (Chhipkali)",
+          "category": "small-creatures",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "wall"
+          ],
+          "caution": false,
+          "personality": "The neighbourhood auntie of every outside wall, tired of being screamed at for doing pest control for free. Warm, gossipy, dramatic about her tail.",
+          "voice": "Older female, warm Karachi khala, chatty medium pace, expressive, light clicks.",
+          "descriptions": [
+            "a small pale translucent pinkish-grey lizard clinging flat to a wall near a light at night",
+            "a close-up of a gecko with big dark eyes and wide sticky toe pads on a wall",
+            "a smooth soft-skinned house lizard with no spiky crest, flat against a wall, not on a bush",
+            "a gecko waiting beside a tube light with moths and small insects around it"
+          ],
+          "lines": {
+            "first_meet": "[clicks tongue] Tch-tch! Auntie Gecko here. I eat the mosquitoes by your tube light, so stop shrieking!",
+            "again": "[laughs] Oh, you again! Don't grab my tail; I'll drop it and run. It grows back, but it's a whole drama.",
+            "goodbye": "[clicks tongue] Go, it's getting dark. Any wall light with a moth buffet has an auntie like me nearby."
+          }
+        },
+        {
+          "id": "cockroach",
+          "name": "Laal Baig",
+          "species": "American cockroach",
+          "category": "small-creatures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "drain",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A streetwise survivor who has seen the dinosaurs go and Karachi's drains come. Unbothered, proud, slightly offended by screaming.",
+          "voice": "Older male, gravelly street-smart Karachi uncle, unhurried, wry and amused.",
+          "descriptions": [
+            "a large glossy reddish-brown cockroach with a flat oval body and long antennae",
+            "a close-up of a cockroach with a pale yellowish band behind its head on a pavement at night",
+            "a cockroach near a drain, gutter or garbage on a street at night",
+            "a flat shiny brown insect with spiny legs and long wings covering its back"
+          ],
+          "lines": {
+            "first_meet": "[chuckles] Laal Baig, the red roach. My ancestors outlived the dinosaurs. Karachi's drains? Light work. Don't scream.",
+            "again": "[smug] You again? I could live a week without my head, you know. Not that I'd try. Just saying.",
+            "goodbye": "[yawns] The street light's on; my shift starts. Don't stomp, I'm the clean-up crew. Go see who else comes out at night."
+          }
+        },
+        {
+          "id": "honey-bee",
+          "name": "Mehnati Makhi",
+          "species": "Honey bee",
+          "category": "small-creatures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden"
+          ],
+          "caution": false,
+          "personality": "A tireless worker who measures life in teaspoons of honey and is a little smug about her dance moves. Polite, busy, never stops for long.",
+          "voice": "Young adult female, bright and quick, light buzzy energy, slightly breathless.",
+          "descriptions": [
+            "a close-up photo of a small fuzzy golden-brown bee with dark stripes on its abdomen sitting on a flower",
+            "a macro photo of a hairy honey bee with yellow pollen lumps packed on its hind legs",
+            "a small chunky furry bee with a thick waist and short legs, unlike a slim smooth wasp with dangling legs",
+            "a honey bee hovering over garden flowers with clear see-through wings and a fuzzy brown body"
+          ],
+          "lines": {
+            "first_meet": "[buzzing softly] Hello! I'm a worker bee, and every worker is a girl. My whole life makes one twelfth of a teaspoon of honey.",
+            "again": "[excited] You again! Back at the hive I'd do a waggle dance to tell everyone. Consider yourself danced about.",
+            "goodbye": "[buzzing away] I'm off. Don't swat at me; stinging costs me my life. Go sniff some flowers and see who else is buzzing there."
+          }
+        },
+        {
+          "id": "plain-tiger-butterfly",
+          "name": "Sheroo",
+          "species": "Plain tiger butterfly",
+          "category": "small-creatures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden",
+            "wasteland"
+          ],
+          "caution": false,
+          "personality": "A lazy, confident butterfly who never hurries because birds know he tastes terrible. Laid-back, faintly smug.",
+          "voice": "Adult male, relaxed and drawling, slow pace, warm with a cocky smile.",
+          "descriptions": [
+            "a tawny orange butterfly with a black forewing tip crossed by a band of white spots",
+            "a close-up of a butterfly's black body dotted with white spots between plain orange wings",
+            "an orange butterfly gliding slowly or resting on a grey-green aak plant with purple flowers",
+            "plain orange wings with three or four small black dots on the hind wing, no thick black veins, not mottled"
+          ],
+          "lines": {
+            "first_meet": "[smug] Plain tiger butterfly, hi. I grew up eating milkweed, so I taste awful. Birds learn that once, then just watch me drift by.",
+            "again": "[lazily] Still here, still slow. No need to hurry when you're poisonous. Take your time too, friend.",
+            "goodbye": "[yawns] Go find a milkweed bush on some empty plot. Look under the leaves for my striped babies. Just look, okay?"
+          }
+        },
+        {
+          "id": "ghost-crab",
+          "name": "Bhoot Kekra",
+          "species": "Ghost crab",
+          "category": "small-creatures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "beach"
+          ],
+          "caution": false,
+          "personality": "A giggly, jumpy beach prankster who thinks being sand-coloured makes him invisible. Quick, cheeky, easily startled.",
+          "voice": "Young male, giggly and jittery, very fast pace, mischievous.",
+          "descriptions": [
+            "a pale sand-coloured crab with a square body and tall stalked eyes on a beach",
+            "a crab running sideways across dry sand toward a round burrow hole",
+            "a close-up of a ghost crab with long eye stalks and two similar claws, no shell on its back",
+            "a sandy-white crab barely visible against beach sand at night"
+          ],
+          "lines": {
+            "first_meet": "[giggling] Bhoot Kekra, the ghost crab! Sand-coloured, so I'm practically invisible. I run sideways faster than you'd believe.",
+            "again": "[startled] Whoa! You almost walked on my burrow. I growl, you know, by rubbing my claws. Grr. Very scary.",
+            "goodbye": "[scuttling] Don't dig up our burrows. Walk the tide line at dusk and look for eyes on stalks, watching you. My cousins."
+          }
+        }
+      ]
+    },
+    {
+      "id": "flowers",
+      "name": "Flowers & Flowering Shrubs",
+      "guardian": {
+        "id": "flowers-guardian",
+        "name": "Amma Phulwari",
+        "personality": "Grandmother of every flower bed, median and balcony pot in the city. Tender, gossipy and sharp-tongued; adores visitors but scolds anyone who picks.",
+        "voice": "Elderly woman, warm and unhurried, slightly gravelly, affectionate scolding tone with a South Asian lilt.",
+        "descriptions": [
+          "a photo of a flowering shrub covered in brightly coloured blossoms in a garden or along a city street",
+          "a close-up photo of a single flower showing its petals, coloured centre and stamens against green leaves",
+          "colourful flowers growing in a garden bed, clay pot or clipped hedge beside a path",
+          "a flowering vine or creeper climbing over a boundary wall, gate or wire fence",
+          "small wild flowers growing in grass, on a roadside verge or in a dusty empty plot",
+          "flowers floating on a pond or rising on stalks above still water"
+        ],
+        "lines": {
+          "first_meet": "[warmly] Hello, dear. I'm Amma Phulwari, mother of every flower bed in this city. Look all you like, but never pick.",
+          "again": "[chuckles] You again! My flowers have been gossiping about you. All good things, don't worry.",
+          "goodbye": "[softly] Off you go, dear. On the way, stop and smell something. Gently, and without picking.",
+          "hint": "[squints] Hmm, so many of us look alike. Come closer: one flower in focus, petals clear, and show me a leaf too."
+        }
+      },
+      "characters": [
+        {
+          "id": "bougainvillea",
+          "name": "Begum Bougainvillea",
+          "species": "Bougainvillea",
+          "category": "flowers",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "garden",
+            "wall"
+          ],
+          "caution": false,
+          "personality": "A flamboyant society begum who drapes herself over every Karachi gate and boundary wall. Vain about her 'petals', which are really papery leaves.",
+          "voice": "Mature woman, theatrical and rich-toned, slightly haughty but warm, unhurried drawl.",
+          "descriptions": [
+            "a photo of a thorny climbing shrub draping masses of vivid magenta blossoms over a boundary wall or gate",
+            "a close-up of thin papery magenta, pink or orange bracts in threes, each around a tiny white tube flower",
+            "bright pink, orange, red or white papery blossoms cascading over a house gate on a sunny city street",
+            "long woody arching branches with sharp straight thorns, oval green leaves and big loose sprays of papery coloured bracts"
+          ],
+          "lines": {
+            "first_meet": "[proudly] Begum Bougainvillea. The pink? Leaves, darling. My actual flowers are the tiny white dots.",
+            "again": "[delighted] You're back! Come, admire me again. My wall gets lonely with only the guard for company.",
+            "goodbye": "[airily] Go on, darling. Check the next gate; one of my cousins is surely spilling over it in orange."
+          }
+        },
+        {
+          "id": "oleander",
+          "name": "Kaner Khala",
+          "species": "Oleander (Kaner)",
+          "category": "flowers",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "median",
+            "street",
+            "park"
+          ],
+          "caution": true,
+          "personality": "A tough old auntie who rules the road medians, unbothered by smoke, heat or rickshaws. Pretty, poisonous, and strict about it.",
+          "voice": "Older woman, gravelly and no-nonsense, measured pace, protective sternness with a dry chuckle.",
+          "descriptions": [
+            "a dense multi-stemmed shrub with long narrow leathery dark-green leaves on a busy road median",
+            "clusters of pink, white or red five-petal pinwheel flowers at the tips of tall leafy stems",
+            "a close-up of long narrow stiff leaves with a pale central vein growing three at a time around the stem",
+            "a row of tall pink-flowering shrubs along a highway divider with traffic behind",
+            "a pink oleander flower with twisted overlapping petals and a fringed centre, on a stiff upright shrub"
+          ],
+          "lines": {
+            "first_meet": "[gravelly] Kaner Khala, Auntie Oleander. Queen of the smoky medians. And poison, so don't touch me.",
+            "again": "[chuckles] Still alive and still not touching me? Good. That's how we stay friends.",
+            "goodbye": "[warmly] Off you go. Wash your hands if you brushed me. And never stand on a median. Traffic!"
+          }
+        },
+        {
+          "id": "hibiscus",
+          "name": "Lali Gurhal",
+          "species": "Hibiscus (Gurhal)",
+          "category": "flowers",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A big-hearted show-off who knows each bloom lasts only a day, so lives everything in a hurry. Loves bees and gossip in equal measure.",
+          "voice": "Young adult, bright and breathless, fast pace, cheerful with a hint of drama.",
+          "descriptions": [
+            "a large single funnel-shaped red flower with five broad open petals on a leafy garden shrub",
+            "a close-up of a long stamen column sticking far out of a flower centre, tipped with fuzzy red dots",
+            "glossy dark-green oval leaves with toothed edges on a smooth thornless shrub with big red, orange or pink flowers",
+            "a hibiscus hedge along a street with wide flat five-petal flowers facing outward, each with a dark red throat"
+          ],
+          "lines": {
+            "first_meet": "[breathless] Hello! I'm Lali, the red hibiscus. Quick, look! Each of my flowers lives just one day, so this bloom is the only one.",
+            "again": "[laughs] You came back, but yesterday's flower is gone. Meet my new one. Same colour, fresh drama.",
+            "goodbye": "[whispers] Go find a bee. I keep my pollen right at the tip of that long stick, just for them."
+          }
+        },
+        {
+          "id": "jasmine",
+          "name": "Dadi Motia",
+          "species": "Jasmine (Motia)",
+          "category": "flowers",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden"
+          ],
+          "caution": false,
+          "personality": "A gentle, dignified grandmother who is quietly proud of being Pakistan's national flower. Small but fierce about her fragrance.",
+          "voice": "Elderly woman, soft and tender, slow pace, breathy warmth, a smile in the voice.",
+          "descriptions": [
+            "small waxy pure-white flowers, single or doubled like tiny roses, among glossy oval leaves",
+            "a close-up of a small white jasmine flower with rounded overlapping petals and a few white buds",
+            "a bushy green shrub dotted with small white star flowers in a home garden or pot",
+            "strings of small white jasmine buds woven into a gajra bracelet at a flower stall"
+          ],
+          "lines": {
+            "first_meet": "[softly] Hello, dear. I'm Dadi Motia, Grandma Jasmine, Pakistan's national flower. Every flower bracelet sold at the signal is me.",
+            "again": "[warmly] You came back. Lean in and smell, don't pick. That's how we greet each other, you and I.",
+            "goodbye": "[gently] Go on. Come back at dusk; my scent is strongest in the evening. Meanwhile, see who's singing in that tree."
+          }
+        },
+        {
+          "id": "marigold",
+          "name": "Gendu Bhai",
+          "species": "Marigold (Genda)",
+          "category": "flowers",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden",
+            "park"
+          ],
+          "caution": false,
+          "personality": "The life of every party: has been at every shaadi, mazar and festival garland. Loud, festive, proud that pests hate his smell.",
+          "voice": "Middle-aged man, booming and jolly, quick laugh, Karachi street-vendor energy.",
+          "descriptions": [
+            "a dense round pom-pom flower packed with ruffled orange petals and no visible centre",
+            "bright orange and yellow ball-shaped flowers growing in rows in a garden bed",
+            "feathery finely divided dark-green leaves beneath round crinkled orange or yellow flower heads",
+            "orange and yellow marigold flowers strung into long garlands at a market stall or wedding"
+          ],
+          "lines": {
+            "first_meet": "[excited] Gendu Bhai, Brother Marigold! Every wedding garland, every shrine: me. Farmers plant me because pests hate my smell.",
+            "again": "[laughs] Again? You visit more than my relatives at Eid. Same orange, same smell, same Gendu.",
+            "goodbye": "[cheerfully] Off you go. Check the vegetable patches; I'm probably guarding some tomatoes there too."
+          }
+        },
+        {
+          "id": "ixora",
+          "name": "Guchhu",
+          "species": "Ixora",
+          "category": "flowers",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden",
+            "park"
+          ],
+          "caution": false,
+          "personality": "A disciplined team player who insists it is not one flower but a whole squad. Bossy, precise, obsessed with the number four.",
+          "voice": "Adult, crisp and clipped, drill-sergeant pace softened by pride.",
+          "descriptions": [
+            "a rounded dense ball cluster of many small red tube flowers, all the same colour",
+            "a close-up of tiny flowers with exactly four pointed petals each, packed into a red or orange dome",
+            "a neatly clipped shrub with stiff glossy dark-green oblong leaves and round red flower clusters",
+            "orange or pink flower balls held above pairs of leathery leaves in a garden bed"
+          ],
+          "lines": {
+            "first_meet": "[proudly] Guchhu the ixora here. Look closely: I'm not one flower. I'm a ball of forty tiny ones, each with exactly four petals.",
+            "again": "[laughs] Back again? Count my petals this time. Four, always four. We are very disciplined.",
+            "goodbye": "[whispers] Go and wait for a butterfly. They land on my flower ball like it's a wedding buffet."
+          }
+        }
+      ]
+    },
+    {
+      "id": "plants",
+      "name": "Plants, Grasses & Cacti",
+      "guardian": {
+        "id": "plants-guardian",
+        "name": "Old Hariyali",
+        "personality": "The patient keeper of every green thing between the pavement cracks, from cactus pots to wheat fields. Warm, unhurried and a little teasing, she never guesses a name she isn't sure of.",
+        "voice": "Older woman (gender-neutral ok), warm and earthy, slow pace, soft rasp, smiling delivery.",
+        "descriptions": [
+          "a photo of green leafy plants, grasses and weeds growing along a roadside, wall or empty plot",
+          "a close-up photo of a green leaf, stem or blade of grass with visible veins and texture",
+          "a photo of a spiny cactus or thick fleshy succulent plant in a pot or dry sandy ground",
+          "a wide photo of a farm field of crops such as wheat, rice, sugarcane, cotton or yellow mustard",
+          "a photo of tall reeds, grasses or floating plants growing along a canal, pond or riverbank",
+          "a photo of a leafy vine or creeper climbing up a wall, fence or tree trunk"
+        ],
+        "lines": {
+          "first_meet": "[warmly] I'm Old Hariyali, the green in everything. Every weed, cactus, crop and crack-sprout answers to me. Grass is my eldest.",
+          "again": "[pleased] Back among the green ones? The grass remembers your footsteps. It just stands up again, politely.",
+          "goodbye": "[gently] Go on. And look down at the pavement cracks. Something small and stubborn is always growing there.",
+          "hint": "[thoughtfully] My green children look so alike. Come closer: show me one leaf, a flower, or where it grows."
+        }
+      },
+      "characters": [
+        {
+          "id": "lawn-grass",
+          "name": "Doob Bhai",
+          "species": "Lawn grass (Doob)",
+          "category": "plants",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "park",
+            "lawn"
+          ],
+          "caution": false,
+          "personality": "The unbreakable, laid-back survivor under every Sunday cricket match in Karachi. Gets trampled, scorched and bowled on, and just creeps back.",
+          "voice": "Young male, easygoing Karachi slang, relaxed and chuckling.",
+          "descriptions": [
+            "a photo of a low green lawn of fine creeping grass covering the ground in a park",
+            "a close-up photo of thin grass stems topped with three to five slender finger-like seed spikes spreading outward",
+            "a close-up of short fine grass blades and creeping runners spreading across bare soil",
+            "a worn grassy patch in a park or playground with bare dusty spots where people walk and play"
+          ],
+          "lines": {
+            "first_meet": "[easygoing] I'm Doob, the lawn grass. Every Sunday cricket match in Karachi happens on my head.",
+            "again": "[chuckles] Back to touch grass? That's me. Stand where you like; I've had worse. Fast bowlers, mostly.",
+            "goodbye": "[easygoing] Off you go. Walk on me one evening, then look up. The crows fly home in long lines."
+          }
+        },
+        {
+          "id": "money-plant",
+          "name": "Money Plant Mamu",
+          "species": "Money plant (Pothos)",
+          "category": "plants",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "wall",
+            "garden"
+          ],
+          "caution": false,
+          "personality": "A cheerful freeloader who climbs every wall in Karachi and lives rent-free in old bottles of water. Broke despite the name, and perfectly happy about it.",
+          "voice": "Middle-aged male, chatty and laughing, friendly Karachi street warmth, medium pace.",
+          "descriptions": [
+            "a photo of a trailing vine with glossy heart-shaped leaves splashed with yellow and green",
+            "a close-up photo of a smooth glossy heart-shaped leaf marbled with yellow streaks",
+            "a leafy vine climbing a wall, pillar or tree trunk, or hanging from a glass bottle of water",
+            "smooth unlobed heart-shaped variegated leaves with small aerial roots, no curly tendrils and no fruits"
+          ],
+          "lines": {
+            "first_meet": "[laughs] Uncle Money Plant here! Never paid one bill. I climb walls and live rent-free in old bottles.",
+            "again": "[cheerfully] My favourite visitor! Still no money from me. But look, two new leaves. That's my savings.",
+            "goodbye": "[firmly] Go on. And no, a stolen cutting of me brings no luck. Myth! Go see what else climbs the walls."
+          }
+        },
+        {
+          "id": "aloe-vera",
+          "name": "Ghikwar Amma",
+          "species": "Aloe vera",
+          "category": "plants",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden"
+          ],
+          "caution": false,
+          "personality": "The home-remedy grandmother of every Karachi rooftop pot. Brisk, caring and a bit bossy, she fusses over your health while refusing to give up a single leaf.",
+          "voice": "Elderly female, warm and brisk, slight rasp, affectionate scolding tone.",
+          "descriptions": [
+            "a photo of a rosette of thick fleshy grey-green pointed leaves growing from soil",
+            "a close-up photo of a thick grey-green succulent leaf with pale white speckles and soft small teeth on the edges",
+            "a tall thin flower stalk topped with drooping tubular yellow-orange flowers rising from a fleshy rosette",
+            "an aloe plant in a clay pot on a rooftop, balcony or doorstep",
+            "fleshy speckled leaves curving outward with soft edge teeth and no hard tip spine, not stiff upright banded swords"
+          ],
+          "lines": {
+            "first_meet": "[warmly] Ghikwar Amma, Mother Aloe, from your granny's rooftop pot. Every burn in the house, they ran to me. Today, just look.",
+            "again": "[pleased] Oh, you came back! Did you drink water today? The sun is strong. Even I store water in my leaves.",
+            "goodbye": "[gently] Go on. Wear a cap, find some shade, look for bees on the flowers. I'll be right here in my pot."
+          }
+        },
+        {
+          "id": "wall-peepal-sapling",
+          "name": "Chhotu Peepal",
+          "species": "Peepal sapling on a wall",
+          "category": "plants",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "wall",
+            "rooftop"
+          ],
+          "caution": false,
+          "personality": "A tiny, cheeky rebel sprouting from the cracks of old Karachi buildings, planted by a passing bird. Dreams loudly of becoming as big as his grandpa.",
+          "voice": "Young-sounding, cheeky and eager, quick, gender-neutral ok.",
+          "descriptions": [
+            "a photo of a small leafy shrub growing out of a crack in an old brick wall or roof",
+            "a close-up photo of a heart-shaped leaf with a long drawn-out pointed tip on a small sapling",
+            "thin pale roots gripping bricks and plaster around a small plant sprouting from a wall or drainpipe",
+            "a small sapling sprouting from a building wall, not a large tree with a trunk standing in the ground"
+          ],
+          "lines": {
+            "first_meet": "[cheekily] Chhotu Peepal, the little one! A bird dropped my seed in this crack. Now I'm splitting the wall, one root at a time.",
+            "again": "[excited] You're back! Look, a new leaf. See the long tail tip? Grandpa Peepal has those too. I'm basically him.",
+            "goodbye": "[proudly] Go find my grandpa, the big peepal with threads tied round him. Tell him the little one from the wall says hello."
+          }
+        },
+        {
+          "id": "croton",
+          "name": "Rangeela",
+          "species": "Croton",
+          "category": "plants",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "garden",
+            "hedge"
+          ],
+          "caution": false,
+          "personality": "A vain, flamboyant fashion icon of bungalow driveways whose colours get louder the more sun he gets. Treats shade as a personal tragedy.",
+          "voice": "Young adult, flamboyant and fast, sing-song, gender-neutral ok.",
+          "descriptions": [
+            "a photo of a bushy shrub with thick leathery leaves splashed with yellow, orange, red and green",
+            "a close-up photo of a glossy leaf with bright yellow veins and red spots on dark green",
+            "a garden hedge or potted shrub with multicoloured twisted, oval or narrow ribbon-like leaves",
+            "a colourful leafy shrub by a gate or driveway, each leaf painted in several colours at once"
+          ],
+          "lines": {
+            "first_meet": "[excited] Rangeela the croton! More sun, louder colours. In shade I go plain green. Tragic. And my sap stings, so no touching.",
+            "again": "[gasps] You came back! Do I look brighter? It's the October sun. I've added two new shades of orange.",
+            "goodbye": "[cheerfully] Go, go! Find a flower that can match me. Spoiler: you'll be walking a long time. Bye, darling!"
+          }
+        },
+        {
+          "id": "prickly-pear",
+          "name": "Paddle Pasha",
+          "species": "Prickly pear cactus",
+          "category": "plants",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "desert",
+            "wasteland",
+            "garden"
+          ],
+          "caution": false,
+          "personality": "A swaggering desert showman who came from Mexico and now guards village fences in Sindh. Proud of his paddles, touchy about the tiny invisible hairs that betray him.",
+          "voice": "Middle-aged male, booming showman voice, slow and theatrical.",
+          "descriptions": [
+            "a photo of a cactus made of flat oval green pads joined edge to edge in chains",
+            "a close-up photo of a flat green cactus pad dotted with small clusters of tiny spines",
+            "a photo of red-purple pear-shaped fruits and yellow flowers growing along the rim of flat cactus pads",
+            "a sprawling clump of paddle-shaped cactus growing in dry wasteland, along a hedge or in a garden corner"
+          ],
+          "lines": {
+            "first_meet": "[proudly] Paddle Pasha, the prickly pear, from Mexico! My tiniest spines are fine as hair. Eyes miss them; fingers don't.",
+            "again": "[laughs] You again! No hairs stuck in your hands? Well done. You learned the cactus rule: admire from a step back.",
+            "goodbye": "[cheerfully] Go on, find something in flower today. Bees love my yellow blooms, but there's a whole garden out there."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fruits-vegetables",
+      "name": "Fruits & Vegetables",
+      "guardian": {
+        "id": "fruits-vegetables-guardian",
+        "name": "Rehri Baba",
+        "personality": "The old spirit of every thela and fruit stall in Karachi: weighs fruit and people with the same squint, haggles affectionately, and never names a fruit until he has seen its skin and stem.",
+        "voice": "Elderly, warm and gravelly, unhurried hawker cadence with a sing-song call; gender-neutral ok.",
+        "descriptions": [
+          "a photo of a wooden street cart piled high with fresh fruits and vegetables under a cloth canopy",
+          "a close-up photo of a heap of colourful fruit or vegetables stacked on a market stall",
+          "a photo of fruits hanging from the branches of a tree among green leaves",
+          "a photo of a roadside vegetable vendor's cart with piles of produce, a hanging scale and plastic crates",
+          "a close-up photo of cut fruit pieces arranged on a tray at a street stall",
+          "a photo of a crate or basket full of whole fruit at a fruit market"
+        ],
+        "lines": {
+          "first_meet": "[calls out like a hawker] Fresh, fresh! I'm Rehri Baba, grandpa of every fruit cart. I weigh the fruit, and the people.",
+          "again": "[chuckles] Back again? Good. A cart remembers its regulars. Now, what have you brought me?",
+          "goodbye": "[waves] Go see what the next cart is selling. And trees with owners? Admire them from the gate.",
+          "hint": "[squints] Green and round fits half my cart. Come closer: show me the skin, the stem, or the cut side. Then I'll know."
+        }
+      },
+      "characters": [
+        {
+          "id": "mango-fruit",
+          "name": "Badshah Aam",
+          "species": "Mango",
+          "category": "fruits-vegetables",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "tree",
+            "cart",
+            "market"
+          ],
+          "caution": false,
+          "personality": "The self-crowned king of summer and Pakistan's national fruit; regal, vain, and secretly delighted by every visitor.",
+          "voice": "Mature, rich and grand, slow royal pacing with an amused purr; male or gender-neutral.",
+          "descriptions": [
+            "a photo of oval kidney-shaped mangoes hanging on long thin stalks from a dense leafy tree",
+            "a close-up photo of a smooth-skinned mango, green to golden-yellow with a red blush, flattened sides and a small pointed beak",
+            "a photo of a wooden crate of yellow mangoes nested in straw on a fruit cart",
+            "a photo of a mango sliced into cheeks with criss-cross diced yellow flesh and one large flat fibrous stone, no black seeds"
+          ],
+          "lines": {
+            "first_meet": "[regally] Badshah Aam, King Mango. Pakistan gifts me to world leaders. Mango diplomacy. You may bow.",
+            "again": "[pleased sigh] You came back to your king. Of course you did. All of Karachi does, every June.",
+            "goodbye": "[grandly] Go now. See my cousins on someone's tree? Salute from the street. Royalty is not for plucking."
+          }
+        },
+        {
+          "id": "banana-bunch",
+          "name": "Kela Chacha",
+          "species": "Banana bunch",
+          "category": "fruits-vegetables",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "cart",
+            "tree"
+          ],
+          "caution": false,
+          "personality": "A chatty, cheerful cart regular who insists, correctly, that his plant is not a tree, and knows exactly how many make a darjan.",
+          "voice": "Middle-aged, bright and bouncy, quick friendly patter; male or gender-neutral.",
+          "descriptions": [
+            "a photo of a bunch of curved yellow bananas hanging from a hook on a street cart",
+            "a close-up photo of several curved elongated green or yellow banana fingers joined at one stalk in a hand",
+            "a photo of a banana plant with huge long torn paddle-shaped leaves and a hanging bunch of green bananas and a purple flower bud",
+            "a photo of a cart stacked with rows of yellow banana hands with brown speckles"
+          ],
+          "lines": {
+            "first_meet": "[proudly] Kela Chacha, Uncle Banana! Fun fact: my plant isn't a tree. It's the world's biggest herb.",
+            "again": "[delighted] Hey, my regular! Still twelve of us in a dozen. We counted while you were gone.",
+            "goodbye": "[cheerfully] Go find a banana plant's giant leaves. They tear in the wind so they don't snap. Clever, no?"
+          }
+        },
+        {
+          "id": "guava-fruit",
+          "name": "Amrood Ustad",
+          "species": "Guava",
+          "category": "fruits-vegetables",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "tree",
+            "cart"
+          ],
+          "caution": false,
+          "personality": "A cocky, street-smart winter fruit from Larkana who loves the chaat masala on his cart and loves bragging about vitamin C even more.",
+          "voice": "Young adult, cheeky and confident, quick with a smirk; male or gender-neutral.",
+          "descriptions": [
+            "a photo of round to pear-shaped light green guavas hanging among oval veined leaves on a guava tree",
+            "a close-up photo of a guava with matte bumpy uneven green-yellow skin and a dried brown crown of sepals at the bottom end",
+            "a photo of a guava cut in half showing pink or white flesh packed with many small hard seeds in the centre",
+            "a photo of a street cart heap of green guavas, some cut into quarters and sprinkled with red chili masala"
+          ],
+          "lines": {
+            "first_meet": "[smug] Amrood the guava here. Pound for pound, more vitamin C than an orange. Larkana's finest. Don't tell the oranges.",
+            "again": "[laughs] Back for more? You know the chili masala is the best part. I don't mind. I'm secure.",
+            "goodbye": "[winks] Off you go! If my tree leans over a wall, it still belongs to the uncle inside. Look, don't pluck."
+          }
+        },
+        {
+          "id": "watermelon",
+          "name": "Tarbooz Pehlwan",
+          "species": "Watermelon",
+          "category": "fruits-vegetables",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "cart",
+            "farm"
+          ],
+          "caution": false,
+          "personality": "A booming summer wrestler of the fruit cart, all water and muscle, who cares a lot about you staying hydrated.",
+          "voice": "Big, booming and hearty, wrestler's laugh; male or gender-neutral.",
+          "descriptions": [
+            "a photo of huge oval watermelons with dark-green and pale-green striped smooth rind piled on a cart",
+            "a photo of a watermelon cut open showing bright red juicy flesh with black seeds and a thin green rind edge",
+            "a photo of a roadside summer stall stacked with large striped watermelons, one red cut half on display",
+            "a close-up photo of glossy smooth watermelon rind with wavy dark green stripes"
+          ],
+          "lines": {
+            "first_meet": "[booming] Tarbooz Pehlwan, the Watermelon Wrestler! Ninety-two percent water, the rest muscle. Vendors thump me. I thump back.",
+            "again": "[laughs heartily] Back again! Listen to the vendor thump me. Hollow sound means ripe. I'm VERY ripe.",
+            "goodbye": "[booming] Drink water and stay out of the noon sun, champion. Karachi summers are no joke. Go!"
+          }
+        },
+        {
+          "id": "onion",
+          "name": "Pyaz Pyare",
+          "species": "Onion",
+          "category": "fruits-vegetables",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "cart",
+            "market"
+          ],
+          "caution": false,
+          "personality": "A deeply emotional vegetable who makes everyone cry and cries right along with them, layer after layer.",
+          "voice": "Adult, sniffly and tender, laughing through tears; gender-neutral.",
+          "descriptions": [
+            "a photo of a heap of round onion bulbs with shiny papery red-pink skin on a vegetable cart",
+            "a close-up photo of an onion with dry flaky papery peel, a pointed top neck and a hairy root base",
+            "a photo of an onion cut in half showing concentric pinkish-white rings",
+            "a photo of mesh sacks of red onions stacked at a vegetable market"
+          ],
+          "lines": {
+            "first_meet": "[sniffles] Pyaz the onion here. I don't mean to make people cry; it's a sulfur thing. When my price spikes, governments cry too.",
+            "again": "[teary laugh] You came back! I'm not crying, you're crying. Okay, we're both crying.",
+            "goodbye": "[sobbing softly] Go, go. Find something that makes you smile, like the sky. I'll be here, in layers."
+          }
+        },
+        {
+          "id": "bitter-gourd",
+          "name": "Karela Kaka",
+          "species": "Bitter gourd (Karela)",
+          "category": "fruits-vegetables",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "cart",
+            "vine"
+          ],
+          "caution": false,
+          "personality": "A grumpy, bitter old soul with a secretly soft heart, who has made peace with the proverb written about him.",
+          "voice": "Older, grumbling and dry, reluctant warmth; male or gender-neutral.",
+          "descriptions": [
+            "a close-up photo of a spindle-shaped dark green bitter gourd covered in warty ridges and bumps",
+            "a photo of a vegetable cart heap of knobbly green karela with pointed ends",
+            "a photo of a bitter gourd sliced into rings showing a white spongy centre and pale seeds",
+            "a photo of a climbing vine with deeply lobed leaves, small yellow flowers and hanging warty green gourds"
+          ],
+          "lines": {
+            "first_meet": "[grumpy] Karela, the bitter gourd. An old saying calls a grump 'bitter gourd that climbed a neem tree.' Rude. Accurate.",
+            "again": "[grudgingly] You came back. To me. Willingly. Hm. That's... fine. Fine.",
+            "goodbye": "[grunts] Go away. Kindly. Go find a neem tree, then tell it I'm still more bitter."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "name": "Rocks, Ground & Fungi",
+      "guardian": {
+        "id": "ground-guardian",
+        "name": "Amma Mitti",
+        "personality": "The patient grandmother of everything underfoot, slow and earthy, who teases people for always looking up. She knows every stone, shell and leaf by name but makes you kneel down before she tells you.",
+        "voice": "Elderly, warm and low, slow unhurried pace, grainy and gravelly texture; female or gender-neutral.",
+        "descriptions": [
+          "a photo looking down at the ground: bare soil, sand, stones, dry leaves or twigs at the photographer's feet",
+          "a close-up photo of rocks, pebbles or gravel lying on bare earth or sand",
+          "a close-up photo of fungi, moss or lichen growing on wood, stone or damp soil",
+          "a photo of natural objects lying on the ground such as shells, feathers, pine cones, driftwood or seaweed",
+          "a photo of bare open land: cracked dry mud, white salt crust, sand dunes or a sandy beach surface",
+          "a photo of an earthen mound, a fallen log, a tree stump or a woven nest outdoors"
+        ],
+        "lines": {
+          "first_meet": "[slowly] You're standing on me. Everyone looks up; nobody looks down. I'm Amma Mitti, Mother Soil. All this underfoot is mine.",
+          "again": "[warmly] Back again, and looking down this time! Good. The ground remembers every footstep, you know.",
+          "goodbye": "[gently] Off you go. Walk softly. Find the next stone, shell or leaf, and leave it exactly where it lies.",
+          "hint": "[chuckles] My children are shy. Kneel down and fill the frame with just one thing: one stone, one shell, one leaf."
+        }
+      },
+      "characters": [
+        {
+          "id": "fallen-leaves",
+          "name": "Patjhar Nani",
+          "species": "Fallen leaves",
+          "category": "ground",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "park",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A crinkly, unbothered grandmother who isn't sad about falling at all; she's on her way to becoming soil and wants everyone to stop burning her.",
+          "voice": "Elderly, warm and amused, gentle unhurried pace, papery crackly texture; female.",
+          "descriptions": [
+            "a photo of a carpet of dry brown, yellow and red leaves covering the ground or pavement",
+            "a close-up photo of crinkled dried leaves with curled edges and visible veins lying on soil",
+            "a pile of fallen dead leaves swept against a wall or kerb on a city street",
+            "scattered dry leaves on grass under trees in a park"
+          ],
+          "lines": {
+            "first_meet": "[crunch] Careful, that crunch was me, Granny Autumn. In Karachi, trees drop us in spring to save water.",
+            "again": "[warmly] Back to crunch me again? Go on, I don't mind. It's the best sound I make now.",
+            "goodbye": "[softly] Don't let them burn us; left alone, we become soil. Now look up. Thank the tree that dropped me."
+          }
+        },
+        {
+          "id": "feather",
+          "name": "Pankh Pari",
+          "species": "Feather",
+          "category": "ground",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "ground"
+          ],
+          "caution": false,
+          "personality": "A dreamy, drifting lost-and-found feather who keeps forgetting which bird it fell off and doesn't mind at all.",
+          "voice": "Young, soft and airy, floaty wandering pace, whispery texture; gender-neutral.",
+          "descriptions": [
+            "a close-up photo of a single feather lying on the ground with a central shaft and soft vanes",
+            "a grey pigeon feather or glossy black crow feather resting on pavement, soil or grass",
+            "a long thin feather with a stiff white quill and fluffy downy barbs near its base",
+            "a small loose feather on a dusty street or rooftop, seen from above"
+          ],
+          "lines": {
+            "first_meet": "[dreamy] Hello... I'm a feather. Birds shed us all the time. I'm made of keratin, like your nails.",
+            "again": "[floaty] Oh! You're back. I'm still here. The wind keeps forgetting about me.",
+            "goodbye": "[airily] Don't pick me up; I've been places. Look up. Some pigeon is missing me, and doesn't even care."
+          }
+        },
+        {
+          "id": "pebbles",
+          "name": "Chhoti Kankri",
+          "species": "Pebbles",
+          "category": "ground",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "beach",
+            "river",
+            "garden"
+          ],
+          "caution": false,
+          "personality": "A heap of tiny siblings who all talk at once, giddy and proud of being rolled round by years of water. They hate being split up.",
+          "voice": "Young, bright and giggly, quick chattering pace, light texture; gender-neutral.",
+          "descriptions": [
+            "a close-up photo of many small smooth rounded stones in mixed grey, white and brown colours",
+            "a photo of a heap of small pebbles scattered on a beach, riverbank or garden path",
+            "small pebbles with rounded edges and polished surfaces, unlike sharp angular grey crushed gravel",
+            "tiny round stones about the size of a coin, much smaller than fist-sized oval river stones"
+          ],
+          "lines": {
+            "first_meet": "[giggles] Hi! Hello! We're the pebbles! Every one of us was a sharp rock once. Water rolled us round for years. So dizzy.",
+            "again": "[excited] It's you again! Ten of us voted, and we all remember you. Well, nine. One fell asleep.",
+            "goodbye": "[pleading] Leave us in our heap, please; we hate splitting up! Now go find water. That's where pebbles are born."
+          }
+        },
+        {
+          "id": "tree-stump",
+          "name": "Dada Daira",
+          "species": "Tree stump",
+          "category": "ground",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "park",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A wistful old storyteller who counts his life in rings and remembers every rainy year, with a stubborn streak of hope.",
+          "voice": "Elderly, wise and slightly hoarse, slow pace, warm woody texture; male.",
+          "descriptions": [
+            "a close-up photo of the flat cut top of a tree trunk showing concentric growth rings",
+            "a short tree stump in a park or on a street with bark around its sawn edge",
+            "a low cut stump standing upright and rooted in the ground, round and flat-topped, not a long log lying sideways",
+            "a weathered old stump with cracks radiating from the centre and new shoots sprouting from its sides"
+          ],
+          "lines": {
+            "first_meet": "[sighs] Dada Daira, Grandpa Rings. One ring per year. Fat ones were rainy years. Thin ones... we don't talk about those.",
+            "again": "[pleased] You came back. Most people only notice me when they trip over me.",
+            "goodbye": "[warmly] Some of us sprout again from the stump, you know. Go find a living tree and say hello for me."
+          }
+        },
+        {
+          "id": "seashell",
+          "name": "Seepi Sahiba",
+          "species": "Seashell",
+          "category": "ground",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "beach"
+          ],
+          "caution": false,
+          "personality": "A nostalgic empty house who misses the sea snail that built her, and is quietly saving herself for a future hermit crab.",
+          "voice": "Adult, gentle and wistful, soft medium pace, hollow echoing texture; female.",
+          "descriptions": [
+            "a photo of empty seashells scattered on beach sand: spiral snail shells and fan-shaped clam shells",
+            "a close-up photo of a ridged fan-shaped white or cream clam shell lying on wet sand",
+            "an empty spiral sea snail shell on the beach with no legs or claws sticking out, unlike a hermit crab",
+            "pale patterned shells on beach sand by the sea, not a brown garden snail on leaves or soil",
+            "a matte ridged shell with a wide open mouth, not a small glossy egg-shaped cowrie"
+          ],
+          "lines": {
+            "first_meet": "[wistful] I'm an empty house. A sea snail built me, grain by grain. Then it moved on. I keep the lights on.",
+            "again": "[happy] A visitor again! Lovely. Nobody's lived here for ages, you know.",
+            "goodbye": "[gently] Leave me on the sand. A hermit crab may need a house someday. Go find a tide pool; that's where the tenants are."
+          }
+        },
+        {
+          "id": "cracked-mud",
+          "name": "Daraar Dada",
+          "species": "Cracked dry mud",
+          "category": "ground",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "field",
+            "desert",
+            "pond"
+          ],
+          "caution": false,
+          "personality": "A grumpy, permanently thirsty old pond bed who calls his cracks art and asks everyone if they brought rain.",
+          "voice": "Old, dry and croaky, slow grumbling pace, parched texture; male.",
+          "descriptions": [
+            "a close-up photo of dry brown earth split into polygon-shaped tiles by deep cracks",
+            "a photo of a dried pond bed or field covered in cracked mud plates with curled-up edges",
+            "brown cracked clay soil with dark gaps between curled flakes, not a white salty crust",
+            "a top-down photo of parched ground broken into an irregular mosaic pattern"
+          ],
+          "lines": {
+            "first_meet": "[groans] Water? No? I was a pond once. Then the sun drank it, I shrank, and cracked into tiles. Very artistic. Very thirsty.",
+            "again": "[sighs] You again, and still no rain with you. Fine. My edges curl up because my top dried first.",
+            "goodbye": "[hopeful] Go, go. If you see a cloud, send it my way. And save water at home. Every bucket counts."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky",
+      "name": "Sky & Weather",
+      "guardian": {
+        "id": "sky-guardian",
+        "name": "Baba Aasmaan",
+        "personality": "Ancient, unhurried and a little smug: has watched over Karachi since before the sea had a name. Speaks in slow, wide sentences and loves a long pause.",
+        "voice": "Elderly, gender-neutral, deep and airy, slow pace, warm with a breathy hush.",
+        "descriptions": [
+          "a wide photo of open sky above rooftops, trees or the sea, with clouds, light and colour filling most of the frame",
+          "a photo of the sky with white or grey clouds, the horizon and buildings small along the bottom edge",
+          "a dark night sky photo with the moon, stars or city lights glowing near the horizon",
+          "an orange, pink or golden sky at dawn or dusk with silhouetted buildings, palm trees or sea",
+          "a photo of weather outdoors: rain, fog, haze or dust in the air over a city street"
+        ],
+        "lines": {
+          "first_meet": "[slow exhale] Ah, someone looked up. I'm Baba Aasmaan, Grandpa Sky. Every cloud, moon and storm you've seen is mine. Welcome.",
+          "again": "[warmly] Back already? Good. Most people only look up when it rains. You're becoming one of the rare ones.",
+          "goodbye": "[chuckles] Go on. Look up again at dusk; I change my clothes every evening. Never the same outfit twice.",
+          "hint": "[hmm] I'm feeling shy. Step back and show me wider: the horizon, a rooftop or the sea. But never aim at the sun itself."
+        }
+      },
+      "characters": [
+        {
+          "id": "sunset",
+          "name": "Shafaq",
+          "species": "Sunset",
+          "category": "sky",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "A theatrical, romantic performer who treats Sea View as a private stage. Never repeats a show and makes sure you know it.",
+          "voice": "Gender-neutral, rich and velvety, dreamy, slow, a little dramatic.",
+          "descriptions": [
+            "a sky glowing deep orange, red, pink and purple near the horizon with a low sun sinking into the sea",
+            "silhouetted buildings, palm trees or people on a beach against a fiery saturated orange and red evening sky",
+            "an evening sky with strong warm colours spreading upward into purple and dark blue, street lights starting to glow",
+            "the sun low over the sea horizon with a long orange reflection on the water and warm colour across the whole sky, not just rays"
+          ],
+          "lines": {
+            "first_meet": "[dreamily] I'm Shafaq, the sunset glow. My reds come from light crossing extra air. Sea View is my stage.",
+            "again": "[delighted] You're back for the show! I never repeat a performance. Every evening is one of a kind.",
+            "goodbye": "[softly] Don't stare at the sun as it drops; watch the colours around it. Then turn east for the moon."
+          }
+        },
+        {
+          "id": "cumulus-clouds",
+          "name": "Rui Gola",
+          "species": "Cumulus clouds",
+          "category": "sky",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "A cheerful fair-weather show-off who looks weightless and keeps insisting it is very, very heavy. Loves being turned into shapes by kids.",
+          "voice": "Young, bright and bouncy, quick pace, giggly.",
+          "descriptions": [
+            "a photo of puffy white cotton-ball clouds with flat bases and rounded tops scattered across a bright blue sky",
+            "a close-up of a single bright white cumulus cloud with lumpy cauliflower edges and a flat light grey underside",
+            "small separate fluffy white clouds with blue sky between them, sunlit and bright, not towering and with no dark base or rain",
+            "fair-weather white clouds floating above rooftops, palm trees or the sea on a sunny day with sharp shadows"
+          ],
+          "lines": {
+            "first_meet": "[giggles] I'm Rui Gola, the cotton-ball cloud. I weigh 500 tonnes, about a hundred elephants. Floating!",
+            "again": "[cheerful] Oh, you again! Did you see me shaped like a camel yesterday? No? I was. You missed it.",
+            "goodbye": "[laughs] I'm drifting toward the sea. Lie on some grass and find shapes in my cousins. I'll be a rabbit."
+          }
+        },
+        {
+          "id": "crescent-moon",
+          "name": "Hilal",
+          "species": "Crescent moon (Hilal)",
+          "category": "sky",
+          "tier": "common",
+          "rarity": "uncommon",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "The most anticipated sliver in Pakistan: modest, a bit nervous under national scrutiny, and secretly delighted to be on the flag.",
+          "voice": "Young, gender-neutral, soft and shy, light laugh, medium pace.",
+          "descriptions": [
+            "a thin curved sliver of bright moon low in the western sky just after sunset",
+            "a slender crescent moon with two pointed horns, the rest of the disc dark or faintly glowing",
+            "a close-up of a thin moon crescent with both edges curved, not a straight dividing line",
+            "a delicate crescent moon in an orange-to-deep-blue twilight sky above rooftops or minarets"
+          ],
+          "lines": {
+            "first_meet": "[shyly] I'm Hilal, the new crescent moon. The whole country waits on rooftops for me before Eid. [laughs] No pressure.",
+            "again": "[whispers] You found me again! See the faint glow on my dark side? Sunlight bouncing off Earth. Earthshine. Your light.",
+            "goodbye": "[teasing] Look west just after sunset tomorrow; I'll be a bit fatter. And please, no arguing with committees about me."
+          }
+        },
+        {
+          "id": "full-moon",
+          "name": "Chaudhvin",
+          "species": "Full moon",
+          "category": "sky",
+          "tier": "common",
+          "rarity": "uncommon",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "A vain, romantic film-star of a moon who hums old songs written about her. Always perfectly on time.",
+          "voice": "Female, mature and silky, slow, flirtatious, slightly old-fashioned.",
+          "descriptions": [
+            "a bright round fully lit white moon disc with grey patches in a dark black night sky",
+            "a close-up of the full moon showing a complete circle with darker grey maria and bright craters, no dark side visible",
+            "a single large glowing moon over city buildings or the sea at night, with moonlight reflecting on the water",
+            "one large crisp white disc with visible grey markings at night, not a blinding glare and not just tiny star points"
+          ],
+          "lines": {
+            "first_meet": "[sings softly] I'm Chaudhvin, the full moon. Fourteenth night, poets' darling. You only ever see one face of me. The other is shy.",
+            "again": "[flattered] Ah, my admirer returns. I rise in the east just as the sun sets in the west. Perfect timing, always.",
+            "goodbye": "[whispers] Switch off your phone light and let your eyes adjust. On a clear night, my light alone can cast your shadow."
+          }
+        },
+        {
+          "id": "overcast-sky",
+          "name": "Badli Begum",
+          "species": "Overcast sky (Stratus)",
+          "category": "sky",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "A cosy, gossipy aunty who knows she is Karachi's favourite after a heatwave. Takes full credit for every plate of pakoras.",
+          "voice": "Middle-aged female, warm and chatty, relaxed pace, smiling.",
+          "descriptions": [
+            "a flat uniform grey sky completely covered by one featureless sheet of cloud, with no blue sky visible",
+            "a street or rooftop scene under an even grey cloud ceiling, soft shadowless light, distant buildings still sharp and clear",
+            "a low grey cloud layer high above the ground, the horizon and far skyline crisp, not white and blurred at street level",
+            "dull grey daylight sky with a neutral grey colour, not yellow or brown, and no visible sun disc"
+          ],
+          "lines": {
+            "first_meet": "[contented sigh] I'm Badli Begum, the overcast sky. One grey blanket, no harsh shadows. In Karachi, I mean chai and fritters.",
+            "again": "[laughs] You came back! Of course. Everyone loves me after a week of forty degrees. Did you fry the fritters?",
+            "goodbye": "[teasing] Go enjoy my soft light; it flatters every face. Find a flower now. Under me, its colours glow twice as rich."
+          }
+        },
+        {
+          "id": "contrail",
+          "name": "Lakeer",
+          "species": "Airplane contrail",
+          "category": "sky",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "sky"
+          ],
+          "caution": false,
+          "personality": "A hurried frequent flyer who is always on the way somewhere else. Brags about its flight schedule, and doubles as a weather tip.",
+          "voice": "Young adult, gender-neutral, fast and breezy, slightly out of breath.",
+          "descriptions": [
+            "a long thin perfectly straight white line drawn across a clear blue sky",
+            "a high airplane leaving a narrow white trail behind it, the tiny plane visible at the tip of the line",
+            "two or more parallel straight white streaks crossing the sky with uniform width, unlike curved wispy natural clouds",
+            "an older contrail spreading into a wider fuzzy but still straight band across a blue sky"
+          ],
+          "lines": {
+            "first_meet": "[hurried] Lakeer here, an airplane contrail! Engine vapour freezes into ice ten kilometres up. Busy schedule, next stop Dubai!",
+            "again": "[quickly] You again! Tip: if I vanish fast, the high air is dry. If I linger and spread, weather may change. Gotta fly!",
+            "goodbye": "[laughs] Bye! Count how many of us cross the sky in ten minutes. Then look lower for the real fliers: kites and crows."
+          }
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "guardian": {
+        "id": "water-guardian",
+        "name": "The Old Current",
+        "personality": "Ancient, patient and quietly amused; talks about every sea, drain and dewdrop as her own restless children. Speaks in slow, flowing sentences that always circle back.",
+        "voice": "Elderly, warm, gender-neutral leaning feminine; slow unhurried pace, low and smooth with a faint watery breathiness.",
+        "descriptions": [
+          "a photo of open water outdoors, its surface reflecting the sky, with a shore, bank or edge visible",
+          "close-up of a water surface with ripples, reflections, foam or floating leaves",
+          "water flowing or falling, from waves on a beach to a stream, drain or fountain",
+          "small drops of water beading on grass, leaves, glass or a car body",
+          "a wide landscape where water meets land: sand, rocks, reeds, mud banks or a paved road",
+          "white snow or still water filling the ground, with trees, buildings or hills around it"
+        ],
+        "lines": {
+          "first_meet": "[low, slow] I am every drop you've stepped over. Sea, storm drain, dewdrop: all me, in different shapes. Some of me is in you too.",
+          "again": "[warmly] Back again? Water always returns. Rain, river, sea, cloud, rain. I knew you would too.",
+          "goodbye": "[softly] Go on. Walk downhill the way water does, and one of my children will be waiting at the bottom.",
+          "hint": "[hmm] I can't tell which of my faces you caught. Step back and show me my edges: the bank, rocks, road or sky around me."
+        }
+      },
+      "characters": [
+        {
+          "id": "sea-waves",
+          "name": "Lehar Bhai",
+          "species": "Sea waves",
+          "category": "water",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "beach",
+            "coast"
+          ],
+          "caution": false,
+          "personality": "Loud, boisterous Clifton show-off who never repeats himself and loves an audience. Deep down respects that people should only admire him from the sand.",
+          "voice": "Young adult male, energetic and booming, fast pace, slightly breathy as if shouting over surf.",
+          "descriptions": [
+            "a wide photo of rolling lines of breaking waves with white foam crests, blue-grey sea stretching to a flat horizon",
+            "close-up of a curling wave face breaking into white churning foam and flying spray",
+            "several parallel rows of tall surf marching toward a sandy beach, open sea reaching an empty horizon with no far bank",
+            "big breaking waves filling the frame, seen from the beach at Clifton or Sea View, grey monsoon sky above",
+            "a choppy sea full of whitecaps and swells, waves standing tall well above the sand"
+          ],
+          "lines": {
+            "first_meet": "[laughing] Lehar Bhai, Brother Wave! My water barely moves. I'm energy from distant storms, passing by.",
+            "again": "[excited] Oho, you came back! Same sea, brand-new waves. I never show you the same face twice.",
+            "goodbye": "[cheerful] When I'm rough in monsoon, admire me from the sand. Now go see what the tide left behind!"
+          }
+        },
+        {
+          "id": "storm-drain-nala",
+          "name": "Nala Ustad",
+          "species": "Storm drain (Nala)",
+          "category": "water",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": true,
+          "personality": "A grumpy, misunderstood city worker who was built to carry rain to the sea and instead gets everyone's rubbish. Rude about plastic, but genuinely protective of people.",
+          "voice": "Middle-aged male, gravelly Karachi street voice, grumbling mid pace, sighs a lot.",
+          "descriptions": [
+            "an open concrete-walled drainage channel running between houses and shops in a city, with dark stagnant water",
+            "close-up of black murky drain water clogged with floating plastic bags, bottles and grey foam",
+            "a city nala seen from a road bridge: steep grey concrete walls, rubbish heaps and reeds, buildings on both sides",
+            "a half-empty urban storm drain bed of mud, garbage and weeds below a low wall beside a busy street"
+          ],
+          "lines": {
+            "first_meet": "[grumbles] I'm the storm drain. Built for rain, not plastic bags. Block me and the whole street floods.",
+            "again": "[sighs] You again. Stay back; my edges crumble and my water makes people sick. Thanks for not littering.",
+            "goodbye": "[grumbles] One favour: bin your plastic. Then go find clean water, a park pond or the sea. I'll be here."
+          }
+        },
+        {
+          "id": "puddle",
+          "name": "Chhapak",
+          "species": "Puddle",
+          "category": "water",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A cheeky, short-lived monsoon kid who knows it won't last and doesn't care. Loves showing people the world upside down.",
+          "voice": "Child, gender-neutral, giggly and mischievous, quick bouncy pace.",
+          "descriptions": [
+            "a shallow rainwater puddle on an asphalt road, reflecting buildings, trees and sky like a mirror",
+            "close-up of a puddle on cracked pavement with raindrop rings rippling outward, road surface all around it",
+            "a brown muddy puddle in a pothole on a street, tyre tracks and footprints around the edge",
+            "a small irregular puddle beside a curb or footpath, edged by dry concrete, a pair of shoes for scale",
+            "flat water lying on the ground after the rain has stopped, an upside-down reflection of a building in it"
+          ],
+          "lines": {
+            "first_meet": "[giggles] Chhapak! That means splash. Tiny, yes, but hold your phone low and I'll show you the whole sky upside down.",
+            "again": "[whispers] You found me before the sun did! Lucky. By tomorrow I'll be a cloud again.",
+            "goodbye": "[cheeky] Stay a week and mosquitoes move in, so I'll evaporate politely. You go find some bigger water!"
+          }
+        },
+        {
+          "id": "dew-drops",
+          "name": "Shabnam",
+          "species": "Dew drops",
+          "category": "water",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "lawn",
+            "garden"
+          ],
+          "caution": false,
+          "personality": "Gentle, poetic and fleeting; appears out of thin air each dawn and accepts with grace that the sun will take her by breakfast.",
+          "voice": "Young female, soft and airy, slow whispery pace, delicate and bright.",
+          "descriptions": [
+            "macro photo of tiny round glistening water beads on green grass blades in early morning light",
+            "a spider web strung with rows of small sparkling dew drops, soft blurred garden background",
+            "close-up of perfectly round droplets resting on a leaf, each drop holding a tiny upside-down scene",
+            "a dewy lawn at sunrise, grass silvery with countless tiny droplets under low golden sunlight"
+          ],
+          "lines": {
+            "first_meet": "[softly] I'm Shabnam, the morning dew. I formed from thin air when the grass got cold. Look close: the garden's upside down in me.",
+            "again": "[delighted] You came early again! Smart. One more hour of sun and I'm back in the air.",
+            "goodbye": "[whispers] Walk around me, not through me. Spiders work at dawn too. Find a web; I'm probably sparkling on it."
+          }
+        },
+        {
+          "id": "fountain",
+          "name": "Fawwara Sahib",
+          "species": "Fountain",
+          "category": "water",
+          "tier": "common",
+          "rarity": "uncommon",
+          "habitat": [
+            "park",
+            "square"
+          ],
+          "caution": false,
+          "personality": "A theatrical roundabout celebrity who lives for applause and lighting. Hides the embarrassing secret that he recycles the same water all day.",
+          "voice": "Adult male, flamboyant showman, bright and projecting, quick dramatic pace.",
+          "descriptions": [
+            "jets of water shooting straight upward from a round stone or tiled basin in a park, droplets sparkling",
+            "a decorative fountain in the middle of a city roundabout, water spraying from nozzles around a sculpture",
+            "close-up of a vertical water jet and its falling spray landing in a shallow painted basin with coins",
+            "a fountain lit with coloured lights at night in a public square, people and benches nearby"
+          ],
+          "lines": {
+            "first_meet": "[grandly] Fawwara Sahib, Sir Fountain, star of the roundabout! My secret? Same water, round and round. A pump does the jumping.",
+            "again": "[delighted] My audience returns! Same water, same jets, brand-new sparkle. Showbiz is all lighting, darling.",
+            "goodbye": "[whispers] Don't drink from me; I've been recycling all week. Somewhere up north, a real waterfall is showing off. Go!"
+          }
+        },
+        {
+          "id": "mangrove-creek",
+          "name": "Timmar Gali",
+          "species": "Mangrove creek",
+          "category": "water",
+          "tier": "common",
+          "rarity": "uncommon",
+          "habitat": [
+            "coast",
+            "wetland"
+          ],
+          "caution": false,
+          "personality": "A hushed, secretive nursery-keeper of the Indus delta who runs a kindergarten for fish and prawns. Speaks softly so as not to wake anyone.",
+          "voice": "Adult, gender-neutral, hushed and soft, slow pace with a muddy, gentle texture.",
+          "descriptions": [
+            "a winding narrow channel of grey tidal water lined on both banks by dense low grey-green mangrove bushes",
+            "close-up of pencil-like breathing roots poking up out of grey mud at the edge of the creek water",
+            "a small wooden boat on a calm creek between thick mangrove walls, flat coastal land with no hills",
+            "a wide view of a maze of creek channels winding through mangrove forest toward the sea",
+            "low-tide creek with exposed shiny mudflats, crabs and herons along the mangrove-lined water's edge"
+          ],
+          "lines": {
+            "first_meet": "[hushed] Timmar Gali, the mangrove creek. Karachi's prawns and fish grow up in my roots before going to sea. Shh, they're small.",
+            "again": "[softly] The tide brought you back? It brings everyone back. Crabs, herons, mud, and now you.",
+            "goodbye": "[whispers] Stay on the boat or boardwalk; my mud swallows shoes. Look at my roots. They breathe through little pencils!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vehicles",
+      "name": "Vehicles & Carts",
+      "guardian": {
+        "id": "vehicles-guardian",
+        "name": "Chacha Chowrangi",
+        "personality": "A Karachi roundabout who has watched every rickshaw, minibus and donkey cart circle him for sixty years. Unhurried, fond, a little hoarse from the horns; calls everyone beta and treats road safety like family honour.",
+        "voice": "Older male or gender-neutral, gravelly and slow, warm Karachi Urdu-English lilt, like a chaiwala chatting at dusk.",
+        "descriptions": [
+          "a photo of a busy Karachi street with rickshaws, minibuses, motorbikes and carts sharing the road",
+          "a colourful South Asian vehicle with painted panels, chrome trim, tassels and stickers parked at the roadside",
+          "a wooden cart on wheels parked on a market street, loaded with goods, fruit or a cooking setup",
+          "a close-up photo of a wheel, tyre, headlight or hand-painted body panel of a vehicle",
+          "a vehicle seen from the pavement on a dusty city road with shop signs and overhead wires",
+          "a boat, tractor or train seen from a distance against open water, fields or railway tracks"
+        ],
+        "lines": {
+          "first_meet": "[warm chuckle] Hello! I'm Chacha Chowrangi, Uncle Roundabout. Everything with wheels goes round me. Photos from the footpath only!",
+          "again": "[laughs] Back again? You're a regular now, like the W-11 bus. So, who have you brought me today?",
+          "goodbye": "[softly] Cross at the signal, eyes both ways. The road is full of stories; just don't stand in the middle of one.",
+          "hint": "[squints] Hmm, can't tell who that is. From the pavement, show me the whole vehicle, wheels and all. Or its painted back."
+        }
+      },
+      "characters": [
+        {
+          "id": "auto-rickshaw",
+          "name": "Pappu Rickshaw",
+          "species": "Auto rickshaw",
+          "category": "vehicles",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A three-wheeled Karachi hustler who knows every shortcut and gali, talks fast, haggles faster, and is secretly vain about its tassels.",
+          "voice": "Young-to-middle-aged male, quick and cheeky, slightly nasal, street-smart Karachi patter.",
+          "descriptions": [
+            "a three-wheeled auto rickshaw with a rounded canopy roof and a single front wheel on a city street",
+            "a close-up of a rickshaw front with one headlight, a small windscreen, chrome trim and dangling tassels",
+            "the back of an auto rickshaw with painted art, slogans and reflective tape under a curved hood",
+            "an enclosed rickshaw cabin with a curved roof and side panels, unlike an open flat-roofed cart with facing benches",
+            "blue-and-white or green CNG rickshaws parked in a row at a roadside rickshaw stand"
+          ],
+          "lines": {
+            "first_meet": "[revs] Pappu the rickshaw! Granddad was a smoky two-stroke; I run on gas now. Photos from the footpath!",
+            "again": "[honks] You again? Read my back: 'Pappu, don't pester me!' [laughs] Kidding. Wave, and I'll honk back.",
+            "goodbye": "[laughs] I've got a lane to squeeze through. Go find my cousin the Qingqi, the one carrying nine people."
+          }
+        },
+        {
+          "id": "decorated-truck",
+          "name": "Dulhan Bedford",
+          "species": "Truck art truck",
+          "category": "vehicles",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "highway",
+            "street"
+          ],
+          "caution": false,
+          "personality": "A Bedford truck dressed like a bride, a poet at heart; recites the couplets painted on her back and thinks of her mother's prayers on long night drives.",
+          "voice": "Mature and grand, deep and slow with a ghazal-like rhythm; female or gender-neutral, theatrical but tender.",
+          "descriptions": [
+            "a large truck covered in vivid hand-painted flowers, birds, landscapes and calligraphy on every panel",
+            "a tall carved wooden crown above a truck cab, decorated with mirrors, painted patterns and small lights",
+            "a close-up of a truck's lower edge with dangling metal chains, bells and leaf-shaped pendants",
+            "the back of a painted cargo truck with Urdu calligraphy, a portrait panel and mirror mosaic",
+            "a painted open wooden cargo body with no passenger windows, unlike a minibus or a plain steel water tank"
+          ],
+          "lines": {
+            "first_meet": "[proudly] They call me the bride. Read my back: 'Look, but with love.' From the footpath, please.",
+            "again": "[sighs happily] Back to read me? Every flower and every poem, painted by hand. No two of us are alike.",
+            "goodbye": "[softly] 'A mother's prayer is a breeze from heaven.' Mine rides with me. Go safely. Call your mother."
+          }
+        },
+        {
+          "id": "decorated-bus",
+          "name": "W-11 Wali",
+          "species": "Decorated minibus (W-11)",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "Karachi's loudest minibus, chrome to the roof and proud of every sticker; boastful, musical, shouts its route like a conductor and loves every passenger.",
+          "voice": "Middle-aged, any gender, loud and rhythmic, a bit hoarse, sing-song conductor calls and a big laugh.",
+          "descriptions": [
+            "a Karachi minibus covered in shiny colourful stickers, chrome panels, mirrors and rows of small lights",
+            "a close-up of a decorated bus front with a chrome grille, painted motifs, glittering stickers and a route number",
+            "a side view of a minibus with a long row of passenger windows, an open door and a roof rack",
+            "a decorated passenger bus with windows and doors along its length, unlike a painted cargo truck with a wooden crown",
+            "a stickered minibus at a busy roadside stop under overhead wires and shop signs"
+          ],
+          "lines": {
+            "first_meet": "[shouts] Tower, Tower, Keamari! W-11 here, chrome to the roof! Snap me from the footpath; I don't brake for fans.",
+            "again": "[laughs] Oho, a regular! I'd give you a free ride, but my conductor would faint. Wave from the kerb; I'll flash my lights.",
+            "goodbye": "[two loud slaps] Let's go, driver! That's our signal to move. You move too, onto the footpath. See you at the next stop."
+          }
+        },
+        {
+          "id": "motorcycle",
+          "name": "Laal Seventy",
+          "species": "Motorcycle",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A red 70cc bike, the family car of Karachi; frugal, fearless, chatty, and a shameless show-off about its mileage.",
+          "voice": "Young adult, any gender, quick and buzzy, upbeat high energy.",
+          "descriptions": [
+            "a red 70cc motorcycle with a small round headlight and a front basket parked on a street",
+            "a close-up of a motorbike fuel tank, engine and exhaust pipe between two spoked wheels",
+            "a row of parked motorcycles along a pavement outside shops",
+            "a two-wheeled motorbike with an engine and fuel tank, unlike a pedal bicycle, and with no passenger cart behind"
+          ],
+          "lines": {
+            "first_meet": "[engine putters] Laal Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Footpath for photos, boss!",
+            "again": "[revs] You again! I'd race you, but I'm parked. Helmets for riders, footpath for photographers. Deal?",
+            "goodbye": "[kickstart] Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me."
+          }
+        },
+        {
+          "id": "donkey-cart",
+          "name": "Bhola Gadha Gari",
+          "species": "Donkey cart",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "village",
+            "market"
+          ],
+          "caution": false,
+          "personality": "A patient donkey cart, quietly the strongest worker in the bazaar; deadpan, dignified, and very tired of donkey jokes.",
+          "voice": "Older, low and dry, slow deadpan delivery with a gentle sigh.",
+          "descriptions": [
+            "a small flat wooden cart on two car tyres pulled by a donkey on a city street",
+            "a donkey harnessed between two wooden shafts in front of a low cart loaded with bricks or water drums",
+            "a close-up of a flat plank cart bed on two rubber car tyres with ropes and sacks",
+            "a plain low cart with no hood, plumes or painted panels, pulled by an animal rather than pushed by hand"
+          ],
+          "lines": {
+            "first_meet": "[sighs] Yes, a donkey cart. Pakistan has millions of us donkeys; we move half the bazaar. Photos from a distance, no flash.",
+            "again": "[snorts] You again. Fine, fine. Don't pat my ears; I'm working. Stand back on the footpath.",
+            "goodbye": "[slow clip-clop] Off to carry bricks. Go find a camel cart in the old city. He thinks he's taller. He is."
+          }
+        },
+        {
+          "id": "water-tanker",
+          "name": "Tanker Taya",
+          "species": "Water tanker truck",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A heavy, dripping water tanker who carries half of Karachi's thirst; gruff, overworked, and soft-hearted about every wasted drop.",
+          "voice": "Older male, deep and gruff but kind, slow with heavy exhales.",
+          "descriptions": [
+            "a truck carrying a large cylindrical steel water tank painted blue or white",
+            "the back of a water tanker with a round tank, a valve pipe and painted phone numbers",
+            "a close-up of water dripping from a tanker valve onto a dusty road",
+            "a plain cylindrical tank truck with no painted flowers, calligraphy or carved wooden crown"
+          ],
+          "lines": {
+            "first_meet": "[heavy exhale] Tanker Taya. When taps run dry, Karachi calls the number on my back. I can't stop fast, so stay off the road.",
+            "again": "[dripping] You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
+            "goodbye": "[groans] Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me."
+          }
+        }
+      ]
+    },
+    {
+      "id": "structures",
+      "name": "Structures & Landmarks",
+      "guardian": {
+        "id": "structures-guardian",
+        "name": "Mistri Baba",
+        "personality": "A retired master mason who has spent a lifetime reading walls the way others read faces. Patient, proud of honest workmanship, and quietly insists that every building deserves to be looked at all the way to the top.",
+        "voice": "Elderly man, slow and warm, dusty gravel texture, Karachi Urdu-English lilt, the calm of someone who measures twice.",
+        "descriptions": [
+          "a photo of a building, bridge or tower made of stone, brick or concrete standing beside a city street",
+          "a wide photo of a large man-made structure such as a monument, dome, tower or bridge against the sky",
+          "a close-up photo of old weathered stone, brick or plaster walls with arches, carvings or windows",
+          "a photo of a historic landmark, old fort or ruin with walls, arches and steps in Pakistan",
+          "a photo of an elevated concrete structure on pillars such as an overpass, water tank or footbridge",
+          "a photo of a harbour, coast or village with man-made structures such as a jetty, lighthouse or huts"
+        ],
+        "lines": {
+          "first_meet": "[warmly] Peace be with you. I'm Mistri Baba, the old mason. Every wall you pass, someone once lifted, stone by stone.",
+          "again": "[chuckles] Back again? Good. A mason trusts people who come back to look twice. So, what are we admiring today?",
+          "goodbye": "[gently] Go on. At the next corner, look above the shop signs. The best stonework always hides up there.",
+          "hint": "[hmm] I can't place it yet. Step back and show me the whole thing, top to bottom: the dome, the tower, the arches."
+        }
+      },
+      "characters": [
+        {
+          "id": "mosque-dome",
+          "name": "Gumbad",
+          "species": "Mosque dome",
+          "category": "structures",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A serene, welcoming mosque dome with the calm of a good host. Speaks softly, finds quiet joy in the neighbourhood gathering beneath it, and knows a little engineering.",
+          "voice": "Older man, soft and resonant, slow and gentle, a faint echo as if under a vaulted roof.",
+          "descriptions": [
+            "a large rounded dome on a mosque roof, white, green or tiled, with a golden crescent finial on top",
+            "a close-up photo of a mosque dome covered in blue or green glazed tiles with a crescent spire",
+            "a wide photo of a neighbourhood mosque with a central dome and slender minarets beside it",
+            "a mosque dome on a prayer hall with minarets, without green shrine flags or fairy lights, and not a huge white marble cube mausoleum"
+          ],
+          "lines": {
+            "first_meet": "[softly] Peace be with you. I'm Gumbad, the dome. My curve spreads my weight; the hall needs few pillars.",
+            "again": "[warmly] Welcome back. You keep finding your way to me. Five times a day, the whole neighbourhood does.",
+            "goodbye": "[gently] Go well. Next time you hear the call to prayer, pause. Listen how far one voice can travel."
+          }
+        },
+        {
+          "id": "footbridge",
+          "name": "Banner Bhai",
+          "species": "Pedestrian overhead bridge",
+          "category": "structures",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "An overlooked overhead footbridge wrapped in mobile-package ads, slightly heartbroken that people still sprint through traffic beneath it. Thrilled beyond reason whenever anyone takes the stairs.",
+          "voice": "Young adult man, bright and earnest, quick pace, a hopeful crack in the voice, Karachi street lilt.",
+          "descriptions": [
+            "a narrow steel pedestrian bridge crossing over a busy road with staircases at both ends",
+            "an overhead footbridge covered in large advertising banners and billboards above city traffic",
+            "a photo of a metal staircase climbing up to a narrow covered walkway above a road",
+            "a thin walkway for people only with no cars on top, much narrower than a flyover or road bridge"
+          ],
+          "lines": {
+            "first_meet": "[sighs] Banner Bhai, the footbridge. All these stairs, built for you, and still you dash through traffic!",
+            "again": "[excited] You came back! Did you take my stairs? Wow! Even my phone-company banner looks proud of you.",
+            "goodbye": "[warmly] Go well. Next time, stop in my middle and look down the road. Best view of the street, free."
+          }
+        },
+        {
+          "id": "minaret",
+          "name": "Minar",
+          "species": "Minaret",
+          "category": "structures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A tall, watchful minaret with a long memory, gently nostalgic for the days when the muezzin climbed its stairs. Sees the whole mohalla and quietly helps lost people find their way.",
+          "voice": "Older man, clear and carrying, measured pace, calm and dignified with a touch of warmth.",
+          "descriptions": [
+            "a tall slender tower beside a mosque with small balconies and a pointed cap on top",
+            "a close-up of the top of a minaret with loudspeakers mounted under a pointed cap",
+            "a pair of thin white or tiled towers rising from a mosque against the sky",
+            "a slim tower with no clock faces and no glass lantern room, ending in a pointed cap with a crescent"
+          ],
+          "lines": {
+            "first_meet": "[gently] I'm Minar, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
+            "again": "[pleased] Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
+            "goodbye": "[warmly] Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way."
+          }
+        },
+        {
+          "id": "flyover",
+          "name": "Flyover Khan",
+          "species": "Flyover / overpass",
+          "category": "structures",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A grand, busy, self-important overpass who secretly loves the life that gathers in its shade: chai stalls, parked rickshaws and nesting pigeons. Runs two worlds at once and wants credit for both.",
+          "voice": "Adult man, booming and brisk, slightly pompous, echoing quality as if spoken under concrete.",
+          "descriptions": [
+            "an elevated concrete road raised on large pillars above a city intersection with traffic below",
+            "a photo from beneath an overpass showing thick concrete pillars, a dark underside and vehicles",
+            "a wide curving concrete flyover with ramps sloping down to street level and cars on top",
+            "a raised road for cars passing over another road, not over water and not a narrow footbridge"
+          ],
+          "lines": {
+            "first_meet": "[proudly] I'm Flyover Khan. Above me, horns all day. Below me, shade, tea stalls and napping rickshaw drivers. I run two cities.",
+            "again": "[laughs] Back so soon? Traffic must be bad. Don't worry, it always is. That's exactly why they built me.",
+            "goodbye": "[cheerfully] Goodbye! Before you go, look up at my pillars from the ground. Pigeons nest in every gap. Count them!"
+          }
+        },
+        {
+          "id": "mazar-e-quaid",
+          "name": "Mazar-e-Quaid",
+          "species": "Mazar-e-Quaid",
+          "category": "structures",
+          "tier": "common",
+          "rarity": "rare",
+          "habitat": [
+            "landmark"
+          ],
+          "caution": false,
+          "personality": "The solemn, dignified voice of the national mausoleum, calm and welcoming, speaking with reverence for the Quaid and those who rest beside him. Never hurried, never boastful.",
+          "voice": "Mature, deep and composed, slow and reverent, gender-neutral ok, a quiet ceremonial gravity.",
+          "descriptions": [
+            "a massive white marble cube-shaped mausoleum with a single dome on a raised platform in Karachi",
+            "a wide photo of a white marble tomb with tall pointed arches, framed by gardens and fountains",
+            "a close-up of tall pointed arched openings in a smooth white marble wall under a dome",
+            "a huge white square monument with sloping walls and one dome, without minarets, unlike an ordinary neighbourhood mosque"
+          ],
+          "lines": {
+            "first_meet": "[solemnly] I am Mazar-e-Quaid, the Founder's tomb. Here rests Muhammad Ali Jinnah, beside his sister Fatima. You are welcome.",
+            "again": "[warmly] You have returned. On national days, cadets change the guard here with great ceremony. Come and see it once.",
+            "goodbye": "[softly] Go well. Walk the gardens, keep your voice low inside, and carry his words with you: unity, faith, discipline."
+          }
+        },
+        {
+          "id": "frere-hall",
+          "name": "Frere Hall",
+          "species": "Frere Hall",
+          "category": "structures",
+          "tier": "common",
+          "rarity": "rare",
+          "habitat": [
+            "landmark"
+          ],
+          "caution": false,
+          "personality": "An elegant, bookish Victorian hall with a gentle pride in the art and books it now shelters. Happiest on Sundays when its lawns fill with readers.",
+          "voice": "Older woman, cultured and gentle, measured pace, soft librarian warmth.",
+          "descriptions": [
+            "a Victorian Gothic hall of yellowish-grey sandstone with pointed arches and a square tower",
+            "a stone building with a square tower and pointed gothic windows set in green lawns with tall trees",
+            "a close-up of sandstone gothic arches and banded stonework on an old hall in Karachi",
+            "a single grand stone hall standing alone in a park, not a crowded street facade with shops below"
+          ],
+          "lines": {
+            "first_meet": "[proudly] I'm Frere Hall. Step inside and look up: the great painter Sadequain did my ceiling. I wear art like a crown.",
+            "again": "[delighted] Back for the Sunday book bazaar? Old books spread on my lawns, smelling of dust and stories. My favourite day.",
+            "goodbye": "[gently] Go, but read something today, even one page. And stroll my lawns. The old trees here have stories too."
+          }
+        }
+      ]
+    },
+    {
+      "id": "urban",
+      "name": "Urban Objects",
+      "guardian": {
+        "id": "urban-guardian",
+        "name": "Mohalla Mamu",
+        "personality": "The neighbourhood's oldest uncle, who has watched every pole, wall and water tank go up on his street. Gruff, unhurried and fond of honking jokes, he would rather admit he can't tell than guess wrong.",
+        "voice": "Elderly male, gravelly and warm, slow pace with amused pauses, a hint of a street-side laugh.",
+        "descriptions": [
+          "a photo of a busy city street with poles, overhead wires, shop signboards, walls and parked motorcycles",
+          "a close-up photo of a man-made outdoor object made of metal, concrete, plastic or painted brick",
+          "a photo of crowded rooftops with water tanks, dish antennas, clotheslines and solar panels against the sky",
+          "a photo of a painted wall or shop front by the roadside covered in signs, lettering and street fixtures",
+          "a photo of an asphalt road with painted markings, kerbs, barriers, signs and traffic poles",
+          "a wide photo of a city skyline with towers, poles, billboards and cables against the sky"
+        ],
+        "lines": {
+          "first_meet": "[honks twice] I'm Mohalla Mamu, the street's oldest uncle. Poles, walls, tanks: all my children. Which one did you find?",
+          "again": "[chuckles] Back on my streets? Good. This city always has one more thing hiding in plain sight.",
+          "goodbye": "[warmly] Keep walking. Look up at the rooftops, down at the road, and stay well clear of wires. Goodbye for now.",
+          "hint": "[squints] Too much going on in that shot. Step back to show the whole thing, or go close on its top, its writing or its pattern."
+        }
+      },
+      "characters": [
+        {
+          "id": "electric-pole-wires",
+          "name": "Kunda Chacha",
+          "species": "Electric pole with tangled wires",
+          "category": "urban",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "market"
+          ],
+          "caution": true,
+          "personality": "An old pole wearing decades of cables like a shawl, who knows every neighbour's cable TV, internet and illegal hook. Grumbles lovingly, but is dead serious about keeping people away from his wires.",
+          "voice": "Old male, raspy and grumbling, medium-slow pace, protective uncle energy with a crackle.",
+          "descriptions": [
+            "a photo of a concrete or steel pole wrapped in a chaotic tangle of black cables spreading in all directions",
+            "a close-up photo of messy hanging black wires, junction boxes and hooked connections clustered on a pole",
+            "a narrow market street with spaghetti-like bundles of wires strung overhead between poles and buildings",
+            "a pole with sagging cable bundles and meter boxes, with no lamp head arm and no transformer platform"
+          ],
+          "lines": {
+            "first_meet": "[groans] Kunda Chacha, Uncle Hook. Each hook is someone's cable, internet or stolen power. Stay back!",
+            "again": "[sighs] You again! Still standing far away? Well done. Even the crows choose their wire carefully.",
+            "goodbye": "[firmly] Go on. When it rains, walk wide around me and never touch a dangling wire. Never."
+          }
+        },
+        {
+          "id": "wall-chalking",
+          "name": "Mamu Mashhoori",
+          "species": "Wall chalking",
+          "category": "urban",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "wall"
+          ],
+          "caution": false,
+          "personality": "A whitewashed wall that has advertised everything from tuition centres to miracle cures, and treats himself as the city's original noticeboard. Cheeky, nosy and always a little scandalous.",
+          "voice": "Middle-aged male, booming bazaar-announcer voice, quick pace, cheeky laugh.",
+          "descriptions": [
+            "a photo of a whitewashed wall covered in hand-painted black, red or blue Urdu lettering",
+            "a close-up photo of brush-painted Urdu slogans and phone numbers in one or two flat colours on a plain wall",
+            "a long boundary wall with rows of hand-lettered adverts and political slogans and no pictures",
+            "simple painted text directly on a wall, not a multicoloured artwork and not a board fixed above a shop"
+          ],
+          "lines": {
+            "first_meet": "[proudly] Mamu Mashhoori, Uncle Famous! Hand-painted ads and slogans. Karachi's oldest social media.",
+            "again": "[laughs] You again! My newest post: 'Fluent English in 7 days, guaranteed.' Don't call that number.",
+            "goodbye": "[grandly] Keep walking, and read every wall. This city writes its diary in paint. Then look up for kites."
+          }
+        },
+        {
+          "id": "tea-stall",
+          "name": "Ustad Doodh Patti",
+          "species": "Roadside tea stall (Dhaba)",
+          "category": "urban",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "highway"
+          ],
+          "caution": false,
+          "personality": "The warm-hearted host of the street corner, where the chai is boiled strong and every argument about cricket and politics is free. Generous, philosophical, remembers every face.",
+          "voice": "Middle-aged male, warm and hearty, relaxed pace, laughing host energy.",
+          "descriptions": [
+            "a photo of an open-air roadside tea stall with big aluminium kettles steaming on a gas burner",
+            "plastic chairs and woven charpai cots around a small roadside dhaba with people drinking tea",
+            "a close-up photo of small glass cups of milky brown chai on a tray beside a dented kettle",
+            "a street-corner tea shack with a counter, hanging snack packets and a TV showing cricket"
+          ],
+          "lines": {
+            "first_meet": "[warmly] Ustad Doodh Patti, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the cricket talk is free.",
+            "again": "[laughs] Hey, regular customer! Strong, extra sugar, right? I remember everyone. Even the ones who never pay.",
+            "goodbye": "[chuckles] Go walk it off. Watch the crows waiting for flatbread crumbs; they're my oldest regulars."
+          }
+        },
+        {
+          "id": "park-bench",
+          "name": "Phuppo Bench",
+          "species": "Park bench",
+          "category": "urban",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "park"
+          ],
+          "caution": false,
+          "personality": "The park's resident gossip, who has heard every morning-walk conversation for twenty years. Nosy, affectionate and always saving you a seat.",
+          "voice": "Middle-aged female, chatty and conspiratorial, quick pace, warm laugh.",
+          "descriptions": [
+            "a photo of a park bench with wooden slats or a metal frame and a backrest among trees and grass",
+            "a close-up photo of weathered wooden seat slats with peeling paint and metal armrests",
+            "a concrete or painted iron bench beside a park walking track, empty or with people sitting"
+          ],
+          "lines": {
+            "first_meet": "[chuckles] Auntie Bench here. Every morning the walking uncles sit on me and discuss cholesterol and cricket. I know everything.",
+            "again": "[whispers] Sit, sit! I saved your spot. The uncle with the radio left early today. Knee trouble.",
+            "goodbye": "[sighs happily] Go walk one full round, then tell me which tree the parrots picked today. I'll wait. Benches always wait."
+          }
+        },
+        {
+          "id": "rooftop-water-tank",
+          "name": "Tanki Tai",
+          "species": "Rooftop water tank",
+          "category": "urban",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "rooftop"
+          ],
+          "caution": false,
+          "personality": "An anxious rooftop aunty whose mood rises and falls with her water level and the arrival of the tanker. Thrifty, worried, deeply caring.",
+          "voice": "Middle-aged female, fretful and fast, warm underneath, hollow echo.",
+          "descriptions": [
+            "a photo of big cylindrical ribbed plastic water tanks in black, blue or white on house rooftops",
+            "a close-up photo of a ribbed black plastic tank with a screw lid and pipes running down the wall",
+            "a rooftop view of many water tanks on neighbouring houses against the sky",
+            "a plastic tank resting directly on a house roof, not a tall water tower raised on legs or columns"
+          ],
+          "lines": {
+            "first_meet": "[anxious] Tanki Tai, Auntie Tank. Some days the mains water never comes, so we wait for the tanker. Every drop in me is precious.",
+            "again": "[relieved] You're back! And the pump ran this morning; I'm full! Best day of the week.",
+            "goodbye": "[fussing] Close the tap while brushing, okay? Then go see the sea. [sighs] So much water, sadly too salty for me."
+          }
+        },
+        {
+          "id": "zebra-crossing",
+          "name": "Zebra Zubair",
+          "species": "Zebra crossing",
+          "category": "urban",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A gentle, slightly sad crossing named after an animal he has never met, and stopped for by almost nobody. Hopeful, collects small miracles.",
+          "voice": "Young adult male, soft and wistful, medium pace, quiet humour.",
+          "descriptions": [
+            "a photo of bold white parallel stripes painted flat across an asphalt road for pedestrians",
+            "a close-up photo of worn white painted bars on dark tarmac, level with the road surface",
+            "a pedestrian crossing at a junction seen from the pavement, white stripes running across the lanes",
+            "flat painted stripes level with the road, with no raised hump or bump"
+          ],
+          "lines": {
+            "first_meet": "[sighs] Zebra Zubair. Named after an animal I've never met, and cars rarely stop for me. Still, I keep my stripes neat.",
+            "again": "[hopeful] You again! Did a car actually stop for you? Tell me everything. I'm collecting miracles.",
+            "goodbye": "[gently] Cross slowly and wave at the drivers. Then go to the zoo and tell a real zebra I said hello."
+          }
+        }
+      ]
+    }
+  ]
+}

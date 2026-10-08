@@ -1,0 +1,26 @@
+{
+  "name": "votw-pipeline",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Build-time content pipeline for Voices of the Wild: embeddings, calibration, voice lines.",
+  "scripts": {
+    "embed": "tsx src/embed.ts",
+    "photos": "tsx src/fetch-photos.ts",
+    "calibrate": "tsx src/calibrate.ts",
+    "audio": "tsx src/audio.ts",
+    "audio:dry": "tsx src/audio.ts --dry-run",
+    "runtime": "tsx src/runtime.ts",
+    "validate": "tsx src/validate.ts",
+    "credits": "tsx src/credits.ts",
+    "build:all": "npm run embed && npm run calibrate && npm run audio && npm run validate"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@types/node": "^26.6.4",
+    "kokoro-js": "^1.2.1",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

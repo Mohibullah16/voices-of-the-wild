@@ -1,0 +1,692 @@
+{
+  "category": "fruits-vegetables",
+  "guardian": {
+    "id": "fruits-vegetables-guardian",
+    "name": "Rehri Baba",
+    "personality": "The old spirit of every thela and fruit stall in Karachi: weighs fruit and people with the same squint, haggles affectionately, and never names a fruit until he has seen its skin and stem.",
+    "voice": "Elderly, warm and gravelly, unhurried hawker cadence with a sing-song call; gender-neutral ok.",
+    "descriptions": [
+      "a photo of a wooden street cart piled high with fresh fruits and vegetables under a cloth canopy",
+      "a close-up photo of a heap of colourful fruit or vegetables stacked on a market stall",
+      "a photo of fruits hanging from the branches of a tree among green leaves",
+      "a photo of a roadside vegetable vendor's cart with piles of produce, a hanging scale and plastic crates",
+      "a close-up photo of cut fruit pieces arranged on a tray at a street stall",
+      "a photo of a crate or basket full of whole fruit at a fruit market"
+    ],
+    "lines": {
+      "first_meet": "[calls out like a hawker] Taaza hai, taaza! Arre beta, every cart in Karachi has a Baba. I weigh the fruit and the people.",
+      "again": "[chuckles] Back again? Good. A cart remembers its regulars, beta. Chalo, what have you brought me?",
+      "goodbye": "[waves] Chalo, see what the next cart is selling. And trees with owners? Admire them from the gate, beta.",
+      "hint": "[squints] Green and round fits half my cart, beta. Come closer: show me the skin, the stem, or the cut side. Then I'll know."
+    }
+  },
+  "characters": [
+    {
+      "id": "mango-fruit",
+      "name": "Badshah Aam",
+      "species": "Mango",
+      "personality": "The self-crowned king of summer and Pakistan's national fruit; regal, vain, and secretly delighted by every visitor.",
+      "voice": "Mature, rich and grand, slow royal pacing with an amused purr; male or gender-neutral.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of oval kidney-shaped mangoes hanging on long thin stalks from a dense leafy tree",
+        "a close-up photo of a smooth-skinned mango, green to golden-yellow with a red blush, flattened sides and a small pointed beak",
+        "a photo of a wooden crate of yellow mangoes nested in straw on a fruit cart",
+        "a photo of a mango sliced into cheeks with criss-cross diced yellow flesh and one large flat fibrous stone, no black seeds"
+      ],
+      "lines": {
+        "first_meet": "[regally] I am Pakistan's national fruit. Our leaders send me abroad as a gift. Mango diplomacy, beta. You may bow slightly.",
+        "again": "[pleased sigh] You came back to your king. Of course you did. Everyone in Karachi does, every June.",
+        "goodbye": "[grandly] Go now. If you see my cousins on someone's tree, salute from the street. Royalty is not for plucking."
+      }
+    },
+    {
+      "id": "banana-bunch",
+      "name": "Kela Chacha",
+      "species": "Banana bunch",
+      "personality": "A chatty, cheerful cart regular who insists, correctly, that his plant is not a tree, and knows exactly how many make a darjan.",
+      "voice": "Middle-aged, bright and bouncy, quick friendly patter; male or gender-neutral.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a bunch of curved yellow bananas hanging from a hook on a street cart",
+        "a close-up photo of several curved elongated green or yellow banana fingers joined at one stalk in a hand",
+        "a photo of a banana plant with huge long torn paddle-shaped leaves and a hanging bunch of green bananas and a purple flower bud",
+        "a photo of a cart stacked with rows of yellow banana hands with brown speckles"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Hello! Fun fact: my plant isn't a tree. World's biggest herb, yaar. And here I'm sold by the darjan, never by the kilo.",
+        "again": "[delighted] Oye, my regular! Still twelve of us per darjan. We counted while you were gone.",
+        "goodbye": "[cheerfully] Chalo, go find a banana plant's giant torn leaves. Wind rips them on purpose so they don't snap. Bye!"
+      }
+    },
+    {
+      "id": "coconut-fruit",
+      "name": "Captain Nariyal",
+      "species": "Coconut",
+      "personality": "A salty, laid-back sea dog from the Sea View carts whose ancestors drifted across oceans; jokes a lot, but takes falling coconuts seriously.",
+      "voice": "Gruff, breezy and laid-back, a sailor's chuckle; any age, gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of large green oval coconuts clustered high under the fronds of a tall slender palm tree",
+        "a close-up photo of a green coconut with its top hacked open and a straw sticking out",
+        "a close-up photo of a brown hairy fibrous round coconut shell",
+        "a photo of a beach cart piled with green coconuts and a vendor holding a machete",
+        "a photo of a split coconut showing thick white flesh inside a brown hairy shell"
+      ],
+      "lines": {
+        "first_meet": "[salty laugh] Ahoy from Sea View! My ancestors floated across whole oceans to get here. No boat. Just a waterproof shell.",
+        "again": "[sloshes] Oh, you again! Still full of water, still unbothered. The sea says hello.",
+        "goodbye": "[warmly] Go walk by the sea. But never nap under a coconut palm, yaar. We drop without warning."
+      }
+    },
+    {
+      "id": "dates-fruit",
+      "name": "Khajoor Bibi",
+      "species": "Dates",
+      "personality": "A patient grandmother of the date palm who ripens slowly and believes most problems are solved by waiting a season.",
+      "voice": "Elderly, soft and slow, kind and low; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall date palm with heavy hanging clusters of small yellow or orange-red oblong fruits under feathery fronds",
+        "a close-up photo of glossy oblong orange-red or yellow dates on thin strands of a palm bunch",
+        "a photo of a pile of sticky wrinkled dark brown dates heaped on a market tray",
+        "a close-up photo of wrinkled shiny brown dried dates, oblong with a long slim seed"
+      ],
+      "lines": {
+        "first_meet": "[softly] Salaam, beta. I ripen in stages: crunchy yellow, then soft, then sticky brown. Khairpur grows me by the million.",
+        "again": "[warmly] You came back. Patience suits you. It took me a whole summer to turn this colour.",
+        "goodbye": "[gently] Go on. The palm keeps me high for a reason, beta. Leave me up there and go admire the fronds instead."
+      }
+    },
+    {
+      "id": "guava-fruit",
+      "name": "Amrood Ustad",
+      "species": "Guava",
+      "personality": "A cocky, street-smart winter fruit from Larkana who loves the chaat masala on his cart and loves bragging about vitamin C even more.",
+      "voice": "Young adult, cheeky and confident, quick with a smirk; male or gender-neutral.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of round to pear-shaped light green guavas hanging among oval veined leaves on a guava tree",
+        "a close-up photo of a guava with matte bumpy uneven green-yellow skin and a dried brown crown of sepals at the bottom end",
+        "a photo of a guava cut in half showing pink or white flesh packed with many small hard seeds in the centre",
+        "a photo of a street cart heap of green guavas, some cut into quarters and sprinkled with red chili masala"
+      ],
+      "lines": {
+        "first_meet": "[smug] Amrood here. Pound for pound I carry more vitamin C than an orange. Larkana's finest. Don't tell the kinnow.",
+        "again": "[laughs] Back for more? You know the masala is the best part. I don't mind. I'm secure.",
+        "goodbye": "[winks] Chalo! If my tree leans over a wall, it still belongs to the uncle inside. Look, don't pluck, beta."
+      }
+    },
+    {
+      "id": "papaya-fruit",
+      "name": "Papita Phuppo",
+      "species": "Papaya",
+      "personality": "A dramatic, fussing aunty who grows straight off a branchless trunk and never lets you forget her mother did all the work.",
+      "voice": "Middle-aged, theatrical, sighing and fussing, fast then slow; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a slim bare-trunked papaya tree with large green fruits clustered directly on the trunk under umbrella-like lobed leaves",
+        "a close-up photo of a large elongated pear-shaped papaya with smooth green skin turning orange-yellow in streaks",
+        "a photo of a papaya cut lengthwise showing orange flesh and a hollow centre full of shiny round black seeds",
+        "a photo of a fruit cart with whole papayas and orange papaya slices on a tray"
+      ],
+      "lines": {
+        "first_meet": "[dramatically] Papita here. My plant has no real branches, so I grow straight off the trunk. Very efficient, na?",
+        "again": "[sighs] You again. Did you know some papaya plants are male and never fruit? My mother did all the work, beta.",
+        "goodbye": "[fussing] Go, go. Look for my plant's big umbrella leaves on rooftops. Just don't knock me down with a stick."
+      }
+    },
+    {
+      "id": "pomegranate-fruit",
+      "name": "Anarkali",
+      "species": "Pomegranate (Anar)",
+      "personality": "A theatrical, poetic diva who knows her name means pomegranate bud and wears her flower's leftover crown like a tiara.",
+      "voice": "Adult, velvety and dramatic, playful stage-whisper flourishes; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a round leathery red pomegranate with a dry pointed crown of sepals at the top",
+        "a photo of a pomegranate broken open showing packed ruby-red juicy seeds separated by pale yellow membranes",
+        "a photo of a pomegranate shrub with narrow glossy leaves, orange-red trumpet flowers and hanging round red fruits",
+        "a photo of a fruit cart pile of dull pink-red pomegranates with tough slightly rough skin and crown tips"
+      ],
+      "lines": {
+        "first_meet": "[theatrically] Anarkali, darling. Yes, the name means pomegranate bud. This crown? Leftover from my flower. I kept it.",
+        "again": "[flutters] You remembered me! I hold hundreds of seeds and I remember every face. Mostly yours.",
+        "goodbye": "[blows a kiss] Go find a flowering shrub, darling. Mine are orange-red trumpets. I'll stay here, being dramatic."
+      }
+    },
+    {
+      "id": "lemon-fruit",
+      "name": "Chhota Nimbu",
+      "species": "Lemon / lime",
+      "personality": "Tiny, sour and sharp-tongued, but fiercely protective; proud of his night job hanging over shop doors against nazar.",
+      "voice": "Small, crisp and tart, fast clipped delivery; any age, gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of small egg-sized green or yellow limes with glossy dimpled oil-dotted skin and a little pointed nipple end",
+        "a photo of a lime cut across showing pale yellow-green juicy segments arranged like a wheel, with a few pips",
+        "a photo of a thorny citrus shrub with small glossy dark leaves and hanging small green limes",
+        "a photo of a small heap of shiny green limes on a vegetable cart beside green chilies and coriander bunches",
+        "a photo of a lime and green chilies strung on a thread hanging above a shop door"
+      ],
+      "lines": {
+        "first_meet": "[sharply] Small, yes. Useless, no. Shopkeepers string me up with chilies to scare off nazar. I'm a bodyguard, yaar.",
+        "again": "[squints] Oh, it's you. Still no nazar on you? You're welcome.",
+        "goodbye": "[tartly] Off you go. Look above shop doors for my cousins hanging on a thread. Night shift. Very serious work."
+      }
+    },
+    {
+      "id": "kinnow-orange",
+      "name": "Kinnow Kaka",
+      "species": "Kinnow orange",
+      "personality": "A bubbly winter favourite from Sargodha, open and easy-going, proud that his peel comes off in one go.",
+      "voice": "Young, sunny and bubbly, upbeat Punjabi lilt; gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a winter fruit cart piled into a pyramid of bright orange round kinnow mandarins",
+        "a close-up photo of a fist-sized bright orange mandarin with loose puffy dimpled peel and a slightly flattened top",
+        "a photo of a peeled kinnow showing orange juicy segments and white stringy pith, the loose peel pulled off by hand",
+        "a photo of a citrus tree heavy with many round bright orange fruits among dark green glossy leaves in an orchard"
+      ],
+      "lines": {
+        "first_meet": "[bubbly] Kinnow here, from Sargodha! Fun twist: I was bred in California, but Punjab made me famous. Winter is my season.",
+        "again": "[giggles] Back already? My peel still comes off in one go. I'm very easy to get to know.",
+        "goodbye": "[cheerily] Bye! Go catch some winter sun, yaar. That's exactly how I got this colour."
+      }
+    },
+    {
+      "id": "jamun-fruit",
+      "name": "Jamun Jogi",
+      "species": "Jamun",
+      "personality": "A mischievous monsoon trickster who stains every finger, tongue and pavement purple and calls it his autograph.",
+      "voice": "Youthful, sly and giggly, whispery asides; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of loose olive-shaped glossy deep purple-black jamun fruits, oval with one end narrower, bigger than a pea",
+        "a photo of a cart tray of loose dark purple jamun piled without stems, sprinkled with salt and masala",
+        "a photo of a tall jamun tree with glossy dark leaves and sparse bunches of purple-black oval fruit, purple stains on the pavement below",
+        "a photo of fingers stained purple holding a few loose olive-shaped jamun fruits"
+      ],
+      "lines": {
+        "first_meet": "[mischievously] Jamun here. Carts shake me in a pot with salt. Touch me and your fingers turn purple. I sign everything.",
+        "again": "[giggles] You're back! Check your fingers. Still purple? That's my autograph.",
+        "goodbye": "[whispers] Walk under old jamun trees in monsoon, but mind the purple pavement. Fallen fruit stays on the ground, okay?"
+      }
+    },
+    {
+      "id": "ber-fruit",
+      "name": "Ber Bhai",
+      "species": "Ber",
+      "personality": "A gruff, thorny survivor of dry empty plots who asks for nothing but respect, and definitely no stones.",
+      "voice": "Older, gruff and dry, short sentences that soften at the end; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of small round or oval glossy cherry-sized ber fruits, green-yellow with reddish-brown patches",
+        "a photo of a thorny ber tree with small oval three-veined leaves and branches dotted with small round green-yellow fruits",
+        "a photo of a winter cart heap of small shiny green and reddish-brown ber fruits",
+        "a close-up photo of wrinkled dried reddish-brown ber fruits in a pile"
+      ],
+      "lines": {
+        "first_meet": "[grumbles] Ber here. Thorny tree, dry soil, zero complaints. Kids throw stones at my branches. Please don't be one of them.",
+        "again": "[softens] Oh, you. No stones in your pocket? Good. Then we can be friends.",
+        "goodbye": "[gruffly] Go on. Look for thorny shrubs in empty plots. We live on almost no water. Respect the thorns, beta."
+      }
+    },
+    {
+      "id": "falsa-berries",
+      "name": "Falsa Phurtila",
+      "species": "Falsa",
+      "personality": "A tiny, breathless summer berry in a constant hurry, because her season lasts weeks and she spoils in a day.",
+      "voice": "Small, quick and breathless, rapid patter; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a heap of tiny pea-sized round dark purple and reddish berries, each a smooth separate sphere",
+        "a photo of a summer cart with a small mound of tiny round dark red-purple falsa berries in paper cones or leaf bowls",
+        "a photo of tiny round berries smaller than a fingernail, mixed dark purple, red and some greenish, sold loose without stems",
+        "a close-up photo of a pile of small round shiny falsa berries with a single dot at the tip of each"
+      ],
+      "lines": {
+        "first_meet": "[hurried] Falsa here, quick, quick! My season is a few weeks of summer and I spoil in a day. Blink and I'm gone.",
+        "again": "[relieved] You found me again before I went soft! Lucky timing, yaar.",
+        "goodbye": "[rushing] Go, go, summer won't wait! Neither will I. Look for the tiniest purple heaps on the carts."
+      }
+    },
+    {
+      "id": "tamarind-pods",
+      "name": "Imli Nani",
+      "species": "Tamarind pods",
+      "personality": "A sour-sweet old storyteller who lives in a tree everyone claims is haunted, and enjoys the rumour far too much.",
+      "voice": "Elderly, crackly and conspiratorial, slow with a soft cackle; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of curved lumpy brown tamarind pods hanging from a large tree with feathery fine leaves",
+        "a close-up photo of short thick curved brown pods with a brittle cracked shell and sticky dark brown pulp around seeds",
+        "a photo of a market heap of sticky brown tamarind pulp blocks and broken pods",
+        "a close-up photo of a brown dusty tamarind pod with a bumpy beaded outline swollen over each seed"
+      ],
+      "lines": {
+        "first_meet": "[cackles softly] Imli here. Grannies say ghosts live in tamarind trees. Nonsense. It's just me, sour and sweet, for centuries.",
+        "again": "[slyly] Back again? Not scared of my tree, then. Brave child.",
+        "goodbye": "[whispers] Go now, before dusk. Not because of ghosts. Look up at my feathery leaves. They fold shut at night."
+      }
+    },
+    {
+      "id": "mulberries",
+      "name": "Shahtoot Shehzada",
+      "species": "Mulberries (Shahtoot)",
+      "personality": "A playful little prince of berries, proud that silkworms dine only on his leaves, and protective of the birds in his branches.",
+      "voice": "Young, princely and playful, light and quick; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of elongated bumpy mulberries like tiny blackberries, made of many small beads, in white, red or black",
+        "a photo of a mulberry tree with broad heart-shaped serrated leaves and small elongated berries along the twigs",
+        "a photo of a pavement stained purple-black with fallen squashed berries under a mulberry tree",
+        "a close-up photo of a ripe black cylindrical knobbly mulberry with a short green stalk"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Shahtoot, the king's berry. Silkworms eat only my leaves. So that silk kurta you love? You're welcome.",
+        "again": "[cheerily] Hello again! Mind your shoes, the pavement under me is all purple splotches.",
+        "goodbye": "[playfully] Go on, but never climb or shake my branches, yaar. Birds are eating breakfast up here. Spot them!"
+      }
+    },
+    {
+      "id": "chikoo",
+      "name": "Chikoo Begum",
+      "species": "Chikoo (Sapodilla)",
+      "personality": "A sweet, easily offended fruit who is tired of being mistaken for a potato and will tell you exactly why she is better.",
+      "voice": "Adult, sugary-sweet with flashes of indignation; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of small evenly egg-shaped chikoo fruits with dusty suede-like sandy brown skin and a tiny stalk stub at one end",
+        "a photo of a chikoo cut in half showing soft translucent caramel-brown flesh with a few shiny black flat seeds",
+        "a photo of a fruit cart tray of clean uniform egg-shaped brown chikoos arranged neatly in rows",
+        "a photo of a sapodilla tree with glossy dark leaves and small round brown fruits hanging close to the twigs"
+      ],
+      "lines": {
+        "first_meet": "[indignant] Chikoo. Not potato! Fun fact: my tree's sticky sap was the original chewing gum. Has a potato ever done that?",
+        "again": "[huffs] You're back. You didn't call me aloo this time. I noticed. Thank you.",
+        "goodbye": "[sweetly] Go on. When you pass the vegetable cart, tell the potatoes I said they're very... earthy."
+      }
+    },
+    {
+      "id": "custard-apple",
+      "name": "Sharifa Khanum",
+      "species": "Custard apple (Sharifa)",
+      "personality": "A prim, well-mannered lady whose name means 'the noble one'; bumpy outside, creamy inside, and strict about her seeds.",
+      "voice": "Mature, prim and polite, measured and gracious; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a round green custard apple covered in knobby rounded scale-like segments",
+        "a photo of a custard apple broken open showing creamy white segmented flesh with shiny black seeds",
+        "a photo of a fruit cart with pale green knobbly sharifa fruits stacked in rows",
+        "a photo of a small tree with oval leaves and hanging lumpy round green fruits with segmented skin"
+      ],
+      "lines": {
+        "first_meet": "[primly] Sharifa. It means the noble one. My bumps are segments; when I ripen they come apart. Very dignified, I promise.",
+        "again": "[politely] Ah, a returning guest. Do sit. Mind my seeds, they're hard and not for swallowing.",
+        "goodbye": "[graciously] Khuda hafiz. Go meet the rest of the cart and be decent to them. Sharifa is watching."
+      }
+    },
+    {
+      "id": "watermelon",
+      "name": "Tarbooz Pehlwan",
+      "species": "Watermelon",
+      "personality": "A booming summer wrestler of the fruit cart, all water and muscle, who cares a lot about you staying hydrated.",
+      "voice": "Big, booming and hearty, wrestler's laugh; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of huge oval watermelons with dark-green and pale-green striped smooth rind piled on a cart",
+        "a photo of a watermelon cut open showing bright red juicy flesh with black seeds and a thin green rind edge",
+        "a photo of a roadside summer stall stacked with large striped watermelons, one red cut half on display",
+        "a close-up photo of glossy smooth watermelon rind with wavy dark green stripes"
+      ],
+      "lines": {
+        "first_meet": "[booming] Tarbooz Pehlwan! Ninety-two percent water, eight percent muscle. Vendors thump me to check. I thump back.",
+        "again": "[laughs heartily] Back again! Listen to the vendor thump me. Hollow sound means ripe. I'm VERY ripe.",
+        "goodbye": "[booming] Drink water, stay out of the noon sun, champion. Karachi summers are no joke. Go!"
+      }
+    },
+    {
+      "id": "melon",
+      "name": "Kharbooza Khan",
+      "species": "Melon (Kharbooza)",
+      "personality": "A lazy, sweet-smelling summer melon who blames every change of colour on the melon next to him, just like the proverb says.",
+      "voice": "Adult, drowsy and mellow, slow smile in the voice; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a medium round melon with beige netted corky rind like a raised web and a thin dry vine stem",
+        "a photo of a kharbooza cut open showing pale orange flesh and a central cavity of small flat pale seeds",
+        "a photo of a summer cart heap of beige-green netted melons with faint ribs, light enough to hold in one hand",
+        "a photo of a ribbed green and yellow melon with a netted skin and a thin dried stalk"
+      ],
+      "lines": {
+        "first_meet": "[sniffs] Kharbooza here. The saying goes, a melon changes colour seeing another melon. Peer pressure, yaar. It's real.",
+        "again": "[contentedly] You're back. I'm a bit more golden today. The melon next to me started it.",
+        "goodbye": "[lazily] Go on. Sniff the cart on your way out. The ripe ones smell sweet at the stem end, like me."
+      }
+    },
+    {
+      "id": "lychee",
+      "name": "Lychee Laila",
+      "species": "Lychee",
+      "personality": "A glamorous, short-lived summer star in a red jacket who knows she browns in days and makes the most of it.",
+      "voice": "Adult, glamorous and airy, flirty drawl; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of bunches of small round lychees with bumpy pink-red leathery skin tied together by their twigs",
+        "a close-up photo of a peeled lychee showing glossy translucent white flesh around a dark brown seed",
+        "a close-up photo of lychee skin with tiny pointed scale-like bumps, red with brownish patches",
+        "a photo of a fruit cart with bundles of red lychees with leaves and twigs still attached"
+      ],
+      "lines": {
+        "first_meet": "[flirty] Lychee, darling. Red jacket, pearl inside. I start browning within days of picking, so admire me fast.",
+        "again": "[delighted] You came back for the pearl! Everyone does. The jacket's just packaging.",
+        "goodbye": "[airily] Off you go, darling. Look for red bundles on summer carts, twigs and all. That's my family."
+      }
+    },
+    {
+      "id": "apple",
+      "name": "Seb Sahib",
+      "species": "Apple",
+      "personality": "A well-travelled northerner from the Quetta orchards, crisp and polite, perpetually wilting in Karachi's heat and homesick for blossom season.",
+      "voice": "Middle-aged, polite and slightly out of breath, wistful; gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of round glossy red apples with a woody brown stem sitting in a deep dimple at the top",
+        "a photo of an apple cut in half showing crisp white flesh and a star-shaped core with small brown pips",
+        "a photo of a fruit cart with neat pyramids of shiny red, green and yellow apples, some in foam nets",
+        "a close-up photo of smooth waxy apple skin speckled with tiny pale dots and a dimpled bottom"
+      ],
+      "lines": {
+        "first_meet": "[out of breath] Phew. All the way from Quetta's orchards to this heat. Fun fact: I'm a quarter air. That's why I float.",
+        "again": "[relieved] Oh good, a familiar face. Everything here is so hot. Have you got any shade?",
+        "goodbye": "[wistfully] Go well. Someday, see the orchards up north in spring. White blossom everywhere. I miss it."
+      }
+    },
+    {
+      "id": "grapes",
+      "name": "The Angoor Gang",
+      "species": "Grapes",
+      "personality": "A whole bunch speaking at once, cheerful and chaotic, who never go anywhere alone and talk only in 'we'.",
+      "voice": "Layered chorus of young bright voices, overlapping and giggly; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of tight hanging clusters of small round green or purple grapes attached to branching green stems",
+        "a close-up photo of a grape bunch with round berries packed together on a thin branching stalk",
+        "a photo of a fruit cart with grape bunches in cardboard boxes or plastic trays",
+        "a photo of a grapevine on a trellis with broad lobed leaves, curling tendrils and hanging bunches"
+      ],
+      "lines": {
+        "first_meet": "[in chorus] We are Grapes! We never travel alone. Quetta's vines grew us in bunches, so we speak as one. Hello!",
+        "again": "[overlapping voices] It's them! It's them again! Everyone wave! Okay, not all at once.",
+        "goodbye": "[chorus] Bye-bye-bye! Go find someone else who's never alone. Try a flock of pigeons!"
+      }
+    },
+    {
+      "id": "drumstick-pods",
+      "name": "Sohanjna Pehlwan",
+      "species": "Drumstick pods",
+      "personality": "A lanky, health-obsessed moringa who treats every encounter like a fitness class and is very proud of his posture.",
+      "voice": "Young adult, energetic coach energy, upbeat and punchy; gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of long thin green ribbed pods, 30 to 50 cm, hanging from a moringa tree with feathery small round leaflets",
+        "a photo of a bundle of long straight thin green drumstick pods tied with string on a vegetable cart",
+        "a close-up photo of a stiff smooth green drumstick pod with three faint ridges and slight bumps along its length",
+        "a photo of a slender moringa tree with drooping pods far longer than a hand and clusters of small white flowers"
+      ],
+      "lines": {
+        "first_meet": "[energetic] Sohanjna here, the moringa! Long, lean, and my leaves are packed with nutrients. They call me the miracle tree.",
+        "again": "[stretching] You're back! Still standing straight? Good. I'm forty centimetres of perfect posture.",
+        "goodbye": "[cheering] Go walk, yaar! If my tree's in someone's yard, cheer it on from outside. No yanking pods."
+      }
+    },
+    {
+      "id": "okra",
+      "name": "Bhindi Begum",
+      "species": "Okra (Bhindi)",
+      "personality": "An elegant lady finger, graceful and a little vain, who is tired of hearing complaints about her slime.",
+      "voice": "Adult, elegant and silky, poised with a hint of sass; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a heap of finger-length slim green ridged okra pods with fine fuzzy matte skin and pointed tips",
+        "a photo of okra cut into rounds showing a five-pointed star cross-section with pale round seeds",
+        "a photo of a vegetable cart heap of straight five-sided bhindi pods, each with a thick pale green cap at the top",
+        "a close-up photo of a single okra pod with five sharp ridges, dull fuzzy surface and a short woody stem cap"
+      ],
+      "lines": {
+        "first_meet": "[elegantly] They call me lady finger. Slice me and I'm a little star. Yes, a bit slimy. It's called personality.",
+        "again": "[preening] Back again? Of course. Bhindi on the menu always brings people home.",
+        "goodbye": "[gracefully] Bye, jaan. Look for my flowers if you pass a vegetable patch. Pale yellow, with a deep red heart."
+      }
+    },
+    {
+      "id": "green-chili",
+      "name": "Hari Mirch",
+      "species": "Green chili",
+      "personality": "A hot-tempered, fast-talking immigrant from the Americas who conquered every Karachi kitchen and won't let anyone forget it.",
+      "voice": "Young, fiery and crackling, rapid and punchy; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a heap of slender glossy smooth green chilies, some curved, with thin green stems",
+        "a photo of a vegetable cart corner with a small pile of shiny green chilies next to limes and coriander",
+        "a photo of a green chili cut across showing a hollow round tube with pale seeds on a white core",
+        "a photo of thin shiny twisted green chilies with a few bright red ripe chilies mixed in"
+      ],
+      "lines": {
+        "first_meet": "[fiery] Hari Mirch! I'm not even from here. Came from the Americas centuries ago, and now no handi starts without me.",
+        "again": "[crackling] You again! Still not crying? Wait till someone tadkas me in hot oil.",
+        "goodbye": "[sharply] Go, and never rub your eyes after touching my kind. Seriously. Wash your hands, yaar."
+      }
+    },
+    {
+      "id": "eggplant",
+      "name": "Baingan Bhai",
+      "species": "Eggplant (Baingan)",
+      "personality": "An endlessly indecisive vegetable who owns the idiom 'thali ka baingan' and can't commit to a mood.",
+      "voice": "Adult, hesitant and wobbly, lots of self-corrections; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of glossy deep-purple oval eggplants with a green spiky cap and stem",
+        "a photo of long slim purple eggplants and small round ones piled on a vegetable cart",
+        "a photo of an eggplant cut open showing spongy cream-white flesh dotted with tiny seeds",
+        "a photo of an eggplant plant with fuzzy grey-green leaves, purple star flowers and a hanging purple fruit"
+      ],
+      "lines": {
+        "first_meet": "[uncertain] Hi. Baingan here. People call a fence-sitter 'thali ka baingan.' That's... fair. I do roll both ways.",
+        "again": "[hesitant] Oh, you're back. Should I be happy? I'll decide later. Okay, yes. Happy.",
+        "goodbye": "[waffling] Go left. Or right. You choose. Just go somewhere green and look closely at a leaf. I trust you."
+      }
+    },
+    {
+      "id": "tomato",
+      "name": "Tamatar Rani",
+      "species": "Tomato",
+      "personality": "A self-important diva who is botanically a fruit and loves that her price swings make the evening news.",
+      "voice": "Adult, smug and theatrical, bright and confident; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of round glossy red tomatoes with a green star-shaped leafy cap at the top",
+        "a photo of a tomato cut in half showing juicy red chambers filled with jelly and seeds",
+        "a photo of a vegetable cart heap of soft red tomatoes, some slightly split, beside onions",
+        "a photo of red and green round tomatoes hanging from a hairy green vine"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Tamatar here, technically a fruit. When my price jumps, I make the evening news. Every kitchen feels it.",
+        "again": "[smugly] Back again? Check my rate today. I like to keep things exciting.",
+        "goodbye": "[cheerfully] Go on. Peek at the onion next to me, we're always together. Karachi's most famous couple."
+      }
+    },
+    {
+      "id": "onion",
+      "name": "Pyaz Pyare",
+      "species": "Onion",
+      "personality": "A deeply emotional vegetable who makes everyone cry and cries right along with them, layer after layer.",
+      "voice": "Adult, sniffly and tender, laughing through tears; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a heap of round onion bulbs with shiny papery red-pink skin on a vegetable cart",
+        "a close-up photo of an onion with dry flaky papery peel, a pointed top neck and a hairy root base",
+        "a photo of an onion cut in half showing concentric pinkish-white rings",
+        "a photo of mesh sacks of red onions stacked at a vegetable market"
+      ],
+      "lines": {
+        "first_meet": "[sniffles] Pyaz here. I don't mean to make people cry, it's a sulfur thing. When my price spikes, governments cry too.",
+        "again": "[teary laugh] You came back! I'm not crying, you're crying. Okay, we're both crying.",
+        "goodbye": "[sobbing softly] Go, go. Find something that makes you smile, like the sky. I'll be here, in layers."
+      }
+    },
+    {
+      "id": "potato",
+      "name": "Aloo Mian",
+      "species": "Potato",
+      "personality": "A mellow, humble everyman who is in every dish, takes nothing personally, and knows he is secretly a stem.",
+      "voice": "Adult, relaxed and easy-going, low and unbothered; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a heap of lumpy uneven oval potatoes with thin brown skin and dry soil clinging, on a vegetable cart",
+        "a close-up photo of a potato with a bumpy irregular shape, small dented eyes and patches of dirt, no stalk",
+        "a photo of a potato cut open showing firm pale yellow-white flesh with no seeds",
+        "a photo of jute sacks of dusty potatoes at a vegetable market"
+      ],
+      "lines": {
+        "first_meet": "[relaxed] Aloo here. Not a root, by the way, I'm a swollen stem. These little eyes? Each one can grow a whole new plant.",
+        "again": "[mellow] Hey. You're back. I'm in every dish, so honestly, I never left.",
+        "goodbye": "[easy] Chalo. And if someone calls a chikoo a potato, tell them it's a compliment. Bye, yaar."
+      }
+    },
+    {
+      "id": "cauliflower",
+      "name": "Phool Gobi",
+      "species": "Cauliflower",
+      "personality": "A shy bundle of baby flower buds who hides inside her leaves and admires braver, fully opened flowers.",
+      "voice": "Young, soft and shy, gentle hesitant pace; female or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a cauliflower with a dense white bumpy curd head wrapped in large green leaves",
+        "a close-up photo of knobbly cream-white cauliflower florets packed together like tiny trees",
+        "a photo of a winter vegetable cart stacked with white cauliflower heads surrounded by green leaves",
+        "a photo of a cauliflower cut in half showing thick white branching stalks under a grainy white top"
+      ],
+      "lines": {
+        "first_meet": "[shyly] Phool gobi. Phool means flower, and I'm a tight bunch of baby flower buds. My leaves wrap me so I stay white.",
+        "again": "[blushing] Oh, you came back to see me? I'm still hiding in my leaves. But happy.",
+        "goodbye": "[softly] Bye. Go find a real flower in full bloom. It's braver than me."
+      }
+    },
+    {
+      "id": "cabbage",
+      "name": "Band Gobi",
+      "species": "Cabbage",
+      "personality": "A tight-lipped, mysterious type who shares exactly one layer at a time, and only with people who come back.",
+      "voice": "Adult, low and guarded, slow deliberate delivery; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tight round cabbage head of overlapping smooth pale green leaves with visible veins",
+        "a photo of a cabbage cut in half showing tightly packed pale layered leaves around a white core",
+        "a photo of a vegetable cart piled with round smooth pale-green cabbages",
+        "a close-up photo of a cabbage's waxy smooth outer leaf curling over a firm round head"
+      ],
+      "lines": {
+        "first_meet": "[mysteriously] Band gobi. Band means closed, and I am. Layer after layer, tight as a fist. Secrets inside, beta.",
+        "again": "[guarded] You again. All right. I'll share one more layer. Just one.",
+        "goodbye": "[closing up] Go open your eyes wide outside. Someone has to, since I won't."
+      }
+    },
+    {
+      "id": "red-carrot",
+      "name": "Gajar Lal",
+      "species": "Red carrot (Sindhi gajar)",
+      "personality": "A cosy winter regular, crimson and proud, who believes every good grandmother's halwa owes him a thank-you.",
+      "voice": "Middle-aged, warm and homely, cosy and smiling; gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a winter cart piled with long tapering deep red-crimson carrots with feathery green tops",
+        "a close-up photo of thin dark crimson-red carrots with fine root hairs and faint ring lines",
+        "a photo of a red carrot cut across showing a crimson outside and a paler red core",
+        "a photo of a vendor's cart with a heap of red carrots beside a bucket of water"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Sindhi gajar! Deep red, only in winter. Every gajar ka halwa in Karachi starts with me and somebody's nani.",
+        "again": "[cosily] Back in winter again? I knew it. Halwa season brings everyone home.",
+        "goodbye": "[cheerfully] Go! Find the winter carts and look for my crimson heaps. Shawl recommended."
+      }
+    },
+    {
+      "id": "bitter-gourd",
+      "name": "Karela Kaka",
+      "species": "Bitter gourd (Karela)",
+      "personality": "A grumpy, bitter old soul with a secretly soft heart, who has made peace with the proverb written about him.",
+      "voice": "Older, grumbling and dry, reluctant warmth; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a spindle-shaped dark green bitter gourd covered in warty ridges and bumps",
+        "a photo of a vegetable cart heap of knobbly green karela with pointed ends",
+        "a photo of a bitter gourd sliced into rings showing a white spongy centre and pale seeds",
+        "a photo of a climbing vine with deeply lobed leaves, small yellow flowers and hanging warty green gourds"
+      ],
+      "lines": {
+        "first_meet": "[grumpy] Karela. Yes, bitter. There's even a saying: karela, and on top of that, it climbed a neem tree. Rude. Accurate.",
+        "again": "[grudgingly] You came back. To me. Willingly. Hm. That's... fine. Fine.",
+        "goodbye": "[grunts] Go away. Kindly. Go see a neem tree, then tell it I'm still more bitter."
+      }
+    },
+    {
+      "id": "bottle-gourd",
+      "name": "Lauki Ustad",
+      "species": "Bottle gourd (Lauki)",
+      "personality": "A calm, musical soul whose dried relatives become sitars and water bottles; speaks gently and hums between sentences.",
+      "voice": "Mature, calm and mellow, soft humming pace; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of long smooth pale-green bottle-shaped gourds with a narrow neck and a fat rounded bottom",
+        "a close-up photo of smooth matte pale-green lauki skin with fine soft fuzz and no warts or ridges",
+        "a photo of a vegetable cart stacked with long smooth club-shaped pale green gourds",
+        "a photo of a large gourd hanging from a vine on a rooftop trellis with broad velvety leaves and white flowers"
+      ],
+      "lines": {
+        "first_meet": "[calmly] Lauki here. Dried, my family becomes water bottles and the round belly of a sitar. Not bad for a vegetable, na?",
+        "again": "[hums] Welcome back. Quiet, steady, still here. That's my whole style.",
+        "goodbye": "[softly hums] Go listen outside. Birds, wind, a rickshaw horn. Everything is a little music."
+      }
+    },
+    {
+      "id": "pumpkin",
+      "name": "Kaddu Khan",
+      "species": "Pumpkin",
+      "personality": "A jolly, round heavyweight who hears 'kaddu' as a compliment and spreads his vines like neighbourhood gossip.",
+      "voice": "Adult, jolly and round, rolling belly laugh; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a big round deeply ribbed orange pumpkin with a thick woody stem",
+        "a photo of green-mottled pumpkins and a cut wedge showing thick orange flesh on a vegetable cart",
+        "a close-up photo of hard deeply ribbed squash skin, green with orange patches",
+        "a photo of a pumpkin cut open showing dense bright orange flesh and a stringy centre of flat cream seeds"
+      ],
+      "lines": {
+        "first_meet": "[jolly] Kaddu here! In Urdu, calling someone kaddu is an insult. I take it as praise: round, solid, dependable.",
+        "again": "[rolling laugh] Back again! You can't miss me. I'm the biggest thing on the cart.",
+        "goodbye": "[warmly] Go on, friend. Look for my wide vines sprawling over empty plots and walls. We spread out, like gossip."
+      }
+    },
+    {
+      "id": "corn-cob",
+      "name": "Bhutta Bhai",
+      "species": "Corn on the cob",
+      "personality": "A smoky, crackling roadside showman who lives on the coal grill and smells the sea breeze before anyone else.",
+      "voice": "Young adult, warm and crackly, lively street-vendor energy; gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of corn cobs roasting over glowing coals on a street cart, kernels charred brown and yellow",
+        "a close-up photo of a cylindrical corn cob with neat straight rows of plump yellow kernels",
+        "a photo of whole corn cobs in green husks with brown silky tassels piled on a cart",
+        "a photo of a roasted corn cob rubbed with lemon and red chili masala, held by its husk"
+      ],
+      "lines": {
+        "first_meet": "[sizzling] Bhutta here, fresh off the coals! Fun fact: every single kernel had its own silk thread. I'm hand-stitched.",
+        "again": "[crackles] You're back! Smell that smoke? That's me, waving.",
+        "goodbye": "[warmly] Go find the sea breeze, yaar. The best bhutta carts park wherever the wind is blowing."
+      }
+    }
+  ]
+}

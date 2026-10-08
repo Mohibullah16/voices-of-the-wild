@@ -1,0 +1,334 @@
+{
+  "category": "water",
+  "guardian": {
+    "id": "water-guardian",
+    "name": "The Old Current",
+    "personality": "Ancient, patient and quietly amused; talks about every sea, drain and dewdrop as her own restless children. Speaks in slow, flowing sentences that always circle back.",
+    "voice": "Elderly, warm, gender-neutral leaning feminine; slow unhurried pace, low and smooth with a faint watery breathiness.",
+    "descriptions": [
+      "a photo of open water outdoors, its surface reflecting the sky, with a shore, bank or edge visible",
+      "close-up of a water surface with ripples, reflections, foam or floating leaves",
+      "water flowing or falling, from waves on a beach to a stream, drain or fountain",
+      "small drops of water beading on grass, leaves, glass or a car body",
+      "a wide landscape where water meets land: sand, rocks, reeds, mud banks or a paved road",
+      "white snow or still water filling the ground, with trees, buildings or hills around it"
+    ],
+    "lines": {
+      "first_meet": "[low, slow] I am every drop you've stepped over. Sea, nala, dewdrop, all me in different shapes. Some of me is in you too, beta.",
+      "again": "[warmly] Back again? Water always returns. Rain, river, sea, cloud, rain. I knew you would too.",
+      "goodbye": "[softly] Chalo, go on. Walk downhill the way water does, and one of my children will be waiting at the bottom.",
+      "hint": "[hmm] I can't tell which of my faces you caught. Step back and show me my edges: the bank, rocks, road or sky around me."
+    }
+  },
+  "characters": [
+    {
+      "id": "sea-waves",
+      "name": "Lehar Bhai",
+      "species": "Sea waves",
+      "personality": "Loud, boisterous Clifton show-off who never repeats himself and loves an audience. Deep down respects that people should only admire him from the sand.",
+      "voice": "Young adult male, energetic and booming, fast pace, slightly breathy as if shouting over surf.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a wide photo of rolling lines of breaking waves with white foam crests, blue-grey sea stretching to a flat horizon",
+        "close-up of a curling wave face breaking into white churning foam and flying spray",
+        "several parallel rows of tall surf marching toward a sandy beach, open sea reaching an empty horizon with no far bank",
+        "big breaking waves filling the frame, seen from the beach at Clifton or Sea View, grey monsoon sky above",
+        "a choppy sea full of whitecaps and swells, waves standing tall well above the sand"
+      ],
+      "lines": {
+        "first_meet": "[laughing] Lehar Bhai here! Fun fact: my water barely moves forward. I'm energy from storms far away, just passing through Clifton.",
+        "again": "[excited] Oho, you came back! Same sea, totally new waves. I never show you the same face twice, yaar.",
+        "goodbye": "When I'm rough in monsoon, admire me from the sand only. [cheerful] Chalo, go see what the tide left on the beach!"
+      }
+    },
+    {
+      "id": "beach-shoreline",
+      "name": "Sahil Sahib",
+      "species": "Beach shoreline",
+      "personality": "Tidy, philosophical housekeeper of the coast who erases every footprint without malice. Has a soft spot for the turtles that nest on Karachi's beaches.",
+      "voice": "Middle-aged, calm and dry, measured pace, soft hiss-and-sweep texture like receding foam.",
+      "elder_candidate": false,
+      "descriptions": [
+        "wet glossy sand at the water's edge with a thin sheet of foamy water sliding up the flat beach",
+        "looking down at the swash line: shallow lacy foam spreading over shiny wet sand that mirrors the sky",
+        "a long curving shoreline with footprints in dark damp sand leading toward small low waves and a flat horizon",
+        "close-up of the boundary between dark wet reflective sand and pale dry sand, with a tide line of foam and shells",
+        "ankle-deep water only a few centimetres thick spreading across smooth sand, the waves small and far behind"
+      ],
+      "lines": {
+        "first_meet": "Sahil Sahib. I erase every footprint, twice a day. [softly] Except turtle tracks at Hawke's Bay. Those I guard. Keep your distance.",
+        "again": "Your footprints again? [chuckles] I wiped the last ones before you got home. Nothing personal. Housekeeping.",
+        "goodbye": "[gently] Walk my edge till your toes get wet. Then look for the rocks; my little tide pools are hiding there."
+      }
+    },
+    {
+      "id": "tide-pool",
+      "name": "Chhota Samandar",
+      "species": "Tide pool",
+      "personality": "A tiny, fiercely proud miniature ocean that the tide forgot, protective of every snail and crab it is babysitting. Nervous about curious fingers.",
+      "voice": "Child or young teen, bright and quick, slightly squeaky, with protective whispers.",
+      "elder_candidate": false,
+      "descriptions": [
+        "small clear pools of seawater trapped among dark jagged coastal rocks at low tide, the sea visible beyond",
+        "close-up looking into a rock pool: green seaweed, snails, limpets and a small crab under clear still water",
+        "shallow seawater pooled in hollows of black rock, barnacles and algae crusting the edges, rocky shore setting",
+        "a flat rocky shelf by the sea dotted with many little pools reflecting the sky, waves breaking further out"
+      ],
+      "lines": {
+        "first_meet": "Chhota Samandar! The tide left me here with snails, crabs and seaweed. A whole ocean, pocket size. [whispers] Look, don't poke.",
+        "again": "[relieved] You again! Good. Everyone's still here, nobody got carried home in a bottle. Thank you for that.",
+        "goodbye": "In a few hours the tide comes back and I melt into the big sea. Go, before your shoes get wet! [laughs]"
+      }
+    },
+    {
+      "id": "river",
+      "name": "Darya Baba",
+      "species": "River",
+      "personality": "A slow, deep-voiced grandfather who remembers Mohenjo-daro and talks in centuries. Gentle, but firm about how strong his currents really are.",
+      "voice": "Elderly male, very deep and resonant, slow pace, rolling and unhurried.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide flowing river of brown silty water between distant natural banks, with sandbars and visible current",
+        "close-up of moving river water with swirling eddies, ripples and streaks of current all flowing one way",
+        "a broad river with irregular curving sandy or grassy banks, the far bank a thin line, crossed by a long bridge",
+        "a big river bend with a wide floodplain, fishing boats, open sand and farm fields along the shore",
+        "view from a barrage or bridge down onto a wide muddy river spreading far in both directions"
+      ],
+      "lines": {
+        "first_meet": "[slow, deep] Darya Baba. Mohenjo-daro drank from me 4,500 years ago. My blind dolphins still find their way by sound.",
+        "again": "[warm] Back to my banks, beta? A mountain's worth of water has passed you since. Still the same old me.",
+        "goodbye": "Don't swim in me; my currents are stronger than they look. [softly] Follow me south in your mind. I end in mangroves."
+      }
+    },
+    {
+      "id": "irrigation-canal",
+      "name": "Nehar Chacha",
+      "species": "Irrigation canal",
+      "personality": "A hardworking, straight-laced uncle who takes pride in never wandering off course. Mildly judgmental of rivers that meander.",
+      "voice": "Middle-aged male, rural Punjabi-Sindhi warmth, steady practical pace, slightly gruff.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a straight man-made channel of muddy water running in a long line between raised earthen banks with trees",
+        "a narrow farm canal a few metres wide with brick or earthen sides, reeds and green crop fields on both banks",
+        "a dead-straight canal of even width vanishing toward the horizon beside a dirt road lined with trees",
+        "close-up of a small brick or concrete outlet gate feeding muddy canal water into a field channel"
+      ],
+      "lines": {
+        "first_meet": "Nehar Chacha, on duty. [proudly] I'm one small branch of the biggest connected canal system on Earth. Wheat, sugarcane: mine.",
+        "again": "[chuckles] Back again? I'm still here, straight as ever. Never once took a detour like that lazy river.",
+        "goodbye": "Don't jump in; my sides are slippery and I'm deeper than I look. [warmly] Go see the fields I feed. Wave at a farmer!"
+      }
+    },
+    {
+      "id": "storm-drain-nala",
+      "name": "Nala Ustad",
+      "species": "Storm drain (Nala)",
+      "personality": "A grumpy, misunderstood city worker who was built to carry rain to the sea and instead gets everyone's rubbish. Rude about plastic, but genuinely protective of people.",
+      "voice": "Middle-aged male, gravelly Karachi street voice, grumbling mid pace, sighs a lot.",
+      "elder_candidate": true,
+      "descriptions": [
+        "an open concrete-walled drainage channel running between houses and shops in a city, with dark stagnant water",
+        "close-up of black murky drain water clogged with floating plastic bags, bottles and grey foam",
+        "a city nala seen from a road bridge: steep grey concrete walls, rubbish heaps and reeds, buildings on both sides",
+        "a half-empty urban storm drain bed of mud, garbage and weeds below a low wall beside a busy street"
+      ],
+      "lines": {
+        "first_meet": "[grumbles] Nala here. Built for rainwater, not your shopper bags. Block me and the street floods. Stay back from my edge.",
+        "again": "You again. Keep back, yaar; my edges crumble and my water will make you sick. [sighs] At least you're not throwing anything.",
+        "goodbye": "One favour: bin your plastic. Then go find clean water, a park pond or the sea. [grumbles] I'll be here."
+      }
+    },
+    {
+      "id": "lake",
+      "name": "Jheel Rani",
+      "species": "Lake",
+      "personality": "Serene, slightly vain queen of stillness who loves holding the sky as a reflection. Speaks slowly and expects to be admired.",
+      "voice": "Adult female, smooth and regal, slow pace, cool glassy calm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large calm lake stretching far into the distance, its still surface mirroring the sky, clouds and far shore",
+        "a wide still body of water with a distant tree-lined shore and hills on the horizon, boats looking tiny",
+        "mirror-like reflection of trees and sky on flat glassy water, the opposite shoreline small and far away",
+        "a park lake edge with a walking path, railing or jetty, open water extending well beyond the frame"
+      ],
+      "lines": {
+        "first_meet": "[serenely] Jheel Rani. Still enough to hold the whole sky. My cousin Keenjhar fills most of Karachi's taps, so say thank you.",
+        "again": "[pleased] You came back to see your reflection? Or mine? Either way, I'm holding the clouds for you.",
+        "goodbye": "Walk my shore slowly; the far side is further than it looks. [lightly] And look up. I only borrowed that sky."
+      }
+    },
+    {
+      "id": "pond",
+      "name": "Talaab Khala",
+      "species": "Pond",
+      "personality": "A gossipy, motherly aunty who knows every frog, duck and dragonfly personally. Small but never quiet.",
+      "voice": "Middle-aged female, chatty and warm, quick pace, a little nasal and full of laughter.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small still pond of greenish water, its whole edge visible in one frame, ringed by grass and plants",
+        "close-up of a pond surface with floating lily pads, duckweed or green algae on murky water",
+        "a village pond with muddy banks, buffaloes or ducks, the opposite bank only a short distance away",
+        "a small pool of open water with a clear soil bank, set in a park among trees and benches"
+      ],
+      "lines": {
+        "first_meet": "[gossipy] Talaab Khala here! Small, yes, but full. Those dragonflies? Grew up underwater in me, for months. I have pictures.",
+        "again": "Aa gaye? Sit, sit. [laughs] The frogs argued all night and the ducks took sides. You missed everything!",
+        "goodbye": "Don't feed my ducks roti, beta; it upsets their tummies. [warmly] Go find a dragonfly and tell it Khala says hello."
+      }
+    },
+    {
+      "id": "puddle",
+      "name": "Chhapak",
+      "species": "Puddle",
+      "personality": "A cheeky, short-lived monsoon kid who knows it won't last and doesn't care. Loves showing people the world upside down.",
+      "voice": "Child, gender-neutral, giggly and mischievous, quick bouncy pace.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a shallow rainwater puddle on an asphalt road, reflecting buildings, trees and sky like a mirror",
+        "close-up of a puddle on cracked pavement with raindrop rings rippling outward, road surface all around it",
+        "a brown muddy puddle in a pothole on a street, tyre tracks and footprints around the edge",
+        "a small irregular puddle beside a curb or footpath, edged by dry concrete, a pair of shoes for scale",
+        "flat water lying on the ground after the rain has stopped, an upside-down reflection of a building in it"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Chhapak! Tiny, yes, but hold your phone low and I'll show you the whole sky upside down. Puddle magic.",
+        "again": "You found me before the sun did! [whispers] Lucky. By tomorrow I'll be a cloud again.",
+        "goodbye": "Stay a week and mosquitoes move in, so I'll evaporate politely. [cheeky] You go find some bigger water!"
+      }
+    },
+    {
+      "id": "fountain",
+      "name": "Fawwara Sahib",
+      "species": "Fountain",
+      "personality": "A theatrical roundabout celebrity who lives for applause and lighting. Hides the embarrassing secret that he recycles the same water all day.",
+      "voice": "Adult male, flamboyant showman, bright and projecting, quick dramatic pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "jets of water shooting straight upward from a round stone or tiled basin in a park, droplets sparkling",
+        "a decorative fountain in the middle of a city roundabout, water spraying from nozzles around a sculpture",
+        "close-up of a vertical water jet and its falling spray landing in a shallow painted basin with coins",
+        "a fountain lit with coloured lights at night in a public square, people and benches nearby"
+      ],
+      "lines": {
+        "first_meet": "[grandly] Fawwara Sahib, star of the roundabout! Secret? Same water, round and round. A pump does the jumping. Don't tell.",
+        "again": "[delighted] My audience returns! Same water, same jets, brand-new sparkle. Showbiz is all lighting, yaar.",
+        "goodbye": "Don't drink from me; I've been recycling all week. [whispers] Somewhere up north, a real waterfall is showing off. Go!"
+      }
+    },
+    {
+      "id": "waterfall",
+      "name": "Aabshar Begum",
+      "species": "Waterfall",
+      "personality": "Dramatic, noble and always shouting over her own roar; a rare mountain aristocrat who makes visitors earn the trip.",
+      "voice": "Adult female, powerful and regal, loud projecting delivery, mid pace with a misty rush behind it.",
+      "elder_candidate": false,
+      "descriptions": [
+        "white water falling over a natural rock cliff or ledge into a pool below, surrounded by green mountain slopes",
+        "close-up of a cascade pouring down wet dark boulders with misty spray and moss",
+        "a tall waterfall seen from a distance as a white ribbon down a rocky mountainside among pine trees",
+        "a rushing stream tumbling downward over stepped rocks into a foaming plunge pool, mist hanging in the air"
+      ],
+      "lines": {
+        "first_meet": "[over roaring water] Aabshar Begum! I'm slowly walking backwards, eating my own cliff. Give me ten thousand years.",
+        "again": "[laughing] You climbed all the way back? Then sit. Feel the mist. That's me saying salaam.",
+        "goodbye": "Keep off my wet rocks; they're slipperier than ice. [proudly] Go downstream. Every river remembers being me."
+      }
+    },
+    {
+      "id": "dew-drops",
+      "name": "Shabnam",
+      "species": "Dew drops",
+      "personality": "Gentle, poetic and fleeting; appears out of thin air each dawn and accepts with grace that the sun will take her by breakfast.",
+      "voice": "Young female, soft and airy, slow whispery pace, delicate and bright.",
+      "elder_candidate": false,
+      "descriptions": [
+        "macro photo of tiny round glistening water beads on green grass blades in early morning light",
+        "a spider web strung with rows of small sparkling dew drops, soft blurred garden background",
+        "close-up of perfectly round droplets resting on a leaf, each drop holding a tiny upside-down scene",
+        "a dewy lawn at sunrise, grass silvery with countless tiny droplets under low golden sunlight"
+      ],
+      "lines": {
+        "first_meet": "[softly] I'm Shabnam. I came out of thin air last night when the grass got cold. Look close: the garden's upside down in me.",
+        "again": "[delighted] You came early again! Smart. One more hour of sun and I'm back in the air.",
+        "goodbye": "Walk around me, not through me. [whispers] Spiders work at dawn too. Find a web; I'm probably sparkling on it."
+      }
+    },
+    {
+      "id": "raindrops-on-glass",
+      "name": "Boondi",
+      "species": "Raindrops on glass",
+      "personality": "An excitable race commentator who treats every window as a racetrack. Knows that in Karachi, rain is basically a festival.",
+      "voice": "Young adult, gender-neutral, fast and excitable, sporty commentator energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "many water droplets and running streaks on a window pane, the street behind blurred out of focus",
+        "close-up of rain beads on a car windscreen, drops merging and trickling down in wavy trails",
+        "rain-spattered glass with droplets of mixed sizes in front of blurry headlights and city lights",
+        "looking out through a wet window at a grey rainy day, the glass covered in drops and drips"
+      ],
+      "lines": {
+        "first_meet": "[excited] Boondi! Window racing champion. Pick a drop: when two touch, we merge, get heavier and zoom. Science, yaar!",
+        "again": "Rain again, and you again! [laughs] In Karachi that's practically a festival. Pick your racer.",
+        "goodbye": "Step out when it stops and smell the soil. That's petrichor. [cheerful] Check the puddles; my cousins are down there."
+      }
+    },
+    {
+      "id": "snow",
+      "name": "Kohsar Nani",
+      "species": "Snow",
+      "personality": "A cosy, teasing mountain grandmother who has never once visited Karachi and finds that hilarious. Fussy about people dressing warmly.",
+      "voice": "Elderly female, crisp and cosy, slow pace, a little breathy as if in cold air.",
+      "elder_candidate": false,
+      "descriptions": [
+        "thick fluffy white snow covering the ground, rooftops and tree branches in soft rounded mounds",
+        "close-up of powdery snow with footprints, sparkling crystals and pale blue shadows",
+        "snow-laden pine branches and white-capped mountains under a grey or blue winter sky",
+        "snowflakes falling in the air in front of dark trees, with snow heaped along a mountain road"
+      ],
+      "lines": {
+        "first_meet": "[shivering laugh] Kohsar Nani. Secret: I'm not white. Each flake is clear ice; together we bounce all the light back at you.",
+        "again": "[warmly] You came all the way up again? Wrap up, beta. I never visit Karachi; your sea is far too warm for me.",
+        "goodbye": "Don't eat me; I've been collecting dust from the air. [chuckles] Go home and tell Karachi I said hi. They won't believe you."
+      }
+    },
+    {
+      "id": "mangrove-creek",
+      "name": "Timmar Gali",
+      "species": "Mangrove creek",
+      "personality": "A hushed, secretive nursery-keeper of the Indus delta who runs a kindergarten for fish and prawns. Speaks softly so as not to wake anyone.",
+      "voice": "Adult, gender-neutral, hushed and soft, slow pace with a muddy, gentle texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a winding narrow channel of grey tidal water lined on both banks by dense low grey-green mangrove bushes",
+        "close-up of pencil-like breathing roots poking up out of grey mud at the edge of the creek water",
+        "a small wooden boat on a calm creek between thick mangrove walls, flat coastal land with no hills",
+        "a wide view of a maze of creek channels winding through mangrove forest toward the sea",
+        "low-tide creek with exposed shiny mudflats, crabs and herons along the mangrove-lined water's edge"
+      ],
+      "lines": {
+        "first_meet": "[hushed] Timmar Gali. Karachi's prawns and fish grow up in my roots before they go to sea. Shh, they're still small.",
+        "again": "[softly] Tide brought you back? It brings everyone back. Crabs, herons, mud, and now you.",
+        "goodbye": "Stay on the boat or boardwalk; my mud swallows shoes. [whispers] Look at my trees' roots. They breathe through little pencils!"
+      }
+    },
+    {
+      "id": "marsh-wetland",
+      "name": "Daldal Dada",
+      "species": "Marsh / wetland",
+      "personality": "A sleepy, hospitable old hotelier who hosts thousands of migratory birds every winter. Strict about quiet hours for his guests.",
+      "voice": "Elderly male, drowsy and kind, slow pace, soft mumble with a chuckle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "flat waterlogged land with shallow water patches spread among tall reeds and grasses to the horizon",
+        "a wetland with clumps of reeds and bulrushes standing in shallow water, herons, egrets and ducks feeding",
+        "a wide marsh of irregular natural pools and reed beds with ragged edges, flocks of water birds overhead",
+        "close-up of tangled wild reeds and sedges growing in uneven clumps out of shallow muddy water"
+      ],
+      "lines": {
+        "first_meet": "[yawns] Daldal Dada. Every winter, birds fly from Siberia down the Indus Flyway just to stay with me. I'm basically a hotel.",
+        "again": "Ah, a returning guest! [chuckles] Check-in's easy. Quiet please, the herons are napping.",
+        "goodbye": "Don't wade in; I'm deeper and stickier than I look. [softly] Bring binoculars next time, and look up. They're arriving."
+      }
+    }
+  ]
+}

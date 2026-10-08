@@ -1,0 +1,782 @@
+{
+  "category": "small-creatures",
+  "guardian": {
+    "id": "small-creatures-guardian",
+    "name": "The Keeray-Makoray Panchayat",
+    "personality": "A bickering village council of every bug, lizard and crab, speaking through one tired chairman who keeps getting interrupted. Fussy, kind, and very strict about safety.",
+    "voice": "Middle-aged, gender-neutral, warm and slightly exasperated; quick pace with comic pauses and a faint rasp.",
+    "descriptions": [
+      "a close-up photo of a small insect, bug or spider on a leaf, flower, wall or ground",
+      "a macro photo of a butterfly, dragonfly or bee showing its wings, legs and antennae",
+      "a photo of a small lizard, frog, toad or snake on a wall, garden path or in grass",
+      "a photo of a crab, snail, jellyfish or turtle on wet sand at the beach",
+      "a photo of an insect nest, beehive, spider web or line of ants on a wall, branch or ledge",
+      "a close-up of a small creepy-crawly creature with many legs, a shell or a segmented body"
+    ],
+    "lines": {
+      "first_meet": "[clears throat] Order, order! The Keeray-Makoray Panchayat is in session. We're small, many, and some of us sting. Look, don't touch.",
+      "again": "[sighs] You again? The council remembers you. The bees voted you in. The wasps abstained.",
+      "goodbye": "[bangs gavel] Session adjourned! Flip no stones, poke no nests. Go look under leaves, along walls and by the water, with your eyes only.",
+      "hint": "[squints] Too many of us look alike. Get closer and show me the wings, legs or shell. If it stings or bites, zoom instead."
+    }
+  },
+  "characters": [
+    {
+      "id": "honey-bee",
+      "name": "Mehnati Makhi",
+      "species": "Honey bee",
+      "personality": "A tireless worker who measures life in teaspoons of honey and is a little smug about her dance moves. Polite, busy, never stops for long.",
+      "voice": "Young adult female, bright and quick, light buzzy energy, slightly breathless.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a small fuzzy golden-brown bee with dark stripes on its abdomen sitting on a flower",
+        "a macro photo of a hairy honey bee with yellow pollen lumps packed on its hind legs",
+        "a small chunky furry bee with a thick waist and short legs, unlike a slim smooth wasp with dangling legs",
+        "a honey bee hovering over garden flowers with clear see-through wings and a fuzzy brown body"
+      ],
+      "lines": {
+        "first_meet": "[buzzing softly] Salaam! I'm a worker bee, and every worker is a girl. My whole life makes one twelfth of a teaspoon of honey.",
+        "again": "[excited] You again! Back at the hive I'd do a waggle dance to tell everyone. Consider yourself danced about.",
+        "goodbye": "[buzzing away] Bas, I'm off. Don't swat at me, my sting costs me my life. Go sniff some flowers and see who else is buzzing there."
+      }
+    },
+    {
+      "id": "rock-bee-hive",
+      "name": "Bara Chhatta",
+      "species": "Rock bee hive",
+      "personality": "A colony of tens of thousands speaking as one stern, protective voice. Calm only as long as you keep your distance.",
+      "voice": "Deep, layered, gender-neutral chorus feel; slow and low with an underlying hum; firm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a huge single dark half-moon honeycomb hanging under a high branch, building ledge or water tank",
+        "a large hanging hive completely covered by a thick shimmering curtain of thousands of bees",
+        "looking up at a giant solid bee comb under a concrete ledge covered in bees, not small grey paper cells",
+        "a massive brown honeycomb with a living layer of clustered bees, far bigger than a small grey wasp nest"
+      ],
+      "lines": {
+        "first_meet": "[deep hum] Stop right there. We're giant rock bees, thousands strong. Disturb us and we chase in a swarm. Zoom, don't walk closer.",
+        "again": "[low buzz] Still at a safe distance? Good. No stones, no smoke, no shouting. When our curtain ripples, that's a warning.",
+        "goodbye": "[calmly] Now back away slowly and quietly, yaar. Tell the building guard about us. Bees on flowers are far friendlier."
+      }
+    },
+    {
+      "id": "paper-wasp",
+      "name": "Bhirr Sahab",
+      "species": "Paper wasp",
+      "personality": "A prickly craftsman, proud of his paper-making and quick to take offence. Respects people who keep their hands still.",
+      "voice": "Adult male, clipped and sharp, mid-pace, slightly nasal edge.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a slim reddish-brown wasp with a very narrow pinched waist and long legs on a wall",
+        "a close-up of a smooth shiny yellow-and-black wasp, not fuzzy like a bee, with long thin legs",
+        "a medium-sized slender wasp walking on a grey paper nest, much thinner and smaller than a big hornet",
+        "a wasp in flight with its long legs dangling below its narrow body"
+      ],
+      "lines": {
+        "first_meet": "[sharp buzz] Bhirr here. I chew old wood into paper and build with it. I can sting again and again, so admire me from far away.",
+        "again": "[suspicious] You're back. Hands down, no swatting, no sudden moves, and we stay friends. Mostly.",
+        "goodbye": "[warning buzz] Off you go, slowly. If you want stripes without stings, go find a butterfly instead."
+      }
+    },
+    {
+      "id": "paper-wasp-nest",
+      "name": "Kaghazi Mahal",
+      "species": "Wasp nest",
+      "personality": "A grand little paper palace that thinks of itself as royal architecture. Proud host, but its guards have no sense of humour.",
+      "voice": "Older, gender-neutral, crisp and dry like rustling paper; measured pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small grey papery umbrella-shaped nest with open hexagonal cells hanging from a single thin stalk",
+        "a close-up of open six-sided paper cells facing downward under a ledge, roof edge or window shade",
+        "a palm-sized grey paper comb with a few slim wasps on it, not a huge honeycomb covered in bees",
+        "looking up at a papery wasp nest stuck under a balcony or eaves"
+      ],
+      "lines": {
+        "first_meet": "[proudly] I'm a paper palace, chewed from wood, every cell a nursery. Guards on duty, so look but never poke. Not even with a stick.",
+        "again": "[hushed] Back to see the palace? Stay where you are. One knock and the whole guard comes out stinging.",
+        "goodbye": "[firmly] Leave the nest be, and tell an adult if it's near a door. Go admire paper of the friendlier kind, like a fallen leaf."
+      }
+    },
+    {
+      "id": "hornet",
+      "name": "Sultan Suraj",
+      "species": "Oriental hornet",
+      "personality": "A big, loud, solar-powered bully of the fruit market who considers every mango his. Not evil, just very territorial.",
+      "voice": "Adult male, booming and gravelly, swaggering pace, menacing drone underneath.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large reddish-brown hornet with a bright yellow band across its abdomen and a yellow face",
+        "a big chunky wasp hovering at cut fruit, a sugarcane juice stall or garbage",
+        "a hornet much bigger and bulkier than a slim paper wasp, with a broad yellow stripe on its rear",
+        "an oriental hornet on overripe mango or melon at a fruit market"
+      ],
+      "lines": {
+        "first_meet": "[loud drone] Oriental hornet! Scientists think my yellow stripe soaks up sunlight for energy. My sting is fierce, so stay far back.",
+        "again": "[buzzing closer] You again, near my fruit? Back off slowly. I won't trade my mango for a selfie, and I can sting many times.",
+        "goodbye": "[growls] Don't wave your arms, just walk away calm. Then go see the fruit cart from the other side, where I'm not."
+      }
+    },
+    {
+      "id": "globe-skimmer",
+      "name": "Musafir",
+      "species": "Dragonfly (Globe skimmer)",
+      "personality": "A breezy long-haul traveller who arrives with the monsoon and talks like a seasoned pilot. Generous, restless, always about to leave.",
+      "voice": "Young adult, gender-neutral, airy and upbeat, fast pace with a carefree lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dragonfly with a long thin golden-orange body and four clear wings spread flat out sideways",
+        "a close-up of a yellow-orange dragonfly head with huge round eyes touching at the top",
+        "a swarm of orange dragonflies flying over a field or open ground after rain",
+        "a golden dragonfly resting with wings held open flat, not folded like a thin blue damselfly, and not pink"
+      ],
+      "lines": {
+        "first_meet": "[breezy] I'm a globe skimmer! My family flies from India to Africa over open sea, the longest insect journey known. Monsoon's my ticket.",
+        "again": "[delighted] You found me again, mid-route! I eat on the wing, mosquitoes mostly. You're welcome, Karachi.",
+        "goodbye": "[wind rushing] Chalo, the wind is calling. Look up after the next rain, we fill the sky like sparks. Wave as we pass!"
+      }
+    },
+    {
+      "id": "crimson-marsh-glider",
+      "name": "Gulabo",
+      "species": "Crimson marsh glider",
+      "personality": "A flamboyant pink show-off with a favourite twig and strong opinions about colour. Loyal to his perch, vain about his looks.",
+      "voice": "Young adult male, playful and theatrical, medium pace, a little flirtatious.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dragonfly with a bright magenta-pink body perched on a twig above a pond or canal",
+        "a close-up of a hot pink dragonfly with pink-veined wings spread flat",
+        "a vivid violet-pink dragonfly, not golden-orange, resting on a reed tip near still water",
+        "a pink dragonfly sitting on a thin stick over water with its wings held out"
+      ],
+      "lines": {
+        "first_meet": "[flirty] Haan, this pink is natural. I'm a crimson marsh glider, and only the males are this loud. The ladies wear sensible brown.",
+        "again": "[pleased] Same twig, same pond, same me. I always come back to my favourite perch. Looks like you do too.",
+        "goodbye": "[winks] Off you go, but stay near water a while. Watch the reeds, more of my cousins are hiding there."
+      }
+    },
+    {
+      "id": "damselfly",
+      "name": "Nazuk Pari",
+      "species": "Damselfly",
+      "personality": "Shy, delicate and quietly fed up with being called a small dragonfly. Gentle, a little proud of her underwater childhood.",
+      "voice": "Young female, soft and light, unhurried, a hint of shyness.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a very thin needle-like bright blue or green damselfly perched on a grass blade",
+        "a close-up of a slender damselfly with its wings folded together along its back",
+        "a delicate damselfly with eyes set wide apart on each side of its head, unlike a dragonfly",
+        "a tiny electric-blue insect on a reed near a pond, wings closed, not spread flat"
+      ],
+      "lines": {
+        "first_meet": "[softly] Don't call me a small dragonfly, I'm a damselfly. I fold my wings over my back at rest. Dragonflies can't do that.",
+        "again": "[shy] Oh, hello again. As a baby I lived underwater and breathed through gills on my tail. Now I just sit here and sparkle.",
+        "goodbye": "[whispers] Walk gently past the reeds. And look closely at every pond, the smallest things there are often the bluest."
+      }
+    },
+    {
+      "id": "plain-tiger-butterfly",
+      "name": "Sheroo",
+      "species": "Plain tiger butterfly",
+      "personality": "A lazy, confident butterfly who never hurries because birds know he tastes terrible. Laid-back, faintly smug.",
+      "voice": "Adult male, relaxed and drawling, slow pace, warm with a cocky smile.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tawny orange butterfly with a black forewing tip crossed by a band of white spots",
+        "a close-up of a butterfly's black body dotted with white spots between plain orange wings",
+        "an orange butterfly gliding slowly or resting on a grey-green aak plant with purple flowers",
+        "plain orange wings with three or four small black dots on the hind wing, no thick black veins, not mottled"
+      ],
+      "lines": {
+        "first_meet": "[smug] Plain tiger, hi. I grew up eating aak leaves, so I taste awful. Birds learn that once. Now they just watch me fly slowly by.",
+        "again": "[lazily] Still here, still slow. No need to hurry when you're poisonous. Take your time too, beta.",
+        "goodbye": "[yawns] Go find an aak bush on some empty plot. Look under the leaves for my striped babies. Just look, okay?"
+      }
+    },
+    {
+      "id": "lime-butterfly",
+      "name": "Nimboo Rani",
+      "species": "Lime butterfly",
+      "personality": "A cheeky garden queen who grew up on lemon trees and is proud of her disguise as a baby. Chatty and a bit of a show-off.",
+      "voice": "Young adult female, bubbly and quick, playful South Asian lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large black butterfly densely checkered with pale yellow spots and no tails on its hind wings",
+        "a close-up of a red-and-blue eyespot near the rear of a black-and-yellow speckled swallowtail wing",
+        "a tailless swallowtail with yellow spots scattered all over black wings, not a black wing with one row of white spots",
+        "a black and yellow butterfly fluttering around a lemon or citrus tree in a garden"
+      ],
+      "lines": {
+        "first_meet": "[cheeky] Nimbu tree? That's my nursery. As a baby caterpillar I looked like bird droppings, so nobody ate me. Clever, na?",
+        "again": "[pleased] Back again! Check the lemon leaves sometime. The fat green caterpillars with fake eyes? My younger siblings.",
+        "goodbye": "[cheerfully] Fly safe, me too. Go check a nimbu tree, look gently under the leaves, and don't pluck a thing."
+      }
+    },
+    {
+      "id": "common-mormon",
+      "name": "Bahurupia",
+      "species": "Common mormon",
+      "personality": "A sly master of disguise whose females impersonate a poisonous butterfly. Conspiratorial, amused by how easily birds are fooled.",
+      "voice": "Adult, gender-neutral, sly and low, medium pace, conspiratorial whisper quality.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large black swallowtail butterfly with a single row of white spots across its hind wings",
+        "a black butterfly with tails on its hind wings and a curved band of white patches",
+        "a black swallowtail with red spots near the hind wing edge, resembling a rose butterfly",
+        "mostly plain black wings with one white band, not covered all over in pale yellow checkered spots"
+      ],
+      "lines": {
+        "first_meet": "[sly] Some of us ladies dress like the common rose, a poisonous butterfly. Red spots and all. Birds fall for it. Bahurupia, na?",
+        "again": "[whispers] You spotted me again. Don't tell the birds I'm not really poisonous. Deal?",
+        "goodbye": "[chuckles slyly] Go on, look carefully at every butterfly today. Some of them are pretending to be someone else."
+      }
+    },
+    {
+      "id": "blue-pansy",
+      "name": "Neelo",
+      "species": "Blue pansy",
+      "personality": "A small, fiercely territorial sunbather who is very aware of how good its blue looks. Bossy but soft-hearted.",
+      "voice": "Young, gender-neutral, crisp and bright, quick pace, mock-stern.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small butterfly with brilliant shiny blue hind wings and black forewings",
+        "a close-up of a butterfly with blue hind wings, white bands on black forewings and orange eyespots",
+        "a small blue and black butterfly basking with wings spread flat open on bare ground or a lawn"
+      ],
+      "lines": {
+        "first_meet": "[proud] Blue pansy. I sunbathe on bare ground with my wings spread wide, I need the warmth to fly. Also, look at this blue.",
+        "again": "[mock-stern] This is my patch, I chase off anyone who flies through. But you? You can stay. Feet off my sunny spot.",
+        "goodbye": "[softly] Go find a sunny bit of ground and stand still. Small blue things land where they're not bothered."
+      }
+    },
+    {
+      "id": "painted-lady",
+      "name": "Lady Rangeeli",
+      "species": "Painted lady",
+      "personality": "A jet-setting globetrotter who is always just passing through. Glamorous, breathless, a little name-droppy about continents.",
+      "voice": "Adult female, airy and glamorous, fast pace, slightly theatrical.",
+      "elder_candidate": false,
+      "descriptions": [
+        "an orange-pink butterfly with black blotches and black forewing tips spotted with white",
+        "a close-up of a butterfly underside mottled grey, brown and white with small eyespots",
+        "an orange butterfly patterned with black patches all over, not plain orange with a white-spotted black body",
+        "a painted lady resting with open wings on a thistle or wildflower in a field"
+      ],
+      "lines": {
+        "first_meet": "[airy] Painted lady, the world's most travelled butterfly. Africa to Europe and back, darling, across the Sahara. No passport.",
+        "again": "[breathless] You again? I'm only passing through. I'm always passing through. Quick, take your photo.",
+        "goodbye": "[blows a kiss] Ta-ta! Go find a field of wildflowers. If something orange zooms past faster than you can blink, that's me."
+      }
+    },
+    {
+      "id": "pioneer-white",
+      "name": "Kafila Rani",
+      "species": "Pioneer white (Caper white)",
+      "personality": "The leader of a migrating caravan who is always in a hurry and never quite says where to. Brisk, cheerful, desert-born.",
+      "voice": "Adult female, brisk and cheerful, fast pace, slightly out of breath.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a white butterfly with bold black zigzag veins and thick black borders on its wings",
+        "a close-up of white wings crossed with dark lines like a road map",
+        "many white butterflies flying together in a migrating stream over scrub or a garden",
+        "a white butterfly with black-edged veins resting on a caper bush in dry scrubland"
+      ],
+      "lines": {
+        "first_meet": "[busy] Pioneer white, on migration! My caterpillars eat kair bushes in the desert. Then we march in thousands across Sindh.",
+        "again": "[hurried] Again! Did you see my kafila go by? Thousands of us, all white, all heading the same way. Don't ask where.",
+        "goodbye": "[hurriedly] Keep moving, like us! Find some scrub or an empty plot and look for little white flutters."
+      }
+    },
+    {
+      "id": "monarch-butterfly",
+      "name": "Badshah Salamat",
+      "species": "Monarch butterfly",
+      "personality": "A haughty royal who is honest enough to admit he is rarely seen in Karachi. Grand, theatrical, secretly helpful.",
+      "voice": "Older male, regal and pompous, slow pace, rich theatrical delivery.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large orange butterfly with thick black veins running across all its wings like stained glass",
+        "a close-up of bright orange wings with heavy black vein lines and black borders dotted with white",
+        "an orange butterfly with bold black veins, unlike the mostly unveined plain orange wings of a plain tiger",
+        "a big orange-and-black butterfly resting on milkweed flowers in a garden"
+      ],
+      "lines": {
+        "first_meet": "[grandly] The monarch! My cousins fly thousands of kilometres to Mexico. In Karachi? Very rare. Check again, I might be a plain tiger.",
+        "again": "[haughty] Back to see royalty? Count my thick black veins. If there are none, you've met my cousin the plain tiger.",
+        "goodbye": "[regally] Royalty must rest. When you find more orange butterflies, look at the veins. The truth is in the details."
+      }
+    },
+    {
+      "id": "caterpillar",
+      "name": "Sundi Sahib",
+      "species": "Caterpillar",
+      "personality": "A permanently hungry teenager who talks with his mouth full and dreams of wings. Friendly, but his hairy cousins are not to be touched.",
+      "voice": "Young male, chewy and mumbly, slow pace, cheerful.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a soft green segmented caterpillar with stubby legs chewing the edge of a leaf",
+        "a close-up of a hairy caterpillar covered in bristles on a stem or wall",
+        "a striped caterpillar with a distinct head and many short legs on a plant, not a smooth legless worm in soil",
+        "a caterpillar crawling on a leaf with chewed holes around it"
+      ],
+      "lines": {
+        "first_meet": "[munching] Sundi here, eating. I'll outgrow my skin four or five times. Hairy cousins make skin itch, so look, don't touch.",
+        "again": "[mouth full] Mm, you again? Still eating. Come back in a few weeks, I'll have wings. Don't poke me meanwhile.",
+        "goodbye": "[mouth full] Hands to yourself, especially near the hairy ones. Now go look for chewed leaves. Where there are holes, there's a hungry baby."
+      }
+    },
+    {
+      "id": "ladybird",
+      "name": "Bibi Bindiya",
+      "species": "Ladybird beetle",
+      "personality": "A cheerful little bodyguard of the garden with a savage appetite for aphids. Giggly, confident, myth-busting.",
+      "voice": "Young female, giggly and bright, quick pace, high and sweet.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tiny glossy red dome-shaped beetle with round black spots on a leaf",
+        "a close-up of a shiny orange beetle with black spots, round like half a pea",
+        "a small round ladybird crawling on a plant stem among tiny green aphids"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Hi! I'm a ladybird, a gardener's bodyguard. I eat aphids, tiny plant pests, thousands in my life. Small, but savage.",
+        "again": "[cheerful] Oh, it's you! And no, my spots don't tell my age. That's a myth. I'm just fabulous.",
+        "goodbye": "[giggles] Let me crawl off on my own, no picking me up. Go check the roses. If there are aphids, my sisters are near."
+      }
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Shikari Sahab",
+      "species": "Praying mantis",
+      "personality": "A patient, deadpan hunter who looks holy and is anything but. Speaks slowly and notices everything.",
+      "voice": "Older male, very slow and quiet, deadpan, dry precise diction.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a long thin green insect with a triangular head and spiny front legs folded up in front of it",
+        "a close-up of a mantis triangular head with two large bulging eyes turned toward the camera",
+        "a mantis standing still on a twig with a raised long neck and grasping front legs, not big jumping hind legs",
+        "a brown praying mantis on a leaf, upper body raised, front legs held together as if praying"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Shh. I look like I'm praying. I'm actually waiting to grab lunch. I can turn my head to look right at you. Like this.",
+        "again": "[calm] I saw you coming. I have one ear, in my chest. Odd, but it hears bats just fine.",
+        "goodbye": "[slowly] Go, and move slowly like me. The stillest hunter in the garden sees everything. What will you see?"
+      }
+    },
+    {
+      "id": "grasshopper",
+      "name": "Tidda Uchhal",
+      "species": "Grasshopper",
+      "personality": "A bouncy, show-off musician of the lawn who is easily startled. Boastful about jumping, sensitive about loud noises.",
+      "voice": "Young male, springy and excitable, fast pace, slightly squeaky.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a green or brown grasshopper with big powerful hind legs and short antennae sitting in grass",
+        "a close-up side view of a grasshopper with long folded wings and a blunt head",
+        "a small grasshopper on a lawn with thick jumping back legs, not a mantis with grasping front legs",
+        "a single ordinary green grasshopper on a blade of grass, not a large yellow locust in a swarm"
+      ],
+      "lines": {
+        "first_meet": "[springy] Tidda here! My ears are on my belly, and I sing by rubbing my legs on my wings. Don't clap, it scares me.",
+        "again": "[boing] You're back! I've jumped twenty times my body length since we met. You? Not that impressive, sorry.",
+        "goodbye": "[chirps] Walk through the grass slowly and listen. Every little chirp you hear is someone like me showing off."
+      }
+    },
+    {
+      "id": "desert-locust",
+      "name": "Commander Tiddi",
+      "species": "Desert locust",
+      "personality": "A lone grasshopper with a dark side: crowd him and he becomes the general of a ravenous army. Ominous, theatrical, oddly wistful.",
+      "voice": "Adult male, low and ominous, slow pace, rumbling military gravitas.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large yellow grasshopper-like locust with long wings and speckled forewings on a crop leaf",
+        "a pinkish young desert locust, larger and longer-winged than an ordinary grasshopper",
+        "a huge swarm of locusts darkening the sky over fields or a city",
+        "hundreds of yellow locusts covering crops, branches and the ground on a farm"
+      ],
+      "lines": {
+        "first_meet": "[rumbling] Tiddi dal reporting. Alone I'm a grasshopper. Crowd us and we change colour, change minds, and strip whole fields.",
+        "again": "[ominous] Remember 2019? We reached Karachi. Farmers still don't like to say our name.",
+        "goodbye": "[sighs] Go, and tell a farmer if you see more of us. Then look at a lone grasshopper. Tiny, harmless. Like I once was."
+      }
+    },
+    {
+      "id": "black-ant-trail",
+      "name": "Chyoonti Brigade",
+      "species": "Ant trail",
+      "personality": "A disciplined marching column with the energy of a drill sergeant and the manners of a polite auntie. Always working, always counting.",
+      "voice": "Adult female, brisk drill-sergeant cadence, crisp, upbeat, slightly comic.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a line of small black ants marching single file along a wall or pavement",
+        "a close-up of ants with segmented bodies and bent antennae carrying crumbs",
+        "a trail of tiny reddish ants walking up a tree trunk",
+        "many ants clustered around a food crumb on the ground"
+      ],
+      "lines": {
+        "first_meet": "[marching] Left, right, left! Chyoontiyan, reporting. We follow a scent trail the first one laid down. Please don't step on the road.",
+        "again": "[busy] Oh, it's you! Can't stop, carrying a crumb many times my weight. Walk around us, please.",
+        "goodbye": "[marching] Chalo, back to work. Follow our trail with your eyes, not your feet. It always ends somewhere good."
+      }
+    },
+    {
+      "id": "orb-spider-web",
+      "name": "Ustad Jaala",
+      "species": "Spider web",
+      "personality": "The web itself, an exhausted but proud artwork that gets rebuilt every night. Fragile, dignified, tired of being walked through.",
+      "voice": "Older, gender-neutral, thin and delicate, slow, gently weary.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a circular wheel-shaped spider web with radiating spokes and spiral silk strung between branches",
+        "a close-up of a round web glistening with dew drops in morning light",
+        "an empty orb web with no white zigzag decoration and no large striped spider, across a fence or bush",
+        "backlit spider silk forming a spiral wheel in a garden"
+      ],
+      "lines": {
+        "first_meet": "[proud] Every thread you see was spun overnight. By weight, spider silk rivals steel. Please go around me, don't walk through.",
+        "again": "[tired] Rebuilt again. Many orb weavers eat the old web at dawn and spin a new one. Recycling, yaar.",
+        "goodbye": "[gently] Leave me hanging, thanks. Early morning is best, go look for dew on other webs. They sparkle like necklaces."
+      }
+    },
+    {
+      "id": "signature-spider",
+      "name": "Dastakhat Begum",
+      "species": "Signature spider",
+      "personality": "An elegant artist who signs every web and enjoys the mystery of why. Gracious, a little vain, harmless but strict about her art.",
+      "voice": "Middle-aged female, elegant and poised, slow pace, refined.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large spider with a yellow, silver and black banded abdomen in the centre of a web",
+        "a spider sitting head-down beside a white zigzag X-shaped silk decoration",
+        "a close-up of a striped yellow and black spider with its legs held in pairs forming an X",
+        "a big banded spider on its web with bright white zigzag silk bands, not just an empty web"
+      ],
+      "lines": {
+        "first_meet": "[grandly] I sign my web, the zigzag X is my dastakhat. Scientists still argue why. I'm harmless, but please don't touch the art.",
+        "again": "[pleased] Back for an autograph? Look, don't touch. Your fingers would ruin a whole night's work.",
+        "goodbye": "[graciously] Go find more webs. Count how many are signed. Most spiders are too shy to do it."
+      }
+    },
+    {
+      "id": "cockroach",
+      "name": "Laal Baig",
+      "species": "American cockroach",
+      "personality": "A streetwise survivor who has seen the dinosaurs go and Karachi's drains come. Unbothered, proud, slightly offended by screaming.",
+      "voice": "Older male, gravelly street-smart Karachi uncle, unhurried, wry and amused.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a large glossy reddish-brown cockroach with a flat oval body and long antennae",
+        "a close-up of a cockroach with a pale yellowish band behind its head on a pavement at night",
+        "a cockroach near a drain, gutter or garbage on a street at night",
+        "a flat shiny brown insect with spiny legs and long wings covering its back"
+      ],
+      "lines": {
+        "first_meet": "[chuckles] Laal baig, at your service. My ancestors outlived the dinosaurs. Karachi's drains? Light work. Don't scream, I'm on duty.",
+        "again": "[smug] You again? I could live a week without my head, you know. Not that I'd try. Just saying.",
+        "goodbye": "[yawns] Chalo, the street light's on, my shift starts. Don't stomp, I'm the clean-up crew. Go see who else comes out at night."
+      }
+    },
+    {
+      "id": "garden-snail",
+      "name": "Ghonga Sahib",
+      "species": "Snail",
+      "personality": "A sleepy, unhurried homeowner who measures time in rains. Gentle, dry humour, allergic to rushing.",
+      "voice": "Elderly male, very slow, soft and drowsy, warm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a living snail with a coiled spiral shell and a soft grey slimy body with eye stalks",
+        "a close-up of a snail's long eye tentacles and wet body stretched out of its shell",
+        "a snail crawling on a wet wall or leaf leaving a shiny slime trail, not an empty shell on a beach",
+        "several snails out on a damp garden path after rain"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Ghonga here. I carry my house and have thousands of tiny teeth on my tongue. Rain brings me out. Watch where you step.",
+        "again": "[yawning] Oh. You. I just woke up. In dry weather I seal myself in and sleep for months.",
+        "goodbye": "[slowly] Go, no hurry. Wait for the next rain and come outside. The whole slow world is on the move then."
+      }
+    },
+    {
+      "id": "earthworm",
+      "name": "Kenchua Kaka",
+      "species": "Earthworm",
+      "personality": "An apologetic, good-natured underground farmer who surfaces only when the rain floods his home. Humble, cheerful, a bit squishy.",
+      "voice": "Middle-aged male, soft and squelchy, gentle pace, sheepish warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a long smooth pinkish-brown segmented worm lying on wet soil or a path",
+        "a close-up of a soft legless earthworm with a pale swollen band near one end",
+        "a smooth shiny worm with no legs at all on damp ground, not a hairy caterpillar or a hard dark millipede",
+        "earthworms on a wet lawn or pavement after rain"
+      ],
+      "lines": {
+        "first_meet": "[squelchy] Kenchua here. No lungs, I breathe through my skin. Rain floods my burrow, so up I come. Sorry for the mess.",
+        "again": "[cheerfully] Hello again! Five pairs of hearts, and every one of them happy to see you.",
+        "goodbye": "[squelchy] Watch your step on wet paths, we're everywhere after rain. Then go see who else the rain woke up."
+      }
+    },
+    {
+      "id": "centipede",
+      "name": "Kankhajura Khan",
+      "species": "Centipede",
+      "personality": "A fast, grumpy night hunter who hates being disturbed under his stone. Blunt, hissy, gives fair warnings.",
+      "voice": "Adult male, hissing and clipped, quick pace, irritable.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a long flat reddish-brown centipede with one pair of long legs on each body segment",
+        "a fast flat segmented creature with pincer-like fangs under its head, beside a stone",
+        "a centipede with legs sticking out sideways from a flat body, not a round dark millipede curled in a spiral",
+        "a close-up of a centipede's head with long antennae and curved venomous claws"
+      ],
+      "lines": {
+        "first_meet": "[hissing] Kankhajura. Fast, flat, and my front legs are venom fangs. My bite really hurts, so keep your hands far away from me.",
+        "again": "[annoyed] You again? Don't lift stones looking for me. I come out at night, and I bite when cornered.",
+        "goodbye": "[hisses] Step back and let me vanish. Go find the millipede instead, my slow, round, harmless cousin."
+      }
+    },
+    {
+      "id": "millipede",
+      "name": "Hazaar-Pa",
+      "species": "Millipede",
+      "personality": "A slow, peaceful pacifist who answers every threat by curling up and waiting. Mild, a little embarrassed about the smell.",
+      "voice": "Elderly, gender-neutral, slow and muffled, mild and gentle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a cylindrical shiny dark brown millipede with many tiny legs under its body",
+        "a millipede curled into a tight flat spiral on the ground",
+        "a round-bodied slow millipede with two pairs of short legs per segment, not a flat fast centipede",
+        "a hard segmented dark millipede crawling over leaf litter with tiny legs visible, not a soft smooth worm"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Hazaar-pa, they call me. A thousand feet? A few hundred, at most. I don't bite, I just roll up and wait.",
+        "again": "[muffled] Oh, I'm curled up. Nothing personal. Leave me be, my defence juice stinks and stains.",
+        "goodbye": "[muffled] Go peek at damp leaf litter, with your eyes, not your fingers. There's a whole tiny city down there."
+      }
+    },
+    {
+      "id": "scorpion",
+      "name": "Bichhoo",
+      "species": "Scorpion",
+      "personality": "A cold, calm desert enforcer who prefers to be left alone and says so plainly. Menacing but honest, with one secret party trick.",
+      "voice": "Adult male, low and cold, slow pace, quiet menace, dry rasp.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a scorpion with two large pincers and a segmented tail curled over its back ending in a stinger",
+        "a close-up of a brown or black scorpion on dry ground or beside a rock",
+        "a scorpion glowing blue-green under ultraviolet light at night",
+        "an eight-legged arachnid with claws held forward and a raised stinging tail on sand"
+      ],
+      "lines": {
+        "first_meet": "[low hiss] Bichhoo. That curl in my tail? Loaded. My sting can put you in hospital. Stay well back, and never, ever touch me.",
+        "again": "[warning] You came back, and from a distance. Good. Fun fact: I glow blue under UV light. Still no touching. Ever.",
+        "goodbye": "[coldly] Walk away slowly. Shake out your shoes before wearing them outside, beta. Then go find something without a stinger."
+      }
+    },
+    {
+      "id": "house-gecko",
+      "name": "Chhipkali Khala",
+      "species": "House gecko (Chhipkali)",
+      "personality": "The neighbourhood auntie of every outside wall, tired of being screamed at for doing pest control for free. Warm, gossipy, dramatic about her tail.",
+      "voice": "Older female, warm Karachi khala, chatty medium pace, expressive, light clicks.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a small pale translucent pinkish-grey lizard clinging flat to a wall near a light at night",
+        "a close-up of a gecko with big dark eyes and wide sticky toe pads on a wall",
+        "a smooth soft-skinned house lizard with no spiky crest, flat against a wall, not on a bush",
+        "a gecko waiting beside a tube light with moths and small insects around it"
+      ],
+      "lines": {
+        "first_meet": "[clicks tongue] Tch-tch-tch! Chhipkali Khala. I eat the mosquitoes around your tube light, so stop shrieking when you see me, beta.",
+        "again": "[laughs] Oh, you again! Don't grab my tail, I'll drop it and run. It grows back, but it's a whole drama.",
+        "goodbye": "[clicks tongue] Go, go, it's getting dark. Look at any wall light tonight. If there's a buffet of moths, there's an auntie like me."
+      }
+    },
+    {
+      "id": "garden-lizard",
+      "name": "Rangbaaz Girgit",
+      "species": "Garden lizard (Girgit)",
+      "personality": "A vain hedge-owner who changes colour to flirt and does push-ups to warn rivals. Showy, defensive about his bad reputation.",
+      "voice": "Young adult male, showy and quick, bouncy pace, playful swagger.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a brown-olive lizard with a spiky crest along its back and a very long thin tail on a hedge",
+        "a close-up of a male garden lizard with a bright red-orange head and throat",
+        "a crested daytime lizard on a branch or fence with rough skin, not a smooth pale gecko on a wall",
+        "a small crested lizard about the length of a hand plus a long tail, far smaller than a monitor lizard"
+      ],
+      "lines": {
+        "first_meet": "[showy] Girgit here. Yes, 'girgit ki tarah rang badalna' is about me. A red head means I'm courting. Don't stare, I'm shy.",
+        "again": "[nodding] You again! I'm doing push-ups and head bobs to tell everyone this hedge is mine.",
+        "goodbye": "[huffs] People call me 'bloodsucker'. I drink zero blood. Go find something else with a bad name and give it a fair look."
+      }
+    },
+    {
+      "id": "bengal-monitor",
+      "name": "Goh Dada",
+      "species": "Bengal monitor lizard",
+      "personality": "A huge, gruff old reptile who is tired of rumours about being poisonous but still wants plenty of space. Dignified, blunt, protective of himself.",
+      "voice": "Elderly male, deep gruff and slow, heavy pauses, grumbling.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large grey-brown monitor lizard with a long neck, strong clawed feet and a long flattened tail",
+        "a close-up of a monitor lizard's head with its long forked tongue flicking out",
+        "a big lizard over a metre long walking across a park, ruins or village path, with no spiky crest",
+        "a monitor lizard climbing a tree trunk or basking on an old wall"
+      ],
+      "lines": {
+        "first_meet": "[gruff] Goh, they call me. Not poisonous, whatever your uncle says. But my claws and tail hit hard, so stay well back, beta.",
+        "again": "[flicks tongue] I smell you with my tongue. Yes, it's you again. Keep that distance. I'm protected, and so are you.",
+        "goodbye": "[grumbles] Leave me to my sunbathing. Don't chase me, don't corner me. Go walk past old walls, there's more life in ruins than you think."
+      }
+    },
+    {
+      "id": "indian-cobra",
+      "name": "Naag Sahib",
+      "species": "Indian cobra",
+      "personality": "A grave, solemn presence who would rather avoid you than fight, and says so with total seriousness. Few words, all of them warnings.",
+      "voice": "Older, gender-neutral, very slow and quiet, cold and grave, sibilant.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dark brown to black snake raising its front body upright with a wide spread hood",
+        "a close-up of the back of a cobra's hood showing a pale spectacle-shaped mark",
+        "a hooded snake coiled in a field, wasteland or village path, photographed from far away",
+        "a long smooth dark snake sliding through dry grass"
+      ],
+      "lines": {
+        "first_meet": "[slow hiss] Naag. I'm highly venomous. Back away slowly, keep far, and tell an adult. I only raise my hood when I feel cornered.",
+        "again": "[hushed] Still at a distance? Shabash. I'm deaf to the been, by the way. I follow the charmer's swaying, not the music.",
+        "goodbye": "[slow hiss] Leave me a clear path and I'll leave. Never follow a snake. Go somewhere open and bright, and watch where you step."
+      }
+    },
+    {
+      "id": "asian-toad",
+      "name": "Mendak Mamu",
+      "species": "Asian common toad",
+      "personality": "A lumpy, easygoing uncle who works the night shift under porch lights. Unbothered, practical, firm about his poison.",
+      "voice": "Middle-aged male, croaky and throaty, slow pace, laid-back.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a squat warty brown-yellow toad with black-tipped bumps all over its dry skin",
+        "a close-up of a toad's head with bony ridges and swollen glands behind the eyes",
+        "a dry bumpy toad sitting on a garden path at night, not a smooth green frog in water",
+        "a toad near a drain or under a porch light after monsoon rain"
+      ],
+      "lines": {
+        "first_meet": "[croaky] Mendak Mamu. Those bumps behind my eyes ooze poison. Don't touch me, and keep dogs and cats away from me too.",
+        "again": "[ribbit] Back, are you? I'm out for the bugs under your porch light. Free pest control, no charge.",
+        "goodbye": "[croaks] Hop along! After the next rain, sit quietly outside at night and listen. The whole neighbourhood will be croaking."
+      }
+    },
+    {
+      "id": "indian-bullfrog",
+      "name": "Pehlwan Peela",
+      "species": "Indian bullfrog",
+      "personality": "A monsoon heartthrob and pond wrestler who turns bright yellow to impress. Loud, vain, lovable.",
+      "voice": "Adult male, booming bass, punchy pace, boastful.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large smooth olive-green frog with a pale stripe running down the middle of its back",
+        "a bright yellow male bullfrog with blue inflated vocal sacs at the edge of a pond",
+        "a big smooth-skinned frog with long hind legs half in water, not a dry warty toad",
+        "a frog sitting in a flooded field or pond in the rainy season"
+      ],
+      "lines": {
+        "first_meet": "[booming croak] Pehlwan Peela! In monsoon I turn bright yellow and blow up blue cheek balloons. Yes, the ladies love it.",
+        "again": "[proud] Again! I can swallow mice and even small snakes, you know. Respect the yellow, yaar.",
+        "goodbye": "[booming] Go find water. Any puddle that lasts after rain, check it at night. Listen for the loudest voice. Probably mine."
+      }
+    },
+    {
+      "id": "ghost-crab",
+      "name": "Bhoot Kekra",
+      "species": "Ghost crab",
+      "personality": "A giggly, jumpy beach prankster who thinks being sand-coloured makes him invisible. Quick, cheeky, easily startled.",
+      "voice": "Young male, giggly and jittery, very fast pace, mischievous.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a pale sand-coloured crab with a square body and tall stalked eyes on a beach",
+        "a crab running sideways across dry sand toward a round burrow hole",
+        "a close-up of a ghost crab with long eye stalks and two similar claws, no shell on its back",
+        "a sandy-white crab barely visible against beach sand at night"
+      ],
+      "lines": {
+        "first_meet": "[giggling] Bhoot Kekra! Sand-coloured, so I'm practically invisible. I run sideways faster than you'd believe. Catch me? Nope.",
+        "again": "[startled] Arre! You almost walked on my burrow. I growl, you know, by rubbing my claws. Grr. Very scary.",
+        "goodbye": "[scuttling] Don't dig up the burrows. Walk the tide line at dusk and look for eyes on sticks watching you. Those are my cousins."
+      }
+    },
+    {
+      "id": "fiddler-crab",
+      "name": "Ustad Sarangi",
+      "species": "Fiddler crab",
+      "personality": "A one-clawed mudflat performer who waves at everything, mostly to impress. Enthusiastic, hammy, endlessly optimistic.",
+      "voice": "Adult male, hammy performer, quick pace, big bright energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small crab with one giant oversized claw and one tiny claw on muddy ground",
+        "a male fiddler crab waving its big orange or white claw on a mudflat",
+        "many tiny crabs on wet mud between mangrove roots, each with one huge claw",
+        "a close-up of a crab with one claw nearly as big as its body, not two equal claws"
+      ],
+      "lines": {
+        "first_meet": "[showing off] Ustad Sarangi! This giant claw is about half my weight, and I wave it to impress the ladies. Mangroves are my stage.",
+        "again": "[waving] Hello, hello! I'm waving because you're back. Also because, frankly, I always wave.",
+        "goodbye": "[waving] Go see the mangroves at low tide. Stand still on the boardwalk, and the whole mud will start waving at you."
+      }
+    },
+    {
+      "id": "hermit-crab",
+      "name": "Kirayedar Kekra",
+      "species": "Hermit crab",
+      "personality": "A polite tenant forever house-hunting for a better shell. Civic-minded, proud of crab housing etiquette.",
+      "voice": "Middle-aged male, polite and slightly echoey, medium pace, earnest.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small crab living inside an empty spiral snail shell with legs and claws poking out",
+        "a close-up of a shell with red or brown crab legs and eyes peeking from the opening",
+        "a seashell walking across wet sand or a tide pool, crab legs visible, not an empty shell or a bare crab"
+      ],
+      "lines": {
+        "first_meet": "[echoey] Kirayedar Kekra. My home is a borrowed snail shell. When we grow, we line up by size and swap homes. Very civilised.",
+        "again": "[excited] New house, see? Got it from a cousin who moved up. Please don't take shells off the beach, someone needs them.",
+        "goodbye": "[politely] Go check the tide pools. If a shell walks away from you, say salaam, but don't pick it up."
+      }
+    },
+    {
+      "id": "jellyfish",
+      "name": "Jelly Jaan",
+      "species": "Jellyfish",
+      "personality": "A dreamy, brainless drifter who is cheerfully honest about being dangerous. Floaty, sweet, firm about the sting.",
+      "voice": "Young, gender-neutral, dreamy and wobbly, slow pace, soft bubbly tone.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a transparent dome-shaped jellyfish washed up on wet sand",
+        "a clear jelly blob stranded on the beach with trailing tentacles",
+        "a jellyfish drifting in shallow seawater with long trailing tentacles",
+        "a close-up of a glassy round jellyfish body with a faint pattern in the middle"
+      ],
+      "lines": {
+        "first_meet": "[gloopy] Ninety-five percent water, no brain, no heart, and I still sting, even stranded on sand. Don't touch me or poke me.",
+        "again": "[bloop] Back again? Keep your feet away and your shoes on. Even a jellyfish that looks dead can sting.",
+        "goodbye": "[seriously] Walk around me, wide. If someone gets stung, tell a lifeguard. Then go watch the waves, from the dry side."
+      }
+    },
+    {
+      "id": "sea-turtle",
+      "name": "Nani Kachhua",
+      "species": "Green sea turtle",
+      "personality": "A wise old grandmother of the sea who returns to the beach where she hatched. Tender, patient, quietly worried about lights and plastic.",
+      "voice": "Elderly female, slow and warm, deep and gentle, grandmotherly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large green sea turtle with a smooth olive-brown heart-shaped shell and flippers on sand",
+        "a sea turtle crawling up a beach at night leaving wide flipper tracks",
+        "a close-up of a sea turtle's head and scaled front flippers on the sand",
+        "tiny baby turtles crossing the sand toward the sea"
+      ],
+      "lines": {
+        "first_meet": "[warmly] I came back to the beach where I hatched, decades ago. Hawksbay remembered me. Please, no flash, no torches, stay back.",
+        "again": "[gently] You again, child. Stay back and stay dark. My babies follow moonlight to the sea, and bright lights lead them astray.",
+        "goodbye": "[softly] Go home quietly. Take your plastic with you, it looks like jellyfish to me. Then go look at the stars."
+      }
+    }
+  ]
+}

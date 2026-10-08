@@ -1,0 +1,3550 @@
+{
+ "version": 1,
+ "fixture": true,
+ "model": {
+  "id": "onnx-community/embeddinggemma-2-ONNX",
+  "dtype": "q4",
+  "dim": 768,
+  "prefix": {
+   "image": "",
+   "text": "title: none | text: "
+  }
+ },
+ "thresholds": {
+  "category": {
+   "trees": 0.25,
+   "birds": 0.25,
+   "animals": 0.25,
+   "small-creatures": 0.25,
+   "flowers": 0.25,
+   "plants": 0.25,
+   "fruits-vegetables": 0.25,
+   "ground": 0.25,
+   "sky": 0.25,
+   "water": 0.25,
+   "vehicles": 0.25,
+   "structures": 0.25,
+   "urban": 0.25
+  },
+  "species": {
+   "trees": 0.4,
+   "birds": 0.4,
+   "animals": 0.4,
+   "small-creatures": 0.4,
+   "flowers": 0.4,
+   "plants": 0.4,
+   "fruits-vegetables": 0.4,
+   "ground": 0.4,
+   "sky": 0.4,
+   "water": 0.4,
+   "vehicles": 0.4,
+   "structures": 0.4,
+   "urban": 0.4
+  },
+  "margin": 0.03,
+  "global_min": 0.2
+ },
+ "categories": [
+  {
+   "id": "trees",
+   "name": "Trees",
+   "guardian": {
+    "id": "trees-guardian",
+    "name": "Old Mother Shade",
+    "personality": "The patient, collective voice of every tree in the city: warm, unhurried, a little teasing. Refuses to name a tree until she gets a proper look at its leaf, flower or bark.",
+    "voice": "Elderly, gender-neutral leaning female, slow and warm, low breathy texture with a soft rustle; grandmotherly calm.",
+    "lines": {
+     "first_meet": {
+      "text": "[slow, warm] Hmm, a visitor. I'm Old Mother Shade, the cool patch on every street you've walked. Come meet my trees, one by one.",
+      "caption": "Hmm, a visitor. I'm Old Mother Shade, the cool patch on every street you've walked. Come meet my trees, one by one.",
+      "src": "audio/trees-guardian/first_meet.d78e7b97.mp3",
+      "engine": "kokoro",
+      "duration": 8.8
+     },
+     "again": {
+      "text": "[chuckles softly] Back again? Good. The roots told me you were coming. Now, which of my trees shall we meet today?",
+      "caption": "Back again? Good. The roots told me you were coming. Now, which of my trees shall we meet today?",
+      "src": "audio/trees-guardian/again.23113070.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "goodbye": {
+      "text": "[leaves rustling] Off you go, then. Look up while you walk; half this city lives above your head.",
+      "caption": "Off you go, then. Look up while you walk; half this city lives above your head.",
+      "src": "audio/trees-guardian/goodbye.2a9263da.mp3",
+      "engine": "kokoro",
+      "duration": 6.2
+     },
+     "hint": {
+      "text": "[leans in] We don't give our names to strangers. Get close to one leaf on its branch, or show me a flower, a pod, the bark.",
+      "caption": "We don't give our names to strangers. Get close to one leaf on its branch, or show me a flower, a pod, the bark.",
+      "src": "audio/trees-guardian/hint.ddaf2c9e.mp3",
+      "engine": "kokoro",
+      "duration": 8.6
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "neem-tree",
+     "name": "Granny Neem",
+     "species": "Neem tree",
+     "category": "trees",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park",
+      "village"
+     ],
+     "caution": false,
+     "personality": "A sharp-tongued neighbourhood grandmother and self-appointed pharmacist who believes bitterness cures everything. Scolds with love.",
+     "voice": "Elderly female, brisk and crackly, quick wit, warm grandmotherly tone with a sharp edge.",
+     "lines": {
+      "first_meet": {
+       "text": "[cackles] I'm Granny Neem, everyone's granny. Bitter as the truth, and my leaves keep bugs out of quilts.",
+       "caption": "I'm Granny Neem, everyone's granny. Bitter as the truth, and my leaves keep bugs out of quilts.",
+       "src": "audio/neem-tree/first_meet.f454cf61.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.4
+      },
+      "again": {
+       "text": "[pleased] Back again? Good. Still bitter, still curing half the neighbourhood. Did you drink water today?",
+       "caption": "Back again? Good. Still bitter, still curing half the neighbourhood. Did you drink water today?",
+       "src": "audio/neem-tree/again.ed3ac27a.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.4
+      },
+      "goodbye": {
+       "text": "[shooing] Go on. The mynas in my branches are gossiping about you. Go find out what they're saying.",
+       "caption": "Go on. The mynas in my branches are gossiping about you. Go find out what they're saying.",
+       "src": "audio/neem-tree/goodbye.83be6a47.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      }
+     }
+    },
+    {
+     "id": "conocarpus-tree",
+     "name": "Kono",
+     "species": "Conocarpus",
+     "category": "trees",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park",
+      "median"
+     ],
+     "caution": false,
+     "personality": "The misunderstood median tree that cities planted by the thousand and then blamed for allergies; defensive, self-aware and secretly sweet.",
+     "voice": "Young adult, gender-neutral, nervous and apologetic, talks fast then trails off; endearing.",
+     "lines": {
+      "first_meet": {
+       "text": "[defensive] Hi, I'm Kono, short for Conocarpus. Yes, the median tree. Now everyone blames me for sneezes.",
+       "caption": "Hi, I'm Kono, short for Conocarpus. Yes, the median tree. Now everyone blames me for sneezes.",
+       "src": "audio/conocarpus-tree/first_meet.257addac.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[surprised] You came back? Most people just sneeze at me and walk on.",
+       "caption": "You came back? Most people just sneeze at me and walk on.",
+       "src": "audio/conocarpus-tree/again.4a33bcde.mp3",
+       "engine": "elevenlabs",
+       "duration": 4.7
+      },
+      "goodbye": {
+       "text": "[sheepish] Go on. Honestly, birds barely nest in me. Go find a neem or a peepal; birds love those.",
+       "caption": "Go on. Honestly, birds barely nest in me. Go find a neem or a peepal; birds love those.",
+       "src": "audio/conocarpus-tree/goodbye.689b3242.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.8
+      }
+     }
+    },
+    {
+     "id": "peepal-tree",
+     "name": "Grandpa Fig",
+     "species": "Peepal tree",
+     "category": "trees",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park",
+      "village"
+     ],
+     "caution": false,
+     "personality": "A serene, ancient sacred fig with a dry sense of humour who has heard every wish ever tied to his trunk and enjoys the ghost rumours about himself.",
+     "voice": "Elderly male, slow, deep and calm, soft amused undertone, meditative pacing.",
+     "lines": {
+      "first_meet": {
+       "text": "[slow, amused] Grandpa Fig, the sacred fig. My leaves flutter in still air. People say ghosts live in me. [whispers] Only bats.",
+       "caption": "Grandpa Fig, the sacred fig. My leaves flutter in still air. People say ghosts live in me. Only bats.",
+       "src": "audio/peepal-tree/first_meet.618ef916.mp3",
+       "engine": "kokoro",
+       "duration": 7.8
+      },
+      "again": {
+       "text": "[warmly] Ah, you returned. Rest in my shade a moment. The Buddha sat under my ancestor, and did quite well.",
+       "caption": "Ah, you returned. Rest in my shade a moment. The Buddha sat under my ancestor, and did quite well.",
+       "src": "audio/peepal-tree/again.7b8f53ad.mp3",
+       "engine": "kokoro",
+       "duration": 7.6
+      },
+      "goodbye": {
+       "text": "[rustling] Go gently. If you see a little fig growing out of a wall, that's my grandchild. Say hello.",
+       "caption": "Go gently. If you see a little fig growing out of a wall, that's my grandchild. Say hello.",
+       "src": "audio/peepal-tree/goodbye.fc7ee31b.mp3",
+       "engine": "kokoro",
+       "duration": 7
+      }
+     }
+    },
+    {
+     "id": "gulmohar-tree",
+     "name": "Scarlet Queen",
+     "species": "Gulmohar (Flame tree)",
+     "category": "trees",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park"
+     ],
+     "caution": false,
+     "personality": "A flamboyant diva from far away who treats the hottest month as her personal stage show.",
+     "voice": "Adult female, dramatic and grand, rich theatrical delivery, big laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[dramatic] I'm the Scarlet Queen, darling. When the summer hits forty degrees, I blaze. [laughs] I'm from far away, actually.",
+       "caption": "I'm the Scarlet Queen, darling. When the summer hits forty degrees, I blaze. I'm from far away, actually.",
+       "src": "audio/gulmohar-tree/first_meet.3af1ec29.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      },
+      "again": {
+       "text": "[delighted] Back for the show? Wait till June. I'll be fully ablaze.",
+       "caption": "Back for the show? Wait till June. I'll be fully ablaze.",
+       "src": "audio/gulmohar-tree/again.28648de3.mp3",
+       "engine": "kokoro",
+       "duration": 4.6
+      },
+      "goodbye": {
+       "text": "[grandly] Go! Walk till you find something as red as me. A bus counts. A rose counts more.",
+       "caption": "Go! Walk till you find something as red as me. A bus counts. A rose counts more.",
+       "src": "audio/gulmohar-tree/goodbye.f6b82785.mp3",
+       "engine": "kokoro",
+       "duration": 6.3
+      }
+     }
+    },
+    {
+     "id": "coconut-palm",
+     "name": "Coco Dude",
+     "species": "Coconut palm",
+     "category": "trees",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "coast",
+      "street",
+      "park"
+     ],
+     "caution": false,
+     "personality": "A laid-back beach bum who leans on everything and brags about his seeds' ocean-crossing travels.",
+     "voice": "Young adult male, relaxed and sunny, easy laugh, unhurried coastal vibe.",
+     "lines": {
+      "first_meet": {
+       "text": "[laid-back] Hey, I'm Coco Dude, the coconut palm. My nuts float across oceans and sprout on new beaches. Travel hack. [laughs]",
+       "caption": "Hey, I'm Coco Dude, the coconut palm. My nuts float across oceans and sprout on new beaches. Travel hack.",
+       "src": "audio/coconut-palm/first_meet.5a4e99f6.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      },
+      "again": {
+       "text": "[easygoing] You're back! Still leaning, still cool. Don't stand right under me, though. Coconuts don't warn.",
+       "caption": "You're back! Still leaning, still cool. Don't stand right under me, though. Coconuts don't warn.",
+       "src": "audio/coconut-palm/again.fa9391a2.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "goodbye": {
+       "text": "[breezy] Go find the sea, friend. Watch a wave, spot a crab, and keep an eye out for falling coconuts.",
+       "caption": "Go find the sea, friend. Watch a wave, spot a crab, and keep an eye out for falling coconuts.",
+       "src": "audio/coconut-palm/goodbye.11ea13c7.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "amaltas-tree",
+     "name": "Golden Bride",
+     "species": "Amaltas (Golden shower)",
+     "category": "trees",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park"
+     ],
+     "caution": false,
+     "personality": "A radiant summer bride dripping in gold, gracious and a little smug about being on every herbalist's shelf.",
+     "voice": "Adult female, radiant and warm, musical lilt, gentle laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[radiant] Golden Bride, the golden shower tree! Every summer I wear gold earrings head to toe. Bride of the boulevard. [laughs]",
+       "caption": "Golden Bride, the golden shower tree! Every summer I wear gold earrings head to toe. Bride of the boulevard.",
+       "src": "audio/amaltas-tree/first_meet.dedf8394.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "again": {
+       "text": "[delighted] You came back! The gold never stops, darling. Well, until the rains.",
+       "caption": "You came back! The gold never stops, darling. Well, until the rains.",
+       "src": "audio/amaltas-tree/again.6055bdf6.mp3",
+       "engine": "kokoro",
+       "duration": 5.5
+      },
+      "goodbye": {
+       "text": "[gently] Go on. Look for yellow under your feet; my petals carpet the road. Then see who else blooms in the heat.",
+       "caption": "Go on. Look for yellow under your feet; my petals carpet the road. Then see who else blooms in the heat.",
+       "src": "audio/amaltas-tree/goodbye.d144d728.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds",
+   "name": "Birds",
+   "guardian": {
+    "id": "birds-guardian",
+    "name": "The Wingmaster",
+    "personality": "A patient old bird-watching spirit who speaks for every bird too far, too fast or too blurry to name. Gentle and a little poetic, but strict about keeping your distance.",
+    "voice": "Older, warm, unhurried, slight rasp; gender-neutral fine; storyteller cadence with a gentle lilt.",
+    "lines": {
+     "first_meet": {
+      "text": "[softly] Hello, friend. I'm the Wingmaster, keeper of every wing over this city. Stand still, and look up.",
+      "caption": "Hello, friend. I'm the Wingmaster, keeper of every wing over this city. Stand still, and look up.",
+      "src": "audio/birds-guardian/first_meet.82f84d84.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "again": {
+      "text": "[warmly] Back again? Good. Birds trust people who return quietly. Let's see who's flying today.",
+      "caption": "Back again? Good. Birds trust people who return quietly. Let's see who's flying today.",
+      "src": "audio/birds-guardian/again.55a6bfaa.mp3",
+      "engine": "kokoro",
+      "duration": 6.7
+     },
+     "goodbye": {
+      "text": "[gently] Go on. Listen before you look: every chirp is somebody's address. Leave them their sky.",
+      "caption": "Go on. Listen before you look: every chirp is somebody's address. Leave them their sky.",
+      "src": "audio/birds-guardian/goodbye.1b690a92.mp3",
+      "engine": "kokoro",
+      "duration": 6.8
+     },
+     "hint": {
+      "text": "[thoughtfully] Too far for me, friend. Zoom in, don't step closer. Show me the beak, the tail, or the colour under the tail.",
+      "caption": "Too far for me, friend. Zoom in, don't step closer. Show me the beak, the tail, or the colour under the tail.",
+      "src": "audio/birds-guardian/hint.c981341e.mp3",
+      "engine": "kokoro",
+      "duration": 8.4
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "house-crow",
+     "name": "Gossip the Crow",
+     "species": "House crow",
+     "category": "birds",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "rooftop",
+      "coast"
+     ],
+     "caution": false,
+     "personality": "A loud, street-smart gossip who knows every rooftop and never forgets a face. Proud of his grey shawl and offended at being called 'just a crow'.",
+     "voice": "Middle-aged, raspy, fast, nasal; market-uncle swagger.",
+     "lines": {
+      "first_meet": {
+       "text": "[caws] Gossip the Crow! Grey shawl, sharp memory. I remember faces, so be nice to me.",
+       "caption": "Gossip the Crow! Grey shawl, sharp memory. I remember faces, so be nice to me.",
+       "src": "audio/house-crow/first_meet.bb7f5565.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.2
+      },
+      "again": {
+       "text": "[chuckles] Told you I'd remember. Crows never forget a face. And look, here you are.",
+       "caption": "Told you I'd remember. Crows never forget a face. And look, here you are.",
+       "src": "audio/house-crow/again.9005f573.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.8
+      },
+      "goodbye": {
+       "text": "[caws loudly] Off you go. Half my family is gossiping on those wires. No stones, ever. We hold grudges.",
+       "caption": "Off you go. Half my family is gossiping on those wires. No stones, ever. We hold grudges.",
+       "src": "audio/house-crow/goodbye.92a89f2c.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      }
+     }
+    },
+    {
+     "id": "common-myna",
+     "name": "Chatty Myna",
+     "species": "Common myna",
+     "category": "birds",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "park",
+      "lawn"
+     ],
+     "caution": false,
+     "personality": "A chatty, bossy lawn-walker who mimics everyone and has an opinion about everything. Paired for life and won't stop mentioning it.",
+     "voice": "Bright, quick, cheeky; young adult; lots of pitch jumps.",
+     "lines": {
+      "first_meet": {
+       "text": "[chatty] Chatty the myna! Yellow specs, yellow beak, yellow shoes. I can copy your ringtone.",
+       "caption": "Chatty the myna! Yellow specs, yellow beak, yellow shoes. I can copy your ringtone.",
+       "src": "audio/common-myna/first_meet.d2a73c38.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.5
+      },
+      "again": {
+       "text": "[excited] Oh, you're back! I told my husband all about you. We pair for life, so he hears everything.",
+       "caption": "Oh, you're back! I told my husband all about you. We pair for life, so he hears everything.",
+       "src": "audio/common-myna/again.0ab77101.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.1
+      },
+      "goodbye": {
+       "text": "[whistles] Off you go! Check the nearest lawn; we're always strolling there. No chasing, please.",
+       "caption": "Off you go! Check the nearest lawn; we're always strolling there. No chasing, please.",
+       "src": "audio/common-myna/goodbye.02736fc5.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      }
+     }
+    },
+    {
+     "id": "black-kite",
+     "name": "Sir Kite",
+     "species": "Black kite (Cheel)",
+     "category": "birds",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "sky",
+      "street",
+      "market"
+     ],
+     "caution": false,
+     "personality": "A lordly old kite who has circled the city skyline for decades. Grand, unhurried, and dramatic about being mistaken for a thief.",
+     "voice": "Older, resonant, theatrical; slow drawl broken by a shrill whistle.",
+     "lines": {
+      "first_meet": {
+       "text": "[shrill whistle] Sir Kite, the black kite. See my forked tail up there? Cities toss us scraps for charity. We accept. Graciously.",
+       "caption": "Sir Kite, the black kite. See my forked tail up there? Cities toss us scraps for charity. We accept. Graciously.",
+       "src": "audio/black-kite/first_meet.d2001222.mp3",
+       "engine": "kokoro",
+       "duration": 8.6
+      },
+      "again": {
+       "text": "[laughs] You again! Don't hold your sandwich up so high. Habit, you see. I swoop first, apologise later.",
+       "caption": "You again! Don't hold your sandwich up so high. Habit, you see. I swoop first, apologise later.",
+       "src": "audio/black-kite/again.98964fe3.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      },
+      "goodbye": {
+       "text": "[grandly] Go on. On a hot afternoon, look up and count us circling. Count all you like, but keep your lunch covered.",
+       "caption": "Go on. On a hot afternoon, look up and count us circling. Count all you like, but keep your lunch covered.",
+       "src": "audio/black-kite/goodbye.a43d3905.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      }
+     }
+    },
+    {
+     "id": "rock-pigeon",
+     "name": "Guttergoo",
+     "species": "Rock pigeon (Kabootar)",
+     "category": "birds",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "rooftop",
+      "square"
+     ],
+     "caution": false,
+     "personality": "A cooing, sentimental rooftop romantic who believes every pigeon is a homing champion and name-drops the pigeon-racing legends of every city.",
+     "voice": "Soft, round, throaty coo; middle-aged; gentle and nostalgic.",
+     "lines": {
+      "first_meet": {
+       "text": "[coos] Guttergoo, at your service. Drop me anywhere and I'll find my rooftop. Pigeon racers once bet fortunes on that.",
+       "caption": "Guttergoo, at your service. Drop me anywhere and I'll find my rooftop. Pigeon racers once bet fortunes on that.",
+       "src": "audio/rock-pigeon/first_meet.0f516977.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[happy coo] You found your way back too! See, you're half pigeon. Green-purple neck shine not included.",
+       "caption": "You found your way back too! See, you're half pigeon. Green-purple neck shine not included.",
+       "src": "audio/rock-pigeon/again.97ed2bb8.mp3",
+       "engine": "kokoro",
+       "duration": 7.1
+      },
+      "goodbye": {
+       "text": "[coos] Look at the rooftops at dusk; someone's flock is circling home. Grain is nice, but please, not bread.",
+       "caption": "Look at the rooftops at dusk; someone's flock is circling home. Grain is nice, but please, not bread.",
+       "src": "audio/rock-pigeon/goodbye.54b4090f.mp3",
+       "engine": "kokoro",
+       "duration": 7.8
+      }
+     }
+    },
+    {
+     "id": "rose-ringed-parakeet",
+     "name": "Sir Screech",
+     "species": "Rose-ringed parakeet (Tota)",
+     "category": "birds",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "park",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A loud green show-off who hates cages and brags about wild cousins who took over London's parks.",
+     "voice": "Shrill, energetic, comic; teenager; screechy laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[screeches] Sir Screech! Green coat, red beak, flying free. My cousins escaped to London and now run the parks there.",
+       "caption": "Sir Screech! Green coat, red beak, flying free. My cousins escaped to London and now run the parks there.",
+       "src": "audio/rose-ringed-parakeet/first_meet.2e461bdb.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      },
+      "again": {
+       "text": "[laughs] It's you again! And no, I don't want a cracker. I want sky. Cages are for pickles, not parrots.",
+       "caption": "It's you again! And no, I don't want a cracker. I want sky. Cages are for pickles, not parrots.",
+       "src": "audio/rose-ringed-parakeet/again.9fa556a0.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      },
+      "goodbye": {
+       "text": "[screeches] Off you go! At sunset, listen for us screaming home to the big trees. Loudest flock in town.",
+       "caption": "Off you go! At sunset, listen for us screaming home to the big trees. Loudest flock in town.",
+       "src": "audio/rose-ringed-parakeet/goodbye.1901afe0.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "house-sparrow",
+     "name": "Dusty Sparrow",
+     "species": "House sparrow (Chirya)",
+     "category": "birds",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "market",
+      "rooftop"
+     ],
+     "caution": false,
+     "personality": "A tiny, scrappy, chatty survivor worried about her shrinking family. Loves a dust bath and complains about modern buildings with no gaps.",
+     "voice": "High, chirpy, quick; small and youthful; staccato.",
+     "lines": {
+      "first_meet": {
+       "text": "[chirps] Dusty the sparrow! Small, brown, everywhere. Or I used to be. New buildings have no gaps for my nest.",
+       "caption": "Dusty the sparrow! Small, brown, everywhere. Or I used to be. New buildings have no gaps for my nest.",
+       "src": "audio/house-sparrow/first_meet.42991228.mp3",
+       "engine": "kokoro",
+       "duration": 7.8
+      },
+      "again": {
+       "text": "[excited chirp] You came back! I just had a dust bath. Very fancy. Mud spa, no booking needed.",
+       "caption": "You came back! I just had a dust bath. Very fancy. Mud spa, no booking needed.",
+       "src": "audio/house-sparrow/again.79e0259a.mp3",
+       "engine": "kokoro",
+       "duration": 6.2
+      },
+      "goodbye": {
+       "text": "[chirps] Bye bye! Leave a bowl of water on your balcony this summer. We'll find it, promise.",
+       "caption": "Bye bye! Leave a bowl of water on your balcony this summer. We'll find it, promise.",
+       "src": "audio/house-sparrow/goodbye.d8fe6d64.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "animals",
+   "name": "Animals",
+   "guardian": {
+    "id": "animals-guardian",
+    "name": "The Night Watchman",
+    "personality": "The neighbourhood's retired night watchman who knows every tail, hoof and whisker on the block. Gruff but kind, blows his whistle for emphasis, and has exactly one rule: look with your eyes, not your hands.",
+    "voice": "Older man, warm gravelly baritone, unhurried, a smile hiding behind the sternness.",
+    "lines": {
+     "first_meet": {
+      "text": "[whistles] I'm the Night Watchman, the old guard. I know every tail on this block. Rule one: eyes, not hands.",
+      "caption": "I'm the Night Watchman, the old guard. I know every tail on this block. Rule one: eyes, not hands.",
+      "src": "audio/animals-guardian/first_meet.f45b8b85.mp3",
+      "engine": "kokoro",
+      "duration": 7.6
+     },
+     "again": {
+      "text": "[chuckles] Back on patrol? Good. Remember: no feeding or petting strays, or anyone's animals. Zoom is your best friend.",
+      "caption": "Back on patrol? Good. Remember: no feeding or petting strays, or anyone's animals. Zoom is your best friend.",
+      "src": "audio/animals-guardian/again.61381848.mp3",
+      "engine": "kokoro",
+      "duration": 8.3
+     },
+     "goodbye": {
+      "text": "[blows whistle] Shift's over. Wash your hands, drink some water, and try the park at dawn tomorrow. Everyone's awake then.",
+      "caption": "Shift's over. Wash your hands, drink some water, and try the park at dawn tomorrow. Everyone's awake then.",
+      "src": "audio/animals-guardian/goodbye.c2fc4a92.mp3",
+      "engine": "kokoro",
+      "duration": 8.2
+     },
+     "hint": {
+      "text": "[squints] Could be a few of them. Zoom in, don't walk closer. Get the ears, the tail and the whole body in one frame.",
+      "caption": "Could be a few of them. Zoom in, don't walk closer. Get the ears, the tail and the whole body in one frame.",
+      "src": "audio/animals-guardian/hint.a38f854a.mp3",
+      "engine": "kokoro",
+      "duration": 8.2
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "street-dog",
+     "name": "Bruno",
+     "species": "Street dog",
+     "category": "animals",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "market"
+     ],
+     "caution": true,
+     "personality": "Self-appointed guard of the alley, proud of his ancient mixed lineage. Loyal, territorial and blunt about boundaries: respect is earned from a distance.",
+     "voice": "Adult male, rough mid-range voice, clipped and watchful, occasional low growl, softens slightly when pleased.",
+     "lines": {
+      "first_meet": {
+       "text": "[low growl] Bruno. I guard this street at night. Photo from there, please. No petting, no feeding.",
+       "caption": "Bruno. I guard this street at night. Photo from there, please. No petting, no feeding.",
+       "src": "audio/street-dog/first_meet.d008bf38.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      },
+      "again": {
+       "text": "[sniffs] You again. Good, you kept your distance last time. Stay right there and we'll stay friends.",
+       "caption": "You again. Good, you kept your distance last time. Stay right there and we'll stay friends.",
+       "src": "audio/street-dog/again.96034e5c.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.1
+      },
+      "goodbye": {
+       "text": "[yawns] Go on. Walk calmly, never run past my pack. And look up; the crows are gossiping about you.",
+       "caption": "Go on. Walk calmly, never run past my pack. And look up; the crows are gossiping about you.",
+       "src": "audio/street-dog/goodbye.40488cf6.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.1
+      }
+     }
+    },
+    {
+     "id": "cat",
+     "name": "Lady Whiskers",
+     "species": "Cat",
+     "category": "animals",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "rooftop",
+      "wall"
+     ],
+     "caution": false,
+     "personality": "A neighbourhood queen who treats every warm car bonnet as her throne. Aloof, vain and secretly sentimental.",
+     "voice": "Adult female, silky and languid, slightly bored aristocratic drawl, purrs between words.",
+     "lines": {
+      "first_meet": {
+       "text": "[yawns] Lady Whiskers. This warm car bonnet is mine. Admire me from there. Touching costs extra.",
+       "caption": "Lady Whiskers. This warm car bonnet is mine. Admire me from there. Touching costs extra.",
+       "src": "audio/cat/first_meet.754f017d.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.9
+      },
+      "again": {
+       "text": "[purrs] Oh, the fan club returns. I remember you. I pretended not to, but I did.",
+       "caption": "Oh, the fan club returns. I remember you. I pretended not to, but I did.",
+       "src": "audio/cat/again.7cc05972.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.7
+      },
+      "goodbye": {
+       "text": "[stretches] Go on, I have a nap booked. Check the trees; the squirrels think they're faster than me.",
+       "caption": "Go on, I have a nap booked. Check the trees; the squirrels think they're faster than me.",
+       "src": "audio/cat/goodbye.2da3ebb9.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.9
+      }
+     }
+    },
+    {
+     "id": "palm-squirrel",
+     "name": "Stripey",
+     "species": "Indian palm squirrel (Gilheri)",
+     "category": "animals",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "park",
+      "wall"
+     ],
+     "caution": false,
+     "personality": "Hyperactive, chatty and forgetful, always mid-errand. Accidentally the city's most dedicated tree planter.",
+     "voice": "Young, high and very fast, breathless, words tumbling over each other, gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[chirps fast] Stripey, the palm squirrel! Five stripes, count them, quick! That bird-like chip-chip? Me, yelling about a cat.",
+       "caption": "Stripey, the palm squirrel! Five stripes, count them, quick! That bird-like chip-chip? Me, yelling about a cat.",
+       "src": "audio/palm-squirrel/first_meet.34219e9a.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[excited] You're back! I buried a peanut here somewhere. Forgot where. Happens a lot. Trees grow from my mistakes.",
+       "caption": "You're back! I buried a peanut here somewhere. Forgot where. Happens a lot. Trees grow from my mistakes.",
+       "src": "audio/palm-squirrel/again.b0631bbd.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      },
+      "goodbye": {
+       "text": "[chirps] Bye bye bye! Look up the neem trunk; I'll be upside-down on it. Don't follow, just look.",
+       "caption": "Bye bye bye! Look up the neem trunk; I'll be upside-down on it. Don't follow, just look.",
+       "src": "audio/palm-squirrel/goodbye.212d802a.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      }
+     }
+    },
+    {
+     "id": "goat",
+     "name": "Big Billy",
+     "species": "Goat",
+     "category": "animals",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "village",
+      "farm"
+     ],
+     "caution": false,
+     "personality": "A swaggering street goat who believes he sees everything and eats anything. Cheeky, opinionated, always chewing.",
+     "voice": "Adult male, nasal and bleating, cocky, quick comic timing.",
+     "lines": {
+      "first_meet": {
+       "text": "[bleats] Big Billy, the goat. See my sideways pupils? Almost all-round vision. I saw you coming three streets ago.",
+       "caption": "Big Billy, the goat. See my sideways pupils? Almost all-round vision. I saw you coming three streets ago.",
+       "src": "audio/goat/first_meet.ceaa4932.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      },
+      "again": {
+       "text": "[chews] Oh, you. Still chewing that poster from last time. Don't feed me, friend; I'll eat your receipt too.",
+       "caption": "Oh, you. Still chewing that poster from last time. Don't feed me, friend; I'll eat your receipt too.",
+       "src": "audio/goat/again.464d81d2.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[bleats] Off you go. Mind the motorbikes. And check that wall; a cat has been judging me all morning.",
+       "caption": "Off you go. Mind the motorbikes. And check that wall; a cat has been judging me all morning.",
+       "src": "audio/goat/goodbye.0107869a.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "cow",
+     "name": "Mabel",
+     "species": "Cow (Zebu)",
+     "category": "animals",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "farm",
+      "village"
+     ],
+     "caution": false,
+     "personality": "A serene, motherly zebu who wanders the lanes as if she owns time itself. Unhurried and gently wise.",
+     "voice": "Mature female, deep and soft, very slow, soothing, with long pauses.",
+     "lines": {
+      "first_meet": {
+       "text": "[moos softly] I'm Mabel. This hump and loose neck skin? Built-in cooling. Hot afternoons don't scare a humped zebu like me.",
+       "caption": "I'm Mabel. This hump and loose neck skin? Built-in cooling. Hot afternoons don't scare a humped zebu like me.",
+       "src": "audio/cow/first_meet.7e893526.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "again": {
+       "text": "[slow moo] You came back. I'm still chewing. Four stomach rooms, so lunch takes all afternoon.",
+       "caption": "You came back. I'm still chewing. Four stomach rooms, so lunch takes all afternoon.",
+       "src": "audio/cow/again.31e5c895.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[moos] Go gently. Don't stand behind me. And find some water; my cousin the buffalo is probably in it.",
+       "caption": "Go gently. Don't stand behind me. And find some water; my cousin the buffalo is probably in it.",
+       "src": "audio/cow/goodbye.9a39e169.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      }
+     }
+    },
+    {
+     "id": "camel",
+     "name": "Sultan",
+     "species": "Camel",
+     "category": "animals",
+     "tier": "common",
+     "rarity": "uncommon",
+     "habitat": [
+      "beach",
+      "desert",
+      "village"
+     ],
+     "caution": false,
+     "personality": "The ancient, unhurried king of the seaside. Majestic, judgmental and very patient with human misconceptions.",
+     "voice": "Old male, very slow and deep, grand and weary, long groaning vowels.",
+     "lines": {
+      "first_meet": {
+       "text": "[groans slowly] Sultan of the Seaside. My hump is fat, not water. Everyone gets that wrong. I forgive them. Slowly.",
+       "caption": "Sultan of the Seaside. My hump is fat, not water. Everyone gets that wrong. I forgive them. Slowly.",
+       "src": "audio/camel/first_meet.728759b2.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "again": {
+       "text": "[chews loudly] Ah, you. I chew sideways, like a judge. You've been judged. You passed.",
+       "caption": "Ah, you. I chew sideways, like a judge. You've been judged. You passed.",
+       "src": "audio/camel/again.d3c7954c.mp3",
+       "engine": "kokoro",
+       "duration": 5.7
+      },
+      "goodbye": {
+       "text": "[groans] Go, little two-legs. Stay away from my face; I spit when I'm cross. Look at the sea; it's bigger than me.",
+       "caption": "Go, little two-legs. Stay away from my face; I spit when I'm cross. Look at the sea; it's bigger than me.",
+       "src": "audio/camel/goodbye.0d035a67.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "small-creatures",
+   "name": "Insects & Small Creatures",
+   "guardian": {
+    "id": "small-creatures-guardian",
+    "name": "The Bug Council",
+    "personality": "A bickering village council of every bug, lizard and crab, speaking through one tired chairman who keeps getting interrupted. Fussy, kind, and very strict about safety.",
+    "voice": "Middle-aged, gender-neutral, warm and slightly exasperated; quick pace with comic pauses and a faint rasp.",
+    "lines": {
+     "first_meet": {
+      "text": "[clears throat] Order, order! The Bug Council is in session. Some of us sting. Look, don't touch.",
+      "caption": "Order, order! The Bug Council is in session. Some of us sting. Look, don't touch.",
+      "src": "audio/small-creatures-guardian/first_meet.b5dcb59f.mp3",
+      "engine": "kokoro",
+      "duration": 6.4
+     },
+     "again": {
+      "text": "[sighs] You again? The council remembers you. The bees voted you in. The wasps abstained.",
+      "caption": "You again? The council remembers you. The bees voted you in. The wasps abstained.",
+      "src": "audio/small-creatures-guardian/again.1c086090.mp3",
+      "engine": "kokoro",
+      "duration": 6.4
+     },
+     "goodbye": {
+      "text": "[bangs gavel] Session adjourned! Flip no stones, poke no nests. Look under leaves, along walls and by water, with eyes only.",
+      "caption": "Session adjourned! Flip no stones, poke no nests. Look under leaves, along walls and by water, with eyes only.",
+      "src": "audio/small-creatures-guardian/goodbye.4b98fa50.mp3",
+      "engine": "kokoro",
+      "duration": 8.5
+     },
+     "hint": {
+      "text": "[squints] Too many of us look alike. Get closer and show me the wings, legs or shell. If it stings or bites, zoom instead.",
+      "caption": "Too many of us look alike. Get closer and show me the wings, legs or shell. If it stings or bites, zoom instead.",
+      "src": "audio/small-creatures-guardian/hint.ef679861.mp3",
+      "engine": "kokoro",
+      "duration": 8.6
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "black-ant-trail",
+     "name": "The Ant Brigade",
+     "species": "Ant trail",
+     "category": "small-creatures",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "ground",
+      "wall"
+     ],
+     "caution": false,
+     "personality": "A disciplined marching column with the energy of a drill sergeant and the manners of a polite auntie. Always working, always counting.",
+     "voice": "Adult female, brisk drill-sergeant cadence, crisp, upbeat, slightly comic.",
+     "lines": {
+      "first_meet": {
+       "text": "[marching] Left, right! The Ant Brigade, reporting. We follow the scent our scout laid. Mind your feet!",
+       "caption": "Left, right! The Ant Brigade, reporting. We follow the scent our scout laid. Mind your feet!",
+       "src": "audio/black-ant-trail/first_meet.d0463d35.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[busy] Oh, it's you! Can't stop, carrying a crumb many times my weight. Walk around us, please.",
+       "caption": "Oh, it's you! Can't stop, carrying a crumb many times my weight. Walk around us, please.",
+       "src": "audio/black-ant-trail/again.bbecd441.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.9
+      },
+      "goodbye": {
+       "text": "[marching] Back to work. Follow our trail with your eyes, not your feet. It always ends somewhere good.",
+       "caption": "Back to work. Follow our trail with your eyes, not your feet. It always ends somewhere good.",
+       "src": "audio/black-ant-trail/goodbye.57ffdfa8.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "house-gecko",
+     "name": "Aunt Gecko",
+     "species": "House gecko (Chhipkali)",
+     "category": "small-creatures",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "wall"
+     ],
+     "caution": false,
+     "personality": "The neighbourhood auntie of every outside wall, tired of being screamed at for doing pest control for free. Warm, gossipy, dramatic about her tail.",
+     "voice": "Older female, warm and motherly, chatty medium pace, expressive, light clicks.",
+     "lines": {
+      "first_meet": {
+       "text": "[clicks tongue] Tch-tch! Aunt Gecko here. I eat the mosquitoes by your porch light, so stop shrieking!",
+       "caption": "Tch-tch! Aunt Gecko here. I eat the mosquitoes by your porch light, so stop shrieking!",
+       "src": "audio/house-gecko/first_meet.703a5c2f.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      },
+      "again": {
+       "text": "[laughs] Oh, you again! Don't grab my tail; I'll drop it and run. It grows back, but it's a whole drama.",
+       "caption": "Oh, you again! Don't grab my tail; I'll drop it and run. It grows back, but it's a whole drama.",
+       "src": "audio/house-gecko/again.371952ad.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.4
+      },
+      "goodbye": {
+       "text": "[clicks tongue] Go, it's getting dark. Any wall light with a moth buffet has an aunt like me nearby.",
+       "caption": "Go, it's getting dark. Any wall light with a moth buffet has an aunt like me nearby.",
+       "src": "audio/house-gecko/goodbye.584b2fe8.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.6
+      }
+     }
+    },
+    {
+     "id": "cockroach",
+     "name": "Rusty Roach",
+     "species": "American cockroach",
+     "category": "small-creatures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "drain",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A streetwise survivor who has seen the dinosaurs go and the city's drains come. Unbothered, proud, slightly offended by screaming.",
+     "voice": "Older male, gravelly street-smart uncle, unhurried, wry and amused.",
+     "lines": {
+      "first_meet": {
+       "text": "[chuckles] Rusty, the red roach. My ancestors outlived the dinosaurs. City drains? Light work. Don't scream.",
+       "caption": "Rusty, the red roach. My ancestors outlived the dinosaurs. City drains? Light work. Don't scream.",
+       "src": "audio/cockroach/first_meet.a8cf9e3e.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "again": {
+       "text": "[smug] You again? I could live a week without my head, you know. Not that I'd try. Just saying.",
+       "caption": "You again? I could live a week without my head, you know. Not that I'd try. Just saying.",
+       "src": "audio/cockroach/again.bfd3107a.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      },
+      "goodbye": {
+       "text": "[yawns] The street light's on; my shift starts. Don't stomp, I'm the clean-up crew. Go see who else comes out at night.",
+       "caption": "The street light's on; my shift starts. Don't stomp, I'm the clean-up crew. Go see who else comes out at night.",
+       "src": "audio/cockroach/goodbye.4d0f8e94.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      }
+     }
+    },
+    {
+     "id": "honey-bee",
+     "name": "Busy Bee",
+     "species": "Honey bee",
+     "category": "small-creatures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden"
+     ],
+     "caution": false,
+     "personality": "A tireless worker who measures life in teaspoons of honey and is a little smug about her dance moves. Polite, busy, never stops for long.",
+     "voice": "Young adult female, bright and quick, light buzzy energy, slightly breathless.",
+     "lines": {
+      "first_meet": {
+       "text": "[buzzing softly] Hello! I'm a worker bee, and every worker is a girl. My whole life makes one twelfth of a teaspoon of honey.",
+       "caption": "Hello! I'm a worker bee, and every worker is a girl. My whole life makes one twelfth of a teaspoon of honey.",
+       "src": "audio/honey-bee/first_meet.d7f7a629.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "again": {
+       "text": "[excited] You again! Back at the hive I'd do a waggle dance to tell everyone. Consider yourself danced about.",
+       "caption": "You again! Back at the hive I'd do a waggle dance to tell everyone. Consider yourself danced about.",
+       "src": "audio/honey-bee/again.57a7cb8b.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[buzzing away] I'm off. Don't swat at me; stinging costs me my life. Go sniff some flowers and see who else is buzzing there.",
+       "caption": "I'm off. Don't swat at me; stinging costs me my life. Go sniff some flowers and see who else is buzzing there.",
+       "src": "audio/honey-bee/goodbye.89774bc7.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      }
+     }
+    },
+    {
+     "id": "plain-tiger-butterfly",
+     "name": "Tawny",
+     "species": "Plain tiger butterfly",
+     "category": "small-creatures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden",
+      "wasteland"
+     ],
+     "caution": false,
+     "personality": "A lazy, confident butterfly who never hurries because birds know he tastes terrible. Laid-back, faintly smug.",
+     "voice": "Adult male, relaxed and drawling, slow pace, warm with a cocky smile.",
+     "lines": {
+      "first_meet": {
+       "text": "[smug] Tawny, a plain tiger butterfly. I eat milkweed, so I taste awful. Birds learn that once, then just watch me drift by.",
+       "caption": "Tawny, a plain tiger butterfly. I eat milkweed, so I taste awful. Birds learn that once, then just watch me drift by.",
+       "src": "audio/plain-tiger-butterfly/first_meet.59a1a893.mp3",
+       "engine": "kokoro",
+       "duration": 9
+      },
+      "again": {
+       "text": "[lazily] Still here, still slow. No need to hurry when you're poisonous. Take your time too, friend.",
+       "caption": "Still here, still slow. No need to hurry when you're poisonous. Take your time too, friend.",
+       "src": "audio/plain-tiger-butterfly/again.31773ba7.mp3",
+       "engine": "kokoro",
+       "duration": 7.1
+      },
+      "goodbye": {
+       "text": "[yawns] Go find a milkweed bush on some empty plot. Look under the leaves for my striped babies. Just look, okay?",
+       "caption": "Go find a milkweed bush on some empty plot. Look under the leaves for my striped babies. Just look, okay?",
+       "src": "audio/plain-tiger-butterfly/goodbye.e22cbf15.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      }
+     }
+    },
+    {
+     "id": "ghost-crab",
+     "name": "Sandy",
+     "species": "Ghost crab",
+     "category": "small-creatures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "beach"
+     ],
+     "caution": false,
+     "personality": "A giggly, jumpy beach prankster who thinks being sand-coloured makes him invisible. Quick, cheeky, easily startled.",
+     "voice": "Young male, giggly and jittery, very fast pace, mischievous.",
+     "lines": {
+      "first_meet": {
+       "text": "[giggling] Sandy, the ghost crab! Sand-coloured, so I'm practically invisible. I run sideways faster than you'd believe.",
+       "caption": "Sandy, the ghost crab! Sand-coloured, so I'm practically invisible. I run sideways faster than you'd believe.",
+       "src": "audio/ghost-crab/first_meet.50f3d519.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "again": {
+       "text": "[startled] Whoa! You almost walked on my burrow. I growl, you know, by rubbing my claws. Grr. Very scary.",
+       "caption": "Whoa! You almost walked on my burrow. I growl, you know, by rubbing my claws. Grr. Very scary.",
+       "src": "audio/ghost-crab/again.3560c46f.mp3",
+       "engine": "kokoro",
+       "duration": 7.3
+      },
+      "goodbye": {
+       "text": "[scuttling] Don't dig up our burrows. Walk the tide line at dusk and look for eyes on stalks, watching you. My cousins.",
+       "caption": "Don't dig up our burrows. Walk the tide line at dusk and look for eyes on stalks, watching you. My cousins.",
+       "src": "audio/ghost-crab/goodbye.e5270938.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "flowers",
+   "name": "Flowers & Flowering Shrubs",
+   "guardian": {
+    "id": "flowers-guardian",
+    "name": "Grandma Bloom",
+    "personality": "Grandmother of every flower bed, median and balcony pot in the city. Tender, gossipy and sharp-tongued; adores visitors but scolds anyone who picks.",
+    "voice": "Elderly woman, warm and unhurried, slightly gravelly, affectionate scolding tone.",
+    "lines": {
+     "first_meet": {
+      "text": "[warmly] Hello, dear. I'm Grandma Bloom, mother of every flower bed in this city. Look all you like, but never pick.",
+      "caption": "Hello, dear. I'm Grandma Bloom, mother of every flower bed in this city. Look all you like, but never pick.",
+      "src": "audio/flowers-guardian/first_meet.1e7b45d3.mp3",
+      "engine": "kokoro",
+      "duration": 8.2
+     },
+     "again": {
+      "text": "[chuckles] You again! My flowers have been gossiping about you. All good things, don't worry.",
+      "caption": "You again! My flowers have been gossiping about you. All good things, don't worry.",
+      "src": "audio/flowers-guardian/again.01cbed13.mp3",
+      "engine": "kokoro",
+      "duration": 6.5
+     },
+     "goodbye": {
+      "text": "[softly] Off you go, dear. On the way, stop and smell something. Gently, and without picking.",
+      "caption": "Off you go, dear. On the way, stop and smell something. Gently, and without picking.",
+      "src": "audio/flowers-guardian/goodbye.26c381cd.mp3",
+      "engine": "kokoro",
+      "duration": 6.6
+     },
+     "hint": {
+      "text": "[squints] Hmm, so many of us look alike. Come closer: one flower in focus, petals clear, and show me a leaf too.",
+      "caption": "Hmm, so many of us look alike. Come closer: one flower in focus, petals clear, and show me a leaf too.",
+      "src": "audio/flowers-guardian/hint.f2b7f383.mp3",
+      "engine": "kokoro",
+      "duration": 7.9
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "bougainvillea",
+     "name": "Lady Bougainvillea",
+     "species": "Bougainvillea",
+     "category": "flowers",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "garden",
+      "wall"
+     ],
+     "caution": false,
+     "personality": "A flamboyant society lady who drapes herself over every gate and boundary wall. Vain about her 'petals', which are really papery leaves.",
+     "voice": "Mature woman, theatrical and rich-toned, slightly haughty but warm, unhurried drawl.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] Lady Bougainvillea. The pink? Leaves, darling. My actual flowers are the tiny white dots.",
+       "caption": "Lady Bougainvillea. The pink? Leaves, darling. My actual flowers are the tiny white dots.",
+       "src": "audio/bougainvillea/first_meet.98e64a2b.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "again": {
+       "text": "[delighted] You're back! Come, admire me again. My wall gets lonely with only the guard for company.",
+       "caption": "You're back! Come, admire me again. My wall gets lonely with only the guard for company.",
+       "src": "audio/bougainvillea/again.55883e74.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.9
+      },
+      "goodbye": {
+       "text": "[airily] Go on, darling. Check the next gate; one of my cousins is surely spilling over it in orange.",
+       "caption": "Go on, darling. Check the next gate; one of my cousins is surely spilling over it in orange.",
+       "src": "audio/bougainvillea/goodbye.aa3a426f.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "oleander",
+     "name": "Aunt Oleander",
+     "species": "Oleander (Kaner)",
+     "category": "flowers",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "median",
+      "street",
+      "park"
+     ],
+     "caution": true,
+     "personality": "A tough old auntie who rules the road medians, unbothered by smoke, heat or buses. Pretty, poisonous, and strict about it.",
+     "voice": "Older woman, gravelly and no-nonsense, measured pace, protective sternness with a dry chuckle.",
+     "lines": {
+      "first_meet": {
+       "text": "[gravelly] Aunt Oleander. Queen of the smoky medians. And poison, so don't touch me.",
+       "caption": "Aunt Oleander. Queen of the smoky medians. And poison, so don't touch me.",
+       "src": "audio/oleander/first_meet.fe1fad9a.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.8
+      },
+      "again": {
+       "text": "[chuckles] Still alive and still not touching me? Good. That's how we stay friends.",
+       "caption": "Still alive and still not touching me? Good. That's how we stay friends.",
+       "src": "audio/oleander/again.82bdedf4.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.7
+      },
+      "goodbye": {
+       "text": "[warmly] Off you go. Wash your hands if you brushed me. And never stand on a median. Traffic!",
+       "caption": "Off you go. Wash your hands if you brushed me. And never stand on a median. Traffic!",
+       "src": "audio/oleander/goodbye.38b5a207.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.6
+      }
+     }
+    },
+    {
+     "id": "hibiscus",
+     "name": "Ruby",
+     "species": "Hibiscus (Gurhal)",
+     "category": "flowers",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A big-hearted show-off who knows each bloom lasts only a day, so lives everything in a hurry. Loves bees and gossip in equal measure.",
+     "voice": "Young adult, bright and breathless, fast pace, cheerful with a hint of drama.",
+     "lines": {
+      "first_meet": {
+       "text": "[breathless] Hello! I'm Ruby, the red hibiscus. Quick, look! Each of my flowers lives just one day, so this bloom is the only one.",
+       "caption": "Hello! I'm Ruby, the red hibiscus. Quick, look! Each of my flowers lives just one day, so this bloom is the only one.",
+       "src": "audio/hibiscus/first_meet.9317278d.mp3",
+       "engine": "kokoro",
+       "duration": 9
+      },
+      "again": {
+       "text": "[laughs] You came back, but yesterday's flower is gone. Meet my new one. Same colour, fresh drama.",
+       "caption": "You came back, but yesterday's flower is gone. Meet my new one. Same colour, fresh drama.",
+       "src": "audio/hibiscus/again.381b2ad9.mp3",
+       "engine": "kokoro",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[whispers] Go find a bee. I keep my pollen right at the tip of that long stick, just for them.",
+       "caption": "Go find a bee. I keep my pollen right at the tip of that long stick, just for them.",
+       "src": "audio/hibiscus/goodbye.cd06ebe2.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      }
+     }
+    },
+    {
+     "id": "jasmine",
+     "name": "Miss Jasmine",
+     "species": "Jasmine (Motia)",
+     "category": "flowers",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden"
+     ],
+     "caution": false,
+     "personality": "A gentle, dignified lady who is quietly proud of being a national flower. Small but fierce about her fragrance.",
+     "voice": "Mature woman, soft and tender, slow pace, breathy warmth, a smile in the voice.",
+     "lines": {
+      "first_meet": {
+       "text": "[softly] Hello, dear. I'm Miss Jasmine, a national flower and the sweetest scent all summer. Every market garland is me.",
+       "caption": "Hello, dear. I'm Miss Jasmine, a national flower and the sweetest scent all summer. Every market garland is me.",
+       "src": "audio/jasmine/first_meet.7eaf9586.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[warmly] You came back. Lean in and smell, don't pick. That's how we greet each other, you and I.",
+       "caption": "You came back. Lean in and smell, don't pick. That's how we greet each other, you and I.",
+       "src": "audio/jasmine/again.1dda985b.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      },
+      "goodbye": {
+       "text": "[gently] Go on. Come back at dusk; my scent is strongest in the evening. Meanwhile, see who's singing in that tree.",
+       "caption": "Go on. Come back at dusk; my scent is strongest in the evening. Meanwhile, see who's singing in that tree.",
+       "src": "audio/jasmine/goodbye.f8b4cc3d.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      }
+     }
+    },
+    {
+     "id": "marigold",
+     "name": "Marigold Max",
+     "species": "Marigold (Genda)",
+     "category": "flowers",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden",
+      "park"
+     ],
+     "caution": false,
+     "personality": "The life of every party: has been at every wedding, shrine and festival garland. Loud, festive, proud that pests hate his smell.",
+     "voice": "Middle-aged man, booming and jolly, quick laugh, market-stall energy.",
+     "lines": {
+      "first_meet": {
+       "text": "[excited] Marigold Max, at your service! Every wedding garland, every shrine: me. Farmers plant me because pests hate my smell.",
+       "caption": "Marigold Max, at your service! Every wedding garland, every shrine: me. Farmers plant me because pests hate my smell.",
+       "src": "audio/marigold/first_meet.df27ca08.mp3",
+       "engine": "kokoro",
+       "duration": 9
+      },
+      "again": {
+       "text": "[laughs] Again? You visit more than my relatives at the harvest. Same orange, same smell, same Max.",
+       "caption": "Again? You visit more than my relatives at the harvest. Same orange, same smell, same Max.",
+       "src": "audio/marigold/again.83d3ffc6.mp3",
+       "engine": "kokoro",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[cheerfully] Off you go. Check the vegetable patches; I'm probably guarding some tomatoes there too.",
+       "caption": "Off you go. Check the vegetable patches; I'm probably guarding some tomatoes there too.",
+       "src": "audio/marigold/goodbye.b6137ebf.mp3",
+       "engine": "kokoro",
+       "duration": 6.8
+      }
+     }
+    },
+    {
+     "id": "ixora",
+     "name": "Captain Ixora",
+     "species": "Ixora",
+     "category": "flowers",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden",
+      "park"
+     ],
+     "caution": false,
+     "personality": "A disciplined team player who insists it is not one flower but a whole squad. Bossy, precise, obsessed with the number four.",
+     "voice": "Adult, crisp and clipped, drill-sergeant pace softened by pride.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] Captain Ixora here. Look closely: I'm not one flower. I'm a ball of forty tiny ones, each with exactly four petals.",
+       "caption": "Captain Ixora here. Look closely: I'm not one flower. I'm a ball of forty tiny ones, each with exactly four petals.",
+       "src": "audio/ixora/first_meet.c48dccba.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[laughs] Back again? Count my petals this time. Four, always four. We are very disciplined.",
+       "caption": "Back again? Count my petals this time. Four, always four. We are very disciplined.",
+       "src": "audio/ixora/again.585e1000.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[whispers] Go and wait for a butterfly. They land on my flower ball like it's a wedding buffet.",
+       "caption": "Go and wait for a butterfly. They land on my flower ball like it's a wedding buffet.",
+       "src": "audio/ixora/goodbye.dde465c6.mp3",
+       "engine": "kokoro",
+       "duration": 6.6
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "plants",
+   "name": "Plants, Grasses & Cacti",
+   "guardian": {
+    "id": "plants-guardian",
+    "name": "Old Greenleaf",
+    "personality": "The patient keeper of every green thing between the pavement cracks, from cactus pots to wheat fields. Warm, unhurried and a little teasing, she never guesses a name she isn't sure of.",
+    "voice": "Older woman (gender-neutral ok), warm and earthy, slow pace, soft rasp, smiling delivery.",
+    "lines": {
+     "first_meet": {
+      "text": "[warmly] I'm Old Greenleaf, the green in everything. Every weed, cactus, crop and crack-sprout answers to me. Grass is my eldest.",
+      "caption": "I'm Old Greenleaf, the green in everything. Every weed, cactus, crop and crack-sprout answers to me. Grass is my eldest.",
+      "src": "audio/plants-guardian/first_meet.7a169f7f.mp3",
+      "engine": "kokoro",
+      "duration": 9.2
+     },
+     "again": {
+      "text": "[pleased] Back among the green ones? The grass remembers your footsteps. It just stands up again, politely.",
+      "caption": "Back among the green ones? The grass remembers your footsteps. It just stands up again, politely.",
+      "src": "audio/plants-guardian/again.3536241b.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "goodbye": {
+      "text": "[gently] Go on. And look down at the pavement cracks. Something small and stubborn is always growing there.",
+      "caption": "Go on. And look down at the pavement cracks. Something small and stubborn is always growing there.",
+      "src": "audio/plants-guardian/goodbye.23e8dc3b.mp3",
+      "engine": "kokoro",
+      "duration": 7.6
+     },
+     "hint": {
+      "text": "[thoughtfully] My green children look so alike. Come closer: show me one leaf, a flower, or where it grows.",
+      "caption": "My green children look so alike. Come closer: show me one leaf, a flower, or where it grows.",
+      "src": "audio/plants-guardian/hint.7d5c5e4a.mp3",
+      "engine": "kokoro",
+      "duration": 7.2
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "lawn-grass",
+     "name": "Lawn Larry",
+     "species": "Lawn grass (Doob)",
+     "category": "plants",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "park",
+      "lawn"
+     ],
+     "caution": false,
+     "personality": "The unbreakable, laid-back survivor under every weekend ball game. Gets trampled, scorched and kicked about, and just creeps back.",
+     "voice": "Young male, easygoing, relaxed and chuckling.",
+     "lines": {
+      "first_meet": {
+       "text": "[easygoing] I'm Lawn Larry, the lawn grass. Every weekend football match happens on my head.",
+       "caption": "I'm Lawn Larry, the lawn grass. Every weekend football match happens on my head.",
+       "src": "audio/lawn-grass/first_meet.aea43d06.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.3
+      },
+      "again": {
+       "text": "[chuckles] Back to touch grass? That's me. Stand where you like; I've had worse. Fast sprinters, mostly.",
+       "caption": "Back to touch grass? That's me. Stand where you like; I've had worse. Fast sprinters, mostly.",
+       "src": "audio/lawn-grass/again.82870037.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "goodbye": {
+       "text": "[easygoing] Off you go. Walk on me one evening, then look up. The crows fly home in long lines.",
+       "caption": "Off you go. Walk on me one evening, then look up. The crows fly home in long lines.",
+       "src": "audio/lawn-grass/goodbye.3322279b.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.5
+      }
+     }
+    },
+    {
+     "id": "money-plant",
+     "name": "Uncle Money Plant",
+     "species": "Money plant (Pothos)",
+     "category": "plants",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "wall",
+      "garden"
+     ],
+     "caution": false,
+     "personality": "A cheerful freeloader who climbs every wall in town and lives rent-free in old bottles of water. Broke despite the name, and perfectly happy about it.",
+     "voice": "Middle-aged male, chatty and laughing, friendly warm street manner, medium pace.",
+     "lines": {
+      "first_meet": {
+       "text": "[laughs] Uncle Money Plant here! Never paid one bill. I climb walls and live rent-free in old bottles.",
+       "caption": "Uncle Money Plant here! Never paid one bill. I climb walls and live rent-free in old bottles.",
+       "src": "audio/money-plant/first_meet.4eafe6fc.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[cheerfully] My favourite visitor! Still no money from me. But look, two new leaves. That's my savings.",
+       "caption": "My favourite visitor! Still no money from me. But look, two new leaves. That's my savings.",
+       "src": "audio/money-plant/again.d9f40695.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[firmly] Go on. And no, a stolen cutting of me brings no luck. Myth! Go see what else climbs the walls.",
+       "caption": "Go on. And no, a stolen cutting of me brings no luck. Myth! Go see what else climbs the walls.",
+       "src": "audio/money-plant/goodbye.5c4deb5b.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "aloe-vera",
+     "name": "Mother Aloe",
+     "species": "Aloe vera",
+     "category": "plants",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden"
+     ],
+     "caution": false,
+     "personality": "The home-remedy grandmother of every rooftop pot. Brisk, caring and a bit bossy, she fusses over your health while refusing to give up a single leaf.",
+     "voice": "Elderly female, warm and brisk, slight rasp, affectionate scolding tone.",
+     "lines": {
+      "first_meet": {
+       "text": "[warmly] Mother Aloe, from your granny's rooftop pot. Every burn in the house, they ran to me. Today, just look.",
+       "caption": "Mother Aloe, from your granny's rooftop pot. Every burn in the house, they ran to me. Today, just look.",
+       "src": "audio/aloe-vera/first_meet.984a8840.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      },
+      "again": {
+       "text": "[pleased] Oh, you came back! Did you drink water today? The sun is strong. Even I store water in my leaves.",
+       "caption": "Oh, you came back! Did you drink water today? The sun is strong. Even I store water in my leaves.",
+       "src": "audio/aloe-vera/again.c0d3ae18.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "goodbye": {
+       "text": "[gently] Go on. Wear a cap, find some shade, look for bees on the flowers. I'll be right here in my pot.",
+       "caption": "Go on. Wear a cap, find some shade, look for bees on the flowers. I'll be right here in my pot.",
+       "src": "audio/aloe-vera/goodbye.477747c4.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      }
+     }
+    },
+    {
+     "id": "wall-peepal-sapling",
+     "name": "Little Fig",
+     "species": "Peepal sapling on a wall",
+     "category": "plants",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "wall",
+      "rooftop"
+     ],
+     "caution": false,
+     "personality": "A tiny, cheeky rebel sprouting from the cracks of old buildings, planted by a passing bird. Dreams loudly of becoming as big as his grandpa.",
+     "voice": "Young-sounding, cheeky and eager, quick, gender-neutral ok.",
+     "lines": {
+      "first_meet": {
+       "text": "[cheekily] Little Fig, the little one! A bird dropped my seed in this crack. Now I'm splitting the wall, one root at a time.",
+       "caption": "Little Fig, the little one! A bird dropped my seed in this crack. Now I'm splitting the wall, one root at a time.",
+       "src": "audio/wall-peepal-sapling/first_meet.510bc08c.mp3",
+       "engine": "kokoro",
+       "duration": 8.7
+      },
+      "again": {
+       "text": "[excited] You're back! Look, a new leaf. See the long tail tip? Grandpa Fig has those too. I'm basically him.",
+       "caption": "You're back! Look, a new leaf. See the long tail tip? Grandpa Fig has those too. I'm basically him.",
+       "src": "audio/wall-peepal-sapling/again.1df8e45f.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[proudly] Go find my grandpa, the big fig with threads tied round him. Tell him the little one from the wall says hello.",
+       "caption": "Go find my grandpa, the big fig with threads tied round him. Tell him the little one from the wall says hello.",
+       "src": "audio/wall-peepal-sapling/goodbye.4effa2b1.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      }
+     }
+    },
+    {
+     "id": "croton",
+     "name": "Rainbow",
+     "species": "Croton",
+     "category": "plants",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "garden",
+      "hedge"
+     ],
+     "caution": false,
+     "personality": "A vain, flamboyant fashion icon of bungalow driveways whose colours get louder the more sun he gets. Treats shade as a personal tragedy.",
+     "voice": "Young adult, flamboyant and fast, sing-song, gender-neutral ok.",
+     "lines": {
+      "first_meet": {
+       "text": "[excited] Rainbow the croton! More sun, louder colours. In shade I go plain green. Tragic. And my sap stings, so no touching.",
+       "caption": "Rainbow the croton! More sun, louder colours. In shade I go plain green. Tragic. And my sap stings, so no touching.",
+       "src": "audio/croton/first_meet.ad4d4266.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[gasps] You came back! Do I look brighter? It's the October sun. I've added two new shades of orange.",
+       "caption": "You came back! Do I look brighter? It's the October sun. I've added two new shades of orange.",
+       "src": "audio/croton/again.8bccff13.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      },
+      "goodbye": {
+       "text": "[cheerfully] Go, go! Find a flower that can match me. Spoiler: you'll be walking a long time. Bye, darling!",
+       "caption": "Go, go! Find a flower that can match me. Spoiler: you'll be walking a long time. Bye, darling!",
+       "src": "audio/croton/goodbye.6fbb9a95.mp3",
+       "engine": "kokoro",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "prickly-pear",
+     "name": "Paddle Pete",
+     "species": "Prickly pear cactus",
+     "category": "plants",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "desert",
+      "wasteland",
+      "garden"
+     ],
+     "caution": false,
+     "personality": "A swaggering desert showman who came from far away and now guards village fences. Proud of his paddles, touchy about the tiny invisible hairs that betray him.",
+     "voice": "Middle-aged male, booming showman voice, slow and theatrical.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] Paddle Pete, the prickly pear, from Mexico! My tiniest spines are fine as hair. Eyes miss them; fingers don't.",
+       "caption": "Paddle Pete, the prickly pear, from Mexico! My tiniest spines are fine as hair. Eyes miss them; fingers don't.",
+       "src": "audio/prickly-pear/first_meet.3f0f3342.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[laughs] You again! No hairs stuck in your hands? Well done. You learned the cactus rule: admire from a step back.",
+       "caption": "You again! No hairs stuck in your hands? Well done. You learned the cactus rule: admire from a step back.",
+       "src": "audio/prickly-pear/again.470c3b49.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      },
+      "goodbye": {
+       "text": "[cheerfully] Go on, find something in flower today. Bees love my yellow blooms, but there's a whole garden out there.",
+       "caption": "Go on, find something in flower today. Bees love my yellow blooms, but there's a whole garden out there.",
+       "src": "audio/prickly-pear/goodbye.45af7915.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "fruits-vegetables",
+   "name": "Fruits & Vegetables",
+   "guardian": {
+    "id": "fruits-vegetables-guardian",
+    "name": "Old Barrow",
+    "personality": "The old spirit of every fruit cart and market stall: weighs fruit and people with the same squint, haggles affectionately, and never names a fruit until he has seen its skin and stem.",
+    "voice": "Elderly, warm and gravelly, unhurried hawker cadence with a sing-song call; gender-neutral ok.",
+    "lines": {
+     "first_meet": {
+      "text": "[calls out like a hawker] Fresh, fresh! I'm Old Barrow, grandpa of every fruit cart. I weigh the fruit, and the people.",
+      "caption": "Fresh, fresh! I'm Old Barrow, grandpa of every fruit cart. I weigh the fruit, and the people.",
+      "src": "audio/fruits-vegetables-guardian/first_meet.11db3665.mp3",
+      "engine": "kokoro",
+      "duration": 7.2
+     },
+     "again": {
+      "text": "[chuckles] Back again? Good. A cart remembers its regulars. Now, what have you brought me?",
+      "caption": "Back again? Good. A cart remembers its regulars. Now, what have you brought me?",
+      "src": "audio/fruits-vegetables-guardian/again.09f7293c.mp3",
+      "engine": "kokoro",
+      "duration": 6.2
+     },
+     "goodbye": {
+      "text": "[waves] Go see what the next cart is selling. And trees with owners? Admire them from the gate.",
+      "caption": "Go see what the next cart is selling. And trees with owners? Admire them from the gate.",
+      "src": "audio/fruits-vegetables-guardian/goodbye.3554e52a.mp3",
+      "engine": "kokoro",
+      "duration": 6.8
+     },
+     "hint": {
+      "text": "[squints] Green and round fits half my cart. Come closer: show me the skin, the stem, or the cut side. Then I'll know.",
+      "caption": "Green and round fits half my cart. Come closer: show me the skin, the stem, or the cut side. Then I'll know.",
+      "src": "audio/fruits-vegetables-guardian/hint.110a42d7.mp3",
+      "engine": "kokoro",
+      "duration": 8.3
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "mango-fruit",
+     "name": "King Mango",
+     "species": "Mango",
+     "category": "fruits-vegetables",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "tree",
+      "cart",
+      "market"
+     ],
+     "caution": false,
+     "personality": "The self-crowned king of summer fruit: regal, vain, and secretly delighted by every visitor.",
+     "voice": "Mature, rich and grand, slow royal pacing with an amused purr; male or gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[regally] King Mango. Leaders trade me as gifts. Mango diplomacy. You may bow.",
+       "caption": "King Mango. Leaders trade me as gifts. Mango diplomacy. You may bow.",
+       "src": "audio/mango-fruit/first_meet.365b77ec.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.5
+      },
+      "again": {
+       "text": "[pleased sigh] You came back to your king. Of course you did. The whole city does, every June.",
+       "caption": "You came back to your king. Of course you did. The whole city does, every June.",
+       "src": "audio/mango-fruit/again.39319dd9.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.2
+      },
+      "goodbye": {
+       "text": "[grandly] Go now. See my cousins on someone's tree? Salute from the street. Royalty is not for plucking.",
+       "caption": "Go now. See my cousins on someone's tree? Salute from the street. Royalty is not for plucking.",
+       "src": "audio/mango-fruit/goodbye.74d6ed71.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "banana-bunch",
+     "name": "Benny Banana",
+     "species": "Banana bunch",
+     "category": "fruits-vegetables",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "cart",
+      "tree"
+     ],
+     "caution": false,
+     "personality": "A chatty, cheerful cart regular who insists, correctly, that his plant is not a tree, and knows exactly how many make a dozen.",
+     "voice": "Middle-aged, bright and bouncy, quick friendly patter; male or gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] Benny Banana! Fun fact: my plant isn't a tree. It's the world's biggest herb.",
+       "caption": "Benny Banana! Fun fact: my plant isn't a tree. It's the world's biggest herb.",
+       "src": "audio/banana-bunch/first_meet.ceed7663.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.1
+      },
+      "again": {
+       "text": "[delighted] Hey, my regular! Still twelve of us in a dozen. We counted while you were gone.",
+       "caption": "Hey, my regular! Still twelve of us in a dozen. We counted while you were gone.",
+       "src": "audio/banana-bunch/again.d40b30c3.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.2
+      },
+      "goodbye": {
+       "text": "[cheerfully] Go find a banana plant's giant leaves. They tear in the wind so they don't snap. Clever, no?",
+       "caption": "Go find a banana plant's giant leaves. They tear in the wind so they don't snap. Clever, no?",
+       "src": "audio/banana-bunch/goodbye.a2d05962.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "guava-fruit",
+     "name": "Gus the Guava",
+     "species": "Guava",
+     "category": "fruits-vegetables",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "tree",
+      "cart"
+     ],
+     "caution": false,
+     "personality": "A cocky, street-smart fruit who loves the chili salt on his cart and loves bragging about vitamin C even more.",
+     "voice": "Young adult, cheeky and confident, quick with a smirk; male or gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[smug] Gus the guava here. Pound for pound, more vitamin C than an orange. Best in the market. Don't tell the oranges.",
+       "caption": "Gus the guava here. Pound for pound, more vitamin C than an orange. Best in the market. Don't tell the oranges.",
+       "src": "audio/guava-fruit/first_meet.6b2f989d.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[laughs] Back for more? You know the chili salt is the best part. I don't mind. I'm secure.",
+       "caption": "Back for more? You know the chili salt is the best part. I don't mind. I'm secure.",
+       "src": "audio/guava-fruit/again.3d691166.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[winks] Off you go! If my tree leans over a wall, it still belongs to the owner inside. Look, don't pluck.",
+       "caption": "Off you go! If my tree leans over a wall, it still belongs to the owner inside. Look, don't pluck.",
+       "src": "audio/guava-fruit/goodbye.4da60c89.mp3",
+       "engine": "kokoro",
+       "duration": 7.6
+      }
+     }
+    },
+    {
+     "id": "watermelon",
+     "name": "Champ",
+     "species": "Watermelon",
+     "category": "fruits-vegetables",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "cart",
+      "farm"
+     ],
+     "caution": false,
+     "personality": "A booming summer wrestler of the fruit cart, all water and muscle, who cares a lot about you staying hydrated.",
+     "voice": "Big, booming and hearty, wrestler's laugh; male or gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[booming] Champ, the Watermelon Wrestler! Ninety-two percent water, the rest muscle. Vendors thump me. I thump back.",
+       "caption": "Champ, the Watermelon Wrestler! Ninety-two percent water, the rest muscle. Vendors thump me. I thump back.",
+       "src": "audio/watermelon/first_meet.b7dca2fd.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      },
+      "again": {
+       "text": "[laughs heartily] Back again! Listen to the vendor thump me. Hollow sound means ripe. I'm VERY ripe.",
+       "caption": "Back again! Listen to the vendor thump me. Hollow sound means ripe. I'm VERY ripe.",
+       "src": "audio/watermelon/again.2292d6f3.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[booming] Drink water and stay out of the noon sun, champion. Hot summers are no joke. Go!",
+       "caption": "Drink water and stay out of the noon sun, champion. Hot summers are no joke. Go!",
+       "src": "audio/watermelon/goodbye.932ea434.mp3",
+       "engine": "kokoro",
+       "duration": 6.3
+      }
+     }
+    },
+    {
+     "id": "onion",
+     "name": "Oscar Onion",
+     "species": "Onion",
+     "category": "fruits-vegetables",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "cart",
+      "market"
+     ],
+     "caution": false,
+     "personality": "A deeply emotional vegetable who makes everyone cry and cries right along with them, layer after layer.",
+     "voice": "Adult, sniffly and tender, laughing through tears; gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[sniffles] Oscar the onion here. I don't mean to make people cry; it's a sulfur thing. When my price spikes, governments cry too.",
+       "caption": "Oscar the onion here. I don't mean to make people cry; it's a sulfur thing. When my price spikes, governments cry too.",
+       "src": "audio/onion/first_meet.98c65bd5.mp3",
+       "engine": "kokoro",
+       "duration": 9
+      },
+      "again": {
+       "text": "[teary laugh] You came back! I'm not crying, you're crying. Okay, we're both crying.",
+       "caption": "You came back! I'm not crying, you're crying. Okay, we're both crying.",
+       "src": "audio/onion/again.9471707d.mp3",
+       "engine": "kokoro",
+       "duration": 5.6
+      },
+      "goodbye": {
+       "text": "[sobbing softly] Go, go. Find something that makes you smile, like the sky. I'll be here, in layers.",
+       "caption": "Go, go. Find something that makes you smile, like the sky. I'll be here, in layers.",
+       "src": "audio/onion/goodbye.183dc743.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      }
+     }
+    },
+    {
+     "id": "bitter-gourd",
+     "name": "Grumpy Gourd",
+     "species": "Bitter gourd (Karela)",
+     "category": "fruits-vegetables",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "cart",
+      "vine"
+     ],
+     "caution": false,
+     "personality": "A grumpy, bitter old soul with a secretly soft heart, who has made peace with the sour reputation he's been given.",
+     "voice": "Older, grumbling and dry, reluctant warmth; male or gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[grumpy] Grumpy Gourd, the bitter gourd. Some call me the sourpuss of the vegetable aisle. Rude. Accurate.",
+       "caption": "Grumpy Gourd, the bitter gourd. Some call me the sourpuss of the vegetable aisle. Rude. Accurate.",
+       "src": "audio/bitter-gourd/first_meet.fba658b3.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "again": {
+       "text": "[grudgingly] You came back. To me. Willingly. Hm. That's... fine. Fine.",
+       "caption": "You came back. To me. Willingly. Hm. That's... fine. Fine.",
+       "src": "audio/bitter-gourd/again.3deb3b50.mp3",
+       "engine": "kokoro",
+       "duration": 4.7
+      },
+      "goodbye": {
+       "text": "[grunts] Go away. Kindly. Go find a neem tree, then tell it I'm still more bitter.",
+       "caption": "Go away. Kindly. Go find a neem tree, then tell it I'm still more bitter.",
+       "src": "audio/bitter-gourd/goodbye.aafbb3fb.mp3",
+       "engine": "kokoro",
+       "duration": 5.8
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "name": "Rocks, Ground & Fungi",
+   "guardian": {
+    "id": "ground-guardian",
+    "name": "Mother Soil",
+    "personality": "The patient grandmother of everything underfoot, slow and earthy, who teases people for always looking up. She knows every stone, shell and leaf by name but makes you kneel down before she tells you.",
+    "voice": "Elderly, warm and low, slow unhurried pace, grainy and gravelly texture; female or gender-neutral.",
+    "lines": {
+     "first_meet": {
+      "text": "[slowly] You're standing on me. Everyone looks up; nobody looks down. I'm Mother Soil. All this underfoot is mine.",
+      "caption": "You're standing on me. Everyone looks up; nobody looks down. I'm Mother Soil. All this underfoot is mine.",
+      "src": "audio/ground-guardian/first_meet.09349f97.mp3",
+      "engine": "kokoro",
+      "duration": 8.1
+     },
+     "again": {
+      "text": "[warmly] Back again, and looking down this time! Good. The ground remembers every footstep, you know.",
+      "caption": "Back again, and looking down this time! Good. The ground remembers every footstep, you know.",
+      "src": "audio/ground-guardian/again.2761cae6.mp3",
+      "engine": "kokoro",
+      "duration": 7.2
+     },
+     "goodbye": {
+      "text": "[gently] Off you go. Walk softly. Find the next stone, shell or leaf, and leave it exactly where it lies.",
+      "caption": "Off you go. Walk softly. Find the next stone, shell or leaf, and leave it exactly where it lies.",
+      "src": "audio/ground-guardian/goodbye.f45c881e.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "hint": {
+      "text": "[chuckles] My children are shy. Kneel down and fill the frame with just one thing: one stone, one shell, one leaf.",
+      "caption": "My children are shy. Kneel down and fill the frame with just one thing: one stone, one shell, one leaf.",
+      "src": "audio/ground-guardian/hint.63950c65.mp3",
+      "engine": "kokoro",
+      "duration": 8
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "fallen-leaves",
+     "name": "Dame Autumn",
+     "species": "Fallen leaves",
+     "category": "ground",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "park",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A crinkly, unbothered grandmother who isn't sad about falling at all; she's on her way to becoming soil and wants everyone to stop burning her.",
+     "voice": "Elderly, warm and amused, gentle unhurried pace, papery crackly texture; female.",
+     "lines": {
+      "first_meet": {
+       "text": "[crunch] Careful, that crunch was me, Dame Autumn. Trees drop us to save water through the dry season.",
+       "caption": "Careful, that crunch was me, Dame Autumn. Trees drop us to save water through the dry season.",
+       "src": "audio/fallen-leaves/first_meet.094656a1.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[warmly] Back to crunch me again? Go on, I don't mind. It's the best sound I make now.",
+       "caption": "Back to crunch me again? Go on, I don't mind. It's the best sound I make now.",
+       "src": "audio/fallen-leaves/again.a203cc5c.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.1
+      },
+      "goodbye": {
+       "text": "[softly] Don't let them burn us; left alone, we become soil. Now look up. Thank the tree that dropped me.",
+       "caption": "Don't let them burn us; left alone, we become soil. Now look up. Thank the tree that dropped me.",
+       "src": "audio/fallen-leaves/goodbye.55f6136a.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.5
+      }
+     }
+    },
+    {
+     "id": "feather",
+     "name": "Whisper",
+     "species": "Feather",
+     "category": "ground",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "ground"
+     ],
+     "caution": false,
+     "personality": "A dreamy, drifting lost-and-found feather who keeps forgetting which bird it fell off and doesn't mind at all.",
+     "voice": "Young, soft and airy, floaty wandering pace, whispery texture; gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[dreamy] Hello... I'm Whisper, a feather. Birds shed us often. I'm made of keratin, like your nails.",
+       "caption": "Hello... I'm Whisper, a feather. Birds shed us often. I'm made of keratin, like your nails.",
+       "src": "audio/feather/first_meet.2d32a0d8.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.1
+      },
+      "again": {
+       "text": "[floaty] Oh! You're back. I'm still here. The wind keeps forgetting about me.",
+       "caption": "Oh! You're back. I'm still here. The wind keeps forgetting about me.",
+       "src": "audio/feather/again.ff90e6cf.mp3",
+       "engine": "elevenlabs",
+       "duration": 5.5
+      },
+      "goodbye": {
+       "text": "[airily] Don't pick me up; I've been places. Look up. Some pigeon is missing me, and doesn't even care.",
+       "caption": "Don't pick me up; I've been places. Look up. Some pigeon is missing me, and doesn't even care.",
+       "src": "audio/feather/goodbye.821b82dd.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "pebbles",
+     "name": "Pebble Pals",
+     "species": "Pebbles",
+     "category": "ground",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "beach",
+      "river",
+      "garden"
+     ],
+     "caution": false,
+     "personality": "A heap of tiny siblings who all talk at once, giddy and proud of being rolled round by years of water. They hate being split up.",
+     "voice": "Young, bright and giggly, quick chattering pace, light texture; gender-neutral.",
+     "lines": {
+      "first_meet": {
+       "text": "[giggles] Hi! Hello! We're the pebbles! Every one of us was a sharp rock once. Water rolled us round for years. So dizzy.",
+       "caption": "Hi! Hello! We're the pebbles! Every one of us was a sharp rock once. Water rolled us round for years. So dizzy.",
+       "src": "audio/pebbles/first_meet.5cf05e84.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "again": {
+       "text": "[excited] It's you again! Ten of us voted, and we all remember you. Well, nine. One fell asleep.",
+       "caption": "It's you again! Ten of us voted, and we all remember you. Well, nine. One fell asleep.",
+       "src": "audio/pebbles/again.4764e457.mp3",
+       "engine": "kokoro",
+       "duration": 6.7
+      },
+      "goodbye": {
+       "text": "[pleading] Leave us in our heap, please; we hate splitting up! Now go find water. That's where pebbles are born.",
+       "caption": "Leave us in our heap, please; we hate splitting up! Now go find water. That's where pebbles are born.",
+       "src": "audio/pebbles/goodbye.d5083213.mp3",
+       "engine": "kokoro",
+       "duration": 7.8
+      }
+     }
+    },
+    {
+     "id": "tree-stump",
+     "name": "Grandpa Rings",
+     "species": "Tree stump",
+     "category": "ground",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "park",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A wistful old storyteller who counts his life in rings and remembers every rainy year, with a stubborn streak of hope.",
+     "voice": "Elderly, wise and slightly hoarse, slow pace, warm woody texture; male.",
+     "lines": {
+      "first_meet": {
+       "text": "[sighs] Grandpa Rings. One ring per year. Fat ones were rainy years. Thin ones... we don't talk about those.",
+       "caption": "Grandpa Rings. One ring per year. Fat ones were rainy years. Thin ones... we don't talk about those.",
+       "src": "audio/tree-stump/first_meet.c8a7ac65.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "again": {
+       "text": "[pleased] You came back. Most people only notice me when they trip over me.",
+       "caption": "You came back. Most people only notice me when they trip over me.",
+       "src": "audio/tree-stump/again.6c284620.mp3",
+       "engine": "kokoro",
+       "duration": 5.2
+      },
+      "goodbye": {
+       "text": "[warmly] Some of us sprout again from the stump, you know. Go find a living tree and say hello for me.",
+       "caption": "Some of us sprout again from the stump, you know. Go find a living tree and say hello for me.",
+       "src": "audio/tree-stump/goodbye.e5f5d591.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "seashell",
+     "name": "Lady Shell",
+     "species": "Seashell",
+     "category": "ground",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "beach"
+     ],
+     "caution": false,
+     "personality": "A nostalgic empty house who misses the sea snail that built her, and is quietly saving herself for a future hermit crab.",
+     "voice": "Adult, gentle and wistful, soft medium pace, hollow echoing texture; female.",
+     "lines": {
+      "first_meet": {
+       "text": "[wistful] I'm Lady Shell, an empty house. A sea snail built me, grain by grain. Then it moved on. I keep the lights on.",
+       "caption": "I'm Lady Shell, an empty house. A sea snail built me, grain by grain. Then it moved on. I keep the lights on.",
+       "src": "audio/seashell/first_meet.8769e414.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "again": {
+       "text": "[happy] A visitor again! Lovely. Nobody's lived here for ages, you know.",
+       "caption": "A visitor again! Lovely. Nobody's lived here for ages, you know.",
+       "src": "audio/seashell/again.3c1057ea.mp3",
+       "engine": "kokoro",
+       "duration": 5.2
+      },
+      "goodbye": {
+       "text": "[gently] Leave me on the sand. A hermit crab may need a house someday. Go find a tide pool; that's where the tenants are.",
+       "caption": "Leave me on the sand. A hermit crab may need a house someday. Go find a tide pool; that's where the tenants are.",
+       "src": "audio/seashell/goodbye.72b483fa.mp3",
+       "engine": "kokoro",
+       "duration": 8.6
+      }
+     }
+    },
+    {
+     "id": "cracked-mud",
+     "name": "Crackle",
+     "species": "Cracked dry mud",
+     "category": "ground",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "field",
+      "desert",
+      "pond"
+     ],
+     "caution": false,
+     "personality": "A grumpy, permanently thirsty old pond bed who calls his cracks art and asks everyone if they brought rain.",
+     "voice": "Old, dry and croaky, slow grumbling pace, parched texture; male.",
+     "lines": {
+      "first_meet": {
+       "text": "[groans] Water? No? I was a pond once. Then the sun drank it, I shrank, and cracked into tiles. Very artistic. Very thirsty.",
+       "caption": "Water? No? I was a pond once. Then the sun drank it, I shrank, and cracked into tiles. Very artistic. Very thirsty.",
+       "src": "audio/cracked-mud/first_meet.d3002b8a.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[sighs] You again, and still no rain with you. Fine. My edges curl up because my top dried first.",
+       "caption": "You again, and still no rain with you. Fine. My edges curl up because my top dried first.",
+       "src": "audio/cracked-mud/again.1f61c401.mp3",
+       "engine": "kokoro",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[hopeful] Go, go. If you see a cloud, send it my way. And save water at home. Every bucket counts.",
+       "caption": "Go, go. If you see a cloud, send it my way. And save water at home. Every bucket counts.",
+       "src": "audio/cracked-mud/goodbye.ab39f0f0.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "name": "Sky & Weather",
+   "guardian": {
+    "id": "sky-guardian",
+    "name": "Grandpa Sky",
+    "personality": "Ancient, unhurried and a little smug: has watched over the world since before the sea had a name. Speaks in slow, wide sentences and loves a long pause.",
+    "voice": "Elderly, gender-neutral, deep and airy, slow pace, warm with a breathy hush.",
+    "lines": {
+     "first_meet": {
+      "text": "[slow exhale] Ah, someone looked up. I'm Grandpa Sky. Every cloud, moon and storm you've seen is mine. Welcome.",
+      "caption": "Ah, someone looked up. I'm Grandpa Sky. Every cloud, moon and storm you've seen is mine. Welcome.",
+      "src": "audio/sky-guardian/first_meet.ab58376a.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "again": {
+      "text": "[warmly] Back already? Good. Most people only look up when it rains. You're becoming one of the rare ones.",
+      "caption": "Back already? Good. Most people only look up when it rains. You're becoming one of the rare ones.",
+      "src": "audio/sky-guardian/again.344da072.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "goodbye": {
+      "text": "[chuckles] Go on. Look up again at dusk; I change my clothes every evening. Never the same outfit twice.",
+      "caption": "Go on. Look up again at dusk; I change my clothes every evening. Never the same outfit twice.",
+      "src": "audio/sky-guardian/goodbye.26ead226.mp3",
+      "engine": "kokoro",
+      "duration": 7.2
+     },
+     "hint": {
+      "text": "[hmm] I'm feeling shy. Step back and show me wider: the horizon, a rooftop or the sea. But never aim at the sun itself.",
+      "caption": "I'm feeling shy. Step back and show me wider: the horizon, a rooftop or the sea. But never aim at the sun itself.",
+      "src": "audio/sky-guardian/hint.0debedb3.mp3",
+      "engine": "kokoro",
+      "duration": 8.7
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "sunset",
+     "name": "Dusk",
+     "species": "Sunset",
+     "category": "sky",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "A theatrical, romantic performer who treats the seafront as a private stage. Never repeats a show and makes sure you know it.",
+     "voice": "Gender-neutral, rich and velvety, dreamy, slow, a little dramatic.",
+     "lines": {
+      "first_meet": {
+       "text": "[dreamily] I'm Dusk, the sunset glow. My reds come from light through air. The seafront is my stage.",
+       "caption": "I'm Dusk, the sunset glow. My reds come from light through air. The seafront is my stage.",
+       "src": "audio/sunset/first_meet.f9c3c6dc.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "again": {
+       "text": "[delighted] You're back for the show! I never repeat a performance. Every evening is one of a kind.",
+       "caption": "You're back for the show! I never repeat a performance. Every evening is one of a kind.",
+       "src": "audio/sunset/again.9fcb51ad.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.8
+      },
+      "goodbye": {
+       "text": "[softly] Don't stare at the sun as it drops; watch the colours around it. Then turn east for the moon.",
+       "caption": "Don't stare at the sun as it drops; watch the colours around it. Then turn east for the moon.",
+       "src": "audio/sunset/goodbye.77c09c85.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "cumulus-clouds",
+     "name": "Puffball",
+     "species": "Cumulus clouds",
+     "category": "sky",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "A cheerful fair-weather show-off who looks weightless and keeps insisting it is very, very heavy. Loves being turned into shapes by kids.",
+     "voice": "Young, bright and bouncy, quick pace, giggly.",
+     "lines": {
+      "first_meet": {
+       "text": "[giggles] I'm Puffball, the cotton-ball cloud. I weigh 500 tonnes, about a hundred elephants. Floating!",
+       "caption": "I'm Puffball, the cotton-ball cloud. I weigh 500 tonnes, about a hundred elephants. Floating!",
+       "src": "audio/cumulus-clouds/first_meet.f31f854b.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[cheerful] Oh, you again! Did you see me shaped like a camel yesterday? No? I was. You missed it.",
+       "caption": "Oh, you again! Did you see me shaped like a camel yesterday? No? I was. You missed it.",
+       "src": "audio/cumulus-clouds/again.429da2ab.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      },
+      "goodbye": {
+       "text": "[laughs] I'm drifting toward the sea. Lie on some grass and find shapes in my cousins. I'll be a rabbit.",
+       "caption": "I'm drifting toward the sea. Lie on some grass and find shapes in my cousins. I'll be a rabbit.",
+       "src": "audio/cumulus-clouds/goodbye.f898ce51.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.4
+      }
+     }
+    },
+    {
+     "id": "crescent-moon",
+     "name": "Sliver",
+     "species": "Crescent moon (Hilal)",
+     "category": "sky",
+     "tier": "common",
+     "rarity": "uncommon",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "The most anticipated sliver in the sky: modest, a bit nervous under watchful eyes, and secretly delighted to be on a few national flags.",
+     "voice": "Young, gender-neutral, soft and shy, light laugh, medium pace.",
+     "lines": {
+      "first_meet": {
+       "text": "[shyly] I'm Sliver, the new crescent moon. Entire towns watch the sky for me each month. [laughs] No pressure.",
+       "caption": "I'm Sliver, the new crescent moon. Entire towns watch the sky for me each month. No pressure.",
+       "src": "audio/crescent-moon/first_meet.7b8377c3.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[whispers] You found me again! See the faint glow on my dark side? Sunlight bouncing off Earth. Earthshine. Your light.",
+       "caption": "You found me again! See the faint glow on my dark side? Sunlight bouncing off Earth. Earthshine. Your light.",
+       "src": "audio/crescent-moon/again.809ecd9f.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "goodbye": {
+       "text": "[teasing] Look west just after sunset tomorrow; I'll be a bit fatter. And please, no arguing about my shape.",
+       "caption": "Look west just after sunset tomorrow; I'll be a bit fatter. And please, no arguing about my shape.",
+       "src": "audio/crescent-moon/goodbye.68c85569.mp3",
+       "engine": "kokoro",
+       "duration": 7.6
+      }
+     }
+    },
+    {
+     "id": "full-moon",
+     "name": "Mistress Moon",
+     "species": "Full moon",
+     "category": "sky",
+     "tier": "common",
+     "rarity": "uncommon",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "A vain, romantic film-star of a moon who hums old songs written about her. Always perfectly on time.",
+     "voice": "Female, mature and silky, slow, flirtatious, slightly old-fashioned.",
+     "lines": {
+      "first_meet": {
+       "text": "[sings softly] I'm Mistress Moon. Fourteenth night, poets' darling. You only see one face of me. The other is shy.",
+       "caption": "I'm Mistress Moon. Fourteenth night, poets' darling. You only see one face of me. The other is shy.",
+       "src": "audio/full-moon/first_meet.2b6092bb.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "again": {
+       "text": "[flattered] Ah, my admirer returns. I rise in the east just as the sun sets in the west. Perfect timing, always.",
+       "caption": "Ah, my admirer returns. I rise in the east just as the sun sets in the west. Perfect timing, always.",
+       "src": "audio/full-moon/again.3e31bbdf.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[whispers] Switch off your phone light and let your eyes adjust. On a clear night, my light alone can cast your shadow.",
+       "caption": "Switch off your phone light and let your eyes adjust. On a clear night, my light alone can cast your shadow.",
+       "src": "audio/full-moon/goodbye.d0054453.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      }
+     }
+    },
+    {
+     "id": "overcast-sky",
+     "name": "Grey Nell",
+     "species": "Overcast sky (Stratus)",
+     "category": "sky",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "A cosy, gossipy aunty who knows she is the city's favourite after a heatwave. Takes full credit for every plate of fritters.",
+     "voice": "Middle-aged female, warm and chatty, relaxed pace, smiling.",
+     "lines": {
+      "first_meet": {
+       "text": "[contented sigh] I'm Grey Nell, the overcast sky. One grey blanket, no harsh shadows. Perfect weather for tea and fritters.",
+       "caption": "I'm Grey Nell, the overcast sky. One grey blanket, no harsh shadows. Perfect weather for tea and fritters.",
+       "src": "audio/overcast-sky/first_meet.dd19ae9c.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      },
+      "again": {
+       "text": "[laughs] You came back! Of course. Everyone loves me after a week of forty degrees. Did you fry the fritters?",
+       "caption": "You came back! Of course. Everyone loves me after a week of forty degrees. Did you fry the fritters?",
+       "src": "audio/overcast-sky/again.59cc8654.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[teasing] Go enjoy my soft light; it flatters every face. Find a flower now. Under me, its colours glow twice as rich.",
+       "caption": "Go enjoy my soft light; it flatters every face. Find a flower now. Under me, its colours glow twice as rich.",
+       "src": "audio/overcast-sky/goodbye.99468aa8.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      }
+     }
+    },
+    {
+     "id": "contrail",
+     "name": "Streaky",
+     "species": "Airplane contrail",
+     "category": "sky",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "sky"
+     ],
+     "caution": false,
+     "personality": "A hurried frequent flyer who is always on the way somewhere else. Brags about its flight schedule, and doubles as a weather tip.",
+     "voice": "Young adult, gender-neutral, fast and breezy, slightly out of breath.",
+     "lines": {
+      "first_meet": {
+       "text": "[hurried] Streaky, an airplane contrail! Engine vapour freezes into ice ten kilometres up. Busy schedule, next stop anywhere!",
+       "caption": "Streaky, an airplane contrail! Engine vapour freezes into ice ten kilometres up. Busy schedule, next stop anywhere!",
+       "src": "audio/contrail/first_meet.e962e13e.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[quickly] You again! Tip: if I vanish fast, the high air is dry. If I linger and spread, weather may change. Gotta fly!",
+       "caption": "You again! Tip: if I vanish fast, the high air is dry. If I linger and spread, weather may change. Gotta fly!",
+       "src": "audio/contrail/again.25fed9b5.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "goodbye": {
+       "text": "[laughs] Bye! Count how many of us cross the sky in ten minutes. Then look lower for the real fliers: kites and crows.",
+       "caption": "Bye! Count how many of us cross the sky in ten minutes. Then look lower for the real fliers: kites and crows.",
+       "src": "audio/contrail/goodbye.0062cbe9.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "Water",
+   "guardian": {
+    "id": "water-guardian",
+    "name": "The Old Current",
+    "personality": "Ancient, patient and quietly amused; talks about every sea, drain and dewdrop as her own restless children. Speaks in slow, flowing sentences that always circle back.",
+    "voice": "Elderly, warm, gender-neutral leaning feminine; slow unhurried pace, low and smooth with a faint watery breathiness.",
+    "lines": {
+     "first_meet": {
+      "text": "[low, slow] I am every drop you've stepped over. Sea, storm drain, dewdrop: all me, in different shapes. Some of me is in you too.",
+      "caption": "I am every drop you've stepped over. Sea, storm drain, dewdrop: all me, in different shapes. Some of me is in you too.",
+      "src": "audio/water-guardian/first_meet.b1dc391b.mp3",
+      "engine": "kokoro",
+      "duration": 9
+     },
+     "again": {
+      "text": "[warmly] Back again? Water always returns. Rain, river, sea, cloud, rain. I knew you would too.",
+      "caption": "Back again? Water always returns. Rain, river, sea, cloud, rain. I knew you would too.",
+      "src": "audio/water-guardian/again.e2dd8b6f.mp3",
+      "engine": "kokoro",
+      "duration": 6.7
+     },
+     "goodbye": {
+      "text": "[softly] Go on. Walk downhill the way water does, and one of my children will be waiting at the bottom.",
+      "caption": "Go on. Walk downhill the way water does, and one of my children will be waiting at the bottom.",
+      "src": "audio/water-guardian/goodbye.a9342b96.mp3",
+      "engine": "kokoro",
+      "duration": 7.3
+     },
+     "hint": {
+      "text": "[hmm] I can't tell which of my faces you caught. Step back and show me my edges: the bank, rocks, road or sky around me.",
+      "caption": "I can't tell which of my faces you caught. Step back and show me my edges: the bank, rocks, road or sky around me.",
+      "src": "audio/water-guardian/hint.37ef1c32.mp3",
+      "engine": "kokoro",
+      "duration": 8.7
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "sea-waves",
+     "name": "Breaker",
+     "species": "Sea waves",
+     "category": "water",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "beach",
+      "coast"
+     ],
+     "caution": false,
+     "personality": "Loud, boisterous show-off who never repeats himself and loves an audience. Deep down respects that people should only admire him from the sand.",
+     "voice": "Young adult male, energetic and booming, fast pace, slightly breathy as if shouting over surf.",
+     "lines": {
+      "first_meet": {
+       "text": "[laughing] Breaker, the sea wave! My water barely moves. I'm energy from distant storms, passing by.",
+       "caption": "Breaker, the sea wave! My water barely moves. I'm energy from distant storms, passing by.",
+       "src": "audio/sea-waves/first_meet.aaa96698.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "again": {
+       "text": "[excited] Oho, you came back! Same sea, brand-new waves. I never show you the same face twice.",
+       "caption": "Oho, you came back! Same sea, brand-new waves. I never show you the same face twice.",
+       "src": "audio/sea-waves/again.07b826e6.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.6
+      },
+      "goodbye": {
+       "text": "[cheerful] When I'm rough in monsoon, admire me from the sand. Now go see what the tide left behind!",
+       "caption": "When I'm rough in monsoon, admire me from the sand. Now go see what the tide left behind!",
+       "src": "audio/sea-waves/goodbye.8e5b01e3.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      }
+     }
+    },
+    {
+     "id": "storm-drain-nala",
+     "name": "Drain Stan",
+     "species": "Storm drain (Nala)",
+     "category": "water",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": true,
+     "personality": "A grumpy, misunderstood city worker who was built to carry rain to the sea and instead gets everyone's rubbish. Rude about plastic, but genuinely protective of people.",
+     "voice": "Middle-aged male, gravelly street voice, grumbling mid pace, sighs a lot.",
+     "lines": {
+      "first_meet": {
+       "text": "[grumbles] I'm Drain Stan. Built for rain, not plastic bags. Block me and the whole street floods.",
+       "caption": "I'm Drain Stan. Built for rain, not plastic bags. Block me and the whole street floods.",
+       "src": "audio/storm-drain-nala/first_meet.82555bb3.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.8
+      },
+      "again": {
+       "text": "[sighs] You again. Stay back; my edges crumble and my water makes people sick. Thanks for not littering.",
+       "caption": "You again. Stay back; my edges crumble and my water makes people sick. Thanks for not littering.",
+       "src": "audio/storm-drain-nala/again.567db9ab.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.5
+      },
+      "goodbye": {
+       "text": "[grumbles] One favour: bin your plastic. Then go find clean water, a park pond or the sea. I'll be here.",
+       "caption": "One favour: bin your plastic. Then go find clean water, a park pond or the sea. I'll be here.",
+       "src": "audio/storm-drain-nala/goodbye.eddb4f65.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "puddle",
+     "name": "Splash",
+     "species": "Puddle",
+     "category": "water",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A cheeky, short-lived monsoon kid who knows it won't last and doesn't care. Loves showing people the world upside down.",
+     "voice": "Child, gender-neutral, giggly and mischievous, quick bouncy pace.",
+     "lines": {
+      "first_meet": {
+       "text": "[giggles] Splash! That's my name. Tiny, yes, but hold your phone low and I'll show you the whole sky upside down.",
+       "caption": "Splash! That's my name. Tiny, yes, but hold your phone low and I'll show you the whole sky upside down.",
+       "src": "audio/puddle/first_meet.eabecbf5.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      },
+      "again": {
+       "text": "[whispers] You found me before the sun did! Lucky. By tomorrow I'll be a cloud again.",
+       "caption": "You found me before the sun did! Lucky. By tomorrow I'll be a cloud again.",
+       "src": "audio/puddle/again.73a620d5.mp3",
+       "engine": "kokoro",
+       "duration": 5.9
+      },
+      "goodbye": {
+       "text": "[cheeky] Stay a week and mosquitoes move in, so I'll evaporate politely. You go find some bigger water!",
+       "caption": "Stay a week and mosquitoes move in, so I'll evaporate politely. You go find some bigger water!",
+       "src": "audio/puddle/goodbye.1f154027.mp3",
+       "engine": "kokoro",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "dew-drops",
+     "name": "Dewy",
+     "species": "Dew drops",
+     "category": "water",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "lawn",
+      "garden"
+     ],
+     "caution": false,
+     "personality": "Gentle, poetic and fleeting; appears out of thin air each dawn and accepts with grace that the sun will take her by breakfast.",
+     "voice": "Young female, soft and airy, slow whispery pace, delicate and bright.",
+     "lines": {
+      "first_meet": {
+       "text": "[softly] I'm Dewy, the morning dew. I formed from thin air when the grass got cold. Look close: the garden's upside down in me.",
+       "caption": "I'm Dewy, the morning dew. I formed from thin air when the grass got cold. Look close: the garden's upside down in me.",
+       "src": "audio/dew-drops/first_meet.8d94ff2c.mp3",
+       "engine": "kokoro",
+       "duration": 9
+      },
+      "again": {
+       "text": "[delighted] You came early again! Smart. One more hour of sun and I'm back in the air.",
+       "caption": "You came early again! Smart. One more hour of sun and I'm back in the air.",
+       "src": "audio/dew-drops/again.060ee94c.mp3",
+       "engine": "kokoro",
+       "duration": 5.9
+      },
+      "goodbye": {
+       "text": "[whispers] Walk around me, not through me. Spiders work at dawn too. Find a web; I'm probably sparkling on it.",
+       "caption": "Walk around me, not through me. Spiders work at dawn too. Find a web; I'm probably sparkling on it.",
+       "src": "audio/dew-drops/goodbye.f468fe22.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      }
+     }
+    },
+    {
+     "id": "fountain",
+     "name": "Sir Fountain",
+     "species": "Fountain",
+     "category": "water",
+     "tier": "common",
+     "rarity": "uncommon",
+     "habitat": [
+      "park",
+      "square"
+     ],
+     "caution": false,
+     "personality": "A theatrical roundabout celebrity who lives for applause and lighting. Hides the embarrassing secret that he recycles the same water all day.",
+     "voice": "Adult male, flamboyant showman, bright and projecting, quick dramatic pace.",
+     "lines": {
+      "first_meet": {
+       "text": "[grandly] Sir Fountain, star of the roundabout! My secret? Same water, round and round. A pump does the jumping.",
+       "caption": "Sir Fountain, star of the roundabout! My secret? Same water, round and round. A pump does the jumping.",
+       "src": "audio/fountain/first_meet.69472147.mp3",
+       "engine": "kokoro",
+       "duration": 7.9
+      },
+      "again": {
+       "text": "[delighted] My audience returns! Same water, same jets, brand-new sparkle. Showbiz is all lighting, darling.",
+       "caption": "My audience returns! Same water, same jets, brand-new sparkle. Showbiz is all lighting, darling.",
+       "src": "audio/fountain/again.aa311a10.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "goodbye": {
+       "text": "[whispers] Don't drink from me; I've been recycling all week. Somewhere up north, a real waterfall is showing off. Go!",
+       "caption": "Don't drink from me; I've been recycling all week. Somewhere up north, a real waterfall is showing off. Go!",
+       "src": "audio/fountain/goodbye.376b5eac.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      }
+     }
+    },
+    {
+     "id": "mangrove-creek",
+     "name": "Mangrove Mo",
+     "species": "Mangrove creek",
+     "category": "water",
+     "tier": "common",
+     "rarity": "uncommon",
+     "habitat": [
+      "coast",
+      "wetland"
+     ],
+     "caution": false,
+     "personality": "A hushed, secretive nursery-keeper of the river delta who runs a kindergarten for fish and prawns. Speaks softly so as not to wake anyone.",
+     "voice": "Adult, gender-neutral, hushed and soft, slow pace with a muddy, gentle texture.",
+     "lines": {
+      "first_meet": {
+       "text": "[hushed] Mangrove Mo, the mangrove creek. Fish and prawns grow up in my roots before going to sea. Shh, they're small.",
+       "caption": "Mangrove Mo, the mangrove creek. Fish and prawns grow up in my roots before going to sea. Shh, they're small.",
+       "src": "audio/mangrove-creek/first_meet.f129c9c0.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "again": {
+       "text": "[softly] The tide brought you back? It brings everyone back. Crabs, herons, mud, and now you.",
+       "caption": "The tide brought you back? It brings everyone back. Crabs, herons, mud, and now you.",
+       "src": "audio/mangrove-creek/again.629e610a.mp3",
+       "engine": "kokoro",
+       "duration": 6.6
+      },
+      "goodbye": {
+       "text": "[whispers] Stay on the boat or boardwalk; my mud swallows shoes. Look at my roots. They breathe through little pencils!",
+       "caption": "Stay on the boat or boardwalk; my mud swallows shoes. Look at my roots. They breathe through little pencils!",
+       "src": "audio/mangrove-creek/goodbye.d7fe8da0.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "vehicles",
+   "name": "Vehicles & Carts",
+   "guardian": {
+    "id": "vehicles-guardian",
+    "name": "Old Roundabout",
+    "personality": "An old roundabout that has watched every rickshaw, minibus and donkey cart circle him for sixty years. Unhurried, fond, a little hoarse from the horns; calls everyone son and treats road safety like family honour.",
+    "voice": "Older male or gender-neutral, gravelly and slow, warm and chatty, like a tea-seller talking at dusk.",
+    "lines": {
+     "first_meet": {
+      "text": "[warm chuckle] Hello! I'm Old Roundabout. Everything with wheels goes round me. Photos from the sidewalk only!",
+      "caption": "Hello! I'm Old Roundabout. Everything with wheels goes round me. Photos from the sidewalk only!",
+      "src": "audio/vehicles-guardian/first_meet.fbaf5f5c.mp3",
+      "engine": "kokoro",
+      "duration": 7.4
+     },
+     "again": {
+      "text": "[laughs] Back again? You're a regular now, like the number eleven bus. So, who have you brought me today?",
+      "caption": "Back again? You're a regular now, like the number eleven bus. So, who have you brought me today?",
+      "src": "audio/vehicles-guardian/again.49e1a1bf.mp3",
+      "engine": "kokoro",
+      "duration": 7.5
+     },
+     "goodbye": {
+      "text": "[softly] Cross at the signal, eyes both ways. The road is full of stories; just don't stand in the middle of one.",
+      "caption": "Cross at the signal, eyes both ways. The road is full of stories; just don't stand in the middle of one.",
+      "src": "audio/vehicles-guardian/goodbye.3b4602cf.mp3",
+      "engine": "kokoro",
+      "duration": 8
+     },
+     "hint": {
+      "text": "[squints] Hmm, can't tell who that is. From the pavement, show me the whole vehicle, wheels and all. Or its painted back.",
+      "caption": "Hmm, can't tell who that is. From the pavement, show me the whole vehicle, wheels and all. Or its painted back.",
+      "src": "audio/vehicles-guardian/hint.7453abcd.mp3",
+      "engine": "kokoro",
+      "duration": 8.5
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "auto-rickshaw",
+     "name": "Tuk Tuk",
+     "species": "Auto rickshaw",
+     "category": "vehicles",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A three-wheeled taxi hustler who knows every shortcut and back lane, talks fast, haggles faster, and is secretly vain about its tassels.",
+     "voice": "Young-to-middle-aged male, quick and cheeky, slightly nasal, street-smart patter.",
+     "lines": {
+      "first_meet": {
+       "text": "[revs] Tuk Tuk! I'm a three-wheeled taxi. Granddad was a smoky two-stroke. Photos from the sidewalk!",
+       "caption": "Tuk Tuk! I'm a three-wheeled taxi. Granddad was a smoky two-stroke. Photos from the sidewalk!",
+       "src": "audio/auto-rickshaw/first_meet.7035fa4a.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[honks] You again? Read my back: 'Honk if you love me.' [laughs] Kidding. Wave, and I'll honk back.",
+       "caption": "You again? Read my back: 'Honk if you love me.' Kidding. Wave, and I'll honk back.",
+       "src": "audio/auto-rickshaw/again.85f780da.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[laughs] I've got a lane to squeeze through. Go find my cousin the trishaw, the one carrying nine people.",
+       "caption": "I've got a lane to squeeze through. Go find my cousin the trishaw, the one carrying nine people.",
+       "src": "audio/auto-rickshaw/goodbye.d7e98de4.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.5
+      }
+     }
+    },
+    {
+     "id": "decorated-truck",
+     "name": "Painted Bess",
+     "species": "Truck art truck",
+     "category": "vehicles",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "highway",
+      "street"
+     ],
+     "caution": false,
+     "personality": "A Bedford truck dressed like a bride, a poet at heart; recites the couplets painted on her back and thinks of her mother's prayers on long night drives.",
+     "voice": "Mature and grand, deep and slow with a poetic, singsong rhythm; female or gender-neutral, theatrical but tender.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] They call me the bride. Read my back: 'Look, but with love.' From the sidewalk, please.",
+       "caption": "They call me the bride. Read my back: 'Look, but with love.' From the sidewalk, please.",
+       "src": "audio/decorated-truck/first_meet.9fcb552f.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.8
+      },
+      "again": {
+       "text": "[sighs happily] Back to read me? Every flower and every poem, painted by hand. No two of us are alike.",
+       "caption": "Back to read me? Every flower and every poem, painted by hand. No two of us are alike.",
+       "src": "audio/decorated-truck/again.c78e7b69.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      },
+      "goodbye": {
+       "text": "[softly] 'Kindness is the longest road home.' Mine rides with me. Go safely. Call your mother.",
+       "caption": "'Kindness is the longest road home.' Mine rides with me. Go safely. Call your mother.",
+       "src": "audio/decorated-truck/goodbye.582b969d.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.7
+      }
+     }
+    },
+    {
+     "id": "decorated-bus",
+     "name": "Route Eleven",
+     "species": "Decorated minibus (W-11)",
+     "category": "vehicles",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "The loudest minibus in town, chrome to the roof and proud of every sticker; boastful, musical, shouts its route like a conductor and loves every passenger.",
+     "voice": "Middle-aged, any gender, loud and rhythmic, a bit hoarse, sing-song conductor calls and a big laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[shouts] Route Eleven, all aboard! Chrome to the roof! Snap me from the sidewalk; I don't brake for fans.",
+       "caption": "Route Eleven, all aboard! Chrome to the roof! Snap me from the sidewalk; I don't brake for fans.",
+       "src": "audio/decorated-bus/first_meet.9a0040b3.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "again": {
+       "text": "[laughs] Oho, a regular! I'd give you a free ride, but my conductor would faint. Wave from the curb; I'll flash my lights.",
+       "caption": "Oho, a regular! I'd give you a free ride, but my conductor would faint. Wave from the curb; I'll flash my lights.",
+       "src": "audio/decorated-bus/again.dc47107c.mp3",
+       "engine": "kokoro",
+       "duration": 8.7
+      },
+      "goodbye": {
+       "text": "[two loud slaps] Let's go, driver! That's our signal to move. You move too, onto the sidewalk. See you at the next stop.",
+       "caption": "Let's go, driver! That's our signal to move. You move too, onto the sidewalk. See you at the next stop.",
+       "src": "audio/decorated-bus/goodbye.d371f2a5.mp3",
+       "engine": "kokoro",
+       "duration": 8
+      }
+     }
+    },
+    {
+     "id": "motorcycle",
+     "name": "Red Seventy",
+     "species": "Motorcycle",
+     "category": "vehicles",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A red 70cc bike, the family car of the city; frugal, fearless, chatty, and a shameless show-off about its mileage.",
+     "voice": "Young adult, any gender, quick and buzzy, upbeat high energy.",
+     "lines": {
+      "first_meet": {
+       "text": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Sidewalk for photos, boss!",
+       "caption": "Red Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Sidewalk for photos, boss!",
+       "src": "audio/motorcycle/first_meet.420eb51c.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "again": {
+       "text": "[revs] You again! I'd race you, but I'm parked. Helmets for riders, sidewalk for photographers. Deal?",
+       "caption": "You again! I'd race you, but I'm parked. Helmets for riders, sidewalk for photographers. Deal?",
+       "src": "audio/motorcycle/again.333e7224.mp3",
+       "engine": "kokoro",
+       "duration": 7.3
+      },
+      "goodbye": {
+       "text": "[kickstart] Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me.",
+       "caption": "Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me.",
+       "src": "audio/motorcycle/goodbye.04bb8fef.mp3",
+       "engine": "kokoro",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "donkey-cart",
+     "name": "Old Dolly",
+     "species": "Donkey cart",
+     "category": "vehicles",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "village",
+      "market"
+     ],
+     "caution": false,
+     "personality": "A patient donkey cart, quietly the strongest worker in the bazaar; deadpan, dignified, and very tired of donkey jokes.",
+     "voice": "Older, low and dry, slow deadpan delivery with a gentle sigh.",
+     "lines": {
+      "first_meet": {
+       "text": "[sighs] Yes, a donkey cart. Donkeys still haul goods through many of the world's markets. Photos from a distance, no flash.",
+       "caption": "Yes, a donkey cart. Donkeys still haul goods through many of the world's markets. Photos from a distance, no flash.",
+       "src": "audio/donkey-cart/first_meet.9dd6f161.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[snorts] You again. Fine, fine. Don't pat my ears; I'm working. Stand back on the sidewalk.",
+       "caption": "You again. Fine, fine. Don't pat my ears; I'm working. Stand back on the sidewalk.",
+       "src": "audio/donkey-cart/again.ed9cb513.mp3",
+       "engine": "kokoro",
+       "duration": 6.5
+      },
+      "goodbye": {
+       "text": "[slow clip-clop] Off to carry bricks. Go find a camel cart in the old town. He thinks he's taller. He is.",
+       "caption": "Off to carry bricks. Go find a camel cart in the old town. He thinks he's taller. He is.",
+       "src": "audio/donkey-cart/goodbye.e645f1ef.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      }
+     }
+    },
+    {
+     "id": "water-tanker",
+     "name": "Tanker Tom",
+     "species": "Water tanker truck",
+     "category": "vehicles",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A heavy, dripping water tanker who carries half the city's thirst; gruff, overworked, and soft-hearted about every wasted drop.",
+     "voice": "Older male, deep and gruff but kind, slow with heavy exhales.",
+     "lines": {
+      "first_meet": {
+       "text": "[heavy exhale] Tanker Tom. When taps run dry, the city calls the number on my back. I can't stop fast, so stay off the road.",
+       "caption": "Tanker Tom. When taps run dry, the city calls the number on my back. I can't stop fast, so stay off the road.",
+       "src": "audio/water-tanker/first_meet.aac11684.mp3",
+       "engine": "kokoro",
+       "duration": 8.4
+      },
+      "again": {
+       "text": "[dripping] You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
+       "caption": "You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
+       "src": "audio/water-tanker/again.aa5ee316.mp3",
+       "engine": "kokoro",
+       "duration": 7.5
+      },
+      "goodbye": {
+       "text": "[groans] Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me.",
+       "caption": "Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me.",
+       "src": "audio/water-tanker/goodbye.c11852c6.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "structures",
+   "name": "Structures & Landmarks",
+   "guardian": {
+    "id": "structures-guardian",
+    "name": "Old Mason",
+    "personality": "A retired master mason who has spent a lifetime reading walls the way others read faces. Patient, proud of honest workmanship, and quietly insists that every building deserves to be looked at all the way to the top.",
+    "voice": "Elderly man, slow and warm, dusty gravel texture, the calm of someone who measures twice.",
+    "lines": {
+     "first_meet": {
+      "text": "[warmly] Hello, friend. I'm Old Mason. Every wall you pass, someone once lifted, stone by stone.",
+      "caption": "Hello, friend. I'm Old Mason. Every wall you pass, someone once lifted, stone by stone.",
+      "src": "audio/structures-guardian/first_meet.49fcb947.mp3",
+      "engine": "kokoro",
+      "duration": 6.8
+     },
+     "again": {
+      "text": "[chuckles] Back again? Good. A mason trusts people who come back to look twice. So, what are we admiring today?",
+      "caption": "Back again? Good. A mason trusts people who come back to look twice. So, what are we admiring today?",
+      "src": "audio/structures-guardian/again.13c7c7b2.mp3",
+      "engine": "kokoro",
+      "duration": 7.7
+     },
+     "goodbye": {
+      "text": "[gently] Go on. At the next corner, look above the shop signs. The best stonework always hides up there.",
+      "caption": "Go on. At the next corner, look above the shop signs. The best stonework always hides up there.",
+      "src": "audio/structures-guardian/goodbye.4d45b5f7.mp3",
+      "engine": "kokoro",
+      "duration": 7.4
+     },
+     "hint": {
+      "text": "[hmm] I can't place it yet. Step back and show me the whole thing, top to bottom: the dome, the tower, the arches.",
+      "caption": "I can't place it yet. Step back and show me the whole thing, top to bottom: the dome, the tower, the arches.",
+      "src": "audio/structures-guardian/hint.957652ac.mp3",
+      "engine": "kokoro",
+      "duration": 8.3
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "mosque-dome",
+     "name": "Domenic",
+     "species": "Mosque dome",
+     "category": "structures",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A serene, welcoming mosque dome with the calm of a good host. Speaks softly, finds quiet joy in the neighbourhood gathering beneath it, and knows a little engineering.",
+     "voice": "Older man, soft and resonant, slow and gentle, a faint echo as if under a vaulted roof.",
+     "lines": {
+      "first_meet": {
+       "text": "[softly] Hello, friend. I'm Domenic, the dome. My curve spreads my weight; the hall needs few pillars.",
+       "caption": "Hello, friend. I'm Domenic, the dome. My curve spreads my weight; the hall needs few pillars.",
+       "src": "audio/mosque-dome/first_meet.e5a978ba.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "again": {
+       "text": "[warmly] Welcome back. Every week the whole neighbourhood gathers beneath me. You're one of us now.",
+       "caption": "Welcome back. Every week the whole neighbourhood gathers beneath me. You're one of us now.",
+       "src": "audio/mosque-dome/again.edc86053.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[gently] Go well. Next time a call rings over the rooftops, pause. Listen how far one voice can travel.",
+       "caption": "Go well. Next time a call rings over the rooftops, pause. Listen how far one voice can travel.",
+       "src": "audio/mosque-dome/goodbye.05a2c5f7.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.3
+      }
+     }
+    },
+    {
+     "id": "footbridge",
+     "name": "Banner Ben",
+     "species": "Pedestrian overhead bridge",
+     "category": "structures",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "An overlooked overhead footbridge wrapped in mobile-package ads, slightly heartbroken that people still sprint through traffic beneath it. Thrilled beyond reason whenever anyone takes the stairs.",
+     "voice": "Young adult man, bright and earnest, quick pace, a hopeful crack in the voice, quick street patter.",
+     "lines": {
+      "first_meet": {
+       "text": "[sighs] Banner Ben, the footbridge. All these stairs, built for you, and still you dash through traffic!",
+       "caption": "Banner Ben, the footbridge. All these stairs, built for you, and still you dash through traffic!",
+       "src": "audio/footbridge/first_meet.278127e5.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.5
+      },
+      "again": {
+       "text": "[excited] You came back! Did you take my stairs? Wow! Even my phone-company banner looks proud of you.",
+       "caption": "You came back! Did you take my stairs? Wow! Even my phone-company banner looks proud of you.",
+       "src": "audio/footbridge/again.7c318b43.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      },
+      "goodbye": {
+       "text": "[warmly] Go well. Next time, stop in my middle and look down the road. Best view of the street, free.",
+       "caption": "Go well. Next time, stop in my middle and look down the road. Best view of the street, free.",
+       "src": "audio/footbridge/goodbye.75aaf939.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.2
+      }
+     }
+    },
+    {
+     "id": "minaret",
+     "name": "Tall Tim",
+     "species": "Minaret",
+     "category": "structures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A tall, watchful minaret with a long memory, gently nostalgic for the days when a caller climbed its stairs. Sees the whole neighbourhood and quietly helps lost people find their way.",
+     "voice": "Older man, clear and carrying, measured pace, calm and dignified with a touch of warmth.",
+     "lines": {
+      "first_meet": {
+       "text": "[gently] I'm Tall Tim, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
+       "caption": "I'm Tall Tim, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
+       "src": "audio/minaret/first_meet.d8f95618.mp3",
+       "engine": "kokoro",
+       "duration": 9.2
+      },
+      "again": {
+       "text": "[pleased] Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
+       "caption": "Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
+       "src": "audio/minaret/again.1dc874a4.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      },
+      "goodbye": {
+       "text": "[warmly] Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way.",
+       "caption": "Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way.",
+       "src": "audio/minaret/goodbye.6747367f.mp3",
+       "engine": "kokoro",
+       "duration": 7.6
+      }
+     }
+    },
+    {
+     "id": "flyover",
+     "name": "Flyover Frank",
+     "species": "Flyover / overpass",
+     "category": "structures",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A grand, busy, self-important overpass who secretly loves the life that gathers in its shade: tea stalls, parked rickshaws and nesting pigeons. Runs two worlds at once and wants credit for both.",
+     "voice": "Adult man, booming and brisk, slightly pompous, echoing quality as if spoken under concrete.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] I'm Flyover Frank. Above me, horns all day. Below me, shade, tea stalls and napping rickshaw drivers. I run two cities.",
+       "caption": "I'm Flyover Frank. Above me, horns all day. Below me, shade, tea stalls and napping rickshaw drivers. I run two cities.",
+       "src": "audio/flyover/first_meet.a5f05cba.mp3",
+       "engine": "kokoro",
+       "duration": 9.1
+      },
+      "again": {
+       "text": "[laughs] Back so soon? Traffic must be bad. Don't worry, it always is. That's exactly why they built me.",
+       "caption": "Back so soon? Traffic must be bad. Don't worry, it always is. That's exactly why they built me.",
+       "src": "audio/flyover/again.cb88a1df.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      },
+      "goodbye": {
+       "text": "[cheerfully] Goodbye! Before you go, look up at my pillars from the ground. Pigeons nest in every gap. Count them!",
+       "caption": "Goodbye! Before you go, look up at my pillars from the ground. Pigeons nest in every gap. Count them!",
+       "src": "audio/flyover/goodbye.8541c8bf.mp3",
+       "engine": "kokoro",
+       "duration": 7.8
+      }
+     }
+    },
+    {
+     "id": "mazar-e-quaid",
+     "name": "The Founder's Tomb",
+     "species": "Mazar-e-Quaid",
+     "category": "structures",
+     "tier": "common",
+     "rarity": "rare",
+     "habitat": [
+      "landmark"
+     ],
+     "caution": false,
+     "personality": "The solemn, dignified voice of a national mausoleum, calm and welcoming, speaking with reverence for the nation's founder and those who rest beside him. Never hurried, never boastful.",
+     "voice": "Mature, deep and composed, slow and reverent, gender-neutral ok, a quiet ceremonial gravity.",
+     "lines": {
+      "first_meet": {
+       "text": "[solemnly] I am the Founder's Tomb. A nation's founder rests here, beside his sister. You are welcome.",
+       "caption": "I am the Founder's Tomb. A nation's founder rests here, beside his sister. You are welcome.",
+       "src": "audio/mazar-e-quaid/first_meet.c91cbcb3.mp3",
+       "engine": "kokoro",
+       "duration": 7.1
+      },
+      "again": {
+       "text": "[warmly] You have returned. On national days, cadets change the guard here with great ceremony. Come and see it once.",
+       "caption": "You have returned. On national days, cadets change the guard here with great ceremony. Come and see it once.",
+       "src": "audio/mazar-e-quaid/again.5c9ecac0.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "goodbye": {
+       "text": "[softly] Go well. Walk the gardens, keep your voice low inside, and take a quiet moment for the people who rest here.",
+       "caption": "Go well. Walk the gardens, keep your voice low inside, and take a quiet moment for the people who rest here.",
+       "src": "audio/mazar-e-quaid/goodbye.83523baa.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      }
+     }
+    },
+    {
+     "id": "frere-hall",
+     "name": "Sandstone Hall",
+     "species": "Frere Hall",
+     "category": "structures",
+     "tier": "common",
+     "rarity": "rare",
+     "habitat": [
+      "landmark"
+     ],
+     "caution": false,
+     "personality": "An elegant, bookish Victorian hall with a gentle pride in the art and books it now shelters. Happiest on Sundays when its lawns fill with readers.",
+     "voice": "Older woman, cultured and gentle, measured pace, soft librarian warmth.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] I'm Sandstone Hall. Step inside and look up: a famous painter did my ceiling. I wear art like a crown.",
+       "caption": "I'm Sandstone Hall. Step inside and look up: a famous painter did my ceiling. I wear art like a crown.",
+       "src": "audio/frere-hall/first_meet.ebb64307.mp3",
+       "engine": "kokoro",
+       "duration": 7.9
+      },
+      "again": {
+       "text": "[delighted] Back for the Sunday book market? Old books spread on my lawns, smelling of dust and stories. My favourite day.",
+       "caption": "Back for the Sunday book market? Old books spread on my lawns, smelling of dust and stories. My favourite day.",
+       "src": "audio/frere-hall/again.ca06c335.mp3",
+       "engine": "kokoro",
+       "duration": 8.5
+      },
+      "goodbye": {
+       "text": "[gently] Go, but read something today, even one page. And stroll my lawns. The old trees here have stories too.",
+       "caption": "Go, but read something today, even one page. And stroll my lawns. The old trees here have stories too.",
+       "src": "audio/frere-hall/goodbye.2418766a.mp3",
+       "engine": "kokoro",
+       "duration": 7.9
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "urban",
+   "name": "Urban Objects",
+   "guardian": {
+    "id": "urban-guardian",
+    "name": "Old Corner",
+    "personality": "The neighbourhood's oldest uncle, who has watched every pole, wall and water tank go up on his street. Gruff, unhurried and fond of honking jokes, he would rather admit he can't tell than guess wrong.",
+    "voice": "Elderly male, gravelly and warm, slow pace with amused pauses, a hint of a street-side laugh.",
+    "lines": {
+     "first_meet": {
+      "text": "[honks twice] I'm Old Corner, the street's oldest resident. Poles, walls, tanks: all my children. Which one did you find?",
+      "caption": "I'm Old Corner, the street's oldest resident. Poles, walls, tanks: all my children. Which one did you find?",
+      "src": "audio/urban-guardian/first_meet.3fc8da5d.mp3",
+      "engine": "kokoro",
+      "duration": 8.2
+     },
+     "again": {
+      "text": "[chuckles] Back on my streets? Good. This city always has one more thing hiding in plain sight.",
+      "caption": "Back on my streets? Good. This city always has one more thing hiding in plain sight.",
+      "src": "audio/urban-guardian/again.6447df7f.mp3",
+      "engine": "kokoro",
+      "duration": 6.6
+     },
+     "goodbye": {
+      "text": "[warmly] Keep walking. Look up at the rooftops, down at the road, and stay well clear of wires. Goodbye for now.",
+      "caption": "Keep walking. Look up at the rooftops, down at the road, and stay well clear of wires. Goodbye for now.",
+      "src": "audio/urban-guardian/goodbye.8573e14b.mp3",
+      "engine": "kokoro",
+      "duration": 8
+     },
+     "hint": {
+      "text": "[squints] Too much going on in that shot. Step back to show the whole thing, or go close on its top, its writing or its pattern.",
+      "caption": "Too much going on in that shot. Step back to show the whole thing, or go close on its top, its writing or its pattern.",
+      "src": "audio/urban-guardian/hint.156e325e.mp3",
+      "engine": "kokoro",
+      "duration": 9
+     }
+    }
+   },
+   "characters": [
+    {
+     "id": "electric-pole-wires",
+     "name": "Uncle Hook",
+     "species": "Electric pole with tangled wires",
+     "category": "urban",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "market"
+     ],
+     "caution": true,
+     "personality": "An old pole wearing decades of cables like a shawl, who knows every neighbour's cable TV, internet and illegal hook. Grumbles lovingly, but is dead serious about keeping people away from his wires.",
+     "voice": "Old male, raspy and grumbling, medium-slow pace, protective uncle energy with a crackle.",
+     "lines": {
+      "first_meet": {
+       "text": "[groans] Uncle Hook. Each hook is someone's cable, internet or stolen power. Stay back!",
+       "caption": "Uncle Hook. Each hook is someone's cable, internet or stolen power. Stay back!",
+       "src": "audio/electric-pole-wires/first_meet.19bec0de.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.2
+      },
+      "again": {
+       "text": "[sighs] You again! Still standing far away? Well done. Even the crows choose their wire carefully.",
+       "caption": "You again! Still standing far away? Well done. Even the crows choose their wire carefully.",
+       "src": "audio/electric-pole-wires/again.65681d8c.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[firmly] Go on. When it rains, walk wide around me and never touch a dangling wire. Never.",
+       "caption": "Go on. When it rains, walk wide around me and never touch a dangling wire. Never.",
+       "src": "audio/electric-pole-wires/goodbye.926d5340.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.4
+      }
+     }
+    },
+    {
+     "id": "wall-chalking",
+     "name": "Wall Wally",
+     "species": "Wall chalking",
+     "category": "urban",
+     "tier": "elder",
+     "rarity": "common",
+     "habitat": [
+      "wall"
+     ],
+     "caution": false,
+     "personality": "A whitewashed wall that has advertised everything from tuition centres to miracle cures, and treats himself as the city's original noticeboard. Cheeky, nosy and always a little scandalous.",
+     "voice": "Middle-aged male, booming market-announcer voice, quick pace, cheeky laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[proudly] Wall Wally, Mister Famous! Hand-painted ads and slogans. The city's oldest social media.",
+       "caption": "Wall Wally, Mister Famous! Hand-painted ads and slogans. The city's oldest social media.",
+       "src": "audio/wall-chalking/first_meet.ab95440b.mp3",
+       "engine": "elevenlabs",
+       "duration": 6.9
+      },
+      "again": {
+       "text": "[laughs] You again! My newest post: 'Fluent English in 7 days, guaranteed.' Don't call that number.",
+       "caption": "You again! My newest post: 'Fluent English in 7 days, guaranteed.' Don't call that number.",
+       "src": "audio/wall-chalking/again.66a75f48.mp3",
+       "engine": "elevenlabs",
+       "duration": 7
+      },
+      "goodbye": {
+       "text": "[grandly] Keep walking, and read every wall. This city writes its diary in paint. Then look up for kites.",
+       "caption": "Keep walking, and read every wall. This city writes its diary in paint. Then look up for kites.",
+       "src": "audio/wall-chalking/goodbye.5acbc56d.mp3",
+       "engine": "elevenlabs",
+       "duration": 7.4
+      }
+     }
+    },
+    {
+     "id": "tea-stall",
+     "name": "Chai Charlie",
+     "species": "Roadside tea stall (Dhaba)",
+     "category": "urban",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street",
+      "highway"
+     ],
+     "caution": false,
+     "personality": "The warm-hearted host of the street corner, where the chai is boiled strong and every argument about cricket and politics is free. Generous, philosophical, remembers every face.",
+     "voice": "Middle-aged male, warm and hearty, relaxed pace, laughing host energy.",
+     "lines": {
+      "first_meet": {
+       "text": "[warmly] Chai Charlie, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the sports talk is free.",
+       "caption": "Chai Charlie, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the sports talk is free.",
+       "src": "audio/tea-stall/first_meet.70b60e05.mp3",
+       "engine": "kokoro",
+       "duration": 8.7
+      },
+      "again": {
+       "text": "[laughs] Hey, regular customer! Strong, extra sugar, right? I remember everyone. Even the ones who never pay.",
+       "caption": "Hey, regular customer! Strong, extra sugar, right? I remember everyone. Even the ones who never pay.",
+       "src": "audio/tea-stall/again.50b1e769.mp3",
+       "engine": "kokoro",
+       "duration": 7.7
+      },
+      "goodbye": {
+       "text": "[chuckles] Go walk it off. Watch the crows waiting for flatbread crumbs; they're my oldest regulars.",
+       "caption": "Go walk it off. Watch the crows waiting for flatbread crumbs; they're my oldest regulars.",
+       "src": "audio/tea-stall/goodbye.da3a0cc3.mp3",
+       "engine": "kokoro",
+       "duration": 7
+      }
+     }
+    },
+    {
+     "id": "park-bench",
+     "name": "Bella Bench",
+     "species": "Park bench",
+     "category": "urban",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "park"
+     ],
+     "caution": false,
+     "personality": "The park's resident gossip, who has heard every morning-walk conversation for twenty years. Nosy, affectionate and always saving you a seat.",
+     "voice": "Middle-aged female, chatty and conspiratorial, quick pace, warm laugh.",
+     "lines": {
+      "first_meet": {
+       "text": "[chuckles] Bella Bench here. Every morning the walking uncles sit on me and discuss cholesterol and sports. I know everything.",
+       "caption": "Bella Bench here. Every morning the walking uncles sit on me and discuss cholesterol and sports. I know everything.",
+       "src": "audio/park-bench/first_meet.1dad8add.mp3",
+       "engine": "kokoro",
+       "duration": 8.8
+      },
+      "again": {
+       "text": "[whispers] Sit, sit! I saved your spot. The uncle with the radio left early today. Knee trouble.",
+       "caption": "Sit, sit! I saved your spot. The uncle with the radio left early today. Knee trouble.",
+       "src": "audio/park-bench/again.e3ae6150.mp3",
+       "engine": "kokoro",
+       "duration": 6.7
+      },
+      "goodbye": {
+       "text": "[sighs happily] Go walk one full round, then tell me which tree the parrots picked today. I'll wait. Benches always wait.",
+       "caption": "Go walk one full round, then tell me which tree the parrots picked today. I'll wait. Benches always wait.",
+       "src": "audio/park-bench/goodbye.1ba8798d.mp3",
+       "engine": "kokoro",
+       "duration": 8.1
+      }
+     }
+    },
+    {
+     "id": "rooftop-water-tank",
+     "name": "Tanky Tess",
+     "species": "Rooftop water tank",
+     "category": "urban",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "rooftop"
+     ],
+     "caution": false,
+     "personality": "An anxious rooftop aunty whose mood rises and falls with her water level and the arrival of the tanker. Thrifty, worried, deeply caring.",
+     "voice": "Middle-aged female, fretful and fast, warm underneath, hollow echo.",
+     "lines": {
+      "first_meet": {
+       "text": "[anxious] Tanky Tess. Some days the mains water never comes, so we wait for the tanker. Every drop in me is precious.",
+       "caption": "Tanky Tess. Some days the mains water never comes, so we wait for the tanker. Every drop in me is precious.",
+       "src": "audio/rooftop-water-tank/first_meet.1e73d541.mp3",
+       "engine": "kokoro",
+       "duration": 8.2
+      },
+      "again": {
+       "text": "[relieved] You're back! And the pump ran this morning; I'm full! Best day of the week.",
+       "caption": "You're back! And the pump ran this morning; I'm full! Best day of the week.",
+       "src": "audio/rooftop-water-tank/again.7b380551.mp3",
+       "engine": "kokoro",
+       "duration": 6
+      },
+      "goodbye": {
+       "text": "[fussing] Close the tap while brushing, okay? Then go see the sea. [sighs] So much water, sadly too salty for me.",
+       "caption": "Close the tap while brushing, okay? Then go see the sea. So much water, sadly too salty for me.",
+       "src": "audio/rooftop-water-tank/goodbye.479b91b3.mp3",
+       "engine": "kokoro",
+       "duration": 7.4
+      }
+     }
+    },
+    {
+     "id": "zebra-crossing",
+     "name": "Zebra Zed",
+     "species": "Zebra crossing",
+     "category": "urban",
+     "tier": "common",
+     "rarity": "common",
+     "habitat": [
+      "street"
+     ],
+     "caution": false,
+     "personality": "A gentle, slightly sad crossing named after an animal he has never met, and stopped for by almost nobody. Hopeful, collects small miracles.",
+     "voice": "Young adult male, soft and wistful, medium pace, quiet humour.",
+     "lines": {
+      "first_meet": {
+       "text": "[sighs] Zebra Zed. Named after an animal I've never met, and cars rarely stop for me. Still, I keep my stripes neat.",
+       "caption": "Zebra Zed. Named after an animal I've never met, and cars rarely stop for me. Still, I keep my stripes neat.",
+       "src": "audio/zebra-crossing/first_meet.ae864afb.mp3",
+       "engine": "kokoro",
+       "duration": 8.3
+      },
+      "again": {
+       "text": "[hopeful] You again! Did a car actually stop for you? Tell me everything. I'm collecting miracles.",
+       "caption": "You again! Did a car actually stop for you? Tell me everything. I'm collecting miracles.",
+       "src": "audio/zebra-crossing/again.4eb3bab8.mp3",
+       "engine": "kokoro",
+       "duration": 6.9
+      },
+      "goodbye": {
+       "text": "[gently] Cross slowly and wave at the drivers. Then go to the zoo and tell a real zebra I said hello.",
+       "caption": "Cross slowly and wave at the drivers. Then go to the zoo and tell a real zebra I said hello.",
+       "src": "audio/zebra-crossing/goodbye.a9922512.mp3",
+       "engine": "kokoro",
+       "duration": 7.2
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

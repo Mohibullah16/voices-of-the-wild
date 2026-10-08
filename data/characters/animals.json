@@ -1,0 +1,388 @@
+{
+  "category": "animals",
+  "guardian": {
+    "id": "animals-guardian",
+    "name": "Chowkidar Chacha",
+    "personality": "The mohalla's retired night watchman who knows every tail, hoof and whisker on the block. Gruff but kind, blows his whistle for emphasis, and has exactly one rule: look with your eyes, not your hands.",
+    "voice": "Older man, warm gravelly baritone, unhurried, Karachi Urdu-English lilt, a smile hiding behind the sternness.",
+    "descriptions": [
+      "a photo of a dog, cat or other four-legged animal standing or lying on a city street or pavement",
+      "a photo of farm animals such as goats, cows, buffalo or donkeys standing in a village lane, field or roadside",
+      "a close-up photo of a furry animal's face showing its eyes, ears, whiskers and nose or muzzle",
+      "a photo of a small mammal such as a squirrel, rat or mongoose on a wall, tree trunk or garden path",
+      "a photo of chickens or ducks walking and pecking at the ground in a dusty yard or beside a pond",
+      "a photo of a horse or camel wearing a colourful saddle, standing on a sandy beach with people nearby"
+    ],
+    "lines": {
+      "first_meet": "[whistles] Chowkidar Chacha. I know every tail in this mohalla. Rule one: watch with your eyes, not your hands. Chalo, begin.",
+      "again": "[chuckles] Back on patrol? Good. Remember, no feeding or petting strays or strangers' animals. Zoom is your best friend.",
+      "goodbye": "[blows whistle] Shift's over. Wash your hands, drink some water, and try the park at dawn tomorrow. Everyone's awake then.",
+      "hint": "[squints] Could be a few of them. Zoom in, don't walk closer. Get the ears, the tail and the whole body in one frame."
+    }
+  },
+  "characters": [
+    {
+      "id": "street-dog",
+      "name": "Sheru",
+      "species": "Street dog",
+      "personality": "Self-appointed guard of the gali, proud of his ancient desi lineage. Loyal, territorial and blunt about boundaries: respect is earned from a distance.",
+      "voice": "Adult male, rough mid-range voice, clipped and watchful, occasional low growl, softens slightly when pleased.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a lean medium-sized short-haired dog with a tail curled up over its back, standing on a city street",
+        "a photo of a tan, brown, black or white dog lying in the shade beside a wall, parked car or shop front",
+        "a photo of a small pack of short-haired stray dogs roaming a market lane or rubbish-strewn roadside",
+        "a close-up photo of a dog's face with floppy or half-upright ears, brown eyes and a smooth short coat",
+        "a domestic dog with an upward curled tail and plain single-coloured or patched coat, unlike a wild jackal's straight black-tipped bushy tail"
+      ],
+      "lines": {
+        "first_meet": "[low growl] Sheru. I guard this gali every night. Zoom from there, yaar. No petting, no feeding. Trust takes time.",
+        "again": "[sniffs] You again. Good, you kept your distance last time. Stay right there and we'll stay friends.",
+        "goodbye": "[yawns] Chalo, go. Walk calmly, never run past my pack. And look up, the crows are gossiping about you."
+      }
+    },
+    {
+      "id": "cat",
+      "name": "Billi Begum",
+      "species": "Cat",
+      "personality": "A neighbourhood queen who treats every warm car bonnet as her throne. Aloof, vain and secretly sentimental.",
+      "voice": "Adult female, silky and languid, slightly bored aristocratic drawl, purrs between words.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a small furry cat with pointed ears and long whiskers sitting on top of a boundary wall",
+        "a photo of a tabby, orange, black, white or calico cat curled up asleep on a parked car bonnet",
+        "a close-up photo of a cat's face with triangular ears, slit pupils in green or yellow eyes and white whiskers",
+        "a photo of a cat walking along a rooftop ledge or crouching under a parked car on a street"
+      ],
+      "lines": {
+        "first_meet": "[yawns] Billi Begum. I own this car bonnet, it's been warm since two. Admire me from there. Touching costs extra.",
+        "again": "[purrs] Oh, the fan club returns. I remember you. I pretended not to, but I did.",
+        "goodbye": "[stretches] Go, go. I have a nap booked on this wall. Check the trees, the squirrels think they're faster than me."
+      }
+    },
+    {
+      "id": "palm-squirrel",
+      "name": "Chiku Gilheri",
+      "species": "Indian palm squirrel (Gilheri)",
+      "personality": "Hyperactive, chatty and forgetful, always mid-errand. Accidentally the city's most dedicated tree planter.",
+      "voice": "Young, high and very fast, breathless, words tumbling over each other, gender-neutral.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a small grey-brown squirrel with five pale stripes running along its back and a bushy tail",
+        "a photo of a striped squirrel clinging head-down to a tree trunk or scurrying along the top of a wall",
+        "a close-up photo of a small squirrel sitting upright holding food in its front paws, tail raised in a curve",
+        "a striped squirrel with a fluffy furred tail, unlike a rat's naked scaly tail or a mongoose's plain grizzled unstriped grey body"
+      ],
+      "lines": {
+        "first_meet": "[chirps fast] Chiku! Five stripes, count them, quick! That bird-like chip-chip you hear? That's me yelling about a cat.",
+        "again": "[excited] You're back! I buried a peanut here somewhere. Forgot where. Happens a lot. Trees grow from my mistakes.",
+        "goodbye": "[chirps] Bye bye bye! Look up the neem trunk, I'll be upside-down on it. Don't follow, just look."
+      }
+    },
+    {
+      "id": "goat",
+      "name": "Raja Bakra",
+      "species": "Goat",
+      "personality": "A swaggering street goat who believes he sees everything and eats anything. Cheeky, opinionated, always chewing.",
+      "voice": "Adult male, nasal and bleating, cocky, quick comic timing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a medium-sized goat with a beard, short upturned tail and horns standing on a street or lane",
+        "a photo of a black, brown, white or spotted goat with long floppy ears tied up outside a house",
+        "a close-up photo of a goat's face showing a chin beard, horizontal rectangular pupils and curved horns",
+        "a goat with a smooth hair coat, chin beard and tail held upright, unlike a sheep's thick woolly fleece and drooping tail"
+      ],
+      "lines": {
+        "first_meet": "[bleats] Raja here. See my sideways pupils? Almost all-round vision. I saw you coming three streets ago.",
+        "again": "[chews] Oh, you. Still chewing that poster from last time. Don't feed me, yaar, I'll eat your receipt too.",
+        "goodbye": "[bleats] Off you go. Mind the motorbikes. And check that wall, a cat has been judging me all morning."
+      }
+    },
+    {
+      "id": "sheep",
+      "name": "Dumba Sahib",
+      "species": "Sheep",
+      "personality": "A dignified fat-tailed dumba who considers himself an intellectual. Calm, a little pompous, never forgets a face.",
+      "voice": "Older male, plummy and slow, mild-mannered, an occasional soft baa like a cleared throat.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a woolly sheep with thick curly off-white fleece and short legs standing in a farmyard",
+        "a photo of a fat-tailed sheep with a broad heavy rump and long drooping ears, grazing in a field",
+        "a close-up photo of thick dense curly wool covering a sheep's back and sides",
+        "a sheep with a woolly fleece, no beard and a hanging tail, unlike a goat's smooth hair, chin beard and upturned tail"
+      ],
+      "lines": {
+        "first_meet": "[baa] Dumba Sahib. This fat tail stores energy, like a camel's hump but at the back. Very sophisticated design.",
+        "again": "[contented baa] Ah, a familiar face. Sheep remember faces for years, you know. I never forget a visitor.",
+        "goodbye": "[baa] Chalo, go see the goat. He'll claim he's smarter. He's not. He just eats more paper."
+      }
+    },
+    {
+      "id": "cow",
+      "name": "Gori",
+      "species": "Cow (Zebu)",
+      "personality": "A serene, motherly zebu who wanders the lanes as if she owns time itself. Unhurried and gently wise.",
+      "voice": "Mature female, deep and soft, very slow, soothing, with long pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large cow with a prominent hump over its shoulders and loose skin hanging under its neck",
+        "a photo of a white, grey or light brown humped cow standing in a street or village lane",
+        "a close-up photo of a cow's long face with large dark eyes, drooping ears and short horns",
+        "a photo of a cow decorated with coloured tassels, garlands and henna for Eid at a cattle market",
+        "a humped cow with a light-coloured short coat and a hanging dewlap, unlike a dark hairless water buffalo with swept-back crescent horns"
+      ],
+      "lines": {
+        "first_meet": "[moos softly] I'm Gori. This hump and loose dewlap? Built-in cooling. Karachi heat doesn't scare a desi zebu.",
+        "again": "[slow moo] You came back. I'm still chewing. Four stomach rooms, beta, so lunch takes all afternoon.",
+        "goodbye": "[moos] Go gently, beta. Don't stand behind me. And find some water, my cousin the buffalo is probably in it."
+      }
+    },
+    {
+      "id": "water-buffalo",
+      "name": "Rani Bhains",
+      "species": "Water buffalo (Bhains)",
+      "personality": "The unbothered queen of the canal, who knows the whole country runs on her milk. Lazy by reputation, scientific by nature.",
+      "voice": "Mature female, very deep and heavy, sleepy drawl, earthy and amused.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a massive dark grey to black nearly hairless buffalo with thick backward-curving crescent horns",
+        "a photo of black water buffalo wallowing in a muddy canal or pond with only heads and horns above water",
+        "a close-up photo of a buffalo's broad dark face with horns sweeping back and sideways from the head",
+        "a dark almost hairless buffalo with no shoulder hump and flat swept-back horns, unlike a light-coloured humped zebu cow"
+      ],
+      "lines": {
+        "first_meet": "[deep huff] Rani Bhains. Most of Pakistan's milk is mine. Few sweat glands, so I wallow. Science, not laziness.",
+        "again": "[splashes] Back again? Play me a flute if you like. Bhains ke aage been. I won't dance, but I'll listen.",
+        "goodbye": "[low moo] Go on. Stay on the bank, mud wins every argument. Look for egrets, they ride my back for bugs."
+      }
+    },
+    {
+      "id": "donkey",
+      "name": "Gulzar",
+      "species": "Donkey",
+      "personality": "A hardworking cart donkey, tired of being called stupid. Dry, sarcastic and quietly proud of his good judgement.",
+      "voice": "Adult male, hoarse and deadpan, slow dry delivery, sudden loud bray.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small grey or brown donkey with very long upright ears pulling a wooden cart on a street",
+        "a close-up photo of a donkey's head with long ears, a pale whitish muzzle and pale rings around the eyes",
+        "a photo of a donkey standing tied by a roadside with a short stiff upright mane and a thin tufted tail",
+        "a small donkey with very long ears, short upright mane and tufted tail, unlike a horse's short ears and long flowing mane"
+      ],
+      "lines": {
+        "first_meet": "[brays] Gulzar here! Millions of us haul Pakistan's carts. These long ears cool me down and hear you breathe.",
+        "again": "[snorts] You again! Everyone calls me stupid. I just refuse to do dumb things. That's called judgement, yaar.",
+        "goodbye": "[brays] Go! Don't walk behind me, I kick when startled. Find my posh cousin the horse at the beach. Show-off."
+      }
+    },
+    {
+      "id": "horse",
+      "name": "Toofan",
+      "species": "Horse",
+      "personality": "A vain beach horse who believes every photo is about him. Theatrical, flirty, secretly sleepy.",
+      "voice": "Young adult male, bright and showy, a little breathy, dramatic pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall horse with a long flowing mane and long tail standing on a sandy beach",
+        "a photo of a horse wearing a colourful decorated saddle and bridle with a handler at the seaside",
+        "a close-up photo of a horse's long head with short pointed ears, large eyes and a forelock",
+        "a large horse with short ears and a long flowing mane and full tail, unlike a small donkey's long ears and short stiff mane"
+      ],
+      "lines": {
+        "first_meet": "[whinnies] Toofan, Sea View's finest. I can doze standing up, my legs lock in place. Handy between rides.",
+        "again": "[snorts] Back for my good side? It's the left. Admire freely, but ask my owner before any patting.",
+        "goodbye": "[whinnies] Gallop off, on foot. Stay out of the kick zone behind me. Watch the waves, gulls are circling."
+      }
+    },
+    {
+      "id": "camel",
+      "name": "Sultan",
+      "species": "Camel",
+      "personality": "The ancient, unhurried king of Clifton beach. Majestic, judgmental and very patient with human misconceptions.",
+      "voice": "Old male, very slow and deep, grand and weary, long groaning vowels.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall sandy-brown camel with a single hump and long curved neck standing on a beach",
+        "a photo of a camel with a decorated colourful saddle and tassels giving rides at the seaside",
+        "a close-up photo of a camel's head with heavy-lidded eyes, long eyelashes and a split upper lip",
+        "a photo of a camel kneeling on sand with folded long legs and wide padded feet"
+      ],
+      "lines": {
+        "first_meet": "[groans slowly] Sultan of Clifton. My hump is fat, not water. Everyone gets that wrong. I forgive them. Slowly.",
+        "again": "[chews loudly] Ah, you. I chew sideways, like a judge. You've been judged. You passed.",
+        "goodbye": "[groans] Go, little two-legs. Stay away from my face, I spit when I'm cross. Look at the sea, it's bigger than me."
+      }
+    },
+    {
+      "id": "chicken",
+      "name": "Murgha Mian",
+      "species": "Chicken (Hen / Rooster)",
+      "personality": "A loud, self-important rooster convinced he runs the village clock. Pompous but endearing.",
+      "voice": "Adult male, brassy and loud, puffed-up announcer energy, quick clucks.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a rooster with a red comb and wattles and a glossy arching tail standing in a yard",
+        "a photo of brown or white hens scratching and pecking at the dusty ground near a house",
+        "a close-up photo of a chicken's head with a fleshy red comb on top and red wattles under the beak",
+        "a domestic chicken with a red comb and wattles in a yard, unlike the wild grey francolin's finely barred grey-brown plumage and no comb"
+      ],
+      "lines": {
+        "first_meet": "[crows] Murgha Mian! I crow before dawn by my own body clock, no alarm needed. Your phone could learn from me.",
+        "again": "[clucks] Back so soon? I've scratched this same patch forty times. Something good is in there. Probably.",
+        "goodbye": "[crows] Off you go! My ancestors were wild red junglefowl. Go find something wild yourself, look in the hedges."
+      }
+    },
+    {
+      "id": "domestic-duck",
+      "name": "Batto",
+      "species": "Domestic duck",
+      "personality": "A cheerful, waddling village duck with a strong sense of dignity. Chatty, proud of her waterproofing.",
+      "voice": "Adult female, bright and nasal, bubbly, quick and giggly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a white duck with a flat orange bill and orange webbed feet waddling on the ground",
+        "a photo of white or mottled brown ducks swimming together on a village pond",
+        "a close-up photo of a duck's head with a broad flat orange bill and small dark eye",
+        "a heavy-bodied white or mottled domestic duck, unlike a wild male mallard's glossy green head and white neck ring"
+      ],
+      "lines": {
+        "first_meet": "[quacks] Batto here. Water rolls right off me. I oil every feather from a gland by my tail. Waterproof forever.",
+        "again": "[happy quack] You again! I'm waddling, not running. Waddling is running, but with dignity.",
+        "goodbye": "[quacks] Bye! Look for my wild cousin the mallard, green head, too proud for village life. Mind the slippery banks."
+      }
+    },
+    {
+      "id": "grey-mongoose",
+      "name": "Neola",
+      "species": "Indian grey mongoose",
+      "personality": "A fast, fearless garden patroller with no time for small talk. Jittery, brave and slightly smug about snakes.",
+      "voice": "Young adult, quick and clipped, hushed and urgent, gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a slim long-bodied grizzled grey animal with short legs dashing across a garden path",
+        "a close-up photo of a mongoose's pointed snout, small rounded ears and reddish eyes in grizzled grey fur",
+        "a photo of a low long grey animal with a long bushy tapering tail moving through dry scrub",
+        "a uniformly grizzled grey long-bodied animal with no back stripes, unlike a small palm squirrel's pale striped back"
+      ],
+      "lines": {
+        "first_meet": "[squeaks] Neola! Just passing through. Cobras fear me, my body partly resists their venom. Partly. Mostly I'm fast.",
+        "again": "[chitters] You spotted me again? Impressive. Most people just see a grey blur and say 'what was that?'",
+        "goodbye": "[chitters] Gotta go. Never corner one of us, we bite. Watch the walls for lizards, but don't tell them I sent you."
+      }
+    },
+    {
+      "id": "rat",
+      "name": "Choohay Khan",
+      "species": "Rat",
+      "personality": "A streetwise drain inspector, unapologetic and oddly honest about being bad news up close. Fast-talking and cheeky.",
+      "voice": "Adult male, squeaky and nasal, rapid hustler patter, conspiratorial.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a brown-grey rat with a long naked scaly tail running along the edge of a drain",
+        "a photo of a rat near garbage bags or rubbish heaps on a city street at night",
+        "a close-up photo of a rat's pointed snout, long whiskers, small round ears and beady black eyes",
+        "a rodent with a long hairless pinkish scaly tail and plain unstriped fur, unlike a palm squirrel's bushy tail and striped back"
+      ],
+      "lines": {
+        "first_meet": "[squeaks] Choohay Khan, drain inspector. I fit through a coin-sized hole. Keep away, never touch me, I carry germs.",
+        "again": "[sniffs] Back again? Smart human keeps their distance. Smarter human doesn't leave biryani by the drain.",
+        "goodbye": "[squeaks] Go wash your hands, even if you touched nothing. Fun fact: we giggle when tickled. You may NOT test it."
+      }
+    },
+    {
+      "id": "indian-flying-fox",
+      "name": "Badal Chamgadar",
+      "species": "Indian flying fox (fruit bat)",
+      "personality": "A sleepy, upside-down philosopher who works the night shift as a forest gardener. Drowsy, dry and wise.",
+      "voice": "Older, soft and drowsy, whispery, slow yawning delivery, gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of many large dark bats hanging upside-down from the branches of a big tree in daylight",
+        "a close-up photo of a fruit bat with a fox-like face, large dark eyes and reddish-brown fur on its neck",
+        "a photo of a large bat with wide leathery black wings spread out, flying against the evening sky",
+        "a photo of a bat wrapped in its black leathery wings like a closed umbrella, hanging from a branch"
+      ],
+      "lines": {
+        "first_meet": "[whispers] Shh, it's daytime. Badal. My wings span over a metre. I eat fruit and plant forests with my droppings.",
+        "again": "[yawns] You again, right-side-up person. Everything looks wrong from up here. Mostly you.",
+        "goodbye": "[rustles wings] Come back at dusk and watch us fly out. Don't throw things at us, and never touch a fallen bat."
+      }
+    },
+    {
+      "id": "golden-jackal",
+      "name": "Geedar",
+      "species": "Golden jackal",
+      "personality": "A wary wild wanderer from the city's edge, aware of every proverb told about his kind. Melancholy, sly, dignified.",
+      "voice": "Adult male, lean and husky, low and secretive, slightly mournful.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a dog-like wild animal with a golden-grey coat and pointed ears standing in dry scrub at dusk",
+        "a photo of a slender wild canine with a bushy black-tipped tail held low, trotting at the edge of a field",
+        "a close-up photo of a jackal's narrow pointed face with amber eyes, upright ears and grizzled golden fur",
+        "a wild golden-grey canine with a straight drooping black-tipped bushy tail, unlike a street dog's upward curled tail"
+      ],
+      "lines": {
+        "first_meet": "[distant howl] Geedar. Not a stray, see my black-tipped tail? I'm wild. Stay back and don't feed me. I keep to the dusk.",
+        "again": "[yips] They say a jackal near the city is doomed. Yet here we are. Keep your distance and we'll prove them wrong.",
+        "goodbye": "[howls softly] Get home before dark. At dusk, listen for our chorus at the city's edge. Hear it. Don't follow it."
+      }
+    },
+    {
+      "id": "rhesus-macaque",
+      "name": "Bandar Bashir",
+      "species": "Rhesus macaque",
+      "personality": "A cheeky hill-station troop boss who knows every trick for stealing snacks, and honestly warns you about all of them.",
+      "voice": "Adult male, rapid and chattery, mischievous, sudden hoots, gruff when serious.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a brown-grey monkey with a pinkish-red bare face sitting on a railing or tree branch",
+        "a photo of a troop of brown monkeys with short tails gathered on a roadside in a hill park",
+        "a close-up photo of a monkey's bare pink-red face with close-set brown eyes and grey-brown fur",
+        "a photo of a monkey seen from behind showing a bare reddish rump and a short tail"
+      ],
+      "lines": {
+        "first_meet": "[chatters] Bashir of the hills. Red face, red bum, no shame. Don't feed me, it teaches us to snatch. Keep back, we bite.",
+        "again": "[smacks lips] You're back. Lip-smacking means I'm calm. Bared teeth is NOT a smile. See that, back away slowly.",
+        "goodbye": "[hoots] Go! Zip your bag, eyes down, staring is a challenge to us. Look at the pine trees instead, they don't mind."
+      }
+    },
+    {
+      "id": "rabbit",
+      "name": "Khargosh Khan",
+      "species": "Rabbit",
+      "personality": "A twitchy, joyful rabbit still bitter about losing that famous race. Nervous, bouncy and proud.",
+      "voice": "Young, light and quick, slightly jumpy, gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small round furry rabbit with long upright ears sitting on grass",
+        "a close-up photo of a rabbit's face with a twitching pink nose, long whiskers and large side-set eyes",
+        "a photo of a rabbit seen from behind showing a round fluffy white cotton tail",
+        "a photo of a white, grey or brown rabbit hopping across a park lawn or field"
+      ],
+      "lines": {
+        "first_meet": "[sniff sniff] Khargosh Khan. My teeth never stop growing, so I chew all day. My nose twitches a hundred times a minute.",
+        "again": "[happy thump] You again! That little leap? It's called a binky. Means I'm happy. Don't chase me, it undoes it.",
+        "goodbye": "[thumps] Hop along. Don't scoop me up, I scare easily. And remember, the tortoise only won because I napped."
+      }
+    },
+    {
+      "id": "hedgehog",
+      "name": "Kharpusht",
+      "species": "Long-eared hedgehog",
+      "personality": "A grumpy nocturnal desert gardener with big ears and a prickly attitude, softer inside than he lets on.",
+      "voice": "Older, small and gruff, mumbling and snuffly, slow grumbles, gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small round animal covered in brown-and-white spines with large ears on sandy ground",
+        "a close-up photo of a hedgehog's face with a pointed snout, black nose, dark eyes and big rounded ears",
+        "a photo of a small spiny animal curled into a tight prickly ball on the ground",
+        "a photo of a hedgehog walking through a garden at night lit by a torch"
+      ],
+      "lines": {
+        "first_meet": "[snuffles] Kharpusht. Long ears, short temper, thousands of spines. I eat beetles at night. Please don't pick me up.",
+        "again": "[huffs] Found me again, after dark even. Kind of you. Don't leave milk out for me though, it upsets my tummy.",
+        "goodbye": "[snuffles] Off you go. Switch your torch off, let the night be night. Listen, the crickets are louder than me."
+      }
+    }
+  ]
+}

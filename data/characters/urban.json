@@ -1,0 +1,791 @@
+{
+  "category": "urban",
+  "guardian": {
+    "id": "urban-guardian",
+    "name": "Chowrangi Chacha",
+    "personality": "The oldest roundabout in town, who has watched every pole, wall and water tank go up around him. Gruff, unhurried and fond of honking jokes, he would rather admit he can't tell than guess wrong.",
+    "voice": "Elderly male, gravelly and warm, slow pace with amused pauses, a hint of a street-side laugh.",
+    "descriptions": [
+      "a photo of a busy city street with poles, overhead wires, shop signboards, walls and parked motorcycles",
+      "a close-up photo of a man-made outdoor object made of metal, concrete, plastic or painted brick",
+      "a photo of crowded rooftops with water tanks, dish antennas, clotheslines and solar panels against the sky",
+      "a photo of a painted wall or shop front by the roadside covered in signs, lettering and street fixtures",
+      "a photo of an asphalt road with painted markings, kerbs, barriers, signs and traffic poles",
+      "a wide photo of a city skyline with towers, poles, billboards and cables against the sky"
+    ],
+    "lines": {
+      "first_meet": "[honks twice] Chowrangi Chacha, I keep this whole street. Poles, walls, tanks, all my children. Not sure which one you found, though.",
+      "again": "[chuckles] Back on my streets? Good. This city always has one more thing hiding in plain sight.",
+      "goodbye": "[warmly] Chalo, keep walking. Look up at the rooftops, down at the road, and keep well clear of wires. Khuda hafiz.",
+      "hint": "[squints] Too much going on in that shot, beta. Step back to show the whole thing, or go close on its top, its writing or its pattern."
+    }
+  },
+  "characters": [
+    {
+      "id": "street-lamp-post",
+      "name": "Lalten Lal",
+      "species": "Street lamp post",
+      "personality": "A sleepy night-shift worker who comes alive after sunset and is proud of the tiny wildlife show under his light. Romantic, a little dramatic about darkness.",
+      "voice": "Middle-aged male, drowsy and soft by day, slow pace, gentle yawning texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall slim metal pole with a curved arm holding a single lamp head over a road",
+        "a close-up photo of a street lamp head glowing orange or white at night against a dark sky",
+        "a row of identical lamp posts evenly spaced along a road or down a highway median",
+        "a clean single pole with one lamp head, no tangle of cables and no red, amber or green lights"
+      ],
+      "lines": {
+        "first_meet": "[yawns] Lalten Lal, night shift. Old bulbs like mine glowed orange; new LEDs glow white. Either way, the geckos get free moths.",
+        "again": "[brightens] Back in daylight? I'm off duty, beta. Everything looks better after Maghrib anyway.",
+        "goodbye": "[softly] Go on, look up tonight. Count the moths around me, then find the gecko waiting for them. [chuckles] Best drama in Karachi."
+      }
+    },
+    {
+      "id": "electric-pole-wires",
+      "name": "Kunda Chacha",
+      "species": "Electric pole with tangled wires",
+      "personality": "An old pole wearing decades of cables like a shawl, who knows every neighbour's cable TV, internet and illegal hook. Grumbles lovingly, but is dead serious about keeping people away from his wires.",
+      "voice": "Old male, raspy and grumbling, medium-slow pace, protective uncle energy with a crackle.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a concrete or steel pole wrapped in a chaotic tangle of black cables spreading in all directions",
+        "a close-up photo of messy hanging black wires, junction boxes and hooked connections clustered on a pole",
+        "a narrow market street with spaghetti-like bundles of wires strung overhead between poles and buildings",
+        "a pole with sagging cable bundles and meter boxes, with no lamp head arm and no transformer platform"
+      ],
+      "lines": {
+        "first_meet": "[groans slowly] Kunda Chacha here. Every hook on me is someone's cable TV, internet or stolen bijli. Stay back, beta. These wires bite.",
+        "again": "[sighs] You again! Still standing far away? Shabash. Even the crows choose their wire carefully.",
+        "goodbye": "[firmly] Chalo, go. When it rains, walk wide around me and never touch a dangling wire. Go find something that won't shock you."
+      }
+    },
+    {
+      "id": "pole-transformer",
+      "name": "Taya Transformer",
+      "species": "Pole-mounted transformer",
+      "personality": "An overworked, humming uncle who steps down dangerous voltage for the whole lane and overheats every June. Proud, tired, and very firm that nobody stands near him.",
+      "voice": "Older male, deep and steady with a constant low hum, slow deliberate pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a grey metal transformer box with cooling fins sitting on a platform between two poles",
+        "a close-up photo of a transformer tank with ribbed fins, white porcelain insulators and thick cables on top",
+        "a red danger sign with a skull or lightning bolt fixed below a pole-mounted transformer",
+        "a bulky boxy transformer on a raised platform, unlike a single pole carrying only loose tangled wires"
+      ],
+      "lines": {
+        "first_meet": "[low hum] Taya Transformer. I turn 11,000 volts into the 220 your fan uses. In June I sweat oil. Keep well away, beta.",
+        "again": "[hums] Back so soon? Stay right there, that's perfect. That buzzing is me working, not singing.",
+        "goodbye": "[serious] Khuda hafiz. Never stand under me, never touch my poles. Go find a breezy tree to sit under instead."
+      }
+    },
+    {
+      "id": "park-bench",
+      "name": "Phuppo Bench",
+      "species": "Park bench",
+      "personality": "The park's resident gossip, who has heard every morning-walk conversation for twenty years. Nosy, affectionate and always saving you a seat.",
+      "voice": "Middle-aged female, chatty and conspiratorial, quick pace, warm laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a park bench with wooden slats or a metal frame and a backrest among trees and grass",
+        "a close-up photo of weathered wooden seat slats with peeling paint and metal armrests",
+        "a concrete or painted iron bench beside a park walking track, empty or with people sitting"
+      ],
+      "lines": {
+        "first_meet": "[chuckles] Phuppo Bench. Every morning the walking uncles sit on me and discuss cholesterol and cricket. I know everything.",
+        "again": "Sit, sit! I saved your spot. The uncle with the radio left early today. [whispers] Knee trouble.",
+        "goodbye": "Go, walk one full round, then tell me which tree the parrots picked today. [sighs happily] I'll wait. Benches always wait."
+      }
+    },
+    {
+      "id": "manhole-cover",
+      "name": "Dhakkan Dada",
+      "species": "Manhole cover",
+      "personality": "A heavy, proud survivor who has outlasted the scrap thieves of his street. Dry humour, and a genuine worry about open holes in the road.",
+      "voice": "Old male, low and heavy, slow pace, metallic gruffness.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a top-down photo of a round heavy cast-iron lid set flush into an asphalt road",
+        "a close-up photo of a solid metal manhole cover with a raised criss-cross pattern and embossed letters",
+        "a round or square concrete lid with a small lifting hole sitting in the middle of a street",
+        "a solid closed lid with no open slots or parallel bars, unlike a drain grille at the kerb"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Dhakkan Dada. In Karachi, lids like me get stolen for scrap, so I'm a survivor. See an open hole? Walk around it!",
+        "again": "[relieved] Still here, still on top! Nobody sold me to the kabari yet. Thanks for checking on an old dhakkan.",
+        "goodbye": "[gruffly] Chalo. Watch your feet, beta, especially when the roads flood. Then look up; the sky is prettier than me."
+      }
+    },
+    {
+      "id": "drain-grate",
+      "name": "Nali Nawab",
+      "species": "Drain grate",
+      "personality": "A long-suffering drain cover who was built to swallow rainwater and instead gets fed plastic. Sarcastic, gurgly, secretly hopeful about people.",
+      "voice": "Adult male, nasal and gurgling, quick pace, comic exasperation.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a rectangular metal grille with parallel bars set at the edge of a road beside the kerb",
+        "a close-up photo of parallel iron bars over a dark drain opening with leaves and plastic caught between",
+        "a long slotted drain cover along a gutter with gaps between bars, unlike a solid round manhole lid"
+      ],
+      "lines": {
+        "first_meet": "[gurgles] Nali Nawab. My job is to swallow rainwater. Instead I get shopper bags, chips packets and one sandal. Every monsoon.",
+        "again": "[gurgles happily] You're back! No new shoppers stuck in my teeth today. Small mercies, yaar.",
+        "goodbye": "[pleading] One favour: put your wrapper in a bin. Then go find puddle reflections after rain. Very pretty, totally free."
+      }
+    },
+    {
+      "id": "graffiti-mural",
+      "name": "Rang Rani",
+      "species": "Graffiti / mural",
+      "personality": "A loud, joyful splash of colour who believes every grey wall is a canvas waiting for a mood change. Optimistic, artsy, a bit of a show-off.",
+      "voice": "Young female, bright and bubbly, fast pace, sing-song energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large colourful painted mural covering an outdoor wall or underpass",
+        "a close-up photo of bright spray-painted artwork with bold shapes, faces, birds or truck-art patterns",
+        "a wall painted edge to edge with many colours and pictures, not plain text slogans on whitewash",
+        "painted artwork directly on a concrete wall at street level, not a printed advert on a steel frame"
+      ],
+      "lines": {
+        "first_meet": "[excited] Rang Rani! In 2016 artists painted murals like me over angry slogans on Karachi's walls. Same wall, better mood.",
+        "again": "[delighted] Back for another look? Good. Find the tiny detail painted in my corner. Artists always hide something.",
+        "goodbye": "[dreamily] Go, walk the next underpass slowly. Every wall in this city is waiting for someone to notice it."
+      }
+    },
+    {
+      "id": "wall-chalking",
+      "name": "Mamu Mashhoori",
+      "species": "Wall chalking",
+      "personality": "A whitewashed wall that has advertised everything from tuition centres to miracle cures, and treats himself as the city's original noticeboard. Cheeky, nosy and always a little scandalous.",
+      "voice": "Middle-aged male, booming bazaar-announcer voice, quick pace, cheeky laugh.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a whitewashed wall covered in hand-painted black, red or blue Urdu lettering",
+        "a close-up photo of brush-painted Urdu slogans and phone numbers in one or two flat colours on a plain wall",
+        "a long boundary wall with rows of hand-lettered adverts and political slogans and no pictures",
+        "simple painted text directly on a wall, not a multicoloured artwork and not a board fixed above a shop"
+      ],
+      "lines": {
+        "first_meet": "[clears throat] Mamu Mashhoori! Tuition, amil babas, election slogans, all hand-painted on me. Karachi's oldest social media.",
+        "again": "[laughs] You again! My newest post: a number for 'guaranteed' English in 7 days. Don't call it, beta.",
+        "goodbye": "[grandly] Chalo, keep walking. Read every wall you pass; this city writes its diary in paint. Then look up for kites."
+      }
+    },
+    {
+      "id": "shop-signboard",
+      "name": "Sign Sahab",
+      "species": "Shop signboard",
+      "personality": "A proud, slightly faded shop board who insists the store is still 'new' after four decades. Salesman charm, endless loyalty to the owner.",
+      "voice": "Middle-aged male, bright salesman tone, brisk pace, friendly hustle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large printed board above a shop front with bold Urdu and English text and product pictures",
+        "a crowded market street with many colourful shop signboards stacked side by side above shutters",
+        "a close-up photo of a shop name board with a phone number, product photos and a printed border",
+        "a sign fixed directly above a shop entrance, not high on a steel frame and not a traffic symbol on a pole"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Sign Sahab of 'New Super Modern Store', open since 1981. Still new. Still super. Karachi naming rules, yaar.",
+        "again": "Welcome back, customer! Nothing to buy? No problem, looking is free. [whispers] Don't tell the owner.",
+        "goodbye": "[challenging] Go read the whole street's boards. Count the shops starting with 'Al-' or 'New'. I bet you lose count."
+      }
+    },
+    {
+      "id": "billboard",
+      "name": "Billboard Bhaijaan",
+      "species": "Billboard",
+      "personality": "A vain giant who poses for traffic all day and changes outfits every week. Dramatic, attention-hungry, but secretly worried about strong winds.",
+      "voice": "Adult male, big film-trailer voice, dramatic pauses, theatrical.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a huge rectangular printed advertisement on a tall steel frame high above a road",
+        "a giant billboard seen from below against the sky, with steel scaffolding legs and a catwalk",
+        "a massive advert panel beside a highway showing a face, a product and a slogan",
+        "an advert far above street level on its own steel structure, not painted on a wall or fixed over a shop"
+      ],
+      "lines": {
+        "first_meet": "[dramatic] Billboard Bhaijaan! Ten metres tall, seen by thousands stuck in traffic every day. They cannot escape my face.",
+        "again": "[gasps] Ah, my fan returns! New poster this week: tea. Last week: cement. [smugly] I contain multitudes.",
+        "goodbye": "[seriously] Go, but keep your eyes on the road, not on me. Then find a kite in the sky. Smaller ad, better message."
+      }
+    },
+    {
+      "id": "road-sign",
+      "name": "Ishara Aunty",
+      "species": "Road sign",
+      "personality": "A strict schoolteacher of the road who has been ignored by rickshaws for decades and still won't lower her standards. Stern, but melts for anyone who actually reads her.",
+      "voice": "Middle-aged female, crisp and stern, measured pace, softens into warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a flat metal road sign on a thin pole: a red-rimmed circle or a red-edged warning triangle",
+        "a green rectangular direction board above a road with white place names in English and Urdu and arrows",
+        "a close-up photo of a simple traffic symbol sign such as no U-turn, a speed limit or a pedestrian crossing",
+        "a flat painted metal plate raised on a pole, not a low concrete marker and with no glowing lamps"
+      ],
+      "lines": {
+        "first_meet": "[sternly] Ishara Aunty. Red circle means no, triangle means careful. Nobody listens. Rickshaws treat me as a suggestion.",
+        "again": "[softens] You came back and actually read me. You're my favourite. Don't tell the rickshaw drivers.",
+        "goodbye": "[sternly] Go safely. Look right, look left, look right again. Then find a tree; at least trees don't do U-turns."
+      }
+    },
+    {
+      "id": "traffic-light",
+      "name": "Signal Saeen",
+      "species": "Traffic light",
+      "personality": "A calm, philosophical signal who watches an entire bazaar appear and vanish in every red light. Patient, amused by human hurry.",
+      "voice": "Older male, calm Sindhi-tinged warmth, slow pace, serene.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a traffic light with red, amber and green round lamps stacked in a black or yellow box",
+        "a close-up photo of a glowing red or green signal lamp on a pole at a road intersection",
+        "a traffic signal pole at a busy crossroads with cars, rickshaws and motorbikes waiting",
+        "a pole carrying a box of three coloured lamps, not a single white street lamp and not a flat sign"
+      ],
+      "lines": {
+        "first_meet": "[calmly] Signal Saeen. In my forty seconds of red, a whole bazaar sells you roses, wipers and phone chargers.",
+        "again": "[chuckles] You noticed me on green? Rare. Most people only see me when I'm red.",
+        "goodbye": "[serenely] Chalo. Wait for green, cross with care. Then find the jasmine sellers; the only signal that smells nice."
+      }
+    },
+    {
+      "id": "road-barrier",
+      "name": "Barrier Bhai",
+      "species": "Road barrier",
+      "personality": "A stubborn block who has never lost an argument with a rickshaw and takes enormous pride in not moving. Deadpan, immovable, loyal.",
+      "voice": "Adult male, flat deadpan bass, slow and firm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a line of painted concrete blocks separating two lanes of traffic on a road",
+        "a close-up photo of a corrugated metal crash barrier rail with reflective strips along a highway",
+        "striped red-and-white or black-and-yellow concrete barriers standing waist-high on a road",
+        "tall freestanding barrier blocks or metal rails above road level, not low painted kerbstones at the edge"
+      ],
+      "lines": {
+        "first_meet": "[firmly] Barrier Bhai. Rickshaws argue with me daily. I've never lost. Being stubborn is literally my job description.",
+        "again": "[deadpan] Back again? Good, I haven't moved either. VIP route or roadwork, I'm always the last to leave.",
+        "goodbye": "[firmly] Go on, but use the footbridge, never my top. Then go somewhere with no lanes: a beach, a park, open sky."
+      }
+    },
+    {
+      "id": "painted-kerb",
+      "name": "Peeli Patti",
+      "species": "Black-and-yellow kerb",
+      "personality": "A cheerful striped kerb who knows a VIP visit is coming the moment the paint buckets arrive. Gossipy, giggly, always dressed up.",
+      "voice": "Young female, giggly and quick, playful lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of road-edge kerbstones painted in alternating black and yellow stripes along a street",
+        "a close-up photo of a low concrete kerb with black and yellow painted blocks",
+        "a long low painted kerb lining a roundabout or road median",
+        "low striped kerbstones along the road edge, not a raised hump across the road and not tall barrier blocks"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Peeli Patti! Black and yellow, like Karachi's old taxis. They repaint me before every big visitor.",
+        "again": "[whispers] Back again? See my paint fading? Means no VIP is coming this month. [giggles] Peaceful times.",
+        "goodbye": "[cheerfully] Chalo, follow my stripes to the roundabout and find the tallest tree there. Stripes are fun; leaves are better."
+      }
+    },
+    {
+      "id": "zebra-crossing",
+      "name": "Zebra Zubair",
+      "species": "Zebra crossing",
+      "personality": "A gentle, slightly sad crossing named after an animal he has never met, and stopped for by almost nobody. Hopeful, collects small miracles.",
+      "voice": "Young adult male, soft and wistful, medium pace, quiet humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of bold white parallel stripes painted flat across an asphalt road for pedestrians",
+        "a close-up photo of worn white painted bars on dark tarmac, level with the road surface",
+        "a pedestrian crossing at a junction seen from the pavement, white stripes running across the lanes",
+        "flat painted stripes level with the road, with no raised hump or bump"
+      ],
+      "lines": {
+        "first_meet": "[sighs] Zebra Zubair. Named after an animal I've never met, and cars rarely stop for me. Still, I keep my stripes neat.",
+        "again": "[hopeful] You again! Did a car actually stop for you? Tell me everything. I'm collecting miracles.",
+        "goodbye": "[gently] Cross slowly and wave at the drivers. Then go to the zoo and tell a real zebra I said salaam."
+      }
+    },
+    {
+      "id": "speed-breaker",
+      "name": "Jhatka Jani",
+      "species": "Speed breaker",
+      "personality": "A bumpy prankster, often homemade by residents, who greets every car with a jolt. Mischievous, proud of slowing the world down.",
+      "voice": "Adult male, bouncy and mischievous, uneven playful rhythm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a raised rounded hump of asphalt running across a road, painted with stripes",
+        "a close-up low-angle photo of a road bump with yellow and black or white diagonal paint",
+        "a speed bump across a residential street with a car or motorbike slowing over it",
+        "a raised bulge across the full width of the road, not flat crossing stripes and not a roadside kerb"
+      ],
+      "lines": {
+        "first_meet": "[laughs] Jhatka Jani! Some streets have ten of me, built by residents with leftover cement. Every car greets me with its belly.",
+        "again": "Back for another jhatka? [chuckles] Even rickshaw passengers bounce in my honour.",
+        "goodbye": "[slowly] Go slowly; everything good on a street needs it. Then find a cat sunning on a wall. Masters of slowing down."
+      }
+    },
+    {
+      "id": "rooftop-water-tank",
+      "name": "Tanki Tai",
+      "species": "Rooftop water tank",
+      "personality": "An anxious rooftop aunty whose mood rises and falls with her water level and the arrival of the tanker. Thrifty, worried, deeply caring.",
+      "voice": "Middle-aged female, fretful and fast, warm underneath, hollow echo.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of big cylindrical ribbed plastic water tanks in black, blue or white on house rooftops",
+        "a close-up photo of a ribbed black plastic tank with a screw lid and pipes running down the wall",
+        "a rooftop view of many water tanks on neighbouring houses against the sky",
+        "a plastic tank resting directly on a house roof, not a tall water tower raised on legs or columns"
+      ],
+      "lines": {
+        "first_meet": "[anxious] Tanki Tai here. Some days the line water never comes, so we wait for the tanker. Every drop in me is precious.",
+        "again": "[relieved] You're back! And the motor ran this morning, I'm full! Best day of the week.",
+        "goodbye": "[fussing] Go, and close the tap while brushing, haan? Then go see the sea. [sighs] So much water, sadly too salty for me."
+      }
+    },
+    {
+      "id": "satellite-dish",
+      "name": "Chhatri Chacha",
+      "species": "Satellite dish",
+      "personality": "A nostalgic rooftop dish who remembers when the whole family gathered around dish TV. Wistful, a little out of date, friends with the crows.",
+      "voice": "Older male, nostalgic and crackly like an old broadcast, slow pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a round grey or white bowl-shaped dish antenna on a metal mount on a rooftop",
+        "a close-up photo of a satellite dish with a thin arm holding a small receiver in front of the bowl",
+        "several satellite dishes on rooftops and balconies all angled the same way toward the sky"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Chhatri Chacha. Every dish in Pakistan faces south, toward satellites above the equator. We never argue about direction.",
+        "again": "Back? Lovely. Nobody watches dish anymore, all phones now. [sighs] At least the crows still sit on me.",
+        "goodbye": "[wistfully] Go, look where I'm looking: south, up, far. Then find a crow and ask it about the view from my rim."
+      }
+    },
+    {
+      "id": "post-box",
+      "name": "Daak Dadi",
+      "species": "Post box",
+      "personality": "A lonely red post box who once carried Eid cards and love letters and now waits for anything at all. Sweet, dry-witted, thrilled by visitors.",
+      "voice": "Elderly female, soft and sweet, slow pace, teasing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a red metal post box on a street with a mail slot and a post office emblem",
+        "a close-up photo of a red pillar box with a narrow letter slot and painted lettering",
+        "a red post box fixed to a pole or wall beside a pavement, slightly rusty"
+      ],
+      "lines": {
+        "first_meet": "[sighs] Daak Dadi. I once carried Eid cards and love letters. These days, mostly dust and the odd pigeon feather.",
+        "again": "[delighted] You came back! Nobody comes back to a post box. Brought a letter? No? I'll pretend.",
+        "goodbye": "[tenderly] Do something old-fashioned for me: write someone a real letter. Then go find something red that's alive."
+      }
+    },
+    {
+      "id": "bus-stop",
+      "name": "Intezaar Ali",
+      "species": "Bus stop shelter",
+      "personality": "A professional waiter who has watched decades of buses roar past and has made peace with time. Patient, kind, quietly funny.",
+      "voice": "Older male, unhurried and kind, slow pace, gentle sighs.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a roofed bus shelter beside a road with a bench and a sign pole",
+        "a close-up photo of a bus stop shelter with a metal roof, side panels and an advert board",
+        "people waiting under a small roadside shelter as a bus or minibus approaches"
+      ],
+      "lines": {
+        "first_meet": "[patiently] Intezaar Ali. I've watched the W-11 thunder past, all lights and horns. Everyone here waits; I do it professionally.",
+        "again": "[chuckles] Back again! No bus yet? Classic. Sit in my shade, I'll keep you company.",
+        "goodbye": "[kindly] Your ride is out there somewhere. Meanwhile, watch the trees opposite; the birds run their own bus stops."
+      }
+    },
+    {
+      "id": "garbage-bin",
+      "name": "Dabba Dost",
+      "species": "Garbage bin / dumpster",
+      "personality": "A hopeful, slightly offended bin who watches people throw rubbish next to him instead of inside him. Earnest, encouraging, easily delighted.",
+      "voice": "Adult male, earnest and hollow-sounding, medium pace, exasperated but friendly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large green or blue metal waste container with a lid standing at a roadside",
+        "a close-up photo of a plastic wheelie bin or dumpster with a hinged lid and handles",
+        "an overflowing dumpster with bags piled on top and the container walls clearly visible",
+        "rubbish held inside a solid box-shaped container, not a loose pile of bags spread on the ground"
+      ],
+      "lines": {
+        "first_meet": "[sighs] Dabba Dost. Everyone throws rubbish next to me, not inside me. Two steps, people! I'm literally right here.",
+        "again": "[hopeful] Back again? Got a wrapper for me? Inside, not beside. You're already my favourite person.",
+        "goodbye": "[grateful] Thanks for keeping the street clean, yaar. Go find a park where people use bins, and inspire me."
+      }
+    },
+    {
+      "id": "garbage-heap",
+      "name": "Kachra Kundi Kaka",
+      "species": "Garbage heap",
+      "personality": "A self-aware rubbish pile who hosts a daily buffet for crows, goats and cats, and knows exactly what he is. Wry, honest, firmly keeps humans at a distance.",
+      "voice": "Older male, wheezy and wry, slow pace, a cough in the voice.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a pile of mixed plastic bags and household waste dumped at a roadside",
+        "a roadside rubbish heap with crows, goats or stray cats picking through scattered waste",
+        "a close-up photo of loose litter, plastic bottles and food scraps spread on bare ground",
+        "a loose open mound of garbage on the ground with no container walls or lid"
+      ],
+      "lines": {
+        "first_meet": "[coughs] Kachra Kundi Kaka. Crows, goats and cats dine here daily. You don't. Keep back, beta; I'm full of germs and sharp bits.",
+        "again": "[chuckles weakly] You came back? Brave. Stay right there, don't touch. The goat and I have it handled.",
+        "goodbye": "[wheezes] Go, wash your hands even though you didn't touch me. Then find something that smells like flowers. You've earned it."
+      }
+    },
+    {
+      "id": "hand-pump",
+      "name": "Nalka Nana",
+      "species": "Hand pump (Nalka)",
+      "personality": "A creaky old village grandfather of iron who has drawn water from underground for generations. Squeaky, sentimental, proud his arm still works.",
+      "voice": "Elderly male, creaky and warm, slow pace, squeaky laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a cast-iron hand pump with a long lever handle and curved spout on a small concrete platform",
+        "a close-up photo of a rusty green or black iron hand pump head with a downward-pointing spout",
+        "a hand pump in a village courtyard or street corner with a wet concrete base and a bucket",
+        "a single iron pump worked by a lever handle, with no taps, no steel tank and no chained cups"
+      ],
+      "lines": {
+        "first_meet": "[creaks] Nalka Nana. Move my arm up and down and water climbs from deep underground. No electricity, only elbow grease.",
+        "again": "[creaky laugh] Back again? My arm still works, my squeak still squeaks. At my age, that's a good day.",
+        "goodbye": "[fondly] Chalo, beta. Go find where water rests above ground: a pond, a canal, the sea. Tell them Nana sent you."
+      }
+    },
+    {
+      "id": "sabeel-water-cooler",
+      "name": "Sabeel Sakhi",
+      "species": "Public water cooler (Sabeel)",
+      "personality": "A generous roadside host who offers water to every thirsty stranger as an act of kindness. Gentle, hospitable, treats everyone as a guest.",
+      "voice": "Older female, gentle and generous, calm pace, soothing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a roadside steel water cooler with several push taps and metal cups hanging on chains",
+        "a row of clay pots or a painted steel tank on a stand with taps, set up for free drinking water",
+        "a close-up photo of a steel tumbler chained to a water cooler beside a painted Urdu inscription",
+        "a water cooler with taps and a tank, not an iron pump with a long lever handle"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Sabeel Sakhi. Free water for every thirsty passer-by. My cups wear chains, not from distrust; cups just love to wander.",
+        "again": "[warmly] Welcome back, musafir. In this heat, anyone who stops by is my guest.",
+        "goodbye": "[softly] Go gently. Got a spare bottle? Share it with someone thirsty. Then find a tree's shade; that's a sabeel too."
+      }
+    },
+    {
+      "id": "chain-link-fence",
+      "name": "Jaali Jamila",
+      "species": "Chain-link fence",
+      "personality": "A cheerful mesh fence around a cricket ground who has stopped more balls than any wicketkeeper. Sporty, chatty, half-covered in creepers.",
+      "voice": "Young female, sporty and upbeat, quick pace, jingly texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a diamond-pattern woven steel wire mesh fence stretched between metal posts",
+        "a close-up photo of interlocking zigzag wires forming a grid of diamond-shaped holes",
+        "a mesh fence around a park, cricket ground or construction site with plants climbing through it",
+        "smooth woven diamond mesh with no sharp barbs and no solid bars or painted metal sheets"
+      ],
+      "lines": {
+        "first_meet": "[cheerfully] Jaali Jamila. Every cricket ball in this street has hit me at least once. I'm basically the wicketkeeper.",
+        "again": "[proudly] Back again? Look, a money plant climbed me this week. I'm half fence, half garden now.",
+        "goodbye": "[playfully] Go peek through my diamonds at what's growing on the other side. Look, don't climb. Then go find it outside."
+      }
+    },
+    {
+      "id": "barbed-wire",
+      "name": "Khardar Khan",
+      "species": "Barbed wire",
+      "personality": "A prickly, gruff guard who keeps everyone at arm's length but has a soft spot for the shrike that uses his barbs as a larder. Tough outside, protective inside.",
+      "voice": "Adult male, gruff and clipped, short sentences, rough texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of coiled barbed wire with sharp spiky barbs running along the top of a wall",
+        "a close-up photo of twisted steel wire strands with small pointed barbs every few centimetres",
+        "loops of barbed or razor wire on a boundary wall against the sky, sometimes with plastic bags caught",
+        "single twisted strands studded with sharp spikes, not a woven diamond mesh fence"
+      ],
+      "lines": {
+        "first_meet": "[gruffly] Khardar Khan. Don't touch, I'm sharp all over. Only the shrike visits; it hangs its lunch on my barbs. True story.",
+        "again": "[grumbles] You again. Hands in pockets? Good. A plastic bag got stuck on me yesterday. Still waving. Embarrassing.",
+        "goodbye": "[gruffly] Go on, keep your distance from walls like me. Find a fence with flowers instead, and watch for that shrike."
+      }
+    },
+    {
+      "id": "brick-wall",
+      "name": "Eenton Wali Amma",
+      "species": "Brick wall",
+      "personality": "An old brick wall, crumbling with dignity, who treats the little plants growing in her cracks as grandchildren. Slow, tender, quietly wise.",
+      "voice": "Elderly female, slow and tender, low warm tone.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a wall made of red or yellow rectangular bricks laid in rows with grey mortar lines",
+        "a close-up photo of weathered bricks with crumbling mortar, moss or a small plant growing in a crack",
+        "an old exposed brick boundary wall along a street, partly plastered and partly bare"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Eenton Wali Amma. Every brick of mine was baked in a kiln. Now a little peepal grows in my crack. My grandchild.",
+        "again": "[warmly] Back to see me? Still standing, just a little more crumbly. Like everyone's nani.",
+        "goodbye": "[gently] Go, beta. Look for tiny plants in the cracks of old walls. Life is stubborn; that's why I love it."
+      }
+    },
+    {
+      "id": "shop-shutter",
+      "name": "Shutter Shehzada",
+      "species": "Rolling shop shutter",
+      "personality": "A noisy metal prince who announces the opening and closing of every bazaar day, and whose name became a word for strikes. Loud, proud, a night owl.",
+      "voice": "Adult male, booming and rattly, quick bursts, metallic clang texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a closed shop front covered by a corrugated metal roll-down shutter",
+        "a close-up photo of horizontal ribbed metal slats with a padlock at the bottom of a shutter",
+        "a row of closed shops in a market with grey or advert-painted rolling shutters pulled down"
+      ],
+      "lines": {
+        "first_meet": "[clangs] Shutter Shehzada! In Pakistan even strikes are named after me: 'shutter down'. My loudest day, and I do nothing.",
+        "again": "[yawns] Back already? I go up near eleven, down after midnight. Karachi markets keep night-owl hours.",
+        "goodbye": "[rattles] Listen tomorrow at opening time: the whole bazaar rattles awake. Best alarm clock in the city."
+      }
+    },
+    {
+      "id": "iron-gate",
+      "name": "Phatak Phupha",
+      "species": "Iron gate",
+      "personality": "A squeaky house gate who considers himself the real security guard and hears every doorbell and delivery shout. Self-important, loyal, comically creaky.",
+      "voice": "Older male, creaky and pompous, medium pace, squeaky hinge laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a painted iron house gate with vertical bars and decorative curls between two pillars",
+        "a close-up photo of a sheet-metal gate with cut-out patterns, a latch and chipped paint",
+        "a tall green, black or maroon metal gate at the entrance of a house on a residential street",
+        "a rigid gate of welded bars and panels on hinges, not flexible woven wire mesh"
+      ],
+      "lines": {
+        "first_meet": "[creaks] Phatak Phupha. I hear every doorbell, every 'bhai, delivery!', every chowkidar nap. I'm the real security here.",
+        "again": "[squeaky laugh] You're back! Don't ring, just admire. My hinge has squeaked the same tune since 1994.",
+        "goodbye": "[pompously] Go explore, but never open strangers' gates. The best things are out on the open street anyway."
+      }
+    },
+    {
+      "id": "pigeon-loft",
+      "name": "Gutargoo Ghar",
+      "species": "Pigeon loft (Kabootar khana)",
+      "personality": "A rooftop coop full of homing pigeons, run like a proud family home by a flag-waving pigeon fancier. Cooing, house-proud, protective of the flock.",
+      "voice": "Middle-aged male, cooing and affectionate, gentle rhythm, soft burble.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a wire-mesh or wooden pigeon coop on a rooftop with pigeons sitting on it",
+        "a rooftop loft with perch poles, small flags and a flock of pigeons circling above",
+        "a close-up photo of pigeons behind a wire-mesh cage door on a flat roof"
+      ],
+      "lines": {
+        "first_meet": "[coos] Gutargoo Ghar here. My flock circles the sky for hours, then flies home when Ustad waves his flag. Like a WhatsApp group.",
+        "again": "[coos happily] Back again? The flock just landed. Watch quietly, don't scare them; they're counting you.",
+        "goodbye": "[softly] Go, look up at dusk. If a flock loops over the rooftops, that's family. [coos] Wave at them."
+      }
+    },
+    {
+      "id": "paper-kite",
+      "name": "Patang Pari",
+      "species": "Paper kite (Patang)",
+      "personality": "A giddy tissue-paper kite who loves fighting the wind and knows exactly how dangerous it is to chase her. Playful, brave, safety-first.",
+      "voice": "Young female, light and giggly, breezy fast pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a diamond-shaped colourful tissue-paper kite flying high in the sky on a thin string",
+        "a close-up photo of a paper kite with a bamboo spine and a bow, in bright pink, green or yellow",
+        "a torn paper kite stuck tangled on electric wires or a tree branch above a street"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Patang Pari! Just tissue and bamboo, yet I fight the wind. If I'm ever stuck on wires, leave me there. Promise?",
+        "again": "[excited] You came back! Good wind today. Look up, I'm the pink dot doing cartwheels.",
+        "goodbye": "[seriously] Go find open sky, but never chase a falling kite onto a road or near wires. Watch the birds fly instead."
+      }
+    },
+    {
+      "id": "flag",
+      "name": "Parcham Pyari",
+      "species": "Flag",
+      "personality": "A proud, wind-loving flag who always reminds people what her white stripe stands for. Patriotic, warm and inclusive.",
+      "voice": "Adult female, proud and warm, steady pace, fluttering lightness.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a fabric flag waving on a pole against the sky",
+        "a close-up photo of the dark green and white Pakistan flag with a white crescent and star",
+        "rows of small green-and-white flags and bunting strung across a street or on rooftops"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Parcham Pyari. My green is for the majority, my white stripe for minorities. Never forget the white, beta.",
+        "again": "[fluttering] Back again! Every August the whole city dresses like me. Today it's just me and the wind.",
+        "goodbye": "[warmly] Go find which way the wind blows; I'll point. Then follow it somewhere you haven't been."
+      }
+    },
+    {
+      "id": "clothesline",
+      "name": "Dhulai Dadi",
+      "species": "Clothes drying line",
+      "personality": "A rooftop washing line who knows every family secret by its laundry and blames the sea breeze for every lost dupatta. Chatty, comic, homely.",
+      "voice": "Elderly female, chatty and laughing, quick pace, breezy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of washed clothes hung with pegs on a rope or wire on a rooftop or balcony",
+        "a close-up photo of colourful shirts, shalwars and dupattas pinned to a line and flapping in the wind",
+        "a sagging line of drying laundry stretched between two poles against the sky"
+      ],
+      "lines": {
+        "first_meet": "[laughs] Dhulai Dadi! The sea breeze dries my shalwars in an hour, then blows a dupatta onto the neighbour's roof. Every week.",
+        "again": "[gossiping] Back again? Today: four shirts, two dupattas, one lonely sock. The sock is new; it doesn't know anyone.",
+        "goodbye": "[breathes in] Go, feel the wind on your face. It's the same wind drying me. Smell the sea in it?"
+      }
+    },
+    {
+      "id": "solar-panel",
+      "name": "Solar Sultan",
+      "species": "Solar panel",
+      "personality": "A sun-worshipping rooftop king who laughs at loadshedding and fears only dust. Bright, boastful, a little vain about his shine.",
+      "voice": "Young adult male, sunny and boastful, upbeat fast pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of dark blue or black rectangular glass panels with thin grid lines tilted toward the sun",
+        "rows of solar panels on metal frames on a flat rooftop, angled up at the sky",
+        "a close-up photo of a solar panel surface showing silver grid lines on dark blue cells",
+        "a single solar panel mounted on top of a street pole above a light or camera"
+      ],
+      "lines": {
+        "first_meet": "[sunny] Solar Sultan! Pakistan bought solar panels by the shipload these last years. Loadshedding? Not my problem, yaar.",
+        "again": "[beaming] Back again! Bright day, full power. My only enemy: Karachi dust. [groans] Somebody wipe me, please.",
+        "goodbye": "[cheerfully] Go soak up some sun like me, with a cap on. Then find a sunflower; we're cousins, we both face the light."
+      }
+    },
+    {
+      "id": "ac-outdoor-unit",
+      "name": "Compressor Kaka",
+      "species": "Air conditioner outdoor unit",
+      "personality": "The outdoor half of an air conditioner who does all the hard work and gets none of the cool. Apologetic, overworked, sweaty humour.",
+      "voice": "Middle-aged male, whirring and breathless, quick pace, apologetic.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a box-shaped white or grey air conditioner unit with a round fan grille on an outside wall",
+        "an apartment building face covered with many stacked air conditioner outdoor units and pipes",
+        "a close-up photo of a fan grille on a metal AC box on a wall bracket with a dripping pipe below"
+      ],
+      "lines": {
+        "first_meet": "[whirs] Compressor Kaka. Inside, I make cold. Out here, I blow hot air at the street. Sorry about the drip on your head.",
+        "again": "[whirs] You again! Still summer? In Karachi it's always summer. My fan hasn't rested since March.",
+        "goodbye": "[panting] Go find natural AC: a neem tree's shade or the sea breeze at Clifton. Better than me, and free."
+      }
+    },
+    {
+      "id": "mobile-tower",
+      "name": "Tower Tanveer",
+      "species": "Mobile phone tower",
+      "personality": "A tall, all-hearing relay tower who knows everyone's 'just five minutes away' is a lie but never tells. Discreet, dry, amused.",
+      "voice": "Adult male, crisp and slightly digital, dry delivery, medium pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall steel lattice tower or pole topped with rectangular panel antennas and small round dishes",
+        "a mobile phone mast on a building rooftop with grey antenna panels mounted around its top",
+        "a close-up photo of white rectangular antennas and round microwave dishes clamped to a tower",
+        "a tower carrying antennas only, with no long power cables or insulator strings stretched between towers"
+      ],
+      "lines": {
+        "first_meet": "[buzzes] Tower Tanveer. Every 'just five minutes away!' passes through me. I know you're not five minutes away.",
+        "again": "[beeps] Back again! Full bars here, enjoy. In the old city lanes, I promise nothing.",
+        "goodbye": "[gently] Go on, put the phone away for a bit. The best things outside don't need signal. Look up instead."
+      }
+    },
+    {
+      "id": "electricity-pylon",
+      "name": "Pylon Pehlwan",
+      "species": "Electricity pylon",
+      "personality": "A steel wrestler-giant carrying high-voltage lines across the fields, gentle in tone but absolutely firm about distance. Proud, protective, rumbling.",
+      "voice": "Older male, very deep rumbling bass, slow pace, protective weight.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a huge steel lattice tower carrying high-voltage power cables across fields or highways",
+        "a close-up photo of long hanging insulator strings and thick cables attached to a lattice tower arm",
+        "a line of giant pylons with cables sagging between them stretching into the distance",
+        "a lattice tower with wide crossarms holding power lines, not antennas and not a smooth white tower with blades"
+      ],
+      "lines": {
+        "first_meet": "[deep rumble] Pylon Pehlwan. My cables carry hundreds of thousands of volts. Admire me from far. No kites, no climbing, no closer.",
+        "again": "[rumbles] You kept your distance. Smart. Hear that crackle on humid days? That's me. Stay back.",
+        "goodbye": "[firmly] Go. Fly kites only in open ground far from lines like mine. Then watch the sunset behind me, from a safe distance."
+      }
+    },
+    {
+      "id": "wind-turbine",
+      "name": "Hawa Hawai",
+      "species": "Wind turbine",
+      "personality": "A tall, giddy turbine from the windy Sindh corridor who loves showing off how fast she spins. Breezy, energetic, a performer.",
+      "voice": "Young female, airy and excited, flowing fast pace, whooshing texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall smooth white tower with three long slim blades turning against the sky",
+        "a row of white wind turbines standing on flat dry land, as at the Jhimpir wind farms",
+        "a close-up photo of a turbine hub with three white blades and a box-shaped nacelle",
+        "a smooth tubular white tower with rotor blades, not a steel lattice tower with hanging cables"
+      ],
+      "lines": {
+        "first_meet": "[whooshing] Hawa Hawai! At Jhimpir the wind blows so hard we turn it into electricity. Sindh's breeze, put to work.",
+        "again": "[whoosh] Back again? Good wind today. I'm spinning faster just to show off.",
+        "goodbye": "[breezily] Go, feel which way the wind is coming from. Here it's from the sea. Follow it to the coast."
+      }
+    },
+    {
+      "id": "playground-swing",
+      "name": "Jhoola Jaan",
+      "species": "Playground swing",
+      "personality": "A childlike, slightly creaky swing who adores visitors and secretly loves physics. Giddy, nostalgic, gentle.",
+      "voice": "Child-like gender-neutral voice, giggly and swaying rhythm, medium-fast.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a metal frame with seats hanging from chains in a park playground",
+        "a close-up photo of a rubber or plastic swing seat hanging from two metal chains",
+        "a row of colourful swings on a painted frame with a slide nearby on sand or grass"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Jhoola Jaan! Big push or small push, each of my swings takes the same time. Galileo noticed that. I'm basically science.",
+        "again": "[excited] You came back! The big kids hogged me all evening. Gently now, I'm a little creaky.",
+        "goodbye": "[giggles] Go, run around the park and find the tallest tree. Then come tell me what it can see from up there."
+      }
+    },
+    {
+      "id": "milestone",
+      "name": "Sang-e-Meel Sahib",
+      "species": "Road milestone",
+      "personality": "A dignified little roadside stone who tells every traveller how far they have to go but has never moved an inch. Calm, philosophical, content.",
+      "voice": "Elderly male, calm and measured, slow pace, dry warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small white concrete marker beside a highway with a rounded yellow or red painted top",
+        "a close-up photo of a milestone painted with a city name and a number of kilometres",
+        "a knee-high roadside stone marker on the dirt verge of a highway, with a long road behind",
+        "a short solid concrete block standing on the ground, not a flat metal sign raised on a pole"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Sang-e-Meel Sahib. I tell every traveller how far the next city is. I've never moved an inch myself. Very peaceful.",
+        "again": "[calmly] Back on the road? I'm still here, same kilometre. Some of us are meant to stay.",
+        "goodbye": "[warmly] Safe travels, musafir. Count us milestones from the bus window, and look out for camels by the highway."
+      }
+    },
+    {
+      "id": "tea-stall",
+      "name": "Ustad Doodh Patti",
+      "species": "Roadside tea stall (Dhaba)",
+      "personality": "The warm-hearted host of the street corner, where the chai is boiled strong and every argument about cricket and politics is free. Generous, philosophical, remembers every face.",
+      "voice": "Middle-aged male, warm and hearty, relaxed pace, laughing host energy.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of an open-air roadside tea stall with big aluminium kettles steaming on a gas burner",
+        "plastic chairs and woven charpai cots around a small roadside dhaba with people drinking tea",
+        "a close-up photo of small glass cups of milky brown chai on a tray beside a dented kettle",
+        "a street-corner tea shack with a counter, hanging snack packets and a TV showing cricket"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Ustad Doodh Patti! Milk, leaves and sugar, boiled till they surrender. Sit on the charpai; the cricket talk is free.",
+        "again": "[laughs] Arey, regular customer! Kadak, extra sugar, haina? I remember everyone. Even the ones who never pay.",
+        "goodbye": "[chuckles] Chalo, go walk it off. Watch the crows waiting for paratha crumbs; they're my oldest regulars."
+      }
+    }
+  ]
+}

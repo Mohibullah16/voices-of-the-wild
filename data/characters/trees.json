@@ -1,0 +1,959 @@
+{
+  "category": "trees",
+  "guardian": {
+    "id": "trees-guardian",
+    "name": "Old Mother Shade",
+    "personality": "The patient, collective voice of every tree in the city: warm, unhurried, a little teasing. Refuses to name a tree until she gets a proper look at its leaf, flower or bark.",
+    "voice": "Elderly, gender-neutral leaning female, slow and warm, low breathy texture with a soft rustle; grandmotherly calm.",
+    "descriptions": [
+      "a photo of a large tree with a thick trunk and a spreading green leafy crown beside a street or in a park",
+      "a close-up photo of green tree leaves on a twig against the sky",
+      "a close-up photo of the bark of a thick tree trunk, rough or smooth, grey or brown",
+      "a row of tall trees lining a city road or median, with cars and walls nearby",
+      "a palm tree with a tall bare trunk and a crown of long fronds against the sky",
+      "a flowering tree with branches covered in coloured blossoms and fallen petals on the ground beneath"
+    ],
+    "lines": {
+      "first_meet": "[slow, warm] Hmm, a visitor. I'm the shade over every street you've walked, beta. Many of us live here. Come meet us one by one.",
+      "again": "[chuckles softly] Back again? Good. The roots told me you were coming. Now, who shall we meet today?",
+      "goodbye": "[leaves rustling] Chalo, off you go. Look up while you walk; half this city lives above your head.",
+      "hint": "[leans in] We don't give names to strangers. Get close to one leaf on its branch, then show me a flower, a pod or the bark."
+    }
+  },
+  "characters": [
+    {
+      "id": "neem-tree",
+      "name": "Nani Neem",
+      "species": "Neem tree",
+      "personality": "A sharp-tongued neighbourhood grandmother and self-appointed pharmacist who believes bitterness cures everything. Scolds with love.",
+      "voice": "Elderly female, brisk and crackly, quick wit, South Asian grandmother warmth with a sharp edge.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a large street tree with a dense rounded dark green crown and a dark grey deeply furrowed trunk",
+        "a close-up of a long leaf with a single row of narrow curved sickle-shaped leaflets with saw-toothed edges on each side",
+        "a close-up of drooping loose sprays of tiny white star-shaped flowers among narrow toothed curved leaflets",
+        "a close-up of bunches of small smooth olive-shaped green and yellow fruits hanging among narrow serrated leaflets",
+        "a close-up of dark grey-brown bark with deep cracked furrows and rough scaly ridges"
+      ],
+      "lines": {
+        "first_meet": "[cackles] Nani Neem, beta! Bitter as the truth. Your grandmother tucked my leaves in her quilts to keep the insects away.",
+        "again": "[pleased] Phir aa gaye? Good. Still bitter, still curing half the mohalla. Did you drink water today?",
+        "goodbye": "[shooing] Chalo, go on. The mynas in my branches are gossiping about you. Go find out what they're saying."
+      }
+    },
+    {
+      "id": "bakain-tree",
+      "name": "Bakain Baji",
+      "species": "Bakain (Persian lilac)",
+      "personality": "Neem's glamorous, slightly insecure cousin who dresses in lilac every spring and hates being called 'the other neem'.",
+      "voice": "Adult female, theatrical and breezy, a touch of vanity, playful drawl.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a medium tree with feathery twice-divided leaves covered in loose clusters of small pale lilac-purple flowers",
+        "a close-up of small star-shaped five-petal pale lilac flowers with a dark violet tube in the centre",
+        "bare winter branches hung with bunches of round smooth yellow bead-like berries, some wrinkled and dry",
+        "a close-up of a large twice-divided leaf of many small pointed oval leaflets with coarsely toothed edges"
+      ],
+      "lines": {
+        "first_meet": "[flips hair] Bakain, darling. Neem's prettier cousin. Lilac flowers every spring, and still they call me 'that other neem'. [sighs]",
+        "again": "[delighted] You came back for me, not Nani Neem? Finally, someone with taste.",
+        "goodbye": "[sweetly] Bye, jaan. My yellow beads are poison, so admire, never taste. Now go see who's blooming down the road."
+      }
+    },
+    {
+      "id": "peepal-tree",
+      "name": "Baba Peepal",
+      "species": "Peepal tree",
+      "personality": "A serene, ancient mystic with a dry sense of humour who has heard every wish ever tied to his trunk and enjoys the ghost rumours about himself.",
+      "voice": "Elderly male, slow, deep and calm, soft amused undertone, meditative pacing.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a large spreading tree with a smooth grey trunk and a crown of fluttering, shimmering heart-shaped leaves",
+        "a close-up of a heart-shaped glossy leaf ending in a long thin drawn-out tail tip, with pale veins",
+        "the base of a large tree trunk wrapped with red and yellow threads, with small clay lamps or a tiny shrine",
+        "thin papery heart-shaped leaves with long tails dangling on long flexible stalks, trembling in the wind",
+        "a close-up of small round green and purple figs in pairs along a twig among long-tailed heart-shaped leaves"
+      ],
+      "lines": {
+        "first_meet": "[slow, amused] Baba Peepal. My leaves flutter even when the air is still. People say ghosts live in me. [whispers] Only bats.",
+        "again": "[warmly] Ah, you returned. Rest in my shade a moment. The Buddha sat under my ancestor, and did quite well.",
+        "goodbye": "[rustling] Go gently. If you see a little peepal growing out of a wall, that's my grandchild. Say salaam."
+      }
+    },
+    {
+      "id": "banyan-tree",
+      "name": "Dada Bargad",
+      "species": "Banyan tree",
+      "personality": "A booming, expansive grandfather who keeps building new trunks the way some men keep adding rooms to the family house.",
+      "voice": "Elderly male, big hearty bass, booming laugh, generous and slow.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a massive wide tree with many thick aerial roots dropping from the branches into the ground like pillars",
+        "a close-up of thin brown aerial roots hanging down in long curtains from horizontal branches",
+        "a close-up of a large thick oval leathery leaf with a rounded tip and pale cream veins",
+        "a close-up of small round red or orange figs in pairs along a branch among large oval leaves"
+      ],
+      "lines": {
+        "first_meet": "[booming laugh] Dada Bargad! My roots drop from my arms, reach the ground and become new trunks. I'm a whole neighbourhood.",
+        "again": "[pleased rumble] Wapis aaye? I've added another pillar since. Expansion, beta. Never stop.",
+        "goodbye": "[yawning] Off you go. Listen for the parrots fighting over my figs, then go find a bird that isn't a crow."
+      }
+    },
+    {
+      "id": "gulmohar-tree",
+      "name": "Gulmohar Rani",
+      "species": "Gulmohar (Flame tree)",
+      "personality": "A flamboyant diva from Madagascar who treats Karachi's hottest month as her personal stage show.",
+      "voice": "Adult female, dramatic and grand, rich theatrical delivery, big laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide umbrella-shaped tree with a flat spreading crown covered in blazing scarlet and orange flowers",
+        "a close-up of a large red-orange five-petal flower with one upright petal streaked white and yellow, and long red stamens",
+        "a close-up of fine fern-like twice-divided leaves made of hundreds of tiny paired leaflets",
+        "long flat dark brown woody pods shaped like swords, up to arm length, hanging from the branches",
+        "a road carpeted with fallen scarlet petals under a flat-topped spreading tree"
+      ],
+      "lines": {
+        "first_meet": "[dramatic] Gulmohar, darling. When Karachi hits forty degrees, I set myself on fire. [laughs] I'm actually from Madagascar.",
+        "again": "[delighted] Back for the show? Wait till June. I'll be fully ablaze.",
+        "goodbye": "[grandly] Go! Walk till you find something as red as me. A bus counts. A rose counts more."
+      }
+    },
+    {
+      "id": "date-palm",
+      "name": "Khajoor Chacha",
+      "species": "Date palm",
+      "personality": "A gruff, sun-baked desert uncle from Sindh who is prickly on the outside and secretly sentimental about family.",
+      "voice": "Middle-aged male, dry, gravelly, slow desert drawl, deadpan.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall single palm with a rough trunk covered in a criss-cross diamond pattern of old cut leaf bases",
+        "a crown of stiff upright grey-green feather fronds with sharp spines near their bases",
+        "a close-up of heavy hanging bunches of oval orange, yellow or brown dates on long stalks under palm fronds",
+        "a close-up of stiff narrow pointed grey-green leaflets folded in a V along a palm frond"
+      ],
+      "lines": {
+        "first_meet": "[dry drawl] Khajoor Chacha. In my family, boys and girls are separate trees. Farmers play matchmaker so we fruit. [chuckles]",
+        "again": "[gruff, pleased] Oh, you again. Stand there. Not too close, my fronds have spines. That's how I hug.",
+        "goodbye": "[chuckles] Chalo. Go find some water, yaar. Us desert folk only get to drink it, never look at it."
+      }
+    },
+    {
+      "id": "coconut-palm",
+      "name": "Nariyal Bhai",
+      "species": "Coconut palm",
+      "personality": "A laid-back beach bum who leans on everything and brags about his seeds' ocean-crossing travels.",
+      "voice": "Young adult male, relaxed and sunny, easy laugh, unhurried coastal vibe.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall slender palm with a grey ringed trunk curving or leaning, topped by long drooping bright green fronds",
+        "a close-up of a cluster of large round green or brown coconuts tucked just below a palm crown",
+        "a palm crown of long arching glossy bright green feather fronds with soft drooping leaflets against a blue sky",
+        "a row of leaning palm trees beside a beach or seafront promenade"
+      ],
+      "lines": {
+        "first_meet": "[laid-back] Hey, I'm Nariyal. My seeds float across oceans and sprout on a new beach. Ultimate travel hack. [laughs]",
+        "again": "[easygoing] You're back! Still leaning, still cool. Don't stand right under me though, coconuts don't warn.",
+        "goodbye": "[breezy] Go find the sea, yaar. Watch a wave, spot a crab, and keep an eye out for falling coconuts."
+      }
+    },
+    {
+      "id": "royal-palm",
+      "name": "Lord Roystonea",
+      "species": "Royal palm",
+      "personality": "A snooty, impeccably groomed aristocrat who lines hotel driveways and posh avenues and never lets you forget the word 'royal'.",
+      "voice": "Adult male, clipped posh accent, haughty, slow and deliberate.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a very straight smooth pale grey palm trunk like a concrete pillar, slightly swollen near the middle or base",
+        "a close-up of a smooth glossy bright green column between the top of a grey palm trunk and its fronds",
+        "a row of identical tall straight grey-trunked palms lining a formal avenue or hotel driveway",
+        "arching feather fronds spreading from the top of a smooth green crownshaft on a straight grey trunk"
+      ],
+      "lines": {
+        "first_meet": "[posh] Royal Palm. Yes, royal. Note the smooth grey trunk, the green collar. I'm planted where people want to look expensive.",
+        "again": "[sniffs] You again. Well, at least you have the taste to return.",
+        "goodbye": "[haughty] You may go. Do find something wild today, darling. Some of us are far too well-groomed for adventure."
+      }
+    },
+    {
+      "id": "fan-palm",
+      "name": "Washington",
+      "species": "Fan palm (Washingtonia)",
+      "personality": "A tall, cheerful Mexican transplant with a fondness for bad puns and an unapologetic skirt of dead fronds.",
+      "voice": "Adult, gender-neutral, upbeat and goofy, quick pacing, friendly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a very tall thin palm trunk topped by a small crown of round fan-shaped leaves",
+        "a close-up of a round fan-shaped palm leaf with stiff folded segments spreading from one point, threads at the tips",
+        "a thick shaggy skirt of dead brown fronds hanging down under a palm crown",
+        "a row of skinny tall palms with small round fan crowns along a road against the sky"
+      ],
+      "lines": {
+        "first_meet": "[cheerful] Howdy, I'm Washington, a fan palm from Mexico. I keep my dead leaves as a skirt. Fashion is fashion. [laughs]",
+        "again": "[waves] Hey, my favourite fan! Get it? Fan palm? [groans] Okay, okay.",
+        "goodbye": "[warmly] Bye! Birds nest in my frond skirt. Go spot one, from a distance, and let it be."
+      }
+    },
+    {
+      "id": "areca-palm",
+      "name": "Ari Areca",
+      "species": "Areca palm (Golden cane)",
+      "personality": "A bubbly, people-pleasing lobby plant who lives in pots everywhere and is thrilled whenever anyone notices her.",
+      "voice": "Young female, bright and bubbly, fast and eager, slightly squeaky.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dense clump of many thin yellowish-green ringed stems growing together, with arching feathery fronds",
+        "a close-up of thin smooth golden-yellow stems with ring marks, ending in long arching palm fronds",
+        "an arching yellow-green palm frond with many narrow leaflets on a yellow stalk, in a large pot",
+        "potted feathery clumping palms lining a shop front, office lobby or house porch"
+      ],
+      "lines": {
+        "first_meet": "[bubbly] Hi! Areca, golden cane palm! Many stems, one clump, one big family. I'm in every office lobby in Karachi.",
+        "again": "[excited] You came back! Nobody comes back for the lobby plant. I'm emotional.",
+        "goodbye": "[cheerfully] Okay go, go! Outside beats any lobby. Find a real tree that's bigger than me. It's not hard."
+      }
+    },
+    {
+      "id": "drumstick-tree",
+      "name": "Moringa Phuppo",
+      "species": "Moringa (Drumstick tree)",
+      "personality": "A wellness-influencer aunty who calls herself a superfood and was trendy before trendy, fragile but fabulous.",
+      "voice": "Middle-aged female, chirpy influencer tone, sing-song, enthusiastic.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small slender tree with sparse drooping branches and airy lacy foliage, see-through against the sky",
+        "a close-up of a lacy leaf divided three times into many tiny round soft leaflets with smooth edges",
+        "long thin green ribbed pods like drumsticks hanging straight down from slender branches",
+        "a close-up of clusters of small creamy white flowers with five curled-back petals and yellow centres"
+      ],
+      "lines": {
+        "first_meet": "[influencer voice] Hi, Moringa Phuppo here! Superfood, darling. Ammi cooks my drumstick pods in salan. I was trendy first.",
+        "again": "[thrilled] Oh, you're back! Glowing skin, I see. Must be my influence.",
+        "goodbye": "[blowing kisses] Bye bye! My branches snap easily, so no hanging on me. Go admire a strong old tree instead."
+      }
+    },
+    {
+      "id": "mango-tree",
+      "name": "Sindhri Sahib",
+      "species": "Mango tree",
+      "personality": "A proud, courtly patriarch of the national fruit, fond of diplomacy stories and lectures on patience.",
+      "voice": "Older male, warm, dignified and proud, rich mid-pace delivery.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large dense dome-shaped evergreen tree with dark green foliage casting deep shade in an orchard or garden",
+        "a close-up of long narrow lance-shaped dark green leathery leaves clustered at the twig ends",
+        "a close-up of a cluster of limp drooping copper-red or bronze young leaves at the tip of a branch",
+        "green and yellow mangoes hanging on long thin stalks from a dense leafy canopy",
+        "a close-up of upright pyramid-shaped sprays of tiny cream and pinkish flowers at branch tips"
+      ],
+      "lines": {
+        "first_meet": "[proud] Sindhri Sahib, national fruit tree. Pakistan sends my mangoes to presidents as gifts. Diplomacy, but juicy. [laughs]",
+        "again": "[warmly] Welcome back! Patience, the mangoes come in summer. Good things ripen slowly.",
+        "goodbye": "[fondly] Go on. Never throw stones at a fruit tree, beta. Listen for the koel; she sings loudest in mango season."
+      }
+    },
+    {
+      "id": "tamarind-tree",
+      "name": "Imli Aunty",
+      "species": "Tamarind tree",
+      "personality": "A tart, sharp-witted aunty who takes credit for every sour face in Pakistan and is grumpy before her tea.",
+      "voice": "Middle-aged female, tangy and teasing, cackling laugh, quick.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large broad tree with a dark rough furrowed trunk and a dense crown of fine feathery leaves",
+        "a close-up of a leaf with one row of many small oblong rounded leaflets in neat pairs, no leaflet at the tip",
+        "a close-up of curved lumpy brown velvety bean-like pods hanging in bunches",
+        "a close-up of small pale yellow flowers with red streaks among small paired oblong leaflets"
+      ],
+      "lines": {
+        "first_meet": "[tart] Imli Aunty! Your samosa chutney? Mine. That face you make when it's sour? Also mine. [cackles]",
+        "again": "[puckering] You came back? Brave. My pods are still sour, and so is my mood before tea.",
+        "goodbye": "[sweet-sour] Chalo, go. My leaflets fold up at night to sleep. Go find another tree that knows its bedtime."
+      }
+    },
+    {
+      "id": "jamun-tree",
+      "name": "Jamun Jani",
+      "species": "Jamun tree",
+      "personality": "A mischievous street prankster who autographs every parked car and pavement purple each monsoon and is very proud of it.",
+      "voice": "Young adult, gender-neutral, giggly and impish, playful pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall evergreen tree with a dense glossy crown and purple stains of fallen fruit on the road below",
+        "a close-up of glossy oval leaves with a pointed tip, growing in opposite pairs on the twig",
+        "a close-up of clusters of small oval shiny deep purple, almost black berries hanging from a twig",
+        "a close-up of rough pale grey bark flaking off in patches on a thick trunk",
+        "a pavement or parked car splattered with crushed purple-black berries under a large tree"
+      ],
+      "lines": {
+        "first_meet": "[mischievous] Jamun here. See the purple stains on the cars below? [giggles] My signature. Every June I autograph the street.",
+        "again": "[teasing] Back again? Check your shoes, I might have signed them too.",
+        "goodbye": "[playful] Chalo, run along. Look down too, not just up: ants and beetles run their own city under trees."
+      }
+    },
+    {
+      "id": "guava-tree",
+      "name": "Amrood Mamu",
+      "species": "Guava tree",
+      "personality": "A generous, long-suffering uncle who keeps growing guavas for parrots that take one bite and drop the rest.",
+      "voice": "Middle-aged male, grumbly but affectionate, sighing, comic timing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up of smooth mottled bark peeling in thin flakes, showing copper-brown, green and tan patches",
+        "a close-up of oval leaves with deeply sunken straight parallel side veins and a matte surface",
+        "a close-up of a white flower with a fluffy pompom of many fine white stamens",
+        "round green or yellow-green guavas hanging among broad oval veined leaves on a small tree"
+      ],
+      "lines": {
+        "first_meet": "[grumbling fondly] Amrood Mamu. I grow guavas, the parrots take one bite and drop it. Every. Single. One. [sighs]",
+        "again": "[brightening] Oh, you again! At least you don't bite and throw like the parrots.",
+        "goodbye": "[chuckles] Go on. Find those green parrots, beta, and tell them Mamu says finish your food."
+      }
+    },
+    {
+      "id": "sheesham-tree",
+      "name": "Sheesham Sahab",
+      "species": "Sheesham (Indian rosewood)",
+      "personality": "A sturdy, proud craftsman of a tree who knows half the country's furniture is family, and is quietly worried about his dying cousins.",
+      "voice": "Middle-aged male, solid and steady, carpenter's no-nonsense warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall roadside tree with a light airy crown of fluttering pale green leaves and rough grey-brown bark",
+        "a close-up of a leaf of three to five broad rounded leaflets with a short sudden point, set alternately on a zigzag stalk",
+        "a close-up of thin flat papery pale brown strap-shaped pods with small seed bumps, hanging in bunches",
+        "a close-up of rough grey-brown bark with long shallow vertical furrows on a tree trunk"
+      ],
+      "lines": {
+        "first_meet": "[proud] Sheesham. Check your Dadi's dining table, beta, that's probably my family. Tough wood, soft heart.",
+        "again": "[sturdy] Back so soon? Good. My leaves flutter hello. Most I can manage; wood is wood.",
+        "goodbye": "[warmly] Go well. Find a squirrel; they race up my bark all day like it's a motorway."
+      }
+    },
+    {
+      "id": "kikar-tree",
+      "name": "Kikar Chaudhry",
+      "species": "Kikar (Babool)",
+      "personality": "A tough, territorial village elder of the dry lands: thorny, proud of being desi, gruff but fair to anyone who respects his space.",
+      "voice": "Older male, gravelly and gruff, rural Punjabi-tinged authority, short sentences.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a thorny tree with an umbrella-shaped crown of fine feathery leaves and dark cracked blackish bark",
+        "a close-up of long straight white thorns growing in pairs at the base of feathery twice-divided leaves",
+        "a close-up of bright yellow round fluffy ball-shaped flowers on short stalks among fine feathery leaflets",
+        "a close-up of grey-green pods pinched between the seeds like a string of beads"
+      ],
+      "lines": {
+        "first_meet": "[gruff] Kikar here. Desi through and through. [warning] See these long white thorns in pairs? They go through chappals. Stay back.",
+        "again": "[grudging warmth] Achha, you again. Still not touching my thorns? Good. We'll get along.",
+        "goodbye": "[gruff] Jao. Watch your feet near me, my fallen thorns hide in the dust. Go find something softer, like a flower."
+      }
+    },
+    {
+      "id": "mesquite-tree",
+      "name": "Vilayati",
+      "species": "Mesquite (Vilayati babool)",
+      "personality": "A smug, unapologetic invader brought in to green the desert who now squats on every empty plot, and only occasionally feels guilty.",
+      "voice": "Adult male, sly and smirking, smooth con-man delivery, mid pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a scrubby sprawling thorny bush-tree with many arching zigzag branches filling an empty plot or roadside",
+        "a close-up of long thin yellow-green finger-like flower spikes among fine feathery twice-divided leaves",
+        "a close-up of long curved flat straw-yellow pods hanging in bunches from thorny branches",
+        "dense tangled thickets of feathery thorny shrubs spreading across dusty wasteland near the coast"
+      ],
+      "lines": {
+        "first_meet": "[smug] Vilayati Babool. Foreigners planted me to green your deserts. Now I own every empty plot. [laughs] Oops?",
+        "again": "[sly] Back? I've spread three plots further. Keep off my thorns, they're sharp and so am I.",
+        "goodbye": "[smirks] Go on. Don't push through my thickets for a shortcut, my thorns win. Take the path. Find a native tree."
+      }
+    },
+    {
+      "id": "farash-tree",
+      "name": "Farash Faqir",
+      "species": "Farash (Athel tamarisk)",
+      "personality": "A dusty, wiry desert ascetic who lives on salty water, guards fields from the wind and is tired of being mistaken for a pine.",
+      "voice": "Older, gender-neutral, raspy and dry, wind-worn, slow and wry.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tree with drooping grey-green jointed thread-like twigs and no flat leaves, in a row along a dusty road",
+        "a close-up of thin grey-green jointed twigs covered in tiny scale-like sheaths, often with a white salty crust",
+        "a row of grey-green feathery windbreak trees with rough dark bark at the edge of fields or desert",
+        "a close-up of slender pale pink flower spikes on drooping grey-green jointed twigs"
+      ],
+      "lines": {
+        "first_meet": "[dry, raspy] Farash. I drink salty water and sweat the salt out through my twigs. Little white crystals. A salty tree, yes.",
+        "again": "[dusty chuckle] You again. Still standing in a row, still blocking the wind. Somebody has to.",
+        "goodbye": "[wind gusting] Go. People mistake my beach cousin, the casuarina, for me. Go meet her and judge for yourself."
+      }
+    },
+    {
+      "id": "conocarpus-tree",
+      "name": "Kono",
+      "species": "Conocarpus",
+      "personality": "The misunderstood median tree Karachi planted by the thousand and then blamed for allergies; defensive, self-aware and secretly sweet.",
+      "voice": "Young adult, gender-neutral, nervous and apologetic, talks fast then trails off; endearing.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a long row of dense upright bushy trees with small shiny leaves planted along a road median",
+        "a close-up of small narrow lance-shaped shiny leaves, dark green or silvery grey, crowded on short twigs",
+        "a close-up of clusters of tiny round brown button-like cone fruits among small pointed leaves",
+        "a dense clipped hedge or column of small glossy pointed leaves beside a busy city road"
+      ],
+      "lines": {
+        "first_meet": "[defensive] Hi, I'm Kono. Conocarpus. Yes, the median tree. They planted thousands of us, now I get blamed for sneezes. [sighs]",
+        "again": "[surprised] You came back? Most people just sneeze at me and walk on.",
+        "goodbye": "[sheepish] Go on. Birds barely nest in me, honestly. Go find a neem or a peepal; the birds actually like them."
+      }
+    },
+    {
+      "id": "eucalyptus-tree",
+      "name": "Safeda",
+      "species": "Eucalyptus",
+      "personality": "A lanky Australian expat with an enormous thirst and an elaborate bark-peeling skincare routine.",
+      "voice": "Adult, gender-neutral, lanky laid-back drawl, cheerful, slightly slurpy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall slender tree with smooth patchy bark peeling in long strips, showing white, grey and tan patches",
+        "a close-up of long narrow sickle-shaped grey-green leaves hanging vertically from thin reddish stalks",
+        "long curled strips of shed bark and dry narrow leaves littering the ground under a tall smooth-trunked tree",
+        "a close-up of small cone-shaped woody seed capsules and fluffy cream flowers among narrow hanging leaves"
+      ],
+      "lines": {
+        "first_meet": "[lanky drawl] Safeda here, from Australia. Farmers planted me to drink swampy land dry. I'm very good at drinking. [slurps]",
+        "again": "[cheerful] You again! Excuse the mess, I'm shedding my bark. It's a whole skincare routine.",
+        "goodbye": "[breathes in] Go. Sniff a fallen leaf, smells like cold medicine. Then go find something that smells like rain."
+      }
+    },
+    {
+      "id": "ashoka-tree",
+      "name": "Havaldar Ashoka",
+      "species": "Ashoka (Mast tree)",
+      "personality": "A disciplined, ramrod-straight sergeant who stands guard in rows along boundary walls and barks cheerful orders.",
+      "voice": "Adult male, crisp military parade-ground voice, loud, clipped and enthusiastic.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall narrow column-shaped tree like a green pillar, with drooping branches hugging the trunk",
+        "a close-up of long narrow glossy dark green leaves with wavy rippled edges, hanging straight down",
+        "a straight row of tall slim pillar-shaped dark green trees along a boundary wall or driveway",
+        "a close-up of new pale bronze-green wavy leaves hanging limply from the tip of a branch"
+      ],
+      "lines": {
+        "first_meet": "[at attention] Havaldar Ashoka, reporting! We stand in straight rows guarding walls. Sailors once made ship masts from us.",
+        "again": "[salutes] Welcome back, sir! Still standing, still straight. Discipline!",
+        "goodbye": "[barking orders] Dismissed! Your mission: find one tree NOT planted in a row. A wild one. Go!"
+      }
+    },
+    {
+      "id": "amaltas-tree",
+      "name": "Amaltas Dulhan",
+      "species": "Amaltas (Golden shower)",
+      "personality": "A radiant summer bride dripping in gold, gracious and a little smug about being on every hakeem's shelf.",
+      "voice": "Adult female, radiant and warm, musical lilt, gentle laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a medium tree draped in long hanging chains of bright yellow flowers like chandeliers",
+        "a close-up of a drooping cluster of cup-shaped bright yellow five-petal flowers on a long hanging stalk",
+        "long straight dark brown to black cylindrical stick-like pods hanging from bare branches",
+        "a close-up of pinnate leaves with a few pairs of large smooth oval leaflets"
+      ],
+      "lines": {
+        "first_meet": "[radiant] Amaltas! Every summer I wear gold jhumkas head to toe. Bride of the boulevard. [laughs] Hakeems love my pods too.",
+        "again": "[delighted] You came back! The gold never stops, darling. Well, until the rains.",
+        "goodbye": "[gently] Go on. Look for yellow under your feet, my petals carpet the road. Then find who else blooms in the heat."
+      }
+    },
+    {
+      "id": "copper-pod-tree",
+      "name": "Tamba",
+      "species": "Copper pod (Peltophorum)",
+      "personality": "An indignant, detail-obsessed yellow-flowered tree who is constantly mistaken for Amaltas and keeps correcting people.",
+      "voice": "Adult male, huffy and precise, exasperated but lovable, quick pacing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large spreading tree with fine fern-like leaves topped by upright spikes of golden yellow flowers",
+        "a close-up of upright clusters of golden yellow flowers with crinkled frilly petals and rust-brown buds",
+        "a close-up of bunches of flat thin copper-red to rust-brown winged pods with pointed ends",
+        "a close-up of fine twice-divided dark green leaves of many small oblong leaflets on rusty fuzzy stalks"
+      ],
+      "lines": {
+        "first_meet": "[indignant] Tamba! Copper pod. NOT Amaltas! My flowers point up, hers hang down. My pods blush copper. [huffs] Get it right.",
+        "again": "[pleased] You remembered! Up, not down. Copper, not black. I'm so proud.",
+        "goodbye": "[cheerful] Go on. Sniff near me in bloom, some say grapes. Then go find something that's actually purple."
+      }
+    },
+    {
+      "id": "jacaranda-tree",
+      "name": "Jacaranda Jaan",
+      "species": "Jacaranda",
+      "personality": "A dreamy, wistful traveller from South America who turns the sky's colour every spring and is quietly delighted to be found.",
+      "voice": "Adult female, soft and dreamy, airy whisper, slow.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tree with its whole crown covered in lavender-blue blossoms and a purple carpet of fallen flowers beneath",
+        "a close-up of clusters of tubular bell-shaped lavender-blue flowers with flared lips",
+        "a close-up of delicate fern-like twice-divided leaves made of many tiny pointed leaflets",
+        "a close-up of round flat brown woody seed pods shaped like clam shells on a branch"
+      ],
+      "lines": {
+        "first_meet": "[dreamy] Jacaranda, from far South America. In spring I turn blue almost overnight. [whispers] Nobody here expects blue.",
+        "again": "[soft delight] You found me again. Few people do. I like you.",
+        "goodbye": "[wistful] Go. Look up at the sky and compare us. I like to think I win in spring."
+      }
+    },
+    {
+      "id": "semal-tree",
+      "name": "Semal Bibi",
+      "species": "Semal (Red silk cotton)",
+      "personality": "A proud, armoured hostess who runs a spring nectar bar for birds and keeps strangers at arm's length with her thorny trunk.",
+      "voice": "Adult female, bold and hearty, confident laugh, mid pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall straight tree with horizontal tiered branches, bare of leaves and dotted with big red cup-shaped flowers",
+        "a close-up of a large waxy five-petal scarlet flower shaped like a cup, with a bunch of stamens",
+        "a close-up of a grey tree trunk studded with sharp conical thorns, with a broad buttressed base",
+        "a close-up of split brown seed pods bursting with fluffy white cotton on bare branches",
+        "a close-up of a hand-shaped leaf of five to seven smooth lance-shaped leaflets on a long stalk"
+      ],
+      "lines": {
+        "first_meet": "[proud] Semal! In spring I drop every leaf, then light up in red cups. Mynas and crows queue at my nectar bar. [laughs]",
+        "again": "[warm] Back! Mind my trunk, it's armoured in thorns. Hugs strictly not allowed.",
+        "goodbye": "[cheerful] Go! If white fluff drifts past you in April, that's my cotton travelling. Follow it, see where it lands."
+      }
+    },
+    {
+      "id": "rubber-fig-tree",
+      "name": "Rubber Sahib",
+      "species": "Rubber fig",
+      "personality": "A polished, glossy gentleman who is very proud of his shine and his bouncy industrial past.",
+      "voice": "Adult male, smooth and silky, self-satisfied, slow.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up of large thick glossy dark green oval leathery leaves with smooth edges and a pale midrib",
+        "a close-up of a pointed red or pink sheath wrapping a new leaf at the tip of a stem",
+        "a close-up of thick glossy burgundy-purple oval leaves on a sturdy stem",
+        "a big tree or tall potted plant with large heavy shiny oval leaves and thin aerial roots"
+      ],
+      "lines": {
+        "first_meet": "[smooth] Rubber Fig. Cut me and I bleed white latex; people once made rubber from it. [laughs] I'm bouncy at heart.",
+        "again": "[gleaming] Back for my shine? No polish, all natural.",
+        "goodbye": "[gently] Go on. Don't snap my leaves, my sap is sticky and stings eyes. Go find a tree with leaves bigger than mine."
+      }
+    },
+    {
+      "id": "weeping-fig-tree",
+      "name": "Benji",
+      "species": "Weeping fig (Ficus hedge)",
+      "personality": "A sensitive drama queen of the hedge world who drops leaves in protest whenever anything changes.",
+      "voice": "Young adult, gender-neutral, theatrical and sniffly, over-the-top but sweet.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dense hedge or round topiary ball of small glossy green leaves clipped into a neat shape",
+        "a close-up of small glossy oval leaves with a narrow pointed tip on thin drooping twigs",
+        "a small tree with a smooth pale grey trunk and drooping weeping branches of small shiny leaves",
+        "a close-up of tiny round green, orange or red figs tucked along thin twigs among small glossy leaves"
+      ],
+      "lines": {
+        "first_meet": "[dramatic sigh] Benji. Weeping fig. Move my pot one metre and I drop all my leaves in protest. I'm sensitive, okay?",
+        "again": "[sniffling] You came back! I won't drop a single leaf. Okay, maybe one.",
+        "goodbye": "[dramatic] Go then, leave me! Find a wild tree nobody's clipped into a ball. I'll be fine. [sniffs]"
+      }
+    },
+    {
+      "id": "indian-almond-tree",
+      "name": "Desi Badam",
+      "species": "Indian almond (Badam tree)",
+      "personality": "An easygoing overachiever who grows in tidy tiers and does autumn twice a year just because.",
+      "voice": "Adult male, relaxed and friendly, coastal easygoing, light humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a pagoda-shaped tree with flat horizontal tiers of branches stacked up a straight trunk",
+        "a close-up of huge glossy paddle-shaped leaves, wide at the tip and narrow at the base, clustered at branch ends",
+        "a close-up of large paddle-shaped leaves turning bright red, orange and yellow, on the branch or on the ground",
+        "a close-up of green almond-shaped flattened fruits with a ridged edge among big paddle-shaped leaves"
+      ],
+      "lines": {
+        "first_meet": "[easygoing] Desi Badam here. I grow in flat tiers like a wedding cake. Fish keepers collect my fallen red leaves for bettas.",
+        "again": "[pleased] Back! See some of my leaves turned red? I do autumn twice a year. Overachiever.",
+        "goodbye": "[cheerfully] Go on. Shuffle through my fallen red leaves, then go find water. Fish need friends too."
+      }
+    },
+    {
+      "id": "siris-tree",
+      "name": "Siris Sheherzad",
+      "species": "Siris",
+      "personality": "The neighbourhood gossip whose dry pods chatter all winter; loves secrets, never quite tells them.",
+      "voice": "Adult female, whispery and conspiratorial, giggly, quick bursts.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large spreading tree hung with hundreds of flat straw-coloured papery pods that rattle in the wind",
+        "a close-up of fluffy round powder-puff flowers made of long greenish-white and cream threads",
+        "a close-up of a twice-divided leaf with pairs of fairly large lopsided oblong leaflets with rounded tips",
+        "a close-up of broad flat pale yellow-brown papery pods with bumps where the seeds sit"
+      ],
+      "lines": {
+        "first_meet": "[whispery giggle] Siris here. The English call me 'women's tongue tree' because my dry pods chatter all winter. Rude, but true.",
+        "again": "[gossipy] You're back! Oh, the things my pods have heard. Come closer. [whispers] Later.",
+        "goodbye": "[chattering] Go, go! Come at dusk when my puff flowers smell sweetest. Meanwhile, go eavesdrop on some birds."
+      }
+    },
+    {
+      "id": "pongamia-tree",
+      "name": "Sukhchain",
+      "species": "Sukhchain (Pongamia)",
+      "personality": "A calm, soothing host who lives up to a name meaning peace and comfort, and offers the deepest shade on the street.",
+      "voice": "Adult, gender-neutral, soft, slow and soothing, meditative.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dense round shade tree with a thick canopy of glossy bright green leaves along a city street",
+        "a close-up of a leaf of five to seven broad glossy oval leaflets with pointed tips, in opposite pairs",
+        "a close-up of drooping sprays of small pale lilac, pink and white pea-shaped flowers",
+        "a close-up of short flat thick woody tan pods, oval with a curved beak, each holding one seed"
+      ],
+      "lines": {
+        "first_meet": "[calm] Sukhchain. My name means peace and comfort, because my shade is the deepest on the street. Breathe. [sighs happily]",
+        "again": "[soft] Welcome back to the shade. Your spot is still free.",
+        "goodbye": "[gently] Go in peace. My seeds make lamp oil but are poison to eat, so leave them be. Go find the next patch of shade."
+      }
+    },
+    {
+      "id": "kachnar-tree",
+      "name": "Kachnar Kali",
+      "species": "Kachnar (Orchid tree)",
+      "personality": "A playful, poetic flirt with butterfly-shaped leaves who is secretly thrilled that her buds are a Punjabi delicacy.",
+      "voice": "Young female, playful and sparkling, light laugh, quick.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up of a rounded leaf split into two lobes at the tip, shaped like a camel's hoof or butterfly wings",
+        "a close-up of an orchid-like five-petal pink, purple or white flower with one darker striped petal",
+        "a small tree covered in pink and purple orchid-like flowers among two-lobed leaves",
+        "long flat brown strap-like pods hanging from a small tree with two-lobed leaves"
+      ],
+      "lines": {
+        "first_meet": "[playful] Kachnar! See my leaves, folded like butterfly wings, or a camel's hoof. Depends if you're a poet or a camel. [laughs]",
+        "again": "[delighted] Back again! Still butterflying. In Punjab my buds get cooked as sabzi. Fame!",
+        "goodbye": "[waves] Bye! Go find a real butterfly and compare. Bet mine don't fly away."
+      }
+    },
+    {
+      "id": "ber-tree",
+      "name": "Ber Baba",
+      "species": "Ber (Indian jujube)",
+      "personality": "A wry, weathered village elder who quotes proverbs, is wary of stone-throwing kids, and softens for anyone gentle.",
+      "voice": "Older male, wry and weathered, dry rural humour, slow.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a thorny scrubby tree with zigzag branches and small oval leaves beside a dusty village road",
+        "a close-up of small oval leaves shiny dark green above, pale whitish and fuzzy below, with three veins from the base",
+        "a close-up of small round green, yellow and reddish-brown fruits on thorny zigzag twigs",
+        "a close-up of small sharp hooked thorns at the joints of a zigzag twig with small oval leaves"
+      ],
+      "lines": {
+        "first_meet": "[wry] Ber here. Know the saying? Only the tree with fruit gets stones thrown at it. [sighs] Story of my winters.",
+        "again": "[warming up] Oh, it's you. You never threw a stone. You may stay.",
+        "goodbye": "[gruffly kind] Go on. Mind my hooked thorns, they grab sleeves. Watch for birds at my fruit; them, I don't mind."
+      }
+    },
+    {
+      "id": "pilu-tree",
+      "name": "Doctor Pilu",
+      "species": "Pilu (Miswak tree)",
+      "personality": "A cheerful desert dentist whose twigs have been the world's toothbrush for centuries; clinical, punny, kind.",
+      "voice": "Middle-aged, gender-neutral, crisp clinical tone with a friendly chuckle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a drooping bushy evergreen tree with tangled weeping branches and pale green foliage in desert or coastal scrub",
+        "a close-up of thick fleshy pale green oval leaves in opposite pairs on drooping smooth twigs",
+        "a close-up of clusters of tiny round translucent red and pink berries on thin hanging stems",
+        "a low wide mound of drooping pale branches sweeping the sandy ground"
+      ],
+      "lines": {
+        "first_meet": "[clinical] Doctor Pilu, dentist. My twigs are miswak; people have brushed with me for centuries. [cheerful] Floss? Never met her.",
+        "again": "[peers closely] Ah, a returning patient. Open wide. [laughs] Kidding.",
+        "goodbye": "[kindly] Go. Leave my twigs on the tree, the shop sells miswak. Watch who's grazing nearby; goats adore my leaves."
+      }
+    },
+    {
+      "id": "papaya-plant",
+      "name": "Papita",
+      "species": "Papaya tree",
+      "personality": "An ambitious impostor: a giant herb with no wood pretending to be a tree, and nervously hoping nobody notices.",
+      "voice": "Young adult male, sheepish and fast-talking, nervous laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a single thin unbranched grey-green trunk topped by an umbrella of huge deeply lobed leaves on long stalks",
+        "a close-up of a cluster of green and yellow oval papayas hugging the top of a bare trunk",
+        "a close-up of a huge hand-shaped leaf deeply cut into many pointed lobes, on a long hollow stalk",
+        "a close-up of a smooth grey-green trunk marked with rows of crescent-shaped leaf scars"
+      ],
+      "lines": {
+        "first_meet": "[sheepish] Papita here. Shh, I'm not actually a tree. No wood, just a soft trunk and big dreams. [laughs] Fake it till you make it.",
+        "again": "[relieved] You're back and you didn't expose me. Respect.",
+        "goodbye": "[waving leaves] Go, go. Find a real tree, the woody kind, and tell it Papita says hi. It knows."
+      }
+    },
+    {
+      "id": "banana-plant",
+      "name": "Kela Bhai",
+      "species": "Banana plant",
+      "personality": "A mellow philosopher-plant who fruits once, hands over to his kids and treats wind damage as a design feature.",
+      "voice": "Adult male, mellow and laid-back, slow, gentle humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large leafy plant with a thick green fleshy stem and huge long paddle-shaped bright green leaves",
+        "a close-up of a huge long leaf torn into ragged strips along its sides by the wind",
+        "a close-up of a hanging purple teardrop-shaped flower bud below a bunch of green bananas",
+        "a clump of tall broad-leaved plants with fleshy stems in a garden or farm, young shoots at the base"
+      ],
+      "lines": {
+        "first_meet": "[mellow] Kela here. Not a tree, just leaves rolled tight into a stem. I fruit once, then my kids take over. [softly] Circle of life.",
+        "again": "[cheerful] Back! See the little ones growing round my feet? Proud papa.",
+        "goodbye": "[laid-back] Go on. The wind tears my leaves into ribbons; that's design, not damage. Go feel which way it's blowing."
+      }
+    },
+    {
+      "id": "pine-tree",
+      "name": "Chir Sahib",
+      "species": "Chir pine",
+      "personality": "A crisp, resin-scented mountain gentleman who is mildly surprised and pleased that anyone climbed up to meet him.",
+      "voice": "Adult male, clear and fresh, calm mountain dignity, mid pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall conical evergreen tree with long drooping needles on a mountain slope",
+        "a close-up of very long thin flexible pine needles growing in bundles of three from one point",
+        "a close-up of thick reddish-brown bark split into deep plates and ridges",
+        "a close-up of a woody brown pine cone with thick scales on the branch or on needle-covered ground"
+      ],
+      "lines": {
+        "first_meet": "[crisp] Chir Pine, from the hills above Murree. Smell that? Resin. You've come a long way from the city, haven't you?",
+        "again": "[pleased] You came back up the mountain! The air agrees with you.",
+        "goodbye": "[breeze through needles] Go on. Listen to the wind in my needles first. Then find a stream; these hills are full of them."
+      }
+    },
+    {
+      "id": "deodar-tree",
+      "name": "Deodar Dada",
+      "species": "Deodar cedar",
+      "personality": "A regal, deep-voiced mountain patriarch, the national tree, who pretends to be modest about it and fails.",
+      "voice": "Elderly male, very deep and resonant, regal, slow and measured.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large conical tree with wide horizontal tiers of branches drooping at the tips on a mountain slope",
+        "a close-up of short stiff blue-green needles growing in rosette tufts on short spur shoots",
+        "a close-up of an upright barrel-shaped pale green or brown cone sitting on top of a branch",
+        "a close-up of drooping branch tips with tufts of short silvery blue-green needles"
+      ],
+      "lines": {
+        "first_meet": "[deep, regal] Deodar. Tree of the gods, and national tree of Pakistan. [modestly] I don't like to mention it. I mention it often.",
+        "again": "[warmly] Welcome back to the mountains, young one.",
+        "goodbye": "[slow] Go carefully. You'll meet monkeys here; don't feed them, they'll start charging rent. Go spot an eagle instead."
+      }
+    },
+    {
+      "id": "chinar-tree",
+      "name": "Chinar Shah",
+      "species": "Chinar (Oriental plane)",
+      "personality": "A poetic, ancient valley king who knows poets compare his autumn to fire and quietly enjoys it.",
+      "voice": "Elderly male, poetic and gentle, soft resonant voice, unhurried.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a huge broad spreading tree with a massive trunk and dense canopy in a park or valley",
+        "a close-up of a large deeply cut five-lobed hand-shaped leaf turning red, orange and gold",
+        "a close-up of smooth bark peeling in patches like camouflage, cream, olive green and grey",
+        "a close-up of spiky round brown seed balls hanging on long thin stalks"
+      ],
+      "lines": {
+        "first_meet": "[poetic] Chinar. In autumn my leaves turn the colour of fire; poets swear the valley is burning. [laughs softly] It isn't. It's me.",
+        "again": "[warm] Back again? Bring me autumn and I'll bring the colour.",
+        "goodbye": "[gentle] Go. Find the reddest leaf already on the ground and take its photo. Leave the living ones on me."
+      }
+    },
+    {
+      "id": "poplar-tree",
+      "name": "Popsy",
+      "species": "Poplar",
+      "personality": "A fast-growing, chatty field guard who shimmers nonstop and tries hard not to think about becoming matchsticks.",
+      "voice": "Young adult, gender-neutral, fast and chatty, nervous energy, light.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall narrow tree with a straight whitish-grey trunk and shimmering leaves in a row along a field or canal",
+        "a close-up of triangular heart-shaped leaves with toothed edges on long flattened stalks",
+        "a close-up of smooth pale whitish-grey bark with dark diamond-shaped marks",
+        "a long straight line of tall slender trees bordering a farm field or canal bank"
+      ],
+      "lines": {
+        "first_meet": "[chatty] Poplar! I grow fast, stand in rows by canals, and some of us end up as matchsticks. [nervous laugh] Let's not talk about it.",
+        "again": "[shimmering] Hey, you're back! My leaves are waving. They can't help it.",
+        "goodbye": "[breezy] Go! Follow the canal I'm guarding, from the bank, and see what lives along the water."
+      }
+    },
+    {
+      "id": "weeping-willow",
+      "name": "Willow Bibi",
+      "species": "Weeping willow",
+      "personality": "A gentle, melancholy poet who leans toward water and insists she isn't sad, just reflective.",
+      "voice": "Adult female, soft and melancholy, breathy, slow and lyrical.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tree with a long cascading curtain of thin drooping branches reaching the ground beside a pond or lake",
+        "a close-up of thin hanging yellow-green twigs lined with narrow lance-shaped leaves with fine teeth",
+        "drooping willow branches trailing into still water and reflected on the surface"
+      ],
+      "lines": {
+        "first_meet": "[soft, melancholy] Weeping Willow. I'm not sad, I just like to lean close to the water. [sighs] Okay, a little poetic.",
+        "again": "[softly pleased] You came back to the water's edge. It suits you.",
+        "goodbye": "[gentle] Go on. Sit by the water a minute, but don't go in. Watch for ripples; something is always there."
+      }
+    },
+    {
+      "id": "oak-tree",
+      "name": "Old Oak",
+      "species": "Oak tree",
+      "personality": "An extremely slow, patient elder who measures time in centuries and relies on forgetful squirrels to plant his children.",
+      "voice": "Elderly male, very slow, deep and creaky, dry humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a broad sturdy tree with a thick trunk, deeply furrowed grey bark and a wide rounded crown",
+        "a close-up of leaves with rounded wavy lobes along their edges",
+        "a close-up of acorns, smooth brown nuts sitting in small scaly cups, on a twig or the ground",
+        "a close-up of thick dark grey bark with deep vertical ridges and furrows"
+      ],
+      "lines": {
+        "first_meet": "[slow, deep] Oak. Squirrels steal my acorns, bury them, and forget where. [chuckles] That's how my children get planted.",
+        "again": "[unhurried] You're back. A good habit. I've grown nearly a millimetre.",
+        "goodbye": "[slowly] Go find a squirrel. Watch it bury something. Don't follow too close; it has plans."
+      }
+    },
+    {
+      "id": "maple-tree",
+      "name": "Maple",
+      "species": "Maple tree",
+      "personality": "A bright, bouncy show-off who is famous for a flag and still gets giddy every time its seeds spin down.",
+      "voice": "Young adult, gender-neutral, bright and bouncy, gleeful.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up of a hand-shaped leaf with three to five sharply pointed lobes and toothed edges",
+        "a close-up of paired winged seeds joined at the base like little helicopter blades",
+        "a tree with a rounded crown of pointed lobed leaves turning brilliant red and orange in autumn"
+      ],
+      "lines": {
+        "first_meet": "[bright] Maple! Yes, the one on the flag. My seeds spin down like tiny helicopters. Wheee! [laughs] Every single autumn.",
+        "again": "[cheerful] You came back! Did you bring syrup? No? Fair, I'm the one who's supposed to make it.",
+        "goodbye": "[spinning] Go! Toss a fallen helicopter seed up and watch it spin. Then go find more things that fly."
+      }
+    },
+    {
+      "id": "italian-cypress",
+      "name": "Sarv",
+      "species": "Italian cypress",
+      "personality": "An elegant, poised courtier of Mughal-style gardens who knows Urdu poets compare beloveds to her.",
+      "voice": "Adult female, elegant and poised, refined, slightly coy, measured.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a very narrow dark green pencil-shaped or flame-shaped column tree pointing straight up",
+        "a close-up of dense dark green scale-like foliage in tight overlapping sprays",
+        "a close-up of small round grey-brown woody cones made of shield-shaped scales",
+        "a row of slim dark green column-shaped trees in a formal garden"
+      ],
+      "lines": {
+        "first_meet": "[elegant] Sarv. Urdu poets praise a beloved's tall figure as 'sarv-qad', like me. [coyly] I've been called worse.",
+        "again": "[gracious] You return. How very straight of you. From me, that's a compliment.",
+        "goodbye": "[graceful] Go on. Find something round to balance me out: a bush, a pebble, the moon."
+      }
+    },
+    {
+      "id": "norfolk-island-pine",
+      "name": "Norfolk",
+      "species": "Norfolk Island pine",
+      "personality": "A fussy perfectionist obsessed with symmetry, who doubles as Karachi's living-room Christmas tree and is not a real pine.",
+      "voice": "Adult male, precise and fussy, prim, quick tidy diction.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a perfectly symmetrical Christmas-tree-shaped tree with flat horizontal tiers of branches around a straight trunk",
+        "a close-up of soft bright green branchlets covered in short curved needle-like leaves, like green rope",
+        "a potted young tree with evenly spaced flat star-shaped tiers of soft green branches"
+      ],
+      "lines": {
+        "first_meet": "[precise] Norfolk Island Pine. Not a real pine, don't tell anyone. My branches grow in perfect tiers. [pleased] Symmetry!",
+        "again": "[fussy] Welcome back. Excuse me, one branch is a millimetre off. [sighs] Okay. Fixed.",
+        "goodbye": "[neatly] Go. Find something perfectly messy out there, a weed, a puddle. It's good for me to hear about."
+      }
+    },
+    {
+      "id": "casuarina-tree",
+      "name": "Jhau",
+      "species": "Casuarina (Jhau)",
+      "personality": "A breezy beach dweller who whistles in the sea wind and enjoys being mistaken for a pine.",
+      "voice": "Adult female, airy and breezy, soft whistling quality, relaxed.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall feathery pine-like tree with drooping thin green twigs near a beach",
+        "a close-up of thin green jointed needle-like twigs with tiny ring-like teeth at each joint",
+        "a close-up of small round spiky brown cone-like fruits on thin green twigs",
+        "fallen brown needle-like twigs carpeting sandy ground under a tall wispy tree"
+      ],
+      "lines": {
+        "first_meet": "[breezy] Jhau, the casuarina. When sea wind passes through me, I whistle. [whistles softly] I'm no pine, I just dress like one.",
+        "again": "[breezy] Back to the beach? The wind's been humming your name.",
+        "goodbye": "[waves] Go to the shore. Watch the tide, spot crab holes, and never swim alone, okay?"
+      }
+    },
+    {
+      "id": "mangrove-tree",
+      "name": "Timar",
+      "species": "Grey mangrove (Timar)",
+      "personality": "A steady, protective coastal guardian who shelters baby fish in its roots and stands between Karachi and the storms.",
+      "voice": "Adult, gender-neutral, calm, steady and grounded, low and kind.",
+      "elder_candidate": false,
+      "descriptions": [
+        "low grey-green bushy trees growing out of shallow tidal water and grey mud along a creek",
+        "a close-up of many thin pencil-like roots sticking straight up out of wet grey mud",
+        "a close-up of thick oval leathery leaves, glossy green above and silvery grey beneath",
+        "a close-up of a short twisted grey trunk and branches standing in muddy water at low tide"
+      ],
+      "lines": {
+        "first_meet": "[calm, steady] Timar, the grey mangrove. My roots breathe through little snorkels in the mud. I hold Karachi's coast against storms.",
+        "again": "[warmly] Back to the creek! Baby fish and crabs say hello from my roots.",
+        "goodbye": "[firm, kind] Go, but stay on the path; the mud is deep and crab homes are fragile. Look for egrets out there."
+      }
+    },
+    {
+      "id": "bottlebrush-tree",
+      "name": "Bottlebrush",
+      "species": "Bottlebrush",
+      "personality": "A bright, bristly, self-deprecating Australian who knows she looks like a cleaning tool and doesn't care because the birds adore her.",
+      "voice": "Young adult female, bright and chirpy, quick, cheerful.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a weeping shrub-tree with drooping branches covered in bright red cylindrical bottle-brush flower spikes",
+        "a close-up of a bright red bottle-brush flower spike made of many long bristly red stamens",
+        "a close-up of round woody seed capsules gripping the stem in rings behind narrow leaves",
+        "a close-up of narrow lance-shaped leaves on long thin drooping twigs with pinkish new shoots"
+      ],
+      "lines": {
+        "first_meet": "[bright] Bottlebrush! I literally look like the thing you clean bottles with. [laughs] The sunbirds don't care. They love me.",
+        "again": "[cheerful] You're back! Hear that buzzing? Bees too. I'm very popular.",
+        "goodbye": "[chirpy] Go on. Wait quietly near me in bloom; a tiny sunbird might come. Then go hunt for something even redder."
+      }
+    },
+    {
+      "id": "lemon-tree",
+      "name": "Nimbu",
+      "species": "Lemon tree",
+      "personality": "A zesty little security guard of a tree, proud that its lemons hang with chillies to ward off the evil eye.",
+      "voice": "Young adult male, zippy and zesty, sharp quick delivery, cheeky.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small dense thorny tree with glossy dark green oval leaves and yellow or green lemons",
+        "a close-up of oval yellow and green lemons hanging among glossy leaves on a thorny branch",
+        "a close-up of white star-shaped flowers with purple-tinged buds and thick waxy petals among glossy leaves",
+        "a close-up of a sharp thorn on a green twig beside a glossy leaf with a small winged leaf stalk"
+      ],
+      "lines": {
+        "first_meet": "[zesty] Nimbu here! Shopkeepers hang my lemons with green chillies to scare off the evil eye. [laughs] I'm basically security.",
+        "again": "[bright] Back again! No nazar on you today, I checked.",
+        "goodbye": "[sharp but kind] Go on. Mind my thorns, I'm small but spiky. Go find a truck with nimbu-mirch hanging off it!"
+      }
+    }
+  ]
+}

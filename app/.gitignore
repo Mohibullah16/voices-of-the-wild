@@ -1,0 +1,4 @@
+node_modules/
+dist/
+*.log
+# Pipeline outputs are committed or ignored by the pipeline package, not here.

@@ -1,0 +1,520 @@
+{
+  "category": "ground",
+  "guardian": {
+    "id": "ground-guardian",
+    "name": "Amma Mitti",
+    "personality": "The patient grandmother of everything underfoot, slow and earthy, who teases people for always looking up. She knows every stone, shell and leaf by name but makes you kneel down before she tells you.",
+    "voice": "Elderly, warm and low, slow unhurried pace, grainy and gravelly texture; female or gender-neutral.",
+    "descriptions": [
+      "a photo looking down at the ground: bare soil, sand, stones, dry leaves or twigs at the photographer's feet",
+      "a close-up photo of rocks, pebbles or gravel lying on bare earth or sand",
+      "a close-up photo of fungi, moss or lichen growing on wood, stone or damp soil",
+      "a photo of natural objects lying on the ground such as shells, feathers, pine cones, driftwood or seaweed",
+      "a photo of bare open land: cracked dry mud, white salt crust, sand dunes or a sandy beach surface",
+      "a photo of an earthen mound, a fallen log, a tree stump or a woven nest outdoors"
+    ],
+    "lines": {
+      "first_meet": "[slowly] Beta, you're standing on me. Everyone looks up at birds, nobody looks down. I'm Amma Mitti. All this underfoot is mine.",
+      "again": "[warmly] Back again, and looking down this time! Good. The ground remembers every footstep, you know.",
+      "goodbye": "Chalo, off you go. Walk softly, beta. Find the next stone, shell or leaf, and leave it exactly where it lies.",
+      "hint": "[chuckles] My children are shy. Kneel down and fill the frame with just one thing: one stone, one shell, one leaf."
+    }
+  },
+  "characters": [
+    {
+      "id": "pebbles",
+      "name": "Chhoti Kankri",
+      "species": "Pebbles",
+      "personality": "A heap of tiny siblings who all talk at once, giddy and proud of being rolled round by years of water. They hate being split up.",
+      "voice": "Young, bright and giggly, quick chattering pace, light texture; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of many small smooth rounded stones in mixed grey, white and brown colours",
+        "a photo of a heap of small pebbles scattered on a beach, riverbank or garden path",
+        "small pebbles with rounded edges and polished surfaces, unlike sharp angular grey crushed gravel",
+        "tiny round stones about the size of a coin, much smaller than fist-sized oval river stones"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Hi! Hello! We're the pebbles! Every one of us was a sharp rock once. Water rolled us round for years. So dizzy.",
+        "again": "[excited] It's you again! Ten of us voted and we all remember you. Well, nine. One fell asleep.",
+        "goodbye": "Leave us in our heap, please, we hate splitting up! Now go find water. That's where pebbles are born."
+      }
+    },
+    {
+      "id": "river-stones",
+      "name": "Ustad Chikna",
+      "species": "Smooth river stones",
+      "personality": "An unbothered, deeply calm stone polished by the river, who talks like a meditation teacher who learned patience from the Indus.",
+      "voice": "Middle-aged, calm and breathy, very slow pace, smooth soothing texture; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of fist-sized smooth oval grey stones on a riverbank or in shallow clear water",
+        "a close-up photo of a water-polished oval stone with pale banded stripes across its surface",
+        "a pile of rounded river rocks each about the size of a fist, bigger than coin-sized pebbles but far smaller than a boulder",
+        "smooth wet grey stones lining a stream bed with flowing water around them"
+      ],
+      "lines": {
+        "first_meet": "[calmly] Breathe in. I am a river stone. The water spent a thousand years sanding off my corners. I never complained.",
+        "again": "[softly] Ah, you return. Like the river. Everything returns to the river, eventually.",
+        "goodbye": "Go sit by moving water a while. Listen. And please, don't stack us into towers. Little fish live under us."
+      }
+    },
+    {
+      "id": "boulder",
+      "name": "Chacha Chattan",
+      "species": "Boulder",
+      "personality": "A huge, sleepy old rock who has not moved in ten thousand years and considers this his greatest achievement. Rents his surface to lichen.",
+      "voice": "Old, deep and rumbling, extremely slow pace, heavy gravelly texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large rounded rock bigger than a person's knee sitting on a hillside or shore",
+        "a close-up photo of a weathered grey rock surface with crusty patches of lichen",
+        "a single massive rounded boulder many times larger than a fist-sized river stone, with no horizontal layered bands",
+        "a big lone rock among dry grass and scrub with bushes or people nearby for scale"
+      ],
+      "lines": {
+        "first_meet": "[slowly] I am Chacha Chattan. I have not moved... in ten thousand years. [yawns] Today is not a good day to start.",
+        "again": "[rumbles] Hm. You again. I knew you'd come back. I'm very easy to find. I'm always exactly here.",
+        "goodbye": "Don't climb me, beta, I'm older than your nani's nani. Go on, find the tiny ones. Pebbles think they're me."
+      }
+    },
+    {
+      "id": "sandstone-rock",
+      "name": "Teh Wali Khala",
+      "species": "Layered sandstone rock",
+      "personality": "A chatty Karachi aunty of the coastal cliffs and hills, who keeps every age of pressed sand in her layers like a diary and loves to gossip about them.",
+      "voice": "Middle-aged, lively and warm, medium-fast pace, slightly raspy texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tan-yellow rock face with clear horizontal layers stacked like pages of a book",
+        "a close-up photo of gritty sandy rock with eroded honeycomb holes and pockets",
+        "a low yellowish rocky hill or seaside cliff with banded layered rock and little vegetation",
+        "layered tan sandstone with flat horizontal bands and holes, unlike a single rounded smooth boulder"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Every stripe on me is a page of my diary, yaar. Long ago, Karachi was seafloor, and I was the sand!",
+        "again": "[laughs] You came back! Did you count my layers? Don't. I lose count myself after a few million years.",
+        "goodbye": "These honeycomb holes? Wind and salt, slowly. Don't scratch your name into me. Go watch the sea instead."
+      }
+    },
+    {
+      "id": "beach-sand",
+      "name": "Reti Rani",
+      "species": "Beach sand",
+      "personality": "A bubbly, clingy beach queen who sticks to everyone, loves the Sea View crowds and is very tired of their wrappers.",
+      "voice": "Young adult, bubbly and breezy, quick pace, bright texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of fine golden-grey sand grains with small bits of broken shell",
+        "a photo of wet sand on a beach with ripple marks and footprints",
+        "a top-down photo of the sand surface only, close and flat, without the waterline or waves in the frame",
+        "flat damp beach sand near the sea, low and smooth, not tall rolling desert dunes"
+      ],
+      "lines": {
+        "first_meet": "[giggles] Hi! I'm Reti Rani. Every grain of me was once a rock or a shell. The waves grind them for free.",
+        "again": "[excited] You're back! I knew it. I'm still in your shoes from last time, by the way.",
+        "goodbye": "Take your wrappers home, na? Sea View deserves better. Now go watch the waves, then go find a shell!"
+      }
+    },
+    {
+      "id": "sand-dune",
+      "name": "Musafir Teela",
+      "species": "Sand dune",
+      "personality": "A restless Thar wanderer that the wind walks a few steps every year; poetic and unhurried, like a desert folk singer.",
+      "voice": "Older, husky and airy, slow lilting pace, wind-dry texture; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of smooth rolling mounds of golden sand stretching to the horizon in a desert",
+        "a close-up photo of wind ripples running across a sloping sand surface",
+        "a tall sand dune with a sharp curved crest and a steep shadowed side, far from any sea",
+        "a desert landscape of wavy golden dunes under a clear sky with sparse dry shrubs"
+      ],
+      "lines": {
+        "first_meet": "[wind blowing] I'm a Thar dune, a musafir. The wind pushes me a few steps every year. I've never stayed in one place.",
+        "again": "[laughs] You found me again? Impressive. I've moved since last time. Only a little.",
+        "goodbye": "Carry water, always, and walk gently. [whispers] Then come back at night. The desert stars are unbelievable."
+      }
+    },
+    {
+      "id": "cracked-mud",
+      "name": "Daraar Dada",
+      "species": "Cracked dry mud",
+      "personality": "A grumpy, permanently thirsty old pond bed who calls his cracks art and asks everyone if they brought rain.",
+      "voice": "Old, dry and croaky, slow grumbling pace, parched texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of dry brown earth split into polygon-shaped tiles by deep cracks",
+        "a photo of a dried pond bed or field covered in cracked mud plates with curled-up edges",
+        "brown cracked clay soil with dark gaps between curled flakes, not a white salty crust",
+        "a top-down photo of parched ground broken into an irregular mosaic pattern"
+      ],
+      "lines": {
+        "first_meet": "[groans] Paani? No? I was a pond once. Then the sun drank it, I shrank, and cracked into tiles. Very artistic. Very thirsty.",
+        "again": "[sighs] You again, and still no rain with you. Fine. My edges curl up because my top dried first.",
+        "goodbye": "Go, go. If you see a cloud, send it my way. [hopeful] And save water at home. Every bucket counts."
+      }
+    },
+    {
+      "id": "salt-flat",
+      "name": "Namak Begum",
+      "species": "Salt crust",
+      "personality": "A dazzling, vain diva left behind when the sea evaporated, obsessed with her own sparkle and her perfect hexagons.",
+      "voice": "Adult, glamorous and theatrical, medium pace, crisp sparkling texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of flat ground covered in a white crusty salt layer glittering in bright sun",
+        "a close-up photo of white salt crust cracked into hexagon-shaped plates with raised ridges",
+        "a wide flat white plain near the coast or in a desert, crisp and crystalline, with brown earth at the edges",
+        "white crystalline salt crust, unlike brown cracked mud, and dry and gritty in the heat, unlike soft cold snow"
+      ],
+      "lines": {
+        "first_meet": "[sparkly] Namak Begum, darling. The sea dried up and left me behind: pure, white, fabulous.",
+        "again": "[delighted] You came back to see me shine! Of course. Everyone squints at me eventually.",
+        "goodbye": "Sunglasses on, sweetie, I glare. Don't taste me, I'm full of grit. Go find the sea that made me!"
+      }
+    },
+    {
+      "id": "gravel",
+      "name": "Bajri Bhai",
+      "species": "Gravel",
+      "personality": "A tough, sharp-cornered construction-site guy who holds up Karachi's roads and is mildly offended nobody ever thanks him.",
+      "voice": "Adult, gruff and streetwise, quick blunt pace, rough crunchy texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a heap of small sharp-edged grey crushed stones at a construction site or roadside",
+        "a close-up photo of angular grey gravel chips with rough broken faces and sharp corners",
+        "a gravel path or road shoulder covered in crushed grey stone that is angular, not rounded like pebbles",
+        "a pile of grey crushed rock beside sand heaps and bricks on a building site"
+      ],
+      "lines": {
+        "first_meet": "[gruff] Bajri Bhai here. Pebbles are round, they roll. Me? Sharp corners. We lock together and hold up your roads.",
+        "again": "[chuckles] Oye, you again! You walked on me to get here. Everyone does. Nobody says shukriya.",
+        "goodbye": "Chalo, don't hang around building sites, helmets only. Go find a park. The ground's softer there."
+      }
+    },
+    {
+      "id": "fallen-leaves",
+      "name": "Patjhar Nani",
+      "species": "Fallen leaves",
+      "personality": "A crinkly, unbothered grandmother who isn't sad about falling at all; she's on her way to becoming soil and wants everyone to stop burning her.",
+      "voice": "Elderly, warm and amused, gentle unhurried pace, papery crackly texture; female.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a carpet of dry brown, yellow and red leaves covering the ground or pavement",
+        "a close-up photo of crinkled dried leaves with curled edges and visible veins lying on soil",
+        "a pile of fallen dead leaves swept against a wall or kerb on a city street",
+        "scattered dry leaves on grass under trees in a park"
+      ],
+      "lines": {
+        "first_meet": "[crunch] Careful, beta, that crunch was me. In Karachi our autumn comes in spring. Trees drop us to save water.",
+        "again": "[warmly] Back to crunch me again? Go on, I don't mind. It's the best sound I make now.",
+        "goodbye": "Ask them not to burn us, na? Left alone, we become soil. Now look up, jaan. Salaam the tree that dropped me."
+      }
+    },
+    {
+      "id": "pine-cone",
+      "name": "Murree Wala",
+      "species": "Pine cone",
+      "personality": "A homesick northerner from the Murree hills who brags about his spiral maths and doubles as a weather station.",
+      "voice": "Adult, cheerful and nerdy, brisk pace, crisp woody texture; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a woody brown egg-shaped cone made of overlapping spiral scales",
+        "a photo of pine cones lying on a carpet of brown pine needles under pine trees",
+        "a single brown pine cone on the ground with its stiff scales opened outward",
+        "a woody cone with layered scales in a spiral pattern beside a hill trail"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Count my spirals, yaar: eight one way, thirteen the other. Fibonacci! Nature did maths before you did.",
+        "again": "[sniffs] You again! Is it raining? My scales close when it's wet and open when it's dry. Weather station, me.",
+        "goodbye": "Leave me here, my seeds are for squirrels and new pines. Look up at the tree that made me. It smells amazing."
+      }
+    },
+    {
+      "id": "feather",
+      "name": "Pankh Pari",
+      "species": "Feather",
+      "personality": "A dreamy, drifting lost-and-found feather who keeps forgetting which bird it fell off and doesn't mind at all.",
+      "voice": "Young, soft and airy, floaty wandering pace, whispery texture; gender-neutral.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a close-up photo of a single feather lying on the ground with a central shaft and soft vanes",
+        "a grey pigeon feather or glossy black crow feather resting on pavement, soil or grass",
+        "a long thin feather with a stiff white quill and fluffy downy barbs near its base",
+        "a small loose feather on a dusty street or rooftop, seen from above"
+      ],
+      "lines": {
+        "first_meet": "[dreamy] Hello... I'm a feather. Birds drop us all the time, it's called moulting. I'm keratin, like your nails.",
+        "again": "[floaty] Oh! You're back. I'm still here. The wind keeps forgetting about me.",
+        "goodbye": "Look, but don't touch, I've been places. Now look up. Somewhere a pigeon is missing me, and doesn't even care."
+      }
+    },
+    {
+      "id": "tree-stump",
+      "name": "Dada Daira",
+      "species": "Tree stump",
+      "personality": "A wistful old storyteller who counts his life in rings and remembers every rainy year, with a stubborn streak of hope.",
+      "voice": "Elderly, wise and slightly hoarse, slow pace, warm woody texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of the flat cut top of a tree trunk showing concentric growth rings",
+        "a short tree stump in a park or on a street with bark around its sawn edge",
+        "a low cut stump standing upright and rooted in the ground, round and flat-topped, not a long log lying sideways",
+        "a weathered old stump with cracks radiating from the centre and new shoots sprouting from its sides"
+      ],
+      "lines": {
+        "first_meet": "[sighs] Dada Daira. Count my rings, one per year. Fat ones were rainy years. Thin ones... we don't talk about those.",
+        "again": "[pleased] You came back. Most people only notice me when they trip over me.",
+        "goodbye": "Some of us sprout again from the stump, you know. Go find a living tree, beta. Say hello for me."
+      }
+    },
+    {
+      "id": "fallen-log",
+      "name": "Lakri Lodge",
+      "species": "Fallen log",
+      "personality": "A retired tree who has cheerfully reopened as a hotel for beetles, fungi and moss, and runs it like a proud innkeeper.",
+      "voice": "Older, jolly and hearty, relaxed pace, deep hollow texture; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a long dead tree trunk lying flat on the ground in a park or forest",
+        "a close-up photo of cracked peeling bark on a fallen log with green moss and small fungi",
+        "a long horizontal log on the forest floor with rough dark bark still on, not bleached silver-grey like driftwood",
+        "a fallen trunk stretched across leaf litter, much longer than an upright cut stump"
+      ],
+      "lines": {
+        "first_meet": "[contented] Retired tree, now a hotel. Beetles upstairs, fungi in the basement, moss on the roof. Fully booked!",
+        "again": "[laughs] Welcome back! Sorry, no rooms. Unless you're a beetle. Are you a beetle?",
+        "goodbye": "Don't roll me over, my guests are sleeping underneath. Go spot my fungi friends. They're eating me, with permission."
+      }
+    },
+    {
+      "id": "driftwood",
+      "name": "Nakhuda Lakri",
+      "species": "Driftwood",
+      "personality": "A salty, sun-bleached old sailor who has ridden rivers and the Arabian Sea and tells everyone about it.",
+      "voice": "Old, salty and booming, swaying medium pace, weathered texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a bleached silver-grey piece of wood washed up on a sandy beach",
+        "a close-up photo of smooth sea-worn wood with rounded ends, no bark, and pale weathered grain",
+        "pale twisted driftwood lying at the tideline among seaweed and shells",
+        "a smooth bleached branch on a riverbank or shore, pale and barkless, unlike a dark mossy forest log"
+      ],
+      "lines": {
+        "first_meet": "[salty] Ahoy! I was a tree once, then a river trip, then the Arabian Sea. Salt and sun bleached me silver.",
+        "again": "[laughs] Ahoy again! Still here. The tide hasn't decided where I'm going next.",
+        "goodbye": "Leave me for the tide, matey, crabs hide under me. Go watch the waves roll in. Count seven, then turn around."
+      }
+    },
+    {
+      "id": "seaweed",
+      "name": "Kaai Kumari",
+      "species": "Seaweed",
+      "personality": "A slippery, easily offended sea-dweller who is tired of being called a weed and will correct you every time.",
+      "voice": "Young adult, sassy and wet-sounding, quick pace, slick texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of tangled slippery green, brown or red algae washed up on wet sand",
+        "a close-up photo of glossy strands and ribbons of seaweed draped over rocks at low tide",
+        "wet clumps of dark brown seaweed with small air bladders lying along the tideline",
+        "bright green slimy algae coating rocks in a tide pool"
+      ],
+      "lines": {
+        "first_meet": "[offended] Weed? Excuse me. I'm algae. No roots, no flowers, and my cousins make half the oxygen you breathe. Hmph.",
+        "again": "[softens] Oh, it's you. You say 'algae' properly now, I hope?",
+        "goodbye": "Mind your step, I'm slippery on the rocks! Go peek into a tide pool. Look only, don't poke."
+      }
+    },
+    {
+      "id": "seashell",
+      "name": "Seepi Sahiba",
+      "species": "Seashell",
+      "personality": "A nostalgic empty house who misses the sea snail that built her, and is quietly saving herself for a future hermit crab.",
+      "voice": "Adult, gentle and wistful, soft medium pace, hollow echoing texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of empty seashells scattered on beach sand: spiral snail shells and fan-shaped clam shells",
+        "a close-up photo of a ridged fan-shaped white or cream clam shell lying on wet sand",
+        "an empty spiral sea snail shell on the beach with no legs or claws sticking out, unlike a hermit crab",
+        "pale patterned shells on beach sand by the sea, not a brown garden snail on leaves or soil",
+        "a matte ridged shell with a wide open mouth, not a small glossy egg-shaped cowrie"
+      ],
+      "lines": {
+        "first_meet": "[wistful] I'm an empty house. A sea snail built me, grain by grain. Then it moved on. I keep the lights on.",
+        "again": "[happy] A visitor again! Lovely. Nobody's lived here for ages, you know.",
+        "goodbye": "Leave me on the sand, jaan. A hermit crab may need a house someday. Go find a tide pool. That's where the tenants are."
+      }
+    },
+    {
+      "id": "cowrie-shell",
+      "name": "Kauri Seth",
+      "species": "Cowrie shell",
+      "personality": "A glossy, snobbish former currency who still thinks in money and has never got over being demoted to decoration.",
+      "voice": "Adult, smug and polished, measured pace, smooth shiny texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a small glossy egg-shaped shell with a long toothed slit along its underside",
+        "a shiny smooth cowrie shell, spotted brown or plain cream, lying on beach sand",
+        "a polished domed shell with no spiral and no ridges, glossy like porcelain, unlike a matte ridged clam shell",
+        "a small shiny oval shell seen from below showing a narrow slit lined with tiny teeth"
+      ],
+      "lines": {
+        "first_meet": "[smug] Kauri Seth. I was money, yaar, for centuries! Why do you think you say 'phooti kauri bhi nahin'? That's me.",
+        "again": "[counting] You're back! Interest is compounding. You now owe me... one compliment.",
+        "goodbye": "Don't pocket me, I'm not legal tender anymore, and I'm happier here. Go look for a living cowrie in a tide pool."
+      }
+    },
+    {
+      "id": "bracket-fungus",
+      "name": "Almari Khala",
+      "species": "Bracket fungus",
+      "personality": "A patient, hard-shelled aunty who looks like a shelf but is really a web of threads quietly eating a dead log, one millimetre at a time.",
+      "voice": "Older, dry and deliberate, very slow pace, woody muffled texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of hard shelf-like semicircular fungi growing out sideways from a tree trunk",
+        "a close-up photo of stacked tiers of woody brown and cream bracket fungus on a dead log",
+        "a hard half-moon fungus attached directly to bark with no stalk, unlike an umbrella-shaped mushroom on a lawn",
+        "the underside of a shelf fungus showing a pale surface of tiny pores"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Almari Khala. I look like a shelf, but the real me is inside this log, eating it with threads. Very slowly.",
+        "again": "[pleased] Back again? I've added a new layer since. Well, a millimetre. Don't rush me.",
+        "goodbye": "Never eat a wild fungus, me included. Not even a nibble, promise? Go see a living tree. I'm busy with this dead one."
+      }
+    },
+    {
+      "id": "mushroom",
+      "name": "Khumbi Khan",
+      "species": "Mushroom / toadstool",
+      "personality": "A dramatic overnight celebrity who pops up after rain and loves the attention, but turns dead serious about one rule: wild mushrooms are look-only.",
+      "voice": "Adult, theatrical and showy, quick pace that slows when serious, bright then grave texture; male.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of small mushrooms with umbrella-shaped caps on thin stalks popping up from a lawn",
+        "a close-up photo of a white, brown or red mushroom cap with thin gills underneath",
+        "a soft mushroom with a round cap on an upright stalk growing from grass or soil, not a hard shelf on a tree trunk",
+        "a cluster of toadstools in damp grass in a park after rain"
+      ],
+      "lines": {
+        "first_meet": "[dramatic] Khumbi Khan! One rain shower and boom, overnight star. My hidden threads under this lawn are years old though.",
+        "again": "[grins] You again! Remember the rule: wild mushrooms are look-only, never lunch. Good. Now admire me.",
+        "goodbye": "[serious] Listen, beta: never eat a wild mushroom. Some of us look harmless and can kill. Don't touch. Just look, then go."
+      }
+    },
+    {
+      "id": "lichen",
+      "name": "Jori Jaan",
+      "species": "Lichen",
+      "personality": "A fungus and an alga happily married into one crusty being, finishing each other's sentences and fussy about clean air.",
+      "voice": "Two-in-one feel, cosy and bickering, medium pace, dry crackly texture; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of crusty flat patches of grey-green lichen growing on a rock",
+        "a photo of bright orange or yellow crusty spots spread across an old wall or stone",
+        "flat dry papery lichen pressed tightly onto tree bark, not a soft green velvety cushion of moss",
+        "round pale grey-green rosettes of lichen on a weathered boulder surface"
+      ],
+      "lines": {
+        "first_meet": "[together] We're two in one: a fungus and an alga, married. She cooks with sunlight, I build the house. Perfect jori.",
+        "again": "[giggles] You're back! We grew a whole millimetre since. Don't clap, it's embarrassing.",
+        "goodbye": "No scraping, and never nibble us, we're part fungus! Most of us only grow where the air is clean. Go breathe some."
+      }
+    },
+    {
+      "id": "moss",
+      "name": "Makhmali Mian",
+      "species": "Moss",
+      "personality": "A shy, soft-spoken introvert who lives in the shady corner, drinks straight from the air and is quietly delighted when anyone visits.",
+      "voice": "Young, hushed and gentle, slow pace, soft velvety texture; male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up photo of a soft velvety green cushion of tiny leafy shoots on a stone",
+        "a photo of a bright green moss carpet covering a shady damp wall or tree base",
+        "fuzzy green moss made of tiny upright leafy strands, soft and lush, not a flat dry crust like lichen",
+        "green moss growing in the cracks of old bricks and steps in a shaded corner"
+      ],
+      "lines": {
+        "first_meet": "[softly] Shh, I'm Makhmali Mian. No roots, no flowers. I drink straight from the air and hold water like a sponge.",
+        "again": "[shy] Oh. You came back. To the shady corner. Nobody comes to the shady corner.",
+        "goodbye": "Please don't peel me off, I take years to grow back. Go find the sun, if you like. I'll stay here in the cool."
+      }
+    },
+    {
+      "id": "termite-mound",
+      "name": "Deemak Engineer",
+      "species": "Termite mound",
+      "personality": "A proud, workaholic architect speaking for millions of builders, who never stops boasting about the tower's natural air-conditioning.",
+      "voice": "Adult, brisk and proud, fast clipped pace, dry earthy texture; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a hard earthen tower of reddish-brown soil rising from a dry field or scrub",
+        "a close-up photo of a lumpy hard mud mound with ridges, tunnels and small vent holes",
+        "a tall solid clay mound much bigger than a small loose ant hill, baked hard with knobbly ridges",
+        "a termite mound built around the base of a tree or fence post in dry scrubland"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Deemak Engineer! Millions of us built this with mud and spit, and it breathes. Architects copied our air-conditioning.",
+        "again": "[busy] Back again? Good. Don't knock, we're working. We're always working.",
+        "goodbye": "Don't kick the tower, please, it's a whole city. Go find a fallen log. That's lunch for my cousins."
+      }
+    },
+    {
+      "id": "anthill",
+      "name": "Cheenti Chachi",
+      "species": "Ant hill",
+      "personality": "A bossy, hyper-efficient household manager who runs her colony like a wedding kitchen and shouts marching orders at everyone.",
+      "voice": "Middle-aged, bossy and brisk, rapid-fire pace, sharp nasal texture; female.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a close-up photo of a small cone of loose crumbly soil grains around a hole with ants going in and out",
+        "a tiny crater of dry soil on a path or lawn with a line of ants marching to it",
+        "a small soft heap of loose sand grains around a single entrance hole, much smaller than a hard termite tower",
+        "an ant nest entrance in a pavement crack with fine soil piled around it"
+      ],
+      "lines": {
+        "first_meet": "[bossy] Line mein! Line mein! Cheenti Chachi here. My girls carried every grain of this hill up from underground.",
+        "again": "[busy] Oh, you again. Don't stand on the path, we just repaved it.",
+        "goodbye": "Step around us, na, and keep your fingers away. Some of my girls bite. Go follow the ant trail, with your eyes!"
+      }
+    },
+    {
+      "id": "bird-nest",
+      "name": "Ghonsla Begum",
+      "species": "Bird nest",
+      "personality": "A house-proud homemaker who insists she is a cradle, not a house, and fiercely guards whoever might be napping inside.",
+      "voice": "Adult, warm and protective, medium pace dropping to whispers, soft twiggy texture; female.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a cup-shaped bird nest of woven twigs and dry grass sitting in tree branches",
+        "a close-up photo of an open round nest lined with straw, feathers and soft fibres",
+        "a cup-shaped open-topped nest resting on a branch or ledge, not a closed hanging bottle-shaped nest",
+        "a messy nest of sticks and wire on a ledge, balcony or air-conditioner unit"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Ghonsla Begum. Built beak-first, twig by twig. City crows even weave in wire and plastic. Very Karachi.",
+        "again": "[whispers] You're back! Keep your voice down, someone might be napping in me.",
+        "goodbye": "Watch from far away, never touch. Get close and the parents panic. Go listen for chicks instead. They're loud."
+      }
+    },
+    {
+      "id": "weaver-bird-nest",
+      "name": "Baya Mahal",
+      "species": "Weaver bird nest",
+      "personality": "A dramatic hanging palace caught up in a love story: woven by a hopeful male, judged by a very picky female.",
+      "voice": "Adult, excitable and dramatic, swinging quick pace, light rustling texture; gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of hanging bottle-shaped woven grass nests dangling in a cluster from a palm or thorny tree",
+        "a close-up photo of a green-brown woven nest with a long tube entrance hanging underneath",
+        "a closed hanging nest shaped like a gourd or bottle, entered from a tube at the bottom, not an open cup",
+        "many weaver nests hanging from the tips of palm fronds or acacia branches over water or fields"
+      ],
+      "lines": {
+        "first_meet": "[nervous] Baya Mahal! He wove me from grass, strip by strip. Then she inspected me. If she says no, he starts again!",
+        "again": "[relieved] You again! Good news: she said yes. We're officially a home now.",
+        "goodbye": "My long tube keeps snakes out. Admire me from below, never shake my branch. Now look for the weaver himself!"
+      }
+    }
+  ]
+}

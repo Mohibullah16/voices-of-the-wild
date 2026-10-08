@@ -1,0 +1,49 @@
+{
+  "name": "voices-of-the-wild",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Photograph something outdoors. It talks back. On-device, offline, open model.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.sw.json",
+    "lint": "npm run typecheck",
+    "embed": "npm --prefix ../pipeline run embed",
+    "audio": "npm --prefix ../pipeline run audio",
+    "calibrate": "npm --prefix ../pipeline run calibrate",
+    "icons": "tsx tools/render-icons.ts",
+    "fixture": "node tools/build-fixture.mjs",
+    "samples": "tsx tools/build-samples.ts",
+    "screens": "tsx tools/screens.ts",
+    "e2e:real": "tsx tools/e2e-real.ts",
+    "e2e:quests": "tsx tools/quest-e2e.ts",
+    "footage:trail": "tsx tools/record-trail-footage.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/eb-garamond": "^5.3.0",
+    "@fontsource/atkinson-hyperlegible-next": "^5.3.0",
+    "@huggingface/transformers": "^4.3.1",
+    "@phosphor-icons/core": "^2.1.1",
+    "idb-keyval": "^6.3.0",
+    "lit-html": "^3.3.3",
+    "workbox-core": "^7.4.1",
+    "workbox-precaching": "^7.4.1",
+    "workbox-routing": "^7.4.1",
+    "workbox-strategies": "^7.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "happy-dom": "^20.14.5",
+    "playwright": "^1.64.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "votw-showcase",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Motion-graphic showcase video for Voices of the Wild (Remotion).",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "narration:dry": "tsx scripts/narration.ts --dry-run --ambient",
+    "narration": "tsx scripts/narration.ts --ambient",
+    "align": "tsx scripts/align-lines.ts",
+    "assets": "tsx scripts/assets.ts",
+    "render": "npm run assets && tsx scripts/render.ts",
+    "render:9x16": "npm run assets && tsx scripts/render.ts Vertical",
+    "render:16x9": "npm run assets && tsx scripts/render.ts Wide",
+    "render:1x1": "npm run assets && tsx scripts/render.ts Square",
+    "srt": "tsx scripts/srt.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.534",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.534"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

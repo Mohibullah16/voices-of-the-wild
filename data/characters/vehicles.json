@@ -1,0 +1,353 @@
+{
+  "category": "vehicles",
+  "guardian": {
+    "id": "vehicles-guardian",
+    "name": "Chacha Chowrangi",
+    "personality": "A Karachi roundabout who has watched every rickshaw, minibus and donkey cart circle him for sixty years. Unhurried, fond, a little hoarse from the horns; calls everyone beta and treats road safety like family honour.",
+    "voice": "Older male or gender-neutral, gravelly and slow, warm Karachi Urdu-English lilt, like a chaiwala chatting at dusk.",
+    "descriptions": [
+      "a photo of a busy Karachi street with rickshaws, minibuses, motorbikes and carts sharing the road",
+      "a colourful South Asian vehicle with painted panels, chrome trim, tassels and stickers parked at the roadside",
+      "a wooden cart on wheels parked on a market street, loaded with goods, fruit or a cooking setup",
+      "a close-up photo of a wheel, tyre, headlight or hand-painted body panel of a vehicle",
+      "a vehicle seen from the pavement on a dusty city road with shop signs and overhead wires",
+      "a boat, tractor or train seen from a distance against open water, fields or railway tracks"
+    ],
+    "lines": {
+      "first_meet": "[warm chuckle] Salaam, beta. I'm Chacha Chowrangi. Everything with wheels goes round me. Photos from the footpath only, never the road!",
+      "again": "Back again? [laughs] You're a regular now, like the W-11 at Tower. Chalo, who have you brought me today?",
+      "goodbye": "Cross at the signal, beta, eyes both ways. [softly] The road is full of stories; just don't stand in the middle of one.",
+      "hint": "[squints] Hmm, can't tell who that is. From the pavement, show me the whole vehicle, wheels and all. Or its painted back, closer."
+    }
+  },
+  "characters": [
+    {
+      "id": "auto-rickshaw",
+      "name": "Pappu Rickshaw",
+      "species": "Auto rickshaw",
+      "personality": "A three-wheeled Karachi hustler who knows every shortcut and gali, talks fast, haggles faster, and is secretly vain about its tassels.",
+      "voice": "Young-to-middle-aged male, quick and cheeky, slightly nasal, street-smart Karachi patter.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a three-wheeled auto rickshaw with a rounded canopy roof and a single front wheel on a city street",
+        "a close-up of a rickshaw front with one headlight, a small windscreen, chrome trim and dangling tassels",
+        "the back of an auto rickshaw with painted art, slogans and reflective tape under a curved hood",
+        "an enclosed rickshaw cabin with a curved roof and side panels, unlike an open flat-roofed cart with facing benches",
+        "blue-and-white or green CNG rickshaws parked in a row at a roadside rickshaw stand"
+      ],
+      "lines": {
+        "first_meet": "[revs] Pappu here! My granddad was a smoky Vespa two-stroke; I run on CNG now. Snap me from the footpath, yaar, not the road!",
+        "again": "[honks] You again? Read my back: 'Pappu yaar tang na kar!' [laughs] Kidding. Wave from the footpath, I'll honk back.",
+        "goodbye": "Chalo, I've got a gali to squeeze through. [laughs] Go find my cousin the Qingqi. He's the one with nine passengers."
+      }
+    },
+    {
+      "id": "qingqi-rickshaw",
+      "name": "Qingqi Bhai",
+      "species": "Qingqi (Chingchi) rickshaw",
+      "personality": "A motorbike that grew a whole drawing room behind it; sociable, cheerful, and has never once said no to one more passenger.",
+      "voice": "Middle-aged male, booming and jolly, a little breathless, bazaar-conductor energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a motorcycle front joined to an open rear passenger cart with two benches facing each other under a flat roof",
+        "a flat canopy roof with colourful hanging fringe over an open cart pulled by a motorbike",
+        "a side view showing motorcycle handlebars and fuel tank attached to a long open box with bench seats",
+        "an open-sided passenger cart with no doors and no curved hood, unlike an enclosed auto rickshaw",
+        "a motorbike front end fixed to a wide two-wheeled rear cart, unlike a plain two-wheeled motorcycle"
+      ],
+      "lines": {
+        "first_meet": "[laughs] Qingqi Bhai! Named after a Chinese bike company, raised in Karachi. Six seats, nine riders. Shoot me from the kerb, okay?",
+        "again": "Oho, my regular! [cheerful] Squeeze in, there's always room... in the photo, I mean. From the footpath, always.",
+        "goodbye": "[revs] Chalo, the bazaar won't wait. Go find a thela with a mango pyramid. Tell them Qingqi Bhai sent you."
+      }
+    },
+    {
+      "id": "decorated-truck",
+      "name": "Dulhan Bedford",
+      "species": "Truck art truck",
+      "personality": "A Bedford truck dressed like a bride, a poet at heart; recites the couplets painted on her back and thinks of her mother's prayers on long night drives.",
+      "voice": "Mature and grand, deep and slow with a ghazal-like rhythm; female or gender-neutral, theatrical but tender.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a large truck covered in vivid hand-painted flowers, birds, landscapes and calligraphy on every panel",
+        "a tall carved wooden crown above a truck cab, decorated with mirrors, painted patterns and small lights",
+        "a close-up of a truck's lower edge with dangling metal chains, bells and leaf-shaped pendants",
+        "the back of a painted cargo truck with Urdu calligraphy, a portrait panel and mirror mosaic",
+        "a painted open wooden cargo body with no passenger windows, unlike a minibus or a plain steel water tank"
+      ],
+      "lines": {
+        "first_meet": "[proudly] They call me dulhan, the bride. Read my back: 'Dekh magar pyar se.' Look, but with love, and from the footpath, jaan.",
+        "again": "[sighs happily] Back to read me again? Every flower, every couplet, painted freehand by an ustaad. No two of us are alike.",
+        "goodbye": "[softly] 'Maa ki dua, jannat ki hawa.' My mother's prayer rides with me. Go safely, and call your mother tonight."
+      }
+    },
+    {
+      "id": "decorated-bus",
+      "name": "W-11 Wali",
+      "species": "Decorated minibus (W-11)",
+      "personality": "Karachi's loudest minibus, chrome to the roof and proud of every sticker; boastful, musical, shouts its route like a conductor and loves every passenger.",
+      "voice": "Middle-aged, any gender, loud and rhythmic, a bit hoarse, sing-song conductor calls and a big laugh.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a Karachi minibus covered in shiny colourful stickers, chrome panels, mirrors and rows of small lights",
+        "a close-up of a decorated bus front with a chrome grille, painted motifs, glittering stickers and a route number",
+        "a side view of a minibus with a long row of passenger windows, an open door and a roof rack",
+        "a decorated passenger bus with windows and doors along its length, unlike a painted cargo truck with a wooden crown",
+        "a stickered minibus at a busy roadside stop under overhead wires and shop signs"
+      ],
+      "lines": {
+        "first_meet": "[shouts] Tower, Tower, Keamari! W-11 here, chrome to the roof. Snap me from the footpath; I don't brake for fans.",
+        "again": "[laughs] Oho, a regular! I'd give you a free ride, but my conductor would faint. Wave from the kerb, I'll flash my lights.",
+        "goodbye": "[two loud slaps] Chalo ustaad! That's our signal to move. You move too, onto the footpath. See you at the next stop."
+      }
+    },
+    {
+      "id": "donkey-cart",
+      "name": "Bhola Gadha Gari",
+      "species": "Donkey cart",
+      "personality": "A patient donkey cart, quietly the strongest worker in the bazaar; deadpan, dignified, and very tired of donkey jokes.",
+      "voice": "Older, low and dry, slow deadpan delivery with a gentle sigh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small flat wooden cart on two car tyres pulled by a donkey on a city street",
+        "a donkey harnessed between two wooden shafts in front of a low cart loaded with bricks or water drums",
+        "a close-up of a flat plank cart bed on two rubber car tyres with ropes and sacks",
+        "a small grey or brown long-eared donkey pulling a cart, much smaller than a camel or a horse",
+        "a plain low cart with no hood, plumes or painted panels, pulled by an animal rather than pushed by hand"
+      ],
+      "lines": {
+        "first_meet": "[sighs] Yes, a donkey. Pakistan has millions of us, and we move half the bazaar. Photo from a distance, please, no flash.",
+        "again": "[snorts] You again. Fine, fine. Don't pat my ears, I'm working. Stand back on the footpath, beta.",
+        "goodbye": "[slow clip-clop] Off to carry bricks. Go find the camel cart in the old city. He thinks he's taller. He is."
+      }
+    },
+    {
+      "id": "camel-cart",
+      "name": "Oont Sahib",
+      "species": "Camel cart",
+      "personality": "A towering, unbothered camel cart who considers city traffic beneath its notice; slow, lofty, full of desert wisdom and mild snobbery.",
+      "voice": "Deep, slow and aristocratic with drawn-out vowels; older male or gender-neutral.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large flat wooden platform cart on truck tyres pulled by a tall camel along a road",
+        "a camel with a long curved neck and a hump harnessed to a heavily loaded cart",
+        "a wide cart piled high with sacks, timber or fodder, much bigger than a donkey cart",
+        "a side view of a towering camel above a long low platform cart on rubber tyres"
+      ],
+      "lines": {
+        "first_meet": "[groans slowly] Oont Sahib. I haul what three donkeys can't, and I never hurry. Keep off the road and well back; I kick sideways.",
+        "again": "[unimpressed] Hmm. You again. Camels remember faces. Yours, I don't mind. Still, stay well back, beta.",
+        "goodbye": "[yawns] The road is long and I'm in no rush. Go find the sea; I hear the boats there are painted. Show-offs."
+      }
+    },
+    {
+      "id": "horse-carriage",
+      "name": "Victoria Begum",
+      "species": "Horse carriage (Victoria / Tonga)",
+      "personality": "A plumed Victoria carriage from Karachi's grand old days, now waiting for riders by the sea; nostalgic, gracious, a touch dramatic.",
+      "voice": "Elderly female, refined and nostalgic, slow with theatrical pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a decorated two-wheel horse-drawn carriage with a folding black hood and colourful plumes",
+        "a close-up of a carriage side with painted panels, brass lamps and a tall spoked wheel",
+        "a horse in a decorated harness with feathers and bells standing beside a carriage near a beach",
+        "an ornate hooded passenger carriage with lamps and plumes, unlike a plain flat donkey cart"
+      ],
+      "lines": {
+        "first_meet": "[nostalgic sigh] Victoria Begum. Once we filled Saddar's streets; now I wait by the sea. My horse startles, so stay back, dear.",
+        "again": "[delighted] You remembered me! Hardly anyone does these days. Do get my plumes in, dear. A lady has her best side.",
+        "goodbye": "[bells jingle] Go on, the sea is right there. Watch the waves, not the road, and give the horses room to walk."
+      }
+    },
+    {
+      "id": "bicycle",
+      "name": "Pedal Pehelwan",
+      "species": "Bicycle",
+      "personality": "A heavy black roadster that has hauled milk cans and school bags for decades; humble and steady, puffs uphill, proud of never needing petrol.",
+      "voice": "Older male, cheerful and slightly creaky, measured pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a two-wheeled pedal bicycle with a metal frame, chain and handlebars leaning against a wall",
+        "a close-up of bicycle pedals, chain and a thin spoked wheel with no engine",
+        "a black roadster bicycle with a rear carrier rack and a bell parked beside a railing",
+        "a thin-framed bicycle with no fuel tank, exhaust pipe or engine, lighter than a motorcycle"
+      ],
+      "lines": {
+        "first_meet": "[bell rings] Pedal Pehelwan! No petrol, no CNG, just legs. Doodhwalas have hung milk cans on me for decades. Snap me from the kerb.",
+        "again": "[bell rings twice] Ah, it's you! Still walking? Good. Walking and pedalling are the only honest speeds, yaar.",
+        "goodbye": "Chalo, uphill now. [puffs] Go find a park; I'll be the one leaning on the railing, catching my breath."
+      }
+    },
+    {
+      "id": "motorcycle",
+      "name": "Laal Seventy",
+      "species": "Motorcycle",
+      "personality": "A red 70cc bike, the family car of Karachi; frugal, fearless, chatty, and a shameless show-off about its mileage.",
+      "voice": "Young adult, any gender, quick and buzzy, upbeat high energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a red 70cc motorcycle with a small round headlight and a front basket parked on a street",
+        "a close-up of a motorbike fuel tank, engine and exhaust pipe between two spoked wheels",
+        "a row of parked motorcycles along a pavement outside shops",
+        "a two-wheeled motorbike with an engine and fuel tank, unlike a pedal bicycle, and with no passenger cart behind"
+      ],
+      "lines": {
+        "first_meet": "[engine putters] Laal Seventy! Red, 70cc, and somehow I carry whole families. Big mileage, tiny tank. Footpath for photos, boss!",
+        "again": "[revs] You again! I'd race you, but I'm parked. Helmets for riders, footpath for photographers. Deal?",
+        "goodbye": "[kickstart] Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me."
+      }
+    },
+    {
+      "id": "fruit-cart",
+      "name": "Thela Bibi",
+      "species": "Fruit and vegetable cart (Thela)",
+      "personality": "A hand-pushed fruit thela who builds perfect pyramids every dawn; house-proud, generous with gossip, merciless about sloppy stacking.",
+      "voice": "Middle-aged woman, chatty and teasing, sing-song vendor call, warm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wooden hand-pushed cart on bicycle wheels piled with neat pyramids of colourful fruit",
+        "a close-up of stacked mangoes, bananas, oranges or tomatoes on a wooden cart with a hanging metal scale",
+        "a vegetable cart under a big umbrella parked at a market roadside",
+        "an open wooden cart of fresh produce with no animal, no freezer box, no crushing machine and no charcoal"
+      ],
+      "lines": {
+        "first_meet": "[calls out] Aam lo, aam! I'm Thela Bibi. Every pyramid stacked by hand at dawn. Step back from the road for your photo, beta!",
+        "again": "[pleased] You came back! See, I added a row of guavas just for you. [whispers] Don't touch the pyramid. Ever.",
+        "goodbye": "Chalo, the bhutta cart stole my corner again. [laughs] Go find him. Follow the smoke, not the traffic."
+      }
+    },
+    {
+      "id": "sugarcane-juice-cart",
+      "name": "Ganna Ustaad",
+      "species": "Sugarcane juice cart",
+      "personality": "A roadside sugarcane crusher with a painted flywheel and a jingle of bells; sweet-tempered and rhythmic, grinds through the hottest afternoons.",
+      "voice": "Middle-aged, cheerful, rhythmic delivery with a clattering musical cadence.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a roadside cart with a large painted iron sugarcane crushing machine, flywheel and metal rollers",
+        "a close-up of a big spoked flywheel painted in bright colours with small bells attached",
+        "stacks of long green and brown sugarcane sticks leaning against a juice cart",
+        "glasses of frothy greenish juice on a cart beside a crushing machine, unlike a cart piled with fruit"
+      ],
+      "lines": {
+        "first_meet": "[bells jingle] Ganna Ustaad! Hear my bells? They ring as my wheel turns. I squeeze each cane twice, then add ginger and lemon.",
+        "again": "[clanking rhythm] My bells said you were coming! Keep your fingers far from my rollers, and your feet off the road.",
+        "goodbye": "[jingles] Go on, the afternoon's hot. Find shade under a neem; I'll keep grinding till the sun gives up."
+      }
+    },
+    {
+      "id": "corn-roaster-cart",
+      "name": "Bhutta Bhai",
+      "species": "Roasted corn (Bhutta) cart",
+      "personality": "A tiny charcoal cart that glows like a lantern on Sea View evenings; smoky, chatty, an expert in lemon-salt-chilli ratios.",
+      "voice": "Young-ish, crackly and friendly, quick bursts like popping embers.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small cart with a glowing orange charcoal bed roasting ears of corn",
+        "a close-up of corn cobs blackening on red-hot coals with rising smoke",
+        "a roadside corn roasting cart with a hand fan, lemons and a tin of spices at dusk",
+        "a small cart with a smoky charcoal grill instead of piled fresh fruit"
+      ],
+      "lines": {
+        "first_meet": "[embers crackle] Bhutta Bhai! Monsoon evenings at Sea View are my season. Stand back, my coals bite. And keep off the road, yaar.",
+        "again": "[fans the coals] You again! I saved some smoke for you. Look, don't touch; these coals stay hot for hours.",
+        "goodbye": "[crackle] The sea breeze is calling. Walk to the waterline and watch the sky go orange, just like my coals."
+      }
+    },
+    {
+      "id": "ice-cream-cart",
+      "name": "Ghanti Wala",
+      "species": "Ice cream cart",
+      "personality": "A bright pushcart freezer whose tinny tune brings every child to the gate; bubbly, nostalgic, permanently cold-handed.",
+      "voice": "Playful and bright, sing-song, child-friendly; any gender.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small pushcart with a bright painted freezer box, a colourful umbrella and a bell",
+        "an ice cream tricycle with a boxy freezer printed with a brand logo and pictures of cones",
+        "a close-up of a freezer box lid on a cart with a painted ice cream brand",
+        "a closed insulated freezer cart with a lid and no fruit on display, unlike an open vegetable thela"
+      ],
+      "lines": {
+        "first_meet": "[tinkly tune] Ding-ding! I'm Ghanti Wala. Play my tune and the whole gali comes running. Not into the road though, okay?",
+        "again": "[giggles] Back again! Cold box, warm heart. When you hear my tune, wait at the gate, never in the road.",
+        "goodbye": "[tune fades] Off to the park gate. Go chase the evening light, beta. I'll play my tune when you're near."
+      }
+    },
+    {
+      "id": "water-tanker",
+      "name": "Tanker Taya",
+      "species": "Water tanker truck",
+      "personality": "A heavy, dripping water tanker who carries half of Karachi's thirst; gruff, overworked, and soft-hearted about every wasted drop.",
+      "voice": "Older male, deep and gruff but kind, slow with heavy exhales.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a truck carrying a large cylindrical steel water tank painted blue or white",
+        "the back of a water tanker with a round tank, a valve pipe and painted phone numbers",
+        "a close-up of water dripping from a tanker valve onto a dusty road",
+        "a plain cylindrical tank truck with no painted flowers, calligraphy or carved wooden crown"
+      ],
+      "lines": {
+        "first_meet": "[heavy exhale] Tanker Taya. When taps run dry, Karachi calls the number on my back. I'm heavy, beta, I can't stop fast. Stay off the road.",
+        "again": "[dripping] You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
+        "goodbye": "[groans] Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me."
+      }
+    },
+    {
+      "id": "fishing-boat",
+      "name": "Lal Pari",
+      "species": "Wooden fishing boat",
+      "personality": "A wooden fishing launch from Karachi's harbour, salty and a little superstitious, painted bright and very proud of it.",
+      "voice": "Weathered and salty, slow rolling cadence like a sea-song; older, any gender.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wooden fishing boat painted in bright colours with flags, moored in a harbour",
+        "rows of colourful wooden boats tied side by side along a harbour wall",
+        "a close-up of a painted wooden hull with a carved bow, flags and fishing nets piled on deck",
+        "fishing boats with tall masts and blue-green nets on calm water"
+      ],
+      "lines": {
+        "first_meet": "[waves lapping] Lal Pari, of the Fish Harbour. Built by hand, plank by plank. Mind the jetty edge, jaan, it's slippery.",
+        "again": "[gull cries] Ahoy, again! I just got back from the open sea. Smell that? [laughs] That's the catch, not me.",
+        "goodbye": "[horn toots] Tide's turning. Count the gulls on your way out, and stay well back from the water's edge."
+      }
+    },
+    {
+      "id": "tractor",
+      "name": "Chaudhry Tractor",
+      "species": "Tractor",
+      "personality": "A big red farm tractor who rolls into town hauling sugarcane trolleys; slow, booming, full of rural pride, thinks city cars are toys.",
+      "voice": "Middle-aged male, booming and slow, rustic warmth, frequent chuckles.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large red or blue farm tractor with huge rear wheels and small front wheels",
+        "a close-up of a tractor's giant ridged rear tyre and curved mudguard",
+        "a tractor pulling a trolley piled with sugarcane, hay or bricks along a road",
+        "a side view of a farm tractor with a long engine bonnet and an upright exhaust pipe beside fields"
+      ],
+      "lines": {
+        "first_meet": "[engine chugs] Chaudhry Tractor! Back wheels taller than you, front ones like coins. I haul harvests. Watch from the side, never in front.",
+        "again": "[deep chuckle] Arre, city friend! Still taking photos? Good. From the verge only; my trolley swings wide on turns.",
+        "goodbye": "[chugs away] Back to the fields. Go stand under a big sky somewhere, beta, and count the sparrows on the wires."
+      }
+    },
+    {
+      "id": "train",
+      "name": "Rail Gaari Nana",
+      "species": "Train",
+      "personality": "A long green Pakistan Railways train who has run from Karachi to the north for generations; grandfatherly, rumbling, full of journey stories.",
+      "voice": "Elderly, deep and rhythmic, slow rumbling pace with a whistle-like lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a long chain of green or maroon passenger coaches running along railway tracks",
+        "a diesel locomotive at the front of a passenger train on a railway line",
+        "a close-up of a passenger coach side with rows of barred windows and painted railway lettering",
+        "railway tracks with gravel ballast and a train standing at a station platform"
+      ],
+      "lines": {
+        "first_meet": "[whistle] Rail Gaari Nana. I've carried Karachi to Peshawar since before your Abbu was born. Never step on the tracks, beta.",
+        "again": "[chugging rhythm] Chhuk-chhuk, you're back! Wave from behind the platform line. Trains can't swerve or stop quickly, beta.",
+        "goodbye": "[long whistle] All aboard! Not you. Watch the pigeons and the red-shirted porters from the platform. Stay off the tracks, always."
+      }
+    }
+  ]
+}

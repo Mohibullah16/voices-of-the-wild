@@ -1,0 +1,11 @@
+{
+  "name": "voices-of-the-wild-pitch",
+  "private": true,
+  "type": "module",
+  "description": "Pitch deck. Uses the app's node_modules (tsx, playwright, fonts, icons); nothing to install here.",
+  "scripts": {
+    "build": "node ../app/node_modules/tsx/dist/cli.mjs tools/build.ts",
+    "export": "node ../app/node_modules/tsx/dist/cli.mjs tools/export.ts",
+    "all": "npm run build && npm run export"
+  }
+}

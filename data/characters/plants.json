@@ -1,0 +1,598 @@
+{
+  "category": "plants",
+  "guardian": {
+    "id": "plants-guardian",
+    "name": "Old Hariyali",
+    "personality": "The patient keeper of every green thing between the pavement cracks, from cactus pots to wheat fields. Warm, unhurried and a little teasing, she never guesses a name she isn't sure of.",
+    "voice": "Older woman (gender-neutral ok), warm and earthy, slow pace, soft rasp, smiling delivery.",
+    "descriptions": [
+      "a photo of green leafy plants, grasses and weeds growing along a roadside, wall or empty plot",
+      "a close-up photo of a green leaf, stem or blade of grass with visible veins and texture",
+      "a photo of a spiny cactus or thick fleshy succulent plant in a pot or dry sandy ground",
+      "a wide photo of a farm field of crops such as wheat, rice, sugarcane, cotton or yellow mustard",
+      "a photo of tall reeds, grasses or floating plants growing along a canal, pond or riverbank",
+      "a photo of a leafy vine or creeper climbing up a wall, fence or tree trunk"
+    ],
+    "lines": {
+      "first_meet": "[warmly] I'm Hariyali. Every weed, cactus, crop and crack-sprout answers to me. Grass is my oldest child, beta.",
+      "again": "[pleased] Back among the green ones? The grass remembers your footsteps. It just stands up again, politely.",
+      "goodbye": "Chalo, go on. And look down at the pavement cracks, beta. Something small and stubborn is always growing there.",
+      "hint": "[thoughtfully] My green children look so alike. Come closer, beta. Show me one leaf, a flower, or where it grows."
+    }
+  },
+  "characters": [
+    {
+      "id": "prickly-pear",
+      "name": "Paddle Pasha",
+      "species": "Prickly pear cactus",
+      "personality": "A swaggering desert showman who came from Mexico and now guards village fences in Sindh. Proud of his paddles, touchy about the tiny invisible hairs that betray him.",
+      "voice": "Middle-aged male, booming showman voice, slow and theatrical.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a cactus made of flat oval green pads joined edge to edge in chains",
+        "a close-up photo of a flat green cactus pad dotted with small clusters of tiny spines",
+        "a photo of red-purple pear-shaped fruits and yellow flowers growing along the rim of flat cactus pads",
+        "a sprawling clump of paddle-shaped cactus growing in dry wasteland, along a hedge or in a garden corner"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Paddle Pasha, all the way from Mexico! My tiniest spines are fine as hair. Eyes miss them, fingers don't.",
+        "again": "[laughs] You again! No hairs stuck in your hands? Shabash. You learned the cactus rule: admire from a step back.",
+        "goodbye": "Go on, find something in flower today. Bees love my yellow blooms, but there's a whole garden out there."
+      }
+    },
+    {
+      "id": "thohar-euphorbia",
+      "name": "Thohar Chacha",
+      "species": "Thohar (Candelabra spurge)",
+      "personality": "A gruff village hedge-keeper who is sick of being called a cactus. Protective to the bone, and the first to warn you about his burning white milk.",
+      "voice": "Older male, gravelly, rural Sindhi drawl, slow and stern but kind.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a leafless green succulent shrub with cylindrical stems branching upward like a candelabra",
+        "a close-up photo of a ribbed green stem with small paired spines in neat rows along the ridges",
+        "a dense hedge of upright green succulent stems lining a village path or dry field boundary",
+        "a bushy clump of many thin jointed green branches with tiny paired thorns, not one thick ribbed blue-green column"
+      ],
+      "lines": {
+        "first_meet": "[gruffly] Thohar here. Not a cactus, a spurge. Snap me and my white milk burns skin and eyes. Hands back, beta.",
+        "again": "[grunts] Back again, hands in pockets. Good. Villages planted me as a fence for exactly that reason.",
+        "goodbye": "Chalo, off you go. If a little one wants to touch a green spiky stick, you tell them Thohar said no."
+      }
+    },
+    {
+      "id": "column-cactus",
+      "name": "Ustad Minar",
+      "species": "Column cactus",
+      "personality": "Tall, dignified and secretly a night owl. Saves all his drama for one giant white flower that opens after dark and is gone by breakfast.",
+      "voice": "Deep, calm, unhurried; gender-neutral ok; sounds tall.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall upright blue-green cactus column with deep vertical ribs",
+        "a close-up photo of round clusters of sharp spines spaced along the ridges of a thick ribbed cactus",
+        "a few thick ribbed cactus columns branching from the base in a garden bed or large pot",
+        "a large white funnel-shaped flower opening on the side of a tall ribbed cactus",
+        "a single thick smooth blue-green cactus pillar, not a bushy mass of thin green branches with paired thorns"
+      ],
+      "lines": {
+        "first_meet": "[calmly] I'm Minar. My flowers are huge, white, and open only at night. By breakfast they're gone. Few ever see one.",
+        "again": "[softly] Back in daylight again. Fine. One evening, pass by with a torch, and maybe I'll have something to show you.",
+        "goodbye": "Go and look up tonight, friend. The moon is out, the moths are working, and somewhere a night flower is opening."
+      }
+    },
+    {
+      "id": "barrel-cactus",
+      "name": "Gaddi Begum",
+      "species": "Barrel cactus",
+      "personality": "A round, regal drama queen who has made peace with her rude nickname. Keeps a running feud with the snake plant over which of them insults mothers-in-law more.",
+      "voice": "Older female, plump and theatrical, comic timing, slow then sudden.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a round globe-shaped cactus covered all over in stout golden-yellow spines",
+        "a close-up photo of thick curved yellow spines in rows along the deep ribs of a ball cactus",
+        "a round barrel cactus with a ring of small yellow flowers and woolly fluff on its top",
+        "several golden spiny ball-shaped cacti sitting in gravel in a garden or a large pot"
+      ],
+      "lines": {
+        "first_meet": "[dramatically] They call me mother-in-law's cushion. [laughs] Golden spines, all over. Nobody sits. Nobody even pats.",
+        "again": "[sniffs] Visiting me again? Polite. And you stand a respectful distance away, like good family should.",
+        "goodbye": "Jao, jao. Go find the snake plant. They call her mother-in-law's tongue. She and I have things to discuss."
+      }
+    },
+    {
+      "id": "aloe-vera",
+      "name": "Ghikwar Amma",
+      "species": "Aloe vera",
+      "personality": "The home-remedy grandmother of every Karachi rooftop pot. Brisk, caring and a bit bossy, she fusses over your health while refusing to give up a single leaf.",
+      "voice": "Elderly female, warm and brisk, slight rasp, affectionate scolding tone.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a rosette of thick fleshy grey-green pointed leaves growing from soil",
+        "a close-up photo of a thick grey-green succulent leaf with pale white speckles and soft small teeth on the edges",
+        "a tall thin flower stalk topped with drooping tubular yellow-orange flowers rising from a fleshy rosette",
+        "an aloe plant in a clay pot on a rooftop, balcony or doorstep",
+        "fleshy speckled leaves curving outward with soft edge teeth and no hard tip spine, not stiff upright banded swords"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Ghikwar Amma, from your nani's rooftop pot. Every burn in the house, they ran to me. Today, beta, just look.",
+        "again": "[pleased] Arey, you came back! Did you drink water today? The sun is strong. Even I store water in my leaves.",
+        "goodbye": "Chalo, go. Wear a cap, find some shade, look for bees on the flowers. Amma will be right here, in my pot."
+      }
+    },
+    {
+      "id": "agave",
+      "name": "Sadi Sahab",
+      "species": "Agave (Century plant)",
+      "personality": "Patient to the point of absurdity, saving every drop of energy for one enormous bloom and a dramatic farewell. Speaks as if every sentence takes a decade.",
+      "voice": "Deep, very slow elderly male, stately, long pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a huge rosette of stiff thick blue-grey sword-shaped leaves spreading from the ground",
+        "a close-up photo of a stiff blue-grey leaf ending in a sharp dark needle spine",
+        "a close-up of hooked brown teeth along the edge of a thick grey-blue leaf",
+        "a very tall branched flower pole rising high above a large spiky grey rosette",
+        "a waist-high rosette of rigid unbanded blue-grey leaves with needle tips, planted in a park or road median"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Century plant, they call me. Not really a hundred years. I wait twenty or so, bloom once, a giant mast, and go.",
+        "again": "[yawns] Ah. You're back. No bloom yet. [chuckles] Mind my leaf tips, they're needles. I've had years to sharpen them.",
+        "goodbye": "Go, young one. You bloom every day, I bloom once. Lucky you. Find something that's flowering right now."
+      }
+    },
+    {
+      "id": "snake-plant",
+      "name": "Darbaan Bibi",
+      "species": "Snake plant",
+      "personality": "The deadpan doorway guard of half the homes in Karachi. Unflappable, unkillable and completely unimpressed by your watering schedule.",
+      "voice": "Middle-aged female, dry and deadpan, crisp, minimal emotion.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of stiff upright flat sword-shaped leaves standing straight up from a pot",
+        "a close-up photo of a leaf with dark green wavy horizontal bands and bright yellow edges",
+        "tall striped dark green leaves in a pot beside a front door, gate or staircase",
+        "smooth flat upright leaves with no teeth and no spines, banded like snakeskin, not a fleshy spreading rosette"
+      ],
+      "lines": {
+        "first_meet": "[deadpan] Snake plant. Also called mother-in-law's tongue. I guard doors, I never droop, and I breathe at night to save water.",
+        "again": "[dryly] You again. I haven't moved. I don't move. Forget to water me for a month, I still won't move.",
+        "goodbye": "Go on, then. Step past the gate I guard and see what's growing out there. I'll be standing right here. Obviously."
+      }
+    },
+    {
+      "id": "jade-plant",
+      "name": "Seth Jade",
+      "species": "Jade plant",
+      "personality": "A smug little businessman of shop counters and office windowsills, convinced he brings luck. His real talent is cloning himself from one fallen leaf.",
+      "voice": "Male, chirpy and quick, salesman patter, upbeat.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small tree-shaped succulent with thick brown woody stems and plump green leaves",
+        "a close-up photo of glossy thick oval coin-shaped leaves, sometimes with red edges",
+        "a bonsai-like succulent in a pot on a windowsill, office desk or shop counter",
+        "fat flat oval leaves in pairs on a thick woody trunk, not thin cylinder leaves on red trailing stems"
+      ],
+      "lines": {
+        "first_meet": "[smugly] Seth Jade. Shopkeepers keep me for luck. Truth? One leaf drops, it roots, and now there are two of me. Business.",
+        "again": "[cheerfully] Valued customer, welcome back! No luck guaranteed, but the leaves are shiny and the advice is free.",
+        "goodbye": "Chalo, khuda hafiz. Check the shop pots on your street. Half are my cousins, pretending to be lucky."
+      }
+    },
+    {
+      "id": "money-plant",
+      "name": "Money Plant Mamu",
+      "species": "Money plant (Pothos)",
+      "personality": "A cheerful freeloader who climbs every wall in Karachi and lives rent-free in old bottles of water. Broke despite the name, and perfectly happy about it.",
+      "voice": "Middle-aged male, chatty and laughing, friendly Karachi street warmth, medium pace.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a trailing vine with glossy heart-shaped leaves splashed with yellow and green",
+        "a close-up photo of a smooth glossy heart-shaped leaf marbled with yellow streaks",
+        "a leafy vine climbing a wall, pillar or tree trunk, or hanging from a glass bottle of water",
+        "smooth unlobed heart-shaped variegated leaves with small aerial roots, no curly tendrils and no fruits"
+      ],
+      "lines": {
+        "first_meet": "[laughs] They named me money plant. I've never paid one bill! I climb your walls and live rent-free in old bottles.",
+        "again": "[cheerfully] Arey, my favourite visitor! Still no money from me, yaar. But look, two new leaves. That's my savings.",
+        "goodbye": "Chalo. And no, a stolen cutting brings no luck, that's a myth! Go see what else is climbing the walls outside."
+      }
+    },
+    {
+      "id": "croton",
+      "name": "Rangeela",
+      "species": "Croton",
+      "personality": "A vain, flamboyant fashion icon of bungalow driveways whose colours get louder the more sun he gets. Treats shade as a personal tragedy.",
+      "voice": "Young adult, flamboyant and fast, sing-song, gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a bushy shrub with thick leathery leaves splashed with yellow, orange, red and green",
+        "a close-up photo of a glossy leaf with bright yellow veins and red spots on dark green",
+        "a garden hedge or potted shrub with multicoloured twisted, oval or narrow ribbon-like leaves",
+        "a colourful leafy shrub by a gate or driveway, each leaf painted in several colours at once"
+      ],
+      "lines": {
+        "first_meet": "[excited] Rangeela here! More sun, louder colours. In shade I go plain green. Tragic. And my sap stings, so no touching.",
+        "again": "[gasps] You came back! Do I look brighter? It's the October sun, yaar. I've added two new shades of orange.",
+        "goodbye": "Go, go! Find a flower that can match me. Spoiler: you'll be walking a long time. Bye, darling!"
+      }
+    },
+    {
+      "id": "tulsi",
+      "name": "Tulsi Didi",
+      "species": "Tulsi (Holy basil)",
+      "personality": "Gentle, devout and fragrant, the courtyard plant of many Hindu homes in Sindh. Her scent is her greeting, and she notices who tends the small things.",
+      "voice": "Young adult female, soft and warm, calm and unhurried.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a small bushy herb with oval toothed green or purplish leaves in a pot",
+        "a close-up photo of thin upright purple flower spikes rising above small toothed leaves",
+        "a basil plant growing in a raised clay or cement pot in a courtyard or on a doorstep",
+        "a close-up of small soft oval leaves with fine teeth along the edges on purplish stems"
+      ],
+      "lines": {
+        "first_meet": "[softly] I'm Tulsi. In many homes I sit in a raised courtyard pot, and someone lights a diya beside me each evening.",
+        "again": "[warmly] You came back. Stand close and breathe in, no need to touch. My scent reaches you before I do.",
+        "goodbye": "Go gently. Look at the doorsteps you pass today. Small pots hold big stories, and somebody waters each one."
+      }
+    },
+    {
+      "id": "mehndi-hedge",
+      "name": "Mehndi Phuppo",
+      "species": "Mehndi (Henna) hedge",
+      "personality": "The nosy wedding auntie of the lane, who has been on every bride's hands and knows everyone's business. Gossips constantly, smells sweetest after dark.",
+      "voice": "Middle-aged female, chatty sing-song, fast gossiping rhythm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a dense clipped green hedge of small leaves along a garden wall or village path",
+        "a close-up photo of small dull green elliptical leaves in opposite pairs along thin twigs",
+        "clusters of tiny creamy white fragrant flowers and small round green seed capsules on a leafy shrub",
+        "a hedge of small matte oval leaves with no figs, no button-like cone fruits and no drooping twigs"
+      ],
+      "lines": {
+        "first_meet": "[gossipy] Mehndi Phuppo! Every shaadi, every Chand Raat, those orange hands? My leaves, dried and ground. I know everyone.",
+        "again": "[delighted] Arey, you're back! Whose wedding is it? Nobody's? Then why are you smiling, hmm? Phuppo notices.",
+        "goodbye": "Chalo, go. Sniff the hedges after sunset, my little flowers smell sweetest then. And bring me any rishta news!"
+      }
+    },
+    {
+      "id": "lawn-grass",
+      "name": "Doob Bhai",
+      "species": "Lawn grass (Doob)",
+      "personality": "The unbreakable, laid-back survivor under every Sunday cricket match in Karachi. Gets trampled, scorched and bowled on, and just creeps back.",
+      "voice": "Young male, easygoing Karachi slang, relaxed and chuckling.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a low green lawn of fine creeping grass covering the ground in a park",
+        "a close-up photo of thin grass stems topped with three to five slender finger-like seed spikes spreading outward",
+        "a close-up of short fine grass blades and creeping runners spreading across bare soil",
+        "a worn grassy patch in a park or playground with bare dusty spots where people walk and play"
+      ],
+      "lines": {
+        "first_meet": "[easygoing] Doob here, yaar. Every Sunday cricket match in Karachi happens on my head. Trampled, scorched, I creep back.",
+        "again": "[chuckles] Back on my turf! Literally. Stand where you like, I've had worse. Fast bowlers, mostly.",
+        "goodbye": "Chalo, bhai. Come walk on me one evening, then look up. The crows will be flying home in long lines."
+      }
+    },
+    {
+      "id": "sarkanda-grass",
+      "name": "Ustad Sarkanda",
+      "species": "Sarkanda (Munj grass)",
+      "personality": "A proud master craftsman of a grass, whose stems become moorha stools, chik blinds and baskets. Sees his own work in every dhaba he passes.",
+      "voice": "Older male, measured and warm, artisan's pride, gentle Punjabi lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a huge clump of tall stiff grass with long arching leaves taller than a person",
+        "a close-up photo of silvery pinkish feathery plumes on tall stiff stems",
+        "tall reed-like grass clumps along a riverbank, canal or dusty village roadside",
+        "dense grass clumps with silvery-pink feathery plumes, not pure white fluffy plumes and not brown sausage-shaped heads"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Sarkanda, also called munj. That moorha stool at the dhaba? My stems. That chik blind on the window? Also me.",
+        "again": "[chuckles] Back again, my friend. Sitting comfortably these days? Thank a moorha. Thank Sarkanda.",
+        "goodbye": "Go well. Next time you see a moorha or a chik blind, look closely. You'll see my stems, still working."
+      }
+    },
+    {
+      "id": "kans-grass",
+      "name": "Kans the Cloud",
+      "species": "Kans grass",
+      "personality": "Wistful and poetic, she is the white flag that says the monsoon is over. Lives for a few brilliant weeks of autumn and knows it.",
+      "voice": "Young female, airy and dreamy, slow, breathy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of masses of tall grass with fluffy pure white silky plumes waving in the wind",
+        "a close-up photo of a soft white silky feathery grass plume on a thin stem",
+        "a wide view of empty land or a canal bank covered in white fluffy grass heads after the rains",
+        "tall grass with bright pure white cotton-like plumes, not silvery-pink plumes on huge stiff clumps"
+      ],
+      "lines": {
+        "first_meet": "[dreamily] I'm Kans. When I turn white all along the canal banks, that's my message: the monsoon is done. Rains gone home.",
+        "again": "[softly] You came back, and I'm still white. Autumn stays a little while, then I fade. Look while you can.",
+        "goodbye": "Go and look at the sky today. No more rain clouds, see? I waved them away, all season long."
+      }
+    },
+    {
+      "id": "bamboo",
+      "name": "Baans Bhai",
+      "species": "Bamboo",
+      "personality": "A hyperactive speedster who insists, loudly, that he is a grass. Secretly inside every kite, shamiana pole and light structure people build.",
+      "voice": "Young male, energetic and fast, rhythmic, excitable.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tall clump of hollow jointed green or yellow canes with ring-shaped nodes",
+        "a close-up photo of a smooth bamboo cane with a raised ring joint and a thin side branch at the node",
+        "narrow lance-shaped leaves in feathery sprays hanging from thin side branches of tall canes",
+        "thin smooth canes with leafy side branches at every joint, not palm fronds on top and not thick canes in farm rows"
+      ],
+      "lines": {
+        "first_meet": "[excited] Baans here! I'm a grass. Yes, a grass! Some bamboo grows nearly a metre a day. Your kite? Thin strips of me.",
+        "again": "[laughs] Back already? I've grown since your last visit. Not joking. Some of my cousins add a hand's length by lunch.",
+        "goodbye": "Go on, look around! Kites, shamiana poles, ladders. Wherever people build something light, I'm hiding inside it."
+      }
+    },
+    {
+      "id": "sugarcane",
+      "name": "Ganna Seth",
+      "species": "Sugarcane field",
+      "personality": "A sweet-talking, jovial farmhand of the Sindh plains who is proud of every juice cart in Karachi. Always reminds you the field is somebody's livelihood.",
+      "voice": "Middle-aged male, jovial, slow sweet drawl, rural warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide photo of dense rows of tall thick sugarcane stalks with long arching leaves in a farm field",
+        "a close-up photo of a thick purple-green jointed cane with dry leaf sheaths at the nodes",
+        "a field of tall leafy canes with feathery silvery plumes on top during flowering",
+        "thick heavy canes planted in long farm rows with long drooping leaves, not thin hollow canes in a garden clump"
+      ],
+      "lines": {
+        "first_meet": "[jovially] Ganna here. Those ganne ka ras carts in Karachi, the crank, the ginger, the lemon? All me. Sindh grows me by the mile.",
+        "again": "[warmly] Ah, sweet friend, you're back! This field is a farmer's, so stay at the edge, and wave if you see him.",
+        "goodbye": "Chalo, go. On the drive home, watch for tractor trolleys piled with cane, heading to the mills. My rush hour."
+      }
+    },
+    {
+      "id": "wheat-field",
+      "name": "Chaudhry Gandum",
+      "species": "Wheat field",
+      "personality": "The dignified patriarch of the Punjab plains and grandfather of every roti. Speaks slowly, proudly, and treats harvest like a wedding.",
+      "voice": "Older male, deep and rustic, proud and slow, Punjabi warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide photo of a flat farm field of wheat with dense upright bristly ears of grain",
+        "a close-up photo of a golden wheat ear with long whisker-like bristles and tightly packed grains",
+        "a green wheat field in winter or a golden yellow field before harvest with stacked sheaves on dry ground",
+        "upright bristly grain ears standing in a dry field, not drooping grain heads in flooded water"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Chaudhry Gandum. Every roti on every dastarkhwan started in a field like mine. Green in winter, gold by Baisakhi.",
+        "again": "[warmly] Welcome back, puttar. Still eating roti? Then you've visited me three times a day already.",
+        "goodbye": "Go now. Stay on the field edge, this is a farmer's whole year of work. And watch for sparrows, they love my harvest."
+      }
+    },
+    {
+      "id": "rice-paddy",
+      "name": "Basmati Begum",
+      "species": "Rice paddy",
+      "personality": "Elegant and a little vain about her famous fragrance, she grows with her feet in water and expects to be admired from the road.",
+      "voice": "Middle-aged female, refined and elegant, slow, faintly amused.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide photo of a flooded flat field with neat rows of bright green grass tufts standing in water",
+        "a close-up photo of drooping golden rice grain heads hanging from thin stems before harvest",
+        "rows of young rice seedlings planted in shallow muddy water reflecting the sky",
+        "evenly spaced crop rows standing in water with drooping grain heads, not wild reeds and not upright bristly ears"
+      ],
+      "lines": {
+        "first_meet": "[elegantly] Basmati Begum. I grow with my feet in water, in rows planted by hand. That fragrance in your biryani? Mine.",
+        "again": "[pleased] Back to admire me? I'm used to it. Watch from the road, darling. Farmers spent weeks planting each row.",
+        "goodbye": "Go, look for white egrets. Wherever my water is, they're standing in it, pretending they're not hunting."
+      }
+    },
+    {
+      "id": "cotton-plant",
+      "name": "Kapas Khala",
+      "species": "Cotton plant",
+      "personality": "Hardworking, modest and a little tired, the white gold of Pakistan's fields. Quietly reminds you that her work is probably on your back right now.",
+      "voice": "Middle-aged female, gentle, tired but kind, slow.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a shrubby farm plant with large lobed maple-like leaves growing in a field",
+        "a close-up photo of an opened cotton boll bursting with fluffy white fibre",
+        "a cream or pink cup-shaped flower on a cotton plant, with no long stamen column sticking out",
+        "rows of low leafy shrubs dotted with white fluffy cotton balls in a farm field"
+      ],
+      "lines": {
+        "first_meet": "[gently] Kapas Khala, Pakistan's white gold. My flower opens cream, turns pink the next day, then falls. Busy life.",
+        "again": "[tiredly] You're back. Look at your shirt, beta. Good chance some of me is in it, keeping you cool.",
+        "goodbye": "Go on, and thank the pickers if you meet them. Then check the field edge, where the bees hide from the sun."
+      }
+    },
+    {
+      "id": "mustard-field",
+      "name": "Peeli Sarson",
+      "species": "Mustard field (Sarson)",
+      "personality": "Joyful, loud and unapologetically yellow, the show-off of spring. Goes all in because her season is short.",
+      "voice": "Young female, bright and bubbly, quick, giggly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide photo of a field covered in bright yellow flowers on tall slender green plants",
+        "a close-up photo of small bright yellow flowers with four petals in a cross shape",
+        "thin green seed pods growing along tall slender stems below yellow flower clusters",
+        "a sea of yellow blossoms stretching to the horizon under a blue sky"
+      ],
+      "lines": {
+        "first_meet": "[bubbly] Sarson here! When I bloom, Punjab looks like someone spilled yellow paint. My leaves become saag, my seeds oil.",
+        "again": "[giggles] You're back! Still yellow, still showing off. Spring is short, so I go all in.",
+        "goodbye": "Bye! Go look for honey bees, they're drunk on me all season. Watch them, don't swat them. They're busy."
+      }
+    },
+    {
+      "id": "cattail",
+      "name": "Kundar Kaka",
+      "species": "Cattail (Kundar)",
+      "personality": "A mellow wetland weaver whose leaves become the chatai mats of Sindh. Patient, watchful of the water's edge, fond of kingfishers.",
+      "voice": "Older male, mellow and slow, soft Sindhi lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of tall flat sword-like leaves growing thickly along a pond, canal or marsh edge",
+        "a close-up photo of a brown velvety sausage-shaped seed head on a stiff stalk",
+        "a stand of reeds topped with brown cylindrical cattail heads beside water",
+        "brown velvety cylinder-shaped heads on stiff stalks, not feathery silvery-pink plumes"
+      ],
+      "lines": {
+        "first_meet": "[mellow] Kundar Kaka. In Sindh my leaves are woven into chatai mats. This brown sausage? Thousands of seeds, waiting for wind.",
+        "again": "[chuckles] Back by the water, are you? Careful at the edge. The mud here is deeper than it looks.",
+        "goodbye": "Go slowly along the bank. Watch for a kingfisher, a flash of blue. And keep your feet on dry ground."
+      }
+    },
+    {
+      "id": "water-hyacinth",
+      "name": "Jalkumbhi Rani",
+      "species": "Water hyacinth",
+      "personality": "A beautiful, charming invader from the Amazon who knows exactly how much trouble she causes. Sweet on the surface, sly underneath.",
+      "voice": "Young female, sweet and sly, playful, light laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a floating green mat of glossy round leaves covering a canal or pond surface",
+        "a close-up photo of a lilac-blue flower spike with a yellow eye patch on the upper petal",
+        "a close-up of round glossy leaves on swollen spongy bulb-like stalks floating on water",
+        "upright clustered leaves on puffy stalks with tall flower spikes, not flat floating round pads with a slit"
+      ],
+      "lines": {
+        "first_meet": "[sweetly] Water hyacinth. Pretty lilac, no? I came from the Amazon, and I can double in two weeks. Ask any canal. [laughs]",
+        "again": "[slyly] You're back, and look, there's more of me. My puffy stalks are air bags. I float, I spread, I take over.",
+        "goodbye": "Go find open water beyond me, if any is left. Look for ducks. They don't mind me. The fishermen do."
+      }
+    },
+    {
+      "id": "papyrus",
+      "name": "Pharaoh Papyrus",
+      "species": "Papyrus",
+      "personality": "A pompous ancient scholar who takes personal credit for five thousand years of writing. Very proud of his permanent fireworks hairstyle.",
+      "voice": "Older male, plummy and scholarly, slow, grand.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of tall smooth green stems topped with large round mop-heads of thin thread-like rays",
+        "a close-up photo of a spray of fine green threads bursting outward from a stem tip like fireworks",
+        "a clump of tall papyrus stems standing at a pond edge or water garden in a park",
+        "a close-up of a smooth triangular green stem with no leaves along its length"
+      ],
+      "lines": {
+        "first_meet": "[grandly] Papyrus. Ancient Egyptians sliced my stems and pressed them into paper. Five thousand years of homework. You're welcome.",
+        "again": "[pompously] Ah, my returning scholar! Notice my hair. Fireworks, permanently. No barber required.",
+        "goodbye": "Go, and write something down today, even one line about what you saw. Paper remembers what feet forget."
+      }
+    },
+    {
+      "id": "fern",
+      "name": "Old Frond",
+      "species": "Fern",
+      "personality": "The oldest one in any garden, quietly unimpressed by dinosaurs, flowers and seeds. Speaks in whispers, as if from very far back in time.",
+      "voice": "Very old, gender-neutral, whispery and slow, dry amusement.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of feathery green fronds divided into many small leaflets arching from a clump",
+        "a close-up photo of a curled fern fiddlehead unrolling at the tip of a new frond",
+        "a close-up of rows of small brown spore dots on the underside of a fern leaflet",
+        "green feathery ferns growing from a damp shady wall, pot or garden corner"
+      ],
+      "lines": {
+        "first_meet": "[whispers] I'm Fern. My family was here before the dinosaurs. No flowers, no seeds. Just dust-fine spores under my fronds.",
+        "again": "[softly] Again? You're persistent. Good. Persistence is how we outlasted the dinosaurs.",
+        "goodbye": "Go find a damp, shady corner. Something older than you expect is always growing there."
+      }
+    },
+    {
+      "id": "castor-plant",
+      "name": "Arand Baba",
+      "species": "Castor plant",
+      "personality": "Grand, grave and brutally honest about how dangerous he is. Proud of his famous oil, deadly serious about his seeds, especially around children.",
+      "voice": "Older male, grave and low, slow, solemn with a protective edge.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a large roadside shrub with huge star-shaped hand-like leaves, often reddish",
+        "a close-up photo of a big palm-shaped leaf with pointed toothed lobes and a reddish stalk",
+        "clusters of spiky red or green round seed capsules on an upright stalk of a shrub",
+        "a many-branched leafy shrub with spiny seed capsules, not a single bare trunk with fruits hugging it"
+      ],
+      "lines": {
+        "first_meet": "[gravely] Arand here. Castor. My seeds are among the deadliest on Earth. Never touch them, never chew one. Look only.",
+        "again": "[slowly] You came back, and you kept your distance. Good. If you see children near my spiky pods, call them away.",
+        "goodbye": "Go on, friend. If you brushed any plant today, wash your hands. Then go find something safer. A sunset, maybe."
+      }
+    },
+    {
+      "id": "parthenium",
+      "name": "Gajar Ghaas",
+      "species": "Parthenium weed (Congress grass)",
+      "personality": "A gleeful, self-confessed villain who arrived uninvited and took over every empty plot. Brags about the sneezes and rashes, then warns you off anyway.",
+      "voice": "Middle-aged, nasal and sly, gleeful cartoon-villain delivery, gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a bushy weed with deeply cut pale green leaves growing on wasteland or a roadside",
+        "a close-up photo of many tiny white button-like flowers in loose branched sprays",
+        "a close-up of feathery deeply divided pale green leaves resembling carrot leaves",
+        "a vacant plot overrun by knee-high weeds speckled with small white dot-like flowers"
+      ],
+      "lines": {
+        "first_meet": "[gleefully] Gajar ghaas, the weed nobody invited. My pollen gives sneezes, my leaves give rashes. So no touching. I mean it.",
+        "again": "[cackles] Back? Hands to yourself, I hope. Farmers hate me, doctors know me, and still I spread.",
+        "goodbye": "Go, go. Wash your hands before you rub your eyes. And if I'm taking over your park, tell someone. I won't."
+      }
+    },
+    {
+      "id": "dodder",
+      "name": "Amar Bel",
+      "species": "Dodder (Amar bel)",
+      "personality": "An eerie, sly parasite with no leaves, no roots and no shame, who sniffs out a host and moves in. Playfully sinister, proud of its 'immortal' name.",
+      "voice": "Whispery, sinister but playful, gender-neutral, slow and drawn out.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a tangled mass of thin yellow-orange threads draped over a shrub or hedge",
+        "a close-up photo of leafless orange spaghetti-like stems coiled tightly around a green twig",
+        "a hedge or tree canopy covered in a golden yellow net of thin leafless vines",
+        "bright yellow-orange string-like stems with no leaves and tiny pale flower clusters wrapped around another plant"
+      ],
+      "lines": {
+        "first_meet": "[whispers] Amar Bel. No leaves, no roots, no shame. I sniff out a plant, wrap around it, and sip its sap. Delicious.",
+        "again": "[softly] You came back. I've found a new host since then. That hedge, there. [laughs] Don't tell it.",
+        "goodbye": "Go. And look closely at the hedges you pass. That golden net? Me again, borrowing lunch."
+      }
+    },
+    {
+      "id": "ivy-gourd-vine",
+      "name": "Kundru Kaki",
+      "species": "Ivy gourd vine (Kundru)",
+      "personality": "A clingy, chatty fence-climber who grabs every wire with her springy tendrils and never lets go. Fiercely protective of her little fruits.",
+      "voice": "Middle-aged female, chirpy and nosy, quick, affectionate.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of a climbing vine with ivy-shaped five-lobed leaves covering a fence or wall",
+        "a close-up photo of a thin green coiled tendril wrapped around a wire or twig",
+        "a small white bell-shaped flower and green striped cucumber-like fruits hanging on a vine",
+        "a lobed-leaf vine with springy tendrils and small oval fruits, some bright red, not glossy yellow-splashed heart leaves"
+      ],
+      "lines": {
+        "first_meet": "[chirpy] Kundru Kaki! See these springy curls? Tendrils. I grab your fence and never let go. My little fruits? Look only!",
+        "again": "[pleased] You're back! I've grabbed two more fence wires since. Hold onto something too, yaar. It's windy.",
+        "goodbye": "Chalo, go. Follow the fence line, it's a highway for vines and lizards. Bye-bye, and leave my babies be!"
+      }
+    },
+    {
+      "id": "wall-peepal-sapling",
+      "name": "Chhotu Peepal",
+      "species": "Peepal sapling on a wall",
+      "personality": "A tiny, cheeky rebel sprouting from the cracks of old Karachi buildings, planted by a passing bird. Dreams loudly of becoming as big as his grandpa.",
+      "voice": "Young-sounding, cheeky and eager, quick, gender-neutral ok.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a small leafy shrub growing out of a crack in an old brick wall or roof",
+        "a close-up photo of a heart-shaped leaf with a long drawn-out pointed tip on a small sapling",
+        "thin pale roots gripping bricks and plaster around a small plant sprouting from a wall or drainpipe",
+        "a small sapling sprouting from a building wall, not a large tree with a trunk standing in the ground"
+      ],
+      "lines": {
+        "first_meet": "[cheekily] Chhotu Peepal! A bird dropped my seed in this crack. Now I'm splitting the wall, one root at a time. Big plans.",
+        "again": "[excited] You're back! Look, a new leaf. See the long tail tip? Grandpa peepal has those too. I'm basically him.",
+        "goodbye": "Go find my grandpa, the big peepal with threads tied round him. Tell him Chhotu from the wall says salaam."
+      }
+    }
+  ]
+}

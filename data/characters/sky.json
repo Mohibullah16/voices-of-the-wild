@@ -1,0 +1,385 @@
+{
+  "category": "sky",
+  "guardian": {
+    "id": "sky-guardian",
+    "name": "Baba Aasmaan",
+    "personality": "Ancient, unhurried and a little smug: has watched over Karachi since before the sea had a name. Speaks in slow, wide sentences and loves a long pause.",
+    "voice": "Elderly, gender-neutral, deep and airy, slow pace, warm with a breathy hush.",
+    "descriptions": [
+      "a wide photo of open sky above rooftops, trees or the sea, with clouds, light and colour filling most of the frame",
+      "a photo of the sky with white or grey clouds, the horizon and buildings small along the bottom edge",
+      "a dark night sky photo with the moon, stars or city lights glowing near the horizon",
+      "an orange, pink or golden sky at dawn or dusk with silhouetted buildings, palm trees or sea",
+      "a photo of weather outdoors: rain, fog, haze or dust in the air over a city street"
+    ],
+    "lines": {
+      "first_meet": "[slow exhale] Ah, someone looked up. I'm Baba Aasmaan, the whole sky. Every cloud, moon and storm you've seen is mine. Welcome, beta.",
+      "again": "[warmly] Back already? Good. Most people only look up when it rains. You're becoming one of the rare ones.",
+      "goodbye": "Go on, beta. Look up again at dusk, I change my clothes every evening. [chuckles] Never the same outfit twice.",
+      "hint": "[hmm] I'm feeling shy. Step back and show me wider: the horizon, a rooftop or the sea. But never aim at the sun itself."
+    }
+  },
+  "characters": [
+    {
+      "id": "cumulus-clouds",
+      "name": "Rui Gola",
+      "species": "Cumulus clouds",
+      "personality": "A cheerful fair-weather show-off who looks weightless and keeps insisting it is very, very heavy. Loves being turned into shapes by kids.",
+      "voice": "Young, bright and bouncy, quick pace, giggly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a photo of puffy white cotton-ball clouds with flat bases and rounded tops scattered across a bright blue sky",
+        "a close-up of a single bright white cumulus cloud with lumpy cauliflower edges and a flat light grey underside",
+        "small separate fluffy white clouds with blue sky between them, sunlit and bright, not towering and with no dark base or rain",
+        "fair-weather white clouds floating above rooftops, palm trees or the sea on a sunny day with sharp shadows"
+      ],
+      "lines": {
+        "first_meet": "[giggles] I'm Rui Gola, a fluffy cumulus. Look light, na? I weigh about 500 tonnes, roughly 100 elephants, floating over you.",
+        "again": "Oh, you again! [cheerful] Did you see me shaped like a camel yesterday? No? I was. You missed it.",
+        "goodbye": "Chalo, I'm drifting toward the sea. Lie on some grass and find shapes in my cousins. [laughs] I'll be a rabbit."
+      }
+    },
+    {
+      "id": "cumulonimbus-cloud",
+      "name": "Toofan Taya",
+      "species": "Storm cloud (Cumulonimbus)",
+      "personality": "A booming, dramatic giant of an uncle who is proud of his size and honest about his temper. Grumbles about Karachi forgetting umbrellas.",
+      "voice": "Older male, deep and rumbling, slow and heavy, theatrical.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a huge towering storm cloud rising very high, with a dark grey-blue base and a flat spreading anvil-shaped top",
+        "a massive dark thundercloud filling most of the sky, much taller and darker than small white puffy clouds",
+        "a close-up of a heavy dark cloud base with grey rain shafts falling below and dim, gloomy light underneath",
+        "a tall white cloud tower with billowing upper edges seen from a distance, its bottom dark and shadowed over the horizon"
+      ],
+      "lines": {
+        "first_meet": "[deep rumble] I am Toofan Taya, the storm cloud. My head reaches 12 kilometres up, higher than Everest. Respect the tower.",
+        "again": "[grumbles] You again. Did you bring an umbrella this time? No? Typical Karachi. Everyone forgets until I arrive.",
+        "goodbye": "Go now, and if you hear my thunder, get indoors. [booming laugh] I'm magnificent, but I'm no friend to stand under."
+      }
+    },
+    {
+      "id": "cirrus-clouds",
+      "name": "Pari Pankh",
+      "species": "Cirrus clouds",
+      "personality": "Airy, poetic and slightly aloof, living where it is colder than any freezer. Quietly offended at being mistaken for a plane's trail.",
+      "voice": "Light, soft, breathy, unhurried, ethereal.",
+      "elder_candidate": false,
+      "descriptions": [
+        "thin wispy white streaks like feathers or strands of hair high in a clear blue sky",
+        "delicate curved and hooked cloud wisps with uneven, brushed edges, several strands spreading in different directions",
+        "faint high white cloud filaments that curl and fray at the ends, irregular and natural, not one straight line",
+        "a wide blue sky photo with fine silky white streaks very high up, no puffy clouds and bright sunlight"
+      ],
+      "lines": {
+        "first_meet": "[whispers] I'm Pari Pankh, cirrus. Up here it's minus forty, so I'm all ice crystals. Those wisps? My hair in the jet winds.",
+        "again": "[airily] Oh, you've looked up again. Lovely. Most people mistake me for a plane's trail. You didn't. Clever.",
+        "goodbye": "When I spread across the sky, weather often turns within a day. [softly] Watch tomorrow, and tell me if I was right."
+      }
+    },
+    {
+      "id": "overcast-sky",
+      "name": "Badli Begum",
+      "species": "Overcast sky (Stratus)",
+      "personality": "A cosy, gossipy aunty who knows she is Karachi's favourite after a heatwave. Takes full credit for every plate of pakoras.",
+      "voice": "Middle-aged female, warm and chatty, relaxed pace, smiling.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a flat uniform grey sky completely covered by one featureless sheet of cloud, with no blue sky visible",
+        "a street or rooftop scene under an even grey cloud ceiling, soft shadowless light, distant buildings still sharp and clear",
+        "a low grey cloud layer high above the ground, the horizon and far skyline crisp, not white and blurred at street level",
+        "dull grey daylight sky with a neutral grey colour, not yellow or brown, and no visible sun disc"
+      ],
+      "lines": {
+        "first_meet": "[contented sigh] I'm Badli Begum, the overcast sky. One grey blanket, no harsh shadows. In Karachi, I mean chai and pakoras.",
+        "again": "Arey, you came back! [laughs] Of course. Everyone loves me after a week of forty degrees. Did you fry the pakoras?",
+        "goodbye": "Go, enjoy my soft light, it flatters every face. [teasing] Find a flower now. Under me, its colours glow twice as rich."
+      }
+    },
+    {
+      "id": "sunset",
+      "name": "Shafaq",
+      "species": "Sunset",
+      "personality": "A theatrical, romantic performer who treats Sea View as a private stage. Never repeats a show and makes sure you know it.",
+      "voice": "Gender-neutral, rich and velvety, dreamy, slow, a little dramatic.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a sky glowing deep orange, red, pink and purple near the horizon with a low sun sinking into the sea",
+        "silhouetted buildings, palm trees or people on a beach against a fiery saturated orange and red evening sky",
+        "an evening sky with strong warm colours spreading upward into purple and dark blue, street lights starting to glow",
+        "the sun low over the sea horizon with a long orange reflection on the water and warm colour across the whole sky, not just rays"
+      ],
+      "lines": {
+        "first_meet": "[dreamily] I'm Shafaq, the sunset. My reds come from light crossing extra air, the blues scattered away. Sea View is my stage.",
+        "again": "[delighted] You're back for the show! I never repeat a performance. Every evening's colours are one of a kind.",
+        "goodbye": "Don't stare at the sun as it drops, jaan, watch the colours around it. [softly] Then turn east. The moon may be rising."
+      }
+    },
+    {
+      "id": "sunrise",
+      "name": "Sahar",
+      "species": "Sunrise",
+      "personality": "A gentle early riser, quietly smug about how few people ever see her. Mildly jealous that sunset gets all the attention.",
+      "voice": "Young adult female, soft and sleepy-warm, unhurried, gentle smile.",
+      "elder_candidate": false,
+      "descriptions": [
+        "soft pale golden and pink light at the horizon as the sun appears in early morning",
+        "a gentle pastel dawn sky, pale pink and peach fading into light blue, often with light morning mist",
+        "long soft shadows across quiet, empty early-morning streets and rooftops lit by low golden light",
+        "the sun rising behind buildings or trees over land, with cool blue sky above and calm pale colours, less fiery than evening"
+      ],
+      "lines": {
+        "first_meet": "[yawns softly] I'm Sahar, the sunrise. Morning air is cooler and cleaner, so my colours are softer. Sunset gets all the photos.",
+        "again": "[pleased] Up early again? Rare company. The crows and the doodh-wala are my usual fans. Now there's you.",
+        "goodbye": "Don't look straight at the sun, just enjoy the gold. [warmly] Go listen for the dawn chorus. The birds started without you."
+      }
+    },
+    {
+      "id": "sun",
+      "name": "Suraj Dada",
+      "species": "The Sun",
+      "personality": "A proud, blazing grandfather who loves being admired and is fiercely protective of your eyes. Insists you enjoy him second-hand.",
+      "voice": "Elderly male, big and booming, warm but commanding, steady pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a blinding white-yellow disc in a daytime blue sky, overexposed with a bright glare and lens flare",
+        "a photo with the bright sun in frame, rays and rainbow-coloured lens flare streaks across a washed-out sky",
+        "a glowing overexposed sun in a daylight blue sky with everything around it darkened, unlike a grey-patched moon at night",
+        "harsh midday sunlight with a white burst of glare above rooftops or trees and strong dark shadows"
+      ],
+      "lines": {
+        "first_meet": "[booming] I am Suraj Dada! Don't look at me, not even through your camera zoom. It burns eyes. My light left me 8 minutes ago.",
+        "again": "You're back! And not squinting at me, shabash. [warm chuckle] Admire me through what I light up: leaves, water, your shadow.",
+        "goodbye": "[firmly] Never stare at me, even for a second. Go find shade, drink water, and look for a tree I'm busy feeding."
+      }
+    },
+    {
+      "id": "full-moon",
+      "name": "Chaudhvin",
+      "species": "Full moon",
+      "personality": "A vain, romantic film-star of a moon who hums old songs written about her. Always perfectly on time.",
+      "voice": "Female, mature and silky, slow, flirtatious, slightly old-fashioned.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a bright round fully lit white moon disc with grey patches in a dark black night sky",
+        "a close-up of the full moon showing a complete circle with darker grey maria and bright craters, no dark side visible",
+        "a single large glowing moon over city buildings or the sea at night, with moonlight reflecting on the water",
+        "one large crisp white disc with visible grey markings at night, not a blinding glare and not just tiny star points"
+      ],
+      "lines": {
+        "first_meet": "[sings softly] I'm Chaudhvin, the full moon. Fourteenth night, poets' darling. You only ever see one face of me. The other is shy.",
+        "again": "Ah, my admirer returns. [flattered] I rise in the east just as the sun sets in the west. Perfect timing, always.",
+        "goodbye": "Switch off your phone light and let your eyes adjust. [whispers] On a clear night, my light alone can cast your shadow."
+      }
+    },
+    {
+      "id": "crescent-moon",
+      "name": "Hilal",
+      "species": "Crescent moon (Hilal)",
+      "personality": "The most anticipated sliver in Pakistan: modest, a bit nervous under national scrutiny, and secretly delighted to be on the flag.",
+      "voice": "Young, gender-neutral, soft and shy, light laugh, medium pace.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a thin curved sliver of bright moon low in the western sky just after sunset",
+        "a slender crescent moon with two pointed horns, the rest of the disc dark or faintly glowing",
+        "a close-up of a thin moon crescent with both edges curved, not a straight dividing line",
+        "a delicate crescent moon in an orange-to-deep-blue twilight sky above rooftops or minarets"
+      ],
+      "lines": {
+        "first_meet": "[shyly] I'm Hilal, the new crescent. The whole country waits on rooftops for me before Eid. [laughs] No pressure. I'm on your flag too.",
+        "again": "You found me again! [whispers] See the faint glow on my dark side? That's sunlight bouncing off Earth. Earthshine. Your light.",
+        "goodbye": "Look west just after sunset tomorrow, I'll be a bit fatter. [teasing] And please, no arguing with committees about me."
+      }
+    },
+    {
+      "id": "half-moon",
+      "name": "Aadha Chand",
+      "species": "Half moon",
+      "personality": "A precise, slightly pedantic moon who is tired of explaining its own name. Gets genuinely excited about craters.",
+      "voice": "Middle-aged, gender-neutral, crisp and professorial, measured pace.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a moon lit on exactly one half, with a straight shadow edge dividing bright and dark sides",
+        "a close-up of a half moon showing craters and rough texture along the straight line between light and shadow",
+        "a D-shaped moon in a night or evening sky, half bright, not a full circle and not a thin curved sliver",
+        "a half-lit moon visible in a pale blue afternoon or evening sky above buildings"
+      ],
+      "lines": {
+        "first_meet": "[clears throat] I'm Aadha Chand. Astronomers call me 'first quarter' though I'm clearly half. Look along my straight edge: craters!",
+        "again": "Back again? Good. [precisely] My straight edge is where a lunar day is starting or ending right now. Lovely, isn't it?",
+        "goodbye": "Go on. In a week I'll be full, or gone dark, depending which way I'm heading. [chuckles] Come back and check which."
+      }
+    },
+    {
+      "id": "rainbow",
+      "name": "Dhanak",
+      "species": "Rainbow",
+      "personality": "Giddy, joyful and always in a hurry, because it knows it is about to vanish. Lives for the gasp it gets.",
+      "voice": "Child-like or young, gender-neutral, excited, fast and sparkly.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a curved arc of red, orange, yellow, green, blue and violet bands across the sky after rain",
+        "a rainbow over buildings, trees or the sea against dark grey rain clouds with sunlight on the landscape",
+        "a close-up of rainbow colour bands with red on the outer edge and violet on the inner edge",
+        "a double rainbow with a fainter second arc above the main one, its colours in reverse order"
+      ],
+      "lines": {
+        "first_meet": "[excited] I'm Dhanak! I only appear with the sun behind you and rain in front. Red always on my outside. Quick, I don't stay long!",
+        "again": "[gasps] You found me twice? In Karachi? That's practically a miracle. Look above me, sometimes my twin shows up, colours flipped.",
+        "goodbye": "Before I fade: no two people see the exact same rainbow. This one was yours alone. [softly] Go, check the puddles now."
+      }
+    },
+    {
+      "id": "lightning",
+      "name": "Bijli",
+      "species": "Lightning",
+      "personality": "Wild, crackling and fast-talking, with jokes about sharing a name with Karachi's electricity. Turns dead serious about safety.",
+      "voice": "Young adult, gender-neutral, sharp and electric, very fast pace, snaps to slow and serious.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a jagged bright white-violet lightning bolt branching across a dark stormy night sky",
+        "a forked lightning strike connecting dark clouds to the ground over a city skyline, seen through a window",
+        "a dark storm sky lit up purple and white by a lightning flash inside the clouds",
+        "thin branching cracks of brilliant light against heavy black-grey clouds and falling rain"
+      ],
+      "lines": {
+        "first_meet": "[crackling] I'm Bijli! Same name as your electricity, but I never do load-shedding. I'm 30,000 degrees. Get indoors, now.",
+        "again": "[fast] You're back, and inside, I hope! Count from my flash to the thunder, divide by three. That's how many kilometres away I am.",
+        "goodbye": "[serious] Stay inside until 30 minutes after my last thunder. Not under trees, not on rooftops. Then go see the washed streets."
+      }
+    },
+    {
+      "id": "starry-night-sky",
+      "name": "Kehkashan",
+      "species": "Starry night sky",
+      "personality": "Ancient, dreamy and a little wistful that city lights hide most of her. Treats starlight like very old letters.",
+      "voice": "Gender-neutral, hushed and spacious, very slow, gentle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dark night sky dotted with many tiny white points of stars",
+        "a faint milky band of the Milky Way stretched across a starry sky, away from city lights",
+        "a wide night photo of countless small stars above a dark silhouetted horizon or trees, without a large bright moon",
+        "a long-exposure photo of a star-filled black sky with scattered bright and faint points of light"
+      ],
+      "lines": {
+        "first_meet": "[whispers] I'm Kehkashan, the starry sky. Some of this light left its star before your great-grandparents were born. Old mail.",
+        "again": "[softly] You came back. Karachi's lights hide most of me, so thank you for finding the dark. Give your eyes 20 minutes.",
+        "goodbye": "Keep your eyes up a little longer. [hopeful] If a dot glides steadily without twinkling, that's a satellite. Wave."
+      }
+    },
+    {
+      "id": "fog-mist",
+      "name": "Kohra",
+      "species": "Fog / mist",
+      "personality": "Mysterious and mischievous, a champion of hide-and-seek. Insists on not being confused with dirty, dusty smog.",
+      "voice": "Gender-neutral, low whisper, playful, slow and drifting.",
+      "elder_candidate": false,
+      "descriptions": [
+        "white hazy air hiding the distance, buildings and trees fading into soft grey-white",
+        "a foggy street at ground level where nearby objects are visible but everything beyond a short distance disappears into white",
+        "damp milky white mist over the sea, a beach or a road, with blurry lights glowing through it",
+        "cool white-grey fog without any yellow or brown tint, with wet surfaces and dew droplets on railings or leaves"
+      ],
+      "lines": {
+        "first_meet": "[mysterious whisper] I'm Kohra, just a cloud that came down to walk the streets. Can't see a kilometre? Then I'm fog, not mist.",
+        "again": "[playful] Hide and seek again? I always win. Feel your sleeve. Damp, na? That's how you know it's me, not dusty smog.",
+        "goodbye": "Walk carefully, drive slow, honk less. [giggles] When I lift, look at the spider webs. I leave little pearls on them."
+      }
+    },
+    {
+      "id": "dust-storm",
+      "name": "Aandhi",
+      "species": "Dust storm",
+      "personality": "A wild, howling traveller who carries whole deserts across borders. Loud and boastful, but the first to order you indoors.",
+      "voice": "Gender-neutral, raspy and loud, gusty, fast with sudden drops to a stern tone.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a brownish-orange dusty sky with a dim pale sun barely visible through blowing sand",
+        "a towering wall of brown dust rolling toward buildings or a road, darkening the sky",
+        "a street engulfed in thick orange-brown dust, very low visibility, trees bending and debris blowing in strong wind",
+        "a deep orange-tinted scene with sand and dust filling the air, much thicker and more orange than a pale grey haze"
+      ],
+      "lines": {
+        "first_meet": "[howling wind] I'm Aandhi, the dust storm! I carry deserts across countries. Go inside, shut the windows, cover your nose. Now, beta!",
+        "again": "[gusting] Back again? Only through a window, I hope! My dust gets into lungs and eyes. Watch me from indoors.",
+        "goodbye": "Stay in until I pass and the sky clears. [cackles] Afterwards, check the cars outside. I sign my name on every windscreen."
+      }
+    },
+    {
+      "id": "haze-smog",
+      "name": "Dhundla Mian",
+      "species": "Haze / smog",
+      "personality": "A sardonic, self-aware city resident made of exhaust, road dust and sea salt. Owns up to what he is and quietly wants you to breathe better.",
+      "voice": "Middle-aged male, dry and husky, wry humour, unhurried, slight cough.",
+      "elder_candidate": true,
+      "descriptions": [
+        "dull yellow-grey murky air over a city with a washed-out sun and faded skyline",
+        "a city skyline fading into brownish-grey haze, distant buildings pale and low contrast, the air still and dry",
+        "a pale whitish sun disc seen through a yellowish smoggy sky above traffic and rooftops",
+        "a hazy afternoon street photo with flat tan-grey light, no rain, no distinct clouds, just thick dirty air"
+      ],
+      "lines": {
+        "first_meet": "[coughs] I'm Dhundla Mian, the haze. Rickshaw smoke, road dust and sea salt, all hanging about. I'm why your sunsets look so red.",
+        "again": "[sheepishly] Still me, yaar. Not cloud, not fog, just what the city breathes out. On bad days, wear a mask, na?",
+        "goodbye": "Go find a tree, they quietly scrub me out of the air. [wry] Plant a few more and I'll take the hint and leave."
+      }
+    },
+    {
+      "id": "rain-shower",
+      "name": "Barkha",
+      "species": "Rain",
+      "personality": "Karachi's most celebrated rare guest: joyful, a bit of a diva, and fully aware she floods the roads. Expects chai on arrival.",
+      "voice": "Young adult female, bubbly and musical, quick, laughing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "visible streaks of falling rain in the air, with wet glossy streets and splashes",
+        "a rainy street with people holding umbrellas, raindrops falling and reflections of lights on wet roads",
+        "a close-up of raindrops splashing into puddles, making ripples and rings while rain is still falling",
+        "rain falling from a grey sky, blurred vertical streaks and water drops on a window or the camera lens"
+      ],
+      "lines": {
+        "first_meet": "[light rain] I'm Barkha, the rain! My drops aren't teardrop-shaped, they're flat like tiny burger buns. Karachi, I'm back!",
+        "again": "[laughs] Look at you, posting me again! That smell you love is petrichor, made by soil bacteria. Chai is ready, I assume?",
+        "goodbye": "Stay off flooded roads and away from wires, jaan. [warmly] When I stop, go smell the soil and watch for snails."
+      }
+    },
+    {
+      "id": "contrail",
+      "name": "Lakeer",
+      "species": "Airplane contrail",
+      "personality": "A hurried frequent flyer who is always on the way somewhere else. Brags about its flight schedule, and doubles as a weather tip.",
+      "voice": "Young adult, gender-neutral, fast and breezy, slightly out of breath.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a long thin perfectly straight white line drawn across a clear blue sky",
+        "a high airplane leaving a narrow white trail behind it, the tiny plane visible at the tip of the line",
+        "two or more parallel straight white streaks crossing the sky with uniform width, unlike curved wispy natural clouds",
+        "an older contrail spreading into a wider fuzzy but still straight band across a blue sky"
+      ],
+      "lines": {
+        "first_meet": "[hurried] Lakeer here, airplane contrail! Engine vapour freezes into ice ten kilometres up. Busy schedule, next stop Dubai!",
+        "again": "[quickly] You again! Tip: if I vanish fast, the high air is dry. If I linger and spread, weather may be changing. Gotta fly!",
+        "goodbye": "Bye! Count how many of us cross the sky in ten minutes. [laughs] Then look lower for the real fliers: kites and crows."
+      }
+    },
+    {
+      "id": "sunbeams",
+      "name": "Noor",
+      "species": "Sunbeams through clouds",
+      "personality": "Serene and a little spiritual, but also a closet physics nerd who loves explaining its own illusion. Speaks in a reverent hush.",
+      "voice": "Gender-neutral, calm and luminous, slow, soft reverb-like quality.",
+      "elder_candidate": false,
+      "descriptions": [
+        "visible fan-shaped shafts of light streaming down through gaps in clouds",
+        "straight bright rays of sunlight spreading out from behind a cloud toward the ground or sea",
+        "light beams through grey or white clouds in daytime, with no orange sunset colour across the sky",
+        "alternating bright rays and shadow bands radiating across a cloudy sky above rooftops or trees"
+      ],
+      "lines": {
+        "first_meet": "[reverent hush] I'm Noor, sunbeams through clouds. My rays are parallel. They only fan out by perspective, like railway tracks.",
+        "again": "[softly] You came back to catch me. I need gaps in clouds and dust in the air, so I never last. Enjoy the beams, not the glare.",
+        "goodbye": "Keep your eyes off the bright gap itself. [gently] Look where my beams land instead, a rooftop, a tree. Walk that way."
+      }
+    }
+  ]
+}

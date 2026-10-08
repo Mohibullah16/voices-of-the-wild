@@ -1,0 +1,583 @@
+{
+  "models": [
+    {
+      "id": "eleven_v4",
+      "name": "Eleven v4",
+      "description": "Our fastest and most emotive model. Supports 90+ languages.",
+      "rates": {
+        "character_cost_multiplier": 1,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_v4_turbo",
+      "name": "Eleven v4 Turbo",
+      "description": "Our fastest and most emotive model, optimized for low latency. Supports 90+ languages.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_v3",
+      "name": "Eleven v3",
+      "description": "Our highly expressive model. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+      "rates": {
+        "character_cost_multiplier": 1,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_v3_conversational",
+      "name": "Eleven v3 Conversational",
+      "description": "Our highly expressive model, optimized for natural dialogue in conversational agents. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_multilingual_v2",
+      "name": "Eleven Multilingual v2",
+      "description": "Our most life-like, emotionally rich mode in 29 languages. Best for voice overs, audiobooks, post-production, or any other content creation needs.",
+      "rates": {
+        "character_cost_multiplier": 1,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_flash_v2_5",
+      "name": "Eleven Flash v2.5",
+      "description": "Our ultra low latency model in 32 languages. Ideal for conversational use cases.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_turbo_v2_5",
+      "name": "Eleven Turbo v2.5",
+      "description": "Our high quality, low latency model in 32 languages. Best for developer use cases where speed matters and you need non-English languages.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_turbo_v2",
+      "name": "Eleven Turbo v2",
+      "description": "Our English-only, low latency model. Best for developer use cases where speed matters and you only need English. Performance is on par with Turbo v2.5.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_flash_v2",
+      "name": "Eleven Flash v2",
+      "description": "Our ultra low latency model in english. Ideal for conversational use cases.",
+      "rates": {
+        "character_cost_multiplier": 0.5,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_english_sts_v2",
+      "name": "Eleven English v2",
+      "description": "Our state-of-the-art speech to speech model suitable for scenarios where you need maximum control over the content and prosody of your generations.",
+      "rates": {
+        "character_cost_multiplier": 1,
+        "cost_discount_multiplier": 1
+      }
+    },
+    {
+      "id": "eleven_multilingual_sts_v2",
+      "name": "Eleven Multilingual v2",
+      "description": "Our cutting-edge, multilingual speech-to-speech model is designed for situations that demand unparalleled control over both the content and the prosody of the generated speech across various languages.",
+      "rates": {
+        "character_cost_multiplier": 1,
+        "cost_discount_multiplier": 1
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": "QswxpjsJdWCzukU5ND3r",
+      "name": "me",
+      "category": "cloned",
+      "labels": {
+        "language": "en"
+      },
+      "description": ""
+    },
+    {
+      "id": "kWlV1Tkjf4vxIyDl0Okb",
+      "name": "My New Cloned Voice",
+      "category": "cloned",
+      "labels": {},
+      "description": "Cloned from local audio file via API"
+    },
+    {
+      "id": "VxoKEgJBx3pVZmqmq3gF",
+      "name": "My Voice Neutral 20260731-004838",
+      "category": "cloned",
+      "labels": {},
+      "description": "Neutral microphone recording for emotional voice variants."
+    },
+    {
+      "id": "ku4rEDBQtPyzdzg9uxH5",
+      "name": "test-clone-01",
+      "category": "cloned",
+      "labels": {},
+      "description": null
+    },
+    {
+      "id": "iHkxiVaroh9RLBim2inw",
+      "name": "test-clone-01",
+      "category": "cloned",
+      "labels": {},
+      "description": null
+    },
+    {
+      "id": "ljX1ZrXuDIIRVcmiVSyR",
+      "name": "Michael - Genuine and Approachable",
+      "category": "professional",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "accent": "american",
+        "gender": "male",
+        "descriptive": "confident",
+        "use_case": "conversational"
+      },
+      "description": "Michael - My voice is clear, confident, and versatile—perfect for narration, advertising, training, or storytelling. It carries warmth and authority, making complex ideas easy to understand while keeping listeners engaged."
+    },
+    {
+      "id": "rmLD6bPkFrWrLCP01Gqi",
+      "name": "Spongebob",
+      "category": "cloned",
+      "labels": {
+        "language": "en"
+      },
+      "description": "This is voice cloned sample for Sponge bob from Sponge Bob Square Pants children's show."
+    },
+    {
+      "id": "qSeXEcewz7tA0Q0qk9fH",
+      "name": "Victoria - Warm, Trustworthy, and Relatable",
+      "category": "professional",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "accent": "american",
+        "gender": "female",
+        "descriptive": "professional",
+        "use_case": "narrative_story"
+      },
+      "description": "Conversational and friendly VO for explainer videos, viral social media and modern brand ads. Warm, upbeat, and relatable."
+    },
+    {
+      "id": "8baRIHZEGj62eS9YHzC6",
+      "name": "Neha P - Messy, Unpolished & Relatable",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "young",
+        "accent": "standard",
+        "gender": "female",
+        "descriptive": "casual",
+        "use_case": "conversational"
+      },
+      "description": "Neha P brings a messy, unpolished, and deeply relatable Hindi tone that mirrors real everyday conversations. Her raw voice is especially effective for Tier 2 and Tier 3 customer care where polished voices feel distant. Well-suited for customer support, service queries, and complaint handling for brands & NBFC-led regional service operations."
+    },
+    {
+      "id": "SLa3GDQHUGaRpH5GNvFL",
+      "name": "Vikram S – Clear & Respectful\t    ",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "young",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "professional",
+        "use_case": "conversational"
+      },
+      "description": "Vikram delivers a professional, clear, and authoritative tone. His experienced and composed hinglish delivery reinforces accountability while maintaining compliance. The voice carries maturity and credibility, ideal for EMI reminders, structured collections, settlement discussions, and escalation-stage recovery. Well-suited for banks and enterprise recovery operations."
+    },
+    {
+      "id": "DQuoFsZ3oda1diTerwpq",
+      "name": "Aaditya - Calm and Conversational",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "middle_aged",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "deep",
+        "use_case": "narrative_story"
+      },
+      "description": "Aaditya K - Calm Conversational Hindi Voice - Aaditya Kapur is the pen name of an artist whose AI English voice has already been loved by many, with millions of characters generated using it. His confident, deep baritone voice brings your script to life with an engaging and energetic delivery—perfect for adding liveliness and confidence to your message."
+    },
+    {
+      "id": "HH8sIQq8WOcER3Nu118i",
+      "name": "Raju - Warm, Friendly and Sympathetic",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "young",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "professional",
+        "use_case": "conversational"
+      },
+      "description": "Raju - Medical Customer Care Agent for Clinics & Labs, Warm & Friendly - Raju’s voice is warm, friendly, and reassuring—perfect for health-tech support. His voice is trained for accurate pronunciation of medical and health-related terminology. Ideal for use in WhatsApp bots, AI agents, and customer support tools. Suitable for hospitals, clinics, telehealth platforms, insurance providers, and digital health brands. Raju is one of the most popular voices on ElevenLabs, with over 4 billion characters. "
+    },
+    {
+      "id": "k7nOSUCadIEwB6fdJmbw",
+      "name": "Ahmed - Clear, Deep and Natural",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "middle_aged",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "confident",
+        "use_case": "narrative_story"
+      },
+      "description": "Ahmed - Professional Hindi Voice - This voice radiates the warmth of Indian speakers while exuding captivating professionalism, making it the ultimate choice for any type of content creation on platforms like YouTube. Its crystal-clear articulation brings stories to life, drawing audiences in and balancing approachability with expertise, making it ideal for various tasks—from engaging videos to corporate presentations and everything in between!"
+    },
+    {
+      "id": "9cI5mhBtM4WtQ9Fo6jWQ",
+      "name": "Sara - Warm, Serious and Steady",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "middle_aged",
+        "accent": "standard",
+        "gender": "female",
+        "descriptive": "pleasant",
+        "use_case": "narrative_story"
+      },
+      "description": "Sara - Warm & Engaging Storyteller  - Introducing Sara, a voice that exudes warmth, empathy, and genuine connection. Voice has a natural, expressive quality, & it is inspired by the rich storytelling traditions of Urdu.\r\n\r\nSara's voice carries a depth of emotion that will captivate your audience, perfect for narrating stories, podcasts, audiobooks, social media and any project where you want to create an intimate and engaging listening experience. Ideal for adding a touch of cultural authenticity and warmth to your content."
+    },
+    {
+      "id": "zT03pEAEi0VHKciJODfn",
+      "name": "Raju - Clear, Natural and Warm",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "middle_aged",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "modulated",
+        "use_case": "conversational"
+      },
+      "description": "Raju - Relatable Hindi Voice - This voice has the familiar warmth and approachability of a regular Indian speaker, yet it carries a professionalism that makes it versatile for a range of applications. It's clear and articulate enough to engage audiences on social media, provide guidance through customer care bots, and serve in various other communication roles. Its authentic Indian tone adds a layer of relatability without compromising on clarity or effectiveness, making it an excellent choice for connecting with audiences."
+    },
+    {
+      "id": "Sxk6njaoa7XLsAFT7WcN",
+      "name": "Amit Gupta - Warm and Sympathetic",
+      "category": "professional",
+      "labels": {
+        "language": "hi",
+        "age": "young",
+        "accent": "standard",
+        "gender": "male",
+        "descriptive": "calm",
+        "use_case": "narrative_story"
+      },
+      "description": "Amit Gupta - A young Indian male with a naturally warm and young base voice, perfect for Hindi narration and storytelling. Perfect for storytelling, and ideal for audiobooks, advertisements, documentaries, social media and conversational content."
+    },
+    {
+      "id": "hpp4J3VqNfWAUOO0d1Us",
+      "name": "Bella - Professional, Bright, Warm",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "female",
+        "accent": "american",
+        "descriptive": "professional",
+        "use_case": "informative_educational"
+      },
+      "description": "This voice is warm, bright, and professional, characterized by a Standard American accent and a polished, narrative quality. It features a medium-high pitch with crisp diction and a deliberate, rhythmic pace that makes it highly intelligible and engaging for long-form listening."
+    },
+    {
+      "id": "CwhRBWXzGAHq8TQ4Fs17",
+      "name": "Roger - Laid-Back, Casual, Resonant",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "classy",
+        "use_case": "conversational"
+      },
+      "description": "Easy going and perfect for casual conversations."
+    },
+    {
+      "id": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah - Mature, Reassuring, Confident",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "female",
+        "accent": "american",
+        "descriptive": "professional",
+        "use_case": "entertainment_tv"
+      },
+      "description": "Young adult woman with a confident and warm, mature quality and a reassuring, professional tone."
+    },
+    {
+      "id": "FGY2WhTYpPnrIDTdsKH5",
+      "name": "Laura - Enthusiast, Quirky Attitude",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "female",
+        "accent": "american",
+        "descriptive": "sassy",
+        "use_case": "social_media"
+      },
+      "description": "This young adult female voice delivers sunny enthusiasm with a quirky attitude."
+    },
+    {
+      "id": "IKne3meq5aSn9XLyUdCD",
+      "name": "Charlie - Deep, Confident, Energetic",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "male",
+        "accent": "australian",
+        "descriptive": "hyped",
+        "use_case": "conversational"
+      },
+      "description": "A young Australian male with a confident and energetic voice."
+    },
+    {
+      "id": "JBFqnCBsd6RMkjVDRZzb",
+      "name": "George - Warm, Captivating Storyteller",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "british",
+        "descriptive": "mature",
+        "use_case": "narrative_story"
+      },
+      "description": "Warm resonance that instantly captivates listeners."
+    },
+    {
+      "id": "N2lVS1w4EtoT3dr4eOWO",
+      "name": "Callum - Husky Trickster",
+      "category": "premade",
+      "labels": {
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "language": "en",
+        "use_case": "characters_animation"
+      },
+      "description": "Deceptively gravelly, yet unsettling edge."
+    },
+    {
+      "id": "SAz9YHcvj6GT2YYXdXww",
+      "name": "River - Relaxed, Neutral, Informative",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "neutral",
+        "accent": "american",
+        "descriptive": "calm",
+        "use_case": "conversational"
+      },
+      "description": "A relaxed, neutral voice ready for narrations or conversational projects."
+    },
+    {
+      "id": "SOYHLrjzK2X1ezoPC6cr",
+      "name": "Harry - Fierce Warrior",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "rough",
+        "use_case": "characters_animation"
+      },
+      "description": "An animated warrior ready to charge forward."
+    },
+    {
+      "id": "TX3LPaxmHKxFdv7VOQHJ",
+      "name": "Liam - Energetic, Social Media Creator",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "confident",
+        "use_case": "social_media"
+      },
+      "description": "A young adult with energy and warmth - suitable for reels and shorts."
+    },
+    {
+      "id": "Xb7hH8MSUJpSbSDYk0k2",
+      "name": "Alice - Clear, Engaging Educator",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "female",
+        "accent": "british",
+        "descriptive": "professional",
+        "use_case": "informative_educational"
+      },
+      "description": "Clear and engaging, friendly woman with a British accent suitable for e-learning."
+    },
+    {
+      "id": "XrExE9yKIg1WjnnlVkGX",
+      "name": "Matilda - Knowledgable, Professional",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "female",
+        "accent": "american",
+        "descriptive": "upbeat",
+        "use_case": "informative_educational"
+      },
+      "description": "A professional woman with a pleasing alto pitch. Suitable for many use cases."
+    },
+    {
+      "id": "bIHbv24MWmeRgasZH58o",
+      "name": "Will - Relaxed Optimist",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "chill",
+        "use_case": "conversational"
+      },
+      "description": "Conversational and laid back."
+    },
+    {
+      "id": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica - Playful, Bright, Warm",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "young",
+        "gender": "female",
+        "accent": "american",
+        "descriptive": "cute",
+        "use_case": "conversational"
+      },
+      "description": "Young and popular, this playful American female voice is perfect for trendy content."
+    },
+    {
+      "id": "cjVigY5qzO86Huf0OWal",
+      "name": "Eric - Smooth, Trustworthy",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "classy",
+        "use_case": "conversational"
+      },
+      "description": "A smooth tenor pitch from a man in his 40s - perfect for agentic use cases."
+    },
+    {
+      "id": "iP95p4xoKVk53GoZ742B",
+      "name": "Chris - Charming, Down-to-Earth",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "casual",
+        "use_case": "conversational"
+      },
+      "description": "Natural and real, this down-to-earth voice is great across many use-cases."
+    },
+    {
+      "id": "nPczCjzI2devNBz1zQrb",
+      "name": "Brian - Deep, Resonant and Comforting",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "classy",
+        "use_case": "social_media"
+      },
+      "description": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements."
+    },
+    {
+      "id": "onwK4e9ZLuTAKqWW03F9",
+      "name": "Daniel - Steady Broadcaster",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "british",
+        "descriptive": "formal",
+        "use_case": "informative_educational"
+      },
+      "description": "A strong voice perfect for delivering a professional broadcast or news story."
+    },
+    {
+      "id": "pFZP5JQG7iQjIQuC4Bku",
+      "name": "Lily - Velvety Actress",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "middle_aged",
+        "gender": "female",
+        "accent": "british",
+        "descriptive": "confident",
+        "use_case": "informative_educational"
+      },
+      "description": "Velvety British female voice delivers news and narrations with warmth and clarity."
+    },
+    {
+      "id": "pNInz6obpgDQGcFmaJgB",
+      "name": "Adam - Dominant, Firm",
+      "category": "premade",
+      "labels": {
+        "age": "middle_aged",
+        "gender": "male",
+        "accent": "american",
+        "language": "en",
+        "use_case": "social_media"
+      },
+      "description": "A bright tenor pitch that immediately cuts through. The delivery is brash and openly confident, speaking with unwavering certainty and a slightly aggressive self-assurance."
+    },
+    {
+      "id": "pqHfZKP75CvOlQylNhV4",
+      "name": "Bill - Wise, Mature, Balanced",
+      "category": "premade",
+      "labels": {
+        "language": "en",
+        "age": "old",
+        "gender": "male",
+        "accent": "american",
+        "descriptive": "crisp",
+        "use_case": "advertisement"
+      },
+      "description": "Friendly and comforting voice ready to narrate your stories."
+    }
+  ]
+}

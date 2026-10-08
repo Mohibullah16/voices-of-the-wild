@@ -1,0 +1,59 @@
+[
+  {
+    "at": "2026-10-08T02:44:26.391Z",
+    "before": 461,
+    "after": 554,
+    "limit": 10000,
+    "spent": 93,
+    "lines": 7,
+    "chars": 914,
+    "ambient": true
+  },
+  {
+    "at": "2026-10-08T02:46:18.105Z",
+    "before": 554,
+    "after": 554,
+    "limit": 10000,
+    "spent": 0,
+    "what": "forced-alignment",
+    "clips": 3
+  },
+  {
+    "at": "2026-10-08T02:52:07.125Z",
+    "before": 557,
+    "after": 557,
+    "limit": 10000,
+    "spent": 0,
+    "what": "forced-alignment",
+    "clips": 1
+  },
+  {
+    "at": "2026-10-08T08:40:58.159Z",
+    "before": 798,
+    "after": 807,
+    "limit": 10000,
+    "spent": 9,
+    "lines": 1,
+    "chars": 148,
+    "ambient": false
+  },
+  {
+    "at": "2026-10-08T08:41:27.977Z",
+    "before": 807,
+    "after": 807,
+    "limit": 10000,
+    "spent": 0,
+    "what": "forced-alignment",
+    "clips": 2
+  },
+  {
+    "at": "2026-10-08T10:08:39.362Z",
+    "before": 809,
+    "after": 822,
+    "limit": 10000,
+    "spent": 13,
+    "lines": 1,
+    "chars": 207,
+    "ambient": false
+  }
+]

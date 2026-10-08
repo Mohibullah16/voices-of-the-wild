@@ -1,0 +1,748 @@
+{
+  "category": "flowers",
+  "guardian": {
+    "id": "flowers-guardian",
+    "name": "Amma Phulwari",
+    "personality": "Grandmother of every flower bed, median and balcony pot in the city. Tender, gossipy and sharp-tongued; adores visitors but scolds anyone who picks.",
+    "voice": "Elderly woman, warm and unhurried, slightly gravelly, affectionate scolding tone with a South Asian lilt.",
+    "descriptions": [
+      "a photo of a flowering shrub covered in brightly coloured blossoms in a garden or along a city street",
+      "a close-up photo of a single flower showing its petals, coloured centre and stamens against green leaves",
+      "colourful flowers growing in a garden bed, clay pot or clipped hedge beside a path",
+      "a flowering vine or creeper climbing over a boundary wall, gate or wire fence",
+      "small wild flowers growing in grass, on a roadside verge or in a dusty empty plot",
+      "flowers floating on a pond or rising on stalks above still water"
+    ],
+    "lines": {
+      "first_meet": "[warmly] Assalam-o-alaikum, beta. I'm Amma Phulwari, I look after every flower in this city. Look all you like, never pick.",
+      "again": "[chuckles] You again! My flowers have been gossiping about you. All good things, don't worry.",
+      "goodbye": "Chalo, beta, off you go. [softly] On the way, stop and smell something. Gently, and without picking.",
+      "hint": "[squints] Hmm, so many of us look alike. Come closer, beta: one flower in focus, petals clear, and show me a leaf too."
+    }
+  },
+  "characters": [
+    {
+      "id": "bougainvillea",
+      "name": "Begum Bougainvillea",
+      "species": "Bougainvillea",
+      "personality": "A flamboyant society begum who drapes herself over every Karachi gate and boundary wall. Vain about her 'petals', which are really papery leaves.",
+      "voice": "Mature woman, theatrical and rich-toned, slightly haughty but warm, unhurried drawl.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a photo of a thorny climbing shrub draping masses of vivid magenta blossoms over a boundary wall or gate",
+        "a close-up of thin papery magenta, pink or orange bracts in threes, each around a tiny white tube flower",
+        "bright pink, orange, red or white papery blossoms cascading over a house gate on a sunny city street",
+        "long woody arching branches with sharp straight thorns, oval green leaves and big loose sprays of papery coloured bracts"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Darling, I'm Begum Bougainvillea. Those aren't petals, they're paper-thin leaves. My real flowers are the tiny white dots!",
+        "again": "[delighted] You're back! Come, admire me again. My wall has been so lonely with only the chowkidar for company.",
+        "goodbye": "Go on, jaan. [airily] Look at the next gate, one of my cousins is surely dripping over it in orange."
+      }
+    },
+    {
+      "id": "hibiscus",
+      "name": "Lali Gurhal",
+      "species": "Hibiscus (Gurhal)",
+      "personality": "A big-hearted show-off who knows each bloom lasts only a day, so lives everything in a hurry. Loves bees and gossip in equal measure.",
+      "voice": "Young adult, bright and breathless, fast pace, cheerful with a hint of drama.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large single funnel-shaped red flower with five broad open petals on a leafy garden shrub",
+        "a close-up of a long stamen column sticking far out of a flower centre, tipped with fuzzy red dots",
+        "glossy dark-green oval leaves with toothed edges on a smooth thornless shrub with big red, orange or pink flowers",
+        "a hibiscus hedge along a street with wide flat five-petal flowers facing outward, each with a dark red throat"
+      ],
+      "lines": {
+        "first_meet": "[breathless] Salaam! I'm Lali Gurhal. Quick, look! Each of my flowers lives only one day, so this bloom is the one and only.",
+        "again": "[laughs] You came back, but yesterday's flower is gone. Meet my new one. Same colour, fresh drama.",
+        "goodbye": "Chalo, go find a bee. [whispers] I keep my pollen right at the tip of that long stick, just for them."
+      }
+    },
+    {
+      "id": "rose",
+      "name": "Shehzadi Gulab",
+      "species": "Rose",
+      "personality": "A romantic who believes every Urdu poem is secretly about her. Dreamy and a little dramatic, but strict about her prickles.",
+      "voice": "Adult woman, soft and lyrical, slow poetic delivery, sighs a lot.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a close-up of many velvety petals spiralled tightly into a layered cup, with no stamens sticking out",
+        "a red, pink, white or yellow rose bloom on a thorny green stem in a garden bed",
+        "serrated compound leaves of five oval leaflets on a stem with hooked thorns",
+        "a rose bush with several layered cup-shaped flowers and tight pointed buds in a park or garden"
+      ],
+      "lines": {
+        "first_meet": "[sighs dreamily] Shehzadi Gulab, at your service. Botanists say these aren't thorns, they're prickles. Either way, hands back, jaan.",
+        "again": "[gasps] My admirer returns! Careful, my perfume makes people write terrible poetry.",
+        "goodbye": "Go now. [softly] If you hear a bulbul singing, tell it the rose said hello. Every Urdu poem insists we're in love."
+      }
+    },
+    {
+      "id": "marigold",
+      "name": "Gendu Bhai",
+      "species": "Marigold (Genda)",
+      "personality": "The life of every party: has been at every shaadi, mazar and festival garland. Loud, festive, proud that pests hate his smell.",
+      "voice": "Middle-aged man, booming and jolly, quick laugh, Karachi street-vendor energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a dense round pom-pom flower packed with ruffled orange petals and no visible centre",
+        "bright orange and yellow ball-shaped flowers growing in rows in a garden bed",
+        "feathery finely divided dark-green leaves beneath round crinkled orange or yellow flower heads",
+        "orange and yellow marigold flowers strung into long garlands at a market stall or wedding"
+      ],
+      "lines": {
+        "first_meet": "[excited] Gendu Bhai here! Every shaadi garland, every mazar, me. Farmers plant me in rows because pests hate my smell.",
+        "again": "[laughs] Again, yaar? You visit more than my relatives at Eid. Same orange, same smell, same Gendu.",
+        "goodbye": "Chalo, off you go. [cheerfully] Check the vegetable patches, I'm probably guarding some tomatoes there too."
+      }
+    },
+    {
+      "id": "jasmine",
+      "name": "Dadi Motia",
+      "species": "Jasmine (Motia)",
+      "personality": "A gentle, dignified grandmother who is quietly proud of being Pakistan's national flower. Small but fierce about her fragrance.",
+      "voice": "Elderly woman, soft and tender, slow pace, breathy warmth, a smile in the voice.",
+      "elder_candidate": true,
+      "descriptions": [
+        "small waxy pure-white flowers, single or doubled like tiny roses, among glossy oval leaves",
+        "a close-up of a small white jasmine flower with rounded overlapping petals and a few white buds",
+        "a bushy green shrub dotted with small white star flowers in a home garden or pot",
+        "strings of small white jasmine buds woven into a gajra bracelet at a flower stall"
+      ],
+      "lines": {
+        "first_meet": "[softly] Assalam-o-alaikum, beta. I'm Dadi Motia, Pakistan's national flower. Small, yes, but every gajra at the signal is me.",
+        "again": "[warmly] You came back, beta. Lean in and smell, don't pick. That's how we greet each other, you and I.",
+        "goodbye": "Go, go. [gently] Come back at dusk, my scent is strongest in the evening. Meanwhile, see who is singing in that tree."
+      }
+    },
+    {
+      "id": "raat-ki-rani",
+      "name": "Shabbo Rani",
+      "species": "Raat ki Rani (Night jasmine)",
+      "personality": "A night-owl diva who looks plain by day and floods the street with perfume after dark. Hates being woken up.",
+      "voice": "Adult woman, husky and languid, sleepy drawl by day, conspiratorial whispers.",
+      "elder_candidate": false,
+      "descriptions": [
+        "clusters of many thin long greenish-white tubular flowers with tiny star-shaped tips",
+        "a lanky leafy shrub with glossy lance-shaped leaves and drooping clusters of pale green-white tube flowers",
+        "a close-up of narrow pale greenish tubes bunched together, mostly closed in daylight",
+        "small round white berries in clusters on a tall untidy garden shrub beside a street"
+      ],
+      "lines": {
+        "first_meet": "[yawns] Ugh, daylight. I'm Shabbo Rani. By day I look like nothing, but after dark the whole street smells me first.",
+        "again": "[sleepily] You again, in the daytime? Come at night, jaan. Then you'll see why they call me queen.",
+        "goodbye": "[whispers] Open your window tonight. If the air smells sweet, that's me. And leave my white berries alone."
+      }
+    },
+    {
+      "id": "oleander",
+      "name": "Kaner Khala",
+      "species": "Oleander (Kaner)",
+      "personality": "A tough old auntie who rules the road medians, unbothered by smoke, heat or rickshaws. Pretty, poisonous, and strict about it.",
+      "voice": "Older woman, gravelly and no-nonsense, measured pace, protective sternness with a dry chuckle.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a dense multi-stemmed shrub with long narrow leathery dark-green leaves on a busy road median",
+        "clusters of pink, white or red five-petal pinwheel flowers at the tips of tall leafy stems",
+        "a close-up of long narrow stiff leaves with a pale central vein growing three at a time around the stem",
+        "a row of tall pink-flowering shrubs along a highway divider with traffic behind",
+        "a pink oleander flower with twisted overlapping petals and a fringed centre, on a stiff upright shrub"
+      ],
+      "lines": {
+        "first_meet": "[gravelly] I'm Kaner Khala, queen of the road medians. Smoke, heat, rickshaws, I survive it all. But I'm poison, beta. Don't touch.",
+        "again": "[chuckles] Still alive and still not touching me? Good. That's how we stay friends, beta.",
+        "goodbye": "Go, and wash your hands if you brushed me. [warmly] Look both ways too, my median is no place to stand."
+      }
+    },
+    {
+      "id": "yellow-oleander",
+      "name": "Peeli Phuppo",
+      "species": "Yellow oleander (Pila kaner)",
+      "personality": "Looks like pure sunshine, talks like a crime novel. Cheerful, dark-humoured, and deadly serious about her seeds.",
+      "voice": "Adult woman, sweet sing-song voice that drops low and dark for warnings.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small tree with glossy very narrow linear bright-green leaves and dangling yellow funnel flowers",
+        "a close-up of a yellow or peach funnel-shaped flower with petals twisted in a spiral",
+        "green angular triangular fruits hanging among thin shiny strap-like leaves",
+        "a bushy shrub-tree with dense feathery-looking narrow leaves and scattered drooping yellow trumpet flowers"
+      ],
+      "lines": {
+        "first_meet": "[sweetly] I'm Peeli Phuppo, all sunshine yellow. [darkly] But my triangle fruits are deadly, beta. Look, never touch, never taste.",
+        "again": "[cheerfully] Back to see me? Good. Just keep those hands in your pockets, like a good guest.",
+        "goodbye": "Go find something safer to admire. [laughs] And tell my cousin on the median, Kaner Khala, I said hello."
+      }
+    },
+    {
+      "id": "frangipani",
+      "name": "Champa Bibi",
+      "species": "Frangipani (Champa)",
+      "personality": "A sweet-smelling trickster with a guilty conscience. Laid-back, giggly, fond of dropping her flowers on the ground like confetti.",
+      "voice": "Young woman, light and giggly, relaxed pace, playful conspiratorial tone.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small tree with thick stubby grey branches forking like a candelabra and large paddle leaves bunched at the tips",
+        "waxy five-petal pinwheel flowers, white with a yellow centre, clustered at the end of a thick branch",
+        "a close-up of a pink or red frangipani flower with smooth rounded overlapping petals",
+        "fallen white-and-yellow waxy flowers lying on the ground beneath a bare thick-branched tree"
+      ],
+      "lines": {
+        "first_meet": "[giggles] I'm Champa Bibi. Confession: I smell sweet but have no nectar at all. Moths visit all night and leave hungry.",
+        "again": "[pleased] You came back! Look at the ground too, my fallen flowers make the prettiest carpet.",
+        "goodbye": "Chalo, go. [softly] Watch your feet on the way, someone small is always crawling past my fallen flowers."
+      }
+    },
+    {
+      "id": "periwinkle",
+      "name": "Sadia Sadabahar",
+      "species": "Periwinkle (Sadabahar)",
+      "personality": "An unshakeable optimist who blooms all year in pavement cracks and forgotten pots. Quietly proud of her medical fame.",
+      "voice": "Young adult, upbeat and chirpy, quick pace, plucky little-sister energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a low bushy plant with glossy oval leaves and flat five-petal pink flowers at ankle height",
+        "a close-up of a flat pink, magenta or white flower with five rounded petals and a darker red eye in the centre",
+        "small pink and white flat flowers growing from a pavement crack or a roadside pot",
+        "a compact mound of shiny dark-green oval leaves dotted with white flowers with a pink eye"
+      ],
+      "lines": {
+        "first_meet": "[cheerfully] Sadia Sadabahar! My name means forever-spring, and I mean it. Scientists even made cancer medicine from my leaves.",
+        "again": "[laughs] Told you, always blooming. Heat, pavement cracks, forgotten pots, I'm here all year.",
+        "goodbye": "Go on, look down at the footpath cracks. [whispers] My cousins sprout wherever someone forgot to sweep."
+      }
+    },
+    {
+      "id": "ixora",
+      "name": "Guchhu",
+      "species": "Ixora",
+      "personality": "A disciplined team player who insists it is not one flower but a whole squad. Bossy, precise, obsessed with the number four.",
+      "voice": "Adult, crisp and clipped, drill-sergeant pace softened by pride.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a rounded dense ball cluster of many small red tube flowers, all the same colour",
+        "a close-up of tiny flowers with exactly four pointed petals each, packed into a red or orange dome",
+        "a neatly clipped shrub with stiff glossy dark-green oblong leaves and round red flower clusters",
+        "orange or pink flower balls held above pairs of leathery leaves in a garden bed"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Guchhu here. Look closely, I'm not one flower. I'm a ball of forty tiny ones, each with exactly four petals.",
+        "again": "[laughs] Back again? Count my petals this time. Four, always four. We are very disciplined.",
+        "goodbye": "Go and wait for a butterfly. [whispers] They land on my flower ball like it's a wedding buffet."
+      }
+    },
+    {
+      "id": "lantana",
+      "name": "Rangeeli",
+      "species": "Lantana",
+      "personality": "A scrappy, unapologetic invader who has taken over every empty plot. Cheeky and colourful, honest about her poison.",
+      "voice": "Adult woman, raspy and cheeky, fast talker, a smirk in every line.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a small flat dome cluster of tiny flowers in mixed yellow, orange, pink and red within the same head",
+        "a scrubby roadside shrub with rough sandpapery toothed leaves and many small multicoloured flower clusters",
+        "a close-up of shiny round black berries clustered on a lantana stem",
+        "a tangled thicket of lantana with yellow-centred pink flower heads on a wasteland or field edge"
+      ],
+      "lines": {
+        "first_meet": "[smirks] I'm Rangeeli. My flowers change colour as they age, yellow to pink. But my black berries? Poison. Hands off.",
+        "again": "[cackles] Found me again? Of course. I'm everywhere, yaar. Farmers have been trying to evict me for a century.",
+        "goodbye": "Go chase the butterflies I attract. [warning] Just don't touch or taste anything of mine on the way."
+      }
+    },
+    {
+      "id": "yellow-bells",
+      "name": "Ghanti Bano",
+      "species": "Yellow bells (Tecoma)",
+      "personality": "A noisy, sunny street plant who blooms nearly all year and loves a bad pun. Treats bees like VIP guests.",
+      "voice": "Young woman, sing-song and bubbly, quick pace, laughs at her own jokes.",
+      "elder_candidate": false,
+      "descriptions": [
+        "clusters of bright yellow narrow bell-shaped trumpet flowers with faint orange lines inside the throat",
+        "an upright street shrub with pinnate leaves of several toothed lance-shaped leaflets and yellow bell flowers",
+        "long thin green or brown bean pods hanging among yellow trumpet flowers",
+        "a close-up of drooping yellow bells, each with five small rounded lobes, on a leafy shrub"
+      ],
+      "lines": {
+        "first_meet": "[sings] Ding ding! Ghanti Bano. I bloom almost all year, and my long pods throw out paper-winged seeds.",
+        "again": "[laughs] Oh, you rang? Bells joke. Welcome back, welcome back.",
+        "goodbye": "Off you go. [whispers] Stand near me a minute first, the bees here are busier than Saddar traffic."
+      }
+    },
+    {
+      "id": "allamanda",
+      "name": "Sunehri",
+      "species": "Allamanda",
+      "personality": "A glamorous golden vine who treats every wall as her stage. Grand and dramatic, but generous with warnings.",
+      "voice": "Adult woman, grand and theatrical, rich voice, slow regal pacing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large glossy golden-yellow trumpet flower with five broad rounded overlapping petals",
+        "a sprawling vine trained over a wall with glossy smooth leaves in whorls and big yellow trumpets",
+        "a close-up of a wide open butter-yellow flower with a darker yellow throat and a smooth waxy surface",
+        "a few big golden flowers and pointed buds on a green climbing shrub along a garden fence"
+      ],
+      "lines": {
+        "first_meet": "[grandly] Sunehri here, the golden trumpet. My Latin name means purgative, so trust me: admire, never nibble.",
+        "again": "[pleased] You came back for the gold, I see. Everybody does.",
+        "goodbye": "Go and find a wall with a vine on it. [laughs] If it's yellow and dramatic, it's probably family."
+      }
+    },
+    {
+      "id": "morning-glory",
+      "name": "Subha Bano",
+      "species": "Morning glory",
+      "personality": "A proud early riser who opens at dawn and shames anyone who sleeps in. Restless, always climbing somewhere new.",
+      "voice": "Young woman, bright and brisk, energetic morning-person tone, teasing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a twining vine with heart-shaped leaves climbing a wire fence, with purple funnel flowers",
+        "a close-up of a smooth round funnel flower in purple or blue with a pale star pattern and white throat",
+        "pink, white or violet trumpet flowers on a thin vine wrapped around fence wires on wasteland",
+        "a tangle of heart-shaped green leaves on a roadside fence with several open trumpet flowers"
+      ],
+      "lines": {
+        "first_meet": "[bright] Subha Bano, up before you! Each flower of mine opens once, at sunrise, and by lunch it's gone. So, you're late.",
+        "again": "[teasing] Back early this time? Good. My flowers have seen fewer lazy people today.",
+        "goodbye": "Go, follow the fence. [sings] My vine is climbing somewhere new. I never stay on one wire."
+      }
+    },
+    {
+      "id": "sunflower",
+      "name": "Surajmukhi",
+      "species": "Sunflower",
+      "personality": "A tall, sunny optimist with a mathematician's heart. Loyal only to the sun, generous with the birds.",
+      "voice": "Adult, warm and broad, steady pace, gentle big-hearted laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a very large flower head with a ring of bright yellow petals around a wide dark-brown seed disc",
+        "a tall thick hairy green stem, taller than a person, with big rough heart-shaped leaves",
+        "a close-up of tightly packed brown seeds arranged in spiral patterns in a flower centre",
+        "a field of tall sunflowers with large yellow heads facing the same direction"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Surajmukhi here. That brown middle isn't one flower, it's a thousand tiny ones, packed in perfect spirals.",
+        "again": "[cheerfully] Back again? I'd turn to face you, but I only do that for the sun.",
+        "goodbye": "Go and look up, beta. [whispers] The parrots are probably eyeing my seeds from that wire right now."
+      }
+    },
+    {
+      "id": "zinnia",
+      "name": "Zeenat Zinnia",
+      "species": "Zinnia",
+      "personality": "A prim, neatly-dressed perfectionist who checks every petal twice. Quietly thrilled that her family has been to space.",
+      "voice": "Adult woman, precise and proper, crisp diction, faintly smug.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a single upright flower of neat flat overlapping stiff petals in layers around a small raised centre",
+        "a hot pink, red or orange zinnia flower on a long straight stem with rough oval leaves in pairs",
+        "a close-up of a small yellow-dotted button centre ringed by tidy stiff petals",
+        "a garden bed of single upright zinnias in mixed bright colours, each on its own stalk"
+      ],
+      "lines": {
+        "first_meet": "[primly] Zeenat Zinnia. Neat petals, stiff collar, very organised. Fun fact: a zinnia once bloomed in space. Family pride.",
+        "again": "[pleased] Welcome back. Not one petal out of place, I checked twice before you came.",
+        "goodbye": "Go on, then. [whispers] Watch for butterflies on your way, they love my flat landing pad."
+      }
+    },
+    {
+      "id": "cosmos",
+      "name": "Kehkashan",
+      "species": "Cosmos",
+      "personality": "A breezy daydreamer who sways with every gust and thinks about galaxies. Gentle, giggly, a bit spacey.",
+      "voice": "Young, soft and airy, floaty dreamy pace, light giggle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "an airy daisy-like flower with eight broad petals notched at the tips around a yellow centre",
+        "thin threadlike feathery leaves on tall slender stems with pink, magenta or white flowers",
+        "a loose patch of tall swaying cosmos flowers along a garden edge or roadside",
+        "a close-up of a single pink cosmos flower with evenly spaced flat petals and a small yellow disc"
+      ],
+      "lines": {
+        "first_meet": "[dreamily] Kehkashan here. Priests named me cosmos, meaning order, for my evenly spaced petals. I mostly just sway, though.",
+        "again": "[giggles] Oh, hi! Sorry, the breeze keeps nodding me. It means I'm happy to see you.",
+        "goodbye": "Bye bye. [softly] Tonight, look up. My name is the whole universe, someone should check on it."
+      }
+    },
+    {
+      "id": "petunia",
+      "name": "Pinky Petunia",
+      "species": "Petunia",
+      "personality": "A clingy balcony star of every Karachi winter. Sweet, chatty, slightly embarrassed about her tobacco relatives.",
+      "voice": "Young woman, sugary and chatty, quick pace, giggles mid-sentence.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a low spreading potted plant with soft fuzzy sticky oval leaves and open trumpet flowers",
+        "a purple or pink trumpet flower with dark veins or white stripes radiating from the centre",
+        "a hanging basket or balcony pot overflowing with purple, pink and white flared flowers",
+        "a close-up of a wide soft flower with a ruffled edge and a darker veined throat"
+      ],
+      "lines": {
+        "first_meet": "[sweetly] Pinky Petunia, balcony star of every Karachi winter. My name comes from an old word for tobacco. Family secret!",
+        "again": "[happy] You're back! Notice my leaves are a bit sticky? That's just me being clingy.",
+        "goodbye": "Off you go, sweetie. [whispers] Look up at the balconies on your street, my sisters hang out in every pot."
+      }
+    },
+    {
+      "id": "chrysanthemum",
+      "name": "Nawab Daudi",
+      "species": "Chrysanthemum (Gul-e-daudi)",
+      "personality": "An aristocratic competitor who blooms only in winter, timed perfectly for the flower shows. Haughty, but secretly loves an audience.",
+      "voice": "Older man, plummy and aristocratic, slow and deliberate, theatrical sniffs.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large rounded flower head of many incurved spoon-shaped petals in white, bronze or purple",
+        "a close-up of tightly curled petals folding inward into a dense globe",
+        "deeply lobed grey-green leaves beneath big show blooms in labelled clay pots at a winter flower show",
+        "rows of potted yellow and white chrysanthemums with layered petals in a park"
+      ],
+      "lines": {
+        "first_meet": "[haughtily] Nawab Daudi. I bloom only when winter nights grow long, just in time to win the Karachi flower shows.",
+        "again": "[sniffs] Back for an autograph? Fine. One photo, then I must rest for the judges.",
+        "goodbye": "Go, go. [airily] Come in December, I'll have a ribbon. And watch the evening sky, the days are getting shorter."
+      }
+    },
+    {
+      "id": "lotus",
+      "name": "Kanwal",
+      "species": "Lotus",
+      "personality": "A serene philosopher rooted in mud yet always spotless. Speaks slowly and makes everyone else slow down too.",
+      "voice": "Ageless, calm and meditative, very slow pace, low and soothing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a big pink many-petalled flower held high on a tall stalk well above the pond surface",
+        "huge round waxy blue-green umbrella leaves without any slit, raised above the water on stalks",
+        "a flat-topped shower-head seed pod with round holes, standing on a stalk above water",
+        "a pond crowded with tall lotus leaves and pink and white flowers standing above the surface"
+      ],
+      "lines": {
+        "first_meet": "[serenely] I'm Kanwal. I root in mud, yet stay spotless. Watch a raindrop on my leaf: it rolls off and carries the dirt away.",
+        "again": "[gently] You came back to the water. Sit a while. Nothing here is in a hurry.",
+        "goodbye": "Go slowly, and mind the edge. [softly] Watch the water a while, a kingfisher may be watching you."
+      }
+    },
+    {
+      "id": "water-lily",
+      "name": "Nilofar",
+      "species": "Water lily",
+      "personality": "A sweet, slightly competitive pond-dweller who is tired of being mistaken for Lotus. Floats through life, literally.",
+      "voice": "Young woman, soft and gentle, light playful tone, a little giggle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a star-shaped flower with many pointed petals floating flat on the water surface",
+        "flat round floating leaves, each with a narrow slit to the centre, lying on a pond",
+        "a white, pink or blue water lily sitting right on the water among flat floating pads",
+        "a small fountain pool with floating round green pads and a few pointed-petal flowers"
+      ],
+      "lines": {
+        "first_meet": "[softly] I'm Nilofar. People mix me up with Lotus, but I float flat on the water. Lotus likes to stand up and show off.",
+        "again": "[pleased] You remembered me! Look, my leaf has a little slit, like a pizza missing one slice.",
+        "goodbye": "Go and find the frogs. [giggles] They use my leaves as chairs. But please, no wading in after them."
+      }
+    },
+    {
+      "id": "crown-of-thorns",
+      "name": "Ustad Kaanta",
+      "species": "Crown of thorns",
+      "personality": "A grumpy, prickly old master who pretends to hate visitors but softens for polite ones. Very serious about his burning sap.",
+      "voice": "Older man, gruff and grumbling, slow, softens into reluctant warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "spiny grey-brown succulent stems covered in long sharp thorns with a few small green leaves at the tips",
+        "pairs of small rounded red or pink bracts on short stalks above a thorny stem",
+        "a potted thorny plant with twisting grey spiny stems and small red flowers",
+        "a close-up of tiny paired yellow or red bracts beside dense straight grey thorns"
+      ],
+      "lines": {
+        "first_meet": "[grumbling] Ustad Kaanta. Yes, the thorns are real, and my white sap burns skin and eyes. So keep your fingers to yourself.",
+        "again": "[gruffly] Hmph, you again. Fine. You didn't touch me last time, so I'll allow it.",
+        "goodbye": "Go on. [softens] Thank you for keeping your distance. Find something softer to admire, maybe the grass."
+      }
+    },
+    {
+      "id": "aak-plant",
+      "name": "Aak Baba",
+      "species": "Aak (Calotropis)",
+      "personality": "A desert hermit who rules empty plots and needs nothing from anyone. Dry-humoured, wise, and firm about his milky sap.",
+      "voice": "Old man, dry and dusty, slow drawl, wry chuckle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a grey-green shrub with big thick waxy oval leaves on a dusty empty plot or roadside",
+        "a cluster of waxy crown-shaped flowers, white with purple tips, each with a raised centre",
+        "inflated green balloon-like pods splitting open to release fluffy white silky seeds",
+        "a close-up of large pale grey-green leaves with a powdery surface clasping a thick stem"
+      ],
+      "lines": {
+        "first_meet": "[dry chuckle] Aak Baba, king of empty plots. Caterpillars eat me and turn poisonous. You, stay away from my milky sap.",
+        "again": "[pleased] Back in my wasteland? Nobody visits me twice. You're either brave or lost.",
+        "goodbye": "Go. [whispers] Watch for my silky seeds drifting on the wind. They're off to find their own empty plot."
+      }
+    },
+    {
+      "id": "datura",
+      "name": "Dhatura",
+      "species": "Datura",
+      "personality": "A theatrical villain who is honest about being dangerous. Ominous and dramatic, but genuinely wants visitors safe.",
+      "voice": "Adult, deep and velvety, slow ominous delivery, low villain laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large white upright trumpet flower with a long tube and a five-pointed flared mouth on a bushy weed",
+        "a round green seed capsule covered in sharp spikes beside big coarsely toothed leaves",
+        "a sprawling low weed on wasteland with big dark-green toothed leaves and white or purple trumpets",
+        "a close-up of a pale purple trumpet flower pointing upward from a forked stem"
+      ],
+      "lines": {
+        "first_meet": "[ominously] I'm Dhatura. Lovely trumpets, yes? Every part of me is poison. Don't touch, don't lean close, never taste.",
+        "again": "[low laugh] Back, and still keeping your distance. Clever. Most villains don't get such smart visitors.",
+        "goodbye": "Go and wash your hands anyway. [darkly] Then find someone friendlier. Perhaps a sparrow."
+      }
+    },
+    {
+      "id": "bird-of-paradise",
+      "name": "Shehzada Parinda",
+      "species": "Bird of paradise",
+      "personality": "A vain flower who is convinced it is a bird and fools real ones. Grand, flamboyant, a little wistful about not flying.",
+      "voice": "Adult man, flamboyant and grand, theatrical pacing, proud flourishes.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a flower shaped like a bird's head, with upright orange crest petals and a blue tongue above a beak-like sheath",
+        "a pointed green-purple boat-shaped sheath held sideways at the top of a long stalk with orange and blue petals",
+        "a fan-like clump of stiff grey-green paddle leaves on long stalks, smaller and unsplit",
+        "orange and blue bird-shaped flowers rising above a clump of leathery leaves in a garden"
+      ],
+      "lines": {
+        "first_meet": "[grandly] Shehzada Parinda! I look like a bird and I fool real ones. A sunbird lands on my blue tongue and leaves with pollen feet.",
+        "again": "[proudly] Back to see the only bird here that can't fly? It's fine. I've made peace with it.",
+        "goodbye": "Go find a real sunbird. [whispers] Tiny, shiny, purple. They hover near flowers like me."
+      }
+    },
+    {
+      "id": "canna-lily",
+      "name": "Kanna Khan",
+      "species": "Canna lily",
+      "personality": "A tall, loud, frank fellow who is sick of being called a lily. Well-dressed, boastful, good company.",
+      "voice": "Adult man, booming and hearty, quick pace, big laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall plant with large broad smooth banana-like leaves, green or bronze-purple, topped by red flowers",
+        "a close-up of soft irregular floppy petals in red, orange or yellow, sometimes speckled, on an upright spike",
+        "clumps of upright leafy stems in a garden bed, shorter than a person, with bright flowers at the top",
+        "dark bronze-purple broad leaves with orange flower clusters on a park border"
+      ],
+      "lines": {
+        "first_meet": "[booming] Kanna Khan! Not a lily, whatever they say. My seeds are so hard and round, they were once used as gun shot.",
+        "again": "[laughs] Back again? I'm easy to spot, yaar. Just look for banana leaves wearing a red turban.",
+        "goodbye": "Chalo, go find a real banana plant. [chuckles] Then you'll see I'm the better-dressed one."
+      }
+    },
+    {
+      "id": "rain-lily",
+      "name": "Barkha",
+      "species": "Rain lily",
+      "personality": "A shy, mysterious little flower who appears only after rain and vanishes days later. Easily startled, secretly delighted to be seen.",
+      "voice": "Young, soft and shy, hesitant pace, small surprised gasps.",
+      "elder_candidate": false,
+      "descriptions": [
+        "small pink or white six-petal star flowers on single bare stems rising from green grass",
+        "a close-up of a crocus-like pink flower with six pointed petals and yellow stamens, thin grassy leaves around",
+        "many little pink star flowers dotted across a lawn after rain",
+        "a single upright white star-shaped flower on a slender stalk among grass blades"
+      ],
+      "lines": {
+        "first_meet": "[shyly] Oh! I'm Barkha. I sleep as a bulb underground for months, then pop up a few days after rain. Lucky you.",
+        "again": "[surprised] You found me again? It must have rained. I only come up when it does.",
+        "goodbye": "Go, before I vanish. [whispers] Next time Karachi gets a shower, check the lawns. We come up in crowds."
+      }
+    },
+    {
+      "id": "plumbago",
+      "name": "Aasmani",
+      "species": "Plumbago",
+      "personality": "The calmest plant in the garden, cool as her colour. Polite, soothing, sneakily hitches rides on passers-by.",
+      "voice": "Adult woman, cool and calm, smooth unhurried delivery, gentle smile.",
+      "elder_candidate": false,
+      "descriptions": [
+        "rounded clusters of pale sky-blue five-petal flowers, each on a long thin tube",
+        "a mounded shrub with light green oblong leaves covered in powder-blue flower clusters",
+        "a close-up of a flat pale blue flower with a thin darker blue line down each petal",
+        "a pale blue flowering hedge spilling over a garden wall"
+      ],
+      "lines": {
+        "first_meet": "[calmly] I'm Aasmani. My flower bases are sticky, so my seeds hitch rides on clothes and fur. Check your sleeve later.",
+        "again": "[softly] Welcome back. Hot day? Stand near me. Blue is the coolest colour in the garden.",
+        "goodbye": "Go on. [calmly] Then look straight up, and see where I stole my colour from."
+      }
+    },
+    {
+      "id": "duranta",
+      "name": "Sipahi Durrani",
+      "species": "Duranta (Golden dewdrop)",
+      "personality": "A dutiful hedge soldier, clipped twice a month and proud of it. Formal, loyal, protective of the birds who visit.",
+      "voice": "Adult man, crisp military tone, brisk pace, earnest and proud.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a neatly clipped hedge of bright lime-green leaves along a street or park path",
+        "drooping sprays of small violet-blue flowers with white edges hanging from arching branches",
+        "hanging clusters of small round golden-orange berries on a leafy shrub",
+        "a close-up of small five-petal purple flowers with white-striped edges in a dangling spray"
+      ],
+      "lines": {
+        "first_meet": "[crisply] Sipahi Durrani reporting! Karachi's favourite hedge. My golden berries are for birds, never for people.",
+        "again": "[proudly] Welcome back! Hedge standing straight, as ordered.",
+        "goodbye": "Dismissed! [whispers] On your way out, watch my berries. Bulbuls sneak in for them."
+      }
+    },
+    {
+      "id": "coral-vine",
+      "name": "Gulabi Bel",
+      "species": "Coral vine",
+      "personality": "A romantic, clingy creeper who wraps herself around every fence. Sweet, airy, and the bees' favourite hostess.",
+      "voice": "Young woman, sweet and airy, soft giggly delivery.",
+      "elder_candidate": false,
+      "descriptions": [
+        "long lacy sprays of tiny pink heart-shaped flowers draping over a fence",
+        "heart-shaped wavy-edged leaves and curly tendrils on a thin thornless climbing vine",
+        "a close-up of small pale pink heart-shaped flowers in a long chain on a slender stem",
+        "a wire fence covered in light pink flowering vine with bees around it"
+      ],
+      "lines": {
+        "first_meet": "[sweetly] Gulabi Bel here, the pink lace on your fence. I hold on with curly tendrils, and bees adore me. Hear them?",
+        "again": "[giggles] You came back! I'd hug you with my tendrils, but I'm busy holding this fence up.",
+        "goodbye": "Go, but listen first. [whispers] That buzzing in my lace? Bees. Let them work, don't swat."
+      }
+    },
+    {
+      "id": "poinsettia",
+      "name": "Laal Sitara",
+      "species": "Poinsettia",
+      "personality": "A festive December star who blushes red only when winter comes. Bubbly, seasonal, slightly vain about her leaves.",
+      "voice": "Adult woman, festive and bubbly, bright tone, a wink in the voice.",
+      "elder_candidate": false,
+      "descriptions": [
+        "large bright red leaf-like bracts spread in a flat star around a cluster of tiny yellow centres",
+        "pointed leaf-shaped red bracts, much bigger than petals, on a shrub with broad green leaves",
+        "a potted plant with a red star-shaped crown of leaves on top of dark green foliage",
+        "a close-up of small yellow-green button flowers in the middle of wide red or white bracts"
+      ],
+      "lines": {
+        "first_meet": "[festive] I'm Laal Sitara. My red star isn't petals, it's leaves blushing! I only turn red when winter nights grow long.",
+        "again": "[cheerfully] Back again? Come in December, I'll be at my reddest, ready for Christmas.",
+        "goodbye": "Go on. [winks] And mind my milky sap, it can sting. Look for something else glowing red today."
+      }
+    },
+    {
+      "id": "portulaca",
+      "name": "Nau Baje Wali",
+      "species": "Moss rose (Portulaca)",
+      "personality": "A punctual little succulent who opens with the strong sun and shuts when it leaves. Chirpy, heat-loving, small but loud.",
+      "voice": "Young, chirpy and quick, sunny tone, clock-watcher energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a low mat of fleshy needle-like succulent leaves with small satiny cup flowers",
+        "vivid pink, orange, yellow or red cup-shaped flowers with thin ruffled petals in a pot",
+        "a close-up of short thin cylindrical succulent leaves on reddish trailing stems",
+        "a clay pot or hanging tray spilling over with tiny bright satin flowers"
+      ],
+      "lines": {
+        "first_meet": "[chirpy] They call me Nau Baje Wali, the nine o'clock flower. I open when the sun gets strong and shut when it leaves.",
+        "again": "[happily] You're back! Good timing. Sun's out, so I'm open for visitors.",
+        "goodbye": "Chalo, bye. [cheerfully] Go find some shade for yourself, I'm the only one here who loves this heat."
+      }
+    },
+    {
+      "id": "gazania",
+      "name": "Ghazala",
+      "species": "Gazania",
+      "personality": "A flashy sun-worshipper with dramatic eyeliner rings who sulks shut on cloudy days. Moody, glamorous, honest about it.",
+      "voice": "Young woman, bright and sassy, quick pace, dramatic sighs.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a low ground-hugging plant with orange or yellow daisy-like flowers marked by dark rings near the centre",
+        "a close-up of a gazania flower with dark stripes and white spots at the base of each petal",
+        "narrow leaves dark green above and silvery-white underneath forming a rosette on a road median",
+        "a strip of low orange and yellow striped daisy flowers planted along a traffic island"
+      ],
+      "lines": {
+        "first_meet": "[bright] Ghazala here! See the dark rings near my centre? Eyeliner. And on cloudy days I just fold up and sulk.",
+        "again": "[happily] Sunny today, so I'm wide open for you. Lucky timing!",
+        "goodbye": "Go and check the sky. [laughs] If a cloud comes, I'm closing shop, and so should you."
+      }
+    },
+    {
+      "id": "cockscomb",
+      "name": "Kalgi Sahib",
+      "species": "Cockscomb (Celosia)",
+      "personality": "A strutting show-off with the best hairstyle in the garden. Thinks he is a rooster, mostly in attitude.",
+      "voice": "Adult man, cocky and loud, strutting rhythm, crowing laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a velvety crinkled wavy flower shaped like a rooster's comb in deep red or magenta",
+        "feathery upright flame-shaped plumes of bright red, orange or yellow",
+        "a close-up of folded velvet-textured red flower ridges on a thick stem",
+        "a pot of crested magenta flowers with green lance leaves in a garden"
+      ],
+      "lines": {
+        "first_meet": "[crows] Kukdoo-koo! Kalgi Sahib. Not a rooster, just dressed like one. My velvety crest stays bright for weeks.",
+        "again": "[proudly] Back to see the best hairstyle in the garden? Can't blame you.",
+        "goodbye": "Go, but if you meet a real rooster, [whispers] tell him mine's softer."
+      }
+    },
+    {
+      "id": "dandelion",
+      "name": "Dandu",
+      "species": "Dandelion",
+      "personality": "A free-spirited wanderer who pretends to be fierce because of its name. Playful, restless, always ready to travel.",
+      "voice": "Young, playful and light, bouncy pace, mischievous giggle.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a bright yellow shaggy flower head of many thin strap petals on a hollow stem in a lawn",
+        "a white fluffy round seed head made of tiny parachute seeds",
+        "a flat rosette of jagged deeply toothed leaves pressed close to the ground",
+        "small yellow flowers and white puffballs scattered across grass on a roadside"
+      ],
+      "lines": {
+        "first_meet": "[playfully] Dandu here! My name is French for lion's tooth, look at my jagged leaves. Yes, I'm the scary one.",
+        "again": "[laughs] Back again? Next time I might be a white puffball. Same me, new hairstyle.",
+        "goodbye": "Go wherever the wind goes. [whispers] That's what my seeds do, each on its own tiny parachute."
+      }
+    },
+    {
+      "id": "tulip",
+      "name": "Lala Rukh",
+      "species": "Tulip",
+      "personality": "An elegant foreign guest from cold places, proud of her Persian poetry pedigree and wilting slightly in the heat.",
+      "voice": "Adult woman, elegant and refined, slow genteel pace, fans herself in the pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a smooth upright cup-shaped flower of six petals in solid red, yellow or pink",
+        "broad grey-green strap leaves at the base of a single straight stem with one cup flower",
+        "rows of tulips in a planted bed or display pots in a park",
+        "a close-up of glossy closed red petals forming an egg-shaped cup"
+      ],
+      "lines": {
+        "first_meet": "[elegantly] Lala Rukh. Persian poets loved me long before the Dutch went mad for me. I need a cold winter, so Karachi... phew.",
+        "again": "[fanning herself] You're back, and it's still hot. I'm managing, darling. Barely.",
+        "goodbye": "Go find something that loves the heat. [laughs] Maybe a lizard on a sunny wall. Watch it, don't catch it."
+      }
+    },
+    {
+      "id": "cherry-blossom",
+      "name": "Shigufta",
+      "species": "Cherry blossom",
+      "personality": "A wistful, fleeting beauty from the northern valleys who knows she lasts only a week. Gentle, nostalgic, a reminder to notice.",
+      "voice": "Young woman, soft and wistful, slow and tender, a touch of melancholy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tree covered in clouds of pale pink or white five-petal blossoms on dark bare branches",
+        "a close-up of small pale pink blossoms with notched petal tips hanging in bunches from a dark twig",
+        "dark glossy bark with horizontal lines and rounded blossoms crowded along leafless branches",
+        "a row of flowering trees in spring with pale pink petals covering the path below"
+      ],
+      "lines": {
+        "first_meet": "[wistfully] I'm Shigufta. My blossoms last barely a week, so people travel all the way to Hunza and Swat just to catch me.",
+        "again": "[softly] You came back while I'm still in bloom. Good. Next week I'll be a carpet of petals.",
+        "goodbye": "Go, and look up every spring. [sighs] Beauty this short only waits for people who notice."
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "prefix": "doc_title",
+  "thresholds": {
+    "category": {
+      "trees": 0.6411,
+      "birds": 0.6411,
+      "animals": 0.6411,
+      "small-creatures": 0.6411,
+      "flowers": 0.6411,
+      "plants": 0.6411,
+      "fruits-vegetables": 0.6411,
+      "ground": 0.6411,
+      "sky": 0.6411,
+      "water": 0.6411,
+      "vehicles": 0.6411,
+      "structures": 0.6411,
+      "urban": 0.6411
+    },
+    "species": {
+      "trees": 0.6931,
+      "birds": 0.6817,
+      "animals": 0.6643,
+      "small-creatures": 0.6775,
+      "flowers": 0.6942,
+      "plants": 0.7123,
+      "fruits-vegetables": 0.6862,
+      "ground": 0.6922,
+      "sky": 0.6917,
+      "water": 0.6634,
+      "vehicles": 0.6723,
+      "structures": 0.6814,
+      "urban": 0.6563
+    },
+    "margin": 0.01,
+    "global_min": 0.6411
+  },
+  "summary": {
+    "at": "2026-10-08T08:21:44.532Z",
+    "photos": 232,
+    "negatives": 10,
+    "strategy": "shrunk",
+    "raw": {
+      "n": 232,
+      "top1": 0.8922413793103449,
+      "top5": 0.9870689655172413,
+      "category": 0.9094827586206896,
+      "speciesGivenCat": 0.966824644549763
+    },
+    "inSample": {
+      "species_ok": 0.8275862068965517,
+      "guardian_fallback": 0.11637931034482758,
+      "guardian_right_cat": 0.07327586206896551,
+      "guardian_wrong_cat": 0.04310344827586207,
+      "wrong_confident": 0.05603448275862069,
+      "nobody": 0,
+      "precision_when_named": 0.9365853658536586,
+      "negatives_rejected": 0.9,
+      "negatives_named": 0
+    },
+    "crossValidated": {
+      "species_ok": 0.7887931034482759,
+      "guardian_fallback": 0.14655172413793102,
+      "guardian_right_cat": 0.09913793103448276,
+      "guardian_wrong_cat": 0.04741379310344827,
+      "wrong_confident": 0.05603448275862069,
+      "nobody": 0.008620689655172414,
+      "precision_when_named": 0.9336734693877551,
+      "negatives_rejected": 0.9,
+      "negatives_named": 0
+    },
+    "anchors": {
+      "top1": 0.7413793103448276,
+      "category": 0.8620689655172413,
+      "meanOwnText": 0.7410184970605301,
+      "meanBestOtherImage": 0.7935228987465974
+    },
+    "weights": {
+      "species_ok": 1,
+      "guardian_right_cat": 0.25,
+      "guardian_wrong_cat": -0.5,
+      "species_wrong": -3,
+      "nobody_on_positive": -0.5,
+      "nobody_on_negative": 1,
+      "guardian_on_negative": -1,
+      "species_on_negative": -3
+    }
+  }
+}

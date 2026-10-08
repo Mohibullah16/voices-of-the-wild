@@ -1,0 +1,938 @@
+{
+ "narrator": "Brian",
+ "model": "eleven_v4",
+ "lines": [
+  {
+   "id": "idea",
+   "src": "narration/idea.140a8224e9.mp3",
+   "duration": 10.24,
+   "caption": "This is Voices of the Wild. Point your phone at something outside: a tree, a crow, a bus. The phone works out who it is, and it talks back.",
+   "words": [
+    {
+     "text": "This",
+     "start": 0.16,
+     "end": 0.4
+    },
+    {
+     "text": "is",
+     "start": 0.56,
+     "end": 0.72
+    },
+    {
+     "text": "Voices",
+     "start": 0.88,
+     "end": 1.28
+    },
+    {
+     "text": "of",
+     "start": 1.32,
+     "end": 1.36
+    },
+    {
+     "text": "the",
+     "start": 1.44,
+     "end": 1.52
+    },
+    {
+     "text": "Wild.",
+     "start": 1.6,
+     "end": 2.36
+    },
+    {
+     "text": "Point",
+     "start": 2.64,
+     "end": 2.8
+    },
+    {
+     "text": "your",
+     "start": 2.88,
+     "end": 3.04
+    },
+    {
+     "text": "phone",
+     "start": 3.16,
+     "end": 3.28
+    },
+    {
+     "text": "at",
+     "start": 3.36,
+     "end": 3.44
+    },
+    {
+     "text": "something",
+     "start": 3.6,
+     "end": 3.76
+    },
+    {
+     "text": "outside:",
+     "start": 4.04,
+     "end": 4.72
+    },
+    {
+     "text": "a",
+     "start": 4.8,
+     "end": 4.88
+    },
+    {
+     "text": "tree,",
+     "start": 5.12,
+     "end": 5.52
+    },
+    {
+     "text": "a",
+     "start": 5.6,
+     "end": 5.68
+    },
+    {
+     "text": "crow,",
+     "start": 5.92,
+     "end": 6.4
+    },
+    {
+     "text": "a",
+     "start": 6.427,
+     "end": 6.453
+    },
+    {
+     "text": "bus.",
+     "start": 6.48,
+     "end": 7.36
+    },
+    {
+     "text": "The",
+     "start": 7.44,
+     "end": 7.52
+    },
+    {
+     "text": "phone",
+     "start": 7.64,
+     "end": 7.76
+    },
+    {
+     "text": "works",
+     "start": 7.84,
+     "end": 8.08
+    },
+    {
+     "text": "out",
+     "start": 8.16,
+     "end": 8.24
+    },
+    {
+     "text": "who",
+     "start": 8.32,
+     "end": 8.4
+    },
+    {
+     "text": "it",
+     "start": 8.44,
+     "end": 8.48
+    },
+    {
+     "text": "is,",
+     "start": 8.56,
+     "end": 9.12
+    },
+    {
+     "text": "and",
+     "start": 9.16,
+     "end": 9.2
+    },
+    {
+     "text": "it",
+     "start": 9.28,
+     "end": 9.36
+    },
+    {
+     "text": "talks",
+     "start": 9.48,
+     "end": 9.68
+    },
+    {
+     "text": "back.",
+     "start": 9.88,
+     "end": 10.32
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "game",
+   "src": "narration/game.137c54fb07.mp3",
+   "duration": 14.72,
+   "caption": "Then it becomes a trail: three to five quests a day, one after another. Find something and listen. Then walk five hundred steps, counted by your phone, to unlock the next. Plus streaks, and rare gold Elders.",
+   "words": [
+    {
+     "text": "Then",
+     "start": 0,
+     "end": 0.32
+    },
+    {
+     "text": "it",
+     "start": 0.48,
+     "end": 0.56
+    },
+    {
+     "text": "becomes",
+     "start": 0.64,
+     "end": 0.88
+    },
+    {
+     "text": "a",
+     "start": 0.96,
+     "end": 1.04
+    },
+    {
+     "text": "trail:",
+     "start": 1.12,
+     "end": 2.08
+    },
+    {
+     "text": "three",
+     "start": 2.2,
+     "end": 2.32
+    },
+    {
+     "text": "to",
+     "start": 2.4,
+     "end": 2.48
+    },
+    {
+     "text": "five",
+     "start": 2.6,
+     "end": 2.72
+    },
+    {
+     "text": "quests",
+     "start": 2.8,
+     "end": 3.12
+    },
+    {
+     "text": "a",
+     "start": 3.16,
+     "end": 3.2
+    },
+    {
+     "text": "day,",
+     "start": 3.28,
+     "end": 3.92
+    },
+    {
+     "text": "one",
+     "start": 4,
+     "end": 4.08
+    },
+    {
+     "text": "after",
+     "start": 4.16,
+     "end": 4.4
+    },
+    {
+     "text": "another.",
+     "start": 4.48,
+     "end": 5.16
+    },
+    {
+     "text": "Find",
+     "start": 5.44,
+     "end": 5.76
+    },
+    {
+     "text": "something",
+     "start": 5.84,
+     "end": 6.32
+    },
+    {
+     "text": "and",
+     "start": 6.4,
+     "end": 6.48
+    },
+    {
+     "text": "listen.",
+     "start": 6.56,
+     "end": 7.24
+    },
+    {
+     "text": "Then",
+     "start": 7.52,
+     "end": 7.68
+    },
+    {
+     "text": "walk",
+     "start": 7.76,
+     "end": 7.92
+    },
+    {
+     "text": "five",
+     "start": 8.08,
+     "end": 8.24
+    },
+    {
+     "text": "hundred",
+     "start": 8.32,
+     "end": 8.48
+    },
+    {
+     "text": "steps,",
+     "start": 8.56,
+     "end": 9.2
+    },
+    {
+     "text": "counted",
+     "start": 9.28,
+     "end": 9.52
+    },
+    {
+     "text": "by",
+     "start": 9.6,
+     "end": 9.68
+    },
+    {
+     "text": "your",
+     "start": 9.76,
+     "end": 9.84
+    },
+    {
+     "text": "phone,",
+     "start": 10,
+     "end": 10.4
+    },
+    {
+     "text": "to",
+     "start": 10.48,
+     "end": 10.56
+    },
+    {
+     "text": "unlock",
+     "start": 10.64,
+     "end": 10.96
+    },
+    {
+     "text": "the",
+     "start": 11,
+     "end": 11.04
+    },
+    {
+     "text": "next.",
+     "start": 11.12,
+     "end": 11.92
+    },
+    {
+     "text": "Plus",
+     "start": 12.08,
+     "end": 12.24
+    },
+    {
+     "text": "streaks,",
+     "start": 12.32,
+     "end": 13.04
+    },
+    {
+     "text": "and",
+     "start": 13.12,
+     "end": 13.2
+    },
+    {
+     "text": "rare",
+     "start": 13.28,
+     "end": 13.52
+    },
+    {
+     "text": "gold",
+     "start": 13.6,
+     "end": 13.92
+    },
+    {
+     "text": "Elders.",
+     "start": 14,
+     "end": 14.8
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "stack1",
+   "src": "narration/stack1.113890af02.mp3",
+   "duration": 8.56,
+   "caption": "Here's the stack. The photo goes into EmbeddingGemma 2, Google's open, multimodal embedding model, running right in the browser.",
+   "words": [
+    {
+     "text": "Here's",
+     "start": 0,
+     "end": 0.28
+    },
+    {
+     "text": "the",
+     "start": 0.32,
+     "end": 0.4
+    },
+    {
+     "text": "stack.",
+     "start": 0.48,
+     "end": 1.12
+    },
+    {
+     "text": "The",
+     "start": 1.36,
+     "end": 1.44
+    },
+    {
+     "text": "photo",
+     "start": 1.52,
+     "end": 1.84
+    },
+    {
+     "text": "goes",
+     "start": 1.92,
+     "end": 2.08
+    },
+    {
+     "text": "into",
+     "start": 2.24,
+     "end": 2.4
+    },
+    {
+     "text": "EmbeddingGemma",
+     "start": 2.56,
+     "end": 3.44
+    },
+    {
+     "text": "2,",
+     "start": 3.6,
+     "end": 4.16
+    },
+    {
+     "text": "Google's",
+     "start": 4.24,
+     "end": 4.64
+    },
+    {
+     "text": "open,",
+     "start": 4.72,
+     "end": 5.28
+    },
+    {
+     "text": "multimodal",
+     "start": 5.36,
+     "end": 6
+    },
+    {
+     "text": "embedding",
+     "start": 6.08,
+     "end": 6.48
+    },
+    {
+     "text": "model,",
+     "start": 6.56,
+     "end": 7.04
+    },
+    {
+     "text": "running",
+     "start": 7.12,
+     "end": 7.44
+    },
+    {
+     "text": "right",
+     "start": 7.52,
+     "end": 7.68
+    },
+    {
+     "text": "in",
+     "start": 7.72,
+     "end": 7.76
+    },
+    {
+     "text": "the",
+     "start": 7.8,
+     "end": 7.84
+    },
+    {
+     "text": "browser.",
+     "start": 8.08,
+     "end": 8.64
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "stack2",
+   "src": "narration/stack2.e179f02843.mp3",
+   "duration": 9.36,
+   "caption": "It becomes seven hundred and sixty-eight numbers, matched against character descriptions embedded ahead of time. Not sure? A guardian asks for a closer look.",
+   "words": [
+    {
+     "text": "It",
+     "start": 0,
+     "end": 0.16
+    },
+    {
+     "text": "becomes",
+     "start": 0.24,
+     "end": 0.64
+    },
+    {
+     "text": "seven",
+     "start": 0.76,
+     "end": 0.88
+    },
+    {
+     "text": "hundred",
+     "start": 0.96,
+     "end": 1.2
+    },
+    {
+     "text": "and",
+     "start": 1.28,
+     "end": 1.52
+    },
+    {
+     "text": "sixty-eight",
+     "start": 1.64,
+     "end": 2
+    },
+    {
+     "text": "numbers,",
+     "start": 2.08,
+     "end": 2.96
+    },
+    {
+     "text": "matched",
+     "start": 3.12,
+     "end": 3.28
+    },
+    {
+     "text": "against",
+     "start": 3.36,
+     "end": 3.6
+    },
+    {
+     "text": "character",
+     "start": 3.68,
+     "end": 4
+    },
+    {
+     "text": "descriptions",
+     "start": 4.08,
+     "end": 4.72
+    },
+    {
+     "text": "embedded",
+     "start": 4.8,
+     "end": 5.2
+    },
+    {
+     "text": "ahead",
+     "start": 5.28,
+     "end": 5.44
+    },
+    {
+     "text": "of",
+     "start": 5.52,
+     "end": 5.56
+    },
+    {
+     "text": "time.",
+     "start": 5.6,
+     "end": 6.16
+    },
+    {
+     "text": "Not",
+     "start": 6.4,
+     "end": 6.56
+    },
+    {
+     "text": "sure?",
+     "start": 6.64,
+     "end": 6.96
+    },
+    {
+     "text": "A",
+     "start": 7.36,
+     "end": 7.44
+    },
+    {
+     "text": "guardian",
+     "start": 7.52,
+     "end": 7.92
+    },
+    {
+     "text": "asks",
+     "start": 8,
+     "end": 8.24
+    },
+    {
+     "text": "for",
+     "start": 8.28,
+     "end": 8.32
+    },
+    {
+     "text": "a",
+     "start": 8.4,
+     "end": 8.44
+    },
+    {
+     "text": "closer",
+     "start": 8.48,
+     "end": 8.8
+    },
+    {
+     "text": "look.",
+     "start": 8.88,
+     "end": 9.44
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "stack3",
+   "src": "narration/stack3.19caf50f88.mp3",
+   "duration": 11.52,
+   "caption": "Every voice is pre-recorded: Eleven v4 for the Elders, open-source Kokoro for the rest. After setup, nothing touches the network. Your photos never leave the phone.",
+   "words": [
+    {
+     "text": "Every",
+     "start": 0,
+     "end": 0.32
+    },
+    {
+     "text": "voice",
+     "start": 0.4,
+     "end": 0.64
+    },
+    {
+     "text": "is",
+     "start": 0.72,
+     "end": 0.8
+    },
+    {
+     "text": "pre-recorded:",
+     "start": 0.88,
+     "end": 2
+    },
+    {
+     "text": "Eleven",
+     "start": 2.08,
+     "end": 2.48
+    },
+    {
+     "text": "v4",
+     "start": 2.56,
+     "end": 3.04
+    },
+    {
+     "text": "for",
+     "start": 3.12,
+     "end": 3.28
+    },
+    {
+     "text": "the",
+     "start": 3.32,
+     "end": 3.36
+    },
+    {
+     "text": "Elders,",
+     "start": 3.44,
+     "end": 4.32
+    },
+    {
+     "text": "open-source",
+     "start": 4.4,
+     "end": 4.96
+    },
+    {
+     "text": "Kokoro",
+     "start": 5,
+     "end": 5.52
+    },
+    {
+     "text": "for",
+     "start": 5.6,
+     "end": 5.68
+    },
+    {
+     "text": "the",
+     "start": 5.72,
+     "end": 5.76
+    },
+    {
+     "text": "rest.",
+     "start": 5.84,
+     "end": 6.24
+    },
+    {
+     "text": "After",
+     "start": 6.72,
+     "end": 7.04
+    },
+    {
+     "text": "setup,",
+     "start": 7.12,
+     "end": 7.76
+    },
+    {
+     "text": "nothing",
+     "start": 7.92,
+     "end": 8.24
+    },
+    {
+     "text": "touches",
+     "start": 8.32,
+     "end": 8.56
+    },
+    {
+     "text": "the",
+     "start": 8.64,
+     "end": 8.72
+    },
+    {
+     "text": "network.",
+     "start": 8.96,
+     "end": 9.4
+    },
+    {
+     "text": "Your",
+     "start": 9.6,
+     "end": 9.76
+    },
+    {
+     "text": "photos",
+     "start": 9.84,
+     "end": 10.24
+    },
+    {
+     "text": "never",
+     "start": 10.4,
+     "end": 10.64
+    },
+    {
+     "text": "leave",
+     "start": 10.72,
+     "end": 10.8
+    },
+    {
+     "text": "the",
+     "start": 10.88,
+     "end": 10.96
+    },
+    {
+     "text": "phone.",
+     "start": 11.04,
+     "end": 11.6
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "proof",
+   "src": "narration/proof.f77de72a40.mp3",
+   "duration": 10.24,
+   "caption": "On two hundred and thirty-two real photos, the right character ranked first eighty-nine percent of the time. When it names someone, it's right ninety-three percent of the time.",
+   "words": [
+    {
+     "text": "On",
+     "start": 0,
+     "end": 0.24
+    },
+    {
+     "text": "two",
+     "start": 0.32,
+     "end": 0.4
+    },
+    {
+     "text": "hundred",
+     "start": 0.56,
+     "end": 0.8
+    },
+    {
+     "text": "and",
+     "start": 0.92,
+     "end": 1.04
+    },
+    {
+     "text": "thirty-two",
+     "start": 1.147,
+     "end": 1.52
+    },
+    {
+     "text": "real",
+     "start": 1.68,
+     "end": 1.92
+    },
+    {
+     "text": "photos,",
+     "start": 2,
+     "end": 2.8
+    },
+    {
+     "text": "the",
+     "start": 2.88,
+     "end": 2.96
+    },
+    {
+     "text": "right",
+     "start": 3.04,
+     "end": 3.28
+    },
+    {
+     "text": "character",
+     "start": 3.48,
+     "end": 3.68
+    },
+    {
+     "text": "ranked",
+     "start": 3.76,
+     "end": 4.08
+    },
+    {
+     "text": "first",
+     "start": 4.16,
+     "end": 4.48
+    },
+    {
+     "text": "eighty-nine",
+     "start": 4.64,
+     "end": 5.12
+    },
+    {
+     "text": "percent",
+     "start": 5.2,
+     "end": 5.52
+    },
+    {
+     "text": "of",
+     "start": 5.56,
+     "end": 5.6
+    },
+    {
+     "text": "the",
+     "start": 5.64,
+     "end": 5.68
+    },
+    {
+     "text": "time.",
+     "start": 5.76,
+     "end": 6.56
+    },
+    {
+     "text": "When",
+     "start": 6.64,
+     "end": 6.72
+    },
+    {
+     "text": "it",
+     "start": 6.8,
+     "end": 6.88
+    },
+    {
+     "text": "names",
+     "start": 6.96,
+     "end": 7.28
+    },
+    {
+     "text": "someone,",
+     "start": 7.48,
+     "end": 7.92
+    },
+    {
+     "text": "it's",
+     "start": 8,
+     "end": 8.16
+    },
+    {
+     "text": "right",
+     "start": 8.32,
+     "end": 8.48
+    },
+    {
+     "text": "ninety-three",
+     "start": 8.56,
+     "end": 9.12
+    },
+    {
+     "text": "percent",
+     "start": 9.2,
+     "end": 9.52
+    },
+    {
+     "text": "of",
+     "start": 9.56,
+     "end": 9.6
+    },
+    {
+     "text": "the",
+     "start": 9.64,
+     "end": 9.68
+    },
+    {
+     "text": "time.",
+     "start": 9.76,
+     "end": 10.32
+    }
+   ],
+   "estimated": false
+  },
+  {
+   "id": "cta",
+   "src": "narration/cta.30cfde6ed2.mp3",
+   "duration": 4.08,
+   "caption": "Everything outside has something to say. Go find out what.",
+   "words": [
+    {
+     "text": "Everything",
+     "start": 0.24,
+     "end": 0.56
+    },
+    {
+     "text": "outside",
+     "start": 0.64,
+     "end": 1.28
+    },
+    {
+     "text": "has",
+     "start": 1.36,
+     "end": 1.52
+    },
+    {
+     "text": "something",
+     "start": 1.6,
+     "end": 1.84
+    },
+    {
+     "text": "to",
+     "start": 1.92,
+     "end": 2
+    },
+    {
+     "text": "say.",
+     "start": 2.08,
+     "end": 2.72
+    },
+    {
+     "text": "Go",
+     "start": 3.04,
+     "end": 3.12
+    },
+    {
+     "text": "find",
+     "start": 3.2,
+     "end": 3.36
+    },
+    {
+     "text": "out",
+     "start": 3.44,
+     "end": 3.6
+    },
+    {
+     "text": "what.",
+     "start": 3.76,
+     "end": 4.16
+    }
+   ],
+   "estimated": false
+  }
+ ],
+ "ambient": {
+  "src": "ambient/ambient.c61a826104.mp3",
+  "duration": 7
+ }
+}

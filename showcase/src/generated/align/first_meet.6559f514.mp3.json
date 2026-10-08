@@ -1,0 +1,90 @@
+{
+ "words": [
+  {
+   "text": "I'm",
+   "start": 1.7,
+   "end": 1.84
+  },
+  {
+   "text": "Granny",
+   "start": 1.94,
+   "end": 2.26
+  },
+  {
+   "text": "Neem,",
+   "start": 2.36,
+   "end": 2.66
+  },
+  {
+   "text": "everyone's",
+   "start": 3.14,
+   "end": 3.66
+  },
+  {
+   "text": "granny.",
+   "start": 3.7,
+   "end": 4.08
+  },
+  {
+   "text": "Bitter",
+   "start": 4.66,
+   "end": 4.9
+  },
+  {
+   "text": "as",
+   "start": 4.96,
+   "end": 5.08
+  },
+  {
+   "text": "the",
+   "start": 5.12,
+   "end": 5.22
+  },
+  {
+   "text": "truth,",
+   "start": 5.28,
+   "end": 5.62
+  },
+  {
+   "text": "and",
+   "start": 5.86,
+   "end": 5.96
+  },
+  {
+   "text": "my",
+   "start": 6.02,
+   "end": 6.22
+  },
+  {
+   "text": "leaves",
+   "start": 6.28,
+   "end": 6.64
+  },
+  {
+   "text": "keep",
+   "start": 6.7,
+   "end": 7.02
+  },
+  {
+   "text": "bugs",
+   "start": 7.06,
+   "end": 7.34
+  },
+  {
+   "text": "out",
+   "start": 7.38,
+   "end": 7.48
+  },
+  {
+   "text": "of",
+   "start": 7.52,
+   "end": 7.64
+  },
+  {
+   "text": "quilts.",
+   "start": 7.7,
+   "end": 8.14
+  }
+ ],
+ "estimated": false
+}

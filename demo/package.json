@@ -1,0 +1,16 @@
+{
+  "name": "votw-demo-recorder",
+  "private": true,
+  "type": "module",
+  "description": "Records the Voices of the Wild walkthrough video from the production build.",
+  "scripts": {
+    "probe": "tsx probe.ts",
+    "record": "tsx record.ts",
+    "assets": "tsx assets.ts",
+    "edit": "node edit.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0",
+    "tsx": "4.23.15"
+  }
+}

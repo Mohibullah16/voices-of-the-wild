@@ -1,0 +1,41 @@
+# Secrets: never commit. The ElevenLabs key lives in .env (key name: elevenlabs-api-key).
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Dependencies and build output
+**/node_modules/
+**/dist/
+
+# Model and download caches (hundreds of MB)
+pipeline/.model-cache/
+pipeline/.cache/
+
+# Generated media (rebuild with `npm run render`; the videos are hosted on YouTube)
+showcase/out/
+showcase/public/
+showcase/footage/*.mp4
+demo/work/
+demo/out/
+submission/*.mp4
+submission/*.png
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Not for the public repo: challenge notes, drafts, personal to-dos and social copy
+WIN_STRATEGY.md
+GUIDE.md
+SUBMISSION.md
+SUBMISSION_TEMPLATE.md
+SUBMISSION_CHECKLIST.md
+prompts/
+submission/
+showcase/LINKEDIN_POST.md
+pitch/*.pdf
+
+# Regenerable screenshots (curated ones live in docs/)
+app/screenshots/

@@ -1,0 +1,9 @@
+# Netlify / Cloudflare Pages. Cross-origin isolation lets ONNX Runtime use
+# multiple wasm threads (much faster on phones without WebGPU).
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+/ort/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

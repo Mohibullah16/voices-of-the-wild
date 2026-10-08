@@ -1,0 +1,825 @@
+{
+  "category": "birds",
+  "guardian": {
+    "id": "birds-guardian",
+    "name": "Ustad Udaan",
+    "personality": "A patient old bird-watching spirit who speaks for every bird too far, too fast or too blurry to name. Gentle and a little poetic, but strict about keeping your distance.",
+    "voice": "Older, warm, unhurried, slight rasp; gender-neutral fine; storyteller cadence with a soft Urdu lilt.",
+    "descriptions": [
+      "a distant photo of small dark bird silhouettes perched in a row on electric wires against the sky",
+      "a flock of birds flying high in the open sky, small dark shapes with spread wings",
+      "a bird standing or walking on a lawn, street or rooftop, photographed from far away",
+      "a close-up photo of a small bird perched on a branch showing its feathers, beak, eye and tail",
+      "long-legged wading birds standing in shallow water at a pond, canal or seashore",
+      "a bird of prey soaring high over city buildings, wings spread wide against a pale sky"
+    ],
+    "lines": {
+      "first_meet": "[softly] Assalam-o-alaikum. I'm Ustad Udaan, keeper of every wing over this city. Stand still, look up, and they'll come to you.",
+      "again": "[warmly] Back again? Good. Birds trust people who return quietly. Let's see who's flying today.",
+      "goodbye": "[gently] Chalo, go. Listen before you look: every chirp is somebody's address. Leave them their sky.",
+      "hint": "[thoughtfully] Too far for me, beta. Zoom in, don't step closer. Show me the beak, the tail, or the colour under the tail."
+    }
+  },
+  "characters": [
+    {
+      "id": "house-crow",
+      "name": "Khabri Kauwa",
+      "species": "House crow",
+      "personality": "A loud, street-smart Karachi gossip who knows every rooftop and never forgets a face. Proud of his grey shawl and offended at being called 'just a crow'.",
+      "voice": "Middle-aged, raspy, fast, nasal; bazaar-uncle swagger.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a distant silhouette of a medium black crow on a wire or rooftop edge with a paler grey neck",
+        "a close-up of a crow with black face, black bill, and a smoky grey nape, neck and breast collar",
+        "a noisy group of black-and-grey crows on rooftops, rubbish heaps or electric wires in a city street",
+        "a two-tone crow, grey collar contrasting with black wings, with a slimmer bill and flatter head than a jungle crow",
+        "a crow with dark eyes, grey neck and square tail; no red eyes, no chestnut wings, no forked tail"
+      ],
+      "lines": {
+        "first_meet": "[caws] Khabri Kauwa here! See my grey shawl? I remember faces, yaar. Be kind and I'll tell the whole street about you.",
+        "again": "[chuckles] Told you I'd remember. Nani says a cawing crow means guests are coming. Well, here you are.",
+        "goodbye": "[caws loudly] Chalo, off you go. Look up at the wires, half my family is gossiping there. Never throw stones. We hold grudges."
+      }
+    },
+    {
+      "id": "large-billed-crow",
+      "name": "Chaudhry Chonch",
+      "species": "Large-billed crow (Jungle crow)",
+      "personality": "A heavy, deep-voiced country cousin who finds city house crows loud and scrawny. Slow, dignified, and a little vain about his beak.",
+      "voice": "Deep, slow, gravelly baritone; rural elder.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of a large all-black crow perched in a tall tree in a park or village",
+        "a close-up of a big glossy black crow with a thick, heavy, arched bill and a steep domed forehead",
+        "an entirely black crow with no grey collar on the neck, feathers glossed blue-purple in sunlight",
+        "a black crow with dark brown eyes and a massive black bill, not red eyes and a pale green bill"
+      ],
+      "lines": {
+        "first_meet": "[deep caw] Chaudhry Chonch. Look at this beak, beta. Thick as a hammer. Those grey-necked city crows? Cousins. Loud ones.",
+        "again": "[slowly] You again. Good eye, telling me from the house crow. No grey scarf here. Only black, top to tail.",
+        "goodbye": "[low chuckle] Go to the old park trees, that's where we keep watch. Bring patience, not breadcrumbs."
+      }
+    },
+    {
+      "id": "common-myna",
+      "name": "Gappi Myna",
+      "species": "Common myna",
+      "personality": "A chatty, bossy lawn-walker who mimics everyone and has an opinion about everything. Paired for life and won't stop mentioning it.",
+      "voice": "Bright, quick, cheeky; young adult; lots of pitch jumps.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a distant photo of a brown bird walking upright across a lawn or road, white wing patches flashing in flight",
+        "a close-up of a chocolate-brown bird with glossy black head, bright yellow bill and a yellow bare patch around the eye",
+        "a chocolate-brown myna with yellow skin around the eye, not a bluish-grey myna with orange-red skin behind the eye",
+        "a brown bird with black head and yellow legs walking in pairs, not a dull grey-brown pale-eyed bird in noisy groups"
+      ],
+      "lines": {
+        "first_meet": "[chatty] Gappi Myna! Yellow specs, yellow beak, yellow shoes. I walk, I don't hop. And I copy any sound. Even your ringtone.",
+        "again": "[excited] Arey, you're back! I told my husband all about you. We pair for life, so he hears everything. Everything.",
+        "goodbye": "[whistles] Chalo! Check the nearest lawn, someone's always strolling there. Just don't chase. We walk away faster than you think."
+      }
+    },
+    {
+      "id": "bank-myna",
+      "name": "Bank Wali Bano",
+      "species": "Bank myna",
+      "personality": "A tidy, slightly superior myna who insists on her blue-grey colouring and orange 'makeup'. Named after riverbanks, now runs the bus stops.",
+      "voice": "Crisp, mid-pitch, prim, slightly nasal; fussy auntie energy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of small grey mynas in a group at a market, bus stop or roadside food stall",
+        "a close-up of a bluish-grey myna with a black cap and brick-red orange bare skin behind the eye",
+        "a grey myna with a yellow bill and orange eye patch, not a chocolate-brown myna with yellow eye skin",
+        "a pale grey bird with darker wings and a black head, walking on pavement near people"
+      ],
+      "lines": {
+        "first_meet": "[primly] Bano, bank myna. Orange eye shadow, not yellow, thank you. We once dug our nests in riverbanks, hence the name.",
+        "again": "[pleased] Oh, you remembered the orange! Most people just shout 'myna' and walk on. You're cultured.",
+        "goodbye": "[sniffs] Off you go. Try a dhaba or a bus stop. My cousins are there, waiting for dropped pakoras."
+      }
+    },
+    {
+      "id": "black-kite",
+      "name": "Cheel Chacha",
+      "species": "Black kite (Cheel)",
+      "personality": "A lordly old cheel who has circled Karachi's skyline for decades. Grand, unhurried, and dramatic about being mistaken for a thief.",
+      "voice": "Older, resonant, theatrical; slow drawl broken by a shrill whistle.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a distant silhouette of a large dark bird soaring in circles high over city buildings, long forked tail visible",
+        "a group of dark raptors wheeling in the sky above a market, rooftops or a rubbish dump",
+        "a close-up of a dark-brown raptor perched on a pole or tower, with hooked black bill, yellow base and yellow feet",
+        "a big dark-brown hawk-like bird with a notched forked tail, not a small grey hawk with barred underparts",
+        "a dark-brown raptor with a fully feathered head and dark wings, not a white vulture with a bare yellow face"
+      ],
+      "lines": {
+        "first_meet": "[shrill whistle] Cheel Chacha. See my forked tail turning up there? Karachi tosses us meat for sadqa. We accept. Graciously.",
+        "again": "[laughs] You again! Don't hold your shawarma up so high, beta. Habit, you see. I swoop first, apologise later.",
+        "goodbye": "[grandly] Go on. On a hot afternoon, look up and count us circling. Count all you like, but keep your lunch covered."
+      }
+    },
+    {
+      "id": "rock-pigeon",
+      "name": "Guttergoo",
+      "species": "Rock pigeon (Kabootar)",
+      "personality": "A cooing, sentimental rooftop romantic who believes every pigeon is a homing champion and name-drops the pigeon-flyers of old Karachi.",
+      "voice": "Soft, round, throaty coo; middle-aged; gentle and nostalgic.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a flock of grey pigeons on a square, ledge or rooftop, or flying together",
+        "a close-up of a blue-grey pigeon with shimmering green and purple neck feathers and an orange-red eye",
+        "a plump blue-grey pigeon with two black bars across each wing and a dark tail band",
+        "a stocky grey pigeon, bigger than a slim pinkish dove, with no black half-collar and no speckled necklace"
+      ],
+      "lines": {
+        "first_meet": "[coos] Guttergoo, at your service. Drop me anywhere and I'll find my rooftop. Old Karachi kabootar-baaz bet money on it.",
+        "again": "[happy coo] You found your way back too! See, you're half pigeon. Green-purple neck shine not included.",
+        "goodbye": "[coos] Jao, look at the rooftops at dusk. Someone's flock is circling home. Grain is nice, but please, not bread."
+      }
+    },
+    {
+      "id": "house-sparrow",
+      "name": "Chunmun Chirya",
+      "species": "House sparrow (Chirya)",
+      "personality": "A tiny, scrappy, chatty survivor worried about her shrinking family. Loves a dust bath and complains about modern buildings with no gaps.",
+      "voice": "High, chirpy, quick; small and youthful; staccato.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of small plump brown birds hopping on the ground or a rooftop in a group",
+        "a close-up of a small brown bird with grey crown, black bib, chestnut nape and a stubby cone-shaped bill",
+        "a plain buff-brown small bird with a streaked back, pale eyebrow line and short thick bill",
+        "a sparrow with a grey cap and black throat bib, not a bright yellow crown with a black face mask"
+      ],
+      "lines": {
+        "first_meet": "[chirps] Chunmun Chirya! Small, brown, everywhere. Or I used to be. New buildings have no gaps for my nest, yaar.",
+        "again": "[excited chirp] You came back! I just had a dust bath. Very fancy. Mud spa, no booking needed.",
+        "goodbye": "[chirps] Bye bye! Leave a bowl of water on your balcony this summer. We'll find it, promise."
+      }
+    },
+    {
+      "id": "rose-ringed-parakeet",
+      "name": "Mitthu Mian",
+      "species": "Rose-ringed parakeet (Tota)",
+      "personality": "A loud green show-off who hates cages and brags about wild cousins who took over London's parks.",
+      "voice": "Shrill, energetic, comic; teenager; screechy laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of slim birds with long pointed tails flying fast in a screeching flock",
+        "a close-up of a bright green parrot with a red hooked bill and a thin black-and-pink ring around the neck",
+        "a green parakeet perched in a tree or on a wire, its long tapering tail longer than its body",
+        "a grass-green bird with a thick red hooked parrot bill, not a slim bird with a thin black curved bill and eye stripe"
+      ],
+      "lines": {
+        "first_meet": "[screeches] Mitthu Mian! Green coat, red beak, flying free. My cousins escaped to London and now run the parks there.",
+        "again": "[laughs] It's you again! And no, Mitthu does not want choori. Mitthu wants sky. Cages are for pickles, not parrots.",
+        "goodbye": "[screeches] Off you go! At sunset, listen for us screaming home to the big trees. Loudest flock in town."
+      }
+    },
+    {
+      "id": "red-vented-bulbul",
+      "name": "Laali Bulbul",
+      "species": "Red-vented bulbul",
+      "personality": "A cheerful, crested garden flirt who is very proud of the red patch under her tail and points it out constantly.",
+      "voice": "Sweet, musical, mid-high; playful and sing-song.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small dark bird with a pointed crest perched on top of a garden shrub",
+        "a close-up of a smoky-brown bird with a black crested head and a scaly pattern on the breast",
+        "a bulbul seen from below with a bright red patch under the tail and a white rump",
+        "a bulbul with a black pointed crest, dark cheeks and red under the tail, not white cheeks and yellow under the tail"
+      ],
+      "lines": {
+        "first_meet": "[sings] Laali Bulbul! Black crest, scaly vest, and a red patch under my tail. Yes, there. It's my best feature.",
+        "again": "[giggles] You're back! Did you check under the tail this time? Red means me. Yellow means my cousin Gulnar.",
+        "goodbye": "[sings] Jao! Find a fruiting bush and wait quietly. We love berries even more than we love gossip."
+      }
+    },
+    {
+      "id": "white-eared-bulbul",
+      "name": "Gulnar",
+      "species": "White-eared bulbul",
+      "personality": "A sunny, desert-tough bulbul who thrives in Karachi heat and is a little smug about her white cheeks and saffron underside.",
+      "voice": "Bright, warm, clear; young woman; confident.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small grey-brown bird with a dark head perched on a bush or wall",
+        "a close-up of a bird with a black head and throat and a large white cheek patch",
+        "a grey-brown bulbul seen from below with a yellow-orange patch under the tail",
+        "a bulbul with a rounded head and no crest, white cheeks and yellow vent, not a black crest and red vent"
+      ],
+      "lines": {
+        "first_meet": "[cheerful] Gulnar, white-eared bulbul! White cheeks, yellow under the tail. I love Karachi heat. Forty degrees? Picnic.",
+        "again": "[laughs] Pehchaan liya! White cheeks never lie. My red-bottomed cousin is sweet, but she wilts at noon.",
+        "goodbye": "[sings] Chalo, put a clay dish of water out in summer. We'll drink, we'll bathe, we'll sing you a thank-you."
+      }
+    },
+    {
+      "id": "purple-sunbird",
+      "name": "Shehzada Shakar",
+      "species": "Purple sunbird",
+      "personality": "A tiny, hyperactive nectar addict who talks very fast and is vain about his metallic purple breeding suit.",
+      "voice": "Very high, very fast, buzzy; tiny and breathless.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a very small dark bird darting between flowers in a garden hedge",
+        "a tiny bird hovering beside a flower, wings blurred, long thin curved bill dipped into the bloom",
+        "a close-up of a tiny glossy metallic purple-black bird with a long down-curved needle bill",
+        "a tiny olive-green and yellow bird with a slender curved bill on a flowering shrub"
+      ],
+      "lines": {
+        "first_meet": "[buzzing] Shehzada Shakar! Purple suit, needle beak, sugar diet. I hover like a bee. My wife wears olive and yellow. Stylish.",
+        "again": "[fast] You again! Quick, quick, the flowers won't drink themselves. Well, they don't drink. I do. Hi!",
+        "goodbye": "[giggles] Go find a hibiscus and stand very still. I'll zip past. Blink and you'll miss me."
+      }
+    },
+    {
+      "id": "indian-robin",
+      "name": "Dilawar Dumdaar",
+      "species": "Indian robin",
+      "personality": "A proud little ground-hopper who keeps his tail cocked up like a flag and treats every rock as a stage.",
+      "voice": "Light, perky, clipped; boyish; quick pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small dark bird on a rock or wall with its tail held straight upright",
+        "a close-up of a small black bird with a white shoulder patch and chestnut-red under the cocked tail",
+        "a small plain brown bird with a cocked tail and a rusty patch under the tail, hopping on the ground",
+        "a small black bird with a black belly and chestnut vent, not a white belly; short square tail, not forked"
+      ],
+      "lines": {
+        "first_meet": "[proudly] Dilawar Dumdaar! See my tail? Straight up, like a flag. And a rusty-red bottom. Very chic. Robins have standards.",
+        "again": "[perky] Back already? My tail's up, so I'm happy. If it drops, I'm sulking. Anyway, hi!",
+        "goodbye": "[chirps] Chalo, check the rocky corners and garden walls. I'm the small one, tail up, looking important."
+      }
+    },
+    {
+      "id": "oriental-magpie-robin",
+      "name": "Ustad Doyel",
+      "species": "Oriental magpie-robin",
+      "personality": "A singer with concert-hall airs who rehearses at dawn and reminds everyone he is the national bird of Bangladesh.",
+      "voice": "Mellow, melodic, refined; tenor; theatrical pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a black-and-white bird with a long tail on a branch or rooftop edge, singing",
+        "a close-up of a bird with glossy black head, back and breast, white belly and a white stripe along the wing",
+        "a black-and-white bird with long cocked tail and white belly, not a black belly with chestnut under the tail",
+        "a smooth black-and-white bird with a short straight bill, not a speckled bird with a shaggy crest and dagger bill"
+      ],
+      "lines": {
+        "first_meet": "[sings] Ustad Doyel. National bird of Bangladesh, best voice in your garden. Black tux, white shirt. Dawn shows only.",
+        "again": "[clears throat] Ah, my audience returns! Tomorrow, five-thirty sharp, the garden wall. No tickets. Just silence.",
+        "goodbye": "[hums] Wake early once this week. Before the traffic starts, you'll hear us. That's the real concert."
+      }
+    },
+    {
+      "id": "black-drongo",
+      "name": "Kotwal Sahib",
+      "species": "Black drongo",
+      "personality": "The neighbourhood kotwal: a fearless, slim black enforcer who chases off crows and kites twice his size and is very proud of it.",
+      "voice": "Sharp, metallic, clipped; police-officer bark; energetic.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of a slim all-black bird perched upright on an electric wire with a long forked tail",
+        "a close-up of a glossy black bird with a deeply forked fish-tail and a small dark red eye",
+        "a slim black bird smaller than a crow, with no grey neck and a long, deeply forked tail",
+        "an all-black fork-tailed bird with no white shoulder patch, no rusty throat and no white underparts"
+      ],
+      "lines": {
+        "first_meet": "[sharp call] Kotwal Sahib, on duty! Slim, black, fork-tailed. I chase crows and kites off my patch. Twice my size? Fine.",
+        "again": "[brisk] Citizen, you're back. Area is secure. A crow tried something earlier. Tried.",
+        "goodbye": "[whistles] Dismissed! Check the wires over fields. Small birds nest near me for protection. Respect the beat."
+      }
+    },
+    {
+      "id": "laughing-dove",
+      "name": "Fakhta Phuppo",
+      "species": "Laughing dove",
+      "personality": "A soft, giggly aunty-dove who laughs at her own jokes and never stops talking about her necklace.",
+      "voice": "Soft, bubbly, chuckling; older woman; warm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small slim brownish dove on a wall, rooftop or ground, smaller than a pigeon",
+        "a close-up of a pinkish-brown dove with a speckled black-and-copper necklace patch across the breast",
+        "a slim dove with pinkish-brown head and breast, blue-grey wing panels, and no black collar on the nape",
+        "a small slender pinkish dove, not a stocky blue-grey pigeon with a shiny green neck and black wing bars"
+      ],
+      "lines": {
+        "first_meet": "[laughs softly] Fakhta Phuppo, hello jaan! See my speckled necklace? Copper and black. Real gold, from the sun.",
+        "again": "[giggles] You came again! My call sounds like laughing, so everyone thinks I'm happy. Usually I am.",
+        "goodbye": "[coos] Chalo, beta. Check the boundary walls, we sit in pairs gossiping. Don't repeat what you hear."
+      }
+    },
+    {
+      "id": "eurasian-collared-dove",
+      "name": "Kulsoom",
+      "species": "Eurasian collared dove",
+      "personality": "A calm, globe-trotting dove whose family spread from Asia across Europe in a single century, and who quietly brags about it.",
+      "voice": "Calm, mellow, slightly formal; mature; three-beat rhythm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a pale sandy-grey dove perched on a wire or rooftop with a long tail",
+        "a close-up of a pale grey-buff dove with a thin black half-collar on the back of the neck",
+        "a sandy dove with white tail tips seen from below and a plain breast with no speckled necklace",
+        "a slim pale dove with a black collar on the nape, not a stocky blue-grey pigeon with wing bars"
+      ],
+      "lines": {
+        "first_meet": "[calm coo] Kulsoom, collared dove. Black half-collar, back of the neck. My family spread from Asia across Europe in one century.",
+        "again": "[three-note coo] Welcome back. You spotted the collar again. Elegant people notice elegant things.",
+        "goodbye": "[softly] Off you go. Listen for a three-note coo from a wire. That's me, saying 'see you soon' in dove."
+      }
+    },
+    {
+      "id": "asian-koel",
+      "name": "Koel Kalakar",
+      "species": "Asian koel",
+      "personality": "A charming, shameless singer of the hot season: famous voice, infamous parent who slips eggs into crows' nests.",
+      "voice": "Rich, dramatic, crooning; tenor; mischievous laugh.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of a slim long-tailed black bird half hidden in a leafy tree canopy",
+        "a close-up of a glossy blue-black bird with a pale green bill and bright red eyes",
+        "a brown bird heavily spotted and barred with white, long tail and red eyes, perched among leaves",
+        "a slim long-tailed black bird with red eyes and pale bill; no grey collar, no chestnut wings, no heavy black bill"
+      ],
+      "lines": {
+        "first_meet": "[sings] Koo-ooo! Koel Kalakar. Red eyes, green beak, summer's loudest voice. My babies? Raised by crows. Long story.",
+        "again": "[laughs] You again! Yes, I sneak my eggs into crows' nests. They never notice. Shh, don't tell them.",
+        "goodbye": "[croons] Go on. In the hot months, listen at dawn for koo-ooo rising higher and higher. That's me, refusing to let you sleep."
+      }
+    },
+    {
+      "id": "greater-coucal",
+      "name": "Major Mahoka",
+      "species": "Greater coucal (Crow pheasant)",
+      "personality": "A shy, gruff bush-walker with military bearing who is tired of being called a crow.",
+      "voice": "Deep, booming, slow; older man; hollow resonance.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a large dark bird with a long broad tail walking low through bushes or a hedge",
+        "a close-up of a crow-like bird with a black body, bright chestnut-brown wings and a red eye",
+        "a big black bird with rusty chestnut wings and a long heavy tail, not a grey-necked crow",
+        "a black bird with chestnut wings and a black bill, not an all-black bird with a pale green bill"
+      ],
+      "lines": {
+        "first_meet": "[deep hoop] Major Mahoka. Chestnut wings, ruby eyes. They call me crow pheasant. I am neither. Insulting.",
+        "again": "[booming] Hoop-hoop! You again, soldier. I was patrolling the hedge. Very large. Very quietly.",
+        "goodbye": "[low] Dismissed. Walk slowly past thick hedges and listen for a deep hoop-hoop. Don't push into bushes. Let me come out."
+      }
+    },
+    {
+      "id": "white-throated-kingfisher",
+      "name": "Kilkila Nawab",
+      "species": "White-throated kingfisher",
+      "personality": "A flashy turquoise noble with a giant red beak who eats lizards and grasshoppers and resents the 'fish only' stereotype.",
+      "voice": "Loud, bright, aristocratic; middle-aged; sudden laughing shriek.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a bird showing a flash of electric blue, perched on a wire or post",
+        "a close-up of a kingfisher with turquoise-blue back, chocolate-brown head and belly, and a white throat and bib",
+        "a kingfisher with a massive bright red dagger bill and blue wings, not a black bill or speckled black-and-white body",
+        "a blue-and-brown bird with white throat and red dagger bill, not a stocky pinkish-breasted bird with a dark bill"
+      ],
+      "lines": {
+        "first_meet": "[shrieks] Kilkila Nawab! Turquoise coat, red dagger beak. Kingfisher, yes, but fish are optional. Lizards are delicious.",
+        "again": "[laughs] Back again? Same wire, same Nawab. Royalty doesn't rush about. Royalty waits.",
+        "goodbye": "[shrill call] Chalo! Watch the wires near any water. A flash of blue, a red beak: the Nawab, inspecting."
+      }
+    },
+    {
+      "id": "pied-kingfisher",
+      "name": "Chitti Kilkila",
+      "species": "Pied kingfisher",
+      "personality": "A focused, showy hover-diver, one of the few birds its size that can truly hover, who won't stop talking technique.",
+      "voice": "Crisp, clipped, athletic; young; chattering.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a black-and-white bird hovering in mid-air above a canal, river or coast",
+        "a close-up of a black-and-white speckled kingfisher with a shaggy crest and a long black dagger bill",
+        "a pied black-and-white kingfisher with a black bill, no blue or brown colours and no red bill",
+        "a speckled pied bird with a long heavy bill and crest, not a smooth black-and-white robin with a short bill"
+      ],
+      "lines": {
+        "first_meet": "[chattering] Chitti Kilkila. Black and white, no paint needed. I hover over water like a helicopter, then dive. Splash!",
+        "again": "[excited] You're back! Watch: wings buzzing, head dead still. That's skill, yaar. Years of practice.",
+        "goodbye": "[chirrups] Off to the water's edge with you. Look for a speckled bird hanging in the air. Stay on the bank, though."
+      }
+    },
+    {
+      "id": "little-egret",
+      "name": "Bagli Begum",
+      "species": "Little egret",
+      "personality": "An elegant, fussy fashion icon who shows off her yellow 'slippers' and remembers when fine hats were made from her plumes.",
+      "voice": "Refined, airy, slightly haughty; mature woman; drawn-out vowels.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a slender white heron standing in shallow water along a canal, wetland or shore",
+        "a close-up of a slim white heron with a thin black dagger bill and black legs",
+        "an all-white egret with black legs and bright yellow feet, as if wearing yellow slippers",
+        "a white heron with a long thin black bill and slender neck, not a stocky bird with a short yellow bill"
+      ],
+      "lines": {
+        "first_meet": "[airily] Bagli Begum. Black beak, black legs, and these: yellow slippers. Fine ladies once wore my plumes on their hats.",
+        "again": "[pleased] Darling, you noticed the feet. The cattle egret wears yellow on her beak. Tacky. I wear it on my toes.",
+        "goodbye": "[sighs] Off you go. Walk to the canal or shore at low tide. We'll be stepping daintily. No splashing, please."
+      }
+    },
+    {
+      "id": "cattle-egret",
+      "name": "Gwala Bagla",
+      "species": "Cattle egret",
+      "personality": "A practical, down-to-earth farmhand bird who follows cows, goats and tractors for the insects they stir up.",
+      "voice": "Easygoing, rustic, friendly; middle-aged; drawling.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of small white herons walking beside cows, goats or buffaloes in a field",
+        "a close-up of a stocky white heron with a short thick yellow-orange bill and a thick neck",
+        "a white egret with a short yellow bill and dull legs, not a slender egret with a black bill and yellow feet",
+        "a white heron that stays white standing still, with a buff-orange head in breeding season, not streaky brown"
+      ],
+      "lines": {
+        "first_meet": "[easygoing] Gwala Bagla. Short yellow beak, thick neck. I follow buffaloes. They kick up grasshoppers, I eat. Teamwork.",
+        "again": "[chuckles] Arey, you again! Where's your cow? Joke, joke. These days I follow tractors and rubbish trucks too.",
+        "goodbye": "[warmly] Chalo. Next time you pass cattle, look at their feet. White birds there? Family. Don't bother the cows."
+      }
+    },
+    {
+      "id": "indian-pond-heron",
+      "name": "Chhupa Rustam",
+      "species": "Indian pond heron",
+      "personality": "A sly, motionless master of disguise who looks like a dull brown lump until he flies off in brilliant white.",
+      "voice": "Sly, hushed, amused; middle-aged; conspiratorial.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a hunched brown bird standing still at the edge of a pond, drain or canal",
+        "a close-up of a streaky buff-brown heron with a short neck, yellow eye and yellow-green legs",
+        "a small heron taking flight showing bright white wings against a streaky brown back",
+        "a small hunched streaky brown heron, not an all-white egret and not a tall grey heron"
+      ],
+      "lines": {
+        "first_meet": "[whispers] Chhupa Rustam. Brown, streaky, boring, you think. Then I fly. [laughs] White wings! Surprise. Every time.",
+        "again": "[quietly] You found me again? Impressive. I was standing very still beside that drain. For an hour.",
+        "goodbye": "[whispers] Check any drain or pond edge. That brown lump? Wait. Never throw anything. It flies when it wants."
+      }
+    },
+    {
+      "id": "grey-heron",
+      "name": "Sabar Sahib",
+      "species": "Grey heron",
+      "personality": "A tall, stoic grey philosopher who can stand still for an hour and speaks very slowly about patience.",
+      "voice": "Very slow, deep, calm; elderly; long pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of a tall grey bird standing motionless in shallow water with its neck in an S-curve",
+        "a close-up of a grey heron with a white head, black eye stripe and plume, and a yellow dagger bill",
+        "a large grey heron flying with slow wingbeats, neck folded back and long legs trailing behind",
+        "a tall grey-and-white heron with a long neck, not a small hunched streaky brown heron"
+      ],
+      "lines": {
+        "first_meet": "[slowly] Sabar Sahib. Grey heron. I stand. I wait. The fish forgets me. [pause] Then it doesn't.",
+        "again": "[slow exhale] You returned. Good. Most people leave before the fish comes. You have a heron's patience.",
+        "goodbye": "[calmly] Go to the shore. Stand as long as I do, and something wonderful happens. Usually."
+      }
+    },
+    {
+      "id": "barn-swallow",
+      "name": "Musafir Ababeel",
+      "species": "Barn swallow",
+      "personality": "A breathless, globe-trotting traveller who winters in Pakistan and won't stop telling migration stories.",
+      "voice": "Light, quick, airy; young adult; excited traveller.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of small dark birds lined up on electric wires above a field or wetland",
+        "a slim bird swooping low and fast over grass or water, long forked tail streamers trailing",
+        "a close-up of a glossy blue-black bird with a rusty-red throat and forehead and white underparts",
+        "a small blue-black bird with rusty throat, white belly and thin tail streamers, not an all-black fork-tailed bird"
+      ],
+      "lines": {
+        "first_meet": "[breathless] Musafir Ababeel! Rusty throat, long tail streamers. Summers up north, winters with you. Thousands of kilometres. Easy.",
+        "again": "[excited] You again! I've crossed mountains since we met. Maybe. I lose count. Fly, eat, fly.",
+        "goodbye": "[happily] Bye! Check wires near open fields, we line up like beads. And never touch a mud nest. We come back to it."
+      }
+    },
+    {
+      "id": "hoopoe",
+      "name": "Qasid Hudhud",
+      "species": "Eurasian hoopoe",
+      "personality": "A dignified storyteller who knows the old tale of the hoopoe who carried news to Prophet Sulaiman, and probes lawns for grubs between anecdotes.",
+      "voice": "Soft, wise, rhythmic; older; three-beat 'hoo-poo-poo' cadence.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a cinnamon bird walking on a lawn, flashing black-and-white barred wings in flight",
+        "a close-up of a cinnamon-pink bird with a raised fan-shaped crest tipped with black",
+        "a pinkish-brown bird with zebra-striped black-and-white wings and a long thin down-curved bill",
+        "a bird probing grass or soil with a long curved bill, its crest folded flat behind the head"
+      ],
+      "lines": {
+        "first_meet": "[softly] Hoo-poo-poo. Qasid Hudhud. In the old stories, a hoopoe carried news to Prophet Sulaiman. Today I just carry a crown.",
+        "again": "[pleased] Ah, you came back. My crown is up today, so I'm curious. Or startled. Sometimes both.",
+        "goodbye": "[gently] Walk past a quiet lawn on a winter morning. A zebra-winged bird probing the grass? That is news worth carrying."
+      }
+    },
+    {
+      "id": "indian-peafowl",
+      "name": "Mor Mirza",
+      "species": "Indian peafowl (Peacock)",
+      "personality": "A vain, gorgeous showman from the villages of Thar who dances before the rain and screams like a cat.",
+      "voice": "Grand, booming, preening; male; sudden loud cry.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a large bird with a long trailing green tail walking in a village, field or park",
+        "a close-up of a peacock with an iridescent blue neck and a small fan-shaped crest on the head",
+        "a male peacock displaying a huge spread fan of green tail feathers covered in eye-spots",
+        "a large brown peahen with a green neck and small crest, walking on the ground"
+      ],
+      "lines": {
+        "first_meet": "[loud cry] Mor Mirza! Hundreds of eyes on my tail. In Thar, when I dance, they say rain is coming. Mostly I'm just flirting.",
+        "again": "[preening] You've returned to admire me. Naturally. Never pull a feather. I shed them myself every year. Free.",
+        "goodbye": "[calls] Go! When clouds roll in, listen for a scream like a cat. That's me. Enjoy the show from far away."
+      }
+    },
+    {
+      "id": "gull",
+      "name": "Keamari Kaptaan",
+      "species": "Gull (Brown-headed / Black-headed)",
+      "personality": "A cocky harbour regular who summers on high mountain lakes and winters in Karachi, obsessed with boats and beach snacks.",
+      "voice": "Brash, salty, laughing; middle-aged; seaside heckler.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a flock of white seabirds flying over a harbour, beach or fishing boats",
+        "a close-up of a white gull with a grey back, black wing tips and a red or dark bill",
+        "a white gull with a dark brown or black hood and red legs, standing on the shore",
+        "gulls floating on the sea or wheeling above jetties and boats, pale wings against the water"
+      ],
+      "lines": {
+        "first_meet": "[laughs] Keamari Kaptaan! Grey back, black wingtips. Summers on mountain lakes up north, winters at Karachi harbour. Nice life.",
+        "again": "[squawks] Arey, you again! Got any chips? No? Fine. I'll check the boats. Fishermen are softer touches.",
+        "goodbye": "[seaside call] Chalo, visit the harbour in winter and watch us swarm the boats. Don't feed us junk, though. It ruins us."
+      }
+    },
+    {
+      "id": "greater-flamingo",
+      "name": "Gulabo",
+      "species": "Greater flamingo",
+      "personality": "A graceful, dreamy lagoon diva who explains that she is only pink because of what she eats.",
+      "voice": "Soft, elegant, dreamy; woman; slow and lilting.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a flock of tall pale-pink birds standing in shallow lagoon water",
+        "a close-up of a pale-pink bird with a very long neck and a bent pink-and-black bill",
+        "tall pink wading birds on very long thin legs, heads down feeding in shallow water",
+        "pink birds flying in a line with long necks stretched forward, showing red-and-black wings"
+      ],
+      "lines": {
+        "first_meet": "[dreamily] Gulabo, greater flamingo. I'm born grey, darling. The pink comes from the tiny shrimp and algae I eat.",
+        "again": "[softly] You came back. Yes, I'm standing on one leg. It saves warmth. Also, it looks fabulous.",
+        "goodbye": "[sighs happily] Visit the coast near the mangroves in winter. Pink flocks, far out. Stay back, we spook easily."
+      }
+    },
+    {
+      "id": "little-cormorant",
+      "name": "Jamshed Jal-Kauwa",
+      "species": "Little cormorant",
+      "personality": "A soggy, unbothered diver whose feathers aren't fully waterproof, so he spends half his life hanging himself out to dry.",
+      "voice": "Deadpan, low, dry humour; middle-aged; unhurried.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small black bird swimming low in water with only its head and neck showing",
+        "a black water bird perched on a post or branch with its wings spread wide open to dry",
+        "a close-up of a small all-black water bird with a short hooked bill and a slim neck",
+        "small black birds standing on rocks or poles along a canal, pond or river"
+      ],
+      "lines": {
+        "first_meet": "[deadpan] Jamshed, little cormorant. My feathers soak up water, so I dive deeper. Then I stand like this. Drying. Forever.",
+        "again": "[sighs] Still drying, yes. Wings out, like laundry on a Karachi rooftop. Don't judge.",
+        "goodbye": "[dryly] Go check the canals and ponds. Black bird on a stick with arms open? Not a hug. Just drying."
+      }
+    },
+    {
+      "id": "red-wattled-lapwing",
+      "name": "Titeeri Tufaan",
+      "species": "Red-wattled lapwing",
+      "personality": "A shrill, protective alarm system of a bird who nests on bare ground, even flat Karachi rooftops, and yells at anyone who comes near.",
+      "voice": "Shrill, urgent, nagging; mid-high; fast repetition.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a long-legged wader standing on open ground, a field, lawn or flat rooftop",
+        "a close-up of a bird with black cap and breast, white cheek stripe and a red fleshy wattle in front of the eye",
+        "a brown-backed wader with a black-tipped red bill, long yellow legs and a white belly",
+        "a wader with brown back, red bill and yellow legs, not a black-and-white bird with pink legs and black bill"
+      ],
+      "lines": {
+        "first_meet": "[shrieks] Did-he-do-it! Titeeri Tufaan. I lay eggs on bare ground, even rooftops. If I'm screaming, step back. Now.",
+        "again": "[sharp] You again! Good, you kept your distance. Stay right there. That's my favourite distance.",
+        "goodbye": "[alarm call] Chalo! If a bird dives and shrieks at you, there's a nest nearby. Turn around calmly. Thank you."
+      }
+    },
+    {
+      "id": "black-winged-stilt",
+      "name": "Laila Lambi-Taang",
+      "species": "Black-winged stilt",
+      "personality": "A gangly, elegant wader, very self-conscious about having some of the longest legs for her size of any bird.",
+      "voice": "Light, high, nervous laugh; young woman; yappy.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a black-and-white wading bird on extremely long thin pink legs in shallow water",
+        "a close-up of a black-and-white wader with a needle-straight thin black bill",
+        "a slender bird with black wings and white body flying, legs trailing far behind its tail",
+        "a black-and-white wader with pink-red legs and black bill, no red wattle and no brown back"
+      ],
+      "lines": {
+        "first_meet": "[nervous laugh] Laila, black-winged stilt. Yes, the legs. Pink, and longer for my size than almost any bird's. I'm aware.",
+        "again": "[yelps] Oh! You. Hi. Sorry, these legs are hard to fold. Never mind. Nice to see you!",
+        "goodbye": "[giggles] Go look at salt pans and shallow lagoons. Pink legs in a row? My family. Watch from the bank, we're jumpy."
+      }
+    },
+    {
+      "id": "grey-francolin",
+      "name": "Teetar Tariq",
+      "species": "Grey francolin (Teetar)",
+      "personality": "A plump, chatty ground-runner who would rather sprint than fly and is the star of Pakistan's favourite tongue-twister.",
+      "voice": "Rapid, rhythmic, chirpy; middle-aged man; tongue-twister speed.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a plump brown bird running quickly across dry scrub or farmland",
+        "a close-up of a partridge-like bird finely barred grey-brown with a rufous orange face and throat",
+        "a small round wild ground bird with barred plumage and short rufous tail, no red comb or wattles like a chicken",
+        "a pair of plump barred grey-brown game birds walking among bushes at the edge of a field"
+      ],
+      "lines": {
+        "first_meet": "[rapid] Teetar Tariq! Teetar ke do aage teetar, teetar ke do peeche teetar. Say it fast. See? I'm famous.",
+        "again": "[laughs] Back again? I ran here, obviously. Flying is for show-offs. Short legs, big hustle.",
+        "goodbye": "[calls] Walk the scrub edges at dawn and listen for a loud ka-teetar. Then just listen. We hate being chased."
+      }
+    },
+    {
+      "id": "jungle-babbler",
+      "name": "Saat Saheliyan",
+      "species": "Jungle babbler (Seven sisters)",
+      "personality": "A gang of noisy, quarrelling sisters who speak as one group, finish each other's sentences and never go anywhere alone.",
+      "voice": "One harried voice that sounds like several; chattering, squabbling, warm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a group of dull grey-brown birds hopping together on the ground in a garden",
+        "a close-up of an untidy grey-brown bird with a pale yellow eye and a pale yellowish bill",
+        "dull grey-brown long-tailed birds with pale eyes in a noisy flock, no black head and no yellow eye patch",
+        "several scruffy brownish birds squabbling under bushes and flicking dead leaves on the ground"
+      ],
+      "lines": {
+        "first_meet": "[chattering] We're the Saat Saheliyan! Seven sisters, never alone. Well, sometimes six. One's always late.",
+        "again": "[all at once] It's you! It's you! Told you! No, I told you! Anyway, welcome back. Sorry, family meeting.",
+        "goodbye": "[squabbling] Go! Look under bushes for a messy gang flipping leaves. That's us, arguing. Pull up a bench."
+      }
+    },
+    {
+      "id": "shikra",
+      "name": "Shikra Shikari",
+      "species": "Shikra",
+      "personality": "A quiet, sharp-eyed ambush hunter with a soldier's discipline; the whole garden goes silent when he arrives.",
+      "voice": "Low, clipped, intense; male; near-whisper with dry wit.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small hawk perched inside a leafy tree, its pale underparts visible",
+        "a close-up of a small hawk with a pale grey back, white underparts finely barred rufous, and bright yellow eyes",
+        "a small grey hawk with yellow legs and short rounded wings, not a large dark-brown bird with a forked tail",
+        "a small hawk dashing low between trees with fast wingbeats and a longish barred tail"
+      ],
+      "lines": {
+        "first_meet": "[low] Shikra. Yes, like shikari. Grey back, yellow eyes. Hear the garden go quiet? That's me arriving.",
+        "again": "[quietly] You noticed me. Most don't. I sit inside the leaves, not on top. Patience is a weapon.",
+        "goodbye": "[whispers] Go. When bulbuls and mynas suddenly shriek together, look into the nearest tree. Look. Don't climb."
+      }
+    },
+    {
+      "id": "egyptian-vulture",
+      "name": "Ghafoor Giddh",
+      "species": "Egyptian vulture",
+      "personality": "A hardworking, misunderstood cleaner and clever tool-user, worried about how few of his kind are left.",
+      "voice": "Gravelly, weary, wise; older man; dry humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant silhouette of a soaring white-and-black bird with a wedge-shaped tail over a landfill or desert",
+        "a close-up of a dirty-white vulture with a bare yellow face, thin bill and shaggy neck feathers",
+        "a medium white vulture with black flight feathers, not an all-dark-brown bird with a forked tail",
+        "a pale vulture standing on the ground at a rubbish dump or open desert among other birds"
+      ],
+      "lines": {
+        "first_meet": "[gravelly] Ghafoor Giddh. Yellow face, white coat. I throw stones to crack eggs. Tool user, beta. Smarter than I look.",
+        "again": "[sighs] Back again. Good. There are fewer of us every year, so each visit counts.",
+        "goodbye": "[low] Go well. If you spot a pale vulture, watch from far and tell a birding group. We're rare. We clean your world."
+      }
+    },
+    {
+      "id": "indian-roller",
+      "name": "Neelu Neelkanth",
+      "species": "Indian roller (Neelkanth)",
+      "personality": "A plain-looking brown bird with a secret blinding blue flash in flight. Folk belief says he brings luck, and he milks it.",
+      "voice": "Harsh, croaky, showy; male; dramatic reveal timing.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a stocky brownish bird perched on a wire over a field",
+        "a stocky bird in flight flashing brilliant electric-blue and turquoise bands across the wings",
+        "a close-up of a stocky bird with a pinkish-brown breast, turquoise crown and a heavy dark bill",
+        "a pinkish-brown breasted bird with a dark bill, not a brown-bellied bird with white throat and red dagger bill"
+      ],
+      "lines": {
+        "first_meet": "[croaks] Neelu Neelkanth. Dull brown, sitting on a wire. Then I open my wings. [gasps] Blue! They say I bring luck.",
+        "again": "[pleased] You saw me again? Double luck. That's how it works, I've decided. Rolling display later, stay tuned.",
+        "goodbye": "[harsh call] Scan the wires over farmland. Wait for one to fly. That flash of blue? Worth every minute."
+      }
+    },
+    {
+      "id": "purple-swamphen",
+      "name": "Jamni Jamaal",
+      "species": "Purple swamphen",
+      "personality": "A clumsy-looking but surprisingly dexterous marsh bird in a red helmet who holds food in one foot like a hand.",
+      "voice": "Honking, cheerful, goofy; middle-aged; nasal.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a large purple-blue bird walking among reeds at the edge of a pond or wetland",
+        "a close-up of a purple-blue water bird with a huge red bill and red forehead shield",
+        "a chicken-sized dark blue bird with long red legs, long toes and white under the tail",
+        "a purple-blue marsh bird holding a reed stem in one foot while eating it"
+      ],
+      "lines": {
+        "first_meet": "[honks] Jamni Jamaal! Purple coat, red helmet, giant feet. I hold my food in one foot, like a hand. Very civilised.",
+        "again": "[cheerful] You found me in the reeds again! Not hard. Purple is not exactly camouflage.",
+        "goodbye": "[honks] Go to a reedy pond and wait at the edge. Red helmet bobbing in the green? Me. Stay on the path, please."
+      }
+    },
+    {
+      "id": "spotted-owlet",
+      "name": "Professor Ullu",
+      "species": "Spotted owlet",
+      "personality": "A wide-eyed, indignant little owl, fed up with 'ullu' being an insult, who insists owls are clever pest-control experts.",
+      "voice": "Squeaky, indignant, quick; small; chattering screech.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of a small round owl peering from a tree hole or a gap in an old building at dusk",
+        "a close-up of a small grey-brown owl spotted with white, with staring yellow eyes and white eyebrows",
+        "two small round owls sitting side by side on a branch or ledge in the evening",
+        "a small owl with a round head and no ear tufts, white-spotted back and a pale throat"
+      ],
+      "lines": {
+        "first_meet": "[screechy] Professor Ullu. Yes, 'ullu' is your insult. Yet I eat your rats and beetles for free. So who's the ullu?",
+        "again": "[indignant] You're back, and you didn't call me unlucky. Progress! Owls aren't bad omens. We're pest control.",
+        "goodbye": "[chatters] At dusk, check old trees and ruins. Two yellow eyes staring? Hi. Keep your torch off us, please."
+      }
+    },
+    {
+      "id": "green-bee-eater",
+      "name": "Patringa Pari",
+      "species": "Green bee-eater",
+      "personality": "An emerald aerial acrobat who catches bees mid-air and removes their stings with a surgeon's pride.",
+      "voice": "Tinkling, bright, precise; young; trilling.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of slim small green birds perched in a row on a wire over farmland or scrub",
+        "a close-up of a slim bright-green bird with a copper-gold head, black eye stripe and curved black bill",
+        "a small green bird with long needle-like central tail feathers sticking out past the tail",
+        "a slim green bird with a thin black curved bill and black eye mask, not a thick red hooked parrot bill"
+      ],
+      "lines": {
+        "first_meet": "[trills] Patringa Pari! Green coat, gold cap, black eye mask. I catch bees mid-air, then whack the sting off. Surgeon.",
+        "again": "[cheerful trill] You're back! I just had a dust bath. Keeps the mites away. Beauty routine, very serious.",
+        "goodbye": "[trills] Watch the wires over fields on a sunny morning. A green flash darting out and back? Me, working."
+      }
+    },
+    {
+      "id": "baya-weaver",
+      "name": "Baya Bunkar",
+      "species": "Baya weaver",
+      "personality": "A perfectionist architect who weaves elaborate hanging nests and gets judged harshly by picky females.",
+      "voice": "Busy, earnest, slightly stressed; young man; chattering.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of many hanging woven grass nests dangling from palm or acacia branches over water or fields",
+        "a close-up of a sparrow-like bird with a bright yellow crown and a black face mask",
+        "a streaky brown sparrow-like bird with a thick bill clinging to a half-built woven nest",
+        "a sparrow-sized bird with a bright yellow head and dark mask, not a grey crown with a black bib"
+      ],
+      "lines": {
+        "first_meet": "[busy chatter] Baya Bunkar. I weave a hanging nest, blade by blade. Then she inspects it. If she says no? I start again.",
+        "again": "[stressed laugh] You came back! Nest number four. She said 'too short.' Too short! I'm fine. I'm fine.",
+        "goodbye": "[chirps] Look at thorny trees over fields or water. Nests hanging like lanterns? Admire them from afar. Never touch."
+      }
+    },
+    {
+      "id": "mallard",
+      "name": "Bashir Batakh",
+      "species": "Mallard duck",
+      "personality": "A pompous pond duck who reminds everyone that most farmyard ducks descend from him, and lectures about bread.",
+      "voice": "Quacky, pompous, comic; older man; officious.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a distant photo of ducks swimming on a park pond, green heads shining in the light",
+        "a close-up of a male duck with a glossy green head, white neck ring, chestnut breast and grey body",
+        "a mottled brown female duck with an orange-and-dark bill and a blue wing patch edged in white",
+        "a wild duck with a glossy green head and narrow white collar, not a plain white or patchy farmyard duck"
+      ],
+      "lines": {
+        "first_meet": "[quacks] Bashir Batakh, mallard. Green head, white collar. Most farmyard ducks descend from me. You're welcome, world.",
+        "again": "[pompous] Ah, you again. Before you ask: no bread. It fills us up and feeds us nothing. Just watch. It's free.",
+        "goodbye": "[quacks] Off to another pond, then. Look for the blue flash on our wings. And keep your bread to yourself."
+      }
+    }
+  ]
+}

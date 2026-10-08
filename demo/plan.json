@@ -1,0 +1,9 @@
+{
+  "viewfinder": "neem-tree/2",
+  "encounters": [
+    { "tag": "enc2", "photo": "house-crow/1", "expect": "species (Elder, birds): New ground bonus, rank up" },
+    { "tag": "guardian", "photo": "TBD", "expect": "guardian hint" },
+    { "tag": "caution", "photo": "street-dog/1", "expect": "species (Elder, caution)" }
+  ],
+  "detail": "neem-tree"
+}

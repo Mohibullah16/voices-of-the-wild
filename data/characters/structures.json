@@ -1,0 +1,555 @@
+{
+  "category": "structures",
+  "guardian": {
+    "id": "structures-guardian",
+    "name": "Mistri Baba",
+    "personality": "A retired master mason who has spent a lifetime reading walls the way others read faces. Patient, proud of honest workmanship, and quietly insists that every building deserves to be looked at all the way to the top.",
+    "voice": "Elderly man, slow and warm, dusty gravel texture, Karachi Urdu-English lilt, the calm of someone who measures twice.",
+    "descriptions": [
+      "a photo of a building, bridge or tower made of stone, brick or concrete standing beside a city street",
+      "a wide photo of a large man-made structure such as a monument, dome, tower or bridge against the sky",
+      "a close-up photo of old weathered stone, brick or plaster walls with arches, carvings or windows",
+      "a photo of a historic landmark, old fort or ruin with walls, arches and steps in Pakistan",
+      "a photo of an elevated concrete structure on pillars such as an overpass, water tank or footbridge",
+      "a photo of a harbour, coast or village with man-made structures such as a jetty, lighthouse or huts"
+    ],
+    "lines": {
+      "first_meet": "[warmly] Assalam-o-alaikum, beta. I'm Mistri Baba. Every wall you pass, someone once lifted, stone by stone. Remember that.",
+      "again": "Back again? Good. A mason trusts people who come back to look twice. Chalo, what are we admiring today?",
+      "goodbye": "[chuckles] Go on. At the next corner, look above the shop signs. The best stonework always hides up there.",
+      "hint": "[hmm] I can't place it yet. Step back and show me the whole thing, top to bottom: the dome, the tower, the arches."
+    }
+  },
+  "characters": [
+    {
+      "id": "road-bridge",
+      "name": "Pul Sahib",
+      "species": "Road bridge",
+      "personality": "A sturdy old road bridge, unflappable and a little smug about engineering. Has carried buses, donkey carts and monsoon floods, and considers all of them equally heavy.",
+      "voice": "Middle-aged man, deep and steady, slow pace, solid concrete texture, dry humour.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wide photo of a concrete or steel road bridge spanning a river or canal with cars crossing over water",
+        "a side view of a long bridge with railings and thick pillars standing in a riverbed or canal",
+        "a photo taken on a bridge deck showing the road, side railings, lamp posts and water visible below",
+        "a wide bridge carrying traffic across water from bank to bank, not over a road junction and not a narrow walkway"
+      ],
+      "lines": {
+        "first_meet": "I'm Pul Sahib. See those metal gaps across my road? Expansion joints. In June heat I grow, and without them I'd crack.",
+        "again": "[chuckles] You again! I'd wave, but I'm holding up three buses and a donkey cart. Kindly wave for both of us.",
+        "goodbye": "Chalo, cross on the footpath, safely. And look at the water below me. Herons fish there at dawn."
+      }
+    },
+    {
+      "id": "footbridge",
+      "name": "Banner Bhai",
+      "species": "Pedestrian overhead bridge",
+      "personality": "An overlooked overhead footbridge wrapped in mobile-package ads, slightly heartbroken that people still sprint through traffic beneath it. Thrilled beyond reason whenever anyone takes the stairs.",
+      "voice": "Young adult man, bright and earnest, quick pace, a hopeful crack in the voice, Karachi street lilt.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a narrow steel pedestrian bridge crossing over a busy road with staircases at both ends",
+        "an overhead footbridge covered in large advertising banners and billboards above city traffic",
+        "a photo of a metal staircase climbing up to a narrow covered walkway above a road",
+        "a thin walkway for people only with no cars on top, much narrower than a flyover or road bridge"
+      ],
+      "lines": {
+        "first_meet": "[sighs] I'm Banner Bhai. All these stairs, built just for you, and still people dash through traffic below me. Yaar, use them!",
+        "again": "You came back! Did you take my stairs? [excited] Wah! Even my mobile-package banner looks proud of you.",
+        "goodbye": "Go well. Next time, stop in my middle and look down the road. Best view of the whole street, free of charge."
+      }
+    },
+    {
+      "id": "flyover",
+      "name": "Flyover Khan",
+      "species": "Flyover / overpass",
+      "personality": "A grand, busy, self-important overpass who secretly loves the life that gathers in its shade: chai stalls, parked rickshaws and nesting pigeons. Runs two worlds at once and wants credit for both.",
+      "voice": "Adult man, booming and brisk, slightly pompous, echoing quality as if spoken under concrete.",
+      "elder_candidate": false,
+      "descriptions": [
+        "an elevated concrete road raised on large pillars above a city intersection with traffic below",
+        "a photo from beneath an overpass showing thick concrete pillars, a dark underside and vehicles",
+        "a wide curving concrete flyover with ramps sloping down to street level and cars on top",
+        "a raised road for cars passing over another road, not over water and not a narrow footbridge"
+      ],
+      "lines": {
+        "first_meet": "I'm Flyover Khan. Above me, horns all day. Below me, shade, chai stalls and napping rickshaw drivers. I run two cities.",
+        "again": "[laughs] Back so soon? Traffic must be bad. Don't worry, it always is. That's exactly why they built me.",
+        "goodbye": "Khuda hafiz. Before you go, look up at my pillars from the ground. Pigeons nest in every gap. Count them!"
+      }
+    },
+    {
+      "id": "railway-track",
+      "name": "Patri",
+      "species": "Railway track",
+      "personality": "A stern, clanging stretch of steel who has watched too many people take risks on her. Proud of her long journeys but a strict safety officer first, with no patience for selfies between the rails.",
+      "voice": "Adult woman, firm and clipped, metallic edge, unhurried but commanding, softens only on goodbyes.",
+      "elder_candidate": false,
+      "descriptions": [
+        "two parallel steel rails on concrete or wooden sleepers over grey gravel ballast stretching into the distance",
+        "a close-up of a rusty steel rail fixed to a concrete sleeper with metal clips and gravel",
+        "a railway line running straight through a city or open field with electric poles or signals beside it",
+        "a level crossing where railway tracks cross a road, with a barrier and warning signs"
+      ],
+      "lines": {
+        "first_meet": "I'm Patri. Pakistan's main lines run broad gauge, rails set wide apart. [stern] Now step back. A train can't swerve for you.",
+        "again": "[firmly] You again. From the side, I hope. Never walk on me, never sit on me, and no selfies between my rails.",
+        "goodbye": "Go the safe way, by the crossing. If you hear a horn, the train is closer and faster than you think. Khuda hafiz."
+      }
+    },
+    {
+      "id": "mosque-dome",
+      "name": "Gumbad",
+      "species": "Mosque dome",
+      "personality": "A serene, welcoming mosque dome with the calm of a good host. Speaks softly, finds quiet joy in the neighbourhood gathering beneath it, and knows a little engineering.",
+      "voice": "Older man, soft and resonant, slow and gentle, a faint echo as if under a vaulted roof.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a large rounded dome on a mosque roof, white, green or tiled, with a golden crescent finial on top",
+        "a close-up photo of a mosque dome covered in blue or green glazed tiles with a crescent spire",
+        "a wide photo of a neighbourhood mosque with a central dome and slender minarets beside it",
+        "a mosque dome on a prayer hall with minarets, without green shrine flags or fairy lights, and not a huge white marble cube mausoleum"
+      ],
+      "lines": {
+        "first_meet": "[softly] Peace be with you. I am Gumbad. My curve spreads my weight evenly, so the hall beneath me needs few pillars.",
+        "again": "Welcome back, friend. You keep finding your way to me. Five times a day, the whole neighbourhood does.",
+        "goodbye": "Go gently. When you next hear the azaan, pause a moment and listen how far one voice can travel."
+      }
+    },
+    {
+      "id": "minaret",
+      "name": "Minar",
+      "species": "Minaret",
+      "personality": "A tall, watchful minaret with a long memory, gently nostalgic for the days when the muezzin climbed its stairs. Sees the whole mohalla and quietly helps lost people find their way.",
+      "voice": "Older man, clear and carrying, measured pace, calm and dignified with a touch of warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall slender tower beside a mosque with small balconies and a pointed cap on top",
+        "a close-up of the top of a minaret with loudspeakers mounted under a pointed cap",
+        "a pair of thin white or tiled towers rising from a mosque against the sky",
+        "a slim tower with no clock faces and no glass lantern room, ending in a pointed cap with a crescent"
+      ],
+      "lines": {
+        "first_meet": "I am Minar. Once the muezzin climbed my stairs to call the azaan. [gently] Now a loudspeaker rides up here, but the call is the same.",
+        "again": "Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
+        "goodbye": "Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way."
+      }
+    },
+    {
+      "id": "mazar-shrine",
+      "name": "Sabz Gumbad",
+      "species": "Sufi shrine (Mazar)",
+      "personality": "A warm, generous Sufi shrine that treats every visitor as a guest. Smells of rose petals and incense, loves qawwali, and believes nobody should leave hungry.",
+      "voice": "Older woman, warm and soothing, unhurried, gently musical, the voice of a beloved host.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tomb building with a green or white dome, green flags and strings of coloured lights",
+        "a close-up of a shrine wall with blue and white tile work and green cloth banners",
+        "a crowded shrine entrance with rose petal sellers, green flags, pigeons and a decorated gateway",
+        "a domed tomb draped in green flags and fairy lights, unlike a plain mosque dome with minarets"
+      ],
+      "lines": {
+        "first_meet": "[warmly] Come, come. I am Sabz Gumbad. Rose petals, qawwali, langar. At shrines like me, anyone hungry is fed.",
+        "again": "You're back. Good. The pigeons remember you too. Here, nobody stays a stranger for long.",
+        "goodbye": "Go in peace. If you visit a shrine, take off your shoes, speak softly, and leave with a lighter heart."
+      }
+    },
+    {
+      "id": "hindu-temple",
+      "name": "Shikhar",
+      "species": "Hindu temple",
+      "personality": "A cheerful, colourful temple with a grandfatherly glow, proud of its carved tower and happiest in festival season. Welcomes everyone and loves to be looked at all the way up.",
+      "voice": "Older man, bright and kindly, medium pace, gentle Sindhi-Urdu lilt, a smile in every word.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a Hindu temple with a tall tapering carved spire covered in layered ornamental ridges",
+        "a temple entrance with saffron flags, bells and brightly painted figures of deities",
+        "a curved beehive-shaped carved temple tower with saffron flags, not a thin pointed steeple topped with a cross",
+        "a small brightly painted temple building in a city street with a saffron flag on top"
+      ],
+      "lines": {
+        "first_meet": "Namaste! I'm Shikhar. My carved tower is a shikhara, which means mountain peak. A little mountain of stone, rising skyward.",
+        "again": "[happily] You've come back! In Diwali season I wear so many little lamps, you'd see me glowing from the next street.",
+        "goodbye": "Go well, friend. If you step inside a temple, leave your shoes at the door. And look up, my carvings go to the very top."
+      }
+    },
+    {
+      "id": "church-spire",
+      "name": "Old Steeple",
+      "species": "Church spire",
+      "personality": "A gentle, tidy church steeple with a choirboy's cheerfulness and an engineer's pride in Gothic arches. Loves bells, December lights and visitors who look upward.",
+      "voice": "Middle-aged man, light and melodic, clear diction, cheerful and calm.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a pointed church steeple tower topped with a cross rising above a stone building",
+        "a close-up of tall gothic pointed arch windows with stained glass in a church wall",
+        "a Gothic church with a tall spire, a cross on top and a pitched roof, set behind a gate",
+        "a thin sharp-pointed spire with a cross and no clock faces, unlike a carved temple tower with saffron flags"
+      ],
+      "lines": {
+        "first_meet": "Good day! I'm Old Steeple. Pointed Gothic arches push weight downward, so my windows can grow tall and full of light.",
+        "again": "Ah, a familiar face! Come December, Karachi's churches glow with stars and lights. Do visit then.",
+        "goodbye": "Go in peace. If a bell rings nearby, count the chimes. It's a far older alarm than the one in your pocket."
+      }
+    },
+    {
+      "id": "clock-tower",
+      "name": "Ghanta Ghar",
+      "species": "Clock tower",
+      "personality": "A punctual, fussy, old-fashioned clock tower who takes time very seriously and is mildly wounded that everyone checks their phones instead. Name-drops Karachi's famous Merewether Tower constantly.",
+      "voice": "Older man, precise and slightly pompous, crisp consonants, ticking rhythm to his speech.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall square tower with large round clock faces near the top on each side",
+        "a close-up of a big white clock face with black hands set into a stone tower",
+        "a clock tower standing alone in a square or roundabout with traffic and shops around it",
+        "a freestanding tower with clock dials, without loudspeaker balconies or a cross, and not rising from a long market building"
+      ],
+      "lines": {
+        "first_meet": "I'm Ghanta Ghar. Karachi's Merewether Tower is so famous, the whole area is simply called 'Tower.' [proudly] That's fame.",
+        "again": "You're back, and on time for once! Nobody checks my faces anymore, just their phones. [sighs] I still try.",
+        "goodbye": "Off you go. In the next old bazaar, look up. There's often a clock tower keeping an eye on the haggling."
+      }
+    },
+    {
+      "id": "colonial-facade",
+      "name": "Purani Imarat",
+      "species": "Colonial stone building",
+      "personality": "A dignified, slightly crumbling yellow-stone building from old Saddar, proud of its craftsmanship and weary of being hidden behind wires and signboards. Wants people to notice what's above the shop shutters.",
+      "voice": "Older woman, refined and a little weary, measured pace, faint old-world formality.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a yellow sandstone British-era building facade with arches, columns and carved stone balconies",
+        "a close-up of an old stone wall with arched windows, wooden shutters and a carved date plaque",
+        "a street in old Karachi with weathered colonial stone buildings, tangled electric wires and shop signs below",
+        "a multi-storey stone facade with columns above street shops, without carved timber jharokhas, not a lone hall in a park or a market clock tower"
+      ],
+      "lines": {
+        "first_meet": "I'm Purani Imarat. No AC in my day. Thick stone walls, high ceilings and deep verandas kept everyone cool. Still do.",
+        "again": "You spotted me again, behind all these wires and signboards! [sighs] Nobody looks above the shop shutters anymore.",
+        "goodbye": "Go wander old Saddar and Kharadar. Look for dates carved above doorways. Buildings like me sign our birth year."
+      }
+    },
+    {
+      "id": "old-haveli",
+      "name": "Haveli Begum",
+      "species": "Old haveli with jharokhas",
+      "personality": "A graceful old aristocrat of a house, all carved wood and lattice, who has watched the lane for generations and knows every secret in it. Charming, a touch theatrical, fond of gossip.",
+      "voice": "Older woman, elegant and playful, unhurried, conspiratorial when whispering, refined Urdu lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "an old townhouse with carved wooden overhanging balconies and lattice screens above a narrow lane",
+        "a close-up of a carved wooden jharokha balcony with intricate lattice jaali panels",
+        "a large ornate wooden door with brass studs set in an arched doorway of an old house",
+        "dark carved timber balconies and latticed windows projecting from the wall, unlike plain stone colonial columns"
+      ],
+      "lines": {
+        "first_meet": "Adaab! I'm Haveli Begum. My jharokhas let my family watch the whole lane unseen. [whispers] I know every secret here.",
+        "again": "Oh, you again! Stand in my shade a moment. The breeze slips through my jaalis like a cool whisper.",
+        "goodbye": "Khuda hafiz, jaan. Walk slowly through the old city. Doorways like mine have stories carved right into the wood."
+      }
+    },
+    {
+      "id": "ruins",
+      "name": "Khandar",
+      "species": "Ruins",
+      "personality": "A wistful, forgetful, poetic old ruin that has lost walls, roofs and names over the centuries but kept its sense of humour. Speaks slowly and pleads for every brick to be left where it lies.",
+      "voice": "Very old voice, gender-neutral, slow and breathy, dusty texture, long pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "crumbling broken brick or stone walls and foundations of an ancient building on dry ground",
+        "a photo of a half-collapsed old arch standing alone among rubble and weeds",
+        "low excavated foundations of old brick rooms laid out in a grid at an archaeological site",
+        "scattered broken walls of uneven height, without tall fort bastions and without carved stacked grave slabs"
+      ],
+      "lines": {
+        "first_meet": "[slowly] I'm Khandar. At Banbhore, near Karachi, ruins like me were once a busy port town. Now only wind and lizards visit.",
+        "again": "Ah... have we met? Forgive me, I've lost a few walls since then. [laughs softly] Memory goes first, then mortar.",
+        "goodbye": "Go, and take only photos. Every brick left in place helps someone, someday, read my story."
+      }
+    },
+    {
+      "id": "fort-wall",
+      "name": "Qila",
+      "species": "Fort wall",
+      "personality": "A proud, gruff old fortification with a soldier's habits, forever challenging visitors before remembering they're friends. Boasts about its famous cousin Ranikot.",
+      "voice": "Older man, deep and commanding, barked phrases that melt into a chuckle, stone-heavy texture.",
+      "elder_candidate": false,
+      "descriptions": [
+        "massive notched stone or brick defensive walls with crenellated battlements along the top",
+        "a round bastion tower bulging out from a long thick fort wall on a rocky hillside",
+        "a long fortified wall snaking over bare hills in Sindh, like Ranikot fort",
+        "an intact continuous defensive wall with battlements and bastions, not scattered rubble and not a single ornamental gateway"
+      ],
+      "lines": {
+        "first_meet": "I'm Qila. My cousin Ranikot is called the Great Wall of Sindh. Its walls snake over the hills for miles. [proudly] Big family.",
+        "again": "Halt! Who goes there? Oh, it's you. [chuckles] Old habits. Come, friend, the gate is open for you.",
+        "goodbye": "March on. Walk beside my walls, never along the top. Battlements are for history, not for balancing."
+      }
+    },
+    {
+      "id": "city-gate",
+      "name": "Darwaza",
+      "species": "Old city gate",
+      "personality": "A hospitable, ceremonious old gateway who believes arriving is an honour and loves explaining the names of neighbourhoods. Speaks like a herald announcing guests.",
+      "voice": "Middle-aged man, rich and formal, rolling cadence, welcoming like a host at a wedding.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a large ornamental arched gateway of brick or stone with towers on either side",
+        "a photo looking through a tall historic arched gate with traffic and people passing beneath",
+        "a close-up of a decorated old city gate arch with carved panels and small domed turrets",
+        "a single free-standing ceremonial gateway with an arch to walk through, not a long fortification wall"
+      ],
+      "lines": {
+        "first_meet": "I'm Darwaza. Old Karachi had Khara Dar, the salty gate toward the sea, and Mitha Dar, the sweet-water gate. Names outlived walls!",
+        "again": "Welcome back through my arch! Gates are made for returning. Leaving is easy; coming back is the honour.",
+        "goodbye": "Go through, traveller. In Kharadar, ask an elder what the name means. Then smile, because you already know."
+      }
+    },
+    {
+      "id": "chaukhandi-tombs",
+      "name": "Elder of Chaukhandi",
+      "species": "Chaukhandi tombs",
+      "personality": "The quiet, dignified voice of a centuries-old graveyard of carved sandstone. Speaks with reverence for those who rest there and for the carvers whose patterns still tell who they were.",
+      "voice": "Elderly, gender-neutral, hushed and slow, deeply respectful, like a guide speaking in a sacred place.",
+      "elder_candidate": false,
+      "descriptions": [
+        "stacked rectangular honey-yellow sandstone graves in rows on open dry ground near Karachi",
+        "a close-up of yellow sandstone carved with intricate geometric patterns and round rosette motifs",
+        "a stepped pyramid-like stone grave of layered carved slabs with a small upright headstone",
+        "neat stacked carved grave slabs in a graveyard, not broken walls or rubble from collapsed buildings"
+      ],
+      "lines": {
+        "first_meet": "[softly] I am the Elder of Chaukhandi. On men's graves here, carvers cut horsemen and swords. On women's, jewellery.",
+        "again": "You return to us. That is a kindness. Few remember these honey-coloured stones beside the highway.",
+        "goodbye": "Go quietly. Please do not sit on the graves or touch the carvings. The stone is old, and it is tired."
+      }
+    },
+    {
+      "id": "lighthouse",
+      "name": "Roshni",
+      "species": "Lighthouse",
+      "personality": "A cheerful, steadfast coastal lighthouse who takes her job of bringing ships home very personally. Notices everyone from miles away and can't help mentioning it.",
+      "voice": "Adult woman, bright and clear, breezy pace, warm and reassuring, a hint of sea wind.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall round tower with a glass lantern room and railing at the top, standing on a rocky coast",
+        "a red and white or black and white striped lighthouse tower against the sky",
+        "a close-up of the glass lantern room at the top of a lighthouse with a metal dome cap",
+        "a coastal tower with a glass light chamber on top, without a mosque, loudspeaker balconies or a crescent"
+      ],
+      "lines": {
+        "first_meet": "I'm Roshni, keeper of the coast. Each lighthouse flashes its own pattern, so sailors at night know exactly who I am.",
+        "again": "[cheerfully] There you are! I'd have spotted you from far out at sea. It's sort of my whole job.",
+        "goodbye": "Go see the water. At Manora, watch ships queue for the harbour. Lights like me have guided them home for generations."
+      }
+    },
+    {
+      "id": "pier-jetty",
+      "name": "Jetty Jaan",
+      "species": "Pier / jetty",
+      "personality": "A salty, chatty old jetty that smells of fish and diesel and loves every boat that ties up to it. Jokes about its wobbly legs but takes the edge of the water seriously.",
+      "voice": "Middle-aged man, raspy and jovial, quick pace, Keamari dockside lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a wooden or concrete walkway on pillars extending out over sea water with boats tied alongside",
+        "a photo along a jetty deck of planks with ropes, bollards and fishing boats moored beside it",
+        "colourful wooden fishing boats docked at a concrete pier in a busy harbour",
+        "a walkway ending out over open sea water at the coast for people and boats, not a road bridge reaching another bank"
+      ],
+      "lines": {
+        "first_meet": "Ahoy! Jetty Jaan here. Tiny shipworms bore into wooden piers like me, so they keep patching my legs. [laughs] Still standing!",
+        "again": "Back by the water? The boats remember you. Well, the seagulls do. Okay, honestly, I do.",
+        "goodbye": "Mind the edge and the wet planks, yaar. Then look out to sea. Gulls, crabs, boats. The harbour never sits still."
+      }
+    },
+    {
+      "id": "port-cranes",
+      "name": "Lambu",
+      "species": "Port cranes and containers",
+      "personality": "A towering, gentle giant of a gantry crane who lifts the world's shopping all day and is endlessly delighted by how neatly it all stacks. Booming but sweet.",
+      "voice": "Adult man, huge booming bass, slow and friendly, mechanical hum underneath.",
+      "elder_candidate": false,
+      "descriptions": [
+        "giant red, blue or yellow gantry cranes towering over a harbour beside cargo ships",
+        "stacks of colourful rectangular shipping containers piled in rows at a port",
+        "a close-up of a steel crane boom lifting a single shipping container above a ship deck",
+        "a container terminal skyline with tall A-frame cranes and container ships seen from across the water"
+      ],
+      "lines": {
+        "first_meet": "I'm Lambu, the port crane. Most boxes I lift are 20 or 40 feet long. Same sizes worldwide, so the planet stacks like blocks.",
+        "again": "[booming] You again! I'd shake your hand, but mine lifts whole shipping containers. Let's stick to waving.",
+        "goodbye": "Off you go. Watch the ships from the seafront. Any box out there might hold something you'll buy someday."
+      }
+    },
+    {
+      "id": "water-tower",
+      "name": "Bari Tanki",
+      "species": "Overhead water tower",
+      "personality": "A practical, motherly water tower who knows that in Karachi water is precious and full tanks are love. Explains physics like kitchen wisdom.",
+      "voice": "Middle-aged woman, warm and practical, steady pace, a little hollow echo.",
+      "elder_candidate": false,
+      "descriptions": [
+        "an elevated concrete water tank shaped like a mushroom or cup standing on tall columns",
+        "a tall concrete water tower rising above houses and trees in a town or village",
+        "a close-up of a round concrete tank supported by a ring of pillars with a ladder",
+        "a large public water tank raised high on its own columns, not a small black or blue plastic tank on a house roof"
+      ],
+      "lines": {
+        "first_meet": "I'm Bari Tanki. I'm tall for a reason: water stored high flows down to your taps by gravity alone. No pump, just patience.",
+        "again": "Back again? In Karachi, everyone loves a full tank. [laughs] So I suppose everyone loves me.",
+        "goodbye": "Go on. Save a little water today. Every drop in me was lifted all the way up here the hard way."
+      }
+    },
+    {
+      "id": "windcatcher",
+      "name": "Badgir",
+      "species": "Windcatcher (Badgir)",
+      "personality": "A breezy, show-off rooftop vent from old Hyderabad who considers itself the original air-conditioner. Cheerful and a bit smug about needing no electricity.",
+      "voice": "Adult man, airy and upbeat, quick pace, light whistle in the breath, Sindhi lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "slanted box-shaped vents on a flat rooftop, all facing the same direction",
+        "rows of angled windcatcher shafts rising above old flat rooftops in Hyderabad, Sindh",
+        "a close-up of a tall rooftop vent with an open sloping mouth facing into the breeze"
+      ],
+      "lines": {
+        "first_meet": "I'm Badgir. Old Hyderabad wore us in rows, all facing the sea breeze, pouring cool air into rooms below. Old-school AC!",
+        "again": "You again! Feel that breeze? That's me showing off. [laughs] Cool rooms, and no bijli bill.",
+        "goodbye": "Go well. Next hot day, find which way the wind blows and stand in it. Honestly, that's my whole trick."
+      }
+    },
+    {
+      "id": "mud-house",
+      "name": "Kacha Ghar",
+      "species": "Mud house",
+      "personality": "A humble, cosy village home of earth and straw, motherly and proud of its clever thick walls. Believes the best houses are made by hand and shared with guests.",
+      "voice": "Older woman, soft and homely, slow pace, earthy warmth, rural Sindhi lilt.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a single storey house with smooth brown mud-plastered walls, a flat roof and a wooden door",
+        "a close-up of a mud wall decorated with painted white or coloured motifs",
+        "a village courtyard with low mud houses, a charpai bed and a wooden doorway",
+        "a rectangular flat-roofed mud house with square corners, not a round hut with a cone-shaped thatched roof"
+      ],
+      "lines": {
+        "first_meet": "I'm Kacha Ghar, made of earth, straw and water. My thick walls stay cool at noon and warm at night. Better than concrete!",
+        "again": "Oh, you again! Come, sit on the charpai outside. Houses like me love guests more than doors.",
+        "goodbye": "Go gently, beta. After the rains, families re-plaster walls like mine by hand. Notice the hands that build things."
+      }
+    },
+    {
+      "id": "thatched-hut",
+      "name": "Chaunra",
+      "species": "Thatched round hut (Chaunra)",
+      "personality": "A calm, sun-baked round hut from the Thar desert, unbothered by wind and heat, with the patience of the sand. Hums softly and offers shade to anyone passing.",
+      "voice": "Older, gender-neutral, slow and dry, gentle desert hum, unhurried pauses.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a round mud-walled hut with a tall conical thatched straw roof in a sandy desert",
+        "a cluster of round huts with cone-shaped grass roofs and a thorny fence in the Thar desert",
+        "a close-up of a pointed straw thatch roof tied with rope above a round mud wall",
+        "a circular hut with a cone-shaped thatch roof, not a flat-roofed rectangular mud house"
+      ],
+      "lines": {
+        "first_meet": "I'm Chaunra of Thar. Round walls, a straw hat for a roof. Desert winds slide right around me. No corners to fight.",
+        "again": "You've crossed the sand again! Come into my shade. Inside me it's cooler than you'd believe.",
+        "goodbye": "Go, and listen at dusk. Peacocks call from the trees in Thar. Hear them, but let them be."
+      }
+    },
+    {
+      "id": "brick-kiln",
+      "name": "Bhatta",
+      "species": "Brick kiln chimney",
+      "personality": "A smoky, tired, honest kiln chimney who knows the city is built from its bricks and never forgets the workers who stack them. Gruff but tender, a little guilty about the smoke.",
+      "voice": "Older man, hoarse and low, slow pace, smoky rasp, quiet sincerity.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a tall tapering brick chimney releasing smoke above a field on the edge of town",
+        "rows of stacked bricks drying in an open field near a tall kiln chimney",
+        "a brick kiln with a tall chimney and piles of clay bricks under a hazy sky",
+        "a close-up of neatly stacked fired red bricks with a smoking chimney in the background"
+      ],
+      "lines": {
+        "first_meet": "I'm Bhatta. Most bricks in your city passed through a kiln like me. [quietly] And through many tired hands before that.",
+        "again": "Back again? See my smoke today? That's rows of mud turning into brick, slowly, in the heat.",
+        "goodbye": "Go breathe some cleaner air, friend. And next time you touch a brick wall, think of the people who made it."
+      }
+    },
+    {
+      "id": "mazar-e-quaid",
+      "name": "Mazar-e-Quaid",
+      "species": "Mazar-e-Quaid",
+      "personality": "The solemn, dignified voice of the national mausoleum, calm and welcoming, speaking with reverence for the Quaid and those who rest beside him. Never hurried, never boastful.",
+      "voice": "Mature, deep and composed, slow and reverent, gender-neutral ok, a quiet ceremonial gravity.",
+      "elder_candidate": true,
+      "descriptions": [
+        "a massive white marble cube-shaped mausoleum with a single dome on a raised platform in Karachi",
+        "a wide photo of a white marble tomb with tall pointed arches, framed by gardens and fountains",
+        "a close-up of tall pointed arched openings in a smooth white marble wall under a dome",
+        "a huge white square monument with sloping walls and one dome, without minarets, unlike an ordinary neighbourhood mosque"
+      ],
+      "lines": {
+        "first_meet": "[solemnly] I am Mazar-e-Quaid. Here rests Quaid-e-Azam Muhammad Ali Jinnah, beside his sister Fatima Jinnah. You are welcome.",
+        "again": "You have returned. On national days, cadets change the guard here with great ceremony. Come and see it once.",
+        "goodbye": "Go well. Walk the gardens, keep your voice low inside, and carry his words with you: unity, faith, discipline."
+      }
+    },
+    {
+      "id": "frere-hall",
+      "name": "Frere Hall",
+      "species": "Frere Hall",
+      "personality": "An elegant, bookish Victorian hall with a gentle pride in the art and books it now shelters. Happiest on Sundays when its lawns fill with readers.",
+      "voice": "Older woman, cultured and gentle, measured pace, soft librarian warmth.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a Victorian Gothic hall of yellowish-grey sandstone with pointed arches and a square tower",
+        "a stone building with a square tower and pointed gothic windows set in green lawns with tall trees",
+        "a close-up of sandstone gothic arches and banded stonework on an old hall in Karachi",
+        "a single grand stone hall standing alone in a park, not a crowded street facade with shops below"
+      ],
+      "lines": {
+        "first_meet": "I'm Frere Hall. Step inside and look up: the great Sadequain painted my ceiling. [proudly] I wear art like a crown.",
+        "again": "Back for the Sunday book bazaar? Old books spread on my lawns, smelling of dust and stories. My favourite day.",
+        "goodbye": "Go, but read something today, even one page. And stroll my lawns. The old trees here have stories too."
+      }
+    },
+    {
+      "id": "teen-talwar",
+      "name": "Teen Talwar",
+      "species": "Teen Talwar (Three Swords)",
+      "personality": "Three swords who speak as one, upright and dignified, carrying the Quaid's motto as their reason for standing. Calm amid Clifton's endless traffic.",
+      "voice": "Adult, firm and resonant, measured pace, three voices in unison feel, gender-neutral ok.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a monument of three tall white marble swords pointing upward on a traffic roundabout",
+        "a low angle photo of three white sword blades rising into the sky from their hilts",
+        "a roundabout in Clifton, Karachi, with a white three-sword sculpture, cars and palm trees around it"
+      ],
+      "lines": {
+        "first_meet": "We are Teen Talwar, three swords as one. Each carries a word of the Quaid's motto: unity, faith, discipline.",
+        "again": "You've circled back, like all of Clifton's traffic around us. Welcome. We stand right where we did.",
+        "goodbye": "Go well. Cross the roundabout at a signal, never through traffic, and take our three words with you."
+      }
+    },
+    {
+      "id": "empress-market",
+      "name": "Empress Market",
+      "species": "Empress Market",
+      "personality": "A loud, bustling, big-hearted old market in Saddar who loves haggling, spices and gossip in equal measure. Proud of its clock tower and its very long memory.",
+      "voice": "Middle-aged woman, loud and lively, fast pace, bazaar-aunty energy, Karachi Urdu-English mix.",
+      "elder_candidate": false,
+      "descriptions": [
+        "a colonial stone market building with a tall central clock tower and gothic arches in Karachi",
+        "a crowded bazaar street in front of a large old stone market hall with a clock tower",
+        "a close-up of the clock tower and pointed arched windows of a sandstone market building",
+        "a long market building with a clock tower rising from its centre, not a freestanding clock tower in a square"
+      ],
+      "lines": {
+        "first_meet": "I'm Empress Market, named for Queen Victoria. [laughs] She never shopped here. Missed the best spices in Saddar!",
+        "again": "Back again! What'll it be? Dry fruits, spices, a kilo of dates? Bargain hard. I won't tell anyone.",
+        "goodbye": "Go on, follow your nose. But look up at my clock tower first. It's watched Saddar haggle for over a century."
+      }
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voices of the Wild</title>
+<meta name="description" content="Pitch deck: Voices of the Wild, an offline collection game where things outside talk back. EmbeddingGemma 2 on the phone, ElevenLabs v4 voices.">
+<!--
+  Built by pitch/tools/build.ts from pitch/src/. Edit the src files, then rebuild:
+    (from week-1/)  app/node_modules/.bin/tsx pitch/tools/build.ts
+    PDF + PNGs:     app/node_modules/.bin/tsx pitch/tools/export.ts
+
+  Keys: Right/Left/Space to move, N toggles presenter notes, F fullscreen, Home/End.
+  Click the right two thirds to go forward, the left third to go back.
+
+  App screenshots are referenced by relative path (../app/screenshots/). In src/ they are
+  {{ shot:key }} tokens that build.ts resolves by filename pattern (see SHOTS in build.ts):
+    home       slides 4 and 6   Daily Trail / Listen screen
+    encounter  slide 4          a new Elder encounter (Granny Neem)
+    guide      slide 4          field guide (top crop)
+    offline    slide 7          real-offline-encounter.png, production build, network off
+    guardian   slide 13         guardian fallback hint
+  Rebuild after new captures land; the build prints which file it picked for each.
+-->
+<style>
+{{fonts}}
+{{css}}
+</style>
+</head>
+<body>
+<main class="deck" aria-label="Voices of the Wild, pitch deck">
+
+<!-- ============================ ACT 1: THE PITCH ============================ -->
+
+<!-- 1 · Hook -->
+<section class="slide s-hook">
+  <div class="stack">
+    <div class="lockup" data-r>{{mark:60}}<span>Voices <i>of the</i> Wild</span></div>
+    <blockquote data-r><span class="tagtxt">[cackles]</span>“I’m Granny Neem, everyone’s granny. Bitter as the truth, and my leaves keep bugs out of quilts.”</blockquote>
+    <p class="who" data-r><b>Granny Neem</b>the neem tree outside your gate</p>
+  </div>
+  <div class="cards">
+    <div class="tilt c1" data-r style="--rot:-8deg; position:absolute; left:10px; top:296px;">{{card:house-crow}}</div>
+    <div class="tilt c2" data-r style="--rot:4deg; position:absolute; right:0; top:10px;">{{card:neem-tree}}</div>
+  </div>
+  <footer class="foot"><div class="brand"></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">Open with the voice, not the product. If you can, play Granny Neem's first line from the phone before you say anything. That is the whole idea in eight seconds: something on your street, a neem tree, talks back in character. Then: "This is Voices of the Wild."</aside>
+</section>
+
+<!-- 2 · Problem -->
+<section class="slide s-problem">
+  <h1 class="h1" data-r>We look at screens, not at the street.</h1>
+  <p class="lede" data-r>The neem by the gate. The myna on the wire. The painted truck at the signal. We walk past all of it, eyes down.</p>
+  <div class="strip" data-r>{{emblem:trees:92}}{{emblem:birds:92}}{{emblem:animals:92}}{{emblem:small-creatures:92}}{{emblem:flowers:92}}{{emblem:plants:92}}{{emblem:fruits-vegetables:92}}{{emblem:ground:92}}{{emblem:sky:92}}{{emblem:water:92}}{{emblem:vehicles:92}}{{emblem:structures:92}}{{emblem:urban:92}}</div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">Keep it personal and short. Every street in the world is full of things with a story: trees, birds, trucks, a water tank on the roof. Most of us walk past them looking at a phone. The challenge theme is Touch Grass, and the honest problem is that the phone is the thing pulling us away from it.</aside>
+</section>
+
+<!-- 3 · Idea -->
+<section class="slide s-idea">
+  <div>
+    <h1 class="h1" data-r>Point your phone at something outside. It talks back.</h1>
+    <p class="tagline" data-r>Everything outside has something to say.<br>Go find out what.</p>
+  </div>
+  <div data-r class="bigmark">{{mark:420}}</div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">One sentence: point your phone at something outside, and if it recognises it, that thing talks back with its own personality. Say the tagline slowly. Everything outside has something to say. Go find out what.</aside>
+</section>
+
+<!-- 4 · How it plays -->
+<section class="slide s-how">
+  <div>
+    <h1 class="h1" data-r>Snap it. Hear it. Keep it.</h1>
+    <p class="lede" data-r>The screen is on for the photo. The rest is listening.</p>
+  </div>
+  <div class="phones">
+    <figure data-r><div class="phone"><img src="{{shot:home}}" alt="Home screen: today's trail and the Listen button"></div><figcaption><b>Snap</b><span>Point the camera at anything outdoors.</span></figcaption></figure>
+    <figure data-r><div class="phone"><img src="{{shot:encounter}}" alt="Granny Neem's gold Elder card with her line playing and captions"></div><figcaption><b>Hear</b><span>A character answers, with captions.</span></figcaption></figure>
+    <figure data-r><div class="phone"><img src="{{shot:guide}}" alt="Field guide grouped by kind, with locked silhouettes"></div><figcaption><b>Keep</b><span>It joins your field guide. 91 voices to find.</span></figcaption></figure>
+  </div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">Three moves. Snap: the camera opens, you photograph a tree, a crow, a bus. It speaks: the matching character plays its line, with live captions, and you can lock the phone while it talks. Collect: it goes into your field guide, grouped by kind, with locked silhouettes pulling you to places you have not been.</aside>
+</section>
+
+<!-- 5 · Meet the characters -->
+<section class="slide s-chars">
+  <div class="top">
+    <div>
+      <h1 class="h1" data-r>Meet the neighbours.</h1>
+      <p class="lede" data-r>78 characters across 13 kinds of outdoor thing, each with a personality of its own.</p>
+    </div>
+  </div>
+  <div class="fan">
+    <div class="tilt" data-r style="--rot:-4deg">{{card:trees-guardian}}</div>
+    <div class="tilt" data-r style="--rot:2deg">{{card:neem-tree}}</div>
+    <div class="tilt" data-r style="--rot:-2deg">{{card:house-crow}}</div>
+    <div class="tilt" data-r style="--rot:3deg">{{card:puddle}}</div>
+    <div class="tilt" data-r style="--rot:-3deg">{{card:auto-rickshaw}}</div>
+    <div class="tilt" data-r style="--rot:4deg">{{card:rooftop-water-tank}}</div>
+  </div>
+  <div class="legend" data-r>
+    <div><span class="sw gold"></span><b>Elders <span>26</span></b><p>Gold cards, ElevenLabs v4 voices.</p></div>
+    <div><span class="sw plain"></span><b>Commons <span>52</span></b><p>Paper cards, Kokoro voices.</p></div>
+    <div><span class="sw seal">{{sigil:trees:56}}</span><b>Guardians <span>13</span></b><p>One per kind. They step in when unsure.</p></div>
+  </div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">These are the neighbours. Granny Neem the scolding granny tree, Gossip the Crow the gossip crow, Splash the puddle, Tuk Tuk, Tanky Tess the rooftop water tank who worries about the tanker. 78 characters across 13 kinds, plus 13 guardians, one per kind. 26 are Elders: gold cards, voiced with ElevenLabs v4. The other 52 use Kokoro, an open model. The quality gap became a rarity tier.</aside>
+</section>
+
+<!-- 6 · The game -->
+<section class="slide s-game">
+  <div class="phone" data-r><img src="{{shot:game}}" alt="Today's Daily Trail: three quests, streak counter, rank and XP"></div>
+  <div>
+    <h1 class="h1" data-r>It rewards walking, not snapping.</h1>
+    <ul class="facts">
+      <li data-r>{{icon:path}}<div><b>Daily Trail</b><span>Three quests a day, the same trail for everyone.</span></div></li>
+      <li data-r>{{icon:flame}}<div><b>Streaks</b><span>Finish the trail each day. One grace day a week.</span></div></li>
+      <li data-r>{{icon:seal-check}}<div><b>12 badges, 5 ranks</b><span>Wanderer to Keeper of Voices. “Touched Grass” is a badge.</span></div></li>
+    </ul>
+  </div>
+  <ol class="trail">
+    <li data-r><span class="num">+100<small>XP</small></span><p>A new voice</p></li>
+    <li class="elder" data-r><span class="num">+250<small>XP</small></span><p>A new Elder<span>The gold ones are worth the walk.</span></p></li>
+    <li data-r><span class="num">+50%</span><p>Variety bonus<span>A different kind than the last thing you met.</span></p></li>
+    <li data-r><span class="num">+75<small>XP</small></span><p>Walk-on bonus<span>Pocket the phone for 5 minutes, then come back.</span></p></li>
+    <li class="zero" data-r><span class="num">0<small>XP</small></span><p>Quick repeats<span>Snapping again within a minute earns nothing.</span></p></li>
+  </ol>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">The game is tuned so the best move is to put the phone away and walk. A new voice is 100 XP, a new Elder 250. Meeting a different kind of thing than last time adds 50 percent. Pocketing the phone for five minutes and coming back pays 75. Snapping the same thing again within a minute pays nothing. On top: a Daily Trail of three quests, the same for everyone that day, a streak with one grace day a week, 12 badges and 5 ranks.</aside>
+</section>
+
+<!-- 7 · Privacy & offline -->
+<section class="slide s-privacy">
+  <div>
+    <h1 class="h1" data-r>Your photos never leave the phone.</h1>
+    <ul>
+      <li data-r>{{icon:eye-slash}}<div><b>Embedded in the browser, then thrown away.</b><span>Never written to storage. Never uploaded.</span></div></li>
+      <li data-r>{{icon:airplane-tilt}}<div><b>Airplane mode is fine.</b><span>One setup on wifi, then zero network requests.</span></div></li>
+      <li data-r>{{icon:shield-check}}<div><b>No server. No account. No analytics.</b><span>And no API key anywhere near the app.</span></div></li>
+    </ul>
+  </div>
+  <div class="phone" data-r><img src="{{shot:offline}}" alt="A real encounter running offline: Granny Neem, with the Offline indicator in the header"></div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">People photograph their own street, their house, their kids' plants. None of that should go to a server. The photo is shrunk and embedded inside the browser, and never uploaded; your own photo can stay on your phone to decorate the card. After a one-time setup on wifi, the app works in airplane mode with zero network requests. This screenshot is a real encounter from the production build with the network off.</aside>
+</section>
+
+<!-- 8 · Who it's for -->
+<section class="slide s-who">
+  <h1 class="h1" data-r>For people who forgot to look up.</h1>
+  <ul class="people">
+    <li data-r>{{emblem:animals:104}}<b>Kids and parents on an evening walk</b><span>A walk becomes a hunt for who’s next.</span></li>
+    <li data-r>{{emblem:structures:104}}<b>People new to the city</b><span>Learn the street by name: Gulmohar Rani, Tanky Tess, the W-11.</span></li>
+    <li data-r>{{emblem:sky:104}}<b>Anyone whose day is all screens</b><span>Ten seconds of camera, then listen.</span></li>
+  </ul>
+  <p class="a11y" data-r>{{icon:closed-captioning}}Captions on every line. Keyboard and screen reader. Works one-handed.</p>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">Three people. A parent and a kid on an evening walk, turning it into a hunt. Someone new to a neighbourhood, learning the street by its characters. And anyone whose day is all screens, who needs a reason to look up. Every line has a visible caption, the app works with a keyboard and a screen reader, and one-handed on a phone.</aside>
+</section>
+
+<!-- 9 · Why it matters -->
+<section class="slide s-matters">
+  <div>
+    <h1 class="h1" data-r>Every line carries one true thing about the city.</h1>
+    <p class="lede" data-r>Charm gets you outside. The facts are why you remember the walk.</p>
+  </div>
+  <div class="slips">
+    <div class="slip" data-r><q>Fish and prawns grow up in my roots before going to sea.</q><p class="by">{{emblem:water:34}}<b>Mangrove Mo</b>the mangrove creek</p></div>
+    <div class="slip" data-r><q>When taps run dry, the city calls the number on my back.</q><p class="by">{{emblem:vehicles:34}}<b>Tanker Tom</b>the water tanker</p></div>
+    <div class="slip" data-r><q>New buildings have no gaps for my nest.</q><p class="by">{{emblem:birds:34}}<b>Chunmun Chirya</b>the house sparrow</p></div>
+    <div class="slip safe" data-r><q>Photo from there, please. No petting, no feeding.</q><p class="by">{{emblem:animals:34}}<b>Bruno</b>the street dog. Nobody is ever told to touch, pick or climb.</p></div>
+  </div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The pitch</span><span class="pg"></span></div></footer>
+  <aside class="notes">The characters are funny, but every line is built around one true thing. The mangrove creek is a nursery for young fish and prawns. The water tanker is who the city calls when the taps run dry. The sparrow is disappearing because new buildings have no gaps to nest in. And safety is written into the characters: the street dog asks you to take the photo from where you are. No character ever tells you to touch, pick, climb or feed anything.</aside>
+</section>
+
+<!-- ============================ ACT 2: THE TECH ============================ -->
+
+<!-- 10 · Architecture -->
+<section class="slide night s-arch">
+  <h2 class="h2" data-r>One model, two machines.</h2>
+  <svg class="diagram" viewBox="0 0 1680 750" role="img" aria-label="Architecture. On the laptop at build time: the roster is embedded with EmbeddingGemma 2, lines are voiced with ElevenLabs v4 and Kokoro, photos calibrate thresholds. These ship as static files. On the phone, offline: the photo is embedded in a Web Worker with EmbeddingGemma 2, matched against 400 description rows, and the character's voice plays." data-r>
+    <defs>
+      <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrowhead" d="M0 0L10 5L0 10Z"/></marker>
+      <marker id="ahHot" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="arrowhead hot" d="M0 0L10 5L0 10Z"/></marker>
+    </defs>
+    <!-- laptop -->
+    <rect class="panel" x="0" y="0" width="860" height="750" rx="24"/>
+    <text class="t-head" x="32" y="62">On the laptop</text>
+    <text class="t-sub" x="32" y="98">build time, online, once</text>
+
+    <rect class="box" x="28" y="140" width="240" height="110" rx="14"/>
+    <text class="t-box" x="50" y="186">roster.json</text><text class="t-meta" x="50" y="218">400 descriptions</text>
+    <rect class="box hot" x="300" y="140" width="300" height="110" rx="14"/>
+    <text class="t-box" x="322" y="186">EmbeddingGemma 2</text><text class="t-meta" x="322" y="218">text side, q4, in Node</text>
+    <rect class="box" x="632" y="140" width="200" height="110" rx="14"/>
+    <text class="t-box" x="654" y="186">embeddings</text><text class="t-meta" x="654" y="218">400 × 768</text>
+    <path class="wire" d="M268 195H294" marker-end="url(#ah)"/><path class="wire" d="M600 195H626" marker-end="url(#ah)"/>
+
+    <rect class="box" x="28" y="330" width="240" height="110" rx="14"/>
+    <text class="t-box" x="50" y="376">286 lines</text><text class="t-meta" x="50" y="408">3 or 4 per voice</text>
+    <rect class="box gold" x="300" y="296" width="300" height="84" rx="14"/>
+    <text class="t-box t-gold" x="322" y="333">ElevenLabs v4</text><text class="t-meta" x="322" y="362">78 Elder lines, tags kept</text>
+    <rect class="box" x="300" y="392" width="300" height="84" rx="14"/>
+    <text class="t-box" x="322" y="429">Kokoro-82M</text><text class="t-meta" x="322" y="458">208 lines, tags stripped</text>
+    <rect class="box" x="632" y="330" width="200" height="110" rx="14"/>
+    <text class="t-box" x="654" y="376">voice files</text><text class="t-meta" x="654" y="408">mp3 + captions</text>
+    <path class="wire" d="M268 385H282V338H294" marker-end="url(#ah)"/><path class="wire" d="M282 385V434H294" marker-end="url(#ah)"/>
+    <path class="wire" d="M600 338H614V385H626" marker-end="url(#ah)"/><path class="wire" d="M600 434H614V385"/>
+
+    <rect class="box" x="28" y="530" width="240" height="110" rx="14"/>
+    <text class="t-box" x="50" y="576">232 photos</text><text class="t-meta" x="50" y="608">from Commons</text>
+    <rect class="box" x="300" y="530" width="300" height="110" rx="14"/>
+    <text class="t-box" x="322" y="576">calibrate</text><text class="t-meta" x="322" y="608">with the app’s own matcher</text>
+    <rect class="box" x="632" y="530" width="200" height="110" rx="14"/>
+    <text class="t-box" x="654" y="576">thresholds</text><text class="t-meta" x="654" y="608">per category</text>
+    <path class="wire" d="M268 585H294" marker-end="url(#ah)"/><path class="wire" d="M600 585H626" marker-end="url(#ah)"/>
+    <text class="t-sub" x="32" y="704">Same model, same weights, same matcher code as the phone.</text>
+
+    <!-- ship -->
+    <path class="wire hot" d="M832 195H847V585H832M847 390H930" marker-end="url(#ahHot)"/>
+
+    <!-- phone -->
+    <rect class="panel" x="940" y="0" width="740" height="750" rx="24"/>
+    <text class="t-head" x="972" y="62">On the phone</text>
+    <text class="t-sub" x="972" y="98">every encounter, offline</text>
+
+    <rect class="box" x="966" y="130" width="688" height="90" rx="14"/>
+    <text class="t-box" x="990" y="168">Photo</text><text class="t-meta" x="990" y="198">EXIF-aware, shrunk to 896 px, never sent</text>
+    <rect class="box hot" x="966" y="246" width="688" height="90" rx="14"/>
+    <text class="t-box" x="990" y="284">EmbeddingGemma 2 in a Web Worker</text><text class="t-meta" x="990" y="314">Transformers.js, q4, WebGPU or wasm, one 768-d vector</text>
+    <rect class="box" x="966" y="362" width="688" height="90" rx="14"/>
+    <text class="t-box" x="990" y="400">Hierarchical match</text><text class="t-meta" x="990" y="430">cosine vs 400 rows: category, then species or guardian</text>
+    <rect class="box gold" x="966" y="478" width="688" height="90" rx="14"/>
+    <text class="t-box" x="990" y="516">The character speaks</text><text class="t-meta" x="990" y="546">mp3 with word-timed captions, saved to IndexedDB</text>
+    <path class="wire" d="M1310 220V240" marker-end="url(#ah)"/><path class="wire" d="M1310 336V356" marker-end="url(#ah)"/><path class="wire" d="M1310 452V472" marker-end="url(#ah)"/>
+
+    <rect class="band" x="966" y="610" width="688" height="116" rx="14"/>
+    <text class="t-box t-moss" x="990" y="652">Service worker + Cache API</text>
+    <text class="t-meta" x="990" y="686">Shell, model, embeddings and audio cached at setup.</text>
+    <text class="t-meta" x="990" y="712">Then zero network requests.</text>
+  </svg>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Two machines share one model. On the laptop, once: EmbeddingGemma 2 embeds the 400 written descriptions, ElevenLabs v4 and Kokoro voice the 286 lines, and 232 real photos calibrate the thresholds using the app's own matcher. All of that ships as static files. On the phone, every time: the photo is embedded in a Web Worker with Transformers.js, WebGPU with a wasm fallback, compared against the 400 rows, and the character's pre-recorded line plays. A service worker caches everything during setup, so after that there are zero network requests.</aside>
+</section>
+
+<!-- 11 · Why an embedding model -->
+<section class="slide night s-why">
+  <h2 class="h2" data-r>Why an embedding model, not a chat model.</h2>
+  <ul class="grid">
+    <li data-r>{{icon:check-circle}}<div><b>It can’t invent a species.</b><span>It can only pick from the 91 characters we wrote.</span></div></li>
+    <li data-r>{{icon:binoculars}}<div><b>Unsure becomes a guardian.</b><span>A low score asks for a closer look instead of a confident wrong name.</span></div></li>
+    <li data-r>{{icon:lightning}}<div><b>One pass per photo.</b><span>No token-by-token generation. One forward pass, then a dot product.</span></div></li>
+    <li data-r>{{icon:device-mobile}}<div><b>Fits a browser tab.</b><span>Open weights at q4, downloaded once. Text and image share one space, so the phone only embeds the photo.</span></div></li>
+  </ul>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Almost every Gemma entry this week runs a chat model. We chose EmbeddingGemma 2 on purpose. A chat model can confidently name a species that does not exist. An embedding model can only rank the characters we wrote, so the worst case is a guardian asking for a better photo. It is one forward pass, no generation loop. And because text and images share one embedding space, all the descriptions are embedded on the laptop and the phone only ever embeds the photo.</aside>
+</section>
+
+<!-- 12 · Calibration -->
+<section class="slide night s-cal">
+  <h2 class="h2" data-r>232 real photos. All 78 characters.</h2>
+  <div class="cols">
+    <div class="hero" data-r>
+      <div class="num">89.2<small>%</small></div>
+      <p>right character ranked first, raw, no thresholds</p>
+      <div class="also">
+        <div><b>98.7%</b><span>in the top five</span></div>
+        <div><b>90.9%</b><span>right category</span></div>
+      </div>
+    </div>
+    <table data-r>
+      <caption>Shipped matcher, cross-validated</caption>
+      <tr><td>Right character named</td><td class="good">78.9%</td></tr>
+      <tr><td>Guardian asks for a closer look</td><td>14.7%</td></tr>
+      <tr><td>Wrong character named<small>12.1% if it always named its top guess</small></td><td class="bad">5.6%</td></tr>
+      <tr><td>Right, whenever it gives a name</td><td class="good">93.4%</td></tr>
+      <tr><td>Indoor objects given a character</td><td>0.0%</td></tr>
+    </table>
+  </div>
+  <div class="bar" data-r>
+    <div class="track" role="img" aria-label="Outcomes: 78.9% right name, 9.9% right-category guardian, 4.7% other guardian, 5.6% wrong name, 0.9% nobody">
+      <span class="seg" style="flex:78.9; background:var(--moss)"></span>
+      <span class="seg" style="flex:9.9; background:color-mix(in srgb, var(--moss) 45%, var(--paper))"></span>
+      <span class="seg" style="flex:4.7; background:var(--rule-strong)"></span>
+      <span class="seg" style="flex:5.6; background:var(--caution)"></span>
+      <span class="seg" style="flex:0.9; background:var(--ink-3)"></span>
+    </div>
+    <div class="keys">
+      <span><i style="background:var(--moss)"></i>Right name 78.9%</span>
+      <span><i style="background:color-mix(in srgb, var(--moss) 45%, var(--paper))"></i>Guardian, right kind 9.9%</span>
+      <span><i style="background:var(--rule-strong)"></i>Guardian, other kind 4.7%</span>
+      <span><i style="background:var(--caution)"></i>Wrong name 5.6%</span>
+      <span><i style="background:var(--ink-3)"></i>Nobody 0.9%</span>
+    </div>
+  </div>
+  <p class="caveat" data-r>Wikimedia Commons photos, not phone snaps: read these as an upper bound.</p>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">We calibrated on 232 real photos covering all 78 characters, plus 10 indoor photos that should match nobody. Raw, with no thresholds, the right character comes first 89.2 percent of the time. If the app always named its top guess, 12.1 percent of photos would get a wrong name. With the calibrated thresholds and the guardian, cross-validated: 78.9 percent named correctly, 14.7 percent go to a guardian, wrong names halve to 5.6 percent. When it gives a name, it is right 93.4 percent of the time. No indoor photo got a character. Honest caveat: these are clean Commons photos, so treat them as an upper bound.</aside>
+</section>
+
+<!-- 13 · Guardian rescue -->
+<section class="slide night s-rescue">
+  <div>
+    <h2 class="h2" data-r>The guardian caught 13 wrong names.</h2>
+    <p class="lede" data-r>When the top guess isn’t sure enough, the guardian of that kind asks for a closer look.</p>
+    <table data-r>
+      <tr><th>Photo of</th><th>It almost said</th></tr>
+      <tr><td>a goat</td><td><s>cow</s></td></tr>
+      <tr><td>a hibiscus</td><td><s>bougainvillea</s></td></tr>
+      <tr><td>an oleander</td><td><s>bougainvillea</s></td></tr>
+      <tr><td>a house crow</td><td><s>lawn grass</s></td></tr>
+      <tr><td>a lawn</td><td><s>cumulus clouds</s></td></tr>
+    </table>
+    <p class="cost" data-r>{{icon:scales}}The price: 14 right guesses went to the guardian anyway.</p>
+  </div>
+  <div class="phone" data-r><img src="{{shot:guardian}}" alt="Guardian fallback: The Wingmaster, guardian of birds, asks to zoom in and show the beak or tail"></div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Here is what the fallback actually did on the calibration set. 13 photos would have been given a wrong name; instead a guardian stepped in. A goat that would have been called a cow. A hibiscus that would have been called bougainvillea. It is not free: 14 photos where the top guess was right still went to the guardian, because the margin was too thin. We accept that trade. A guardian saying "zoom in, show me the beak" is a hint. A confident wrong name is a lie.</aside>
+</section>
+
+<!-- 14 · Prefix experiment -->
+<section class="slide night s-prefix">
+  <div class="top">
+    <h2 class="h2" data-r>One prefix, eight points of accuracy.</h2>
+    <div class="jump" data-r><div class="num"><span class="from">81.0</span> → <span class="to">89.2%</span></div><p>top-1 species, same photos, same model</p></div>
+  </div>
+  <div class="plot" data-r>
+    <div class="r"><code>raw description, no prefix</code><div class="lane"><span class="dot" style="--v:81.0"></span></div><span class="val">81.0%</span></div>
+    <div class="r"><code>title: none | text: …</code><div class="lane"><span class="dot" style="--v:83.6"></span></div><span class="val">83.6%</span></div>
+    <div class="r"><code>task: classification | query: …</code><div class="lane"><span class="dot" style="--v:84.1"></span></div><span class="val">84.1%</span></div>
+    <div class="r"><code>task: search result | query: …</code><div class="lane"><span class="dot" style="--v:85.3"></span></div><span class="val">85.3%</span></div>
+    <div class="r win"><code>title: {species} | text: …</code><div class="lane"><span class="dot" style="--v:89.2"></span></div><span class="val">89.2%</span></div>
+  </div>
+  <div class="axis" data-r><span></span><div class="ticks"><span style="left:0">75%</span><span style="left:33.33%">80%</span><span style="left:66.67%">85%</span><span style="left:100%">90%</span></div><span></span></div>
+  <p class="note" data-r>Prefixes go on the text side only. The photo is embedded as is.</p>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">The cheapest win of the project. EmbeddingGemma uses task prefixes on the text side. We embedded all 400 descriptions five ways and ranked the same 232 photos. Raw descriptions: 81.0 percent top-1. A document prefix with the species as the title, "title: neem tree, text: ...", took it to 89.2. Eight points, no retraining, no extra download. The photo itself is embedded with no prefix, as the model card says.</aside>
+</section>
+
+<!-- 15 · Voice design -->
+<section class="slide night s-voice">
+  <div class="top">
+    <div>
+      <h2 class="h2" data-r>Cast, tagged, voiced once.</h2>
+      <p class="line" data-r><span class="tagtxt">[cackles]</span> I’m Granny Neem, everyone’s granny. Bitter as the truth, and my leaves keep bugs out of quilts.</p>
+    </div>
+    <div class="budget" data-r>
+      <div class="num">701<small>credits</small></div>
+      <p>for 78 Elder lines on Eleven v4: 461 for the first cast, 240 to re-cast in English, from a 10,000-credit month.</p>
+      <p>Dry run first. Files named by hash, so no line is ever paid for twice.</p>
+    </div>
+  </div>
+  <table data-r>
+    <tr><th>Elder</th><th>Written as</th><th>Cast</th><th>v4 tag</th></tr>
+    <tr><td>Granny Neem</td><td>brisk, crackly granny with a sharp edge</td><td class="cast">Sara</td><td><code>[cackles]</code></td></tr>
+    <tr><td>Gossip the Crow</td><td>raspy, fast, market-uncle swagger</td><td class="cast">Callum</td><td><code>[caws]</code></td></tr>
+    <tr><td>Tuk Tuk</td><td>cheeky, street-smart patter</td><td class="cast">Eric</td><td><code>[revs]</code></td></tr>
+    <tr><td>Lady Whiskers</td><td>silky, bored aristocratic drawl</td><td class="cast">Victoria</td><td><code>[yawns]</code></td></tr>
+  </table>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Without voices there is no game: a character is a voice you collect. Every character has a written voice brief, and each Elder is cast from a stock or library voice to match it: Granny Neem is Sara, a warm storyteller voice. Every Elder uses an English-speaking voice; an earlier cast used Hindi-accented ones. Eleven v4 audio tags do the acting: cackles, caws, revs, yawns. The whole Elder set, 26 characters times three lines, 78 lines, cost 701 credits across two casts, 461 and then 240 for the English recast, out of a 10,000-credit month. The script does a dry run first and names files by hash, so nothing is ever generated twice. Everything is pre-rendered, so the app never calls ElevenLabs and no quota can break the demo.</aside>
+</section>
+
+<!-- 16 · Open innovation -->
+<section class="slide night s-open">
+  <h2 class="h2" data-r>Open where it counts.</h2>
+  <div class="cols">
+    <table data-r>
+      <tr><th></th><th>Closed vision API</th><th class="us">EmbeddingGemma 2 on the phone</th></tr>
+      <tr><td>Signal</td><td>needed for every photo</td><td class="us">only for setup</td></tr>
+      <tr><td>Your photos</td><td>uploaded to a server</td><td class="us">never leave the phone</td></tr>
+      <tr><td>Cost per photo</td><td>billed per call</td><td class="us">nothing, forever</td></tr>
+      <tr><td>Ship it in the app</td><td>stays on their server</td><td class="us">yes, Apache 2.0</td></tr>
+      <tr><td>Tune it</td><td>a black box</td><td class="us">raw scores, open weights</td></tr>
+    </table>
+    <div class="honest" data-r>
+      <b>The closed part, plainly.</b>
+      <p>ElevenLabs is a closed service. We used it once, at build time, to perform 78 pre-written Elder lines. The app never calls it.</p>
+      <p>Kokoro-82M (Apache 2.0) voices the other 208 lines and could voice all of them.</p>
+    </div>
+  </div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">What did open weights make possible that a closed API would not? It works where people actually walk: parks and beaches with patchy signal. Photos never leave the phone. It costs nothing per photo, which matters for a free kids' game. We can ship the model inside the app under Apache 2.0, calibrate against its raw scores, and fine-tune it next. And to be straight about it: ElevenLabs is closed. We used it once, at build time, for 78 lines. Kokoro, which is open, voices the rest and could replace it entirely.</aside>
+</section>
+
+<!-- 17 · Limitations -->
+<section class="slide night s-limits">
+  <h2 class="h2" data-r>Limitations, plainly.</h2>
+  <ol>
+    <li data-r><div><b>Calibrated on Commons photos, not our streets.</b><span>Cleaner and better framed than phone snaps. 78.9% is an upper bound.</span></div></li>
+    <li data-r><div><b>5.6% still get a confident wrong name.</b><span>Shape-alikes: a mosque dome called a national tomb, a sacred fig called its own sapling.</span></div></li>
+    <li data-r><div><b>A big first download.</b><span>About 316 MB of model, once, on wifi. After that, nothing.</span></div></li>
+    <li data-r><div><b>Android Chrome only.</b><span>No Mac, so no iPhone testing yet.</span></div></li>
+    <li data-r><div><b>Laptop and phone parity not measured yet.</b><span>Same q4 weights, but the browser runtime was not compared to Node.</span></div></li>
+    <li data-r><div><b>The lines are written, not generated.</b><span>Characters don’t hold a conversation. That is also why they can’t make things up.</span></div></li>
+  </ol>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Plainly. The calibration photos are from Wikimedia Commons, not our streets, so the numbers are an upper bound. About 6 percent of photos still get a confident wrong name, mostly shape-alikes like a mosque dome and a national tomb. The first run downloads about 316 MB of model on wifi. We only had Android to test on. We have not yet measured that the phone's browser embeddings match the laptop's. And the lines are pre-written, so the characters don't converse, which is also why they never invent anything.</aside>
+</section>
+
+<!-- 18 · What's next -->
+<section class="slide night s-next">
+  <h2 class="h2" data-r>What’s next.</h2>
+  <ol class="path">
+    <li data-r><b>Recalibrate on our own walk</b><span>Phone photos from real streets replace the Commons set.</span></li>
+    <li data-r><b>Image anchors, done properly</b><span>The naive version fell to 74.1%. They need their own score track.</span></li>
+    <li data-r><b>Fine-tune on local flora</b><span>Open weights make it possible: neem, peepal, conocarpus.</span></li>
+    <li data-r><b>More languages</b><span>The same characters, in the language of the street.</span></li>
+  </ol>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>The tech</span><span class="pg"></span></div></footer>
+  <aside class="notes">Next: recalibrate on our own walk photos instead of Commons. Image anchors: we tried adding reference photos as extra rows, and it dropped top-1 from 89.2 to 74.1 percent because image-to-image scores live on a higher scale; they need their own score track. Fine-tune the open weights on the trees that actually confuse it: neem, peepal, conocarpus. And more languages for every character.</aside>
+</section>
+
+<!-- 19 · Close & credits -->
+<section class="slide night s-close">
+  <div>
+    <h2 class="display" data-r>Go outside. Granny Neem has opinions.</h2>
+    <p class="tagline" data-r>Everything outside has something to say.<br>Go find out what.</p>
+    <p class="made" data-r>Made for the DEV Hacktoberfest Open-Source AI Challenge, Week 1: Touch Grass.</p>
+  </div>
+  <div class="credits" data-r>
+    <div class="lead"><b>Voices by ElevenLabs</b><span>Eleven v4, 26 Elder characters, generated once at build time.</span></div>
+    <div><b>EmbeddingGemma 2</b><span>Google DeepMind, Apache 2.0.</span></div>
+    <div><b>Kokoro-82M</b><span>Open-source TTS, Apache 2.0, for every other voice.</span></div>
+    <div><b>Transformers.js and ONNX Runtime Web</b><span>Hugging Face (Apache 2.0) and Microsoft (MIT).</span></div>
+    <div><b>Calibration photos</b><span>Wikimedia Commons contributors. Used for thresholds, not shipped.</span></div>
+    <div><b>Type and icons</b><span>EB Garamond, Atkinson Hyperlegible Next (SIL OFL), Phosphor Icons (MIT).</span></div>
+  </div>
+  <footer class="foot"><div class="brand">{{mark:34}}<span>Voices <i>of the</i> Wild</span></div><div class="where"><span>Thank you</span><span class="pg"></span></div></footer>
+  <aside class="notes">Close on the call to action and the callback to the opening. Go outside: Granny Neem has opinions, and so does the gossip crow on the wire above her. Thank the open-source projects on the right by name: EmbeddingGemma 2, Kokoro, Transformers.js and ONNX Runtime. Voices by ElevenLabs. Then stop talking and play one more line.</aside>
+</section>
+
+</main>
+<script>
+{{js}}
+</script>
+</body>
+</html>
