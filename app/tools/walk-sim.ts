@@ -31,6 +31,16 @@ const PREFER = ["auto-rickshaw", "motorcycle", "lawn-grass", "neem-tree", "house
 const numbers: Record<string, unknown>[] = [];
 let shotN = 0;
 const shot = async (page: Page, name: string) => { if (!VIDEO_ONLY) await page.screenshot({ path: join(out, `${String(++shotN).padStart(2, "0")}-${name}.png`) }); };
+const negative = join(photos, "_negative", "1.jpg");
+/** An indoor photo: nobody answers, and the near-miss hint says what it half-saw. */
+const miss = async (page: Page, name: string) => {
+  await page.setInputFiles("#cam-input", negative);
+  await page.waitForSelector(".nobody #enc-name, .encounter #enc-name", { timeout: 90000 });
+  const nobody = await page.locator(".nobody").count();
+  console.log(nobody ? `miss: ${await page.locator(".nobody .lede").innerText()}` : "WARNING: the indoor photo matched something");
+  await page.waitForTimeout(3200);
+  await shot(page, name);
+};
 const dismiss = async (page: Page) => {
   for (let k = 0; k < 8 && (await page.locator("dialog.moment[open]").count()); k++) {
     await shot(page, "moment");
@@ -61,7 +71,7 @@ await ctx.addInitScript(() => {
 });
 
 await page.goto(`${BASE}/`, { waitUntil: "load" });
-await page.getByRole("button", { name: "Skip" }).click();
+await page.getByRole("button", { name: "Skip", exact: true }).click();
 await page.getByRole("button", { name: /Start the trail/ }).click();
 await page.waitForSelector("#listen-title");
 // Keep the simulation off the public board.
@@ -76,7 +86,8 @@ await shot(page, "trail");
 
 const used = new Set<string>();
 const marks: { walk: [number, number][] } = { walk: [] };
-for (let step = 0; step < 6; step++) {
+// Find → walk → find → walk, then the extras: a miss, the board, fast-forward, a skip.
+for (let step = 0; step < 4; step++) {
   const label = (await page.locator(".quest.now .quest-label").innerText().catch(() => "")).replace(/\s*now$/i, "").trim();
   if (!label) break;
   if (/^Walk/i.test(label)) {
@@ -112,6 +123,7 @@ for (let step = 0; step < 6; step++) {
   const pick = /grass/.test(want) ? "lawn-grass"
     : [...PREFER, ...available].find((id) => !used.has(id) && available.includes(id) && (cat ? categoryOf.get(id) === cat : true))!;
   used.add(pick);
+  if (step === 0) await miss(page, "miss-first");
   const tp = Date.now();
   await page.setInputFiles("#cam-input", join(photos, pick, "1.jpg"));
   await page.waitForSelector(".stirring");
@@ -135,7 +147,7 @@ for (let step = 0; step < 6; step++) {
     await next.click();
     await page.waitForTimeout(1200);
     await dismiss(page);
-    await page.getByRole("button", { name: "Skip" }).click({ timeout: 3000 }).catch(() => {});
+    await page.getByRole("button", { name: "Skip", exact: true }).click({ timeout: 3000 }).catch(() => {});
     if (await page.locator("#vf-title").count()) await page.getByRole("button", { name: /Cancel/ }).click();
   } else {
     await page.getByRole("button", { name: /Trail/ }).first().click({ timeout: 2000 }).catch(() => {});
@@ -152,11 +164,31 @@ for (let step = 0; step < 6; step++) {
 await dismiss(page);
 await page.evaluate(() => (location.hash = "#/"));
 await page.waitForTimeout(3000);
-const end = at(); // the video ends on the finished trail
-await shot(page, "trail-done");
+await shot(page, "trail-progress");
 await page.evaluate(() => (location.hash = "#/badges"));
 await page.waitForTimeout(1500);
 await shot(page, "badges");
+// The anonymous leaderboard.
+await page.locator(".board").scrollIntoViewIfNeeded().catch(() => {});
+await page.waitForTimeout(3500);
+await shot(page, "board");
+// Fast-forward to tomorrow's trail (two taps), then a miss and a skip on it.
+await page.evaluate(() => (location.hash = "#/"));
+await page.waitForSelector("#listen-title");
+await page.waitForTimeout(1200);
+await page.locator(".trail-tools").scrollIntoViewIfNeeded().catch(() => {});
+await page.getByRole("button", { name: /Fast-forward a day/ }).click();
+await page.waitForTimeout(1500);
+await shot(page, "ff-armed");
+await page.getByRole("button", { name: /Confirm: start tomorrow/ }).click();
+await page.waitForTimeout(2500);
+await shot(page, "ff-trail");
+await miss(page, "miss-ff");
+await page.getByRole("button", { name: /Skip quest/ }).click();
+await page.waitForSelector("#listen-title");
+await page.waitForTimeout(3500);
+await shot(page, "skipped");
+const end = at(); // the video ends on tomorrow's trail, first quest skipped
 const summary = await page.evaluate(() => ({ xp: document.querySelector(".rank-card .num")?.textContent?.trim(), rank: document.querySelector("#badges-title")?.textContent?.trim() }));
 await ctx.close();
 await browser.close();

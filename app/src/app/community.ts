@@ -11,7 +11,7 @@ export interface BoardRow { rank: number; name: string; xp: number; voices: numb
 export interface Board { top: BoardRow[]; me: BoardRow | null; players: number; online: number }
 
 const ADJ = ["Quiet", "Brave", "Gentle", "Swift", "Patient", "Curious", "Sunny", "Steady", "Bright", "Wandering", "Kind", "Lucky", "Calm", "Bold", "Merry", "Wise"];
-const NOUN = ["Kite", "Neem", "Myna", "Pebble", "Sparrow", "Banyan", "Lotus", "Gecko", "Crow", "Comet", "Breeze", "Fern", "Heron", "Mango", "Moth", "Willow"];
+const NOUN = ["Kite", "Oak", "Robin", "Pebble", "Sparrow", "Maple", "Acorn", "Otter", "Crow", "Comet", "Breeze", "Fern", "Heron", "Puffin", "Moth", "Willow"];
 
 let board: Board | null = null;
 let boardAt = 0;

@@ -11,7 +11,7 @@ export const PLACE_LABEL: Record<Place, string> = {
   beach: "Beach",
   sky: "Sky",
   countryside: "Country",
-  "old-city": "Old city",
+  "old-city": "Old town",
   ground: "Ground",
 };
 
