@@ -39,6 +39,7 @@ export class ModelEmbedder implements Embedder {
   private nextId = 1;
   private pending = new Map<number, { resolve: (v: { vector: Float32Array; ms: number }) => void; reject: (e: Error) => void }>();
   private loading: Promise<LoadInfo> | null = null;
+  private embedded = false;
 
   constructor(private opts: Omit<InitMessage, "type">) {}
 
@@ -104,8 +105,17 @@ export class ModelEmbedder implements Embedder {
     await this.load();
     const id = this.nextId++;
     const copy = new Uint8ClampedArray(img.data); // keep caller's ImageData intact
+    // A stalled GPU never answers: give up after a bounded wait (the first photo also compiles the shaders).
+    const limit = this.embedded ? 60_000 : 120_000;
     return new Promise<{ vector: Float32Array; ms: number }>((resolve, reject) => {
-      this.pending.set(id, { resolve, reject });
+      const timer = setTimeout(() => {
+        this.pending.delete(id);
+        reject(new EmbedError("webgpu", "The phone’s graphics chip did not answer in time."));
+      }, limit);
+      this.pending.set(id, {
+        resolve: (v) => { clearTimeout(timer); this.embedded = true; resolve(v); },
+        reject: (e) => { clearTimeout(timer); reject(e); },
+      });
       this.worker!.postMessage({ type: "embed", id, width: img.width, height: img.height, data: copy.buffer }, [copy.buffer]);
     });
   }

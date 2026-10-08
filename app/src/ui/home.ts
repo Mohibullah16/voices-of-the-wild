@@ -11,6 +11,8 @@ import { rankFor } from "../game/rules";
 import { streakView } from "../game/streak";
 import { dayKey } from "../game/time";
 import { icon, type IconName } from "./icons";
+import { kitPercent, startKit } from "../app/kit";
+import { mb } from "../firstrun";
 
 const QUEST_ICON: Partial<Record<Quest["kind"], IconName>> = { new: "star", walk: "footprints" };
 
@@ -43,6 +45,25 @@ export function statusStrip() {
       <span class="rank-meter" aria-hidden="true"><i style="transform: scaleX(${progress})"></i></span>
     </a>
   </div>`;
+}
+
+/** The background download: progress while it runs, a retry if it stopped. Nothing once done. */
+export function kitBanner() {
+  const k = state.kit;
+  if (k.phase === "running") {
+    const pct = kitPercent();
+    return html`<div class="kit-chip" role="status" aria-live="off">
+      <span class="kit-chip-row">${icon("download")}<span><b>Getting the listener ready</b> <span class="num">${pct}%</span></span>
+        <span class="num muted small">${mb(k.loaded)} of ${mb(k.total)}</span></span>
+      <span class="kit-bar" aria-hidden="true"><i style="transform: scaleX(${pct / 100})"></i></span>
+      <span class="small muted">Look around meanwhile. Once it’s done, it works offline.</span>
+    </div>`;
+  }
+  if (k.phase === "error") {
+    return html`<div class="banner banner-caution" role="alert">${icon("warning")}<div><p><strong>The download stopped.</strong> ${k.message}</p>
+      ${k.code === "webgpu" ? nothing : html`<button class="btn" type="button" @click=${() => void startKit().catch(() => {})}>${icon("retry")} Try again</button>`}</div></div>`;
+  }
+  return nothing;
 }
 
 export function questList(compact = false) {
@@ -114,6 +135,7 @@ export function homeView(actions: { camera(): void; gallery(): void; viewfinder(
     return html`<section class="home" aria-labelledby="listen-title">
       <h1 class="visually-hidden" id="listen-title" tabindex="-1">Today’s trail</h1>
       ${statusStrip()}
+      ${kitBanner()}
       ${questList()}
       <div class="shutter-zone">
         <button class="shutter walk-shutter" type="button" @click=${actions.walk} aria-label="Start walking: ${active.label}">
@@ -131,6 +153,7 @@ export function homeView(actions: { camera(): void; gallery(): void; viewfinder(
   return html`<section class="home" aria-labelledby="listen-title">
     <h1 class="visually-hidden" id="listen-title" tabindex="-1">Today’s trail</h1>
     ${statusStrip()}
+    ${kitBanner()}
     ${questList()}
     <div class="shutter-zone">
       <button class="shutter" type="button" @click=${actions.coarse ? actions.camera : actions.gallery}

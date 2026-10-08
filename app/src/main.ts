@@ -2,7 +2,8 @@ import "./styles/fonts.css";
 import "./styles/app.css";
 import "./styles/game.css";
 import { render } from "lit-html";
-import { ensureEmbedder } from "./app/embedder";
+import { releaseEmbedder } from "./app/embedder";
+import { startKit } from "./app/kit";
 import { parseRoute, setRenderer, state, update, type Route } from "./app/state";
 import { applyCaptionSize, applyTheme } from "./app/theme";
 import { audioPaths, loadFieldData } from "./data";
@@ -72,11 +73,18 @@ async function boot() {
   }
   await initGame();
   state.route = parseRoute(location.hash);
-  state.phase = settings.setupDone ? "app" : "setup";
+  state.phase = settings.setupDone || settings.started ? "app" : "setup";
   if (state.phase === "app") {
-    ensureEmbedder(); // wake the model in the background
-    void refreshFieldKit();
+    // The model is NOT loaded onto the GPU here: only at the first photo, so opening the app stays light.
+    if (settings.setupDone) {
+      state.kit = { phase: "done" };
+      void refreshFieldKit();
+    } else void startKit().catch(() => {}); // resume an interrupted background download
   }
+  // Leaving the app gives the GPU memory back to the phone; the next photo reloads the model from the cache.
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden" && state.listen.kind !== "stirring") releaseEmbedder();
+  });
   renderApp();
   document.getElementById(state.phase === "setup" ? "setup-title" : "")?.focus();
 

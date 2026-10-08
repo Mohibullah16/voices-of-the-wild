@@ -114,14 +114,11 @@ async function run(name: string, viewport: { width: number; height: number }, sc
   await page.getByRole("button", { name: /Next/ }).click();
   await page.waitForTimeout(1200);
   await shot("01-onboard-3");
-  await page.getByRole("button", { name: /Get the field kit/ }).click();
-  await page.waitForSelector(".progress-list");
-  await page.waitForTimeout(900);
-  await shot("02-setup-downloading");
-  await page.waitForSelector("#ready-title", { timeout: 90000 });
-  await shot("03-setup-ready");
   await page.getByRole("button", { name: /Start the trail/ }).click();
   await page.waitForSelector("#listen-title");
+  // The field kit downloads in the background while the trail is already usable.
+  await page.waitForSelector(".kit-chip", { timeout: 5000 }).then(() => shot("02-kit-downloading")).catch(() => {});
+  await page.waitForFunction(() => !document.querySelector(".kit-chip"), null, { timeout: 120000 });
   await page.waitForTimeout(800);
   await shot("04-home");
 
@@ -181,7 +178,7 @@ async function run(name: string, viewport: { width: number; height: number }, sc
   // ---- a walk quest: steps (fast-forwarded through the dev hook) and the walk-done screen
   await page.evaluate(() => { const w = (window as any).__votw; w.state.listen = { kind: "idle" }; w.update(); });
   await page.waitForSelector("#listen-title");
-  const walk = await page.evaluate(() => { const w = (window as any).__votw; const q = w.quests().find((x: any) => x.kind === "walk"); if (!q) return null; const d = w.state.game.days[Object.keys(w.state.game.days).at(-1)]; for (const x of w.quests()) { if (x.id === q.id) break; if (!d.questsDone.includes(x.id)) d.questsDone.push(x.id); } d.legStart = d.events.length; d.steps = 0; w.update(); return q.need; });
+  const walk = await page.evaluate(() => { const w = (window as any).__votw; const q = w.quests().find((x: any) => x.kind === "walk"); if (!q) return null; const d = w.state.game.days[Object.keys(w.state.game.days).at(-1)!]; for (const x of w.quests()) { if (x.id === q.id) break; if (!d.questsDone.includes(x.id)) d.questsDone.push(x.id); } d.legStart = d.events.length; d.steps = 0; w.update(); return q.need; });
   if (walk) {
     await page.getByRole("button", { name: /Start walking/ }).click();
     await page.waitForSelector("#walk-title");

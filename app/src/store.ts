@@ -14,7 +14,10 @@ export interface Collection {
 }
 
 export interface Settings {
+  /** The field kit is fully on this phone: the app works offline. */
   setupDone: boolean;
+  /** Past the intro; the kit may still be downloading in the background. */
+  started?: boolean;
   /** Where the model came from during setup. */
   modelSource?: "local" | "remote";
   /** Hash of the roster the field kit was downloaded for. */

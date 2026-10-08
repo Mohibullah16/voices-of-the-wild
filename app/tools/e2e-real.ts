@@ -53,23 +53,23 @@ if ((await setupDone.getAttribute("id")) === "setup-title") {
   await page.getByRole("button", { name: "Skip" }).click();
   await page.waitForFunction(() => !document.body.textContent?.includes("checking…"), null, { timeout: 30000 });
   console.log("setup checks:", ((await page.locator(".checks").textContent()) ?? "").replace(/\s+/g, " "));
-  await page.getByRole("button", { name: /Get the field kit/ }).click();
+  const tStart = Date.now();
+  await page.getByRole("button", { name: /Start the trail/ }).click();
+  await page.waitForSelector("#listen-title", { timeout: 30000 });
+  console.log(`app usable ${((Date.now() - tStart) / 1000).toFixed(1)}s after Start (the field kit keeps downloading in the background)`);
   const timer = setInterval(async () => {
-    const pct = await page.locator(".big-percent").innerText().catch(() => "");
-    const stage = await page.locator(".progress-list").innerText().catch(() => "");
-    if (pct) console.log(`  ${Math.round((Date.now() - t0) / 1000)}s ${pct} | ${stage.replace(/\n/g, " / ")}`);
+    const chip = await page.locator(".kit-chip").innerText().catch(() => "");
+    if (chip) console.log(`  ${Math.round((Date.now() - tStart) / 1000)}s | ${chip.replace(/\s*\n\s*/g, " / ")}`);
   }, 15000);
-  await page.waitForSelector("#ready-title, #setup-error", { timeout: 30 * 60 * 1000 });
+  await page.waitForFunction(() => !document.querySelector(".kit-chip") || document.querySelector(".banner-caution"), null, { timeout: 30 * 60 * 1000, polling: 1000 });
   clearInterval(timer);
-  if (await page.locator("#setup-error").count()) {
-    console.log("SETUP ERROR:", await page.locator(".error-box").innerText());
+  if (await page.locator(".banner-caution").count()) {
+    console.log("KIT ERROR:", await page.locator(".banner-caution").innerText());
     await page.screenshot({ path: join(shots, "real-setup-error.png") });
     await ctx.close();
     process.exit(1);
   }
-  console.log(`setup ready in ${Math.round((Date.now() - t0) / 1000)}s:`, (await page.locator(".checks").innerText()).replace(/\n/g, " | "));
-  await page.screenshot({ path: join(shots, "real-setup-ready.png") });
-  await page.getByRole("button", { name: /Start the trail/ }).click();
+  console.log(`field kit on the phone ${Math.round((Date.now() - tStart) / 1000)}s after Start`);
 }
 
 // ---- airplane mode -------------------------------------------------------

@@ -15,6 +15,7 @@ import { card } from "./card";
 import { icon } from "./icons";
 import { voiceLine } from "./voice";
 import { ensureEmbedder, releaseEmbedder } from "../app/embedder";
+import { kitPercent, startKit } from "../app/kit";
 import { allowMotion, gameEncounter, primeMotion, releaseMoments, startWalk, stopWalk } from "../app/game";
 import { questProgress } from "../game/quests";
 import { dayKey } from "../game/time";
@@ -86,12 +87,14 @@ async function embedPhoto(image: ImageData) {
 
 export async function runEncounter(image: ImageData, preview: string, sample = false) {
   const data = state.data!;
-  ensureEmbedder();
   const waking = state.embedderStatus.state !== "ready";
   setListen({ kind: "stirring", preview, waking });
   announce("Something is stirring. Listening on this phone.");
   focusSoon("stir-title");
   try {
+    // A photo taken while the listener is still downloading waits for it (the stirring screen shows progress).
+    if (state.kit.phase !== "done") await startKit();
+    ensureEmbedder();
     const t0 = performance.now();
     const { vector, ms } = await embedPhoto(image);
     // Keep the stirring moment readable even on a fast GPU.
@@ -138,8 +141,11 @@ export async function runEncounter(image: ImageData, preview: string, sample = f
     focusSoon("enc-name");
   } catch (err) {
     const e = err as EmbedError;
+    if (e.code === "webgpu" || gpuLost(e)) releaseEmbedder();
     const message =
-      e.code === "not-cached"
+      (err as { code?: string }).code && state.kit.phase === "error"
+        ? state.kit.message
+        : e.code === "not-cached"
         ? "The listening model is missing from this phone. The browser may have cleared it to save space. Open About and download the field kit again."
         : gpuLost(e) || e.code === "webgpu"
           ? "The phone’s graphics chip stopped the listener, usually because memory ran low. Close a few other tabs or apps, then try again."
@@ -180,6 +186,8 @@ export function reset() {
 }
 
 async function openViewfinder() {
+  // About to take a photo: start the listener now, while the player frames the shot.
+  if (state.kit.phase === "done") ensureEmbedder();
   unlockAudio();
   stopAll();
   setListen({ kind: "viewfinder" });
@@ -277,7 +285,9 @@ function stirring(l: Extract<ListenState, { kind: "stirring" }>) {
     </div>
     <div>
       <h2 class="display-3" id="stir-title" tabindex="-1">Something is stirring…</h2>
-      <p>${l.waking ? "Waking the listener…" : "On this phone. Nowhere else."}</p>
+      <p>${state.kit.phase === "running"
+        ? html`Still downloading the listener: <b class="num">${kitPercent()}%</b>. It answers as soon as it’s here.`
+        : l.waking ? "Waking the listener… The first photo takes longest." : "On this phone. Nowhere else."}</p>
     </div>
   </section>`;
 }

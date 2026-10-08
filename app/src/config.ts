@@ -25,6 +25,22 @@ export const DATA_VERSION = __DATA_VERSION__;
 export const DATA_CACHE = `votw-data-${DATA_VERSION}`;
 export const MODEL_CACHE = "transformers-cache";
 
+/** Exactly what Transformers.js fetches for this model (measured), per path. Streamed into its cache by the background kit. */
+export const MODEL_FILES = {
+  webgpu: [
+    { file: "config.json", bytes: 5_000 }, { file: "preprocessor_config.json", bytes: 2_000 }, { file: "tokenizer_config.json", bytes: 20_000 },
+    { file: "chat_template.jinja", bytes: 2_000 }, { file: "processor_config.json", bytes: 2_000 }, { file: "tokenizer.json", bytes: 32_170_510 },
+    { file: "onnx/model_q4.onnx", bytes: 500_000 }, { file: "onnx/vision_encoder_q4.onnx", bytes: 200_000 },
+    { file: "onnx/vision_encoder_q4.onnx_data", bytes: 108_957_696 }, { file: "onnx/model_q4.onnx_data", bytes: 174_028_800 },
+  ],
+  cpu: [
+    { file: "config.json", bytes: 5_000 }, { file: "preprocessor_config.json", bytes: 2_000 }, { file: "tokenizer_config.json", bytes: 20_000 },
+    { file: "chat_template.jinja", bytes: 2_000 }, { file: "processor_config.json", bytes: 2_000 }, { file: "tokenizer.json", bytes: 32_170_510 },
+    { file: "onnx/model.onnx", bytes: 400_000 }, { file: "onnx/vision_encoder.onnx", bytes: 100_000 },
+    { file: "onnx/vision_encoder.onnx_data", bytes: 671_026_176 }, { file: "onnx/model.onnx_data", bytes: 1_084_170_240 },
+  ],
+} as const;
+
 export const ORT_FILES = ["ort-wasm-simd-threaded.asyncify.mjs", "ort-wasm-simd-threaded.asyncify.wasm"] as const;
 
 /** Longest side of the photo we hand to the model. The processor resizes anyway; this bounds memory. */

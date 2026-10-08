@@ -4,7 +4,7 @@ import { state, toast, update } from "../app/state";
 import { mb, storageInfo, type StorageInfo } from "../firstrun";
 import { clearCollection, exportPayload, mergeCollections, parseCollection, saveCollection, saveSettings, type Settings } from "../store";
 import { applyCaptionSize, applyTheme } from "../app/theme";
-import { resetSetup } from "./setup";
+import { startKit } from "../app/kit";
 import { icon } from "./icons";
 import { loadSamples, type Sample } from "../samples";
 import { clearPhotos, photoCount } from "../photos";
@@ -63,10 +63,10 @@ async function deletePhotos() {
 }
 
 async function redownload() {
-  state.settings = { ...state.settings, setupDone: false };
+  state.settings = { ...state.settings, setupDone: false, started: true };
   await saveSettings(state.settings);
-  resetSetup();
-  update((s) => (s.phase = "setup"));
+  void startKit().catch(() => {});
+  location.hash = "#/";
 }
 
 export function aboutView() {

@@ -8,6 +8,7 @@ import type { Rewards } from "../game/engine";
 import { newGame, type GameState } from "../game/state";
 import type { World } from "../game/world";
 import type { PedometerMode } from "./pedometer";
+import type { KitStatus } from "./kit";
 
 export type Route =
   | { name: "listen" }
@@ -59,6 +60,8 @@ export interface AppState {
   moments: Moment[];
   /** Moments held back until the current voice line finishes. */
   pendingMoments?: Moment[];
+  /** The background field-kit download. */
+  kit: KitStatus;
   /** XP pop-ups, shown above everything (including a playing voice line) for a few seconds. */
   xpPops: XpPop[];
 }
@@ -89,6 +92,7 @@ export const state: AppState = {
   online: navigator.onLine,
   game: newGame(),
   moments: [],
+  kit: { phase: "idle" },
   xpPops: [],
 };
 

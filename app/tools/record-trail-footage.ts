@@ -31,8 +31,6 @@ const born = Date.now();
 await page.goto(`${BASE}/?mock`, { waitUntil: "networkidle" });
 await page.getByRole("button", { name: /Next/ }).click();
 await page.getByRole("button", { name: /Next/ }).click();
-await page.getByRole("button", { name: /Get the field kit/ }).click();
-await page.waitForSelector("#ready-title", { timeout: 90000 });
 await page.getByRole("button", { name: /Start the trail/ }).click();
 await page.waitForSelector("#listen-title");
 // Badges this footage would unlock open modals; mark them earned so the chain stays in view.

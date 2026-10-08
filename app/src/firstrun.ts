@@ -12,7 +12,7 @@ export interface GroupProgress { loaded: number; total: number; files: number; d
 export type KitProgress = Record<KitGroup, GroupProgress>;
 
 export class KitError extends Error {
-  constructor(public code: "quota" | "network" | "unknown", message: string) {
+  constructor(public code: "quota" | "network" | "webgpu" | "unknown", message: string) {
     super(message);
   }
 }
@@ -52,7 +52,7 @@ async function fetchWithProgress(url: string, onBytes: (n: number) => void, sign
   return new Response(new Blob(chunks as BlobPart[], { type }), { headers: { "content-type": type } });
 }
 
-export async function downloadKit(files: KitFile[], onProgress: (p: KitProgress) => void, signal?: AbortSignal): Promise<KitProgress> {
+export async function downloadKit(files: KitFile[], onProgress: (p: KitProgress) => void, signal?: AbortSignal, parallel = 4): Promise<KitProgress> {
   const fieldCache = await caches.open(FIELD_CACHE);
   const dataCache = await caches.open(DATA_CACHE);
   const progress: KitProgress = {
@@ -99,12 +99,40 @@ export async function downloadKit(files: KitFile[], onProgress: (p: KitProgress)
       onProgress(progress);
     }
   };
-  await Promise.all(Array.from({ length: 4 }, worker));
+  await Promise.all(Array.from({ length: parallel }, worker));
   await pruneOldData();
   // Snap totals to what really arrived so the bars end at 100%.
   for (const g of Object.values(progress)) g.total = Math.max(g.loaded, 1);
   onProgress(progress);
   return progress;
+}
+
+/**
+ * Streams model files straight into Transformers.js' cache (same URLs it looks up), so the
+ * 300 MB never sits in memory and nothing touches the GPU. Files already cached are skipped.
+ */
+export async function downloadModelFiles(files: { url: string; bytes: number }[], onBytes: (n: number) => void) {
+  const cache = await caches.open(MODEL_CACHE);
+  for (const f of files) {
+    if (await cache.match(f.url)) { onBytes(f.bytes); continue; }
+    for (let attempt = 1; ; attempt++) {
+      let got = 0;
+      try {
+        const res = await fetch(f.url, { mode: "cors" });
+        if (!res.ok || !res.body) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+        const counted = res.body.pipeThrough(new TransformStream<Uint8Array, Uint8Array>({
+          transform(chunk, ctl) { got += chunk.byteLength; onBytes(chunk.byteLength); ctl.enqueue(chunk); },
+        }));
+        await cache.put(f.url, new Response(counted, { headers: res.headers }));
+        break;
+      } catch (err) {
+        onBytes(-got);
+        if (isQuota(err)) throw new KitError("quota", "This phone ran out of storage for the listening model.");
+        if (attempt >= 3) throw new KitError("network", "The download stopped. Check your connection; finished files are kept and it picks up where it left off.");
+        await new Promise((r) => setTimeout(r, 1000 * attempt));
+      }
+    }
+  }
 }
 
 /** Drops field data from older deploys so the service worker can only find the current version. */

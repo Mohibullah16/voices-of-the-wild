@@ -116,12 +116,8 @@ async function load(m: InitMessage) {
   }
   const loadMs = performance.now() - t0;
 
-  // Warm-up: compiles shaders / kernels so the first real photo is not the slow one.
-  post({ type: "status", stage: "warmup", device });
-  const w0 = performance.now();
-  const blank = new Uint8ClampedArray(64 * 64 * 4).fill(128);
-  await embed(blank, 64, 64);
-  post({ type: "ready", device, loadMs, warmupMs: performance.now() - w0, fallbackReason });
+  // No separate warm-up pass: on some phones it stalled the GPU ("tuning up" at 99%). The first real photo warms it.
+  post({ type: "ready", device, loadMs, warmupMs: 0, fallbackReason });
 }
 
 async function embed(data: Uint8ClampedArray, width: number, height: number): Promise<Float32Array> {
