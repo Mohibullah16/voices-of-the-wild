@@ -56,7 +56,7 @@ export function kitBanner() {
       <span class="kit-chip-row">${icon("download")}<span><b>Getting the listener ready</b> <span class="num">${pct}%</span></span>
         <span class="num muted small">${mb(k.loaded)} of ${mb(k.total)}</span></span>
       <span class="kit-bar" aria-hidden="true"><i style="transform: scaleX(${pct / 100})"></i></span>
-      <span class="small muted">Look around meanwhile. Once it’s done, it works offline.</span>
+      <span class="small muted">Look around meanwhile.</span>
     </div>`;
   }
   if (k.phase === "error") {

@@ -103,7 +103,7 @@ export function aboutView() {
 
     <section aria-labelledby="h-device">
       <h2 id="h-device">On this phone, not in a cloud</h2>
-      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this phone” below to keep every photo on the device and work offline. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
+      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this phone” below to keep every photo on the device. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
       <ol class="flow">
         <li><p><strong>Category first.</strong> Is it a tree, a bird, a bicycle? If nothing clears the bar, nobody answers.</p></li>
         <li><p><strong>Then the species.</strong> If one character clearly wins inside that category, it speaks.</p></li>
@@ -123,15 +123,6 @@ cosine against precomputed description vectors, best per character
   └── one clear winner ─────────────►  it speaks, and joins your field guide</pre>
     </section>
 
-    <section aria-labelledby="h-offline">
-      <h2 id="h-offline">Offline by design</h2>
-      <p>The first visit downloads a field kit: the model, the field notes, the voices and the runtime. After that the app makes no network requests at all, so it works on a trail with no signal. Your field guide lives in this browser’s storage. You can export it below.</p>
-      <dl class="checks" style="margin:0"><div><dt>Listening engine</dt><dd>${device === "webgpu" ? "WebGPU" : device === "wasm" ? "Processor (WebAssembly)" : device === "mock" ? "Simulated (dev fixture)" : device === "cloud" ? "Cloud listener" : "Not loaded yet"}${st.state === "loading" ? ", waking" : ""}</dd></div>
-        <div><dt>Stored on this device</dt><dd class="num">${storage?.usage != null ? mb(storage.usage) : "unknown"}</dd></div>
-        <div><dt>Protected from clean-up</dt><dd>${storage?.persisted ? "Yes" : "Not guaranteed"}</dd></div>
-        <div><dt>Field data</dt><dd>${data.source === "real" ? "Generated" : "Dev fixture"}</dd></div></dl>
-      ${st.state === "error" ? html`<div class="banner banner-caution">${icon("warning")}<p><strong>The model could not start.</strong> ${st.error?.message}</p></div>` : nothing}
-    </section>
 
     <section aria-labelledby="h-safety">
       <h2 id="h-safety">Stay safe out there</h2>
@@ -156,12 +147,22 @@ cosine against precomputed description vectors, best per character
       <ul class="sample-credits">${samples.map((s) => html`<li><strong>${s.label}</strong>: <a href=${s.source} rel="noopener" target="_blank">${s.title}</a> by ${s.author}, <a href=${s.licenseUrl} rel="noopener" target="_blank">${s.license}</a>. Downscaled.</li>`)}</ul>
     </section>` : nothing}
 
+    <section aria-labelledby="h-device">
+      <h2 id="h-device">On this device</h2>
+      <p>Your field guide, voices and progress live in this browser’s storage. You can export the field guide below.</p>
+      <dl class="checks" style="margin:0"><div><dt>Listening engine</dt><dd>${device === "webgpu" ? "WebGPU" : device === "wasm" ? "Processor (WebAssembly)" : device === "mock" ? "Simulated (dev fixture)" : device === "cloud" ? "Cloud listener" : "Not loaded yet"}${st.state === "loading" ? ", waking" : ""}</dd></div>
+        <div><dt>Stored on this device</dt><dd class="num">${storage?.usage != null ? mb(storage.usage) : "unknown"}</dd></div>
+        <div><dt>Protected from clean-up</dt><dd>${storage?.persisted ? "Yes" : "Not guaranteed"}</dd></div>
+        <div><dt>Field data</dt><dd>${data.source === "real" ? "Generated" : "Dev fixture"}</dd></div></dl>
+      ${st.state === "error" ? html`<div class="banner banner-caution">${icon("warning")}<p><strong>The listener could not start.</strong> ${st.error?.message}</p></div>` : nothing}
+    </section>
+
     <section aria-labelledby="h-settings" class="settings">
       <h2 id="h-settings">Settings and your data</h2>
       <div class="setting">
         <div class="setting-label" id="listener-label">Listener<span>${useCloud()
           ? "Cloud: your shrunk photo is read by the same open model on a server, then discarded. Fast on any phone; needs a connection."
-          : "On this phone: nothing leaves the device and it works offline, but it needs a strong graphics chip and a ~320 MB download."}</span></div>
+          : "On this phone: nothing leaves the device, but it needs a strong graphics chip and a ~320 MB download."}</span></div>
         <div class="segmented" role="radiogroup" aria-labelledby="listener-label">
           ${(["auto", "device", "cloud"] as const).map((t) => html`<label><input type="radio" name="listener" .checked=${(state.settings.listener ?? "auto") === t} @change=${() => setListener(t)} /><span>${t === "auto" ? "Automatic" : t === "device" ? "On this phone" : "Cloud"}</span></label>`)}
         </div>

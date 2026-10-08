@@ -90,8 +90,8 @@ function intro(s: Step) {
   }
   return html`<div class="setup-main onboard">
     <div class="onboard-visual shield" aria-hidden="true">${icon("shield")}</div>
-    <h1 class="display-1" id="setup-title" tabindex="-1">Photos stay on your phone.</h1>
-    <p class="lede">Look around right away. The listener downloads in the background, once; then it works offline.</p>
+    <h1 class="display-1" id="setup-title" tabindex="-1">Nothing to sign up for.</h1>
+    <p class="lede">Look around right away. Field notes and voices download in the background.</p>
     ${dots}
     ${tight
       ? html`<div class="banner banner-caution">${icon("warning")}<p><strong>Low storage.</strong> Needs ${mb(s.need)}, ${mb(free!)} free.</p></div>`
@@ -109,7 +109,6 @@ function intro(s: Step) {
         <div><dt>Download, once</dt><dd class="num">${s.need ? `about ${mb(s.need)}` : "checking…"}</dd></div>
         <div><dt>Listening engine</dt><dd>${s.webgpu == null ? "checking…" : s.webgpu ? "Graphics chip (WebGPU)" : "Processor only"}</dd></div>
         <div><dt>Free space</dt><dd class="num">${free == null ? (s.storage ? "unknown" : "checking…") : mb(free)}</dd></div>
-        <div><dt>Network after setup</dt><dd>None</dd></div>
       </dl>
       ${wantsMock() ? html`<p class="small muted">Dev: the model step is simulated (?model=real for the real one).</p>` : nothing}
     </details>

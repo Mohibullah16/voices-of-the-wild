@@ -29,7 +29,7 @@ function paint(force = false) {
 
 const sumKit = (p: KitProgress) => p.data.loaded + p.runtime.loaded + p.voices.loaded;
 
-/** Starts (or joins) the background download. Resolves when the app can match offline. */
+/** Starts (or joins) the background download. Resolves when everything is on the device. */
 export function startKit(): Promise<void> {
   if (state.settings.setupDone) {
     state.kit = { phase: "done" };
@@ -107,8 +107,8 @@ async function download() {
     toast("Ready. Photos are read by the cloud listener.");
     announce("Ready. Voices are on this phone; photos are read by the cloud listener.");
   } else {
-    toast("Ready for offline. Airplane mode is fine now.");
-    announce("Everything is on this phone. You can go offline now.");
+    toast("Ready. Everything is downloaded.");
+    announce("Ready. Everything is downloaded.");
   }
 }
 
