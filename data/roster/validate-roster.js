@@ -78,9 +78,9 @@ for (const cat of roster.categories) {
   if (gk.sort().join() !== ['again', 'first_meet', 'goodbye', 'hint'].join()) errs.push(`${g.id}: line keys ${gk}`);
   const gtoks = new Set(nameTokens(g.name));
   for (const k of ['first_meet', 'again', 'goodbye', 'hint']) { const l = checkLine(g.id, k, g.lines[k], 130, gtoks); allTotal += l || 0; }
-  if (!Array.isArray(cat.characters) || cat.characters.length !== 6) errs.push(`${cat.id}: ${cat.characters && cat.characters.length} characters (need 6)`);
+  if (!Array.isArray(cat.characters) || cat.characters.length !== (cat.id === 'vehicles' ? 7 : 6)) errs.push(`${cat.id}: ${cat.characters && cat.characters.length} characters (need ${cat.id === 'vehicles' ? 7 : 6})`); // vehicles: + the bicycle
   const elders = cat.characters.filter(c => c.tier === 'elder').length;
-  if (elders !== 2) errs.push(`${cat.id}: ${elders} elders (need 2)`);
+  if (elders !== (cat.id === 'vehicles' ? 3 : 2)) errs.push(`${cat.id}: ${elders} elders (need ${cat.id === 'vehicles' ? 3 : 2})`);
   const cautions = cat.characters.filter(c => c.caution).length;
   if (cautions > 1) errs.push(`${cat.id}: ${cautions} caution items (max 1)`);
   const landmarks = cat.characters.filter(c => (catItems.get(c.id) || {}).habitat?.includes('landmark')).length;
@@ -114,11 +114,11 @@ for (const cat of roster.categories) {
     }
   }
 }
-if (elderLines !== 78) errs.push(`elder lines ${elderLines} != 78`);
-if (elderTotal > 8000) errs.push(`elder total ${elderTotal} > 8000`);
+if (elderLines !== 81) errs.push(`elder lines ${elderLines} != 81`);
+if (elderTotal > 8400) errs.push(`elder total ${elderTotal} > 8400`);
 
 console.log(`categories: ${roster.categories.length}, characters: ${roster.categories.reduce((a, c) => a + c.characters.length, 0)}, guardians: ${roster.categories.filter(c => c.guardian).length}`);
-console.log(`elder lines: ${elderLines}, elder total characters (incl. tags): ${elderTotal} / 8000`);
+console.log(`elder lines: ${elderLines}, elder total characters (incl. tags): ${elderTotal} / 8400`);
 console.log(`all lines total characters: ${allTotal}`);
 console.log(`\nlocal words remaining in lines (name tokens excluded): ${localHits.length}`);
 localHits.forEach(h => console.log('  ' + h));

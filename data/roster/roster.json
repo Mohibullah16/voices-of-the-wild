@@ -2012,6 +2012,32 @@
             "again": "[dripping] You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
             "goodbye": "[groans] Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me."
           }
+        },
+        {
+          "id": "bicycle",
+          "name": "Pedal Pehelwan",
+          "species": "Bicycle",
+          "category": "vehicles",
+          "tier": "elder",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park"
+          ],
+          "caution": false,
+          "personality": "A heavy black roadster that has hauled milk cans and school bags for decades; humble and steady, puffs uphill, proud of never needing petrol.",
+          "voice": "Older male, cheerful and slightly creaky, measured pace.",
+          "descriptions": [
+            "a two-wheeled pedal bicycle with a metal frame, chain and handlebars leaning against a wall",
+            "a close-up of bicycle pedals, chain and a thin spoked wheel with no engine",
+            "a black roadster bicycle with a rear carrier rack and a bell parked beside a railing",
+            "a thin-framed bicycle with no fuel tank, exhaust pipe or engine, lighter than a motorcycle"
+          ],
+          "lines": {
+            "first_meet": "[bell rings] Pedal Pehelwan! No petrol, just legs and forty years of milk cans. Photos from the kerb!",
+            "again": "[bell rings twice] You again! Still walking? Good. Walking and pedalling, the two honest speeds.",
+            "goodbye": "[puffs] Uphill now. Go find a park. I'll be the one leaning on the railing, catching my breath."
+          }
         }
       ]
     },

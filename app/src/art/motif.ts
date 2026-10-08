@@ -1,7 +1,7 @@
 // Deterministic card motifs. Every character gets a unique plate drawn from
 // its id + category: each category has its own visual grammar (growth rings,
 // petal rosettes, feather barbs, contour maps...) and the id seeds the
-// parameters. 91 unique cards, zero hand-drawn duplicates.
+// parameters. 92 unique cards, zero hand-drawn duplicates.
 import { f, hashString, rng, type Rng } from "./prng";
 
 export const MOTIF_W = 240;

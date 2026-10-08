@@ -3100,36 +3100,36 @@
     "line": "first_meet",
     "text": "[gently] I'm Tall Tim, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
     "caption": "I'm Tall Tim, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
-    "src": "audio/minaret/first_meet.d21dd38c.mp3",
+    "src": "audio/minaret/first_meet.3ee86c71.mp3",
     "engine": "kokoro",
-    "voice": "bm_daniel@1",
-    "voiceName": "bm_daniel",
+    "voice": "bm_george@1",
+    "voiceName": "bm_george",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 7.38
+    "duration": 8.8
   },
   "minaret/again": {
     "owner": "minaret",
     "line": "again",
     "text": "[pleased] Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
     "caption": "Ah, you've returned. I saw you coming from three streets away. Being tall has its blessings.",
-    "src": "audio/minaret/again.8abbac7d.mp3",
+    "src": "audio/minaret/again.6e1bc129.mp3",
     "engine": "kokoro",
-    "voice": "bm_daniel@1",
-    "voiceName": "bm_daniel",
+    "voice": "bm_george@1",
+    "voiceName": "bm_george",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 5.78
+    "duration": 6.55
   },
   "minaret/goodbye": {
     "owner": "minaret",
     "line": "goodbye",
     "text": "[warmly] Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way.",
     "caption": "Go on. Whenever you're lost in this city, look for one of us on the skyline. You'll find your way.",
-    "src": "audio/minaret/goodbye.03c9d394.mp3",
+    "src": "audio/minaret/goodbye.320f9eca.mp3",
     "engine": "kokoro",
-    "voice": "bm_daniel@1",
-    "voiceName": "bm_daniel",
+    "voice": "bm_george@1",
+    "voiceName": "bm_george",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 5.68
+    "duration": 6.65
   },
   "flyover/first_meet": {
     "owner": "flyover",
@@ -3292,36 +3292,36 @@
     "line": "first_meet",
     "text": "[warmly] Chai Charlie, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the sports talk is free.",
     "caption": "Chai Charlie, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the sports talk is free.",
-    "src": "audio/tea-stall/first_meet.5fd7c345.mp3",
+    "src": "audio/tea-stall/first_meet.152f9143.mp3",
     "engine": "kokoro",
-    "voice": "am_michael@1",
-    "voiceName": "am_michael",
+    "voice": "am_eric@1",
+    "voiceName": "am_eric",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 8.73
+    "duration": 6.43
   },
   "tea-stall/again": {
     "owner": "tea-stall",
     "line": "again",
     "text": "[laughs] Hey, regular customer! Strong, extra sugar, right? I remember everyone. Even the ones who never pay.",
     "caption": "Hey, regular customer! Strong, extra sugar, right? I remember everyone. Even the ones who never pay.",
-    "src": "audio/tea-stall/again.e1ff9334.mp3",
+    "src": "audio/tea-stall/again.a39a9a00.mp3",
     "engine": "kokoro",
-    "voice": "am_michael@1",
-    "voiceName": "am_michael",
+    "voice": "am_eric@1",
+    "voiceName": "am_eric",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 7.58
+    "duration": 5.9
   },
   "tea-stall/goodbye": {
     "owner": "tea-stall",
     "line": "goodbye",
     "text": "[chuckles] Go walk it off. Watch the crows waiting for flatbread crumbs; they're my oldest regulars.",
     "caption": "Go walk it off. Watch the crows waiting for flatbread crumbs; they're my oldest regulars.",
-    "src": "audio/tea-stall/goodbye.f770e193.mp3",
+    "src": "audio/tea-stall/goodbye.f1f2978a.mp3",
     "engine": "kokoro",
-    "voice": "am_michael@1",
-    "voiceName": "am_michael",
+    "voice": "am_eric@1",
+    "voiceName": "am_eric",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
-    "duration": 6.88
+    "duration": 5.2
   },
   "park-bench/first_meet": {
     "owner": "park-bench",
@@ -3430,5 +3430,41 @@
     "voiceName": "am_echo",
     "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
     "duration": 6.43
+  },
+  "bicycle/first_meet": {
+    "owner": "bicycle",
+    "line": "first_meet",
+    "text": "[bell rings] Pedal Pehelwan! No petrol, just legs and forty years of milk cans. Photos from the kerb!",
+    "caption": "Pedal Pehelwan! No petrol, just legs and forty years of milk cans. Photos from the kerb!",
+    "src": "audio/bicycle/first_meet.00d9ec6f.mp3",
+    "engine": "elevenlabs",
+    "voice": "k7nOSUCadIEwB6fdJmbw",
+    "voiceName": "Ahmed - Clear, Deep and Natural",
+    "model": "eleven_v4",
+    "duration": 7.2
+  },
+  "bicycle/again": {
+    "owner": "bicycle",
+    "line": "again",
+    "text": "[bell rings twice] You again! Still walking? Good. Walking and pedalling, the two honest speeds.",
+    "caption": "You again! Still walking? Good. Walking and pedalling, the two honest speeds.",
+    "src": "audio/bicycle/again.306d118f.mp3",
+    "engine": "elevenlabs",
+    "voice": "k7nOSUCadIEwB6fdJmbw",
+    "voiceName": "Ahmed - Clear, Deep and Natural",
+    "model": "eleven_v4",
+    "duration": 7.36
+  },
+  "bicycle/goodbye": {
+    "owner": "bicycle",
+    "line": "goodbye",
+    "text": "[puffs] Uphill now. Go find a park. I'll be the one leaning on the railing, catching my breath.",
+    "caption": "Uphill now. Go find a park. I'll be the one leaning on the railing, catching my breath.",
+    "src": "audio/bicycle/goodbye.cd5b35c1.mp3",
+    "engine": "elevenlabs",
+    "voice": "k7nOSUCadIEwB6fdJmbw",
+    "voiceName": "Ahmed - Clear, Deep and Natural",
+    "model": "eleven_v4",
+    "duration": 6.48
   }
 }

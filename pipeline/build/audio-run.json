@@ -1,23 +1,23 @@
 {
-  "at": "2026-10-08T08:35:58.251Z",
+  "at": "2026-10-08T14:53:47.050Z",
   "eleven": {
     "before": {
-      "used": 793,
+      "used": 847,
       "limit": 10000,
-      "remaining": 9207
+      "remaining": 9153
     },
     "probe": {
-      "chars": 84,
-      "credits": 5,
+      "chars": 101,
+      "credits": 0,
       "rate": 1
     },
     "after": {
-      "used": 798,
+      "used": 865,
       "limit": 10000,
-      "remaining": 9202,
-      "spent": 5,
-      "lines": 1,
-      "chars": 84,
+      "remaining": 9135,
+      "spent": 18,
+      "lines": 3,
+      "chars": 292,
       "failures": 0
     }
   },

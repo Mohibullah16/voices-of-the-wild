@@ -2047,27 +2047,27 @@
   },
   {
     "row": 341,
-    "owner": "structures-guardian",
-    "category": "structures",
-    "guardian": true
+    "owner": "bicycle",
+    "category": "vehicles",
+    "guardian": false
   },
   {
     "row": 342,
-    "owner": "structures-guardian",
-    "category": "structures",
-    "guardian": true
+    "owner": "bicycle",
+    "category": "vehicles",
+    "guardian": false
   },
   {
     "row": 343,
-    "owner": "structures-guardian",
-    "category": "structures",
-    "guardian": true
+    "owner": "bicycle",
+    "category": "vehicles",
+    "guardian": false
   },
   {
     "row": 344,
-    "owner": "structures-guardian",
-    "category": "structures",
-    "guardian": true
+    "owner": "bicycle",
+    "category": "vehicles",
+    "guardian": false
   },
   {
     "row": 345,
@@ -2083,171 +2083,171 @@
   },
   {
     "row": 347,
-    "owner": "mosque-dome",
+    "owner": "structures-guardian",
     "category": "structures",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 348,
-    "owner": "mosque-dome",
+    "owner": "structures-guardian",
     "category": "structures",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 349,
-    "owner": "mosque-dome",
+    "owner": "structures-guardian",
     "category": "structures",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 350,
-    "owner": "mosque-dome",
+    "owner": "structures-guardian",
     "category": "structures",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 351,
-    "owner": "footbridge",
+    "owner": "mosque-dome",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 352,
-    "owner": "footbridge",
+    "owner": "mosque-dome",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 353,
-    "owner": "footbridge",
+    "owner": "mosque-dome",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 354,
-    "owner": "footbridge",
+    "owner": "mosque-dome",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 355,
-    "owner": "minaret",
+    "owner": "footbridge",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 356,
-    "owner": "minaret",
+    "owner": "footbridge",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 357,
-    "owner": "minaret",
+    "owner": "footbridge",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 358,
-    "owner": "minaret",
+    "owner": "footbridge",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 359,
-    "owner": "flyover",
+    "owner": "minaret",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 360,
-    "owner": "flyover",
+    "owner": "minaret",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 361,
-    "owner": "flyover",
+    "owner": "minaret",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 362,
-    "owner": "flyover",
+    "owner": "minaret",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 363,
-    "owner": "mazar-e-quaid",
+    "owner": "flyover",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 364,
-    "owner": "mazar-e-quaid",
+    "owner": "flyover",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 365,
-    "owner": "mazar-e-quaid",
+    "owner": "flyover",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 366,
-    "owner": "mazar-e-quaid",
+    "owner": "flyover",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 367,
-    "owner": "frere-hall",
+    "owner": "mazar-e-quaid",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 368,
-    "owner": "frere-hall",
+    "owner": "mazar-e-quaid",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 369,
-    "owner": "frere-hall",
+    "owner": "mazar-e-quaid",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 370,
-    "owner": "frere-hall",
+    "owner": "mazar-e-quaid",
     "category": "structures",
     "guardian": false
   },
   {
     "row": 371,
-    "owner": "urban-guardian",
-    "category": "urban",
-    "guardian": true
+    "owner": "frere-hall",
+    "category": "structures",
+    "guardian": false
   },
   {
     "row": 372,
-    "owner": "urban-guardian",
-    "category": "urban",
-    "guardian": true
+    "owner": "frere-hall",
+    "category": "structures",
+    "guardian": false
   },
   {
     "row": 373,
-    "owner": "urban-guardian",
-    "category": "urban",
-    "guardian": true
+    "owner": "frere-hall",
+    "category": "structures",
+    "guardian": false
   },
   {
     "row": 374,
-    "owner": "urban-guardian",
-    "category": "urban",
-    "guardian": true
+    "owner": "frere-hall",
+    "category": "structures",
+    "guardian": false
   },
   {
     "row": 375,
@@ -2263,138 +2263,162 @@
   },
   {
     "row": 377,
-    "owner": "electric-pole-wires",
+    "owner": "urban-guardian",
     "category": "urban",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 378,
-    "owner": "electric-pole-wires",
+    "owner": "urban-guardian",
     "category": "urban",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 379,
-    "owner": "electric-pole-wires",
+    "owner": "urban-guardian",
     "category": "urban",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 380,
-    "owner": "electric-pole-wires",
+    "owner": "urban-guardian",
     "category": "urban",
-    "guardian": false
+    "guardian": true
   },
   {
     "row": 381,
-    "owner": "wall-chalking",
+    "owner": "electric-pole-wires",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 382,
-    "owner": "wall-chalking",
+    "owner": "electric-pole-wires",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 383,
-    "owner": "wall-chalking",
+    "owner": "electric-pole-wires",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 384,
-    "owner": "wall-chalking",
+    "owner": "electric-pole-wires",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 385,
-    "owner": "tea-stall",
+    "owner": "wall-chalking",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 386,
-    "owner": "tea-stall",
+    "owner": "wall-chalking",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 387,
-    "owner": "tea-stall",
+    "owner": "wall-chalking",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 388,
-    "owner": "tea-stall",
+    "owner": "wall-chalking",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 389,
-    "owner": "park-bench",
+    "owner": "tea-stall",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 390,
-    "owner": "park-bench",
+    "owner": "tea-stall",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 391,
-    "owner": "park-bench",
+    "owner": "tea-stall",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 392,
-    "owner": "rooftop-water-tank",
+    "owner": "tea-stall",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 393,
-    "owner": "rooftop-water-tank",
+    "owner": "park-bench",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 394,
-    "owner": "rooftop-water-tank",
+    "owner": "park-bench",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 395,
-    "owner": "rooftop-water-tank",
+    "owner": "park-bench",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 396,
-    "owner": "zebra-crossing",
+    "owner": "rooftop-water-tank",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 397,
-    "owner": "zebra-crossing",
+    "owner": "rooftop-water-tank",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 398,
-    "owner": "zebra-crossing",
+    "owner": "rooftop-water-tank",
     "category": "urban",
     "guardian": false
   },
   {
     "row": 399,
+    "owner": "rooftop-water-tank",
+    "category": "urban",
+    "guardian": false
+  },
+  {
+    "row": 400,
+    "owner": "zebra-crossing",
+    "category": "urban",
+    "guardian": false
+  },
+  {
+    "row": 401,
+    "owner": "zebra-crossing",
+    "category": "urban",
+    "guardian": false
+  },
+  {
+    "row": 402,
+    "owner": "zebra-crossing",
+    "category": "urban",
+    "guardian": false
+  },
+  {
+    "row": 403,
     "owner": "zebra-crossing",
     "category": "urban",
     "guardian": false

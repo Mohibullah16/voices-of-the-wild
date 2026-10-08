@@ -45,7 +45,7 @@ function brand() {
     <figure class="plate" aria-label="The thirteen kinds of things that talk">
       <figcaption class="plate-title"><span>Things that talk</span><span>13 kinds</span></figcaption>
       ${CATEGORY_IDS.map((c) => html`<figure>${unsafeSVG(emblemSvg(c, 64))}<figcaption>${SHORT_NAME[c]}</figcaption></figure>`)}
-      <p class="plate-legend">A guardian and six voices each.</p>
+      <p class="plate-legend">A guardian and six or more voices each.</p>
     </figure>
   </div>`;
 }
