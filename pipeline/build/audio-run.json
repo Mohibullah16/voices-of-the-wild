@@ -1,5 +1,25 @@
 {
-  "at": "2026-10-08T22:07:21.546Z",
-  "eleven": {},
+  "at": "2026-10-08T22:40:40.289Z",
+  "eleven": {
+    "before": {
+      "used": 883,
+      "limit": 10000,
+      "remaining": 9117
+    },
+    "probe": {
+      "chars": 99,
+      "credits": 6,
+      "rate": 1
+    },
+    "after": {
+      "used": 889,
+      "limit": 10000,
+      "remaining": 9111,
+      "spent": 6,
+      "lines": 35,
+      "chars": 3356,
+      "failures": 0
+    }
+  },
   "fallbackToKokoro": []
 }

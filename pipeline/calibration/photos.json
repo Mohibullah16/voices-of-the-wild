@@ -1,164 +1,4 @@
 {
-  "neem-tree": [
-    {
-      "id": "neem-tree",
-      "file": "neem-tree/1.jpg",
-      "title": "File:Neem tree Azadirachta indica Heritage tree Philippines.jpg",
-      "author": "P1898",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Neem_tree_Azadirachta_indica_Heritage_tree_Philippines.jpg",
-      "query": "Azadirachta indica tree"
-    },
-    {
-      "id": "neem-tree",
-      "file": "neem-tree/2.jpg",
-      "title": "File:Leaves Azadirachta indica Heritage tree Philippines.jpg",
-      "author": "P1898",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Leaves_Azadirachta_indica_Heritage_tree_Philippines.jpg",
-      "query": "Azadirachta indica leaves"
-    },
-    {
-      "id": "neem-tree",
-      "file": "neem-tree/3.jpg",
-      "title": "File:Upper Trunk leaves Azadirachta indica Heritage tree Philippines.jpg",
-      "author": "P1898",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Upper_Trunk_leaves_Azadirachta_indica_Heritage_tree_Philippines.jpg",
-      "query": "Azadirachta indica leaves"
-    }
-  ],
-  "auto-rickshaw": [
-    {
-      "id": "auto-rickshaw",
-      "file": "auto-rickshaw/1.jpg",
-      "title": "File:Rickshaw at Lahore Fort.jpg",
-      "author": "J LOG",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Rickshaw_at_Lahore_Fort.jpg",
-      "query": "auto rickshaw Pakistan"
-    },
-    {
-      "id": "auto-rickshaw",
-      "file": "auto-rickshaw/2.jpg",
-      "title": "File:More Karachi Main.jpg",
-      "author": "V Malik from New Delhi &amp; Pune, India",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:More_Karachi_Main.jpg",
-      "query": "auto rickshaw Karachi"
-    },
-    {
-      "id": "auto-rickshaw",
-      "file": "auto-rickshaw/3.jpg",
-      "title": "File:Hyderabad (Auto-Rickshaw).jpg",
-      "author": "Farhan from Karachi, Pakistan",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Hyderabad_(Auto-Rickshaw).jpg",
-      "query": "auto rickshaw Pakistan"
-    }
-  ],
-  "conocarpus-tree": [
-    {
-      "id": "conocarpus-tree",
-      "file": "conocarpus-tree/1.jpg",
-      "title": "File:Conocarpus lancifolius flower.jpg",
-      "author": "Jnprasad2001",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Conocarpus_lancifolius_flower.jpg",
-      "query": "Conocarpus lancifolius"
-    },
-    {
-      "id": "conocarpus-tree",
-      "file": "conocarpus-tree/2.jpg",
-      "title": "File:Conocarpus erectus kz05.jpg",
-      "author": "Krzysztof Ziarnek, Kenraiz",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Conocarpus_erectus_kz05.jpg",
-      "query": "Conocarpus erectus"
-    },
-    {
-      "id": "conocarpus-tree",
-      "file": "conocarpus-tree/3.jpg",
-      "title": "File:Conocarpus lancifolius tree.jpg",
-      "author": "Jnprasad2001",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Conocarpus_lancifolius_tree.jpg",
-      "query": "Conocarpus lancifolius"
-    }
-  ],
-  "peepal-tree": [
-    {
-      "id": "peepal-tree",
-      "file": "peepal-tree/1.jpg",
-      "title": "File:Bodhi Baum (Ficus religiosa).jpg",
-      "author": "Burkhard Mücke",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Bodhi_Baum_(Ficus_religiosa).jpg",
-      "query": "Ficus religiosa leaves"
-    },
-    {
-      "id": "peepal-tree",
-      "file": "peepal-tree/2.jpg",
-      "title": "File:Peepal Tree (Ficus Religiosa) at Durga Mata Temple near Sabji Mandi Chhindwara.jpg",
-      "author": "Kaushlendrapathe",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Peepal_Tree_(Ficus_Religiosa)_at_Durga_Mata_Temple_near_Sabji_Mandi_Chhindwara.jpg",
-      "query": "Ficus religiosa tree"
-    },
-    {
-      "id": "peepal-tree",
-      "file": "peepal-tree/3.jpg",
-      "title": "File:Ficus religiosa peepal.jpg",
-      "author": "Kiran.thumma",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Ficus_religiosa_peepal.jpg",
-      "query": "Ficus religiosa leaves"
-    }
-  ],
-  "gulmohar-tree": [
-    {
-      "id": "gulmohar-tree",
-      "file": "gulmohar-tree/1.jpg",
-      "title": "File:May-flower Tree (Delonix regia).jpg",
-      "author": "Gannu03",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:May-flower_Tree_(Delonix_regia).jpg",
-      "query": "Delonix regia tree flowers"
-    },
-    {
-      "id": "gulmohar-tree",
-      "file": "gulmohar-tree/2.jpg",
-      "title": "File:Delonix regia Sunbury Street Geebung P1130397.jpg",
-      "author": "John Robert McPherson",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Delonix_regia_Sunbury_Street_Geebung_P1130397.jpg",
-      "query": "Delonix regia"
-    },
-    {
-      "id": "gulmohar-tree",
-      "file": "gulmohar-tree/3.jpg",
-      "title": "File:Flowers in Kanye Garden.jpg",
-      "author": "NthabiPearl",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Flowers_in_Kanye_Garden.jpg",
-      "query": "Delonix regia tree flowers"
-    }
-  ],
   "coconut-palm": [
     {
       "id": "coconut-palm",
@@ -191,38 +31,6 @@
       "query": "Cocos nucifera tree"
     }
   ],
-  "amaltas-tree": [
-    {
-      "id": "amaltas-tree",
-      "file": "amaltas-tree/1.jpg",
-      "title": "File:Cassia fistula flower twig.jpg",
-      "author": "Lokeswaran Kaliyappan",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Cassia_fistula_flower_twig.jpg",
-      "query": "Cassia fistula tree flowers"
-    },
-    {
-      "id": "amaltas-tree",
-      "file": "amaltas-tree/2.jpg",
-      "title": "File:Cassia fistula (Ehala) in Sri Lanka by Prasanna Kumara Dissanayake.jpg",
-      "author": "Prasanna Kumara Dissanayake Photographer",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Cassia_fistula_(Ehala)_in_Sri_Lanka_by_Prasanna_Kumara_Dissanayake.jpg",
-      "query": "Cassia fistula tree flowers"
-    },
-    {
-      "id": "amaltas-tree",
-      "file": "amaltas-tree/3.jpg",
-      "title": "File:Cassia fistula.JPG",
-      "author": "Challiyan at Malayalam Wikipedia",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Cassia_fistula.JPG",
-      "query": "Cassia fistula"
-    }
-  ],
   "house-crow": [
     {
       "id": "house-crow",
@@ -253,70 +61,6 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "source": "https://commons.wikimedia.org/wiki/File:Corvus_splendens_in_an_urban_habitat.jpg",
       "query": "Corvus splendens"
-    }
-  ],
-  "common-myna": [
-    {
-      "id": "common-myna",
-      "file": "common-myna/1.jpg",
-      "title": "File:Common Myna in Rabindra Sarobar February 2025 by Tisha Mukherjee 01.jpg",
-      "author": "Tisha Mukherjee",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Common_Myna_in_Rabindra_Sarobar_February_2025_by_Tisha_Mukherjee_01.jpg",
-      "query": "Acridotheres tristis"
-    },
-    {
-      "id": "common-myna",
-      "file": "common-myna/2.jpg",
-      "title": "File:Acridotheres tristis, feral, Auckland, New Zealand.jpg",
-      "author": "iNaturalist NZ user: jsimons",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Acridotheres_tristis,_feral,_Auckland,_New_Zealand.jpg",
-      "query": "Acridotheres tristis"
-    },
-    {
-      "id": "common-myna",
-      "file": "common-myna/3.jpg",
-      "title": "File:Common Hill Myna, Satchari NP, Bangladesh 3.jpg",
-      "author": "Evanahmed75",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Common_Hill_Myna,_Satchari_NP,_Bangladesh_3.jpg",
-      "query": "common myna"
-    }
-  ],
-  "black-kite": [
-    {
-      "id": "black-kite",
-      "file": "black-kite/1.jpg",
-      "title": "File:Black Kite (Milvus migrans)- Juvenile.jpg",
-      "author": "Mildeep",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Black_Kite_(Milvus_migrans)-_Juvenile.jpg",
-      "query": "Milvus migrans govinda"
-    },
-    {
-      "id": "black-kite",
-      "file": "black-kite/2.jpg",
-      "title": "File:Milvus migrans qtl1.jpg",
-      "author": "Quartl",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_qtl1.jpg",
-      "query": "Milvus migrans"
-    },
-    {
-      "id": "black-kite",
-      "file": "black-kite/3.jpg",
-      "title": "File:Milvus migrans govinda.jpg",
-      "author": "unknown",
-      "license": "CC BY-SA 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-      "source": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_govinda.jpg",
-      "query": "Milvus migrans govinda"
     }
   ],
   "rock-pigeon": [
@@ -479,38 +223,6 @@
       "query": "street cat"
     }
   ],
-  "palm-squirrel": [
-    {
-      "id": "palm-squirrel",
-      "file": "palm-squirrel/1.jpg",
-      "title": "File:Five-striped palm squirrel (Funambulus pennantii).jpg",
-      "author": "Charles J. Sharp",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Five-striped_palm_squirrel_(Funambulus_pennantii).jpg",
-      "query": "Funambulus pennantii"
-    },
-    {
-      "id": "palm-squirrel",
-      "file": "palm-squirrel/2.jpg",
-      "title": "File:Indian palm squirrel (Funambulus palmarum) in Vidisha.jpg",
-      "author": "Kaushlendrapathe",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Indian_palm_squirrel_(Funambulus_palmarum)_in_Vidisha.jpg",
-      "query": "Funambulus palmarum"
-    },
-    {
-      "id": "palm-squirrel",
-      "file": "palm-squirrel/3.jpg",
-      "title": "File:Five-striped palm squirrel, Allahabad, Uttar Pradesh.jpg",
-      "author": "Goldibittu",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Five-striped_palm_squirrel,_Allahabad,_Uttar_Pradesh.jpg",
-      "query": "Funambulus pennantii"
-    }
-  ],
   "goat": [
     {
       "id": "goat",
@@ -575,38 +287,6 @@
       "query": "zebu cattle"
     }
   ],
-  "camel": [
-    {
-      "id": "camel",
-      "file": "camel/1.jpg",
-      "title": "File:A Kohi Breed Camel in Burg Pusht.jpg",
-      "author": "Sahib jan",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:A_Kohi_Breed_Camel_in_Burg_Pusht.jpg",
-      "query": "dromedary camel Pakistan"
-    },
-    {
-      "id": "camel",
-      "file": "camel/2.jpg",
-      "title": "File:Decorated one-humped Camel, Camelus dromedarius, at Puri Sea Beach, Odisha, India.jpg",
-      "author": "Joydeep Chakraborty",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Decorated_one-humped_Camel,_Camelus_dromedarius,_at_Puri_Sea_Beach,_Odisha,_India.jpg",
-      "query": "Camelus dromedarius"
-    },
-    {
-      "id": "camel",
-      "file": "camel/3.jpg",
-      "title": "File:Camelus dromedarius - Réserve africaine de Sigean 01.jpg",
-      "author": "H. Zell",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius_-_R%C3%A9serve_africaine_de_Sigean_01.jpg",
-      "query": "Camelus dromedarius"
-    }
-  ],
   "black-ant-trail": [
     {
       "id": "black-ant-trail",
@@ -637,38 +317,6 @@
       "licenseUrl": "",
       "source": "https://commons.wikimedia.org/wiki/File:Leaf-cutting_Ants_(crater-052025-loiacono-3361).jpg",
       "query": "ants marching line"
-    }
-  ],
-  "house-gecko": [
-    {
-      "id": "house-gecko",
-      "file": "house-gecko/1.jpg",
-      "title": "File:Northern house gecko (Hemidactylus flaviviridis).jpg",
-      "author": "Motu purkait",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Northern_house_gecko_(Hemidactylus_flaviviridis).jpg",
-      "query": "Hemidactylus flaviviridis"
-    },
-    {
-      "id": "house-gecko",
-      "file": "house-gecko/2.jpg",
-      "title": "File:Hemidactylus frenatus mating, ventral view.jpg",
-      "author": "Basile Morin",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Hemidactylus_frenatus_mating,_ventral_view.jpg",
-      "query": "Hemidactylus frenatus wall"
-    },
-    {
-      "id": "house-gecko",
-      "file": "house-gecko/3.jpg",
-      "title": "File:Northern House Gecko Hemidactylus flaviviridis by Dr. Raju Kasambe DSCN8741 (1) 04.jpg",
-      "author": "Dr. Raju Kasambe",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Northern_House_Gecko_Hemidactylus_flaviviridis_by_Dr._Raju_Kasambe_DSCN8741_(1)_04.jpg",
-      "query": "Hemidactylus flaviviridis"
     }
   ],
   "cockroach": [
@@ -1247,38 +895,6 @@
       "query": "banana bunch"
     }
   ],
-  "guava-fruit": [
-    {
-      "id": "guava-fruit",
-      "file": "guava-fruit/1.jpg",
-      "title": "File:Guava bangalore.jpg",
-      "author": "Photo by Rajesh Dangi",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Guava_bangalore.jpg",
-      "query": "guava fruit"
-    },
-    {
-      "id": "guava-fruit",
-      "file": "guava-fruit/2.jpg",
-      "title": "File:HK food 番石榴 Psidium guajava 果實 fruit July 2024 R12S 02.jpg",
-      "author": "FourVZS 2024",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:HK_food_%E7%95%AA%E7%9F%B3%E6%A6%B4_Psidium_guajava_%E6%9E%9C%E5%AF%A6_fruit_July_2024_R12S_02.jpg",
-      "query": "Psidium guajava fruit"
-    },
-    {
-      "id": "guava-fruit",
-      "file": "guava-fruit/3.jpg",
-      "title": "File:HK food 番石榴 Psidium guajava 果實 fruit July 2024 R12S 03.jpg",
-      "author": "FourVZS 2024",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:HK_food_%E7%95%AA%E7%9F%B3%E6%A6%B4_Psidium_guajava_%E6%9E%9C%E5%AF%A6_fruit_July_2024_R12S_03.jpg",
-      "query": "Psidium guajava fruit"
-    }
-  ],
   "watermelon": [
     {
       "id": "watermelon",
@@ -1341,38 +957,6 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "source": "https://commons.wikimedia.org/wiki/File:Onion_bulbs_in_a_paint_bucket.jpg",
       "query": "onion bulbs"
-    }
-  ],
-  "bitter-gourd": [
-    {
-      "id": "bitter-gourd",
-      "file": "bitter-gourd/1.jpg",
-      "title": "File:HK food vegetable 苦瓜 Momordica charantia fruit July 2024 R12S 02.jpg",
-      "author": "FourVZS 2024",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:HK_food_vegetable_%E8%8B%A6%E7%93%9C_Momordica_charantia_fruit_July_2024_R12S_02.jpg",
-      "query": "Momordica charantia fruit"
-    },
-    {
-      "id": "bitter-gourd",
-      "file": "bitter-gourd/2.jpg",
-      "title": "File:Enlarged bitter gourd image.jpg",
-      "author": "ムウラ@C102 日曜日 西地区 “え” 40b",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Enlarged_bitter_gourd_image.jpg",
-      "query": "bitter gourd"
-    },
-    {
-      "id": "bitter-gourd",
-      "file": "bitter-gourd/3.jpg",
-      "title": "File:HK food vegetable 苦瓜 Momordica charantia fruit July 2024 R12S 01.jpg",
-      "author": "FourVZS 2024",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:HK_food_vegetable_%E8%8B%A6%E7%93%9C_Momordica_charantia_fruit_July_2024_R12S_01.jpg",
-      "query": "Momordica charantia fruit"
     }
   ],
   "fallen-leaves": [
@@ -1941,70 +1525,6 @@
       "query": "mangroves Karachi"
     }
   ],
-  "decorated-truck": [
-    {
-      "id": "decorated-truck",
-      "file": "decorated-truck/1.jpg",
-      "title": "File:Pakistani truck art (1015798781).jpg",
-      "author": "Murtaza Imran Ali from Karachi, Pakistan",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Pakistani_truck_art_(1015798781).jpg",
-      "query": "Pakistani truck art"
-    },
-    {
-      "id": "decorated-truck",
-      "file": "decorated-truck/2.jpg",
-      "title": "File:Truck art in Pakistan.jpg",
-      "author": "imusasheikh",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Truck_art_in_Pakistan.jpg",
-      "query": "truck art Pakistan"
-    },
-    {
-      "id": "decorated-truck",
-      "file": "decorated-truck/3.jpg",
-      "title": "File:The walking art.jpg",
-      "author": "Gangstainheels247",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:The_walking_art.jpg",
-      "query": "truck art Pakistan"
-    }
-  ],
-  "decorated-bus": [
-    {
-      "id": "decorated-bus",
-      "file": "decorated-bus/1.jpg",
-      "title": "File:El Gouna Bus R01.jpg",
-      "author": "Marc Ryckaert",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:El_Gouna_Bus_R01.jpg",
-      "query": "Karachi bus decorated"
-    },
-    {
-      "id": "decorated-bus",
-      "file": "decorated-bus/2.jpg",
-      "title": "File:Decorated bus in Karachi.jpg",
-      "author": "Mishari Muqbil",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Decorated_bus_in_Karachi.jpg",
-      "query": "Karachi bus decorated"
-    },
-    {
-      "id": "decorated-bus",
-      "file": "decorated-bus/3.jpg",
-      "title": "File:PkKaratschiSR.jpg",
-      "author": "Ziegler175",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:PkKaratschiSR.jpg",
-      "query": "Karachi bus decorated"
-    }
-  ],
   "motorcycle": [
     {
       "id": "motorcycle",
@@ -2035,102 +1555,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Honda_cd_70.jpg",
       "query": "Honda CD 70"
-    }
-  ],
-  "donkey-cart": [
-    {
-      "id": "donkey-cart",
-      "file": "donkey-cart/1.jpg",
-      "title": "File:Man with his donkey cart in Pakistan.jpg",
-      "author": "Tamseel Ahmad",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Man_with_his_donkey_cart_in_Pakistan.jpg",
-      "query": "donkey cart Pakistan"
-    },
-    {
-      "id": "donkey-cart",
-      "file": "donkey-cart/2.jpg",
-      "title": "File:Donkey-drawn cart in Tharparkar District, Sindh, Pakistan.jpg",
-      "author": "Hunzographer",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Donkey-drawn_cart_in_Tharparkar_District,_Sindh,_Pakistan.jpg",
-      "query": "donkey cart Pakistan"
-    },
-    {
-      "id": "donkey-cart",
-      "file": "donkey-cart/3.jpg",
-      "title": "File:A guy and his donkey.jpg",
-      "author": "Guilhem Vellut from Paris",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:A_guy_and_his_donkey.jpg",
-      "query": "donkey cart Pakistan"
-    }
-  ],
-  "water-tanker": [
-    {
-      "id": "water-tanker",
-      "file": "water-tanker/1.jpg",
-      "title": "File:Water tanker karachi.jpg",
-      "author": "کراچی",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Water_tanker_karachi.jpg",
-      "query": "water tanker Karachi"
-    },
-    {
-      "id": "water-tanker",
-      "file": "water-tanker/2.jpg",
-      "title": "File:Freightliner M2 Water Tanker Indonesian Army.jpg",
-      "author": "Sulthan Naufal",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Freightliner_M2_Water_Tanker_Indonesian_Army.jpg",
-      "query": "water tanker truck"
-    },
-    {
-      "id": "water-tanker",
-      "file": "water-tanker/3.jpg",
-      "title": "File:Water Supply Tanker, Elebu.jpg",
-      "author": "Ourlib",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Water_Supply_Tanker,_Elebu.jpg",
-      "query": "water tanker truck"
-    }
-  ],
-  "mosque-dome": [
-    {
-      "id": "mosque-dome",
-      "file": "mosque-dome/1.jpg",
-      "title": "File:Karachi's domed wonder - Masjid e Tooba, Karachi.jpg",
-      "author": "Bilalhassan88",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Karachi%27s_domed_wonder_-_Masjid_e_Tooba,_Karachi.jpg",
-      "query": "mosque dome Karachi"
-    },
-    {
-      "id": "mosque-dome",
-      "file": "mosque-dome/2.jpg",
-      "title": "File:Blue Mosque Courtyard Dusk Wikimedia Commons.jpg",
-      "author": "Benh LIEU SONG (Flickr)",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Blue_Mosque_Courtyard_Dusk_Wikimedia_Commons.jpg",
-      "query": "mosque dome"
-    },
-    {
-      "id": "mosque-dome",
-      "file": "mosque-dome/3.jpg",
-      "title": "File:Dome of Chor-Bakr Mosque.jpg",
-      "author": "Bgag",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "source": "https://commons.wikimedia.org/wiki/File:Dome_of_Chor-Bakr_Mosque.jpg",
-      "query": "mosque dome"
     }
   ],
   "footbridge": [
@@ -2165,38 +1589,6 @@
       "query": "pedestrian overpass"
     }
   ],
-  "minaret": [
-    {
-      "id": "minaret",
-      "file": "minaret/1.jpg",
-      "title": "File:Minaret of Mohatta Palace.jpg",
-      "author": "Syed HussainHyder Zaidi",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Minaret_of_Mohatta_Palace.jpg",
-      "query": "minaret Karachi"
-    },
-    {
-      "id": "minaret",
-      "file": "minaret/2.jpg",
-      "title": "File:View from Mardin to the Mesopotamian plains.jpg",
-      "author": "Florian Koch French translation by Yolan Chériaux",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:View_from_Mardin_to_the_Mesopotamian_plains.jpg",
-      "query": "mosque minaret"
-    },
-    {
-      "id": "minaret",
-      "file": "minaret/3.jpg",
-      "title": "File:Hyderabad (Red Minaret).jpg",
-      "author": "Farhan from Karachi, Pakistan",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Hyderabad_(Red_Minaret).jpg",
-      "query": "minaret Karachi"
-    }
-  ],
   "flyover": [
     {
       "id": "flyover",
@@ -2229,156 +1621,6 @@
       "query": "flyover Karachi"
     }
   ],
-  "mazar-e-quaid": [
-    {
-      "id": "mazar-e-quaid",
-      "file": "mazar-e-quaid/1.jpg",
-      "title": "File:Mazar-e-Quaid, or Jinnah Mausoleum in Karachi, Pakistan.jpg",
-      "author": "Jan Kranendonk (https://www.jankranendonk.nl)",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Mazar-e-Quaid,_or_Jinnah_Mausoleum_in_Karachi,_Pakistan.jpg",
-      "query": "Jinnah Mausoleum Karachi"
-    },
-    {
-      "id": "mazar-e-quaid",
-      "file": "mazar-e-quaid/2.jpg",
-      "title": "File:Jinnah Mausoleum (cropped).JPG",
-      "author": "M.irfan44",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Jinnah_Mausoleum_(cropped).JPG",
-      "query": "Jinnah Mausoleum Karachi"
-    },
-    {
-      "id": "mazar-e-quaid",
-      "file": "mazar-e-quaid/3.jpg",
-      "title": "File:Jinnah Mausoleum.JPG",
-      "author": "M.irfan44",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Jinnah_Mausoleum.JPG",
-      "query": "Jinnah Mausoleum Karachi"
-    }
-  ],
-  "frere-hall": [
-    {
-      "id": "frere-hall",
-      "file": "frere-hall/1.jpg",
-      "title": "File:An image of Frere hall karachi.jpg",
-      "author": "Kamranyosuf.",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:An_image_of_Frere_hall_karachi.jpg",
-      "query": "Frere Hall Karachi"
-    },
-    {
-      "id": "frere-hall",
-      "file": "frere-hall/2.jpg",
-      "title": "File:Frere hall updated.jpg",
-      "author": "Aareez Asif",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Frere_hall_updated.jpg",
-      "query": "Frere Hall Karachi"
-    },
-    {
-      "id": "frere-hall",
-      "file": "frere-hall/3.jpg",
-      "title": "File:1920s, Beaver Hall Square (Montreal).jpg",
-      "author": "UnknownUnknown",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "source": "https://commons.wikimedia.org/wiki/File:1920s,_Beaver_Hall_Square_(Montreal).jpg",
-      "query": "Frere Hall"
-    }
-  ],
-  "electric-pole-wires": [
-    {
-      "id": "electric-pole-wires",
-      "file": "electric-pole-wires/1.jpg",
-      "title": "File:Varanasi 505 wired area (34286029976).jpg",
-      "author": "juggadery",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Varanasi_505_wired_area_(34286029976).jpg",
-      "query": "utility pole wires India"
-    },
-    {
-      "id": "electric-pole-wires",
-      "file": "electric-pole-wires/2.jpg",
-      "title": "File:Old-timey electric pole wire.jpg",
-      "author": "Sfury",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Old-timey_electric_pole_wire.jpg",
-      "query": "electric pole wires street"
-    }
-  ],
-  "wall-chalking": [
-    {
-      "id": "wall-chalking",
-      "file": "wall-chalking/1.jpg",
-      "title": "File:Sankibridge.jpg",
-      "author": "SameStruggle",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Sankibridge.jpg",
-      "query": "graffiti Karachi"
-    },
-    {
-      "id": "wall-chalking",
-      "file": "wall-chalking/2.jpg",
-      "title": "File:Hammer and Sickle (2250853836).jpg",
-      "author": "Omer Wazir",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Hammer_and_Sickle_(2250853836).jpg",
-      "query": "political graffiti Pakistan"
-    },
-    {
-      "id": "wall-chalking",
-      "file": "wall-chalking/3.jpg",
-      "title": "File:Sanki King Sanat Exhibition.jpg",
-      "author": "Abid Merchant (photographer), Sanki King (painter)",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Sanki_King_Sanat_Exhibition.jpg",
-      "query": "graffiti Karachi"
-    }
-  ],
-  "tea-stall": [
-    {
-      "id": "tea-stall",
-      "file": "tea-stall/1.jpg",
-      "title": "File:A small dhaba in Azad Kashmir, Pakistan.jpg",
-      "author": "Talha Khan",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:A_small_dhaba_in_Azad_Kashmir,_Pakistan.jpg",
-      "query": "dhaba Pakistan"
-    },
-    {
-      "id": "tea-stall",
-      "file": "tea-stall/2.jpg",
-      "title": "File:Tea with French fries in a local Dhaba.jpg",
-      "author": "Kskhh",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Tea_with_French_fries_in_a_local_Dhaba.jpg",
-      "query": "dhaba Pakistan"
-    },
-    {
-      "id": "tea-stall",
-      "file": "tea-stall/3.jpg",
-      "title": "File:Traditional samovar at a roadside tea stall in Kashmir, India.jpg",
-      "author": "Mr. Debapriya Hore",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Traditional_samovar_at_a_roadside_tea_stall_in_Kashmir,_India.jpg",
-      "query": "tea stall India roadside"
-    }
-  ],
   "park-bench": [
     {
       "id": "park-bench",
@@ -2409,38 +1651,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Park_Bench_at_Audubon_Lagoon.jpg",
       "query": "park bench"
-    }
-  ],
-  "rooftop-water-tank": [
-    {
-      "id": "rooftop-water-tank",
-      "file": "rooftop-water-tank/1.jpg",
-      "title": "File:Water tanks in NYC.jpg",
-      "author": "Kritzolina",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Water_tanks_in_NYC.jpg",
-      "query": "rooftop water tank"
-    },
-    {
-      "id": "rooftop-water-tank",
-      "file": "rooftop-water-tank/2.jpg",
-      "title": "File:Tires recycled into water tanks on roof. Cherchen, Xinjiang.jpg",
-      "author": "John Hill",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Tires_recycled_into_water_tanks_on_roof._Cherchen,_Xinjiang.jpg",
-      "query": "water tanks roof"
-    },
-    {
-      "id": "rooftop-water-tank",
-      "file": "rooftop-water-tank/3.jpg",
-      "title": "File:淡水龍山寺-DSCN8020.JPG",
-      "author": "Wikia1974",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:%E6%B7%A1%E6%B0%B4%E9%BE%8D%E5%B1%B1%E5%AF%BA-DSCN8020.JPG",
-      "query": "rooftop water tank"
     }
   ],
   "zebra-crossing": [
@@ -2589,6 +1799,806 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:My_Corolla_e90_1992_grey_color.jpg",
       "query": "Toyota Corolla Pakistan"
+    }
+  ],
+  "weeping-willow": [
+    {
+      "id": "weeping-willow",
+      "file": "weeping-willow/1.jpg",
+      "title": "File:2026. Salix babylonica. Parque Eugenio Granell.jpg",
+      "author": "Luis Miguel Bugallo Sánchez",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:2026._Salix_babylonica._Parque_Eugenio_Granell.jpg",
+      "query": "Salix babylonica"
+    },
+    {
+      "id": "weeping-willow",
+      "file": "weeping-willow/2.jpg",
+      "title": "File:Weeping willow tree, Oare - geograph.org.uk - 6417793.jpg",
+      "author": "pam fray",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Weeping_willow_tree,_Oare_-_geograph.org.uk_-_6417793.jpg",
+      "query": "weeping willow tree"
+    },
+    {
+      "id": "weeping-willow",
+      "file": "weeping-willow/3.jpg",
+      "title": "File:Salix babylonica - Trauerweide.jpg",
+      "author": "5snake5",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Salix_babylonica_-_Trauerweide.jpg",
+      "query": "Salix babylonica"
+    }
+  ],
+  "maple-tree": [
+    {
+      "id": "maple-tree",
+      "file": "maple-tree/1.jpg",
+      "title": "File:Knop van een esdoorn (Acer platanoides). 03-04-2023 (d.j.b.).jpg",
+      "author": "Dominicus Johannes Bergsma",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Knop_van_een_esdoorn_(Acer_platanoides)._03-04-2023_(d.j.b.).jpg",
+      "query": "Acer platanoides tree"
+    },
+    {
+      "id": "maple-tree",
+      "file": "maple-tree/2.jpg",
+      "title": "File:Acer saccharum floridianum BotGardBln1105LeavesFallA.JPG",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Acer_saccharum_floridianum_BotGardBln1105LeavesFallA.JPG",
+      "query": "Acer saccharum autumn"
+    },
+    {
+      "id": "maple-tree",
+      "file": "maple-tree/3.jpg",
+      "title": "File:Acer platanoides 2 RF.jpg",
+      "author": "Robert Flogaus-Faust",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Acer_platanoides_2_RF.jpg",
+      "query": "Acer platanoides tree"
+    }
+  ],
+  "fir-tree": [
+    {
+      "id": "fir-tree",
+      "file": "fir-tree/1.jpg",
+      "title": "File:Abies alba 02.jpg",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Abies_alba_02.jpg",
+      "query": "Abies alba tree"
+    },
+    {
+      "id": "fir-tree",
+      "file": "fir-tree/2.jpg",
+      "title": "File:Abies alba Żabnica.jpg",
+      "author": "Crusier",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Abies_alba_%C5%BBabnica.jpg",
+      "query": "Abies alba tree"
+    },
+    {
+      "id": "fir-tree",
+      "file": "fir-tree/3.jpg",
+      "title": "File:Abies nordmanniana.jpg",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Abies_nordmanniana.jpg",
+      "query": "Abies nordmanniana"
+    }
+  ],
+  "cherry-blossom-tree": [
+    {
+      "id": "cherry-blossom-tree",
+      "file": "cherry-blossom-tree/1.jpg",
+      "title": "File:Cerisier du Japon Prunus serrulata.jpg",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cerisier_du_Japon_Prunus_serrulata.jpg",
+      "query": "Prunus serrulata tree"
+    },
+    {
+      "id": "cherry-blossom-tree",
+      "file": "cherry-blossom-tree/2.jpg",
+      "title": "File:Rail tracks and cherry trees in Ashino Park.jpg",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rail_tracks_and_cherry_trees_in_Ashino_Park.jpg",
+      "query": "cherry blossom tree park"
+    },
+    {
+      "id": "cherry-blossom-tree",
+      "file": "cherry-blossom-tree/3.jpg",
+      "title": "File:.00 3019 Japanische Blütenkirsche (Prunus serrulata).jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:.00_3019_Japanische_Bl%C3%BCtenkirsche_(Prunus_serrulata).jpg",
+      "query": "Prunus serrulata tree"
+    }
+  ],
+  "silver-birch": [
+    {
+      "id": "silver-birch",
+      "file": "silver-birch/1.jpg",
+      "title": "File:Ilsfeld - Schozach - Schozacher Höhe - Birke vor Sonnenuntergangs-Himmel (1).jpg",
+      "author": "Roman Eisele",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ilsfeld_-_Schozach_-_Schozacher_H%C3%B6he_-_Birke_vor_Sonnenuntergangs-Himmel_(1).jpg",
+      "query": "Betula pendula tree"
+    },
+    {
+      "id": "silver-birch",
+      "file": "silver-birch/2.jpg",
+      "title": "File:Trunk of a silver birch - geograph.org.uk - 7008681.jpg",
+      "author": "Bob Harvey",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trunk_of_a_silver_birch_-_geograph.org.uk_-_7008681.jpg",
+      "query": "silver birch trunk"
+    },
+    {
+      "id": "silver-birch",
+      "file": "silver-birch/3.jpg",
+      "title": "File:Delleboersterheide, natuurgebied van het It Fryske Gea. 25-12-2019. (actm.) 23.jpg",
+      "author": "Agnes Monkelbaan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Delleboersterheide,_natuurgebied_van_het_It_Fryske_Gea._25-12-2019._(actm.)_23.jpg",
+      "query": "Betula pendula tree"
+    }
+  ],
+  "robin": [
+    {
+      "id": "robin",
+      "file": "robin/1.jpg",
+      "title": "File:European robin (Erithacus rubecula) juvenile.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:European_robin_(Erithacus_rubecula)_juvenile.jpg",
+      "query": "Erithacus rubecula"
+    },
+    {
+      "id": "robin",
+      "file": "robin/2.jpg",
+      "title": "File:Erithacus rubecula with cocked head.jpg",
+      "author": "Francis C. Franklin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_with_cocked_head.jpg",
+      "query": "Erithacus rubecula"
+    },
+    {
+      "id": "robin",
+      "file": "robin/3.jpg",
+      "title": "File:American robin squeaking (30126).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:American_robin_squeaking_(30126).jpg",
+      "query": "American robin"
+    }
+  ],
+  "seagull": [
+    {
+      "id": "seagull",
+      "file": "seagull/1.jpg",
+      "title": "File:Head of European herring gull (Larus argentatus). Saint-Malo, France.jpg",
+      "author": "Ввласенко",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Head_of_European_herring_gull_(Larus_argentatus)._Saint-Malo,_France.jpg",
+      "query": "Larus argentatus"
+    },
+    {
+      "id": "seagull",
+      "file": "seagull/2.jpg",
+      "title": "File:Seagull flying over the beach with motion.jpg",
+      "author": "Jdubphotography",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Seagull_flying_over_the_beach_with_motion.jpg",
+      "query": "seagull beach"
+    },
+    {
+      "id": "seagull",
+      "file": "seagull/3.jpg",
+      "title": "File:DefecatingSeagull.jpg",
+      "author": "Sanchezn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:DefecatingSeagull.jpg",
+      "query": "Larus argentatus"
+    }
+  ],
+  "grey-squirrel": [
+    {
+      "id": "grey-squirrel",
+      "file": "grey-squirrel/1.jpg",
+      "title": "File:Melanistic Sciurus carolinensis at Jardin botanique Roger-Van den Hende.jpg",
+      "author": "Wilfredor",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Melanistic_Sciurus_carolinensis_at_Jardin_botanique_Roger-Van_den_Hende.jpg",
+      "query": "Sciurus carolinensis"
+    },
+    {
+      "id": "grey-squirrel",
+      "file": "grey-squirrel/2.jpg",
+      "title": "File:Grey squirrel (Sciurus carolinensis) 02.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grey_squirrel_(Sciurus_carolinensis)_02.jpg",
+      "query": "Sciurus carolinensis"
+    },
+    {
+      "id": "grey-squirrel",
+      "file": "grey-squirrel/3.jpg",
+      "title": "File:Grey squirrel (Sciurus carolinensis) 01.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grey_squirrel_(Sciurus_carolinensis)_01.jpg",
+      "query": "Sciurus carolinensis"
+    }
+  ],
+  "rabbit": [
+    {
+      "id": "rabbit",
+      "file": "rabbit/1.jpg",
+      "title": "File:A wild rabbit (Oryctolagus cuniculus) - geograph.org.uk - 6631592.jpg",
+      "author": "Walter Baxter",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:A_wild_rabbit_(Oryctolagus_cuniculus)_-_geograph.org.uk_-_6631592.jpg",
+      "query": "Oryctolagus cuniculus wild"
+    },
+    {
+      "id": "rabbit",
+      "file": "rabbit/2.jpg",
+      "title": "File:European Rabbit, Lake District, UK - August 2011.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:European_Rabbit,_Lake_District,_UK_-_August_2011.jpg",
+      "query": "European rabbit grass"
+    },
+    {
+      "id": "rabbit",
+      "file": "rabbit/3.jpg",
+      "title": "File:Oryctolagus cuniculus ssp. cuniculus.jpg",
+      "author": "Jan Ebr",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_ssp._cuniculus.jpg",
+      "query": "Oryctolagus cuniculus wild"
+    }
+  ],
+  "ladybird": [
+    {
+      "id": "ladybird",
+      "file": "ladybird/1.jpg",
+      "title": "File:Siebenpunkt-Marienkäfer (Coccinella septempunctata) auf Blüte im FFH-Gebiet \"Viernheimer Waldheide und angrenzende Flächen\".jpg",
+      "author": "Stephan Sprinz",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Siebenpunkt-Marienk%C3%A4fer_(Coccinella_septempunctata)_auf_Bl%C3%BCte_im_FFH-Gebiet_%22Viernheimer_Waldheide_und_angrenzende_Fl%C3%A4chen%22.jpg",
+      "query": "Coccinella septempunctata"
+    },
+    {
+      "id": "ladybird",
+      "file": "ladybird/2.jpg",
+      "title": "File:Ladybird on a nettle leaf - geograph.org.uk - 3942313.jpg",
+      "author": "Gareth James",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ladybird_on_a_nettle_leaf_-_geograph.org.uk_-_3942313.jpg",
+      "query": "ladybird leaf"
+    },
+    {
+      "id": "ladybird",
+      "file": "ladybird/3.jpg",
+      "title": "File:Coccinella septempunctata couple (aka).jpg",
+      "author": "André Karwath aka Aka",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Coccinella_septempunctata_couple_(aka).jpg",
+      "query": "Coccinella septempunctata"
+    }
+  ],
+  "apple": [
+    {
+      "id": "apple",
+      "file": "apple/1.jpg",
+      "title": "File:Tree with red apples in Barkedal 4.jpg",
+      "author": "W.carter",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Tree_with_red_apples_in_Barkedal_4.jpg",
+      "query": "apple tree fruit"
+    },
+    {
+      "id": "apple",
+      "file": "apple/2.jpg",
+      "title": "File:Red Apple.jpg",
+      "author": "Abhijit Tembhekar from Mumbai, India",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg",
+      "query": "red apple"
+    },
+    {
+      "id": "apple",
+      "file": "apple/3.jpg",
+      "title": "File:Apple-tree blossoms 2017 G3.jpg",
+      "author": "George Chernilevsky",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Apple-tree_blossoms_2017_G3.jpg",
+      "query": "apples on tree"
+    }
+  ],
+  "pumpkin": [
+    {
+      "id": "pumpkin",
+      "file": "pumpkin/1.jpg",
+      "title": "File:Pumpkins in the market - geograph.org.uk - 4722700.jpg",
+      "author": "Philip Halling",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pumpkins_in_the_market_-_geograph.org.uk_-_4722700.jpg",
+      "query": "pumpkins market"
+    },
+    {
+      "id": "pumpkin",
+      "file": "pumpkin/2.jpg",
+      "title": "File:Cucurbita 2011 G1.jpg",
+      "author": "George Chernilevsky",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Cucurbita_2011_G1.jpg",
+      "query": "pumpkin field"
+    },
+    {
+      "id": "pumpkin",
+      "file": "pumpkin/3.jpg",
+      "title": "File:Pumpkins in Borough Market - geograph.org.uk - 4226760.jpg",
+      "author": "John Salmon",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pumpkins_in_Borough_Market_-_geograph.org.uk_-_4226760.jpg",
+      "query": "pumpkins market"
+    }
+  ],
+  "yellow-taxi": [
+    {
+      "id": "yellow-taxi",
+      "file": "yellow-taxi/1.jpg",
+      "title": "File:Image-Grand central Station Outside Night 2.jpg",
+      "author": "Fcb981 ; Eric Baetscher (attribution required)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Image-Grand_central_Station_Outside_Night_2.jpg",
+      "query": "New York City taxi"
+    },
+    {
+      "id": "yellow-taxi",
+      "file": "yellow-taxi/2.jpg",
+      "title": "File:SF yellow cab 01.jpg",
+      "author": "Grandmaster Huon",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:SF_yellow_cab_01.jpg",
+      "query": "yellow cab street"
+    },
+    {
+      "id": "yellow-taxi",
+      "file": "yellow-taxi/3.jpg",
+      "title": "File:NYC Taxi Crown Vic 1386.jpg",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:NYC_Taxi_Crown_Vic_1386.jpg",
+      "query": "New York City taxi"
+    }
+  ],
+  "ice-cream-truck": [
+    {
+      "id": "ice-cream-truck",
+      "file": "ice-cream-truck/1.jpg",
+      "title": "File:Mister Softee ice cream truck.jpg",
+      "author": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mister_Softee_ice_cream_truck.jpg",
+      "query": "Mister Softee truck"
+    },
+    {
+      "id": "ice-cream-truck",
+      "file": "ice-cream-truck/2.jpg",
+      "title": "File:Lola's on Ice gourmet ice cream van.jpg",
+      "author": "Mofrichards",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Lola%27s_on_Ice_gourmet_ice_cream_van.jpg",
+      "query": "ice cream van"
+    },
+    {
+      "id": "ice-cream-truck",
+      "file": "ice-cream-truck/3.jpg",
+      "title": "File:Mister Softee ice cream truck with open motor.jpg",
+      "author": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mister_Softee_ice_cream_truck_with_open_motor.jpg",
+      "query": "Mister Softee truck"
+    }
+  ],
+  "school-bus": [
+    {
+      "id": "school-bus",
+      "file": "school-bus/1.jpg",
+      "title": "File:Yellow School Bus - geograph.org.uk - 4447138.jpg",
+      "author": "Gerald England",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yellow_School_Bus_-_geograph.org.uk_-_4447138.jpg",
+      "query": "yellow school bus"
+    },
+    {
+      "id": "school-bus",
+      "file": "school-bus/2.jpg",
+      "title": "File:Superior IHC Loadstar school bus in Rodeberg (Be) (2).jpg",
+      "author": "Pierre André Leclercq",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Superior_IHC_Loadstar_school_bus_in_Rodeberg_(Be)_(2).jpg",
+      "query": "school bus street"
+    },
+    {
+      "id": "school-bus",
+      "file": "school-bus/3.jpg",
+      "title": "File:Yellow School Bus at Heaton Park - geograph.org.uk - 4166544.jpg",
+      "author": "David Dixon",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yellow_School_Bus_at_Heaton_Park_-_geograph.org.uk_-_4166544.jpg",
+      "query": "yellow school bus"
+    }
+  ],
+  "kick-scooter": [
+    {
+      "id": "kick-scooter",
+      "file": "kick-scooter/1.jpg",
+      "title": "File:Ex scooter, Frankfurt am Main (LRM 20210815 134347).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Ex_scooter,_Frankfurt_am_Main_(LRM_20210815_134347).jpg",
+      "query": "kick scooter"
+    },
+    {
+      "id": "kick-scooter",
+      "file": "kick-scooter/2.jpg",
+      "title": "File:Vandalized Lime scooter on lamppost in Paris.jpeg",
+      "author": "Akela NDE (talk)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vandalized_Lime_scooter_on_lamppost_in_Paris.jpeg",
+      "query": "Lime scooter"
+    },
+    {
+      "id": "kick-scooter",
+      "file": "kick-scooter/3.jpg",
+      "title": "File:Parked electric kick scooters in Benediktbeuerer Straße (Munich).jpg",
+      "author": "Wikitarisch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Parked_electric_kick_scooters_in_Benediktbeuerer_Stra%C3%9Fe_(Munich).jpg",
+      "query": "electric kick scooter parked"
+    }
+  ],
+  "garbage-truck": [
+    {
+      "id": "garbage-truck",
+      "file": "garbage-truck/1.jpg",
+      "title": "File:Recology Lodal Garbage Truck 14425 in San Francisco.jpg",
+      "author": "Dllu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Recology_Lodal_Garbage_Truck_14425_in_San_Francisco.jpg",
+      "query": "garbage truck street"
+    },
+    {
+      "id": "garbage-truck",
+      "file": "garbage-truck/2.jpg",
+      "title": "File:Dusty refuse collection vehicle - geograph.org.uk - 4955028.jpg",
+      "author": "Russel Wills",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dusty_refuse_collection_vehicle_-_geograph.org.uk_-_4955028.jpg",
+      "query": "refuse collection vehicle"
+    },
+    {
+      "id": "garbage-truck",
+      "file": "garbage-truck/3.jpg",
+      "title": "File:Garbage truck KAMAZ on the streets of Ulan-Ude.jpg",
+      "author": "Newspaper \"Number One\" (photographer Petr Sanzhiev)",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Garbage_truck_KAMAZ_on_the_streets_of_Ulan-Ude.jpg",
+      "query": "garbage truck street"
+    }
+  ],
+  "clock-tower": [
+    {
+      "id": "clock-tower",
+      "file": "clock-tower/1.jpg",
+      "title": "File:Zürich view Quaibrücke 20200702.jpg",
+      "author": "Daniel Kraft",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Z%C3%BCrich_view_Quaibr%C3%BCcke_20200702.jpg",
+      "query": "clock tower town"
+    },
+    {
+      "id": "clock-tower",
+      "file": "clock-tower/2.jpg",
+      "title": "File:Cape Town (ZA), Waterfront, Clock Tower -- 2024 -- 3036.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Waterfront,_Clock_Tower_--_2024_--_3036.jpg",
+      "query": "clock tower town"
+    },
+    {
+      "id": "clock-tower",
+      "file": "clock-tower/3.jpg",
+      "title": "File:Cape Town (ZA), Waterfront, Clock Tower -- 2024 -- 2902.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Waterfront,_Clock_Tower_--_2024_--_2902.jpg",
+      "query": "clock tower town"
+    }
+  ],
+  "statue": [
+    {
+      "id": "statue",
+      "file": "statue/1.jpg",
+      "title": "File:Haltern am See, Skulptur -Der gescheiterte Varus- -- 2016 -- 1409.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Haltern_am_See,_Skulptur_-Der_gescheiterte_Varus-_--_2016_--_1409.jpg",
+      "query": "bronze statue park"
+    },
+    {
+      "id": "statue",
+      "file": "statue/2.jpg",
+      "title": "File:Münster, St.-Paulus-Dom, Chorumgang -- 2019 -- 3920.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_St.-Paulus-Dom,_Chorumgang_--_2019_--_3920.jpg",
+      "query": "statue city square"
+    },
+    {
+      "id": "statue",
+      "file": "statue/3.jpg",
+      "title": "File:Black Prince Statue, City Square - geograph.org.uk - 5704953.jpg",
+      "author": "Alan Murray-Rust",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Prince_Statue,_City_Square_-_geograph.org.uk_-_5704953.jpg",
+      "query": "statue city square"
+    }
+  ],
+  "lighthouse": [
+    {
+      "id": "lighthouse",
+      "file": "lighthouse/1.jpg",
+      "title": "File:2016-11-13 01 Kjeungskjær Lighthouse, Sør-Trøndelag, Norway.jpg",
+      "author": "Gordon Leggett",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:2016-11-13_01_Kjeungskj%C3%A6r_Lighthouse,_S%C3%B8r-Tr%C3%B8ndelag,_Norway.jpg",
+      "query": "lighthouse coast"
+    },
+    {
+      "id": "lighthouse",
+      "file": "lighthouse/2.jpg",
+      "title": "File:Point Cabrillo Lighthouse, on an early morning in February.jpg",
+      "author": "Frank Schulenburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Point_Cabrillo_Lighthouse,_on_an_early_morning_in_February.jpg",
+      "query": "lighthouse coast"
+    },
+    {
+      "id": "lighthouse",
+      "file": "lighthouse/3.jpg",
+      "title": "File:Landsort lighthouse 2012b.jpg",
+      "author": "ArildV",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Landsort_lighthouse_2012b.jpg",
+      "query": "lighthouse"
+    }
+  ],
+  "town-hall": [
+    {
+      "id": "town-hall",
+      "file": "town-hall/1.jpg",
+      "title": "File:Town hall, Christchurch City, New Zealand.jpg",
+      "author": "Michal Klajban",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Town_hall,_Christchurch_City,_New_Zealand.jpg",
+      "query": "town hall building"
+    },
+    {
+      "id": "town-hall",
+      "file": "town-hall/2.jpg",
+      "title": "File:Christchurch Town Hall of the Performing Arts, New Zealand.jpg",
+      "author": "Michal Klajban",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Christchurch_Town_Hall_of_the_Performing_Arts,_New_Zealand.jpg",
+      "query": "town hall building"
+    },
+    {
+      "id": "town-hall",
+      "file": "town-hall/3.jpg",
+      "title": "File:2019-11-16, Glockenspiel, Neues Münchner Rathaus, IMG 7463 edit Christoph Braun.jpg",
+      "author": "Christoph Braun",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-11-16,_Glockenspiel,_Neues_M%C3%BCnchner_Rathaus,_IMG_7463_edit_Christoph_Braun.jpg",
+      "query": "town hall building"
+    }
+  ],
+  "fire-hydrant": [
+    {
+      "id": "fire-hydrant",
+      "file": "fire-hydrant/1.jpg",
+      "title": "File:Fire Hydrant in snow.jpg",
+      "author": "WindBorneListener",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Fire_Hydrant_in_snow.jpg",
+      "query": "fire hydrant"
+    },
+    {
+      "id": "fire-hydrant",
+      "file": "fire-hydrant/2.jpg",
+      "title": "File:Red Fire Hydrant in Snow.jpg",
+      "author": "WindBorneListener",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_Fire_Hydrant_in_Snow.jpg",
+      "query": "red fire hydrant"
+    },
+    {
+      "id": "fire-hydrant",
+      "file": "fire-hydrant/3.jpg",
+      "title": "File:Red fire hydrant, Avenida de Roma, Lisbon, Portugal julesvernex2.jpg",
+      "author": "Jules Verne Times Two",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_fire_hydrant,_Avenida_de_Roma,_Lisbon,_Portugal_julesvernex2.jpg",
+      "query": "red fire hydrant"
+    }
+  ],
+  "graffiti-mural": [
+    {
+      "id": "graffiti-mural",
+      "file": "graffiti-mural/1.jpg",
+      "title": "File:Mural en Santiago, Chile A74178720240526.jpg",
+      "author": "Rjcastillo",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mural_en_Santiago,_Chile_A74178720240526.jpg",
+      "query": "graffiti mural"
+    },
+    {
+      "id": "graffiti-mural",
+      "file": "graffiti-mural/2.jpg",
+      "title": "File:Mural on a wall at Kate Street, Leicester - geograph.org.uk - 5030222.jpg",
+      "author": "Mat Fascione",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mural_on_a_wall_at_Kate_Street,_Leicester_-_geograph.org.uk_-_5030222.jpg",
+      "query": "street art mural wall"
+    },
+    {
+      "id": "graffiti-mural",
+      "file": "graffiti-mural/3.jpg",
+      "title": "File:Graffiti Vinnytsia 2022 G1.jpg",
+      "author": "George Chernilevsky",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Graffiti_Vinnytsia_2022_G1.jpg",
+      "query": "graffiti mural"
+    }
+  ],
+  "post-box": [
+    {
+      "id": "post-box",
+      "file": "post-box/1.jpg",
+      "title": "File:Type K Pillar box.jpg",
+      "author": "Oxyman",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Type_K_Pillar_box.jpg",
+      "query": "pillar box"
+    },
+    {
+      "id": "post-box",
+      "file": "post-box/2.jpg",
+      "title": "File:Street furniture showing post box with Halloween post box topper, Trelowarren Street, Camborne, Cornwall - October 2025.jpg",
+      "author": "Mutney",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Street_furniture_showing_post_box_with_Halloween_post_box_topper,_Trelowarren_Street,_Camborne,_Cornwall_-_October_2025.jpg",
+      "query": "post box street"
+    },
+    {
+      "id": "post-box",
+      "file": "post-box/3.jpg",
+      "title": "File:Pillar box at the back of the Church of the Immaculate Conception - geograph.org.uk - 7628936.jpg",
+      "author": "Neil Owen",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pillar_box_at_the_back_of_the_Church_of_the_Immaculate_Conception_-_geograph.org.uk_-_7628936.jpg",
+      "query": "pillar box"
+    }
+  ],
+  "stop-sign": [
+    {
+      "id": "stop-sign",
+      "file": "stop-sign/1.jpg",
+      "title": "File:Stop sign at the junction of Dean Street and the High Street, Bangor - geograph.org.uk - 7362524.jpg",
+      "author": "Meirion",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Stop_sign_at_the_junction_of_Dean_Street_and_the_High_Street,_Bangor_-_geograph.org.uk_-_7362524.jpg",
+      "query": "stop sign street"
+    },
+    {
+      "id": "stop-sign",
+      "file": "stop-sign/2.jpg",
+      "title": "File:Stop sign at the junction of Snowdon Street and Bangor Street, Y Felinheli - geograph.org.uk - 7310988.jpg",
+      "author": "Meirion",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Stop_sign_at_the_junction_of_Snowdon_Street_and_Bangor_Street,_Y_Felinheli_-_geograph.org.uk_-_7310988.jpg",
+      "query": "stop sign street"
+    },
+    {
+      "id": "stop-sign",
+      "file": "stop-sign/3.jpg",
+      "title": "File:Stop sign us.jpg",
+      "author": "Dori",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Stop_sign_us.jpg",
+      "query": "stop sign"
     }
   ]
 }

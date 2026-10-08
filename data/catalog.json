@@ -998,6 +998,63 @@
             "guava-tree"
           ],
           "caution": false
+        },
+        {
+          "id": "fir-tree",
+          "name": "Fir tree",
+          "scientific": "Abies",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "park",
+            "garden"
+          ],
+          "rarity": "common",
+          "visual_cues": "Cone-shaped evergreen with layered branches of short flat needles; upright cones; often decorated in winter",
+          "lookalikes": [
+            "silver-birch"
+          ],
+          "caution": false
+        },
+        {
+          "id": "cherry-blossom-tree",
+          "name": "Cherry blossom tree",
+          "scientific": "Prunus serrulata",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "park",
+            "street"
+          ],
+          "rarity": "uncommon",
+          "visual_cues": "Tree covered in pale pink five-petalled blossoms in spring before leaves; shiny banded reddish bark",
+          "lookalikes": [
+            "maple-tree"
+          ],
+          "caution": false
+        },
+        {
+          "id": "silver-birch",
+          "name": "Silver birch",
+          "scientific": "Betula pendula",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "park",
+            "street"
+          ],
+          "rarity": "uncommon",
+          "visual_cues": "Slim tree with white papery peeling bark with black diamond marks; small triangular toothed leaves; catkins",
+          "lookalikes": [
+            "weeping-willow"
+          ],
+          "caution": false
         }
       ]
     },
@@ -3068,6 +3125,42 @@
             "domestic-duck"
           ],
           "caution": false
+        },
+        {
+          "id": "robin",
+          "name": "Robin",
+          "scientific": "Erithacus rubecula / Turdus migratorius",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "park",
+            "garden",
+            "lawn"
+          ],
+          "rarity": "common",
+          "visual_cues": "a small round songbird with a bright orange-red breast and face, brown back and a thin dark bill",
+          "lookalikes": [],
+          "caution": false
+        },
+        {
+          "id": "seagull",
+          "name": "Seagull",
+          "scientific": "Larus",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "beach",
+            "park",
+            "coast"
+          ],
+          "rarity": "common",
+          "visual_cues": "a white and grey seagull with a yellow hooked bill standing on a beach, pier or harbour wall",
+          "lookalikes": [],
+          "caution": false
         }
       ]
     },
@@ -3805,7 +3898,7 @@
           ],
           "habitat": [
             "street",
-            "market"
+            "park"
           ],
           "rarity": "common",
           "visual_cues": "Medium-sized short-haired dog, usually tan, brown, black or white, lean with a curled tail; lying in shade or roaming in packs",
@@ -4137,6 +4230,25 @@
           "visual_cues": "Small round animal covered in brown-and-white spines with large ears and a pointed snout; out at night",
           "lookalikes": [],
           "caution": false
+        },
+        {
+          "id": "grey-squirrel",
+          "name": "Grey squirrel",
+          "scientific": "Sciurus carolinensis",
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "park",
+            "lawn"
+          ],
+          "rarity": "common",
+          "visual_cues": "Grey rodent with white belly and big bushy tail; runs head first down trunks; digs on lawns",
+          "lookalikes": [
+            "rabbit"
+          ],
+          "caution": false
         }
       ]
     },
@@ -4464,10 +4576,104 @@
             "street"
           ],
           "rarity": "common",
-          "visual_cues": "Four-wheeled passenger car (sedan, hatchback, SUV, taxi) parked on a street, in a driveway or car park; headlights, wheels, wing mirrors, number plate",
+          "visual_cues": "Four-wheeled passenger car (sedan, hatchback, SUV) parked on a street, in a driveway or car park; headlights, wheels, wing mirrors, number plate; no roof sign",
           "lookalikes": [
-            "auto-rickshaw",
-            "decorated-bus"
+            "yellow-taxi",
+            "school-bus"
+          ],
+          "caution": false
+        },
+        {
+          "id": "yellow-taxi",
+          "name": "Yellow taxi cab",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Yellow car with a lit TAXI sign on the roof; checker stripe or number on doors",
+          "lookalikes": [
+            "car",
+            "school-bus"
+          ],
+          "caution": false
+        },
+        {
+          "id": "ice-cream-truck",
+          "name": "Ice cream truck",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street",
+            "park"
+          ],
+          "rarity": "common",
+          "visual_cues": "Van painted with ice cream pictures, side serving window, often a plastic cone on the roof",
+          "lookalikes": [
+            "school-bus",
+            "garbage-truck"
+          ],
+          "caution": true
+        },
+        {
+          "id": "school-bus",
+          "name": "Yellow school bus",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Long yellow bus with black stripes, SCHOOL BUS lettering and a red fold-out stop arm",
+          "lookalikes": [
+            "yellow-taxi"
+          ],
+          "caution": false
+        },
+        {
+          "id": "kick-scooter",
+          "name": "E-scooter",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street",
+            "park"
+          ],
+          "rarity": "common",
+          "visual_cues": "Electric kick scooter: narrow standing deck, two small wheels, tall handlebar; often rental",
+          "lookalikes": [
+            "bicycle"
+          ],
+          "caution": false
+        },
+        {
+          "id": "garbage-truck",
+          "name": "Garbage truck",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Large boxy truck with rear loader or side arm lifting wheelie bins; recycling symbols",
+          "lookalikes": [
+            "ice-cream-truck"
           ],
           "caution": false
         }
@@ -6294,6 +6500,42 @@
           "visual_cues": "Open-air stall with big aluminium kettles on a burner, plastic chairs, woven charpai cots and steaming cups of chai",
           "lookalikes": [],
           "caution": false
+        },
+        {
+          "id": "fire-hydrant",
+          "name": "Fire hydrant",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Short red, yellow or silver post with side nozzle caps and a bolt on top, at the curb",
+          "lookalikes": [
+            "post-box"
+          ],
+          "caution": false
+        },
+        {
+          "id": "stop-sign",
+          "name": "Stop sign",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Red octagon with white STOP lettering on a metal pole at a junction",
+          "lookalikes": [
+            "post-box"
+          ],
+          "caution": true
         }
       ]
     },
@@ -6790,6 +7032,44 @@
           "lookalikes": [
             "clock-tower",
             "colonial-facade"
+          ],
+          "caution": false
+        },
+        {
+          "id": "statue",
+          "name": "Statue",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "square",
+            "park"
+          ],
+          "rarity": "common",
+          "visual_cues": "Bronze or stone figure of a person, sometimes on a horse, on a carved base with a plaque",
+          "lookalikes": [
+            "clock-tower"
+          ],
+          "caution": false
+        },
+        {
+          "id": "town-hall",
+          "name": "Old brick town hall",
+          "scientific": null,
+          "region": [
+            "global",
+            "temperate"
+          ],
+          "habitat": [
+            "square",
+            "street"
+          ],
+          "rarity": "uncommon",
+          "visual_cues": "Old red brick public building with arched windows, stone trim, front steps, small tower or flag",
+          "lookalikes": [
+            "clock-tower"
           ],
           "caution": false
         }

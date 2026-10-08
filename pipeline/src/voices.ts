@@ -5,16 +5,16 @@ import type { Roster, RosterOwner } from "./lib.ts";
 export const ELEVEN_MODEL = "eleven_v4"; // expressive v4 (not v4 Turbo); confirmed via GET /v1/models
 export const ELEVEN_FORMAT = "mp3_44100_64";
 
-/** Elder → ElevenLabs voice (id, name, why). English voices only (option A). Will and Charlie are each used twice: the account has no spare English voices left. */
+/** Elder → ElevenLabs voice (id, name, why). English voices only (option A). Will, Charlie and Laura are each used twice: the account has no spare English voices left. */
 export const ELEVEN_CAST: Record<string, { id: string; name: string; why: string }> = {
-  "neem-tree": { id: "9cI5mhBtM4WtQ9Fo6jWQ", name: "Sara - Warm, Serious and Steady", why: "warm grandmother, sharp edge" },
-  "conocarpus-tree": { id: "bIHbv24MWmeRgasZH58o", name: "Will", why: "young, light; [nervous] tags do the rest" },
+  "weeping-willow": { id: "9cI5mhBtM4WtQ9Fo6jWQ", name: "Sara - Warm, Serious and Steady", why: "warm, slow grandmother (was neem)" },
+  "maple-tree": { id: "bIHbv24MWmeRgasZH58o", name: "Will", why: "bright, bouncy young male (was conocarpus)" },
   "house-crow": { id: "N2lVS1w4EtoT3dr4eOWO", name: "Callum", why: "husky, raspy trickster" },
-  "common-myna": { id: "TX3LPaxmHKxFdv7VOQHJ", name: "Liam - Energetic, Social Media Creator", why: "young, bright, cheeky" },
+  robin: { id: "TX3LPaxmHKxFdv7VOQHJ", name: "Liam - Energetic, Social Media Creator", why: "young, bright, cheeky (was myna)" },
   "street-dog": { id: "SOYHLrjzK2X1ezoPC6cr", name: "Harry", why: "rough, clipped" },
   cat: { id: "qSeXEcewz7tA0Q0qk9fH", name: "Victoria", why: "warm, smooth drawl" },
   "black-ant-trail": { id: "Xb7hH8MSUJpSbSDYk0k2", name: "Alice", why: "crisp, clear, brisk" },
-  "house-gecko": { id: "cgSgspJ2msm6clMCkdW9", name: "Jessica", why: "chatty, expressive" },
+  ladybird: { id: "cgSgspJ2msm6clMCkdW9", name: "Jessica", why: "small, bright, chatty female (was gecko)" },
   bougainvillea: { id: "pFZP5JQG7iQjIQuC4Bku", name: "Lily", why: "velvety, theatrical" },
   oleander: { id: "EXAVITQu4vr4xnSDxMaL", name: "Sarah", why: "mature, firm, no-nonsense" },
   "lawn-grass": { id: "bIHbv24MWmeRgasZH58o", name: "Will (shared with conocarpus)", why: "easygoing young male" },
@@ -27,14 +27,14 @@ export const ELEVEN_CAST: Record<string, { id: string; name: string; why: string
   "cumulus-clouds": { id: "FGY2WhTYpPnrIDTdsKH5", name: "Laura", why: "bouncy, quirky" },
   "sea-waves": { id: "IKne3meq5aSn9XLyUdCD", name: "Charlie (shared with footbridge)", why: "energetic, booming" },
   "storm-drain-nala": { id: "CwhRBWXzGAHq8TQ4Fs17", name: "Roger", why: "laid-back, resonant grumble" },
-  "auto-rickshaw": { id: "cjVigY5qzO86Huf0OWal", name: "Eric - Smooth, Trustworthy", why: "quick, cheeky patter carried by tags" },
-  "decorated-truck": { id: "XrExE9yKIg1WjnnlVkGX", name: "Matilda", why: "alto, grand but tender" },
-  "mosque-dome": { id: "JBFqnCBsd6RMkjVDRZzb", name: "George - Warm, Captivating Storyteller", why: "soft, resonant, slow" },
+  "yellow-taxi": { id: "cjVigY5qzO86Huf0OWal", name: "Eric - Smooth, Trustworthy", why: "fast, friendly big-city patter (was rickshaw)" },
+  "ice-cream-truck": { id: "XrExE9yKIg1WjnnlVkGX", name: "Matilda", why: "warm female, sunny but firm on safety (was truck)" },
+  "clock-tower": { id: "JBFqnCBsd6RMkjVDRZzb", name: "George - Warm, Captivating Storyteller", why: "deep, calm, slow older man (was dome)" },
   footbridge: { id: "IKne3meq5aSn9XLyUdCD", name: "Charlie (shared with sea-waves)", why: "young, earnest, energetic male" },
-  "electric-pole-wires": { id: "pqHfZKP75CvOlQylNhV4", name: "Bill", why: "old, wise, grumbling uncle" },
-  "wall-chalking": { id: "pNInz6obpgDQGcFmaJgB", name: "Adam", why: "brash, booming announcer" },
-  motorcycle: { id: "8baRIHZEGj62eS9YHzC6", name: "Neha P - Messy, Unpolished & Relatable", why: "young, casual, buzzy; the city's everyday motorbike" },
-  bicycle: { id: "k7nOSUCadIEwB6fdJmbw", name: "Ahmed - Clear, Deep and Natural", why: "warm, steady uncle; a local voice for the city's bicycle" },
+  "fire-hydrant": { id: "pqHfZKP75CvOlQylNhV4", name: "Bill", why: "gruff but kind, dry humour (was pole)" },
+  "graffiti-mural": { id: "FGY2WhTYpPnrIDTdsKH5", name: "Laura (shared with cumulus-clouds)", why: "bright, bubbly young female; Adam (was wall-chalking) is male" },
+  motorcycle: { id: "8baRIHZEGj62eS9YHzC6", name: "Neha P - Messy, Unpolished & Relatable", why: "young, casual, buzzy; the city's delivery bike" },
+  bicycle: { id: "k7nOSUCadIEwB6fdJmbw", name: "Ahmed - Clear, Deep and Natural", why: "warm, steady older voice for Spokes" },
 };
 
 /** Kokoro voice with a speed. */

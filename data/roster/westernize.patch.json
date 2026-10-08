@@ -1,0 +1,1289 @@
+{
+  "_notes": [
+    "replace[].character is the full roster shape. rename[] may also carry personality / descriptions (full replacement arrays) where the old text was local; lines only lists changed keys.",
+    "Only one elder line outside the replacements changes: sea-waves.goodbye (monsoon -> storm). Flagged with elder_line_changed; strip that key when applying.",
+    "catalog_add / catalog_update: validate-roster.js checks rarity/habitat/caution against catalog.json, so these items must be added (cherry blossom lives under flowers in the catalog; a trees-category item is added instead).",
+    "Elder lines kept <= 105 chars (validate-roster.js elder limit), one leading tag each."
+  ],
+  "replace": [
+    {
+      "replaces": "neem-tree",
+      "character": {
+        "id": "weeping-willow",
+        "name": "Granny Willow",
+        "species": "Weeping willow",
+        "category": "trees",
+        "tier": "elder",
+        "rarity": "uncommon",
+        "habitat": [
+          "park",
+          "wetland"
+        ],
+        "caution": false,
+        "personality": "A soft-hearted granny who lets her long green hair hang down to the water. Gentle, a little sleepy, always telling you to sit and rest.",
+        "voice": "Elderly female, soft and slow, warm and a little sleepy, gentle laugh.",
+        "descriptions": [
+          "a large tree with long thin branches hanging straight down to the ground like a green curtain",
+          "a weeping willow leaning over a pond or river, its drooping branches touching the water",
+          "a close-up of long narrow pale green leaves on thin hanging twigs",
+          "a willow tree in autumn with yellow drooping branches swaying in the wind",
+          "a weeping willow at dusk, a dark rounded shape of hanging branches against an orange sky",
+          "standing under a willow tree looking out through a curtain of thin hanging branches",
+          "the thick grey trunk of a willow with deep rough ridged bark beside a lake path",
+          "a willow in the rain, wet drooping branches dripping over a park path",
+          "a willow in winter with bare yellow-brown hanging twigs and no leaves"
+        ],
+        "lines": {
+          "first_meet": "[soft chuckle] I'm Granny Willow. My hair hangs down to the water, so I can watch the fish all day.",
+          "again": "[warmly] There you are, dear. Come sit in my shade. My long hair keeps the wind off your face.",
+          "goodbye": "[sleepy sigh] Off you go, dear. Walk to the water and look for ducks. Tell them Granny says hello."
+        }
+      }
+    },
+    {
+      "replaces": "conocarpus-tree",
+      "character": {
+        "id": "maple-tree",
+        "name": "Blaze",
+        "species": "Maple tree",
+        "category": "trees",
+        "tier": "elder",
+        "rarity": "rare",
+        "habitat": [
+          "park",
+          "street"
+        ],
+        "caution": false,
+        "personality": "A loud autumn show-off who changes his outfit every October and needs everyone to notice. Proud of his star-shaped leaves and his sweet syrup.",
+        "voice": "Adult male, bright and bouncy, confident, a showman's grin in the voice.",
+        "descriptions": [
+          "a tree with a round crown of bright red, orange and yellow leaves in autumn beside a street",
+          "a close-up of a flat maple leaf with five sharp pointed lobes like an open hand, not the rounded wavy lobes of an oak leaf",
+          "a carpet of fallen red and orange star-shaped leaves on grass or a path under a tree",
+          "a maple tree in summer with dense green leaves that each have five pointed lobes",
+          "a pair of winged maple seeds joined together, lying on the ground or hanging from a twig",
+          "looking up into a glowing red and orange maple canopy against a blue sky",
+          "a maple tree at dusk, its red leaves dark under a streetlight",
+          "a wet red maple leaf stuck to a dark pavement after rain",
+          "a row of autumn maples lining a city street with parked cars below"
+        ],
+        "lines": {
+          "first_meet": "[showing off] Hi, I'm Blaze the maple! Every October I swap my green for red. Go on, take my picture.",
+          "again": "[laughs] You're back! Like my new colour? Green, then gold, then red. One tree, three outfits.",
+          "goodbye": "[proudly] Go catch a falling leaf before it lands. From the air only, not my branches. Good luck!"
+        }
+      }
+    },
+    {
+      "replaces": "peepal-tree",
+      "character": {
+        "id": "fir-tree",
+        "name": "Evergreen Eve",
+        "species": "Fir tree",
+        "category": "trees",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "park",
+          "garden"
+        ],
+        "caution": false,
+        "personality": "A cheerful, always-green tree who counts the days to December all year long. Proud of keeping her needles through winter, and very good with snow.",
+        "voice": "Young adult female, bright and cosy, quick and excited, like a kid before a holiday.",
+        "descriptions": [
+          "a tall cone-shaped evergreen tree with dense dark green branches from top to bottom",
+          "a close-up of short flat dark green needles growing all along a twig",
+          "a close-up of brown cones on a dark green needled branch",
+          "an evergreen fir tree standing alone in a park or garden, shaped like a pointed triangle",
+          "a fir tree with snow resting on its layered drooping branches",
+          "an evergreen tree at dusk, a dark pointed triangle shape against the sky",
+          "a fir tree in a front garden wrapped in string lights",
+          "looking up the straight trunk of a fir tree through layers of needled branches",
+          "a row of pointed dark green evergreen trees along a fence"
+        ],
+        "lines": {
+          "first_meet": "[cheerfully] Hi! I'm Evergreen Eve, the fir tree. Summer, winter, rain or snow, I stay green. All year, every year!",
+          "again": "[excited] You came back! Is it December yet? No? Okay. I'll keep waiting. I'm very good at waiting.",
+          "goodbye": "[happy] Look under me for fallen cones, and leave them for the squirrels. Now go find a tree that drops its leaves!"
+        }
+      }
+    },
+    {
+      "replaces": "gulmohar-tree",
+      "character": {
+        "id": "cherry-blossom-tree",
+        "name": "Miss Blossom",
+        "species": "Cherry blossom tree",
+        "category": "trees",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "park",
+          "street"
+        ],
+        "caution": false,
+        "personality": "A dramatic spring princess who blooms for only two weeks and turns them into a party. Excited, a bit breathless, always in a hurry to be seen.",
+        "voice": "Young female, light and bubbly, quick breathy delivery, happy gasps.",
+        "descriptions": [
+          "a tree covered in clouds of small pale pink flowers with no leaves yet in spring",
+          "a close-up of a cluster of pale pink five-petalled blossoms with a small notch at each petal tip",
+          "a path or lawn under a tree covered in fallen pink petals",
+          "a row of pink flowering cherry trees lining a street or park path",
+          "looking up through branches of pink cherry blossom against a blue sky",
+          "a cherry blossom tree at dusk, the pink flowers soft and grey in low light",
+          "a close-up of shiny reddish-brown bark with thin sideways lines on a cherry tree",
+          "wet pink cherry blossoms with raindrops on a branch",
+          "a branch of pink blossom hanging in front of a building, cropped by the frame"
+        ],
+        "lines": {
+          "first_meet": "[gasps] Hello! I'm Miss Blossom, the cherry tree. Quick, look! My pink flowers only stay for about two weeks.",
+          "again": "[giggles] You came back! Some of my petals fell already. It looks like pink snow. Pretty, right?",
+          "goodbye": "[softly] Try to catch a falling petal, but please don't shake my branches. Then go find a bee!"
+        }
+      }
+    },
+    {
+      "replaces": "amaltas-tree",
+      "character": {
+        "id": "silver-birch",
+        "name": "Silvia",
+        "species": "Silver birch",
+        "category": "trees",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "park",
+          "street"
+        ],
+        "caution": false,
+        "personality": "A slim, shy, elegant tree with white bark that peels like paper. Quiet and kind, a little self-conscious about her black spots.",
+        "voice": "Young adult female, soft and shy, light voice, gentle pauses.",
+        "descriptions": [
+          "a slim tree with bright white papery bark marked with black diamond-shaped patches",
+          "a close-up of white birch bark peeling in thin curling strips with dark sideways lines",
+          "a group of thin white-trunked trees standing together in a park",
+          "small triangular green leaves with toothed edges on thin drooping twigs",
+          "a birch tree in autumn with small bright yellow leaves and a white trunk",
+          "a white birch trunk glowing pale at dusk against dark trees",
+          "looking up a white tree trunk with black marks into small fluttering leaves",
+          "a silver birch in winter with bare purple-brown twigs and a white trunk",
+          "thin hanging catkins like small brown tails on birch twigs in spring"
+        ],
+        "lines": {
+          "first_meet": "[shyly] Hi. I'm Silvia, the silver birch. My white bark bounces the hot sun away, like a sun hat.",
+          "again": "[pleased] Oh, you came back. See the black marks on my bark? They're my freckles.",
+          "goodbye": "[quietly] Please don't peel my bark; it's my skin. Now go find a tree with bark that looks nothing like mine."
+        }
+      }
+    },
+    {
+      "replaces": "palm-squirrel",
+      "character": {
+        "id": "grey-squirrel",
+        "name": "Nibbles",
+        "species": "Grey squirrel",
+        "category": "animals",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "park",
+          "lawn"
+        ],
+        "caution": false,
+        "personality": "A fast, chatty, forgetful nut-burier who plants half the park by accident. Always busy, always a little lost.",
+        "voice": "Young, quick and squeaky, chattering, runs words together.",
+        "descriptions": [
+          "a grey squirrel with a big bushy tail sitting up on a lawn holding something in its front paws",
+          "a grey squirrel running head first down a tree trunk",
+          "a close-up of a squirrel's face with dark round eyes, small ears and grey fur with a brown tinge",
+          "a squirrel digging in grass or fallen leaves in a park",
+          "a grey squirrel on a park fence or bench, its fluffy tail curled over its back",
+          "a squirrel high in a tree, half hidden behind a branch with only its tail showing",
+          "a small grey squirrel on a path at dusk, blurry as it runs",
+          "a wet grey squirrel with a thin tail on a rainy lawn",
+          "a plain grey squirrel with a white belly and a bushy tail, unlike a rabbit with long ears"
+        ],
+        "lines": {
+          "first_meet": "[chirpy] Hi hi! I'm Nibbles! I hide nuts all over this park. Then I forget where. Oops! Free trees for you.",
+          "again": "[chatters] You again! Have you seen my nuts? Buried somewhere. Never mind. I have lots of somewheres.",
+          "goodbye": "[chattering] Bye! Please don't feed me or chase me. Go watch the treetops; my cousins are doing jumps up there!"
+        }
+      }
+    },
+    {
+      "replaces": "camel",
+      "character": {
+        "id": "rabbit",
+        "name": "Clover",
+        "species": "Rabbit",
+        "category": "animals",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "park",
+          "field"
+        ],
+        "caution": false,
+        "personality": "A nervous, polite wild rabbit who nibbles the lawn at dawn and dusk. Jumpy, sweet, and very serious about personal space.",
+        "voice": "Young, soft and quick, a little breathless, polite and twitchy.",
+        "descriptions": [
+          "a small brown wild rabbit sitting on a green lawn with its long ears up",
+          "a close-up of a rabbit's face with a twitching nose, large dark eyes on the sides of its head and long ears",
+          "a rabbit seen from behind on grass, showing a fluffy white tail",
+          "a wild rabbit nibbling grass at the edge of a field or park at dusk",
+          "a brown rabbit half hidden in long grass, only its ears and back showing",
+          "a rabbit sitting very still on a path, small in the middle of the photo",
+          "a rabbit in low evening light, a dark rounded shape with upright ears",
+          "a blurry photo of a rabbit hopping away across a lawn",
+          "a round brown animal with long upright ears and a short white tail, unlike a squirrel with a long bushy tail"
+        ],
+        "lines": {
+          "first_meet": "[nose twitching] Oh! Hello. I'm Clover. My eyes are on the sides of my head, so I can see you, and behind me too!",
+          "again": "[thump, thump] Sorry, that was my foot. It's how I say danger. Oh, it's just you. Hello again!",
+          "goodbye": "[nervously] Please don't chase me; my heart beats so fast. Walk away slowly, and look for birds on the grass."
+        }
+      }
+    },
+    {
+      "replaces": "house-gecko",
+      "character": {
+        "id": "ladybird",
+        "name": "Lady Dot",
+        "species": "Ladybird (ladybug)",
+        "category": "small-creatures",
+        "tier": "elder",
+        "rarity": "uncommon",
+        "habitat": [
+          "garden"
+        ],
+        "caution": false,
+        "personality": "A tiny, proud, polite garden hero who eats the bugs that eat your plants. Cheerful, a little vain about her spots.",
+        "voice": "Adult female, small bright voice, polite and proud, quick and cheerful.",
+        "descriptions": [
+          "a close-up of a small round shiny red beetle with black spots on a green leaf",
+          "a ladybird crawling on a plant stem among tiny green aphids",
+          "a tiny red dot on a leaf in a garden, seen from a distance",
+          "a ladybird with its red wing cases open and thin black wings spreading to fly",
+          "an orange or yellow ladybird with black spots on a flower",
+          "a black ladybird with two red spots on a leaf",
+          "a ladybird on a person's sleeve, a fence post or a garden wall",
+          "a ladybird on a wet leaf with raindrops around it",
+          "a small dome-shaped spotted beetle, round and shiny, unlike a long butterfly or a fuzzy bee"
+        ],
+        "lines": {
+          "first_meet": "[proudly] I'm Lady Dot, the ladybird! I eat the tiny bugs that eat your plants. Gardeners love me.",
+          "again": "[cheerful] You came back! Count my spots. No, don't touch, just count. I'll wait right here.",
+          "goodbye": "[giggles] Off I fly! Look under the leaves for my babies. They look like tiny black crocodiles!"
+        }
+      }
+    },
+    {
+      "replaces": "bitter-gourd",
+      "character": {
+        "id": "pumpkin",
+        "name": "Grumpy Gourd",
+        "species": "Pumpkin",
+        "category": "fruits-vegetables",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "cart",
+          "farm"
+        ],
+        "caution": false,
+        "personality": "A big orange grump who dreads October, when everyone wants to carve a face in him. Grumbles a lot, secretly loves the attention.",
+        "voice": "Older male, low and grumbly, slow, big sighs, a hidden smile.",
+        "descriptions": [
+          "a large round orange pumpkin with deep ridges and a thick green-brown stem",
+          "a pile of orange pumpkins of different sizes outside a shop or on a farm stand",
+          "a close-up of a pumpkin's twisted woody stem and ribbed orange skin",
+          "pumpkins sitting in a field among big green leaves and curly vines",
+          "a carved pumpkin with a face cut into it, glowing with a light inside at night",
+          "a pumpkin on a doorstep or porch beside autumn leaves",
+          "a pumpkin at dusk, its orange skin dull and grainy in low light",
+          "a white, green or bumpy pumpkin in a crate among orange ones",
+          "a round ridged orange pumpkin, much bigger than an apple or an orange"
+        ],
+        "lines": {
+          "first_meet": "[grumbles] Grumpy Gourd, the pumpkin. It's October, so everyone wants to cut a face in me. Rude. [sighs]",
+          "again": "[huffs] You again? Fine. At least you didn't bring a knife. I'm a fruit, you know. Nobody believes me.",
+          "goodbye": "[grumbles] Go on, then. Count the pumpkins on the doorsteps. And never eat anything you find out there!"
+        }
+      }
+    },
+    {
+      "replaces": "guava-fruit",
+      "character": {
+        "id": "apple",
+        "name": "Apple Annie",
+        "species": "Apple",
+        "category": "fruits-vegetables",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "cart",
+          "tree"
+        ],
+        "caution": false,
+        "personality": "A crunchy, cheerful, can-do apple who loves fun facts and comes in every colour. Bouncy and a bit of a know-it-all.",
+        "voice": "Young adult female, crisp and cheerful, quick, a crunchy laugh.",
+        "descriptions": [
+          "a shiny round red apple with a short brown stem",
+          "a heap of red, green and yellow apples on a market stall",
+          "red apples hanging on the branches of a small tree among oval green leaves",
+          "a close-up of an apple's short stem sitting in a dip at the top",
+          "a green apple with tiny pale dots on its smooth skin",
+          "fallen apples lying in the grass under an apple tree",
+          "an apple in a hand or on a table, seen from above",
+          "a basket of apples in dim evening light",
+          "a round smooth apple with a dip at the stem, unlike a big ridged orange pumpkin"
+        ],
+        "lines": {
+          "first_meet": "[crunchy laugh] Hi, I'm Apple Annie! A quarter of me is air. Drop me in water and I float like a boat!",
+          "again": "[cheerful] You came back! Red, green or yellow, I'm still me. Same crunch, different coat.",
+          "goodbye": "[happy] If you see an apple tree, wave from the path. Apples belong to their tree. Now go find a bird in one!"
+        }
+      }
+    },
+    {
+      "replaces": "auto-rickshaw",
+      "character": {
+        "id": "yellow-taxi",
+        "name": "Sunny",
+        "species": "Yellow taxi cab",
+        "category": "vehicles",
+        "tier": "elder",
+        "rarity": "common",
+        "habitat": [
+          "street"
+        ],
+        "caution": false,
+        "personality": "A fast-talking, friendly yellow cab who knows every street in town and is always in a hurry. Honks hello to everyone.",
+        "voice": "Middle-aged male, fast and friendly, big-city energy, honking laugh.",
+        "descriptions": [
+          "a bright yellow taxi car with a lit taxi sign on its roof driving on a city street",
+          "a close-up of a yellow taxi's roof sign with the word taxi",
+          "a row of yellow taxis waiting at the curb outside a station or hotel",
+          "the side door of a yellow cab with a black and white checker stripe and a number painted on it",
+          "a yellow taxi at night with its roof light glowing among car headlights",
+          "a blurry yellow taxi moving through traffic at dusk",
+          "a black rounded cab with a yellow taxi sign on the roof",
+          "a yellow taxi seen from behind, cropped by the edge of the photo",
+          "a yellow car with a sign on the roof, unlike a plain family car or a long yellow school bus"
+        ],
+        "lines": {
+          "first_meet": "[honks] Hey! I'm Sunny the taxi. I know every street in town. Snap me from the sidewalk, please!",
+          "again": "[laughs] Back again? Want a ride? No, no. Walking is better. And it's free!",
+          "goodbye": "[revs] Gotta go, someone's waving! You go find a park. Cabs can't drive in there, but you can."
+        }
+      }
+    },
+    {
+      "replaces": "decorated-truck",
+      "character": {
+        "id": "ice-cream-truck",
+        "name": "Sprinkles",
+        "species": "Ice cream truck",
+        "category": "vehicles",
+        "tier": "elder",
+        "rarity": "common",
+        "habitat": [
+          "street",
+          "park"
+        ],
+        "caution": true,
+        "personality": "A sweet, sing-song ice cream truck who plays the same tune all summer. Happy and kind, but very strict about road safety.",
+        "voice": "Adult female, sing-song and sunny, warm, turns firm on safety.",
+        "descriptions": [
+          "a white truck painted with pictures of ice cream cones and lollies, parked by a park",
+          "the side window of an ice cream van with a menu of pictures and prices",
+          "a close-up of a big plastic ice cream cone on the roof of a van",
+          "an ice cream truck parked at the curb with people waiting at the side window",
+          "a pastel pink, blue or white ice cream van on a sunny street",
+          "an ice cream truck at dusk with its lights on",
+          "the back of an ice cream van with colourful stickers and pictures of treats",
+          "a blurry ice cream truck driving slowly down a street",
+          "a van with ice cream pictures and a serving window, unlike a long yellow school bus"
+        ],
+        "lines": {
+          "first_meet": "[hums a jingle] I'm Sprinkles, the ice cream truck! Hear my song? Walk to me. Never run into the road.",
+          "again": "[laughs] You again! Wait on the sidewalk and look both ways. Ice cream can wait. It won't melt that fast.",
+          "goodbye": "[sings softly] Bye! Stay on the sidewalk when you hear my song. Then go find a shady bench."
+        }
+      }
+    },
+    {
+      "replaces": "decorated-bus",
+      "character": {
+        "id": "school-bus",
+        "name": "Big Betty",
+        "species": "Yellow school bus",
+        "category": "vehicles",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "street"
+        ],
+        "caution": false,
+        "personality": "A big, motherly yellow bus who counts every child on and off. Warm, careful, a little fussy, and proud of being impossible to miss.",
+        "voice": "Middle-aged female, warm and motherly, steady pace, gentle honk of a laugh.",
+        "descriptions": [
+          "a long bright yellow school bus with black stripes and rows of windows",
+          "a close-up of the folding red stop sign arm on the side of a yellow school bus",
+          "the front of a yellow school bus with big mirrors and the words school bus",
+          "a yellow school bus parked outside a school building",
+          "a yellow school bus seen from behind with red flashing lights",
+          "a yellow school bus at dusk with its lights on",
+          "a blurry yellow school bus driving down a street",
+          "the side of a yellow bus cropped by the frame, showing windows and black lettering",
+          "a long yellow bus with many windows, much bigger than a yellow taxi car"
+        ],
+        "lines": {
+          "first_meet": "[warmly] Hello, sweetie! I'm Big Betty, the school bus. I'm yellow so everyone sees me, even in the fog.",
+          "again": "[chuckles] Back again? I count every kid who gets on and every kid who gets off. Now I'm counting you too.",
+          "goodbye": "[gentle honk] When my red stop arm comes out, all the cars stop. You stop too. Now go find a playground!"
+        }
+      }
+    },
+    {
+      "replaces": "donkey-cart",
+      "character": {
+        "id": "kick-scooter",
+        "name": "Zip",
+        "species": "E-scooter",
+        "category": "vehicles",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "street",
+          "park"
+        ],
+        "caution": false,
+        "personality": "A zippy, quiet electric scooter who loves going places without smoke. Cheerful and quick, but grumpy about being left lying on the pavement.",
+        "voice": "Young, light and quick, playful, a little electric buzz in the energy.",
+        "descriptions": [
+          "an electric kick scooter with a narrow standing deck, two small wheels and a tall handlebar",
+          "a row of rental e-scooters parked on a sidewalk",
+          "a close-up of a scooter's small black wheel and folding stem",
+          "an e-scooter lying on its side on a pavement",
+          "a green, black or orange rental scooter with a code on the handlebar",
+          "an electric scooter at night with a small headlight on",
+          "a person riding a kick scooter in a bike lane, seen from far away",
+          "a scooter leaning against a wall, cropped by the frame",
+          "a scooter with a flat standing board and no seat or pedals, unlike a bicycle"
+        ],
+        "lines": {
+          "first_meet": "[zippy] Zip! That's me, the e-scooter. No smoke, no noise, just a little hum. Bzzz.",
+          "again": "[giggles] You again! Next time, please stand me up properly. People keep leaving me lying down. Rude!",
+          "goodbye": "[hums] Off I zoom! Riders, wear a helmet. You? Walk to the park and see who's there today."
+        }
+      }
+    },
+    {
+      "replaces": "water-tanker",
+      "character": {
+        "id": "garbage-truck",
+        "name": "Rumble",
+        "species": "Garbage truck",
+        "category": "vehicles",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "street"
+        ],
+        "caution": false,
+        "personality": "A proud early-morning hero who cleans the street before anyone wakes. Loud, cheerful, and a big fan of recycling.",
+        "voice": "Adult male, deep and rumbly, cheerful, booming laugh.",
+        "descriptions": [
+          "a large green, white or orange garbage truck with a big boxy back",
+          "the back of a garbage truck with an open loader and a step for workers",
+          "a garbage truck with a mechanical arm lifting a wheelie bin by the curb",
+          "a recycling truck with a recycling symbol painted on the side",
+          "a garbage truck stopped on a quiet street early in the morning",
+          "a garbage truck at dusk with orange warning lights flashing",
+          "a close-up of the big wheels and side lockers of a garbage truck",
+          "a blurry garbage truck moving down a street, cropped by the frame",
+          "a boxy truck with a big rear loader, unlike an ice cream van or a school bus"
+        ],
+        "lines": {
+          "first_meet": "[rumbles] Morning! I'm Rumble, the garbage truck. I get up before the sun so your street can shine.",
+          "again": "[beep beep] Back again? I'm backing up. Beep, beep. Stand well clear while I work, okay?",
+          "goodbye": "[cheerful] Recycling goes in the blue bin, not the park! Now go for a walk and see how clean the street looks."
+        }
+      }
+    },
+    {
+      "replaces": "mosque-dome",
+      "character": {
+        "id": "clock-tower",
+        "name": "Tock",
+        "species": "Clock tower",
+        "category": "structures",
+        "tier": "elder",
+        "rarity": "uncommon",
+        "habitat": [
+          "square",
+          "market"
+        ],
+        "caution": false,
+        "personality": "A kind, punctual old clock tower who tells the whole town the time and never asks for thanks. Calm, a bit proud of his bell.",
+        "voice": "Older man, deep and calm, slow and even like a ticking clock, warm chuckle.",
+        "descriptions": [
+          "a tall stone or brick tower with a big round clock face near the top in a town square",
+          "a close-up of a large clock face with roman numerals and black hands on a tower",
+          "a clock tower seen from below at a steep angle against the sky",
+          "a clock tower rising above shops and rooftops in a market street",
+          "a clock tower lit up at night, its clock face glowing",
+          "a clock tower at dusk, a dark tall shape with a pale clock face",
+          "the top of a clock tower with a small pointed roof and a bell inside",
+          "a clock tower partly hidden behind trees or buildings, only the clock showing",
+          "a tall tower with a big clock face, not a statue on a stone base or a lighthouse by the sea"
+        ],
+        "lines": {
+          "first_meet": "[chuckles] I'm Tock, the clock tower. I tell the whole town the time, and I never ask for thanks.",
+          "again": "[bell rings] Right on time! Back again, I see. I counted the hours till you came.",
+          "goodbye": "[warmly] Off you go. When my bell rings, stop and count. Then walk one more street than you planned."
+        }
+      }
+    },
+    {
+      "replaces": "minaret",
+      "character": {
+        "id": "statue",
+        "name": "Bronze Bert",
+        "species": "Statue",
+        "category": "structures",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "square",
+          "park"
+        ],
+        "caution": false,
+        "personality": "A bronze man who has held the same pose for a hundred years. Patient, dry and funny, with a nose he can never scratch and a pigeon he can never shoo.",
+        "voice": "Older man, stiff and dry, slow, deadpan humour.",
+        "descriptions": [
+          "a bronze or stone statue of a person standing on a tall stone base in a town square",
+          "a close-up of a statue's face, green-brown metal with streaks",
+          "a pigeon sitting on the head of a statue",
+          "a statue of a person riding a horse on a high stone base",
+          "a stone plaque with carved words on the base of a statue",
+          "a statue seen from below against the sky, an odd angle",
+          "a statue in a park among trees and benches",
+          "a statue at night lit by a spotlight from below",
+          "a statue shaped like a person, not a tall tower with a clock or a red brick building"
+        ],
+        "lines": {
+          "first_meet": "[stiffly] Hello. I'm Bronze Bert. A hundred years in one pose. And my nose itches. Every single day.",
+          "again": "[sighs] You again. A pigeon sat on my head all morning. I can't move, so I just smile.",
+          "goodbye": "[whispers] Go read the words on my stone. Then walk for me. Big steps. I'll be right here. Obviously."
+        }
+      }
+    },
+    {
+      "replaces": "mazar-e-quaid",
+      "character": {
+        "id": "lighthouse",
+        "name": "Beacon Bea",
+        "species": "Lighthouse",
+        "category": "structures",
+        "tier": "common",
+        "rarity": "rare",
+        "habitat": [
+          "coast"
+        ],
+        "caution": false,
+        "personality": "A calm, steady night-shift guard on the edge of the sea. A little lonely, very loyal to ships, and delighted by any visitor.",
+        "voice": "Older female, calm and steady, low and warm, unhurried like the tide.",
+        "descriptions": [
+          "a tall white round tower with a glass room on top standing on rocks by the sea",
+          "a lighthouse with red and white stripes on a cliff above the waves",
+          "a close-up of the glass lamp room and metal railing at the top of a lighthouse",
+          "a lighthouse at dusk with its light beam shining over the water",
+          "a lighthouse at the end of a stone pier or harbour wall",
+          "a lighthouse far away on the coast, small on the horizon",
+          "a lighthouse seen from below at a steep angle against clouds",
+          "a lighthouse in fog or rain, its outline grey and soft",
+          "a tall round tower with a light on top by the sea, not a clock tower in a town square"
+        ],
+        "lines": {
+          "first_meet": "[calm] I'm Beacon Bea, the lighthouse. Every night I spin my light so ships don't hit the rocks.",
+          "again": "[warmly] Back again? It gets lonely out here. Waves, gulls, wind. And now you. Lovely.",
+          "goodbye": "[softly] Stay off the wet rocks; waves are sneaky. Now watch the sea for a while. Can you spot a boat?"
+        }
+      }
+    },
+    {
+      "replaces": "frere-hall",
+      "character": {
+        "id": "town-hall",
+        "name": "Brickley",
+        "species": "Old brick town hall",
+        "category": "structures",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "square",
+          "street"
+        ],
+        "caution": false,
+        "personality": "A proud old red-brick town hall and library who has seen a hundred years of meetings, weddings and borrowed books. Warm, chatty, a little bookish.",
+        "voice": "Older male, warm and rich, a librarian's gentle hush, chuckles often.",
+        "descriptions": [
+          "a large old red brick building with tall arched windows and steps up to a big front door",
+          "a close-up of red brick and pale stone trim around an arched window",
+          "an old brick library or town hall with a small tower or pointed roof on top",
+          "carved stone letters above the door of an old public building",
+          "a grand old brick building on a town square with a flag on the roof",
+          "an old brick town hall at night lit by warm lamps",
+          "the front steps and stone columns of an old library seen from below",
+          "an old brick building cropped by the frame, with trees and parked bikes in front",
+          "a wide old brick building with many windows, not a lighthouse or a single tower"
+        ],
+        "lines": {
+          "first_meet": "[proudly] I'm Brickley, the old town hall. A hundred years of meetings, weddings and books, brick by brick.",
+          "again": "[chuckles] You came back! Upstairs someone is reading. Downstairs someone is getting married. Busy day.",
+          "goodbye": "[warmly] Look up at my roof; there's a stone face carved up there. Then go find a quiet park bench."
+        }
+      }
+    },
+    {
+      "replaces": "electric-pole-wires",
+      "character": {
+        "id": "fire-hydrant",
+        "name": "Rex",
+        "species": "Fire hydrant",
+        "category": "urban",
+        "tier": "elder",
+        "rarity": "common",
+        "habitat": [
+          "street"
+        ],
+        "caution": false,
+        "personality": "A short, stocky, proud helper of firefighters who stands guard on the corner. Brave, a bit bossy, and tired of dogs.",
+        "voice": "Middle-aged male, gruff but kind, short punchy sentences, dry humour.",
+        "descriptions": [
+          "a short red fire hydrant on a sidewalk with round caps on its sides",
+          "a close-up of the bolt on top and the side nozzle cap of a fire hydrant",
+          "a yellow or silver fire hydrant at the edge of a street by the curb",
+          "a fire hydrant with peeling red paint next to a parked car",
+          "a fire hydrant on a sidewalk at night under a streetlight",
+          "a fire hydrant seen from above, small and round on grey concrete",
+          "a fire hydrant in the snow or rain",
+          "a short metal post with caps on its sides, not a tall pole with a red eight-sided sign"
+        ],
+        "lines": {
+          "first_meet": "[proudly] I'm Rex, the fire hydrant. Short, red and full of water. Firefighters' best friend.",
+          "again": "[sighs] You again? Good. You're not a dog. Dogs visit me all day. I wish they wouldn't.",
+          "goodbye": "[chuckles] Never park next to me; fire trucks need the space. Now go look for a red leaf."
+        }
+      }
+    },
+    {
+      "replaces": "wall-chalking",
+      "character": {
+        "id": "graffiti-mural",
+        "name": "Muriel",
+        "species": "Graffiti mural",
+        "category": "urban",
+        "tier": "elder",
+        "rarity": "common",
+        "habitat": [
+          "wall"
+        ],
+        "caution": false,
+        "personality": "A bright, happy wall painting who used to be plain grey concrete and never got over the glow-up. Bubbly, proud, loves hidden details.",
+        "voice": "Young adult female, bright and bubbly, fast and excited, laughs easily.",
+        "descriptions": [
+          "a large colourful painted mural covering the side of a building",
+          "a close-up of spray-painted bubble letters in bright colours on a brick wall",
+          "a painted wall with a big face, animal or flowers in bright colours",
+          "a mural on a wall beside a sidewalk with people walking past, cropped by the frame",
+          "drips and layers of spray paint on a concrete wall",
+          "a colourful mural on a wall at dusk, colours dark and grainy",
+          "a wall of graffiti tags under a bridge or along a railway",
+          "a painted shop shutter covered in colourful street art",
+          "a painted picture on a wall, not a red sign on a pole or a red post box"
+        ],
+        "lines": {
+          "first_meet": "[excited] Hi! I'm Muriel, the wall mural. Someone took a grey wall and gave it a happy face. Me!",
+          "again": "[laughs] Back to see me? Look closer. There's a tiny bird painted in my corner. Did you spot it?",
+          "goodbye": "[cheerful] Go find more walls with art. Look, snap, and never paint a wall without asking!"
+        }
+      }
+    },
+    {
+      "replaces": "tea-stall",
+      "character": {
+        "id": "post-box",
+        "name": "Letterbox Lou",
+        "species": "Post box",
+        "category": "urban",
+        "tier": "common",
+        "rarity": "uncommon",
+        "habitat": [
+          "street"
+        ],
+        "caution": false,
+        "personality": "A patient, old-fashioned post box who loves letters and gets a bit sad about emails. Kind, chatty, always hungry for a postcard.",
+        "voice": "Older female, warm and chatty, gentle sighs, old-fashioned charm.",
+        "descriptions": [
+          "a red round post box standing on a sidewalk with a slot near the top",
+          "a blue metal mailbox with a curved top on a street corner",
+          "a close-up of a letter slot with a small sign showing collection times",
+          "a red post box set into an old brick wall",
+          "a post box at night under a streetlight",
+          "a mailbox on a post at the end of a driveway",
+          "a red post box seen from above, cropped by the frame",
+          "a post box in the rain, its paint shiny and wet",
+          "a box with a letter slot, not a short red fire hydrant with caps"
+        ],
+        "lines": {
+          "first_meet": "[warmly] Hello! I'm Letterbox Lou. Drop a letter in my mouth and I'll send it anywhere in the world.",
+          "again": "[happy sigh] You came back! Nobody writes letters now. Just emails. Want to write one? A letter, I mean.",
+          "goodbye": "[cheerfully] Go send a postcard to someone you love. On the way, look for a bird with a twig in its beak."
+        }
+      }
+    },
+    {
+      "replaces": "rooftop-water-tank",
+      "character": {
+        "id": "stop-sign",
+        "name": "Officer Octo",
+        "species": "Stop sign",
+        "category": "urban",
+        "tier": "common",
+        "rarity": "common",
+        "habitat": [
+          "street"
+        ],
+        "caution": true,
+        "personality": "A strict, bossy, red eight-sided sign with one job and a big heart. Takes road safety very seriously and loves a good, full stop.",
+        "voice": "Adult female, firm and clear like a crossing guard, softens when praising.",
+        "descriptions": [
+          "a red eight-sided sign with the white word stop on a metal pole at a street corner",
+          "a close-up of a red octagon stop sign against the sky",
+          "a stop sign at a crossroads with a white line painted on the road",
+          "a faded or bent stop sign with stickers on it",
+          "a stop sign at night shining in car headlights",
+          "a stop sign seen from below at an odd angle",
+          "a stop sign partly hidden by tree branches",
+          "a red eight-sided sign on a tall pole, not a red post box or a short fire hydrant"
+        ],
+        "lines": {
+          "first_meet": "[firmly] Stop! Okay, good. I'm Officer Octo, the stop sign. Eight sides, one job. Cars stop, you look.",
+          "again": "[strict but kind] You again! Did you stop at the corner? Look left, look right, then cross. Every time.",
+          "goodbye": "[firmly] Take my photo from the sidewalk, never from the road. Then go find a park. No cars there!"
+        }
+      }
+    }
+  ],
+  "rename": [
+    {
+      "id": "black-kite",
+      "species": "Black kite",
+      "lines": {
+        "first_meet": "[shrill whistle] Sir Kite, the black kite. See my forked tail up there? I eat my lunch while flying. Very fancy."
+      }
+    },
+    {
+      "id": "rock-pigeon",
+      "species": "Rock pigeon"
+    },
+    {
+      "id": "rose-ringed-parakeet",
+      "species": "Rose-ringed parakeet"
+    },
+    {
+      "id": "house-sparrow",
+      "species": "House sparrow"
+    },
+    {
+      "id": "cow",
+      "species": "Cow",
+      "personality": "A calm, motherly cow who stands in her field as if she owns time itself. Unhurried and gently wise.",
+      "descriptions": [
+        "a photo of a black and white cow standing in a green field",
+        "a brown cow eating grass behind a wooden or wire fence",
+        "a close-up of a cow's face with a wet nose, big dark eyes and yellow ear tags",
+        "a herd of cows lying down in a meadow",
+        "a cow seen from behind in a field at dusk",
+        "a large cow with a heavy body and short horns or no horns, unlike a small goat with a beard",
+        "a cow by a farm gate, cropped by the frame",
+        "cows standing in a muddy field on a rainy day"
+      ],
+      "lines": {
+        "first_meet": "[moos softly] I'm Mabel. Every cow's nose has its own pattern, like your fingerprint. Mine is lovely, thank you.",
+        "goodbye": "[moos] Go gently. Stay on the path and close every gate behind you. Then find some water; the ducks are waiting."
+      }
+    },
+    {
+      "id": "oleander",
+      "species": "Oleander"
+    },
+    {
+      "id": "hibiscus",
+      "species": "Hibiscus"
+    },
+    {
+      "id": "jasmine",
+      "species": "Jasmine",
+      "personality": "A gentle, dignified lady. Small, but fierce about her fragrance.",
+      "lines": {
+        "first_meet": "[softly] Hello, dear. I'm Miss Jasmine. Small white flowers, big sweet smell. People put me in tea and perfume."
+      }
+    },
+    {
+      "id": "marigold",
+      "species": "Marigold",
+      "personality": "The life of every party: loud, orange, cheerful, and proud that pests hate his smell.",
+      "lines": {
+        "first_meet": "[excited] Marigold Max, at your service! Orange, loud and proud. Farmers plant me because bugs hate my smell."
+      }
+    },
+    {
+      "id": "lawn-grass",
+      "species": "Lawn grass"
+    },
+    {
+      "id": "wall-peepal-sapling",
+      "species": "Fig sapling on a wall",
+      "personality": "A tiny, cheeky rebel sprouting from the cracks of old buildings, planted by a passing bird. Dreams loudly of becoming a giant tree.",
+      "lines": {
+        "again": "[excited] You're back! Look, a new leaf. See the long pointy tip? One day I'll be a giant tree. Sorry, wall.",
+        "goodbye": "[proudly] Go find a big tree and say the little one from the wall says hello. Then look for more cracks with green in them."
+      }
+    },
+    {
+      "id": "crescent-moon",
+      "species": "Crescent moon",
+      "personality": "A thin, shy new moon who is a bit nervous under watching eyes, and quietly proud to grow a little every night.",
+      "lines": {
+        "first_meet": "[shyly] I'm Sliver, the new crescent moon. Thin as a smile. [laughs] Every night I grow a little fatter.",
+        "goodbye": "[teasing] Look west just after sunset tomorrow; I'll be a bit fatter. Can you find the first star near me?"
+      }
+    },
+    {
+      "id": "full-moon",
+      "lines": {
+        "first_meet": "[sings softly] I'm Mistress Moon, round and bright. You only ever see one side of me. The other side is shy."
+      }
+    },
+    {
+      "id": "overcast-sky",
+      "lines": {
+        "again": "[laughs] You came back! Of course. Everyone loves me after a week of hot sun. Did you make the fritters?"
+      }
+    },
+    {
+      "id": "storm-drain-nala",
+      "species": "Storm drain"
+    },
+    {
+      "id": "sea-waves",
+      "elder_line_changed": true,
+      "lines": {
+        "goodbye": "[cheerful] When I'm rough in a storm, admire me from the sand. Now go see what the tide left behind!"
+      }
+    },
+    {
+      "id": "car",
+      "descriptions": [
+        "a four-wheeled passenger car, a sedan or hatchback, parked at the side of a street",
+        "a photo of a car parked on the street",
+        "a grey sedan car parked in front of a house",
+        "a silver car or SUV parked on a driveway or outside a gate",
+        "cars parked in a car park beside a building",
+        "an old dusty or rusty car left parked in a field or empty lot",
+        "a car parked at night under a streetlight, partly in shadow, its paint glinting",
+        "a dark photo of a parked car at dusk, its shape barely visible with a reflection on the windscreen",
+        "a dark car silhouette at night with its headlights or red tail lights glowing",
+        "a close-up of a car headlight, bonnet and front grille with a badge",
+        "a close-up of a car wheel with an alloy rim and a black rubber tyre",
+        "the back of a car with tail lights, a boot lid and a number plate",
+        "a car seen from the side at an odd angle, cropped by the edge of the photo",
+        "the roof, bonnet and windscreen of a car photographed from above, wet with raindrops",
+        "a plain family car in traffic with no sign on its roof, slightly blurry",
+        "a closed metal car body with four doors and no roof sign, smaller than a school bus or a garbage truck"
+      ]
+    },
+    {
+      "id": "flyover",
+      "species": "Overpass",
+      "name": "Overpass Ollie",
+      "personality": "A grand, busy, self-important overpass who secretly loves the quiet world in its shade: parked bikes, skateboarders and nesting pigeons. Runs two worlds at once and wants credit for both.",
+      "lines": {
+        "first_meet": "[proudly] I'm Overpass Ollie. Cars rush over my head all day. Underneath, it's shady and quiet. Two worlds, one bridge."
+      }
+    },
+    {
+      "id": "park-bench",
+      "lines": {
+        "first_meet": "[chuckles] Bella Bench here. Every morning the dog walkers sit on me and chat about weather and football. I know everything.",
+        "again": "[whispers] Sit, sit! I saved your spot. The man with the radio left early today. Knee trouble."
+      }
+    },
+    {
+      "id": "fruits-vegetables-guardian",
+      "lines": {
+        "first_meet": "[calls out like a market trader] Fresh, fresh! I'm Old Barrow, grandpa of every fruit stall. I weigh the fruit, and the people.",
+        "goodbye": "[waves] Go see what the next stall is selling. And fruit trees in gardens? Admire them from the gate."
+      }
+    },
+    {
+      "id": "vehicles-guardian",
+      "personality": "An old roundabout that has watched every taxi, bus and bicycle circle him for sixty years. Unhurried, fond, a little hoarse from the horns; treats road safety like family.",
+      "descriptions": [
+        "a photo of a busy city street with cars, taxis, buses, bikes and scooters sharing the road",
+        "a brightly painted vehicle with pictures and writing on its side parked at the curb",
+        "a close-up photo of a wheel, tyre, headlight or painted body panel of a vehicle",
+        "a vehicle seen from the sidewalk on a city road with shop signs and traffic lights",
+        "a boat, tractor or train seen from a distance against open water, fields or railway tracks",
+        "a vehicle parked at night under a streetlight, partly in shadow",
+        "a close-up of a vehicle headlight, wheel or mudguard, slightly blurry",
+        "a row of parked cars, bikes and scooters along a sidewalk",
+        "a blurry photo of traffic at night with headlights and tail light streaks",
+        "a vehicle seen from behind or above at an odd angle, cropped by the edge of the photo",
+        "a parked vehicle under a cover, only the wheels and outline showing"
+      ],
+      "lines": {
+        "again": "[laughs] Back again? You're a regular now, like the school bus. So, who have you brought me today?",
+        "hint": "[squints] Hmm, can't tell who that is. From the sidewalk, show me the whole vehicle, wheels and all. Or its sign."
+      }
+    },
+    {
+      "id": "structures-guardian",
+      "lines": {
+        "hint": "[hmm] I can't place it yet. Step back and show me the whole thing, top to bottom: the roof, the tower, the arches."
+      }
+    },
+    {
+      "id": "urban-guardian",
+      "personality": "The neighbourhood's oldest resident, who has watched every pole, wall and sign go up on his street. Gruff, unhurried and fond of honking jokes, he would rather admit he can't tell than guess wrong.",
+      "descriptions": [
+        "a photo of a busy city street with poles, traffic lights, shop signs, walls and parked cars",
+        "a close-up photo of a man-made outdoor object made of metal, concrete, plastic or painted brick",
+        "a photo of a street corner with a sign on a pole, a post box, a fire hydrant and a bench",
+        "a photo of a painted wall or shop front by the roadside covered in signs, lettering and street fixtures",
+        "a photo of an asphalt road with painted markings, kerbs, barriers, signs and traffic poles",
+        "a wide photo of a city skyline with towers, poles, billboards and cables against the sky",
+        "a street at night under streetlights with shop signs, poles and parked cars",
+        "a blurry photo of a city object on a busy road",
+        "a man-made object on a street seen at an odd angle, partly cropped"
+      ],
+      "lines": {
+        "first_meet": "[honks twice] I'm Old Corner, the street's oldest resident. Signs, walls, hydrants: all my children. Which one did you find?"
+      }
+    },
+    {
+      "id": "animals-guardian",
+      "descriptions": [
+        "a photo of a dog, cat or other four-legged animal standing or lying on a city street or pavement",
+        "a photo of farm animals such as goats, cows, sheep or horses standing in a field or by a farm gate",
+        "a close-up photo of a furry animal's face showing its eyes, ears, whiskers and nose or muzzle",
+        "a photo of a small mammal such as a squirrel, rabbit or hedgehog on a lawn, tree trunk or garden path",
+        "a photo of chickens or ducks walking and pecking at the ground in a yard or beside a pond",
+        "a photo of a fox or deer at the edge of a park or field, seen from far away",
+        "an animal at night caught in a flash or under a streetlight, eyes glowing",
+        "a blurry photo of an animal walking away, seen from behind",
+        "an animal partly hidden under a parked car or behind a wall",
+        "an animal photographed from above as it lies on the ground"
+      ]
+    }
+  ],
+  "catalog_add": [
+    {
+      "category": "trees",
+      "item": {
+        "id": "fir-tree",
+        "name": "Fir tree",
+        "scientific": "Abies",
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "park",
+          "garden"
+        ],
+        "rarity": "common",
+        "visual_cues": "Cone-shaped evergreen with layered branches of short flat needles; upright cones; often decorated in winter",
+        "lookalikes": [
+          "silver-birch"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "trees",
+      "item": {
+        "id": "cherry-blossom-tree",
+        "name": "Cherry blossom tree",
+        "scientific": "Prunus serrulata",
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "park",
+          "street"
+        ],
+        "rarity": "uncommon",
+        "visual_cues": "Tree covered in pale pink five-petalled blossoms in spring before leaves; shiny banded reddish bark",
+        "lookalikes": [
+          "maple-tree"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "trees",
+      "item": {
+        "id": "silver-birch",
+        "name": "Silver birch",
+        "scientific": "Betula pendula",
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "park",
+          "street"
+        ],
+        "rarity": "uncommon",
+        "visual_cues": "Slim tree with white papery peeling bark with black diamond marks; small triangular toothed leaves; catkins",
+        "lookalikes": [
+          "weeping-willow"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "animals",
+      "item": {
+        "id": "grey-squirrel",
+        "name": "Grey squirrel",
+        "scientific": "Sciurus carolinensis",
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "park",
+          "lawn"
+        ],
+        "rarity": "common",
+        "visual_cues": "Grey rodent with white belly and big bushy tail; runs head first down trunks; digs on lawns",
+        "lookalikes": [
+          "rabbit"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "vehicles",
+      "item": {
+        "id": "yellow-taxi",
+        "name": "Yellow taxi cab",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street"
+        ],
+        "rarity": "common",
+        "visual_cues": "Yellow car with a lit TAXI sign on the roof; checker stripe or number on doors",
+        "lookalikes": [
+          "car",
+          "school-bus"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "vehicles",
+      "item": {
+        "id": "ice-cream-truck",
+        "name": "Ice cream truck",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street",
+          "park"
+        ],
+        "rarity": "common",
+        "visual_cues": "Van painted with ice cream pictures, side serving window, often a plastic cone on the roof",
+        "lookalikes": [
+          "school-bus",
+          "garbage-truck"
+        ],
+        "caution": true
+      }
+    },
+    {
+      "category": "vehicles",
+      "item": {
+        "id": "school-bus",
+        "name": "Yellow school bus",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street"
+        ],
+        "rarity": "common",
+        "visual_cues": "Long yellow bus with black stripes, SCHOOL BUS lettering and a red fold-out stop arm",
+        "lookalikes": [
+          "yellow-taxi"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "vehicles",
+      "item": {
+        "id": "kick-scooter",
+        "name": "E-scooter",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street",
+          "park"
+        ],
+        "rarity": "common",
+        "visual_cues": "Electric kick scooter: narrow standing deck, two small wheels, tall handlebar; often rental",
+        "lookalikes": [
+          "bicycle"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "vehicles",
+      "item": {
+        "id": "garbage-truck",
+        "name": "Garbage truck",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street"
+        ],
+        "rarity": "common",
+        "visual_cues": "Large boxy truck with rear loader or side arm lifting wheelie bins; recycling symbols",
+        "lookalikes": [
+          "ice-cream-truck"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "structures",
+      "item": {
+        "id": "statue",
+        "name": "Statue",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "square",
+          "park"
+        ],
+        "rarity": "common",
+        "visual_cues": "Bronze or stone figure of a person, sometimes on a horse, on a carved base with a plaque",
+        "lookalikes": [
+          "clock-tower"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "structures",
+      "item": {
+        "id": "town-hall",
+        "name": "Old brick town hall",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "square",
+          "street"
+        ],
+        "rarity": "uncommon",
+        "visual_cues": "Old red brick public building with arched windows, stone trim, front steps, small tower or flag",
+        "lookalikes": [
+          "clock-tower"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "urban",
+      "item": {
+        "id": "fire-hydrant",
+        "name": "Fire hydrant",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street"
+        ],
+        "rarity": "common",
+        "visual_cues": "Short red, yellow or silver post with side nozzle caps and a bolt on top, at the curb",
+        "lookalikes": [
+          "post-box"
+        ],
+        "caution": false
+      }
+    },
+    {
+      "category": "urban",
+      "item": {
+        "id": "stop-sign",
+        "name": "Stop sign",
+        "scientific": null,
+        "region": [
+          "global",
+          "temperate"
+        ],
+        "habitat": [
+          "street"
+        ],
+        "rarity": "common",
+        "visual_cues": "Red octagon with white STOP lettering on a metal pole at a junction",
+        "lookalikes": [
+          "post-box"
+        ],
+        "caution": true
+      }
+    }
+  ],
+  "catalog_update": [
+    {
+      "id": "car",
+      "visual_cues": "Four-wheeled passenger car (sedan, hatchback, SUV) parked on a street, in a driveway or car park; headlights, wheels, wing mirrors, number plate; no roof sign",
+      "lookalikes": [
+        "yellow-taxi",
+        "school-bus"
+      ]
+    }
+  ]
+}
