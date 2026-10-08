@@ -7,7 +7,7 @@
 <p align="center">
   <b>Point your phone at something outside. It works out what it is, on the phone, and that thing talks back.</b><br/>
   A tree, a crow, a bus, a puddle, the moon: 78 characters and 13 guardians, 286 captioned voice lines.<br/>
-  After one setup on wifi the app makes <b>zero network requests</b>, and your photos never leave the phone.
+  On a laptop it runs <b>entirely on-device and offline</b>. On phones, a small <b>cloud listener</b> runs the same open model, because it doesn't fit in a phone's GPU memory.
 </p>
 
 <p align="center">
@@ -18,7 +18,8 @@
 <p align="center">
   <img alt="EmbeddingGemma 2" src="https://img.shields.io/badge/model-EmbeddingGemma%202%20(q4)-2f5d3f?style=flat-square" />
   <img alt="Runs on device" src="https://img.shields.io/badge/runs-on%20device%20%C2%B7%20WebGPU-2f5d3f?style=flat-square" />
-  <img alt="Offline" src="https://img.shields.io/badge/after%20setup-0%20network%20requests-b8892b?style=flat-square" />
+  <img alt="Offline" src="https://img.shields.io/badge/on--device%20mode-0%20network%20requests-b8892b?style=flat-square" />
+  <img alt="Cloud listener" src="https://img.shields.io/badge/phones-cloud%20listener%20on%20Modal-2f5d3f?style=flat-square" />
   <img alt="Voices" src="https://img.shields.io/badge/voices-ElevenLabs%20%2B%20Kokoro-b8892b?style=flat-square" />
   <img alt="MIT" src="https://img.shields.io/badge/licence-MIT-555?style=flat-square" />
 </p>
@@ -78,8 +79,10 @@ photo ─► downscale in the browser ─► EmbeddingGemma 2 (q4, WebGPU → wa
 |---|---|
 | **Matching** | [`onnx-community/embeddinggemma-2-ONNX`](https://huggingface.co/onnx-community/embeddinggemma-2-ONNX) at `q4` with [Transformers.js](https://github.com/huggingface/transformers.js). Score per character is the max over its descriptions; hierarchical (category, then species); a guardian answers when the margin is thin. |
 | **Voices** | **ElevenLabs Eleven v4** performs the 26 Elders (78 lines). **Kokoro-82M**, open source, voices the other 208 lines. Both run at build time only; the app never calls either. |
-| **Offline** | The model, vectors, voices, fonts and icons are cached by a service worker. After setup, `allowRemoteModels = false`. The acceptance test goes to airplane mode, reloads and collects a character: **0 network attempts**. |
-| **Privacy** | No backend, no account, no analytics, no third-party scripts. Photos are embedded on the phone; an optional small copy of your latest photo per character stays in IndexedDB for the card. |
+| **Two listeners** | **On-device** (default on laptops): the model runs in the browser on WebGPU. **Cloud** (default on phones): EmbeddingGemma 2 q4 needs more GPU memory than phones give a browser tab, so phones send one shrunk JPEG (~100 KB) to [`listener/`](listener/), the same model and pinned revision on [Modal](https://modal.com), and get the 768 numbers back in ~3 s. Same matches either way (checked on the calibration photos). Switch in About. |
+| **Offline** | In on-device mode the model, vectors, voices, fonts and icons are cached by a service worker and `allowRemoteModels = false`. The acceptance test goes to airplane mode, reloads and collects a character: **0 network attempts**. The cloud listener needs a connection. |
+| **Fast first run** | No setup wall: you're on the trail in under a second while the field kit downloads in the background (37 MB on phones with the cloud listener, ~350 MB with the on-device model). The GPU is only used at the first photo. |
+| **Privacy** | No account, no analytics, no third-party scripts. The cloud listener decodes the photo in memory, returns the numbers and keeps nothing. Matching, voices and your collection always stay on the device; an optional small copy of your latest photo per character stays in IndexedDB for the card. |
 | **Accessibility** | WCAG 2.2 AA target: captions for every line, full keyboard and screen-reader support, `prefers-reduced-motion`, 44 px touch targets, one-handed on a phone. |
 
 ### Calibration
@@ -101,6 +104,7 @@ npm run build     # typecheck + production PWA in dist/
 | [`app/`](app/README.md) | The PWA: Vite, TypeScript, lit-html, Workbox. Tests and end-to-end tools in `app/tools/`. |
 | [`pipeline/`](pipeline/README.md) | Build-time scripts: description embeddings, calibration, voice generation (idempotent, `--dry-run`). |
 | [`data/`](data/CONTRACT.md) | The character roster, the writing spec and the data contract. |
+| [`listener/`](listener/README.md) | The cloud listener: a tiny Node server running the same EmbeddingGemma 2 (`server.mjs`), deployed on Modal (`modal_app.py`). Check it with `npx tsx app/tools/listener-check.ts`. |
 | [`showcase/`](showcase/README.md) | The showcase video, built with Remotion from the real app screens and voice files. |
 | [`demo/`](demo/README.md), [`pitch/`](pitch/) | Screen-recording pipeline and the pitch deck. |
 

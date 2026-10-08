@@ -3,7 +3,7 @@
 import type { InitMessage, ModelSource, WorkerOut } from "./protocol";
 import type { EmbeddingBank, RuntimeCategory, Thresholds } from "../types";
 
-export type Device = "webgpu" | "wasm" | "mock";
+export type Device = "webgpu" | "wasm" | "mock" | "cloud";
 
 export interface LoadInfo {
   device: Device;
@@ -19,7 +19,7 @@ export interface LoadProgress {
 }
 
 export interface Embedder {
-  readonly kind: "model" | "mock";
+  readonly kind: "model" | "mock" | "cloud";
   device: Device;
   load(onProgress?: (p: LoadProgress) => void): Promise<LoadInfo>;
   embed(img: ImageData): Promise<{ vector: Float32Array; ms: number }>;
@@ -155,5 +155,43 @@ export class MockEmbedder implements Embedder {
     const w = this.world();
     return { vector: fx.mockEmbed(img, w.bank, w.categories, w.thresholds), ms: performance.now() - t };
   }
+  dispose() {}
+}
+
+/**
+ * The cloud listener: sends one downscaled JPEG (~100 KB) to the server running the same open model and
+ * gets the 768-number embedding back. Matching, voices and the collection stay on the phone.
+ */
+export class CloudEmbedder implements Embedder {
+  readonly kind = "cloud" as const;
+  device: Device = "cloud";
+  constructor(private url: string) {}
+
+  async load(): Promise<LoadInfo> {
+    const t0 = performance.now();
+    // Wakes the server if it was asleep; harmless if it's awake.
+    const res = await fetch(`${this.url}/health`, { signal: AbortSignal.timeout(60_000) }).catch(() => null);
+    if (!res?.ok) throw new EmbedError("network", "The cloud listener can't be reached. Check your connection.");
+    return { device: "cloud", loadMs: performance.now() - t0, warmupMs: 0 };
+  }
+
+  async embed(img: ImageData) {
+    const t0 = performance.now();
+    const canvas = new OffscreenCanvas(img.width, img.height);
+    canvas.getContext("2d")!.putImageData(img, 0, 0);
+    const jpeg = await canvas.convertToBlob({ type: "image/jpeg", quality: 0.88 });
+    let res: Response;
+    try {
+      res = await fetch(`${this.url}/embed`, { method: "POST", headers: { "Content-Type": "image/jpeg" }, body: jpeg, signal: AbortSignal.timeout(60_000) });
+    } catch {
+      throw new EmbedError("network", navigator.onLine
+        ? "The cloud listener didn't answer. Try again in a moment."
+        : "You're offline, and the cloud listener needs a connection. Switch the listener to “On this phone” in About to listen offline.");
+    }
+    if (!res.ok) throw new EmbedError("unknown", `The cloud listener couldn't read that photo (${res.status}).`);
+    const { vector } = (await res.json()) as { vector: number[] };
+    return { vector: Float32Array.from(vector), ms: performance.now() - t0 };
+  }
+
   dispose() {}
 }

@@ -41,6 +41,12 @@ export const MODEL_FILES = {
   ],
 } as const;
 
+/**
+ * Cloud listener (listener/ in the repo, on Modal): the same EmbeddingGemma 2 q4 model on a server, for phones
+ * that can't hold it on their GPU. Receives one downscaled JPEG, returns 768 numbers, stores nothing.
+ */
+export const LISTENER_URL = "https://mohibazhar16--votw-listener-listener.modal.run";
+
 export const ORT_FILES = ["ort-wasm-simd-threaded.asyncify.mjs", "ort-wasm-simd-threaded.asyncify.wasm"] as const;
 
 /** Longest side of the photo we hand to the model. The processor resizes anyway; this bounds memory. */

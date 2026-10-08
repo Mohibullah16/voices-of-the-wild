@@ -8,7 +8,7 @@ import {
   downloadKit, downloadModelFiles, hasWebGPU, KitError, modelCached, modelIsSelfHosted, planKit, requestPersistence, type KitProgress,
 } from "../firstrun";
 import { saveSettings } from "../store";
-import { wantsMock } from "./embedder";
+import { useCloud, wantsMock } from "./embedder";
 import { announce, state, toast, update } from "./state";
 
 export type KitStatus =
@@ -51,17 +51,18 @@ async function download() {
   const data = state.data!;
   const m = data.roster.model;
   const mock = wantsMock();
+  const cloud = useCloud();
   void requestPersistence();
   const phone = matchMedia("(pointer: coarse)").matches;
-  const webgpu = mock || (await hasWebGPU());
+  const webgpu = mock || cloud || (await hasWebGPU());
   // Without WebGPU only the full-precision model runs (~1.8 GB in memory): fine on a laptop, not on a phone.
   if (!webgpu && phone) {
     throw new KitError("webgpu", "This browser didn’t offer the phone’s graphics chip (WebGPU). Update Chrome and try again.");
   }
-  const selfHosted = !mock && (await modelIsSelfHosted(m.id || MODEL_ID));
+  const selfHosted = !mock && !cloud && (await modelIsSelfHosted(m.id || MODEL_ID));
   const id = m.id || MODEL_ID;
   const rev = m.revision ?? MODEL_REVISION;
-  const model = mock || selfHosted ? [] : MODEL_FILES[webgpu ? "webgpu" : "cpu"].map((f) => ({
+  const model = mock || cloud || selfHosted ? [] : MODEL_FILES[webgpu ? "webgpu" : "cpu"].map((f) => ({
     url: `https://huggingface.co/${id}/resolve/${encodeURIComponent(rev)}/${f.file}`,
     bytes: f.bytes,
   }));
@@ -102,8 +103,13 @@ async function download() {
   state.kit = { phase: "done" };
   run = null;
   paint(true);
-  toast("Ready for offline. Airplane mode is fine now.");
-  announce("Everything is on this phone. You can go offline now.");
+  if (cloud) {
+    toast("Ready. Photos are read by the cloud listener.");
+    announce("Ready. Voices are on this phone; photos are read by the cloud listener.");
+  } else {
+    toast("Ready for offline. Airplane mode is fine now.");
+    announce("Everything is on this phone. You can go offline now.");
+  }
 }
 
 /** Percent for display, 0-99 while running. */

@@ -14,7 +14,7 @@ import type { LineKey, Owner } from "../types";
 import { card } from "./card";
 import { icon } from "./icons";
 import { voiceLine } from "./voice";
-import { ensureEmbedder, releaseEmbedder } from "../app/embedder";
+import { ensureEmbedder, releaseEmbedder, useCloud } from "../app/embedder";
 import { kitPercent, startKit } from "../app/kit";
 import { allowMotion, gameEncounter, primeMotion, releaseMoments, startWalk, stopWalk } from "../app/game";
 import { questProgress } from "../game/quests";
@@ -77,7 +77,7 @@ async function embedPhoto(image: ImageData) {
   try {
     return await ensureEmbedder().embed(image);
   } catch (err) {
-    if (!gpuLost(err)) throw err;
+    if (useCloud() || !gpuLost(err)) throw err;
     console.warn("[listen] GPU lost, restarting the listener", err);
     releaseEmbedder();
     update((s) => { if (s.listen.kind === "stirring") s.listen = { ...s.listen, waking: true }; });
@@ -93,7 +93,7 @@ export async function runEncounter(image: ImageData, preview: string, sample = f
   focusSoon("stir-title");
   try {
     // A photo taken while the listener is still downloading waits for it (the stirring screen shows progress).
-    if (state.kit.phase !== "done") await startKit();
+    if (state.kit.phase !== "done" && !useCloud()) await startKit();
     ensureEmbedder();
     const t0 = performance.now();
     const { vector, ms } = await embedPhoto(image);
@@ -285,8 +285,9 @@ function stirring(l: Extract<ListenState, { kind: "stirring" }>) {
     </div>
     <div>
       <h2 class="display-3" id="stir-title" tabindex="-1">Something is stirring…</h2>
-      <p>${state.kit.phase === "running"
+      <p>${state.kit.phase === "running" && !useCloud()
         ? html`Still downloading the listener: <b class="num">${kitPercent()}%</b>. It answers as soon as it’s here.`
+        : useCloud() ? (l.waking ? "Waking the cloud listener…" : "Reading it with EmbeddingGemma 2 in the cloud.")
         : l.waking ? "Waking the listener… The first photo takes longest." : "On this phone. Nowhere else."}</p>
     </div>
   </section>`;

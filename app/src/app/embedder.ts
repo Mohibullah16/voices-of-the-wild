@@ -1,6 +1,6 @@
 // Owns the single embedder instance for the app's lifetime.
-import { BASE, MODEL_ID, MODEL_REVISION } from "../config";
-import { MockEmbedder, ModelEmbedder, type Embedder } from "../embed/client";
+import { BASE, LISTENER_URL, MODEL_ID, MODEL_REVISION } from "../config";
+import { CloudEmbedder, MockEmbedder, ModelEmbedder, type Embedder } from "../embed/client";
 import type { ModelSource } from "../embed/protocol";
 import { state, update } from "./state";
 
@@ -11,8 +11,16 @@ export const wantsMock = () => {
   return q.has("mock") || (state.data?.source === "fixture" && q.get("model") !== "real");
 };
 
+/** Phones read photos in the cloud by default (EmbeddingGemma 2 doesn't fit in a phone's GPU memory); laptops on-device. */
+export function useCloud(): boolean {
+  const pref = state.settings.listener ?? "auto";
+  if (pref !== "auto") return pref === "cloud";
+  return matchMedia("(pointer: coarse)").matches;
+}
+
 export function createEmbedder(source: ModelSource): Embedder {
   if (wantsMock()) return new MockEmbedder(() => ({ bank: state.data!.bank, categories: state.data!.categories, thresholds: state.data!.roster.thresholds }));
+  if (useCloud()) return new CloudEmbedder(LISTENER_URL);
   const m = state.data!.roster.model;
   const base = new URL(BASE, location.href).href;
   const opts = ModelEmbedder.options(base, m.id || MODEL_ID, m.revision ?? MODEL_REVISION, m.dtype || "q4", source);

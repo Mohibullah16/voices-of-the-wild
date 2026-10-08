@@ -4,7 +4,7 @@ import { html, nothing } from "lit-html";
 import { unsafeSVG } from "lit-html/directives/unsafe-svg.js";
 import { CATEGORY_IDS, emblemSvg, SHORT_NAME } from "../art/emblems";
 import { markSvg } from "../art/logo";
-import { wantsMock } from "../app/embedder";
+import { useCloud, wantsMock } from "../app/embedder";
 import { startKit } from "../app/kit";
 import { state, update } from "../app/state";
 import { audioPaths } from "../data";
@@ -24,7 +24,9 @@ async function runChecks() {
   const data = state.data!;
   const files = planKit(audioPaths(data.roster), data.source === "real");
   const [webgpu, storage] = await Promise.all([hasWebGPU(), storageInfo()]);
-  step = { kind: "intro", webgpu, storage, need: estimateBytes(files, webgpu || wantsMock()), phone: matchMedia("(pointer: coarse)").matches };
+  const cloud = useCloud();
+  const need = cloud ? files.reduce((n, f) => n + (f.group === "voices" ? 30_000 : f.group === "runtime" ? 13_500_000 : 450_000), 0) : estimateBytes(files, webgpu || wantsMock());
+  step = { kind: "intro", webgpu: webgpu || cloud, storage, need, phone: matchMedia("(pointer: coarse)").matches };
   update();
 }
 

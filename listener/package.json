@@ -1,0 +1,8 @@
+{
+  "name": "votw-listener",
+  "private": true,
+  "type": "module",
+  "description": "Cloud listener for Voices of the Wild: EmbeddingGemma 2 photo embeddings for phones that can't run it on their GPU.",
+  "scripts": { "start": "node server.mjs" },
+  "dependencies": { "@huggingface/transformers": "^4.3.1" }
+}
