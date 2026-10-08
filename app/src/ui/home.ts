@@ -12,6 +12,7 @@ import { streakView } from "../game/streak";
 import { dayKey } from "../game/time";
 import { icon, type IconName } from "./icons";
 import { kitPercent, startKit } from "../app/kit";
+import { useCloud } from "../app/embedder";
 import { mb } from "../firstrun";
 
 const QUEST_ICON: Partial<Record<Quest["kind"], IconName>> = { new: "star", walk: "footprints" };
@@ -56,7 +57,7 @@ export function kitBanner() {
       <span class="kit-chip-row">${icon("download")}<span><b>Getting the listener ready</b> <span class="num">${pct}%</span></span>
         <span class="num muted small">${mb(k.loaded)} of ${mb(k.total)}</span></span>
       <span class="kit-bar" aria-hidden="true"><i style="transform: scaleX(${pct / 100})"></i></span>
-      <span class="small muted">Look around meanwhile.</span>
+      <span class="small muted">Look around meanwhile.${useCloud() ? "" : " Once it’s done, it works offline."}</span>
     </div>`;
   }
   if (k.phase === "error") {

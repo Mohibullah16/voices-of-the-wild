@@ -103,7 +103,7 @@ export function aboutView() {
 
     <section aria-labelledby="h-device">
       <h2 id="h-device">On this phone, not in a cloud</h2>
-      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this phone” below to keep every photo on the device. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
+      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this phone” below to keep every photo on the device and use the app offline. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
       <ol class="flow">
         <li><p><strong>Category first.</strong> Is it a tree, a bird, a bicycle? If nothing clears the bar, nobody answers.</p></li>
         <li><p><strong>Then the species.</strong> If one character clearly wins inside that category, it speaks.</p></li>
@@ -162,7 +162,7 @@ cosine against precomputed description vectors, best per character
       <div class="setting">
         <div class="setting-label" id="listener-label">Listener<span>${useCloud()
           ? "Cloud: your shrunk photo is read by the same open model on a server, then discarded. Fast on any phone; needs a connection."
-          : "On this phone: nothing leaves the device, but it needs a strong graphics chip and a ~320 MB download."}</span></div>
+          : "On this phone: nothing leaves the device and it works offline, even on a trail with no signal. Needs a strong graphics chip and a ~320 MB download."}</span></div>
         <div class="segmented" role="radiogroup" aria-labelledby="listener-label">
           ${(["auto", "device", "cloud"] as const).map((t) => html`<label><input type="radio" name="listener" .checked=${(state.settings.listener ?? "auto") === t} @change=${() => setListener(t)} /><span>${t === "auto" ? "Automatic" : t === "device" ? "On this phone" : "Cloud"}</span></label>`)}
         </div>

@@ -107,8 +107,8 @@ async function download() {
     toast("Ready. Photos are read by the cloud listener.");
     announce("Ready. Voices are on this phone; photos are read by the cloud listener.");
   } else {
-    toast("Ready. Everything is downloaded.");
-    announce("Ready. Everything is downloaded.");
+    toast("Ready for offline. Airplane mode is fine now.");
+    announce("Everything is on this device. You can go offline now.");
   }
 }
 
