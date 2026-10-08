@@ -9,13 +9,14 @@ import { loadEmbedder, type Embedder } from "./model.ts";
 import { writeRuntime, type Thresholds } from "./runtime.ts";
 import { buildBank, writeBank, type Bank } from "./textbank.ts";
 
-// Utility weights: a confidently wrong name is much worse than a guardian hint.
+// Utility weights. It's a forgiving game classifier: "nobody" on a real outdoor thing is as bad as a
+// stray guardian, a wrong name still costs more than a hint, but not so much that we hide right names.
 const U = {
   species_ok: 1,
-  guardian_right_cat: 0.25,
+  guardian_right_cat: 0.4,
   guardian_wrong_cat: -0.5,
-  species_wrong: -3,
-  nobody_on_positive: -0.5,
+  species_wrong: -1.5,
+  nobody_on_positive: -1,
   nobody_on_negative: 1,
   guardian_on_negative: -1,
   species_on_negative: -3,

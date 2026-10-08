@@ -33,6 +33,8 @@ export interface RosterOwner {
   personality?: string;
   voice?: string;
   descriptions: string[];
+  /** Optional title for the embedding prefix instead of species/name (build-time only). */
+  match_title?: string;
   lines: Partial<Record<LineKey, string>>;
 }
 export interface RosterCategory {

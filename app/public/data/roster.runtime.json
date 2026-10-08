@@ -12,37 +12,37 @@
   },
   "thresholds": {
     "category": {
-      "trees": 0.6411,
-      "birds": 0.6411,
-      "animals": 0.6411,
-      "small-creatures": 0.6411,
-      "flowers": 0.6411,
-      "plants": 0.6411,
-      "fruits-vegetables": 0.6411,
-      "ground": 0.6411,
-      "sky": 0.6411,
-      "water": 0.6411,
-      "vehicles": 0.6411,
-      "structures": 0.6411,
-      "urban": 0.6411
+      "trees": 0.6394,
+      "birds": 0.6394,
+      "animals": 0.6394,
+      "small-creatures": 0.6394,
+      "flowers": 0.6394,
+      "plants": 0.6394,
+      "fruits-vegetables": 0.6394,
+      "ground": 0.6394,
+      "sky": 0.6394,
+      "water": 0.6394,
+      "vehicles": 0.6394,
+      "structures": 0.6394,
+      "urban": 0.6394
     },
     "species": {
-      "trees": 0.6931,
-      "birds": 0.6817,
-      "animals": 0.6643,
-      "small-creatures": 0.6775,
-      "flowers": 0.6942,
-      "plants": 0.7123,
-      "fruits-vegetables": 0.6862,
-      "ground": 0.6922,
-      "sky": 0.6917,
-      "water": 0.6634,
-      "vehicles": 0.6723,
-      "structures": 0.6814,
-      "urban": 0.6563
+      "trees": 0.6974,
+      "birds": 0.6788,
+      "animals": 0.6568,
+      "small-creatures": 0.673,
+      "flowers": 0.6882,
+      "plants": 0.7035,
+      "fruits-vegetables": 0.6788,
+      "ground": 0.6479,
+      "sky": 0.6625,
+      "water": 0.656,
+      "vehicles": 0.6687,
+      "structures": 0.6688,
+      "urban": 0.6488
     },
     "margin": 0.01,
-    "global_min": 0.6411
+    "global_min": 0.6394
   },
   "credits": {
     "voices": "ElevenLabs",
@@ -52,7 +52,7 @@
     "calibration_photos": "Wikimedia Commons contributors (CC0 / public domain / CC BY / CC BY-SA); used only for threshold calibration, not shipped.",
     "lines": {
       "elevenlabs": 84,
-      "kokoro": 205
+      "kokoro": 211
     }
   },
   "categories": [
@@ -325,6 +325,45 @@
               "src": "audio/amaltas-tree/goodbye.b8488cf1.mp3",
               "engine": "kokoro",
               "duration": 5.88
+            }
+          }
+        },
+        {
+          "id": "oak-tree",
+          "name": "Old Oak",
+          "species": "Oak tree",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A huge, slow, kindly old tree who has stood in the same spot for two centuries and lives vicariously through anyone who can walk.",
+          "voice": "Elderly male, deep, slow and booming, warm and amused, gentle rumble.",
+          "lines": {
+            "first_meet": {
+              "text": "[warm, booming] Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+              "caption": "Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+              "src": "audio/oak-tree/first_meet.9ee01fcd.mp3",
+              "engine": "kokoro",
+              "duration": 7.9
+            },
+            "again": {
+              "text": "[pleased] You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+              "caption": "You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+              "src": "audio/oak-tree/again.36246302.mp3",
+              "engine": "kokoro",
+              "duration": 8.93
+            },
+            "goodbye": {
+              "text": "[rustling] Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it.",
+              "caption": "Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it.",
+              "src": "audio/oak-tree/goodbye.733f39f0.mp3",
+              "engine": "kokoro",
+              "duration": 7.33
             }
           }
         }
@@ -3060,6 +3099,43 @@
               "src": "audio/bicycle/goodbye.cd5b35c1.mp3",
               "engine": "elevenlabs",
               "duration": 6.48
+            }
+          }
+        },
+        {
+          "id": "car",
+          "name": "Parker",
+          "species": "Car",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A parked family car who sits still 23 hours a day and is openly jealous of anyone with legs.",
+          "voice": "Adult, gender-neutral, laid-back and drowsy, dry humour, slight yawn.",
+          "lines": {
+            "first_meet": {
+              "text": "[yawns] Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+              "caption": "Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+              "src": "audio/car/first_meet.76aa26d0.mp3",
+              "engine": "kokoro",
+              "duration": 5.9
+            },
+            "again": {
+              "text": "[dryly] Still parked. Still jealous of your legs. How many steps today?",
+              "caption": "Still parked. Still jealous of your legs. How many steps today?",
+              "src": "audio/car/again.8c8aa2af.mp3",
+              "engine": "kokoro",
+              "duration": 4
+            },
+            "goodbye": {
+              "text": "[sighs] Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up.",
+              "caption": "Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up.",
+              "src": "audio/car/goodbye.5c9f9f07.mp3",
+              "engine": "kokoro",
+              "duration": 5.43
             }
           }
         }

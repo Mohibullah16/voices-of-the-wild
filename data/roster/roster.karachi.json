@@ -187,6 +187,40 @@
             "again": "[delighted] You came back! The gold never stops, darling. Well, until the rains.",
             "goodbye": "[gently] Go on. Look for yellow under your feet; my petals carpet the road. Then see who else blooms in the heat."
           }
+        },
+        {
+          "id": "oak-tree",
+          "name": "Old Oak",
+          "species": "Oak tree",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A huge, slow, kindly old tree who has stood in the same spot for two centuries and lives vicariously through anyone who can walk.",
+          "voice": "Elderly male, deep, slow and booming, warm and amused, gentle rumble.",
+          "descriptions": [
+            "an oak tree with a broad rounded crown of lobed leaves in a temperate park",
+            "a close-up of lobed oak leaves with wavy rounded edges on a twig",
+            "a close-up of acorns sitting in little scaly cups among lobed green leaves",
+            "a close-up of a broad maple or plane leaf with pointed lobes like an open hand",
+            "an oak or maple crown turned yellow, orange and red in autumn",
+            "a bare oak or maple in winter with a tangle of grey branches and no leaves",
+            "looking up a thick oak trunk into a canopy of lobed leaves",
+            "a close-up of thick grey oak bark split into deep vertical ridges",
+            "a plane tree with mottled peeling bark in patches of cream, grey and olive",
+            "an oak tree at dusk under a streetlight, lobed leaves lit from below",
+            "a big maple or plane tree on a temperate city street, partly cropped, with lobed leaves"
+          ],
+          "lines": {
+            "first_meet": "[warm, booming] Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+            "again": "[pleased] You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+            "goodbye": "[rustling] Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it."
+          }
         }
       ]
     },
@@ -2012,6 +2046,44 @@
             "again": "[dripping] You again. See that drip? Every drop counts in this city. Photo from the footpath; I'm reversing.",
             "goodbye": "[groans] Long queue at the hydrant. Go find water that flows freely: the sea, a fountain, the rain. Then think of me."
           }
+        },
+        {
+          "id": "car",
+          "name": "Parker",
+          "species": "Car",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A parked family car who sits still 23 hours a day and is openly jealous of anyone with legs.",
+          "voice": "Adult, gender-neutral, laid-back and drowsy, dry humour, slight yawn.",
+          "descriptions": [
+            "a four-wheeled passenger car, a sedan or hatchback, parked at the side of a street",
+            "a photo of a car parked on the street",
+            "a grey sedan car parked in front of a house",
+            "a silver car or SUV parked on a driveway or outside a gate",
+            "cars parked in a car park beside a building",
+            "an old dusty or rusty car left parked in a field or empty lot",
+            "a car parked at night under a streetlight, partly in shadow, its paint glinting",
+            "a dark photo of a parked car at dusk, its shape barely visible with a reflection on the windscreen",
+            "a dark car silhouette at night with its headlights or red tail lights glowing",
+            "a close-up of a car headlight, bonnet and front grille with a badge",
+            "a close-up of a car wheel with an alloy rim and a black rubber tyre",
+            "the back of a car with tail lights, a boot lid and a number plate",
+            "a car seen from the side at an odd angle, cropped by the edge of the photo",
+            "the roof, bonnet and windscreen of a car photographed from above, wet with raindrops",
+            "a taxi or small car in traffic, slightly blurry",
+            "a closed metal car body with four doors and glass windows, unlike an open three-wheeled rickshaw, a minibus or a painted truck"
+          ],
+          "lines": {
+            "first_meet": "[yawns] Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+            "again": "[dryly] Still parked. Still jealous of your legs. How many steps today?",
+            "goodbye": "[sighs] Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up."
+          },
+          "match_title": "none"
         }
       ]
     },

@@ -852,10 +852,11 @@
             "temperate"
           ],
           "habitat": [
+            "street",
             "park",
-            "forest"
+            "village"
           ],
-          "rarity": "rare",
+          "rarity": "common",
           "visual_cues": "Broad sturdy tree with deeply furrowed bark; lobed wavy-edged leaves; acorns sitting in little scaly cups",
           "lookalikes": [
             "maple-tree"
@@ -4450,6 +4451,24 @@
           "rarity": "uncommon",
           "visual_cues": "Long chain of passenger coaches, often green or maroon, pulled by a diesel locomotive along the tracks",
           "lookalikes": [],
+          "caution": false
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "scientific": null,
+          "region": [
+            "global"
+          ],
+          "habitat": [
+            "street"
+          ],
+          "rarity": "common",
+          "visual_cues": "Four-wheeled passenger car (sedan, hatchback, SUV, taxi) parked on a street, in a driveway or car park; headlights, wheels, wing mirrors, number plate",
+          "lookalikes": [
+            "auto-rickshaw",
+            "decorated-bus"
+          ],
           "caution": false
         }
       ]

@@ -19,7 +19,7 @@
           "tier": "elder",            // "elder" = ElevenLabs v4 voice, "common" = Kokoro voice
           "rarity": "common", "habitat": ["street","park"], "caution": false,
           "personality": "...", "voice": "casting note",
-          "descriptions": ["3-5 visual descriptions used for embedding"],
+          "descriptions": ["3-16 visual descriptions used for embedding, including realistic phone shots (low light, close-up of a part, odd angle, cropped)"],
           "lines": { "first_meet": "...", "again": "...", "goodbye": "..." }   // may contain [v4 tags]
         }
       ]

@@ -30,7 +30,9 @@ export async function buildBank(roster: Roster, prefixName: string, embedder: ()
   const index: BankRow[] = [];
   const texts: string[] = [];
   for (const { owner, category, guardian } of owners(roster)) {
-    const title = guardian ? roster.categories.find((c) => c.id === category)!.name : owner.species ?? owner.name;
+    // `match_title` overrides the title for owners whose species name is too short to anchor the text
+    // (e.g. "Car" scored ~0.05 lower than "title: none" on real car photos).
+    const title = owner.match_title ?? (guardian ? roster.categories.find((c) => c.id === category)!.name : owner.species ?? owner.name);
     for (const d of owner.descriptions) {
       index.push({ row: index.length, owner: owner.id, category, guardian });
       texts.push(fmt(d, title));

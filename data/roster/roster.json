@@ -15,7 +15,13 @@
           "a close-up photo of the bark of a thick tree trunk, rough or smooth, grey or brown",
           "a row of tall trees lining a city road or median, with cars and walls nearby",
           "a palm tree with a tall bare trunk and a crown of long fronds against the sky",
-          "a flowering tree with branches covered in coloured blossoms and fallen petals on the ground beneath"
+          "a flowering tree with branches covered in coloured blossoms and fallen petals on the ground beneath",
+          "a tree at night under a streetlight, its leaves lit orange and the trunk in shadow",
+          "a dark silhouette of a tree against a dusk sky",
+          "looking straight up a tree trunk into the branches and leaves, an odd angle",
+          "a blurry close-up of leaves on a branch, out of focus",
+          "a tree trunk cropped by the frame, with a wall, car or motorbike parked beside it",
+          "wet leaves and dark bark on a rainy day"
         ],
         "lines": {
           "first_meet": "[slow, warm] Hmm, a visitor. I'm Old Mother Shade, the cool patch on every street you've walked. Come meet my trees, one by one.",
@@ -45,7 +51,9 @@
             "a close-up of a long leaf with a single row of narrow curved sickle-shaped leaflets with saw-toothed edges on each side",
             "a close-up of drooping loose sprays of tiny white star-shaped flowers among narrow toothed curved leaflets",
             "a close-up of bunches of small smooth olive-shaped green and yellow fruits hanging among narrow serrated leaflets",
-            "a close-up of dark grey-brown bark with deep cracked furrows and rough scaly ridges"
+            "a close-up of dark grey-brown bark with deep cracked furrows and rough scaly ridges",
+            "a neem tree at dusk under a streetlight, its narrow toothed leaflets in shadow",
+            "looking up into a neem canopy of feathery drooping leaves against a pale sky"
           ],
           "lines": {
             "first_meet": "[cackles] I'm Granny Neem, everyone's granny. Bitter as the truth, and my leaves keep bugs out of quilts.",
@@ -72,7 +80,9 @@
             "a long row of dense upright bushy trees with small shiny leaves planted along a road median",
             "a close-up of small narrow lance-shaped shiny leaves, dark green or silvery grey, crowded on short twigs",
             "a close-up of clusters of tiny round brown button-like cone fruits among small pointed leaves",
-            "a dense clipped hedge or column of small glossy pointed leaves beside a busy city road"
+            "a dense clipped hedge or column of small glossy pointed leaves beside a busy city road",
+            "a row of conocarpus trees along a road at night, dark and dense under streetlights",
+            "a blurry close-up of small shiny pointed leaves on a conocarpus branch"
           ],
           "lines": {
             "first_meet": "[defensive] Hi, I'm Kono, short for Conocarpus. Yes, the median tree. Now everyone blames me for sneezes.",
@@ -100,7 +110,9 @@
             "a close-up of a heart-shaped glossy leaf ending in a long thin drawn-out tail tip, with pale veins",
             "the base of a large tree trunk wrapped with red and yellow threads, with small clay lamps or a tiny shrine",
             "thin papery heart-shaped leaves with long tails dangling on long flexible stalks, trembling in the wind",
-            "a close-up of small round green and purple figs in pairs along a twig among long-tailed heart-shaped leaves"
+            "a close-up of small round green and purple figs in pairs along a twig among long-tailed heart-shaped leaves",
+            "a big peepal tree at dusk, its heart-shaped leaves dark against the sky",
+            "looking up a smooth grey peepal trunk into the branches from below"
           ],
           "lines": {
             "first_meet": "[slow, amused] Grandpa Fig, the sacred fig. My leaves flutter in still air. People say ghosts live in me. [whispers] Only bats.",
@@ -127,7 +139,9 @@
             "a close-up of a large red-orange five-petal flower with one upright petal streaked white and yellow, and long red stamens",
             "a close-up of fine fern-like twice-divided leaves made of hundreds of tiny paired leaflets",
             "long flat dark brown woody pods shaped like swords, up to arm length, hanging from the branches",
-            "a road carpeted with fallen scarlet petals under a flat-topped spreading tree"
+            "a road carpeted with fallen scarlet petals under a flat-topped spreading tree",
+            "a gulmohar tree at dusk, its red-orange canopy dimmed against a darker sky",
+            "fallen red gulmohar petals on a road or car bonnet under the tree"
           ],
           "lines": {
             "first_meet": "[dramatic] I'm the Scarlet Queen, darling. When the summer hits forty degrees, I blaze. [laughs] I'm from far away, actually.",
@@ -154,7 +168,9 @@
             "a tall slender palm with a grey ringed trunk curving or leaning, topped by long drooping bright green fronds",
             "a close-up of a cluster of large round green or brown coconuts tucked just below a palm crown",
             "a palm crown of long arching glossy bright green feather fronds with soft drooping leaflets against a blue sky",
-            "a row of leaning palm trees beside a beach or seafront promenade"
+            "a row of leaning palm trees beside a beach or seafront promenade",
+            "a coconut palm at night under a streetlight, its feathery fronds and coconuts lit from below",
+            "looking straight up a palm trunk to the crown of fronds and coconuts"
           ],
           "lines": {
             "first_meet": "[laid-back] Hey, I'm Coco Dude, the coconut palm. My nuts float across oceans and sprout on new beaches. Travel hack. [laughs]",
@@ -180,12 +196,48 @@
             "a medium tree draped in long hanging chains of bright yellow flowers like chandeliers",
             "a close-up of a drooping cluster of cup-shaped bright yellow five-petal flowers on a long hanging stalk",
             "long straight dark brown to black cylindrical stick-like pods hanging from bare branches",
-            "a close-up of pinnate leaves with a few pairs of large smooth oval leaflets"
+            "a close-up of pinnate leaves with a few pairs of large smooth oval leaflets",
+            "an amaltas tree at dusk, hanging yellow chains of flowers glowing under a streetlight",
+            "long brown cylindrical seed pods hanging from an amaltas branch, cropped close"
           ],
           "lines": {
             "first_meet": "[radiant] Golden Bride, the golden shower tree! Every summer I wear gold earrings head to toe. Bride of the boulevard. [laughs]",
             "again": "[delighted] You came back! The gold never stops, darling. Well, until the rains.",
             "goodbye": "[gently] Go on. Look for yellow under your feet; my petals carpet the road. Then see who else blooms in the heat."
+          }
+        },
+        {
+          "id": "oak-tree",
+          "name": "Old Oak",
+          "species": "Oak tree",
+          "category": "trees",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street",
+            "park",
+            "village"
+          ],
+          "caution": false,
+          "personality": "A huge, slow, kindly old tree who has stood in the same spot for two centuries and lives vicariously through anyone who can walk.",
+          "voice": "Elderly male, deep, slow and booming, warm and amused, gentle rumble.",
+          "descriptions": [
+            "an oak tree with a broad rounded crown of lobed leaves in a temperate park",
+            "a close-up of lobed oak leaves with wavy rounded edges on a twig",
+            "a close-up of acorns sitting in little scaly cups among lobed green leaves",
+            "a close-up of a broad maple or plane leaf with pointed lobes like an open hand",
+            "an oak or maple crown turned yellow, orange and red in autumn",
+            "a bare oak or maple in winter with a tangle of grey branches and no leaves",
+            "looking up a thick oak trunk into a canopy of lobed leaves",
+            "a close-up of thick grey oak bark split into deep vertical ridges",
+            "a plane tree with mottled peeling bark in patches of cream, grey and olive",
+            "an oak tree at dusk under a streetlight, lobed leaves lit from below",
+            "a big maple or plane tree on a temperate city street, partly cropped, with lobed leaves"
+          ],
+          "lines": {
+            "first_meet": "[warm, booming] Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+            "again": "[pleased] You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+            "goodbye": "[rustling] Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it."
           }
         }
       ]
@@ -204,7 +256,11 @@
           "a bird standing or walking on a lawn, street or rooftop, photographed from far away",
           "a close-up photo of a small bird perched on a branch showing its feathers, beak, eye and tail",
           "long-legged wading birds standing in shallow water at a pond, canal or seashore",
-          "a bird of prey soaring high over city buildings, wings spread wide against a pale sky"
+          "a bird of prey soaring high over city buildings, wings spread wide against a pale sky",
+          "a blurry photo of a bird flying away, wings spread, shape hard to make out",
+          "a dark silhouette of a bird perched on a branch or wire at dusk",
+          "a small bird far away in the middle of the frame, mostly sky or rooftop around it",
+          "a bird seen from behind on a ledge or wall, its head turned away"
         ],
         "lines": {
           "first_meet": "[softly] Hello, friend. I'm the Wingmaster, keeper of every wing over this city. Stand still, and look up.",
@@ -233,7 +289,9 @@
             "a distant silhouette of a medium black crow on a wire or rooftop edge with a paler grey neck",
             "a close-up of a crow with black face, black bill, and a smoky grey nape, neck and breast collar",
             "a noisy group of black-and-grey crows on rooftops, rubbish heaps or electric wires in a city street",
-            "a two-tone crow, grey collar contrasting with black wings, with a slimmer bill and flatter head than a jungle crow"
+            "a two-tone crow, grey collar contrasting with black wings, with a slimmer bill and flatter head than a jungle crow",
+            "a crow perched on a car roof, wall or bin in a cluttered street",
+            "a dark crow silhouette on a lamp post or wire at dusk"
           ],
           "lines": {
             "first_meet": "[caws] Gossip the Crow! Grey shawl, sharp memory. I remember faces, so be nice to me.",
@@ -259,7 +317,9 @@
           "descriptions": [
             "a distant photo of a brown bird walking upright across a lawn or road, white wing patches flashing in flight",
             "a close-up of a chocolate-brown bird with glossy black head, bright yellow bill and a yellow bare patch around the eye",
-            "a brown bird with black head and yellow legs walking in pairs, not a dull grey-brown pale-eyed bird in noisy groups"
+            "a brown bird with black head and yellow legs walking in pairs, not a dull grey-brown pale-eyed bird in noisy groups",
+            "a myna on a wall or railing seen from the side, its yellow eye patch visible",
+            "a blurry brown myna hopping on a road or lawn"
           ],
           "lines": {
             "first_meet": "[chatty] Chatty the myna! Yellow specs, yellow beak, yellow shoes. I can copy your ringtone.",
@@ -286,7 +346,9 @@
             "a distant silhouette of a large dark bird soaring in circles high over city buildings, long forked tail visible",
             "a group of dark raptors wheeling in the sky above a market, rooftops or a rubbish dump",
             "a close-up of a dark-brown raptor perched on a pole or tower, with hooked black bill, yellow base and yellow feet",
-            "a big dark-brown hawk-like bird with a notched forked tail, not a small grey hawk with barred underparts"
+            "a big dark-brown hawk-like bird with a notched forked tail, not a small grey hawk with barred underparts",
+            "a large dark bird of prey perched on a pole or tower against a grey sky",
+            "a blurry kite gliding overhead seen from directly below"
           ],
           "lines": {
             "first_meet": "[shrill whistle] Sir Kite, the black kite. See my forked tail up there? Cities toss us scraps for charity. We accept. Graciously.",
@@ -312,7 +374,9 @@
           "descriptions": [
             "a distant photo of a flock of grey pigeons on a square, ledge or rooftop, or flying together",
             "a close-up of a blue-grey pigeon with shimmering green and purple neck feathers and an orange-red eye",
-            "a plump blue-grey pigeon with two black bars across each wing and a dark tail band"
+            "a plump blue-grey pigeon with two black bars across each wing and a dark tail band",
+            "grey pigeons sitting on a ledge, car or air conditioner seen from below",
+            "a pigeon pecking at the ground among scattered grain on pavement, seen from above"
           ],
           "lines": {
             "first_meet": "[coos] Guttergoo, at your service. Drop me anywhere and I'll find my rooftop. Pigeon racers once bet fortunes on that.",
@@ -338,7 +402,9 @@
             "a distant silhouette of slim birds with long pointed tails flying fast in a screeching flock",
             "a close-up of a bright green parrot with a red hooked bill and a thin black-and-pink ring around the neck",
             "a green parakeet perched in a tree or on a wire, its long tapering tail longer than its body",
-            "a grass-green bird with a thick red hooked parrot bill, not a slim bird with a thin black curved bill and eye stripe"
+            "a grass-green bird with a thick red hooked parrot bill, not a slim bird with a thin black curved bill and eye stripe",
+            "a green parakeet half-hidden among tree leaves, only its tail and red beak visible",
+            "a blurry green parrot flying past a building"
           ],
           "lines": {
             "first_meet": "[screeches] Sir Screech! Green coat, red beak, flying free. My cousins escaped to London and now run the parks there.",
@@ -365,7 +431,9 @@
             "a distant photo of small plump brown birds hopping on the ground or a rooftop in a group",
             "a close-up of a small brown bird with grey crown, black bib, chestnut nape and a stubby cone-shaped bill",
             "a plain buff-brown small bird with a streaked back, pale eyebrow line and short thick bill",
-            "a sparrow with a grey cap and black throat bib, not a bright yellow crown with a black face mask"
+            "a sparrow with a grey cap and black throat bib, not a bright yellow crown with a black face mask",
+            "a small brown sparrow on a wire or railing, slightly blurry and far away",
+            "sparrows hopping on pavement among crumbs, seen from above"
           ],
           "lines": {
             "first_meet": "[chirps] Dusty the sparrow! Small, brown, everywhere. Or I used to be. New buildings have no gaps for my nest.",
@@ -389,7 +457,11 @@
           "a close-up photo of a furry animal's face showing its eyes, ears, whiskers and nose or muzzle",
           "a photo of a small mammal such as a squirrel, rat or mongoose on a wall, tree trunk or garden path",
           "a photo of chickens or ducks walking and pecking at the ground in a dusty yard or beside a pond",
-          "a photo of a horse or camel wearing a colourful saddle, standing on a sandy beach with people nearby"
+          "a photo of a horse or camel wearing a colourful saddle, standing on a sandy beach with people nearby",
+          "an animal at night caught in a flash or under a streetlight, eyes glowing",
+          "a blurry photo of an animal walking away, seen from behind",
+          "an animal partly hidden under a parked car or behind a wall",
+          "an animal photographed from above as it lies on the ground"
         ],
         "lines": {
           "first_meet": "[whistles] I'm the Night Watchman, the old guard. I know every tail on this block. Rule one: eyes, not hands.",
@@ -418,7 +490,9 @@
             "a photo of a tan, brown, black or white dog lying in the shade beside a wall, parked car or shop front",
             "a photo of a small pack of short-haired stray dogs roaming a market lane or rubbish-strewn roadside",
             "a close-up photo of a dog's face with floppy or half-upright ears, brown eyes and a smooth short coat",
-            "a domestic dog with an upward curled tail and plain single-coloured or patched coat, unlike a wild jackal's straight black-tipped bushy tail"
+            "a domestic dog with an upward curled tail and plain single-coloured or patched coat, unlike a wild jackal's straight black-tipped bushy tail",
+            "a street dog at night under a streetlight, its eyes shining",
+            "a dog sleeping under a parked car, only its head and paws visible"
           ],
           "lines": {
             "first_meet": "[low growl] Bruno. I guard this street at night. Photo from there, please. No petting, no feeding.",
@@ -445,7 +519,9 @@
             "a photo of a small furry cat with pointed ears and long whiskers sitting on top of a boundary wall",
             "a photo of a tabby, orange, black, white or calico cat curled up asleep on a parked car bonnet",
             "a close-up photo of a cat's face with triangular ears, slit pupils in green or yellow eyes and white whiskers",
-            "a photo of a cat walking along a rooftop ledge or crouching under a parked car on a street"
+            "a photo of a cat walking along a rooftop ledge or crouching under a parked car on a street",
+            "a cat sitting on a car bonnet or roof, seen from the side",
+            "a cat at night with glowing eyes on a wall or under a car"
           ],
           "lines": {
             "first_meet": "[yawns] Lady Whiskers. This warm car bonnet is mine. Admire me from there. Touching costs extra.",
@@ -471,7 +547,9 @@
             "a photo of a small grey-brown squirrel with five pale stripes running along its back and a bushy tail",
             "a photo of a striped squirrel clinging head-down to a tree trunk or scurrying along the top of a wall",
             "a close-up photo of a small squirrel sitting upright holding food in its front paws, tail raised in a curve",
-            "a striped squirrel with a fluffy furred tail, unlike a rat's naked scaly tail or a mongoose's plain grizzled unstriped grey body"
+            "a striped squirrel with a fluffy furred tail, unlike a rat's naked scaly tail or a mongoose's plain grizzled unstriped grey body",
+            "a blurry squirrel running along a wall or branch, tail raised",
+            "a squirrel seen from behind on a tree trunk, mostly its striped back and tail"
           ],
           "lines": {
             "first_meet": "[chirps fast] Stripey, the palm squirrel! Five stripes, count them, quick! That bird-like chip-chip? Me, yelling about a cat.",
@@ -498,7 +576,9 @@
             "a photo of a medium-sized goat with a beard, short upturned tail and horns standing on a street or lane",
             "a photo of a black, brown, white or spotted goat with long floppy ears tied up outside a house",
             "a close-up photo of a goat's face showing a chin beard, horizontal rectangular pupils and curved horns",
-            "a goat with a smooth hair coat, chin beard and tail held upright, unlike a sheep's thick woolly fleece and drooping tail"
+            "a goat with a smooth hair coat, chin beard and tail held upright, unlike a sheep's thick woolly fleece and drooping tail",
+            "a goat tied outside a house gate in a street, seen from the side",
+            "a goat at dusk in a dim lane, partly in shadow"
           ],
           "lines": {
             "first_meet": "[bleats] Big Billy, the goat. See my sideways pupils? Almost all-round vision. I saw you coming three streets ago.",
@@ -526,7 +606,9 @@
             "a photo of a white, grey or light brown humped cow standing in a street or village lane",
             "a close-up photo of a cow's long face with large dark eyes, drooping ears and short horns",
             "a photo of a cow decorated with coloured tassels, garlands and henna for a festival at a cattle market",
-            "a humped cow with a light-coloured short coat and a hanging dewlap, unlike a dark hairless water buffalo with swept-back crescent horns"
+            "a humped cow with a light-coloured short coat and a hanging dewlap, unlike a dark hairless water buffalo with swept-back crescent horns",
+            "a cow standing beside parked cars and motorbikes in a street",
+            "a humped cow seen from behind in a lane at dusk"
           ],
           "lines": {
             "first_meet": "[moos softly] I'm Mabel. This hump and loose neck skin? Built-in cooling. Hot afternoons don't scare a humped zebu like me.",
@@ -553,7 +635,9 @@
             "a photo of a tall sandy-brown camel with a single hump and long curved neck standing on a beach",
             "a photo of a camel with a decorated colourful saddle and tassels giving rides at the seaside",
             "a close-up photo of a camel's head with heavy-lidded eyes, long eyelashes and a split upper lip",
-            "a photo of a camel kneeling on sand with folded long legs and wide padded feet"
+            "a photo of a camel kneeling on sand with folded long legs and wide padded feet",
+            "a camel at a beach or roadside at dusk, its hump in silhouette",
+            "a close-up of a camel's long face and droopy lips"
           ],
           "lines": {
             "first_meet": "[groans slowly] Sultan of the Seaside. My hump is fat, not water. Everyone gets that wrong. I forgive them. Slowly.",
@@ -577,7 +661,10 @@
           "a photo of a small lizard, frog, toad or snake on a wall, garden path or in grass",
           "a photo of a crab, snail, jellyfish or turtle on wet sand at the beach",
           "a photo of an insect nest, beehive, spider web or line of ants on a wall, branch or ledge",
-          "a close-up of a small creepy-crawly creature with many legs, a shell or a segmented body"
+          "a close-up of a small creepy-crawly creature with many legs, a shell or a segmented body",
+          "a blurry close-up of a tiny insect on a wall, hard to focus",
+          "a small creature on a pavement or wall at night under a light",
+          "an insect seen from above, small in the middle of a large plain surface"
         ],
         "lines": {
           "first_meet": "[clears throat] Order, order! The Bug Council is in session. Some of us sting. Look, don't touch.",
@@ -605,7 +692,9 @@
             "a line of small black ants marching single file along a wall or pavement",
             "a close-up of ants with segmented bodies and bent antennae carrying crumbs",
             "a trail of tiny reddish ants walking up a tree trunk",
-            "many ants clustered around a food crumb on the ground"
+            "many ants clustered around a food crumb on the ground",
+            "a dim close-up of tiny ants crawling along a crack in concrete",
+            "ants swarming around a crumb or dead insect on a floor or pavement, seen from above"
           ],
           "lines": {
             "first_meet": "[marching] Left, right! The Ant Brigade, reporting. We follow the scent our scout laid. Mind your feet!",
@@ -630,7 +719,9 @@
             "a small pale translucent pinkish-grey lizard clinging flat to a wall near a light at night",
             "a close-up of a gecko with big dark eyes and wide sticky toe pads on a wall",
             "a smooth soft-skinned house lizard with no spiky crest, flat against a wall, not on a bush",
-            "a gecko waiting beside a tube light with moths and small insects around it"
+            "a gecko waiting beside a tube light with moths and small insects around it",
+            "a gecko on a wall at night next to a light bulb, catching insects",
+            "a pale lizard seen from below on a ceiling or high wall, slightly blurry"
           ],
           "lines": {
             "first_meet": "[clicks tongue] Tch-tch! Aunt Gecko here. I eat the mosquitoes by your porch light, so stop shrieking!",
@@ -656,7 +747,9 @@
             "a large glossy reddish-brown cockroach with a flat oval body and long antennae",
             "a close-up of a cockroach with a pale yellowish band behind its head on a pavement at night",
             "a cockroach near a drain, gutter or garbage on a street at night",
-            "a flat shiny brown insect with spiny legs and long wings covering its back"
+            "a flat shiny brown insect with spiny legs and long wings covering its back",
+            "a cockroach on a floor or drain cover at night, lit by a phone flash",
+            "a blurry brown cockroach running across tiles or pavement"
           ],
           "lines": {
             "first_meet": "[chuckles] Rusty, the red roach. My ancestors outlived the dinosaurs. City drains? Light work. Don't scream.",
@@ -681,7 +774,9 @@
             "a close-up photo of a small fuzzy golden-brown bee with dark stripes on its abdomen sitting on a flower",
             "a macro photo of a hairy honey bee with yellow pollen lumps packed on its hind legs",
             "a small chunky furry bee with a thick waist and short legs, unlike a slim smooth wasp with dangling legs",
-            "a honey bee hovering over garden flowers with clear see-through wings and a fuzzy brown body"
+            "a honey bee hovering over garden flowers with clear see-through wings and a fuzzy brown body",
+            "a blurry bee hovering near a flower, wings a smudge",
+            "bees crowded on a honeycomb hanging under a ledge or branch"
           ],
           "lines": {
             "first_meet": "[buzzing softly] Hello! I'm a worker bee, and every worker is a girl. My whole life makes one twelfth of a teaspoon of honey.",
@@ -707,7 +802,9 @@
             "a tawny orange butterfly with a black forewing tip crossed by a band of white spots",
             "a close-up of a butterfly's black body dotted with white spots between plain orange wings",
             "an orange butterfly gliding slowly or resting on a grey-green aak plant with purple flowers",
-            "plain orange wings with three or four small black dots on the hind wing, no thick black veins, not mottled"
+            "plain orange wings with three or four small black dots on the hind wing, no thick black veins, not mottled",
+            "an orange butterfly with folded wings on a plant, seen from the side",
+            "a blurry orange and black butterfly in flight over flowers"
           ],
           "lines": {
             "first_meet": "[smug] Tawny, a plain tiger butterfly. I eat milkweed, so I taste awful. Birds learn that once, then just watch me drift by.",
@@ -732,7 +829,9 @@
             "a pale sand-coloured crab with a square body and tall stalked eyes on a beach",
             "a crab running sideways across dry sand toward a round burrow hole",
             "a close-up of a ghost crab with long eye stalks and two similar claws, no shell on its back",
-            "a sandy-white crab barely visible against beach sand at night"
+            "a sandy-white crab barely visible against beach sand at night",
+            "a pale crab on wet sand at night caught in torchlight",
+            "a crab half inside its burrow on a beach, only eyes and claws showing"
           ],
           "lines": {
             "first_meet": "[giggling] Sandy, the ghost crab! Sand-coloured, so I'm practically invisible. I run sideways faster than you'd believe.",
@@ -756,7 +855,11 @@
           "colourful flowers growing in a garden bed, clay pot or clipped hedge beside a path",
           "a flowering vine or creeper climbing over a boundary wall, gate or wire fence",
           "small wild flowers growing in grass, on a roadside verge or in a dusty empty plot",
-          "flowers floating on a pond or rising on stalks above still water"
+          "flowers floating on a pond or rising on stalks above still water",
+          "flowers photographed at dusk or in dim light, colours muted and grainy",
+          "a blurry close-up of a flower, out of focus",
+          "flowers growing over a wall or gate beside parked cars, cropped by the frame",
+          "wet flower petals with raindrops after rain"
         ],
         "lines": {
           "first_meet": "[warmly] Hello, dear. I'm Grandma Bloom, mother of every flower bed in this city. Look all you like, but never pick.",
@@ -785,7 +888,9 @@
             "a photo of a thorny climbing shrub draping masses of vivid magenta blossoms over a boundary wall or gate",
             "a close-up of thin papery magenta, pink or orange bracts in threes, each around a tiny white tube flower",
             "bright pink, orange, red or white papery blossoms cascading over a house gate on a sunny city street",
-            "long woody arching branches with sharp straight thorns, oval green leaves and big loose sprays of papery coloured bracts"
+            "long woody arching branches with sharp straight thorns, oval green leaves and big loose sprays of papery coloured bracts",
+            "bougainvillea spilling over a wall at night, magenta bracts lit by a streetlight",
+            "fallen papery pink bougainvillea bracts on a pavement or car"
           ],
           "lines": {
             "first_meet": "[proudly] Lady Bougainvillea. The pink? Leaves, darling. My actual flowers are the tiny white dots.",
@@ -813,7 +918,9 @@
             "clusters of pink, white or red five-petal pinwheel flowers at the tips of tall leafy stems",
             "a close-up of long narrow stiff leaves with a pale central vein growing three at a time around the stem",
             "a row of tall pink-flowering shrubs along a highway divider with traffic behind",
-            "a pink oleander flower with twisted overlapping petals and a fringed centre, on a stiff upright shrub"
+            "a pink oleander flower with twisted overlapping petals and a fringed centre, on a stiff upright shrub",
+            "an oleander shrub on a road median at dusk, pink flowers dimmed",
+            "a blurry close-up of pink oleander flowers among long narrow leaves"
           ],
           "lines": {
             "first_meet": "[gravelly] Aunt Oleander. Queen of the smoky medians. And poison, so don't touch me.",
@@ -839,7 +946,9 @@
             "a large single funnel-shaped red flower with five broad open petals on a leafy garden shrub",
             "a close-up of a long stamen column sticking far out of a flower centre, tipped with fuzzy red dots",
             "glossy dark-green oval leaves with toothed edges on a smooth thornless shrub with big red, orange or pink flowers",
-            "a hibiscus hedge along a street with wide flat five-petal flowers facing outward, each with a dark red throat"
+            "a hibiscus hedge along a street with wide flat five-petal flowers facing outward, each with a dark red throat",
+            "a red hibiscus flower in dim light, petals dark red",
+            "a hibiscus flower seen from the side, half closed, cropped by the frame"
           ],
           "lines": {
             "first_meet": "[breathless] Hello! I'm Ruby, the red hibiscus. Quick, look! Each of my flowers lives just one day, so this bloom is the only one.",
@@ -864,7 +973,9 @@
             "small waxy pure-white flowers, single or doubled like tiny roses, among glossy oval leaves",
             "a close-up of a small white jasmine flower with rounded overlapping petals and a few white buds",
             "a bushy green shrub dotted with small white star flowers in a home garden or pot",
-            "strings of small white jasmine buds woven into a gajra bracelet at a flower stall"
+            "strings of small white jasmine buds woven into a gajra bracelet at a flower stall",
+            "white jasmine flowers glowing in dim evening light among dark leaves",
+            "a string of white jasmine flowers or a few blossoms in a hand"
           ],
           "lines": {
             "first_meet": "[softly] Hello, dear. I'm Miss Jasmine, a national flower and the sweetest scent all summer. Every market garland is me.",
@@ -890,7 +1001,9 @@
             "a dense round pom-pom flower packed with ruffled orange petals and no visible centre",
             "bright orange and yellow ball-shaped flowers growing in rows in a garden bed",
             "feathery finely divided dark-green leaves beneath round crinkled orange or yellow flower heads",
-            "orange and yellow marigold flowers strung into long garlands at a market stall or wedding"
+            "orange and yellow marigold flowers strung into long garlands at a market stall or wedding",
+            "orange marigolds in a pot or garland seen at an angle, slightly blurry",
+            "a marigold garland hanging on a gate, shop or vehicle"
           ],
           "lines": {
             "first_meet": "[excited] Marigold Max, at your service! Every wedding garland, every shrine: me. Farmers plant me because pests hate my smell.",
@@ -916,7 +1029,9 @@
             "a rounded dense ball cluster of many small red tube flowers, all the same colour",
             "a close-up of tiny flowers with exactly four pointed petals each, packed into a red or orange dome",
             "a neatly clipped shrub with stiff glossy dark-green oblong leaves and round red flower clusters",
-            "orange or pink flower balls held above pairs of leathery leaves in a garden bed"
+            "orange or pink flower balls held above pairs of leathery leaves in a garden bed",
+            "a red ixora cluster in shade or dim light, colours deep red",
+            "an ixora hedge along a path seen from above, red clusters among dark leaves"
           ],
           "lines": {
             "first_meet": "[proudly] Captain Ixora here. Look closely: I'm not one flower. I'm a ball of forty tiny ones, each with exactly four petals.",
@@ -940,7 +1055,11 @@
           "a photo of a spiny cactus or thick fleshy succulent plant in a pot or dry sandy ground",
           "a wide photo of a farm field of crops such as wheat, rice, sugarcane, cotton or yellow mustard",
           "a photo of tall reeds, grasses or floating plants growing along a canal, pond or riverbank",
-          "a photo of a leafy vine or creeper climbing up a wall, fence or tree trunk"
+          "a photo of a leafy vine or creeper climbing up a wall, fence or tree trunk",
+          "green plants in dim light at dusk, leaves dark and grainy",
+          "a blurry close-up of a leaf",
+          "a potted plant on a balcony, step or rooftop, cropped by the frame",
+          "plants growing beside a wall or a parked vehicle in a street"
         ],
         "lines": {
           "first_meet": "[warmly] I'm Old Greenleaf, the green in everything. Every weed, cactus, crop and crack-sprout answers to me. Grass is my eldest.",
@@ -968,7 +1087,9 @@
             "a photo of a low green lawn of fine creeping grass covering the ground in a park",
             "a close-up photo of thin grass stems topped with three to five slender finger-like seed spikes spreading outward",
             "a close-up of short fine grass blades and creeping runners spreading across bare soil",
-            "a worn grassy patch in a park or playground with bare dusty spots where people walk and play"
+            "a worn grassy patch in a park or playground with bare dusty spots where people walk and play",
+            "a lawn at dusk or under park lights, grass dark green and grainy",
+            "grass seen from directly above with feet or shoes at the edge of the frame"
           ],
           "lines": {
             "first_meet": "[easygoing] I'm Lawn Larry, the lawn grass. Every weekend football match happens on my head.",
@@ -994,7 +1115,9 @@
             "a photo of a trailing vine with glossy heart-shaped leaves splashed with yellow and green",
             "a close-up photo of a smooth glossy heart-shaped leaf marbled with yellow streaks",
             "a leafy vine climbing a wall, pillar or tree trunk, or hanging from a glass bottle of water",
-            "smooth unlobed heart-shaped variegated leaves with small aerial roots, no curly tendrils and no fruits"
+            "smooth unlobed heart-shaped variegated leaves with small aerial roots, no curly tendrils and no fruits",
+            "a money plant vine climbing a wall or window grille, seen from below",
+            "a money plant in a bottle or pot in dim light"
           ],
           "lines": {
             "first_meet": "[laughs] Uncle Money Plant here! Never paid one bill. I climb walls and live rent-free in old bottles.",
@@ -1020,7 +1143,9 @@
             "a close-up photo of a thick grey-green succulent leaf with pale white speckles and soft small teeth on the edges",
             "a tall thin flower stalk topped with drooping tubular yellow-orange flowers rising from a fleshy rosette",
             "an aloe plant in a clay pot on a rooftop, balcony or doorstep",
-            "fleshy speckled leaves curving outward with soft edge teeth and no hard tip spine, not stiff upright banded swords"
+            "fleshy speckled leaves curving outward with soft edge teeth and no hard tip spine, not stiff upright banded swords",
+            "an aloe vera plant in a pot seen from above, its spiky rosette",
+            "a blurry close-up of thick spiky aloe leaves"
           ],
           "lines": {
             "first_meet": "[warmly] Mother Aloe, from your granny's rooftop pot. Every burn in the house, they ran to me. Today, just look.",
@@ -1046,7 +1171,9 @@
             "a photo of a small leafy shrub growing out of a crack in an old brick wall or roof",
             "a close-up photo of a heart-shaped leaf with a long drawn-out pointed tip on a small sapling",
             "thin pale roots gripping bricks and plaster around a small plant sprouting from a wall or drainpipe",
-            "a small sapling sprouting from a building wall, not a large tree with a trunk standing in the ground"
+            "a small sapling sprouting from a building wall, not a large tree with a trunk standing in the ground",
+            "a small plant growing out of a wall or roof edge seen from below",
+            "a sapling sprouting from a drain pipe or crack in a building at dusk"
           ],
           "lines": {
             "first_meet": "[cheekily] Little Fig, the little one! A bird dropped my seed in this crack. Now I'm splitting the wall, one root at a time.",
@@ -1072,7 +1199,9 @@
             "a photo of a bushy shrub with thick leathery leaves splashed with yellow, orange, red and green",
             "a close-up photo of a glossy leaf with bright yellow veins and red spots on dark green",
             "a garden hedge or potted shrub with multicoloured twisted, oval or narrow ribbon-like leaves",
-            "a colourful leafy shrub by a gate or driveway, each leaf painted in several colours at once"
+            "a colourful leafy shrub by a gate or driveway, each leaf painted in several colours at once",
+            "a croton plant in dim light, its spotted leaves dark yellow and red",
+            "a croton shrub beside a gate or wall, cropped by the frame"
           ],
           "lines": {
             "first_meet": "[excited] Rainbow the croton! More sun, louder colours. In shade I go plain green. Tragic. And my sap stings, so no touching.",
@@ -1099,7 +1228,9 @@
             "a photo of a cactus made of flat oval green pads joined edge to edge in chains",
             "a close-up photo of a flat green cactus pad dotted with small clusters of tiny spines",
             "a photo of red-purple pear-shaped fruits and yellow flowers growing along the rim of flat cactus pads",
-            "a sprawling clump of paddle-shaped cactus growing in dry wasteland, along a hedge or in a garden corner"
+            "a sprawling clump of paddle-shaped cactus growing in dry wasteland, along a hedge or in a garden corner",
+            "a prickly pear cactus at dusk, its flat pads in silhouette",
+            "a close-up of cactus spines on a flat pad, slightly blurry"
           ],
           "lines": {
             "first_meet": "[proudly] Paddle Pete, the prickly pear, from Mexico! My tiniest spines are fine as hair. Eyes miss them; fingers don't.",
@@ -1123,7 +1254,10 @@
           "a photo of fruits hanging from the branches of a tree among green leaves",
           "a photo of a roadside vegetable vendor's cart with piles of produce, a hanging scale and plastic crates",
           "a close-up photo of cut fruit pieces arranged on a tray at a street stall",
-          "a photo of a crate or basket full of whole fruit at a fruit market"
+          "a photo of a crate or basket full of whole fruit at a fruit market",
+          "a fruit or vegetable cart at night lit by a bulb or lantern",
+          "a blurry close-up of fruit in a basket or plastic bag",
+          "fruit or vegetables on a kitchen counter or in a hand, seen from above"
         ],
         "lines": {
           "first_meet": "[calls out like a hawker] Fresh, fresh! I'm Old Barrow, grandpa of every fruit cart. I weigh the fruit, and the people.",
@@ -1152,7 +1286,9 @@
             "a photo of oval kidney-shaped mangoes hanging on long thin stalks from a dense leafy tree",
             "a close-up photo of a smooth-skinned mango, green to golden-yellow with a red blush, flattened sides and a small pointed beak",
             "a photo of a wooden crate of yellow mangoes nested in straw on a fruit cart",
-            "a photo of a mango sliced into cheeks with criss-cross diced yellow flesh and one large flat fibrous stone, no black seeds"
+            "a photo of a mango sliced into cheeks with criss-cross diced yellow flesh and one large flat fibrous stone, no black seeds",
+            "a mango held in a hand, slightly blurry",
+            "a crate of mangoes on a cart at night under a bulb"
           ],
           "lines": {
             "first_meet": "[regally] King Mango. Leaders trade me as gifts. Mango diplomacy. You may bow.",
@@ -1178,7 +1314,9 @@
             "a photo of a bunch of curved yellow bananas hanging from a hook on a street cart",
             "a close-up photo of several curved elongated green or yellow banana fingers joined at one stalk in a hand",
             "a photo of a banana plant with huge long torn paddle-shaped leaves and a hanging bunch of green bananas and a purple flower bud",
-            "a photo of a cart stacked with rows of yellow banana hands with brown speckles"
+            "a photo of a cart stacked with rows of yellow banana hands with brown speckles",
+            "bananas hanging on a cart at night under a bare light bulb",
+            "a bunch of bananas seen from above on a table"
           ],
           "lines": {
             "first_meet": "[proudly] Benny Banana! Fun fact: my plant isn't a tree. It's the world's biggest herb.",
@@ -1204,7 +1342,9 @@
             "a photo of round to pear-shaped light green guavas hanging among oval veined leaves on a guava tree",
             "a close-up photo of a guava with matte bumpy uneven green-yellow skin and a dried brown crown of sepals at the bottom end",
             "a photo of a guava cut in half showing pink or white flesh packed with many small hard seeds in the centre",
-            "a photo of a street cart heap of green guavas, some cut into quarters and sprinkled with red chili masala"
+            "a photo of a street cart heap of green guavas, some cut into quarters and sprinkled with red chili masala",
+            "a guava held in a hand or on a plate, seen from above",
+            "guavas piled on a cart in dim evening light"
           ],
           "lines": {
             "first_meet": "[smug] Gus the guava here. Pound for pound, more vitamin C than an orange. Best in the market. Don't tell the oranges.",
@@ -1230,7 +1370,9 @@
             "a photo of huge oval watermelons with dark-green and pale-green striped smooth rind piled on a cart",
             "a photo of a watermelon cut open showing bright red juicy flesh with black seeds and a thin green rind edge",
             "a photo of a roadside summer stall stacked with large striped watermelons, one red cut half on display",
-            "a close-up photo of glossy smooth watermelon rind with wavy dark green stripes"
+            "a close-up photo of glossy smooth watermelon rind with wavy dark green stripes",
+            "watermelons piled on a roadside cart at night under a bulb",
+            "a slice of watermelon on a plate seen from above"
           ],
           "lines": {
             "first_meet": "[booming] Champ, the Watermelon Wrestler! Ninety-two percent water, the rest muscle. Vendors thump me. I thump back.",
@@ -1256,7 +1398,9 @@
             "a photo of a heap of round onion bulbs with shiny papery red-pink skin on a vegetable cart",
             "a close-up photo of an onion with dry flaky papery peel, a pointed top neck and a hairy root base",
             "a photo of an onion cut in half showing concentric pinkish-white rings",
-            "a photo of mesh sacks of red onions stacked at a vegetable market"
+            "a photo of mesh sacks of red onions stacked at a vegetable market",
+            "onions in a sack or basket in dim light",
+            "a single onion held in a hand, slightly blurry"
           ],
           "lines": {
             "first_meet": "[sniffles] Oscar the onion here. I don't mean to make people cry; it's a sulfur thing. When my price spikes, governments cry too.",
@@ -1282,7 +1426,9 @@
             "a close-up photo of a spindle-shaped dark green bitter gourd covered in warty ridges and bumps",
             "a photo of a vegetable cart heap of knobbly green karela with pointed ends",
             "a photo of a bitter gourd sliced into rings showing a white spongy centre and pale seeds",
-            "a photo of a climbing vine with deeply lobed leaves, small yellow flowers and hanging warty green gourds"
+            "a photo of a climbing vine with deeply lobed leaves, small yellow flowers and hanging warty green gourds",
+            "bitter gourds on a cart in dim light under a bulb",
+            "a bitter gourd held in a hand, its bumpy skin close up"
           ],
           "lines": {
             "first_meet": "[grumpy] Grumpy Gourd, the bitter gourd. Some call me the sourpuss of the vegetable aisle. Rude. Accurate.",
@@ -1306,7 +1452,10 @@
           "a close-up photo of fungi, moss or lichen growing on wood, stone or damp soil",
           "a photo of natural objects lying on the ground such as shells, feathers, pine cones, driftwood or seaweed",
           "a photo of bare open land: cracked dry mud, white salt crust, sand dunes or a sandy beach surface",
-          "a photo of an earthen mound, a fallen log, a tree stump or a woven nest outdoors"
+          "a photo of an earthen mound, a fallen log, a tree stump or a woven nest outdoors",
+          "the ground photographed at night under a streetlight, grainy and dim",
+          "a blurry photo looking straight down at a pavement, road or path with shoes at the edge",
+          "a small object lying on the ground beside a car tyre, wall or kerb"
         ],
         "lines": {
           "first_meet": "[slowly] You're standing on me. Everyone looks up; nobody looks down. I'm Mother Soil. All this underfoot is mine.",
@@ -1334,7 +1483,9 @@
             "a photo of a carpet of dry brown, yellow and red leaves covering the ground or pavement",
             "a close-up photo of crinkled dried leaves with curled edges and visible veins lying on soil",
             "a pile of fallen dead leaves swept against a wall or kerb on a city street",
-            "scattered dry leaves on grass under trees in a park"
+            "scattered dry leaves on grass under trees in a park",
+            "fallen leaves on a road or car bonnet at night under a streetlight",
+            "wet fallen leaves stuck to pavement after rain"
           ],
           "lines": {
             "first_meet": "[crunch] Careful, that crunch was me, Dame Autumn. Trees drop us to save water through the dry season.",
@@ -1359,7 +1510,9 @@
             "a close-up photo of a single feather lying on the ground with a central shaft and soft vanes",
             "a grey pigeon feather or glossy black crow feather resting on pavement, soil or grass",
             "a long thin feather with a stiff white quill and fluffy downy barbs near its base",
-            "a small loose feather on a dusty street or rooftop, seen from above"
+            "a small loose feather on a dusty street or rooftop, seen from above",
+            "a feather in a hand, slightly blurry",
+            "a feather caught on grass or a car windscreen"
           ],
           "lines": {
             "first_meet": "[dreamy] Hello... I'm Whisper, a feather. Birds shed us often. I'm made of keratin, like your nails.",
@@ -1386,7 +1539,9 @@
             "a close-up photo of many small smooth rounded stones in mixed grey, white and brown colours",
             "a photo of a heap of small pebbles scattered on a beach, riverbank or garden path",
             "small pebbles with rounded edges and polished surfaces, unlike sharp angular grey crushed gravel",
-            "tiny round stones about the size of a coin, much smaller than fist-sized oval river stones"
+            "tiny round stones about the size of a coin, much smaller than fist-sized oval river stones",
+            "wet pebbles shining after rain",
+            "gravel under a parked car or along a path, seen from above"
           ],
           "lines": {
             "first_meet": "[giggles] Hi! Hello! We're the pebbles! Every one of us was a sharp rock once. Water rolled us round for years. So dizzy.",
@@ -1412,7 +1567,9 @@
             "a close-up photo of the flat cut top of a tree trunk showing concentric growth rings",
             "a short tree stump in a park or on a street with bark around its sawn edge",
             "a low cut stump standing upright and rooted in the ground, round and flat-topped, not a long log lying sideways",
-            "a weathered old stump with cracks radiating from the centre and new shoots sprouting from its sides"
+            "a weathered old stump with cracks radiating from the centre and new shoots sprouting from its sides",
+            "a tree stump on a pavement at dusk, partly in shadow",
+            "a cut tree stump beside a wall or parked car"
           ],
           "lines": {
             "first_meet": "[sighs] Grandpa Rings. One ring per year. Fat ones were rainy years. Thin ones... we don't talk about those.",
@@ -1438,7 +1595,9 @@
             "a close-up photo of a ridged fan-shaped white or cream clam shell lying on wet sand",
             "an empty spiral sea snail shell on the beach with no legs or claws sticking out, unlike a hermit crab",
             "pale patterned shells on beach sand by the sea, not a brown garden snail on leaves or soil",
-            "a matte ridged shell with a wide open mouth, not a small glossy egg-shaped cowrie"
+            "a matte ridged shell with a wide open mouth, not a small glossy egg-shaped cowrie",
+            "a seashell held in a palm, slightly blurry",
+            "seashells on wet sand at dusk"
           ],
           "lines": {
             "first_meet": "[wistful] I'm Lady Shell, an empty house. A sea snail built me, grain by grain. Then it moved on. I keep the lights on.",
@@ -1465,7 +1624,9 @@
             "a close-up photo of dry brown earth split into polygon-shaped tiles by deep cracks",
             "a photo of a dried pond bed or field covered in cracked mud plates with curled-up edges",
             "brown cracked clay soil with dark gaps between curled flakes, not a white salty crust",
-            "a top-down photo of parched ground broken into an irregular mosaic pattern"
+            "a top-down photo of parched ground broken into an irregular mosaic pattern",
+            "cracked mud seen at an angle in low evening light, long shadows in the cracks",
+            "dry cracked earth at the edge of a road or empty plot"
           ],
           "lines": {
             "first_meet": "[groans] Water? No? I was a pond once. Then the sun drank it, I shrank, and cracked into tiles. Very artistic. Very thirsty.",
@@ -1488,7 +1649,10 @@
           "a photo of the sky with white or grey clouds, the horizon and buildings small along the bottom edge",
           "a dark night sky photo with the moon, stars or city lights glowing near the horizon",
           "an orange, pink or golden sky at dawn or dusk with silhouetted buildings, palm trees or sea",
-          "a photo of weather outdoors: rain, fog, haze or dust in the air over a city street"
+          "a photo of weather outdoors: rain, fog, haze or dust in the air over a city street",
+          "a night sky over a city with an orange glow from streetlights",
+          "the sky seen through tree branches, wires or between buildings",
+          "a dim dusk sky above rooftops, slightly blurry"
         ],
         "lines": {
           "first_meet": "[slow exhale] Ah, someone looked up. I'm Grandpa Sky. Every cloud, moon and storm you've seen is mine. Welcome.",
@@ -1515,7 +1679,9 @@
             "a sky glowing deep orange, red, pink and purple near the horizon with a low sun sinking into the sea",
             "silhouetted buildings, palm trees or people on a beach against a fiery saturated orange and red evening sky",
             "an evening sky with strong warm colours spreading upward into purple and dark blue, street lights starting to glow",
-            "the sun low over the sea horizon with a long orange reflection on the water and warm colour across the whole sky, not just rays"
+            "the sun low over the sea horizon with a long orange reflection on the water and warm colour across the whole sky, not just rays",
+            "a sunset seen through wires, poles and rooftops in a busy city",
+            "a blurry orange evening sky over a road with car lights"
           ],
           "lines": {
             "first_meet": "[dreamily] I'm Dusk, the sunset glow. My reds come from light through air. The seafront is my stage.",
@@ -1540,7 +1706,9 @@
             "a photo of puffy white cotton-ball clouds with flat bases and rounded tops scattered across a bright blue sky",
             "a close-up of a single bright white cumulus cloud with lumpy cauliflower edges and a flat light grey underside",
             "small separate fluffy white clouds with blue sky between them, sunlit and bright, not towering and with no dark base or rain",
-            "fair-weather white clouds floating above rooftops, palm trees or the sea on a sunny day with sharp shadows"
+            "fair-weather white clouds floating above rooftops, palm trees or the sea on a sunny day with sharp shadows",
+            "puffy white clouds seen between buildings or through tree branches",
+            "fluffy clouds reflected in a car window or glass building"
           ],
           "lines": {
             "first_meet": "[giggles] I'm Puffball, the cotton-ball cloud. I weigh 500 tonnes, about a hundred elephants. Floating!",
@@ -1565,7 +1733,9 @@
             "a thin curved sliver of bright moon low in the western sky just after sunset",
             "a slender crescent moon with two pointed horns, the rest of the disc dark or faintly glowing",
             "a close-up of a thin moon crescent with both edges curved, not a straight dividing line",
-            "a delicate crescent moon in an orange-to-deep-blue twilight sky above rooftops or minarets"
+            "a delicate crescent moon in an orange-to-deep-blue twilight sky above rooftops or minarets",
+            "a thin crescent moon above rooftops, wires or palm trees at dusk",
+            "a blurry small crescent moon in a dark sky photographed on a phone"
           ],
           "lines": {
             "first_meet": "[shyly] I'm Sliver, the new crescent moon. Entire towns watch the sky for me each month. [laughs] No pressure.",
@@ -1590,7 +1760,9 @@
             "a bright round fully lit white moon disc with grey patches in a dark black night sky",
             "a close-up of the full moon showing a complete circle with darker grey maria and bright craters, no dark side visible",
             "a single large glowing moon over city buildings or the sea at night, with moonlight reflecting on the water",
-            "one large crisp white disc with visible grey markings at night, not a blinding glare and not just tiny star points"
+            "one large crisp white disc with visible grey markings at night, not a blinding glare and not just tiny star points",
+            "a bright full moon low over buildings or trees, slightly blurry",
+            "a small white moon disc in a dark night sky above streetlights"
           ],
           "lines": {
             "first_meet": "[sings softly] I'm Mistress Moon. Fourteenth night, poets' darling. You only see one face of me. The other is shy.",
@@ -1615,7 +1787,9 @@
             "a flat uniform grey sky completely covered by one featureless sheet of cloud, with no blue sky visible",
             "a street or rooftop scene under an even grey cloud ceiling, soft shadowless light, distant buildings still sharp and clear",
             "a low grey cloud layer high above the ground, the horizon and far skyline crisp, not white and blurred at street level",
-            "dull grey daylight sky with a neutral grey colour, not yellow or brown, and no visible sun disc"
+            "dull grey daylight sky with a neutral grey colour, not yellow or brown, and no visible sun disc",
+            "a grey cloudy sky above a street with wet roads",
+            "a dull grey sky seen between buildings and wires"
           ],
           "lines": {
             "first_meet": "[contented sigh] I'm Grey Nell, the overcast sky. One grey blanket, no harsh shadows. Perfect weather for tea and fritters.",
@@ -1640,7 +1814,9 @@
             "a long thin perfectly straight white line drawn across a clear blue sky",
             "a high airplane leaving a narrow white trail behind it, the tiny plane visible at the tip of the line",
             "two or more parallel straight white streaks crossing the sky with uniform width, unlike curved wispy natural clouds",
-            "an older contrail spreading into a wider fuzzy but still straight band across a blue sky"
+            "an older contrail spreading into a wider fuzzy but still straight band across a blue sky",
+            "a white airplane trail seen between buildings or wires",
+            "a contrail glowing pink in the evening sky"
           ],
           "lines": {
             "first_meet": "[hurried] Streaky, an airplane contrail! Engine vapour freezes into ice ten kilometres up. Busy schedule, next stop anywhere!",
@@ -1664,7 +1840,10 @@
           "water flowing or falling, from waves on a beach to a stream, drain or fountain",
           "small drops of water beading on grass, leaves, glass or a car body",
           "a wide landscape where water meets land: sand, rocks, reeds, mud banks or a paved road",
-          "white snow or still water filling the ground, with trees, buildings or hills around it"
+          "white snow or still water filling the ground, with trees, buildings or hills around it",
+          "water at night reflecting streetlights and car lights",
+          "a blurry close-up of a water surface",
+          "water seen from above on a road, path or gutter"
         ],
         "lines": {
           "first_meet": "[low, slow] I am every drop you've stepped over. Sea, storm drain, dewdrop: all me, in different shapes. Some of me is in you too.",
@@ -1693,7 +1872,9 @@
             "close-up of a curling wave face breaking into white churning foam and flying spray",
             "several parallel rows of tall surf marching toward a sandy beach, open sea reaching an empty horizon with no far bank",
             "big breaking waves filling the frame, seen from the beach at the seafront, grey monsoon sky above",
-            "a choppy sea full of whitecaps and swells, waves standing tall well above the sand"
+            "a choppy sea full of whitecaps and swells, waves standing tall well above the sand",
+            "waves at dusk or night with white foam under a dim sky",
+            "a blurry photo of a wave breaking on the shore"
           ],
           "lines": {
             "first_meet": "[laughing] Breaker, the sea wave! My water barely moves. I'm energy from distant storms, passing by.",
@@ -1718,7 +1899,9 @@
             "an open concrete-walled drainage channel running between houses and shops in a city, with dark stagnant water",
             "close-up of black murky drain water clogged with floating plastic bags, bottles and grey foam",
             "a city storm drain seen from a road bridge: steep grey concrete walls, rubbish heaps and reeds, buildings on both sides",
-            "a half-empty urban storm drain bed of mud, garbage and weeds below a low wall beside a busy street"
+            "a half-empty urban storm drain bed of mud, garbage and weeds below a low wall beside a busy street",
+            "an open drain at night under a streetlight, dark water shining",
+            "a drain beside a road with parked cars and motorbikes along it"
           ],
           "lines": {
             "first_meet": "[grumbles] I'm Drain Stan. Built for rain, not plastic bags. Block me and the whole street floods.",
@@ -1744,7 +1927,9 @@
             "close-up of a puddle on cracked pavement with raindrop rings rippling outward, road surface all around it",
             "a brown muddy puddle in a pothole on a street, tyre tracks and footprints around the edge",
             "a small irregular puddle beside a curb or footpath, edged by dry concrete, a pair of shoes for scale",
-            "flat water lying on the ground after the rain has stopped, an upside-down reflection of a building in it"
+            "flat water lying on the ground after the rain has stopped, an upside-down reflection of a building in it",
+            "a puddle at night reflecting streetlights and a parked car",
+            "a puddle beside a car tyre on a wet road, seen from above"
           ],
           "lines": {
             "first_meet": "[giggles] Splash! That's my name. Tiny, yes, but hold your phone low and I'll show you the whole sky upside down.",
@@ -1770,7 +1955,9 @@
             "macro photo of tiny round glistening water beads on green grass blades in early morning light",
             "a spider web strung with rows of small sparkling dew drops, soft blurred garden background",
             "close-up of perfectly round droplets resting on a leaf, each drop holding a tiny upside-down scene",
-            "a dewy lawn at sunrise, grass silvery with countless tiny droplets under low golden sunlight"
+            "a dewy lawn at sunrise, grass silvery with countless tiny droplets under low golden sunlight",
+            "water drops on a car windscreen or bonnet in the early morning",
+            "a blurry close-up of drops on a leaf"
           ],
           "lines": {
             "first_meet": "[softly] I'm Dewy, the morning dew. I formed from thin air when the grass got cold. Look close: the garden's upside down in me.",
@@ -1796,7 +1983,9 @@
             "jets of water shooting straight upward from a round stone or tiled basin in a park, droplets sparkling",
             "a decorative fountain in the middle of a city roundabout, water spraying from nozzles around a sculpture",
             "close-up of a vertical water jet and its falling spray landing in a shallow painted basin with coins",
-            "a fountain lit with coloured lights at night in a public square, people and benches nearby"
+            "a fountain lit with coloured lights at night in a public square, people and benches nearby",
+            "a fountain at night lit by coloured lights",
+            "a blurry photo of water spraying from a fountain"
           ],
           "lines": {
             "first_meet": "[grandly] Sir Fountain, star of the roundabout! My secret? Same water, round and round. A pump does the jumping.",
@@ -1823,7 +2012,9 @@
             "close-up of pencil-like breathing roots poking up out of grey mud at the edge of the creek water",
             "a small wooden boat on a calm creek between thick mangrove walls, flat coastal land with no hills",
             "a wide view of a maze of creek channels winding through mangrove forest toward the sea",
-            "low-tide creek with exposed shiny mudflats, crabs and herons along the mangrove-lined water's edge"
+            "low-tide creek with exposed shiny mudflats, crabs and herons along the mangrove-lined water's edge",
+            "a mangrove creek at dusk, dark trees reflected in still water",
+            "mangrove roots in muddy water seen from a boat or bridge"
           ],
           "lines": {
             "first_meet": "[hushed] Mangrove Mo, the mangrove creek. Fish and prawns grow up in my roots before going to sea. Shh, they're small.",
@@ -1847,7 +2038,13 @@
           "a wooden cart on wheels parked on a market street, loaded with goods, fruit or a cooking setup",
           "a close-up photo of a wheel, tyre, headlight or hand-painted body panel of a vehicle",
           "a vehicle seen from the pavement on a dusty city road with shop signs and overhead wires",
-          "a boat, tractor or train seen from a distance against open water, fields or railway tracks"
+          "a boat, tractor or train seen from a distance against open water, fields or railway tracks",
+          "a vehicle parked at night under a streetlight, partly in shadow",
+          "a close-up of a vehicle headlight, wheel or mudguard, slightly blurry",
+          "a row of parked cars, motorbikes and rickshaws along a pavement",
+          "a blurry photo of traffic at night with headlights and tail light streaks",
+          "a vehicle seen from behind or above at an odd angle, cropped by the edge of the photo",
+          "a parked vehicle under a dusty cover or tarp, only the wheels and outline showing"
         ],
         "lines": {
           "first_meet": "[warm chuckle] Hello! I'm Old Roundabout. Everything with wheels goes round me. Photos from the sidewalk only!",
@@ -1875,7 +2072,11 @@
             "a close-up of a rickshaw front with one headlight, a small windscreen, chrome trim and dangling tassels",
             "the back of an auto rickshaw with painted art, slogans and reflective tape under a curved hood",
             "an enclosed rickshaw cabin with a curved roof and side panels, unlike an open flat-roofed cart with facing benches",
-            "blue-and-white or green CNG rickshaws parked in a row at a roadside rickshaw stand"
+            "blue-and-white or green CNG rickshaws parked in a row at a roadside rickshaw stand",
+            "an auto rickshaw parked at night under a streetlight, its canopy in shadow",
+            "a blurry photo of a rickshaw moving through traffic at dusk with its single headlight on",
+            "a close-up of a rickshaw's small front wheel and mudguard on the road",
+            "the side of a three-wheeler rickshaw cropped by the frame, showing the canvas hood and passenger seat"
           ],
           "lines": {
             "first_meet": "[revs] Tuk Tuk! I'm a three-wheeled taxi. Granddad was a smoky two-stroke. Photos from the sidewalk!",
@@ -1902,7 +2103,10 @@
             "a tall carved wooden crown above a truck cab, decorated with mirrors, painted patterns and small lights",
             "a close-up of a truck's lower edge with dangling metal chains, bells and leaf-shaped pendants",
             "the back of a painted cargo truck with decorative calligraphy, a portrait panel and mirror mosaic",
-            "a painted open wooden cargo body with no passenger windows, unlike a minibus or a plain steel water tank"
+            "a painted open wooden cargo body with no passenger windows, unlike a minibus or a plain steel water tank",
+            "a painted truck parked at night, its colourful panels lit by streetlights and small coloured bulbs",
+            "a close-up of one hand-painted truck panel with flowers or an eye, cropped tightly",
+            "a huge truck seen from below at an odd angle, filling the frame with painted metal"
           ],
           "lines": {
             "first_meet": "[proudly] They call me the bride. Read my back: 'Look, but with love.' From the sidewalk, please.",
@@ -1928,7 +2132,10 @@
             "a close-up of a decorated bus front with a chrome grille, painted motifs, glittering stickers and a route number",
             "a side view of a minibus with a long row of passenger windows, an open door and a roof rack",
             "a decorated passenger bus with windows and doors along its length, unlike a painted cargo truck with a wooden crown",
-            "a stickered minibus at a busy roadside stop under overhead wires and shop signs"
+            "a stickered minibus at a busy roadside stop under overhead wires and shop signs",
+            "a decorated minibus at night with rows of small glowing lights and reflective stickers",
+            "a blurry photo of a crowded minibus moving through traffic, passengers hanging at the door",
+            "a close-up of glittering stickers and chrome trim on the side of a bus, cropped tightly"
           ],
           "lines": {
             "first_meet": "[shouts] Route Eleven, all aboard! Chrome to the roof! Snap me from the sidewalk; I don't brake for fans.",
@@ -1953,7 +2160,12 @@
             "a red 70cc motorcycle with a small round headlight and a front basket parked on a street",
             "a close-up of a motorbike fuel tank, engine and exhaust pipe between two spoked wheels",
             "a row of parked motorcycles along a pavement outside shops",
-            "a two-wheeled motorbike with an engine and fuel tank, unlike a pedal bicycle, and with no passenger cart behind"
+            "a two-wheeled motorbike with an engine and fuel tank, unlike a pedal bicycle, and with no passenger cart behind",
+            "a motorcycle parked at night under a streetlight, its chrome and fuel tank catching the light",
+            "a close-up of a motorbike headlight, speedometer and handlebars with mirrors",
+            "a motorbike seen from behind with a red tail light and a number plate, parked beside a wall",
+            "a blurry photo of a motorcycle rider passing in traffic at dusk",
+            "a motorbike seen from above with its seat, tank and handlebars, wet after rain"
           ],
           "lines": {
             "first_meet": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Snap me from the sidewalk!",
@@ -1980,7 +2192,10 @@
             "a small flat wooden cart on two car tyres pulled by a donkey on a city street",
             "a donkey harnessed between two wooden shafts in front of a low cart loaded with bricks or water drums",
             "a close-up of a flat plank cart bed on two rubber car tyres with ropes and sacks",
-            "a plain low cart with no hood, plumes or painted panels, pulled by an animal rather than pushed by hand"
+            "a plain low cart with no hood, plumes or painted panels, pulled by an animal rather than pushed by hand",
+            "a donkey cart on a dim street at dusk, the donkey and load in silhouette",
+            "a close-up of a donkey's head in a harness beside the wooden cart shaft",
+            "a parked empty donkey cart with its shafts resting on the ground beside a road"
           ],
           "lines": {
             "first_meet": "[sighs] Yes, a donkey cart. Donkeys still haul goods through many of the world's markets. Photos from a distance, no flash.",
@@ -2005,7 +2220,10 @@
             "a truck carrying a large cylindrical steel water tank painted blue or white",
             "the back of a water tanker with a round tank, a valve pipe and painted phone numbers",
             "a close-up of water dripping from a tanker valve onto a dusty road",
-            "a plain cylindrical tank truck with no painted flowers, calligraphy or carved wooden crown"
+            "a plain cylindrical tank truck with no painted flowers, calligraphy or carved wooden crown",
+            "a water tanker parked at night on a residential street, its round tank lit by a streetlight",
+            "a close-up of the curved steel side of a water tank on a truck, cropped by the frame",
+            "a water tanker seen from the side filling a house tank with a hose pipe"
           ],
           "lines": {
             "first_meet": "[heavy exhale] Tanker Tom. When taps run dry, the city calls the number on my back. I can't stop fast, so stay off the road.",
@@ -2031,13 +2249,56 @@
             "a two-wheeled pedal bicycle with a metal frame, chain and handlebars leaning against a wall",
             "a close-up of bicycle pedals, chain and a thin spoked wheel with no engine",
             "a black roadster bicycle with a rear carrier rack and a bell parked beside a railing",
-            "a thin-framed bicycle with no fuel tank, exhaust pipe or engine, lighter than a motorcycle"
+            "a thin-framed bicycle with no fuel tank, exhaust pipe or engine, lighter than a motorcycle",
+            "a bicycle parked at night under a streetlight, its thin frame and spokes in shadow",
+            "a close-up of a bicycle handlebar with a bell and brake levers",
+            "a bicycle seen from above or at an odd angle, wheels cropped by the frame",
+            "a blurry photo of a person riding a bicycle on a road at dusk",
+            "a bicycle locked to a railing among other bikes, partly hidden"
           ],
           "lines": {
             "first_meet": "[bell rings] Pedal Pehelwan! No petrol, just legs and forty years of milk cans. Photos from the kerb!",
             "again": "[bell rings twice] You again! Still walking? Good. Walking and pedalling, the two honest speeds.",
             "goodbye": "[puffs] Uphill now. Go find a park. I'll be the one leaning on the railing, catching my breath."
           }
+        },
+        {
+          "id": "car",
+          "name": "Parker",
+          "species": "Car",
+          "category": "vehicles",
+          "tier": "common",
+          "rarity": "common",
+          "habitat": [
+            "street"
+          ],
+          "caution": false,
+          "personality": "A parked family car who sits still 23 hours a day and is openly jealous of anyone with legs.",
+          "voice": "Adult, gender-neutral, laid-back and drowsy, dry humour, slight yawn.",
+          "descriptions": [
+            "a four-wheeled passenger car, a sedan or hatchback, parked at the side of a street",
+            "a photo of a car parked on the street",
+            "a grey sedan car parked in front of a house",
+            "a silver car or SUV parked on a driveway or outside a gate",
+            "cars parked in a car park beside a building",
+            "an old dusty or rusty car left parked in a field or empty lot",
+            "a car parked at night under a streetlight, partly in shadow, its paint glinting",
+            "a dark photo of a parked car at dusk, its shape barely visible with a reflection on the windscreen",
+            "a dark car silhouette at night with its headlights or red tail lights glowing",
+            "a close-up of a car headlight, bonnet and front grille with a badge",
+            "a close-up of a car wheel with an alloy rim and a black rubber tyre",
+            "the back of a car with tail lights, a boot lid and a number plate",
+            "a car seen from the side at an odd angle, cropped by the edge of the photo",
+            "the roof, bonnet and windscreen of a car photographed from above, wet with raindrops",
+            "a taxi or small car in traffic, slightly blurry",
+            "a closed metal car body with four doors and glass windows, unlike an open three-wheeled rickshaw, a minibus or a painted truck"
+          ],
+          "lines": {
+            "first_meet": "[yawns] Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+            "again": "[dryly] Still parked. Still jealous of your legs. How many steps today?",
+            "goodbye": "[sighs] Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up."
+          },
+          "match_title": "none"
         }
       ]
     },
@@ -2055,7 +2316,11 @@
           "a close-up photo of old weathered stone, brick or plaster walls with arches, carvings or windows",
           "a photo of a historic landmark, old fort or ruin with walls, arches and steps",
           "a photo of an elevated concrete structure on pillars such as an overpass, water tank or footbridge",
-          "a photo of a harbour, coast or village with man-made structures such as a jetty, lighthouse or huts"
+          "a photo of a harbour, coast or village with man-made structures such as a jetty, lighthouse or huts",
+          "a building or monument at night lit by floodlights or streetlights",
+          "a tall structure seen from below at a steep angle, partly cropped",
+          "a building seen through traffic and parked cars on a busy road",
+          "a blurry photo of a large building at dusk"
         ],
         "lines": {
           "first_meet": "[warmly] Hello, friend. I'm Old Mason. Every wall you pass, someone once lifted, stone by stone.",
@@ -2082,7 +2347,9 @@
             "a large rounded dome on a mosque roof, white, green or tiled, with a golden crescent finial on top",
             "a close-up photo of a mosque dome covered in blue or green glazed tiles with a crescent spire",
             "a wide photo of a neighbourhood mosque with a central dome and slender minarets beside it",
-            "a mosque dome on a prayer hall with minarets, without green shrine flags or fairy lights, and not a huge white marble cube mausoleum"
+            "a mosque dome on a prayer hall with minarets, without green shrine flags or fairy lights, and not a huge white marble cube mausoleum",
+            "a mosque dome at night lit by green or white lights",
+            "a dome seen between buildings or behind wires from a street"
           ],
           "lines": {
             "first_meet": "[softly] Hello, friend. I'm Domenic, the dome. My curve spreads my weight; the hall needs few pillars.",
@@ -2107,7 +2374,9 @@
             "a narrow steel pedestrian bridge crossing over a busy road with staircases at both ends",
             "an overhead footbridge covered in large advertising banners and billboards above city traffic",
             "a photo of a metal staircase climbing up to a narrow covered walkway above a road",
-            "a thin walkway for people only with no cars on top, much narrower than a flyover or road bridge"
+            "a thin walkway for people only with no cars on top, much narrower than a flyover or road bridge",
+            "a pedestrian bridge at night with lights over traffic",
+            "a footbridge seen from below with cars and buses passing underneath"
           ],
           "lines": {
             "first_meet": "[sighs] Banner Ben, the footbridge. All these stairs, built for you, and still you dash through traffic!",
@@ -2132,7 +2401,9 @@
             "a tall slender tower beside a mosque with small balconies and a pointed cap on top",
             "a close-up of the top of a minaret with loudspeakers mounted under a pointed cap",
             "a pair of thin white or tiled towers rising from a mosque against the sky",
-            "a slim tower with no clock faces and no glass lantern room, ending in a pointed cap with a crescent"
+            "a slim tower with no clock faces and no glass lantern room, ending in a pointed cap with a crescent",
+            "a minaret lit up at night against a dark sky",
+            "a minaret seen from below at a steep angle, top cropped"
           ],
           "lines": {
             "first_meet": "[gently] I'm Tall Tim, the minaret. The caller once climbed my stairs. Now a loudspeaker rides up here, but the call is the same.",
@@ -2157,7 +2428,9 @@
             "an elevated concrete road raised on large pillars above a city intersection with traffic below",
             "a photo from beneath an overpass showing thick concrete pillars, a dark underside and vehicles",
             "a wide curving concrete flyover with ramps sloping down to street level and cars on top",
-            "a raised road for cars passing over another road, not over water and not a narrow footbridge"
+            "a raised road for cars passing over another road, not over water and not a narrow footbridge",
+            "a flyover at night with streetlights and car light streaks",
+            "an overpass seen from a car window, slightly blurry"
           ],
           "lines": {
             "first_meet": "[proudly] I'm Flyover Frank. Above me, horns all day. Below me, shade, tea stalls and napping rickshaw drivers. I run two cities.",
@@ -2182,7 +2455,9 @@
             "a massive white marble cube-shaped mausoleum with a single dome on a raised platform",
             "a wide photo of a white marble tomb with tall pointed arches, framed by gardens and fountains",
             "a close-up of tall pointed arched openings in a smooth white marble wall under a dome",
-            "a huge white square monument with sloping walls and one dome, without minarets, unlike an ordinary neighbourhood mosque"
+            "a huge white square monument with sloping walls and one dome, without minarets, unlike an ordinary neighbourhood mosque",
+            "a white marble mausoleum lit at night by floodlights",
+            "a white domed tomb seen from far away through trees and traffic"
           ],
           "lines": {
             "first_meet": "[solemnly] I am the Founder's Tomb. A nation's founder rests here, beside his sister. You are welcome.",
@@ -2207,7 +2482,9 @@
             "a Victorian Gothic hall of yellowish-grey sandstone with pointed arches and a square tower",
             "a stone building with a square tower and pointed gothic windows set in green lawns with tall trees",
             "a close-up of sandstone gothic arches and banded stonework on an old hall",
-            "a single grand stone hall standing alone in a park, not a crowded street facade with shops below"
+            "a single grand stone hall standing alone in a park, not a crowded street facade with shops below",
+            "a stone Gothic hall at dusk with lit windows",
+            "a sandstone tower with pointed windows seen through trees"
           ],
           "lines": {
             "first_meet": "[proudly] I'm Sandstone Hall. Step inside and look up: a famous painter did my ceiling. I wear art like a crown.",
@@ -2231,7 +2508,10 @@
           "a photo of crowded rooftops with water tanks, dish antennas, clotheslines and solar panels against the sky",
           "a photo of a painted wall or shop front by the roadside covered in signs, lettering and street fixtures",
           "a photo of an asphalt road with painted markings, kerbs, barriers, signs and traffic poles",
-          "a wide photo of a city skyline with towers, poles, billboards and cables against the sky"
+          "a wide photo of a city skyline with towers, poles, billboards and cables against the sky",
+          "a street at night under streetlights with shop signs, poles and parked cars",
+          "a blurry photo of a city object on a busy road",
+          "a man-made object on a street seen at an odd angle, partly cropped"
         ],
         "lines": {
           "first_meet": "[honks twice] I'm Old Corner, the street's oldest resident. Poles, walls, tanks: all my children. Which one did you find?",
@@ -2259,7 +2539,9 @@
             "a photo of a concrete or steel pole wrapped in a chaotic tangle of black cables spreading in all directions",
             "a close-up photo of messy hanging black wires, junction boxes and hooked connections clustered on a pole",
             "a narrow market street with spaghetti-like bundles of wires strung overhead between poles and buildings",
-            "a pole with sagging cable bundles and meter boxes, with no lamp head arm and no transformer platform"
+            "a pole with sagging cable bundles and meter boxes, with no lamp head arm and no transformer platform",
+            "an electric pole at night with tangled wires lit by a streetlight",
+            "looking straight up a pole into a mess of wires against the sky"
           ],
           "lines": {
             "first_meet": "[groans] Uncle Hook. Each hook is someone's cable, internet or stolen power. Stay back!",
@@ -2284,7 +2566,9 @@
             "a photo of a whitewashed wall covered in black, red or blue hand lettering",
             "a close-up photo of brush-painted slogans and phone numbers in one or two flat colours on a plain wall",
             "a long boundary wall with rows of hand-lettered adverts and political slogans and no pictures",
-            "simple painted text directly on a wall, not a multicoloured artwork and not a board fixed above a shop"
+            "simple painted text directly on a wall, not a multicoloured artwork and not a board fixed above a shop",
+            "a painted wall slogan at night under a streetlight",
+            "wall writing seen at an angle behind a parked car or motorbike"
           ],
           "lines": {
             "first_meet": "[proudly] Wall Wally, Mister Famous! Hand-painted ads and slogans. The city's oldest social media.",
@@ -2310,7 +2594,9 @@
             "a photo of an open-air roadside tea stall with big aluminium kettles steaming on a gas burner",
             "plastic chairs and woven wooden cots around a small roadside stall with people drinking tea",
             "a close-up photo of small glass cups of milky brown chai on a tray beside a dented kettle",
-            "a street-corner tea shack with a counter, hanging snack packets and a TV showing a game"
+            "a street-corner tea shack with a counter, hanging snack packets and a TV showing a game",
+            "a roadside tea stall at night lit by a bare bulb, steam rising",
+            "a blurry tea stall with people sitting on benches and motorbikes parked in front"
           ],
           "lines": {
             "first_meet": "[warmly] Chai Charlie, master of milky tea! Milk, leaves, sugar, boiled till they surrender. Sit; the sports talk is free.",
@@ -2334,7 +2620,9 @@
           "descriptions": [
             "a photo of a park bench with wooden slats or a metal frame and a backrest among trees and grass",
             "a close-up photo of weathered wooden seat slats with peeling paint and metal armrests",
-            "a concrete or painted iron bench beside a park walking track, empty or with people sitting"
+            "a concrete or painted iron bench beside a park walking track, empty or with people sitting",
+            "a park bench at night under a lamp",
+            "a bench seen from the side, partly cropped, with fallen leaves"
           ],
           "lines": {
             "first_meet": "[chuckles] Bella Bench here. Every morning the walking uncles sit on me and discuss cholesterol and sports. I know everything.",
@@ -2359,7 +2647,9 @@
             "a photo of big cylindrical ribbed plastic water tanks in black, blue or white on house rooftops",
             "a close-up photo of a ribbed black plastic tank with a screw lid and pipes running down the wall",
             "a rooftop view of many water tanks on neighbouring houses against the sky",
-            "a plastic tank resting directly on a house roof, not a tall water tower raised on legs or columns"
+            "a plastic tank resting directly on a house roof, not a tall water tower raised on legs or columns",
+            "water tanks on a rooftop seen at dusk against the sky",
+            "a black plastic tank seen from below on a building edge"
           ],
           "lines": {
             "first_meet": "[anxious] Tanky Tess. Some days the mains water never comes, so we wait for the tanker. Every drop in me is precious.",
@@ -2384,7 +2674,9 @@
             "a photo of bold white parallel stripes painted flat across an asphalt road for pedestrians",
             "a close-up photo of worn white painted bars on dark tarmac, level with the road surface",
             "a pedestrian crossing at a junction seen from the pavement, white stripes running across the lanes",
-            "flat painted stripes level with the road, with no raised hump or bump"
+            "flat painted stripes level with the road, with no raised hump or bump",
+            "a zebra crossing at night lit by car headlights and streetlights",
+            "white road stripes seen from a car window or from above with a car tyre in the frame"
           ],
           "lines": {
             "first_meet": "[sighs] Zebra Zed. Named after an animal I've never met, and cars rarely stop for me. Still, I keep my stripes neat.",

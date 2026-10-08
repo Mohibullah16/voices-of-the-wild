@@ -62,7 +62,7 @@ export function writeRuntime() {
   };
   const lines = (o: RosterOwner) =>
     Object.fromEntries((Object.keys(o.lines) as LineKey[]).map((k) => [k, line(o, k)]));
-  const strip = ({ descriptions: _d, lines: _l, ...rest }: RosterOwner) => rest;
+  const strip = ({ descriptions: _d, lines: _l, match_title: _t, ...rest }: RosterOwner) => rest;
 
   let el = 0, ko = 0;
   for (const a of Object.values(audio)) a.engine === "elevenlabs" ? el++ : ko++;

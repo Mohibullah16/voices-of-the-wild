@@ -2474,5 +2474,121 @@
       "source": "https://commons.wikimedia.org/wiki/File:202605_Dot_pattern_pedestrian_zebra_crossing_at_Xingfeng_Road_-_Lane_836,_Xingfeng_Road_in_Bade_District,_Taoyuan_City_at_night_01.jpg",
       "query": "zebra crossing road markings"
     }
+  ],
+  "oak-tree": [
+    {
+      "id": "oak-tree",
+      "file": "oak-tree/1.jpg",
+      "title": "File:Damage to an Oak tree (Quercus robur) - geograph.org.uk - 8107049.jpg",
+      "author": "Richard Hoare",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Damage_to_an_Oak_tree_(Quercus_robur)_-_geograph.org.uk_-_8107049.jpg",
+      "query": "Quercus robur tree"
+    },
+    {
+      "id": "oak-tree",
+      "file": "oak-tree/2.jpg",
+      "title": "File:Quercus robur RF.jpg",
+      "author": "Robert Flogaus-Faust",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Quercus_robur_RF.jpg",
+      "query": "Quercus robur tree"
+    },
+    {
+      "id": "oak-tree",
+      "file": "oak-tree/3.jpg",
+      "title": "File:Acorns and oak leaves - geograph.org.uk - 7265155.jpg",
+      "author": "Philip Halling",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Acorns_and_oak_leaves_-_geograph.org.uk_-_7265155.jpg",
+      "query": "oak leaves acorns"
+    },
+    {
+      "id": "oak-tree",
+      "file": "oak-tree/4.jpg",
+      "title": "File:Quercus robur 3 RF.jpg",
+      "author": "Robert Flogaus-Faust",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Quercus_robur_3_RF.jpg",
+      "query": "Quercus robur tree"
+    }
+  ],
+  "bicycle": [
+    {
+      "id": "bicycle",
+      "file": "bicycle/1.jpg",
+      "title": "File:Parked bicycle with graffitied building facade and doors in Amsterdam.jpg",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Parked_bicycle_with_graffitied_building_facade_and_doors_in_Amsterdam.jpg",
+      "query": "bicycle parked street"
+    },
+    {
+      "id": "bicycle",
+      "file": "bicycle/2.jpg",
+      "title": "File:Sepeda onthel (roadster bicycle).jpg",
+      "author": "Toriqun Nuril Anwar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sepeda_onthel_(roadster_bicycle).jpg",
+      "query": "roadster bicycle"
+    },
+    {
+      "id": "bicycle",
+      "file": "bicycle/3.jpg",
+      "title": "File:Port Street Parked Bikes, New Orleans 2012.jpg",
+      "author": "Infrogmation of New Orleans",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Port_Street_Parked_Bikes,_New_Orleans_2012.jpg",
+      "query": "bicycle parked street"
+    },
+    {
+      "id": "bicycle",
+      "file": "bicycle/4.jpg",
+      "title": "File:Sepeda onthel (roadster bicycle) 2.jpg",
+      "author": "Toriqun Nuril Anwar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sepeda_onthel_(roadster_bicycle)_2.jpg",
+      "query": "roadster bicycle"
+    }
+  ],
+  "car": [
+    {
+      "id": "car",
+      "file": "car/1.jpg",
+      "title": "File:Abandoned car in Marine Park (10852p).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Abandoned_car_in_Marine_Park_(10852p).jpg",
+      "query": "parked car street"
+    },
+    {
+      "id": "car",
+      "file": "car/2.jpg",
+      "title": "File:Betfred night shift car park, Green Street, Wigan - geograph.org.uk - 5570477.jpg",
+      "author": "Jaggery",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Betfred_night_shift_car_park,_Green_Street,_Wigan_-_geograph.org.uk_-_5570477.jpg",
+      "query": "car parked at night street"
+    },
+    {
+      "id": "car",
+      "file": "car/3.jpg",
+      "title": "File:My Corolla e90 1992 grey color.jpg",
+      "author": "Iam1947",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:My_Corolla_e90_1992_grey_color.jpg",
+      "query": "Toyota Corolla Pakistan"
+    }
   ]
 }

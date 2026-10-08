@@ -3466,5 +3466,77 @@
     "voiceName": "Ahmed - Clear, Deep and Natural",
     "model": "eleven_v4",
     "duration": 6.48
+  },
+  "oak-tree/first_meet": {
+    "owner": "oak-tree",
+    "line": "first_meet",
+    "text": "[warm, booming] Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+    "caption": "Well, hello down there. I'm Old Oak. Two hundred years in one spot. Touch some grass for me? I can't reach.",
+    "src": "audio/oak-tree/first_meet.9ee01fcd.mp3",
+    "engine": "kokoro",
+    "voice": "bm_george@0.92",
+    "voiceName": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 7.9
+  },
+  "oak-tree/again": {
+    "owner": "oak-tree",
+    "line": "again",
+    "text": "[pleased] You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+    "caption": "You came back! I've been right here. Obviously. Did you walk? Tell me everything; I haven't moved since the 1820s.",
+    "src": "audio/oak-tree/again.36246302.mp3",
+    "engine": "kokoro",
+    "voice": "bm_george@0.92",
+    "voiceName": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 8.93
+  },
+  "oak-tree/goodbye": {
+    "owner": "oak-tree",
+    "line": "goodbye",
+    "text": "[rustling] Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it.",
+    "caption": "Off you go. There's a lawn by my roots that misses you, and a bird up top who'll tell me if you skip it.",
+    "src": "audio/oak-tree/goodbye.733f39f0.mp3",
+    "engine": "kokoro",
+    "voice": "bm_george@0.92",
+    "voiceName": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 7.33
+  },
+  "car/first_meet": {
+    "owner": "car",
+    "line": "first_meet",
+    "text": "[yawns] Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+    "caption": "Oh. Hi. I'm Parker, the parked car. Twenty-three hours a day, I just sit here. You walked over? Show-off.",
+    "src": "audio/car/first_meet.76aa26d0.mp3",
+    "engine": "kokoro",
+    "voice": "am_eric@0.95",
+    "voiceName": "am_eric",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 5.9
+  },
+  "car/again": {
+    "owner": "car",
+    "line": "again",
+    "text": "[dryly] Still parked. Still jealous of your legs. How many steps today?",
+    "caption": "Still parked. Still jealous of your legs. How many steps today?",
+    "src": "audio/car/again.8c8aa2af.mp3",
+    "engine": "kokoro",
+    "voice": "am_eric@0.95",
+    "voiceName": "am_eric",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 4
+  },
+  "car/goodbye": {
+    "owner": "car",
+    "line": "goodbye",
+    "text": "[sighs] Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up.",
+    "caption": "Go on, walk. Somebody should use their wheels, and it isn't me. Stay on the pavement, eyes up.",
+    "src": "audio/car/goodbye.5c9f9f07.mp3",
+    "engine": "kokoro",
+    "voice": "am_eric@0.95",
+    "voiceName": "am_eric",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX:fp32",
+    "duration": 5.43
   }
 }

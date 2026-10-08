@@ -78,7 +78,8 @@ for (const cat of roster.categories) {
   if (gk.sort().join() !== ['again', 'first_meet', 'goodbye', 'hint'].join()) errs.push(`${g.id}: line keys ${gk}`);
   const gtoks = new Set(nameTokens(g.name));
   for (const k of ['first_meet', 'again', 'goodbye', 'hint']) { const l = checkLine(g.id, k, g.lines[k], 130, gtoks); allTotal += l || 0; }
-  if (!Array.isArray(cat.characters) || cat.characters.length !== (cat.id === 'vehicles' ? 7 : 6)) errs.push(`${cat.id}: ${cat.characters && cat.characters.length} characters (need ${cat.id === 'vehicles' ? 7 : 6})`); // vehicles: + the bicycle
+  const need = { vehicles: 8, trees: 7 }[cat.id] || 6; // vehicles: + bicycle, car; trees: + oak (universal characters)
+  if (!Array.isArray(cat.characters) || cat.characters.length !== need) errs.push(`${cat.id}: ${cat.characters && cat.characters.length} characters (need ${need})`);
   const elders = cat.characters.filter(c => c.tier === 'elder').length;
   if (elders !== (cat.id === 'vehicles' ? 4 : 2)) errs.push(`${cat.id}: ${elders} elders (need ${cat.id === 'vehicles' ? 4 : 2})`); // vehicles: + bicycle, motorbike
   const cautions = cat.characters.filter(c => c.caution).length;
@@ -101,7 +102,7 @@ for (const cat of roster.categories) {
     for (const k of ['name', 'personality', 'voice']) { const dh = denyHits(c[k] || ''); if (dh.length) errs.push(`${c.id}.${k}: denylisted word(s) ${dh.join(', ')}`); }
     if (typeof c.caution !== 'boolean') errs.push(`${c.id}: caution not boolean`);
     if (!Array.isArray(c.habitat) || !c.habitat.length) errs.push(`${c.id}: habitat`);
-    if (!Array.isArray(c.descriptions) || c.descriptions.length < 3 || c.descriptions.length > 5) errs.push(`${c.id}: ${c.descriptions && c.descriptions.length} descriptions`);
+    if (!Array.isArray(c.descriptions) || c.descriptions.length < 3 || c.descriptions.length > 16) errs.push(`${c.id}: ${c.descriptions && c.descriptions.length} descriptions`);
     const lk = Object.keys(c.lines || {}).sort().join();
     if (lk !== 'again,first_meet,goodbye') errs.push(`${c.id}: line keys ${lk}`);
     const limit = c.tier === 'elder' ? 105 : 130;

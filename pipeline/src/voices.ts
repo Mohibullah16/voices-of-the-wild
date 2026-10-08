@@ -93,6 +93,12 @@ function classify(note: string) {
   return { pool, speed };
 }
 
+/** Characters added after the first cast: fixed voices, kept out of the usage count so nobody else's voice shifts. */
+const FIXED_CAST: Record<string, KVoice> = {
+  "oak-tree": { voice: "bm_george", speed: 0.92 },
+  car: { voice: "am_eric", speed: 0.95 },
+};
+
 /** Deterministic Kokoro cast for every non-elder owner (and fallbacks for elders). */
 export function kokoroCast(roster: Roster): Record<string, KVoice> {
   const cast: Record<string, KVoice> = {};
@@ -106,6 +112,7 @@ export function kokoroCast(roster: Roster): Record<string, KVoice> {
   for (const c of roster.categories) {
     const taken = new Set<string>([cast[c.guardian.id]!.voice]);
     for (const ch of c.characters) {
+      if (FIXED_CAST[ch.id]) { cast[ch.id] = FIXED_CAST[ch.id]!; continue; }
       const { pool, speed } = classify(ch.voice ?? "");
       const candidates = POOLS[pool] ?? POOLS["N-mid"]!;
       const free = candidates.filter((v) => !taken.has(v));
