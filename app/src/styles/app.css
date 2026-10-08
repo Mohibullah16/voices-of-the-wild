@@ -129,7 +129,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  /* clip, not hidden: hidden turns body into a scroll container, which breaks the sticky header on phones. */
+  overflow-x: clip;
 }
 /* Paper grain: SVG noise on a fixed, non-interactive layer. */
 body::before {
@@ -172,7 +173,7 @@ img, svg { display: block; }
   padding-top: env(safe-area-inset-top);
   box-sizing: content-box;
   position: sticky; top: 0; z-index: 10;
-  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  background: var(--paper); /* solid: content must not show through while scrolling */
   border-bottom: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
 }
 .wordmark {
@@ -495,12 +496,13 @@ voice-line { display: block; }
 .debug select { min-height: 44px; border-radius: 10px; border: 1px solid var(--rule-strong); background-color: var(--paper-raised); color: var(--ink); padding: 0 8px; max-width: 100%; }
 
 /* ---------- field guide ---------- */
-.guide { display: grid; gap: 28px; }
-.guide-head { display: grid; gap: 10px; }
+/* minmax(0, 1fr): a grid column must not grow to fit the sideways-scrolling chip row (it widened the page on phones). */
+.guide { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.guide-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
 .guide-progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; color: var(--ink-2); }
 .guide-progress strong { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink); font-weight: 600; }
 .cat-index {
-  display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 calc(-1 * var(--gutter));
+  min-width: 0; display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 calc(-1 * var(--gutter));
   padding-left: var(--gutter); padding-right: var(--gutter); scroll-snap-type: x proximity; scrollbar-width: thin;
 }
 .cat-index a {
