@@ -51,8 +51,8 @@
     "embeddings": "EmbeddingGemma 2 by Google DeepMind (Apache 2.0), via Transformers.js.",
     "calibration_photos": "Wikimedia Commons contributors (CC0 / public domain / CC BY / CC BY-SA); used only for threshold calibration, not shipped.",
     "lines": {
-      "elevenlabs": 81,
-      "kokoro": 208
+      "elevenlabs": 84,
+      "kokoro": 205
     }
   },
   "categories": [
@@ -2917,7 +2917,7 @@
           "name": "Red Seventy",
           "species": "Motorcycle",
           "category": "vehicles",
-          "tier": "common",
+          "tier": "elder",
           "rarity": "common",
           "habitat": [
             "street"
@@ -2927,25 +2927,25 @@
           "voice": "Young adult, any gender, quick and buzzy, upbeat high energy.",
           "lines": {
             "first_meet": {
-              "text": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Sidewalk for photos, boss!",
-              "caption": "Red Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Sidewalk for photos, boss!",
-              "src": "audio/motorcycle/first_meet.e965fe12.mp3",
-              "engine": "kokoro",
-              "duration": 7.38
+              "text": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Snap me from the sidewalk!",
+              "caption": "Red Seventy, the little red 70cc! I carry whole families. Snap me from the sidewalk!",
+              "src": "audio/motorcycle/first_meet.085d686f.mp3",
+              "engine": "elevenlabs",
+              "duration": 8.72
             },
             "again": {
               "text": "[revs] You again! I'd race you, but I'm parked. Helmets for riders, sidewalk for photographers. Deal?",
               "caption": "You again! I'd race you, but I'm parked. Helmets for riders, sidewalk for photographers. Deal?",
-              "src": "audio/motorcycle/again.22bd94f5.mp3",
-              "engine": "kokoro",
-              "duration": 5.9
+              "src": "audio/motorcycle/again.a80d8b55.mp3",
+              "engine": "elevenlabs",
+              "duration": 7.6
             },
             "goodbye": {
-              "text": "[kickstart] Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me.",
-              "caption": "Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me.",
-              "src": "audio/motorcycle/goodbye.63c2319e.mp3",
-              "engine": "kokoro",
-              "duration": 5.55
+              "text": "[kickstart] Kick, kick... vroom! Explore the old market lanes on foot. Some are too narrow even for me.",
+              "caption": "Kick, kick... vroom! Explore the old market lanes on foot. Some are too narrow even for me.",
+              "src": "audio/motorcycle/goodbye.578ed008.mp3",
+              "engine": "elevenlabs",
+              "duration": 7.68
             }
           }
         },

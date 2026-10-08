@@ -288,7 +288,7 @@ function stirring(l: Extract<ListenState, { kind: "stirring" }>) {
       <p>${state.kit.phase === "running" && !useCloud()
         ? html`Still downloading the listener: <b class="num">${kitPercent()}%</b>. It answers as soon as it’s here.`
         : useCloud() ? (l.waking ? "Waking the cloud listener…" : "Reading it with EmbeddingGemma 2 in the cloud.")
-        : l.waking ? "Waking the listener… The first photo takes longest." : "On this phone. Nowhere else."}</p>
+        : l.waking ? "Waking the listener… The first photo takes longest." : "On this device. Nowhere else."}</p>
     </div>
   </section>`;
 }

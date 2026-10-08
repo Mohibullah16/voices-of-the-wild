@@ -4,6 +4,7 @@ import "./styles/game.css";
 import { render } from "lit-html";
 import { releaseEmbedder } from "./app/embedder";
 import { startKit } from "./app/kit";
+import { syncScore } from "./app/community";
 import { parseRoute, setRenderer, state, update, type Route } from "./app/state";
 import { applyCaptionSize, applyTheme } from "./app/theme";
 import { audioPaths, loadFieldData } from "./data";
@@ -81,6 +82,7 @@ async function boot() {
       void refreshFieldKit();
     } else void startKit().catch(() => {}); // resume an interrupted background download
   }
+  if (state.phase === "app") syncScore(5000); // say hello to the rankings (anonymous)
   // Leaving the app gives the GPU memory back to the phone; the next photo reloads the model from the cache.
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden" && state.listen.kind !== "stirring") releaseEmbedder();

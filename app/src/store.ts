@@ -18,8 +18,13 @@ export interface Settings {
   setupDone: boolean;
   /** Past the intro; the kit may still be downloading in the background. */
   started?: boolean;
-  /** Who reads the photo: auto = cloud on phones, on-device elsewhere. */
+  /** Who reads the photo: cloud (default; "auto" is treated as cloud) or on this device (opt-in). */
   listener?: "auto" | "device" | "cloud";
+  /** Show this player (anonymously) in the community rankings. Default on. */
+  rankings?: boolean;
+  /** Random id and generated nickname for the rankings. Nothing personal. */
+  playerId?: string;
+  playerName?: string;
   /** Where the model came from during setup. */
   modelSource?: "local" | "remote";
   /** Hash of the roster the field kit was downloaded for. */

@@ -11,11 +11,9 @@ export const wantsMock = () => {
   return q.has("mock") || (state.data?.source === "fixture" && q.get("model") !== "real");
 };
 
-/** Phones read photos in the cloud by default (EmbeddingGemma 2 doesn't fit in a phone's GPU memory); laptops on-device. */
+/** The cloud listener is the default everywhere; on-device is an opt-in in About. */
 export function useCloud(): boolean {
-  const pref = state.settings.listener ?? "auto";
-  if (pref !== "auto") return pref === "cloud";
-  return matchMedia("(pointer: coarse)").matches;
+  return state.settings.listener !== "device";
 }
 
 export function createEmbedder(source: ModelSource): Embedder {

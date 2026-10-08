@@ -3,6 +3,7 @@ import { addSteps, applyEncounter, seedFromCollection, type Rewards } from "../g
 import { loadGame, saveGame } from "../game/store";
 import { buildWorld } from "../game/world";
 import { allowMotion, primeMotion, startPedometer, stopPedometer } from "./pedometer";
+import { syncScore } from "./community";
 import { announce, state, update, type Moment } from "./state";
 
 export async function initGame() {
@@ -49,6 +50,7 @@ export function gameEncounter(id: string, kind: "species" | "guardian"): Rewards
   void saveGame(g);
   state.pendingMoments = momentsFor(rewards);
   popXp(rewards);
+  if (rewards.xp) syncScore();
   return rewards;
 }
 
@@ -82,6 +84,7 @@ export function walkSteps(n: number) {
   void saveGame(g);
   stopPedometer();
   popXp(rewards);
+  syncScore();
   update((s) => (s.listen = { kind: "walk", mode: s.listen.kind === "walk" ? s.listen.mode : "sensor", done: rewards }));
   // Badges and trail-done open a modal; let the XP pop-up be seen first.
   state.pendingMoments = [...(state.pendingMoments ?? []), ...momentsFor(rewards)];

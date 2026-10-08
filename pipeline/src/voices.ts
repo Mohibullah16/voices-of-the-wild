@@ -33,6 +33,7 @@ export const ELEVEN_CAST: Record<string, { id: string; name: string; why: string
   footbridge: { id: "IKne3meq5aSn9XLyUdCD", name: "Charlie (shared with sea-waves)", why: "young, earnest, energetic male" },
   "electric-pole-wires": { id: "pqHfZKP75CvOlQylNhV4", name: "Bill", why: "old, wise, grumbling uncle" },
   "wall-chalking": { id: "pNInz6obpgDQGcFmaJgB", name: "Adam", why: "brash, booming announcer" },
+  motorcycle: { id: "8baRIHZEGj62eS9YHzC6", name: "Neha P - Messy, Unpolished & Relatable", why: "young, casual, buzzy; the city's everyday motorbike" },
   bicycle: { id: "k7nOSUCadIEwB6fdJmbw", name: "Ahmed - Clear, Deep and Natural", why: "warm, steady uncle; a local voice for the city's bicycle" },
 };
 

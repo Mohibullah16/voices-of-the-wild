@@ -6,6 +6,7 @@ import { clearCollection, exportPayload, mergeCollections, parseCollection, save
 import { applyCaptionSize, applyTheme } from "../app/theme";
 import { startKit } from "../app/kit";
 import { releaseEmbedder, useCloud } from "../app/embedder";
+import { setRankings } from "../app/community";
 import { icon } from "./icons";
 import { loadSamples, type Sample } from "../samples";
 import { clearPhotos, photoCount } from "../photos";
@@ -14,7 +15,7 @@ let storage: StorageInfo | null = null;
 let samples: Sample[] | null = null;
 let storageAsked = false;
 
-function setListener(v: "auto" | "device" | "cloud") {
+function setListener(v: "device" | "cloud") {
   const wasCloud = useCloud();
   state.settings = { ...state.settings, listener: v };
   releaseEmbedder();
@@ -102,8 +103,8 @@ export function aboutView() {
     </header>
 
     <section aria-labelledby="h-device">
-      <h2 id="h-device">On this phone, not in a cloud</h2>
-      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this phone” below to keep every photo on the device and use the app offline. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
+      <h2 id="h-device">How it hears you</h2>
+      <p>The photo is shrunk, turned into 768 numbers by <strong>EmbeddingGemma 2</strong>, Google DeepMind’s open embedding model, and compared with numbers prepared earlier from short visual descriptions of every character. The model runs inside the browser with Transformers.js and ONNX Runtime, on the graphics chip through WebGPU when it can, otherwise on the processor. On phones, whose graphics chips run out of memory with this model, the shrunk photo goes instead to the same open model on a small server (the cloud listener), which sends back the 768 numbers and keeps nothing; switch the listener to “On this device” below to keep every photo on the device and use the app offline. The matching itself always happens on your device. With “Keep my photos” on, one small copy of your latest photo of each character stays in this browser’s storage, on this phone only, so it can sit on the card instead of the illustration. Switch it off or delete the photos in Settings below.</p>
       <ol class="flow">
         <li><p><strong>Category first.</strong> Is it a tree, a bird, a bicycle? If nothing clears the bar, nobody answers.</p></li>
         <li><p><strong>Then the species.</strong> If one character clearly wins inside that category, it speaks.</p></li>
@@ -147,8 +148,8 @@ cosine against precomputed description vectors, best per character
       <ul class="sample-credits">${samples.map((s) => html`<li><strong>${s.label}</strong>: <a href=${s.source} rel="noopener" target="_blank">${s.title}</a> by ${s.author}, <a href=${s.licenseUrl} rel="noopener" target="_blank">${s.license}</a>. Downscaled.</li>`)}</ul>
     </section>` : nothing}
 
-    <section aria-labelledby="h-device">
-      <h2 id="h-device">On this device</h2>
+    <section aria-labelledby="h-storage">
+      <h2 id="h-storage">On this device</h2>
       <p>Your field guide, voices and progress live in this browser’s storage. You can export the field guide below.</p>
       <dl class="checks" style="margin:0"><div><dt>Listening engine</dt><dd>${device === "webgpu" ? "WebGPU" : device === "wasm" ? "Processor (WebAssembly)" : device === "mock" ? "Simulated (dev fixture)" : device === "cloud" ? "Cloud listener" : "Not loaded yet"}${st.state === "loading" ? ", waking" : ""}</dd></div>
         <div><dt>Stored on this device</dt><dd class="num">${storage?.usage != null ? mb(storage.usage) : "unknown"}</dd></div>
@@ -162,9 +163,9 @@ cosine against precomputed description vectors, best per character
       <div class="setting">
         <div class="setting-label" id="listener-label">Listener<span>${useCloud()
           ? "Cloud: your shrunk photo is read by the same open model on a server, then discarded. Fast on any phone; needs a connection."
-          : "On this phone: nothing leaves the device and it works offline, even on a trail with no signal. Needs a strong graphics chip and a ~320 MB download."}</span></div>
+          : "On this device: nothing leaves the device and it works offline. Needs a strong graphics chip and a ~320 MB download."}</span></div>
         <div class="segmented" role="radiogroup" aria-labelledby="listener-label">
-          ${(["auto", "device", "cloud"] as const).map((t) => html`<label><input type="radio" name="listener" .checked=${(state.settings.listener ?? "auto") === t} @change=${() => setListener(t)} /><span>${t === "auto" ? "Automatic" : t === "device" ? "On this phone" : "Cloud"}</span></label>`)}
+          ${(["cloud", "device"] as const).map((t) => html`<label><input type="radio" name="listener" .checked=${(state.settings.listener === "device" ? "device" : "cloud") === t} @change=${() => setListener(t)} /><span>${t === "device" ? "On this device" : "Cloud"}</span></label>`)}
         </div>
       </div>
       <div class="setting">
@@ -172,6 +173,10 @@ cosine against precomputed description vectors, best per character
         <div class="segmented" role="radiogroup" aria-labelledby="theme-label">
           ${(["system", "light", "dark"] as const).map((t) => html`<label><input type="radio" name="theme" .checked=${state.settings.theme === t} @change=${() => setSetting("theme", t)} /><span>${t === "system" ? "Automatic" : t === "light" ? "Paper" : "Forest"}</span></label>`)}
         </div>
+      </div>
+      <div class="setting">
+        <label class="setting-label" for="rankings-toggle">Community rankings<span>Show me on the board under a generated nickname${state.settings.playerName ? ` (${state.settings.playerName})` : ""}. Only XP, voices met and streak are shared. Turning it off removes you.</span></label>
+        <span class="switch"><input id="rankings-toggle" type="checkbox" role="switch" .checked=${state.settings.rankings !== false} @change=${(e: Event) => void setRankings((e.target as HTMLInputElement).checked)} /><span></span></span>
       </div>
       <div class="setting">
         <label class="setting-label" for="captions-toggle">Large captions<span>Every voice is always captioned. This makes the words bigger.</span></label>

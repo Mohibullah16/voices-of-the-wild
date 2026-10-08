@@ -80,7 +80,7 @@ for (const cat of roster.categories) {
   for (const k of ['first_meet', 'again', 'goodbye', 'hint']) { const l = checkLine(g.id, k, g.lines[k], 130, gtoks); allTotal += l || 0; }
   if (!Array.isArray(cat.characters) || cat.characters.length !== (cat.id === 'vehicles' ? 7 : 6)) errs.push(`${cat.id}: ${cat.characters && cat.characters.length} characters (need ${cat.id === 'vehicles' ? 7 : 6})`); // vehicles: + the bicycle
   const elders = cat.characters.filter(c => c.tier === 'elder').length;
-  if (elders !== (cat.id === 'vehicles' ? 3 : 2)) errs.push(`${cat.id}: ${elders} elders (need ${cat.id === 'vehicles' ? 3 : 2})`);
+  if (elders !== (cat.id === 'vehicles' ? 4 : 2)) errs.push(`${cat.id}: ${elders} elders (need ${cat.id === 'vehicles' ? 4 : 2})`); // vehicles: + bicycle, motorbike
   const cautions = cat.characters.filter(c => c.caution).length;
   if (cautions > 1) errs.push(`${cat.id}: ${cautions} caution items (max 1)`);
   const landmarks = cat.characters.filter(c => (catItems.get(c.id) || {}).habitat?.includes('landmark')).length;
@@ -114,7 +114,7 @@ for (const cat of roster.categories) {
     }
   }
 }
-if (elderLines !== 81) errs.push(`elder lines ${elderLines} != 81`);
+if (elderLines !== 84) errs.push(`elder lines ${elderLines} != 84`);
 if (elderTotal > 8400) errs.push(`elder total ${elderTotal} > 8400`);
 
 console.log(`categories: ${roster.categories.length}, characters: ${roster.categories.reduce((a, c) => a + c.characters.length, 0)}, guardians: ${roster.categories.filter(c => c.guardian).length}`);

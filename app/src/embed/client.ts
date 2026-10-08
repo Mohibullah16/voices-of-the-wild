@@ -186,7 +186,7 @@ export class CloudEmbedder implements Embedder {
     } catch {
       throw new EmbedError("network", navigator.onLine
         ? "The cloud listener didn't answer. Try again in a moment."
-        : "You're offline, and the cloud listener needs a connection. To listen offline, switch the listener to “On this phone” in About (needs a strong phone).");
+        : "You're offline, and the cloud listener needs a connection. To listen offline, switch the listener to “On this device” in About (needs a strong graphics chip).");
     }
     if (!res.ok) throw new EmbedError("unknown", `The cloud listener couldn't read that photo (${res.status}).`);
     const { vector } = (await res.json()) as { vector: number[] };

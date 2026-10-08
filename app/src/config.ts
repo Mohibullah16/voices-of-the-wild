@@ -47,6 +47,9 @@ export const MODEL_FILES = {
  */
 export const LISTENER_URL = "https://mohibazhar16--votw-listener-listener.modal.run";
 
+/** Anonymous community rankings (listener/community.py, on Modal). */
+export const COMMUNITY_URL = "https://mohibazhar16--votw-listener-community.modal.run";
+
 export const ORT_FILES = ["ort-wasm-simd-threaded.asyncify.mjs", "ort-wasm-simd-threaded.asyncify.wasm"] as const;
 
 /** Longest side of the photo we hand to the model. The processor resizes anyway; this bounds memory. */

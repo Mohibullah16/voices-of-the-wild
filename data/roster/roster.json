@@ -1941,7 +1941,7 @@
           "name": "Red Seventy",
           "species": "Motorcycle",
           "category": "vehicles",
-          "tier": "common",
+          "tier": "elder",
           "rarity": "common",
           "habitat": [
             "street"
@@ -1956,9 +1956,9 @@
             "a two-wheeled motorbike with an engine and fuel tank, unlike a pedal bicycle, and with no passenger cart behind"
           ],
           "lines": {
-            "first_meet": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Big mileage, tiny tank. Sidewalk for photos, boss!",
+            "first_meet": "[engine putters] Red Seventy, the little red 70cc! I carry whole families. Snap me from the sidewalk!",
             "again": "[revs] You again! I'd race you, but I'm parked. Helmets for riders, sidewalk for photographers. Deal?",
-            "goodbye": "[kickstart] Kick, kick... vroom! Go explore the old market lanes on foot. Some are too narrow even for me."
+            "goodbye": "[kickstart] Kick, kick... vroom! Explore the old market lanes on foot. Some are too narrow even for me."
           }
         },
         {

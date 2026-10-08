@@ -1,5 +1,5 @@
 // Badges tab: rank, streak and the twelve badges.
-import { html } from "lit-html";
+import { html, nothing } from "lit-html";
 import { state } from "../app/state";
 import { BADGES } from "../game/badges";
 import { RANKS, rankFor } from "../game/rules";
@@ -7,6 +7,7 @@ import { streakView } from "../game/streak";
 import { dayKey } from "../game/time";
 import { compassView, questList } from "./home";
 import { icon } from "./icons";
+import { getBoard, playerName } from "../app/community";
 
 export function badgesView() {
   const g = state.game;
@@ -28,6 +29,7 @@ export function badgesView() {
       <div><dt>${icon("sparkle")}<span>Voices</span></dt><dd class="num">${met}/${state.world?.totalCharacters ?? 0}</dd></div>
       <div><dt>${icon("walk")}<span>Walks</span></dt><dd class="num">${g.wanders}</dd></div>
     </dl>
+    ${community()}
     ${questList(true)}
     <section aria-labelledby="badge-grid-title">
       <h2 id="badge-grid-title" class="section-title">Badges <span class="num muted">${earned}/${BADGES.length}</span></h2>
@@ -49,5 +51,27 @@ export function badgesView() {
       </ol>
     </section>
     ${compassView(9)}
+  </section>`;
+}
+
+/** Anonymous community rankings: top walkers by XP, your place, and who's out right now. */
+function community() {
+  const b = getBoard();
+  const me = playerName();
+  const row = (r: { rank: number; name: string; xp: number; voices: number; online: boolean }, mine = false) =>
+    html`<li class="board-row ${mine ? "me" : ""}">
+      <span class="board-rank num">${r.rank}</span>
+      <span class="board-name">${r.name}${mine ? html` <small>you</small>` : nothing}${r.online ? html`<i class="board-dot" title="Walking now"></i><span class="visually-hidden">, walking now</span>` : nothing}</span>
+      <span class="board-xp num">${r.xp.toLocaleString()} XP</span>
+    </li>`;
+  return html`<section class="board" aria-labelledby="board-title">
+    <h2 id="board-title" class="section-title">Community <span class="num muted">${b ? `${b.online} walking now · ${b.players} players` : ""}</span></h2>
+    ${!b
+      ? html`<p class="muted small">${navigator.onLine ? "Loading the rankings…" : "The rankings need a connection."}</p>`
+      : !b.top.length
+        ? html`<p class="muted small">No one on the board yet. Be the first.</p>`
+        : html`<ol class="board-list">${b.top.slice(0, 10).map((r) => row(r, b.me?.rank === r.rank))}</ol>
+          ${b.me && b.me.rank > 10 ? html`<ol class="board-list" start=${b.me.rank}>${row(b.me, true)}</ol>` : nothing}`}
+    <p class="muted small">${me ? html`You appear as <strong>${me}</strong>. Anonymous: only your nickname, XP, voices and streak are shared. Turn it off in About.` : "You’re not on the board. Turn it on in About."}</p>
   </section>`;
 }
