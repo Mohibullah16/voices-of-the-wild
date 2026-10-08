@@ -11,6 +11,11 @@
 </p>
 
 <p align="center">
+  <a href="https://voices-of-the-wild.netlify.app"><b>▶ Try it live: voices-of-the-wild.netlify.app</b></a><br/>
+  <sub>Best on an Android phone in Chrome. First visit downloads the field kit (~320 MB, once, on wifi); after that it works in airplane mode.</sub>
+</p>
+
+<p align="center">
   <img alt="EmbeddingGemma 2" src="https://img.shields.io/badge/model-EmbeddingGemma%202%20(q4)-2f5d3f?style=flat-square" />
   <img alt="Runs on device" src="https://img.shields.io/badge/runs-on%20device%20%C2%B7%20WebGPU-2f5d3f?style=flat-square" />
   <img alt="Offline" src="https://img.shields.io/badge/after%20setup-0%20network%20requests-b8892b?style=flat-square" />
