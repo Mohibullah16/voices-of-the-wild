@@ -14,7 +14,7 @@ import type { LineKey, Owner } from "../types";
 import { card } from "./card";
 import { icon } from "./icons";
 import { voiceLine } from "./voice";
-import { ensureEmbedder } from "../app/embedder";
+import { ensureEmbedder, releaseEmbedder } from "../app/embedder";
 import { allowMotion, gameEncounter, primeMotion, releaseMoments, startWalk, stopWalk } from "../app/game";
 import { questProgress } from "../game/quests";
 import { dayKey } from "../game/time";
@@ -68,16 +68,32 @@ async function onFile(e: Event) {
   }
 }
 
+/** The phone's GPU can be lost (memory pressure, the tab in the background). Errors that look like that. */
+const gpuLost = (e: unknown) => /WebGPU|GPU|device|Instance reference|OrtRun|mapAsync|out of memory/i.test(String((e as Error)?.message ?? e));
+
+/** Embeds a photo. If the GPU was lost, starts the model again once and retries. */
+async function embedPhoto(image: ImageData) {
+  try {
+    return await ensureEmbedder().embed(image);
+  } catch (err) {
+    if (!gpuLost(err)) throw err;
+    console.warn("[listen] GPU lost, restarting the listener", err);
+    releaseEmbedder();
+    update((s) => { if (s.listen.kind === "stirring") s.listen = { ...s.listen, waking: true }; });
+    return await ensureEmbedder().embed(image);
+  }
+}
+
 export async function runEncounter(image: ImageData, preview: string, sample = false) {
   const data = state.data!;
-  const embedder = ensureEmbedder();
+  ensureEmbedder();
   const waking = state.embedderStatus.state !== "ready";
   setListen({ kind: "stirring", preview, waking });
   announce("Something is stirring. Listening on this phone.");
   focusSoon("stir-title");
   try {
     const t0 = performance.now();
-    const { vector, ms } = await embedder.embed(image);
+    const { vector, ms } = await embedPhoto(image);
     // Keep the stirring moment readable even on a fast GPU.
     const elapsed = performance.now() - t0;
     if (elapsed < 900 && !matchMedia("(prefers-reduced-motion: reduce)").matches) await new Promise((r) => setTimeout(r, 900 - elapsed));
@@ -125,7 +141,9 @@ export async function runEncounter(image: ImageData, preview: string, sample = f
     const message =
       e.code === "not-cached"
         ? "The listening model is missing from this phone. The browser may have cleared it to save space. Open About and download the field kit again."
-        : `Something went wrong while listening: ${e.message}`;
+        : gpuLost(e) || e.code === "webgpu"
+          ? "The phone’s graphics chip stopped the listener, usually because memory ran low. Close a few other tabs or apps, then try again."
+          : `Something went wrong while listening: ${e.message}`;
     setListen({ kind: "error", message });
     focusSoon("listen-error");
   }
@@ -146,6 +164,8 @@ function nextTask() {
 
 function walkNow() {
   primeMotion();
+  // A walk keeps the screen on for minutes; give the GPU memory back. The next photo reloads it.
+  releaseEmbedder();
   stopAll();
   startWalk();
   focusSoon("walk-title");
@@ -416,7 +436,7 @@ function walkView(l: Extract<ListenState, { kind: "walk" }>) {
       <p class="xp-gain big"><b>${xpTick(l.done.xp)}</b> XP</p>
       ${next
         ? html`<p class="next-up"><span class="quest-icon" aria-hidden="true">${questIcon(next)}</span><span><small>Next</small>${next.label}</span></p>
-            <button class="btn btn-primary" type="button" @click=${() => { stopAll(); capture(); }}>${icon("camera")} Find it</button>`
+            <button class="btn btn-primary" type="button" @click=${() => { stopAll(); ensureEmbedder(); capture(); }}>${icon("camera")} Find it</button>`
         : html`<p class="lede">Today’s trail is done.</p>`}
       <button class="btn btn-quiet" type="button" @click=${reset}>${icon("path")} Trail</button>
     </section>`;

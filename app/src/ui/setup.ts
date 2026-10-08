@@ -219,13 +219,18 @@ function ready(s: Extract<Step, { kind: "ready" }>) {
 
 function errorView(s: Extract<Step, { kind: "error" }>) {
   const headline =
-    s.code === "quota" ? "Not enough room on this phone." : s.code === "network" ? "The download stopped." : "Something went wrong.";
+    s.code === "quota" ? "Not enough room on this phone."
+    : s.code === "network" ? "The download stopped."
+    : s.code === "webgpu" ? "This browser can’t run the listener on this phone."
+    : "Something went wrong.";
   const help =
     s.code === "quota"
       ? "Free up some space (about 400 MB), leave private browsing if you are in it, and try again. Finished files are kept."
       : s.code === "network"
         ? "Check your connection, ideally Wi-Fi, and try again. Files that already arrived are kept."
-        : s.message;
+        : s.code === "webgpu"
+          ? "The model runs on the phone’s graphics chip (WebGPU), and this browser didn’t offer it. Update Chrome and try again. Without it, the model would need about 1.8 GB of memory, which is too much for a phone."
+          : s.message;
   return html`<div class="setup-main">
     <h1 class="display-2" id="setup-title">Get ready for the trail</h1>
     <div class="error-box" role="alert"><strong id="setup-error" tabindex="-1">${headline}</strong><p>${help}</p>${s.code !== "unknown" ? html`<p class="small muted">${s.message}</p>` : nothing}</div>

@@ -16,6 +16,11 @@ export interface InitMessage {
    */
   source: ModelSource;
   preferWebGPU: boolean;
+  /**
+   * May the worker fall back to the CPU (wasm) path? That path needs full-precision weights (~1.8 GB),
+   * which a phone cannot hold, so phones say no and get a clear message instead.
+   */
+  allowCpu?: boolean;
   /** wasm threads; 0 = automatic. */
   threads?: number;
   /** Per-component dtypes for the CPU (wasm) fallback. Default fp32 for both (see dtypeFor in worker.ts). */

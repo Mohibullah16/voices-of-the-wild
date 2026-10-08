@@ -43,7 +43,8 @@ export class ModelEmbedder implements Embedder {
   constructor(private opts: Omit<InitMessage, "type">) {}
 
   static options(base: string, modelId: string, revision: string, dtype: string, source: ModelSource): Omit<InitMessage, "type"> {
-    return { base, modelId, revision, dtype, source, preferWebGPU: true };
+    const phone = typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches;
+    return { base, modelId, revision, dtype, source, preferWebGPU: true, allowCpu: !phone };
   }
 
   load(onProgress?: (p: LoadProgress) => void): Promise<LoadInfo> {

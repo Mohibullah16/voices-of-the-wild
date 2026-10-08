@@ -19,6 +19,7 @@ let device: "webgpu" | "wasm" = "wasm";
 function classify(err: unknown): Extract<WorkerOut, { type: "error" }>["code"] {
   const msg = String((err as Error)?.message ?? err);
   const name = (err as Error)?.name ?? "";
+  if ((err as { code?: string })?.code === "webgpu") return "webgpu";
   if (name === "QuotaExceededError" || /quota/i.test(msg)) return "quota";
   if (/allowRemoteModels=false|local_files_only|not found locally/i.test(msg)) return "not-cached";
   if (/Failed to fetch|NetworkError|network|ERR_INTERNET|Load failed/i.test(msg)) return "network";
@@ -103,6 +104,9 @@ async function load(m: InitMessage) {
     }
   } else if (m.preferWebGPU) {
     fallbackReason = "This browser has no WebGPU.";
+  }
+  if (!model && m.allowCpu === false) {
+    throw Object.assign(new Error(fallbackReason ?? "WebGPU is not available."), { code: "webgpu" });
   }
   if (!model) {
     console.info("[embed] creating wasm session…");

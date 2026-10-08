@@ -20,10 +20,17 @@ export function createEmbedder(source: ModelSource): Embedder {
   const q = new URLSearchParams(location.search);
   const threads = Number(q.get("threads"));
   if (threads > 0) opts.threads = threads;
-  if (q.get("gpu") === "off") opts.preferWebGPU = false;
+  if (q.get("gpu") === "off") Object.assign(opts, { preferWebGPU: false, allowCpu: true });
   const wd = q.get("wasmdtype");
   if (wd) opts.wasmDtype = { model: wd, vision_encoder: wd };
   return new ModelEmbedder(opts);
+}
+
+/** Frees the model (and the GPU memory it holds). The next photo loads it again from the cache. */
+export function releaseEmbedder() {
+  state.embedder?.dispose();
+  state.embedder = undefined;
+  state.embedderStatus = { state: "idle" };
 }
 
 /** Adopts an already-loaded embedder (from setup) or lazily starts one from the local cache. */
