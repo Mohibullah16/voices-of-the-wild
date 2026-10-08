@@ -16,8 +16,8 @@ import { icon } from "./icons";
 import { voiceLine } from "./voice";
 import { ensureEmbedder, releaseEmbedder, useCloud } from "../app/embedder";
 import { kitPercent, startKit } from "../app/kit";
-import { allowMotion, gameEncounter, primeMotion, releaseMoments, startWalk, stopWalk } from "../app/game";
-import { questProgress } from "../game/quests";
+import { allowMotion, gameEncounter, gameSkip, primeMotion, releaseMoments, SKIP_COST, startWalk, stopWalk } from "../app/game";
+import { canSkip, questProgress } from "../game/quests";
 import { dayKey } from "../game/time";
 import { shareCard } from "../share";
 import { homeView, questIcon, todayActive } from "./home";
@@ -358,9 +358,10 @@ function result(l: Extract<ListenState, { kind: "result" }>) {
       ${l.preview ? html`<img class="photo-ghost" src=${l.preview} width="96" height="96" alt="The photo you took" />` : nothing}
       ${unsafeSVG(CLEARING)}
       <h2 class="display-2" id="enc-name" tabindex="-1">Nobody here wants to talk.</h2>
-      <p class="lede">Try something alive, or something old.</p>
+      <p class="lede">${nearMiss(l) ?? "Try something alive, or something old."}</p>
       <div class="encounter-actions">
         <button class="btn btn-primary" type="button" @click=${capture}>${icon("camera")} Try again</button>
+        ${skipButton(l)}
         <button class="btn btn-quiet" type="button" @click=${reset}>${icon("path")} Trail</button>
       </div>
       ${debugPanel(l)}
@@ -392,6 +393,7 @@ function result(l: Extract<ListenState, { kind: "result" }>) {
         ? html`<button class="btn" type="button" @click=${walkNow}>Skip</button>`
         : html`${nextButton(guardian)}
             <button class="btn ${guardian ? "btn-primary" : ""}" type="button" @click=${capture}>${icon("camera")} ${guardian ? "Closer" : "Again"}</button>
+            ${guardian ? skipButton(l) : nothing}
             ${guardian ? nothing : html`<button class="icon-btn" type="button" aria-label="Share ${owner.name}" @click=${() => share(owner, line)}>${icon("share")}</button>`}`}
     </div>
     ${debugPanel(l)}
@@ -419,6 +421,22 @@ function rewardStrip(l: Extract<ListenState, { kind: "result" }>) {
       : nothing}
     ${r.questsCompleted.map((q) => html`<span class="quest-done">${icon("checkCircle")} ${q.label}</span>`)}
   </div>`;
+}
+
+/** "Something in Trees stirred": the closest kind, so a miss still says what the listener half-saw. */
+function nearMiss(l: Extract<ListenState, { kind: "result" }>): string | undefined {
+  const top = l.result.top[0];
+  if (!top) return undefined;
+  const kind = SHORT_NAME[top.category] ?? top.category;
+  return `Something among the ${kind.toLowerCase()} stirred, but didn’t answer. Get closer, fill the frame, find some light.`;
+}
+
+/** After a miss (nobody, or a guardian's tip): give up on this quest for XP and move on. Not for walks or samples. */
+function skipButton(l: Extract<ListenState, { kind: "result" }>) {
+  const q = todayActive();
+  if (l.sample || !canSkip(q)) return nothing;
+  return html`<button class="btn btn-quiet" type="button" @click=${() => { if (gameSkip()) reset(); }}
+    aria-label="Skip quest ${q.label}, costs ${SKIP_COST} XP">${icon("skipForward")} Skip <span class="num">−${SKIP_COST} XP</span></button>`;
 }
 
 /** The next task in the chain, as the main button under a meeting. */

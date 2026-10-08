@@ -9,6 +9,7 @@ export const XP = {
   quest: 50, // each finished find-and-listen quest
   stepXp: 0.15, // per step of a finished walk quest: 500 steps = 75
   varietyBonus: 0.5, // +50% when the category differs from the previous encounter
+  skip: 25, // cost of skipping a find quest (XP never drops below 0)
   spamWindowMs: 60_000, // captures within this window of the last one earn nothing (new characters excepted)
 } as const;
 

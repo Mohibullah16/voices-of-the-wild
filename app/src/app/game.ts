@@ -1,11 +1,12 @@
 // Glue between the pure game engine and the app: persistence, moments, XP pop-ups, walk quests.
-import { addSteps, applyEncounter, seedFromCollection, type Rewards } from "../game/engine";
+import { addSteps, applyEncounter, fastForward, seedFromCollection, skipQuest, type Rewards } from "../game/engine";
+import { XP } from "../game/rules";
 import { loadGame, saveGame } from "../game/store";
 import { buildWorld } from "../game/world";
 import { allowMotion, primeMotion, startPedometer, stopPedometer } from "./pedometer";
 import { syncScore } from "./community";
 import { ensureEmbedder } from "./embedder";
-import { announce, state, update, type Moment } from "./state";
+import { announce, state, toast, update, type Moment } from "./state";
 
 export async function initGame() {
   const data = state.data!;
@@ -54,6 +55,32 @@ export function gameEncounter(id: string, kind: "species" | "guardian"): Rewards
   if (rewards.xp) syncScore();
   return rewards;
 }
+
+/** Skips the active find quest for XP. Returns false when there's nothing to skip. */
+export function gameSkip(): boolean {
+  const out = skipQuest(state.game, state.world!, new Date());
+  if (!out) return false;
+  state.game = out.state;
+  void saveGame(out.state);
+  if (out.cost) syncScore();
+  state.pendingMoments = momentsFor(out.rewards);
+  releaseMoments();
+  const next = out.rewards.next?.label ?? "Trail done";
+  toast(`Skipped “${out.skipped.label}”. ${out.cost ? `−${out.cost} XP. ` : ""}Next: ${next}`);
+  announce(`Skipped ${out.skipped.label}.${out.cost ? ` Minus ${out.cost} XP.` : ""} Next: ${next}.`);
+  return true;
+}
+
+/** Starts tomorrow's trail today (XP kept; the streak stays on the real calendar). */
+export function gameFastForward() {
+  const { state: g, quests } = fastForward(state.game, state.world!, new Date());
+  state.game = g;
+  void saveGame(g);
+  update();
+  announce(`Fast-forwarded a day. New trail: ${quests.length} quests. First: ${quests[0]?.label}.`);
+}
+
+export const SKIP_COST = XP.skip;
 
 /** Shows moments collected during the last encounter (called once its voice line ends). */
 export function releaseMoments() {

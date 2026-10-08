@@ -1,9 +1,10 @@
-// Daily Trail: a chain of 3-5 quests per day, seeded from the date, so everyone gets the same trail.
+// Daily Trail: a chain of 5-7 quests per day, seeded from the date, so everyone gets the same trail.
 // Quests alternate: find something and listen to it, then walk a number of steps, then find the next thing.
 // Only the first unfinished quest is active; the rest unlock one by one.
 import { hashString, rng } from "../art/prng";
 import { SHORT_NAME } from "../art/emblems";
 import type { DayRecord } from "./state";
+import { addDays } from "./time";
 import type { World } from "./world";
 
 export type QuestKind = "category" | "touch-grass" | "new" | "walk";
@@ -48,14 +49,15 @@ export const CATEGORY_QUEST: Record<string, string> = {
 const COMMON = ["trees", "plants", "flowers", "sky", "ground", "urban", "vehicles", "birds", "structures"];
 
 export const GRASS_ID = "lawn-grass";
-export const WALK_STEPS = [500, 1000] as const;
+export const WALK_STEPS = [500, 1000, 1500] as const;
 
 const walkQuest = (i: number, steps: number): Quest => ({ id: `${i}:walk:${steps}`, kind: "walk", label: `Walk ${steps.toLocaleString("en")} steps`, need: steps });
 
-/** The day's chain, in order. Pure: same date + same world = same quests. */
-export function questsFor(day: string, world: World): Quest[] {
-  const r = rng(hashString(`trail/${day}`));
-  const length = 3 + Math.floor(r() * 3); // 3, 4 or 5
+/** The day's chain, in order. Pure: same date + same world = same quests.
+ * `ahead` > 0 is a fast-forwarded trail: the trail of a later day, played today. */
+export function questsFor(day: string, world: World, ahead = 0): Quest[] {
+  const r = rng(hashString(`trail/${ahead > 0 ? addDays(day, ahead) : day}`));
+  const length = 5 + Math.floor(r() * 3); // 5, 6 or 7
   const pool = COMMON.filter((c) => world.categories.includes(c));
   const kinds = pool.length >= 3 ? pool : [...world.categories];
   const quests: Quest[] = [];
@@ -75,6 +77,12 @@ export function questsFor(day: string, world: World): Quest[] {
   }
   return quests;
 }
+
+/** The trail being played on `day`, following any fast-forwards. */
+export const trailFor = (day: string, record: DayRecord | undefined, world: World): Quest[] => questsFor(day, world, record?.ahead ?? 0);
+
+/** Only find-and-listen quests can be skipped (for a photo that won't match); walks are the point. */
+export const canSkip = (q: Quest | undefined): q is Quest => Boolean(q && q.kind !== "walk");
 
 /** The first unfinished quest, or undefined when the trail is done. */
 export function activeQuest(quests: Quest[], day: DayRecord | undefined): Quest | undefined {

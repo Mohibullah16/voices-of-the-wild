@@ -50,11 +50,13 @@ import checkCircle from "@phosphor-icons/core/fill/check-circle-fill.svg?raw";
 import circle from "@phosphor-icons/core/regular/circle.svg?raw";
 import path from "@phosphor-icons/core/regular/path.svg?raw";
 import trophy from "@phosphor-icons/core/regular/trophy.svg?raw";
+import fastForward from "@phosphor-icons/core/regular/fast-forward.svg?raw";
+import skipForward from "@phosphor-icons/core/regular/skip-forward.svg?raw";
 
 const raw = {
   camera, images, aperture, play, pause, replay, book, info, ear, warning, download, upload, wifiSlash, check, x, arrowLeft, footprints, shield,
   binoculars, retry, trash, cpu, sealCheck, flame, medal, share, sparkle, compass, roadHorizon, tree, drop, cloud, waves, storefront, mountains,
-  barn, buildings, leaf, sunHorizon, moon, crown, mapPin, walk, star, lock, arrowRight, checkCircle, circle, path, trophy,
+  barn, buildings, leaf, sunHorizon, moon, crown, mapPin, walk, star, lock, arrowRight, checkCircle, circle, path, trophy, fastForward, skipForward,
 };
 export type IconName = keyof typeof raw;
 

@@ -3,9 +3,9 @@ import roster from "../dev-fixtures/roster.runtime.json";
 import { flattenOwners } from "../data";
 import type { RuntimeRoster } from "../types";
 import { BADGES } from "./badges";
-import { addSteps, applyEncounter, seedFromCollection } from "./engine";
+import { addSteps, applyEncounter, fastForward, seedFromCollection, skipQuest } from "./engine";
 import { compass, primaryPlace } from "./habitats";
-import { activeQuest, questProgress, questsFor, type Quest } from "./quests";
+import { activeQuest, questProgress, questsFor, trailFor, type Quest } from "./quests";
 import { StepDetector } from "./steps";
 import { rankFor, RANKS, XP } from "./rules";
 import { newGame, type GameState } from "./state";
@@ -24,27 +24,27 @@ function meet(s: GameState, id: string, when: Date, kind: "species" | "guardian"
 }
 
 describe("daily quest chain", () => {
-  it("is the same for everyone on a given date, 3 to 5 long, and changes between days", () => {
+  it("is the same for everyone on a given date, 5 to 7 long, and changes between days", () => {
     const a = questsFor("2026-10-09", world);
     expect(questsFor("2026-10-09", world)).toEqual(a);
     const lengths = new Set<number>();
     const days = Array.from({ length: 30 }, (_, i) => questsFor(addDays("2026-10-01", i), world));
     for (const qs of days) {
       lengths.add(qs.length);
-      expect(qs.length).toBeGreaterThanOrEqual(3);
-      expect(qs.length).toBeLessThanOrEqual(5);
+      expect(qs.length).toBeGreaterThanOrEqual(5);
+      expect(qs.length).toBeLessThanOrEqual(7);
       expect(new Set(qs.map((q) => q.id)).size).toBe(qs.length);
       // Find, walk, find, walk, find.
       qs.forEach((q, i) => expect(q.kind === "walk").toBe(i % 2 === 1));
       for (const q of qs) expect(q.label.split(" ").length).toBeLessThanOrEqual(4);
     }
-    expect([...lengths].sort()).toEqual([3, 4, 5]);
+    expect([...lengths].sort()).toEqual([5, 6, 7]);
     expect(new Set(days.map((d) => JSON.stringify(d))).size).toBeGreaterThan(15);
   });
 
-  it("walks are 500 steps, then 1,000", () => {
-    const qs = Array.from({ length: 30 }, (_, i) => questsFor(addDays("2026-10-01", i), world)).find((q) => q.length === 5)!;
-    expect(qs.filter((q) => q.kind === "walk").map((q) => q.need)).toEqual([500, 1000]);
+  it("walks are 500 steps, then 1,000, then 1,500", () => {
+    const qs = Array.from({ length: 30 }, (_, i) => questsFor(addDays("2026-10-01", i), world)).find((q) => q.length === 7)!;
+    expect(qs.filter((q) => q.kind === "walk").map((q) => q.need)).toEqual([500, 1000, 1500]);
   });
 });
 
@@ -95,6 +95,50 @@ describe("playing the chain", () => {
     s = addSteps(s, quests[1]!.need, world, clock(10)).state;
     expect(activeQuest(quests, s.days[day])?.id).toBe(third.id);
     expect(questProgress(third, s.days[day]).done).toBe(false);
+  });
+});
+
+describe("skip and fast-forward", () => {
+  const day = "2026-10-09";
+  const clock = (n: number) => new Date(`${day}T11:${String(n).padStart(2, "0")}:00`);
+
+  it("skipping a find quest costs 25 XP (never below 0) and unlocks the next; walks can't be skipped", () => {
+    const quests = questsFor(day, world);
+    let s = applyEncounter(newGame(), { id: "goat", kind: "species" }, world, clock(0)).state; // earn some XP
+    const before = s.xp;
+    const sk = skipQuest(s, world, clock(1))!;
+    expect(sk.skipped.id).toBe(quests[0]!.id);
+    expect(sk.cost).toBe(XP.skip);
+    expect(sk.state.xp).toBe(before - XP.skip);
+    expect(sk.rewards.next?.kind).toBe("walk");
+    expect(sk.state.days[day]!.skipped).toEqual([quests[0]!.id]);
+    expect(skipQuest(sk.state, world, clock(2))).toBeNull(); // the walk
+    // XP floor.
+    const broke = skipQuest(newGame(), world, clock(3))!;
+    expect(broke.state.xp).toBe(0);
+    expect(broke.cost).toBe(0);
+  });
+
+  it("fast-forward plays the next day's trail today, keeps XP, and doesn't fake the streak", () => {
+    let s = applyEncounter(newGame(), { id: "goat", kind: "species" }, world, clock(0)).state;
+    const xp = s.xp;
+    const ff = fastForward(s, world, clock(1));
+    expect(ff.quests).toEqual(questsFor(addDays(day, 1), world));
+    expect(ff.state.xp).toBe(xp);
+    expect(trailFor(day, ff.state.days[day], world)).toEqual(ff.quests);
+    expect(activeQuest(ff.quests, ff.state.days[day])?.id).toBe(ff.quests[0]!.id);
+    // Finish the fast-forwarded trail by skipping finds and walking: the streak counts today once.
+    s = ff.state;
+    for (let n = 2, guard = 0; activeQuest(trailFor(day, s.days[day], world), s.days[day]) && guard < 20; guard++) {
+      const q = activeQuest(trailFor(day, s.days[day], world), s.days[day])!;
+      s = q.kind === "walk" ? addSteps(s, q.need, world, clock(n++)).state : skipQuest(s, world, clock(n++))!.state;
+    }
+    expect(s.days[day]!.complete).toBe(true);
+    expect(s.streak.count).toBe(1);
+    s = fastForward(s, world, clock(40)).state;
+    expect(s.days[day]!.ahead).toBe(2);
+    expect(s.streak.count).toBe(1);
+    expect(s.streak.lastDay).toBe(day);
   });
 });
 

@@ -67,7 +67,7 @@ async function main() {
 
   const quests = await hook<Q[]>(page, "quests");
   console.log(`Today's chain (${quests.length}): ${quests.map((q) => q.label).join(" → ")}`);
-  check(quests.length >= 3 && quests.length <= 5, "3 to 5 quests today");
+  check(quests.length >= 5 && quests.length <= 7, "5 to 7 quests today");
   await page.waitForTimeout(500);
   await shot("trail-start");
   check((await page.locator(".quest.locked").count()) === quests.length - 1, "only the first quest is unlocked");

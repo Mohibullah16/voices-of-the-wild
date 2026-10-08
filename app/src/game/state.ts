@@ -21,6 +21,10 @@ export interface DayRecord {
   /** Steps walked towards the active walk quest. */
   steps: number;
   complete: boolean;
+  /** Quests skipped for XP (also listed in questsDone). */
+  skipped?: string[];
+  /** Fast-forwards today: the trail shown is the one `ahead` days later. Streaks stay on the real calendar. */
+  ahead?: number;
 }
 
 export interface Streak {

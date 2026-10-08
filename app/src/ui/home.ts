@@ -2,11 +2,12 @@
 import { html, nothing } from "lit-html";
 import { unsafeSVG } from "lit-html/directives/unsafe-svg.js";
 import { emblemSvg } from "../art/emblems";
-import { state, update } from "../app/state";
+import { announce, state, update } from "../app/state";
 import { asset } from "../config";
 import { loadSamples, type Sample } from "../samples";
 import { compass, PLACE_LABEL, type Place } from "../game/habitats";
-import { activeQuest, questProgress, questsFor, type Quest } from "../game/quests";
+import { activeQuest, canSkip, questProgress, trailFor, type Quest } from "../game/quests";
+import { gameFastForward, gameSkip, SKIP_COST } from "../app/game";
 import { rankFor } from "../game/rules";
 import { streakView } from "../game/streak";
 import { dayKey } from "../game/time";
@@ -21,7 +22,7 @@ const QUEST_ICON: Partial<Record<Quest["kind"], IconName>> = { new: "star", walk
 export function todayActive(): Quest | undefined {
   return activeQuest(todayActive.quests(), state.game.days[dayKey(new Date())]);
 }
-todayActive.quests = () => questsFor(dayKey(new Date()), state.world!);
+todayActive.quests = () => { const d = dayKey(new Date()); return trailFor(d, state.game.days[d], state.world!); };
 export const PLACE_ICON: Record<Place, IconName> = {
   street: "roadHorizon", park: "tree", market: "storefront", water: "drop", beach: "waves", sky: "cloud", countryside: "barn", "old-city": "buildings", ground: "mountains",
 };
@@ -70,22 +71,24 @@ export function kitBanner() {
 export function questList(compact = false) {
   const today = dayKey(new Date());
   const day = state.game.days[today];
-  const qs = questsFor(today, state.world!);
+  const qs = trailFor(today, day, state.world!);
   const active = activeQuest(qs, day);
+  const ahead = day?.ahead ?? 0;
   const done = qs.filter((q) => questProgress(q, day).done).length;
   return html`<section class="quests ${compact ? "compact" : ""}" aria-labelledby="quests-title">
     <header class="quests-head">
-      <h2 id="quests-title">Today’s trail</h2>
+      <h2 id="quests-title">${ahead ? `Trail · day +${ahead}` : "Today’s trail"}</h2>
       <span class="quests-count num"><span aria-hidden="true">${done}/${qs.length}</span><span class="visually-hidden">${done} of ${qs.length} done</span></span>
     </header>
     <ol class="quest-list">
       ${qs.map((q) => {
         const p = questProgress(q, day);
         const now = q.id === active?.id;
-        const st = p.done ? "done" : now ? "now" : "locked";
+        const skipped = day?.skipped?.includes(q.id);
+        const st = skipped ? "done skipped" : p.done ? "done" : now ? "now" : "locked";
         return html`<li class="quest ${st}" aria-current=${now ? "step" : nothing}>
           <span class="quest-icon" aria-hidden="true">${p.done || now ? questIcon(q) : icon("lock")}</span>
-          <span class="quest-label">${q.label}${now ? html` <small>now</small>` : nothing}</span>
+          <span class="quest-label">${q.label}${now ? html` <small>now</small>` : skipped ? html` <small>skipped</small>` : nothing}</span>
           <span class="quest-state">
             <span aria-hidden="true">${p.done ? icon("checkCircle") : now && q.kind === "walk" ? html`<span class="num">${p.have}/${p.need}</span>` : icon("circle")}</span>
             <span class="visually-hidden">${p.done ? "done" : now ? `now${q.kind === "walk" ? `, ${p.have} of ${p.need} steps` : ""}` : "locked"}</span>
@@ -93,7 +96,30 @@ export function questList(compact = false) {
         </li>`;
       })}
     </ol>
+    ${compact ? nothing : trailTools(active)}
   </section>`;
+}
+
+/** Skip the active find quest (costs XP) or fast-forward to the next day's trail (MVP: more quests today).
+ * Fast-forward with quests left asks for a second tap instead of a blocking dialog. */
+let ffArmed = false;
+function trailTools(active: Quest | undefined) {
+  const skip = canSkip(active);
+  const ff = () => {
+    if (active && !ffArmed) {
+      ffArmed = true;
+      announce("Tap again to start tomorrow’s trail. Today’s unfinished quests are dropped; your XP stays.");
+      update();
+      return;
+    }
+    ffArmed = false;
+    gameFastForward();
+  };
+  return html`<div class="trail-tools">
+    ${skip ? html`<button class="btn btn-quiet" type="button" @click=${() => { ffArmed = false; gameSkip(); update(); }}>${icon("skipForward")} Skip quest <span class="num">−${SKIP_COST} XP</span></button>` : nothing}
+    <button class="btn btn-quiet ${ffArmed ? "armed" : ""}" type="button" @click=${ff} aria-label=${ffArmed ? "Confirm: start tomorrow’s trail now" : "Fast-forward a day: start the next day’s trail now"}>
+      ${icon("fastForward")} ${ffArmed ? "Tap again: start tomorrow" : "Next day"}</button>
+  </div>`;
 }
 
 export function compassView(limit = 5) {

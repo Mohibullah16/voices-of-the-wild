@@ -235,3 +235,15 @@ dialog.moment::backdrop { background: rgb(14 22 19 / 0.62); }
 .board-name small { font-weight: 700; color: var(--moss); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem; }
 .board-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--moss); flex: none; }
 .board-xp { font-weight: 700; color: var(--gold); }
+
+/* Skip a quest (costs XP) / fast-forward a day. */
+.trail-tools { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; padding-top: 6px; }
+.trail-tools .btn, .encounter-actions .btn .num { white-space: nowrap; }
+.quest.skipped .quest-label { text-decoration-style: dashed; color: var(--ink-soft, inherit); }
+
+/* Skip a quest (costs XP) / fast-forward a day. */
+.trail-tools { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; padding-top: 6px; }
+.trail-tools .btn { min-height: 44px; }
+.trail-tools .btn.armed { outline: 2px solid var(--moss); outline-offset: 1px; }
+.quest.skipped .quest-label { text-decoration-style: dashed; }
+.quest.skipped .quest-label small { display: inline-block; text-decoration: none; }

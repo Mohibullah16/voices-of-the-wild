@@ -1,7 +1,7 @@
 // Applies game events to state and reports every reward. Pure: (state, event, world, now) -> new state + rewards.
 import { BADGES, newlyEarned, type Badge } from "./badges";
 import { primaryPlace } from "./habitats";
-import { activeQuest, questProgress, questsFor, type Quest } from "./quests";
+import { activeQuest, canSkip, questProgress, trailFor, type Quest } from "./quests";
 import { rankFor, XP, type Rank } from "./rules";
 import { cloneGame, newDay, type GameState } from "./state";
 import { completeDay } from "./streak";
@@ -33,8 +33,8 @@ const emptyRewards = (): Rewards => ({ xp: 0, parts: [], tooSoon: false, questsC
 
 function settle(prev: GameState, s: GameState, world: World, day: string, r: Rewards, now: Date): Rewards {
   // The quest chain: finish the active quest, unlock the next, repeat while the next is already met.
-  const quests = questsFor(day, world);
   const d = s.days[day]!;
+  const quests = trailFor(day, d, world);
   for (let q = activeQuest(quests, d); q && questProgress(q, d, world).done; q = activeQuest(quests, d)) {
     d.questsDone.push(q.id);
     r.questsCompleted.push(q);
@@ -136,13 +136,46 @@ export function applyEncounter(prev: GameState, ev: EncounterInput, world: World
 /** Steps counted while a walk quest is active. Steps outside a walk quest are ignored. */
 export function addSteps(prev: GameState, steps: number, world: World, now: Date): { state: GameState; rewards: Rewards | null } {
   const day = dayKey(now);
-  const q = activeQuest(questsFor(day, world), prev.days[day]);
+  const q = activeQuest(trailFor(day, prev.days[day], world), prev.days[day]);
   if (!q || q.kind !== "walk" || steps <= 0) return { state: prev, rewards: null };
   const s = cloneGame(prev);
   const d = (s.days[day] ??= newDay());
   d.steps = Math.min(q.need, (d.steps ?? 0) + Math.round(steps));
   const r = settle(prev, s, world, day, emptyRewards(), now);
   return { state: s, rewards: r.questsCompleted.length ? r : null };
+}
+
+/** Gives up on the active find quest for XP.skip (a photo that won't match, nothing of that kind nearby).
+ * Walk quests can't be skipped. Returns null when there's nothing to skip. */
+export function skipQuest(prev: GameState, world: World, now: Date): { state: GameState; rewards: Rewards; skipped: Quest; cost: number } | null {
+  const day = dayKey(now);
+  const q = activeQuest(trailFor(day, prev.days[day], world), prev.days[day]);
+  if (!canSkip(q)) return null;
+  const s = cloneGame(prev);
+  const d = (s.days[day] ??= newDay());
+  const cost = Math.min(XP.skip, s.xp);
+  s.xp -= cost;
+  d.questsDone.push(q.id);
+  (d.skipped ??= []).push(q.id);
+  d.legStart = d.events.length;
+  d.steps = 0;
+  const r = settle(prev, s, world, day, emptyRewards(), now);
+  return { state: s, rewards: r, skipped: q, cost };
+}
+
+/** Starts the next day's trail now, keeping XP and collection. The streak still follows the real calendar
+ * (one finished trail per real day), so fast-forwarding can't fake a streak. */
+export function fastForward(prev: GameState, world: World, now: Date): { state: GameState; quests: Quest[] } {
+  const s = cloneGame(prev);
+  const day = dayKey(now);
+  const d = (s.days[day] ??= newDay());
+  d.ahead = (d.ahead ?? 0) + 1;
+  d.questsDone = [];
+  d.skipped = [];
+  d.legStart = d.events.length;
+  d.steps = 0;
+  d.complete = false;
+  return { state: s, quests: trailFor(day, d, world) };
 }
 
 /** Seeds a fresh game from an existing collection (players who met characters before the game layer). */
