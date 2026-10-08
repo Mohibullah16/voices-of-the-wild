@@ -123,7 +123,9 @@ export function homeView(actions: { camera(): void; gallery(): void; viewfinder(
           <button class="btn btn-quiet" type="button" @click=${actions.coarse ? actions.camera : actions.gallery}>${icon(actions.coarse ? "camera" : "images")} Listen anyway</button>
         </div>
       </div>
+      ${actions.coarse ? nothing : sampleStrip(actions.sample)}
       ${compassView()}
+      ${actions.coarse ? sampleStrip(actions.sample) : nothing}
     </section>`;
   }
   return html`<section class="home" aria-labelledby="listen-title">
