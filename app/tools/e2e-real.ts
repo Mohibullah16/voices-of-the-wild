@@ -78,6 +78,8 @@ await page.waitForFunction(async () => {
   for (const k of await caches.keys()) if (k.startsWith("votw-data-") && (await (await caches.open(k)).keys()).length >= 3) return true;
   return false;
 }, null, { timeout: 120000, polling: 1000 });
+// A returning visitor skips setup: make sure this deploy's service worker controls the page first.
+await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller), null, { timeout: 120000, polling: 500 });
 await page.waitForTimeout(1500);
 offline = true;
 await ctx.setOffline(true);

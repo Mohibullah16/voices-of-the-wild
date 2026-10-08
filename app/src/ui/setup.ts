@@ -69,6 +69,11 @@ async function start() {
     state.settings = { ...state.settings, setupDone: true, modelSource: selfHosted ? "local" : "remote", lastDevice: info.device };
     await saveSettings(state.settings);
     adoptEmbedder(embedder, info);
+    // "Go offline" is only true once the service worker has the app shell. It installs in seconds;
+    // wait for it (bounded) so the ready screen never promises offline too early.
+    if (import.meta.env.PROD && "serviceWorker" in navigator) {
+      await Promise.race([navigator.serviceWorker.ready, new Promise((r) => setTimeout(r, 60_000))]);
+    }
     set({ kind: "ready", info, missingVoices });
     announce("Ready. You can go offline now.");
     requestAnimationFrame(() => document.getElementById("ready-title")?.focus());
