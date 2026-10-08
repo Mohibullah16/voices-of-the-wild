@@ -4,6 +4,7 @@ import { loadGame, saveGame } from "../game/store";
 import { buildWorld } from "../game/world";
 import { allowMotion, primeMotion, startPedometer, stopPedometer } from "./pedometer";
 import { syncScore } from "./community";
+import { ensureEmbedder } from "./embedder";
 import { announce, state, update, type Moment } from "./state";
 
 export async function initGame() {
@@ -85,6 +86,8 @@ export function walkSteps(n: number) {
   stopPedometer();
   popXp(rewards);
   syncScore();
+  // The cloud listener sleeps during a long walk; wake it now so the next photo doesn't wait for a cold start.
+  if (rewards.next && rewards.next.kind !== "walk") ensureEmbedder();
   update((s) => (s.listen = { kind: "walk", mode: s.listen.kind === "walk" ? s.listen.mode : "sensor", done: rewards }));
   // Badges and trail-done open a modal; let the XP pop-up be seen first.
   state.pendingMoments = [...(state.pendingMoments ?? []), ...momentsFor(rewards)];

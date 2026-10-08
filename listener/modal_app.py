@@ -22,6 +22,8 @@ image = (
     .env({"MODEL_CACHE": "/app/.model-cache", "NODE_ENV": "production"})
     .run_commands("cd /app && node prefetch.mjs")  # bake the pinned q4 weights into the image
     .add_local_file(HERE / "server.mjs", "/app/server.mjs", copy=True)
+    # modal_app.py imports community.py at load time, so every container needs it.
+    .add_local_python_source("community")
 )
 
 app = modal.App("votw-listener", image=image)
