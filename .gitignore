@@ -39,3 +39,4 @@ pitch/*.pdf
 
 # Regenerable screenshots (curated ones live in docs/)
 app/screenshots/
+app/.netlify/
