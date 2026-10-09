@@ -4,7 +4,7 @@
 // "Simulated walk" on screen. Rankings are switched off first, so the run never reaches the public board.
 //   npx tsx tools/walk-sim.ts            → submission/walk-sim/{NN-*.png, walk-sim.mp4, numbers.json}
 import { chromium, type Page } from "playwright";
-import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -26,7 +26,7 @@ const categoryOf = new Map<string, string>();
 for (const c of roster.categories) for (const o of c.characters) categoryOf.set(o.id, c.id);
 const available = readdirSync(photos).filter((d) => categoryOf.has(d));
 // Photos the live matcher names correctly (from earlier checks), preferred for each kind.
-const PREFER = ["auto-rickshaw", "motorcycle", "lawn-grass", "neem-tree", "house-crow", "bougainvillea", "street-dog", "mango-fruit", "sunset", "zebra-crossing", "tea-stall", "park-bench", "frere-hall", "sea-waves", "pebbles", "cumulus-clouds"];
+const PREFER = ["car", "oak-tree", "lawn-grass", "fire-hydrant", "robin", "yellow-taxi", "maple-tree", "street-dog", "pumpkin", "sunset", "clock-tower", "stop-sign", "park-bench", "lighthouse", "sea-waves", "pebbles", "cumulus-clouds"];
 
 const numbers: Record<string, unknown>[] = [];
 let shotN = 0;
@@ -59,6 +59,16 @@ const born = Date.now();
 const at = () => (Date.now() - born) / 1000;
 page.on("pageerror", (e) => console.log("PAGE ERROR", e.message));
 
+// Log when each voice line starts, so the cut can carry the real MP3s (Playwright video has no sound).
+await ctx.addInitScript(() => {
+  const w = window as unknown as { __plays: { src: string; t: number }[] };
+  w.__plays = [];
+  const play = HTMLMediaElement.prototype.play;
+  HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
+    w.__plays.push({ src: this.currentSrc || this.src, t: Date.now() });
+    return play.call(this);
+  };
+});
 // Label the footage itself.
 await ctx.addInitScript(() => {
   addEventListener("DOMContentLoaded", () => {
@@ -190,6 +200,7 @@ await page.waitForTimeout(3500);
 await shot(page, "skipped");
 const end = at(); // the video ends on tomorrow's trail, first quest skipped
 const summary = await page.evaluate(() => ({ xp: document.querySelector(".rank-card .num")?.textContent?.trim(), rank: document.querySelector("#badges-title")?.textContent?.trim() }));
+const plays: { src: string; t: number }[] = await page.evaluate(() => (window as unknown as { __plays: { src: string; t: number }[] }).__plays);
 await ctx.close();
 await browser.close();
 
@@ -208,6 +219,17 @@ for (const [a, b] of marks.walk) {
 }
 parts.push(`[0:v]trim=${cur.toFixed(2)}:${end.toFixed(2)},setpts=PTS-STARTPTS[s${i}]`); segs.push(`[s${i++}]`);
 const filter = `${parts.join(";")};${segs.join("")}concat=n=${segs.length}:v=1:a=0[c];[c]crop=390:844:0:0,scale=780:1688:flags=lanczos,fps=30[v]`;
-const r = spawnSync("ffmpeg", ["-y", "-v", "error", "-i", webm, "-filter_complex", filter, "-map", "[v]", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", "-movflags", "+faststart", join(out, "walk-sim.mp4")], { stdio: "inherit" });
+// Map wall-clock play times onto the cut: real-speed parts keep their voices; sped-up walks drop them.
+const segMap: { a: number; b: number; speed: number }[] = [];
+{ let c = t0; for (const [a, b] of marks.walk) { segMap.push({ a: c, b: a + 3, speed: 1 }, { a: a + 3, b: b - 1, speed: 12 }); c = b - 1; } segMap.push({ a: c, b: end, speed: 1 }); }
+const toCut = (sec: number) => { let out = 0; for (const g of segMap) { if (sec >= g.a && sec < g.b) return g.speed === 1 ? out + (sec - g.a) : null; out += (g.b - g.a) / g.speed; } return null; };
+const voices = plays.map((p) => ({ cut: toCut((p.t - born) / 1000), file: join(root, "app", "public", decodeURIComponent(new URL(p.src).pathname).replace(/^\//, "")) }))
+  .filter((v): v is { cut: number; file: string } => v.cut !== null && existsSync(v.file));
+console.log(`voices placed: ${voices.length} of ${plays.length}`);
+const args = ["-y", "-v", "error", "-i", webm, ...voices.flatMap((v) => ["-i", v.file])];
+const mix = voices.length
+  ? `;${voices.map((v, k) => `[${k + 1}:a]adelay=${Math.round(v.cut * 1000)}:all=1[a${k}]`).join(";")};${voices.map((_, k) => `[a${k}]`).join("")}amix=inputs=${voices.length}:normalize=0,apad[aout]`
+  : "";
+const r = spawnSync("ffmpeg", [...args, "-filter_complex", filter + mix, "-map", "[v]", ...(voices.length ? ["-map", "[aout]", "-c:a", "aac", "-b:a", "192k", "-shortest"] : []), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", "-movflags", "+faststart", join(out, "walk-sim.mp4")], { stdio: "inherit" });
 console.log(r.status === 0 ? `wrote ${out}` : "ffmpeg failed");
 console.log(JSON.stringify(numbers, null, 1));

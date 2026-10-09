@@ -65,7 +65,7 @@ function community() {
       <span class="board-xp num">${r.xp.toLocaleString()} XP</span>
     </li>`;
   return html`<section class="board" aria-labelledby="board-title">
-    <h2 id="board-title" class="section-title">Community <span class="num muted">${b ? `${b.online} walking now · ${b.players} players` : ""}</span></h2>
+    <h2 id="board-title" class="section-title">Community <span class="num muted">${b ? `${b.online} walking now · ${b.players} ${b.players === 1 ? "player" : "players"}` : ""}</span></h2>
     ${!b
       ? html`<p class="muted small">${navigator.onLine ? "Loading the rankings…" : "The rankings need a connection."}</p>`
       : !b.top.length
