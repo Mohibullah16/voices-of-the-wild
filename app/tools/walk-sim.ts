@@ -76,6 +76,11 @@ await ctx.addInitScript(() => {
     b.textContent = "Simulated walk · photos: Wikimedia Commons";
     b.setAttribute("aria-hidden", "true");
     b.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);top:calc(var(--header-h,60px) + 8px);z-index:2147483647;font:600 11px system-ui;padding:4px 10px;border-radius:999px;background:rgba(20,30,25,.78);color:#f6f1e6;pointer-events:none;letter-spacing:.02em";
+    // A barely visible pulse keeps the page repainting, so static screens (like "nobody") get recorded.
+    const st = document.createElement("style");
+    st.textContent = "@keyframes votw-tick{from{opacity:.78}to{opacity:.8}}";
+    document.head.append(st);
+    b.style.animation = "votw-tick .5s linear infinite alternate";
     document.body.append(b);
   });
 });
@@ -179,6 +184,7 @@ await page.evaluate(() => (location.hash = "#/badges"));
 await page.waitForTimeout(1500);
 await shot(page, "badges");
 // The anonymous leaderboard.
+await page.waitForSelector(".board-list", { timeout: 20000 }).catch(() => console.log("WARNING: the board didn't load"));
 await page.locator(".board").scrollIntoViewIfNeeded().catch(() => {});
 await page.waitForTimeout(3500);
 await shot(page, "board");
@@ -206,7 +212,7 @@ await browser.close();
 
 if (!VIDEO_ONLY) writeFileSync(join(out, "numbers.json"), JSON.stringify({ site: BASE, ranAt: new Date().toISOString(), quests: numbers, end: summary, note: "Simulated walk: Wikimedia Commons photos (see pipeline/calibration/ATTRIBUTION.md); steps from a simulated walking signal through the real step detector." }, null, 2));
 
-// Video: crop the viewport out of Playwright's padded frame; walks run 12x (labelled in the frame).
+// Video: crop the viewport out of Playwright's padded frame; walks run 20x (labelled in the frame).
 const webm = join(tmp, readdirSync(tmp).find((f) => f.endsWith(".webm"))!);
 const segs: string[] = [];
 let cur = t0;
@@ -214,14 +220,14 @@ const parts: string[] = [];
 let i = 0;
 for (const [a, b] of marks.walk) {
   parts.push(`[0:v]trim=${cur.toFixed(2)}:${(a + 3).toFixed(2)},setpts=PTS-STARTPTS[s${i}]`); segs.push(`[s${i++}]`);
-  parts.push(`[0:v]trim=${(a + 3).toFixed(2)}:${(b - 1).toFixed(2)},setpts=(PTS-STARTPTS)/12[s${i}]`); segs.push(`[s${i++}]`);
+  parts.push(`[0:v]trim=${(a + 3).toFixed(2)}:${(b - 1).toFixed(2)},setpts=(PTS-STARTPTS)/20[s${i}]`); segs.push(`[s${i++}]`);
   cur = b - 1;
 }
 parts.push(`[0:v]trim=${cur.toFixed(2)}:${end.toFixed(2)},setpts=PTS-STARTPTS[s${i}]`); segs.push(`[s${i++}]`);
 const filter = `${parts.join(";")};${segs.join("")}concat=n=${segs.length}:v=1:a=0[c];[c]crop=390:844:0:0,scale=780:1688:flags=lanczos,fps=30[v]`;
 // Map wall-clock play times onto the cut: real-speed parts keep their voices; sped-up walks drop them.
 const segMap: { a: number; b: number; speed: number }[] = [];
-{ let c = t0; for (const [a, b] of marks.walk) { segMap.push({ a: c, b: a + 3, speed: 1 }, { a: a + 3, b: b - 1, speed: 12 }); c = b - 1; } segMap.push({ a: c, b: end, speed: 1 }); }
+{ let c = t0; for (const [a, b] of marks.walk) { segMap.push({ a: c, b: a + 3, speed: 1 }, { a: a + 3, b: b - 1, speed: 20 }); c = b - 1; } segMap.push({ a: c, b: end, speed: 1 }); }
 const toCut = (sec: number) => { let out = 0; for (const g of segMap) { if (sec >= g.a && sec < g.b) return g.speed === 1 ? out + (sec - g.a) : null; out += (g.b - g.a) / g.speed; } return null; };
 const voices = plays.map((p) => ({ cut: toCut((p.t - born) / 1000), file: join(root, "app", "public", decodeURIComponent(new URL(p.src).pathname).replace(/^\//, "")) }))
   .filter((v): v is { cut: number; file: string } => v.cut !== null && existsSync(v.file));

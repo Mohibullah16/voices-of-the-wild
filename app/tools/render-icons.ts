@@ -48,8 +48,8 @@ function miniCard(o: { name: string; species: string; no: string; cat: string; i
 function poster(w: number, h: number, compact: boolean) {
   const cards = [
     miniCard({ name: "The Wingmaster", species: "Guardian of Birds", no: "No. 008", cat: "birds", id: "birds-guardian", guardian: true, elder: true, pig: "#7e9db5" }, -9, 0, 26),
-    miniCard({ name: "King Mango", species: "Mango", no: "No. 044", cat: "fruits-vegetables", id: "mango-fruit", pig: "#d2a55a" }, 7, 190, 40),
-    miniCard({ name: "Granny Neem", species: "Neem tree", no: "No. 002", cat: "trees", id: "neem-tree", elder: true, pig: "#7fa27a" }, -1.5, 92, 0),
+    miniCard({ name: "Parker", species: "Car", no: "No. 068", cat: "vehicles", id: "car", pig: "#9aa7b4" }, 7, 190, 40),
+    miniCard({ name: "Old Oak", species: "Oak tree", no: "No. 007", cat: "trees", id: "oak-tree", pig: "#7fa27a" }, -1.5, 92, 0),
   ];
   return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}
   * { box-sizing: border-box; margin: 0; }
@@ -85,7 +85,7 @@ function poster(w: number, h: number, compact: boolean) {
       <div class="row"><svg viewBox="0 0 48 48" width="${compact ? 46 : 58}" height="${compact ? 46 : 58}" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${MARK_PATHS}</svg></div>
       <h1>Voices <i>of the</i><br/>Wild</h1>
       <p>Everything outside has something to say. Go find out what.</p>
-      <div class="meta">On-device with EmbeddingGemma 2. Works offline.</div>
+      <div class="meta">Open model: EmbeddingGemma 2. No photos kept on a server.</div>
     </div>
     <div class="stack">${cards.join("")}</div>
   </div></body></html>`;
